@@ -6,7 +6,7 @@ import gf180mcu
 
 def photo_diode():
     # corresponds to 8um in gf180mcu
-    photo_sensitive_width_and_height = 8
+    photo_sensitive_width_and_height = 5
     photo_diode_rect = gf.Component()
     photo_diode_nwell = gf.components.rectangle(
         size = (photo_sensitive_width_and_height, photo_sensitive_width_and_height), 
@@ -24,12 +24,17 @@ def photo_diode():
             p_round = p.round_corners(rinner, router, n)
             photo_diode_rounded.add_polygon(p_round, layer=layer)
 
-    # Create the comp (active area) for the tap
-    n_tap_comp = gf.components.rectangle(
-        size=(2,2), layer=gf180mcu.LAYER.comp
-    )
-    #n_tap_comp.center = photo_diode_nwell.center
-    photo_diode_rounded << n_tap_comp
+    
+
+    contact_layer = photo_diode_rounded.add_ref(gf180mcu.cells.via_stack(x_range=(0,0.5), y_range=(0,1)))
+    
+    rounded_corner_width_and_height = gf.kcl.dbu * router
+    nplus = photo_diode_rounded.add_ref(gf.components.rectangle(size = (0.4, contact_layer.ysize + (0.4 - contact_layer.xsize)), layer=gf180mcu.LAYER.nplus))
+    nplus.dxmax = photo_diode_rounded.dxmax 
+    nplus.dymax = photo_diode_rounded.dymax - rounded_corner_width_and_height
+
+    contact_layer.center = nplus.center
+
     return photo_diode_rounded
 
 
