@@ -1,12 +1,11 @@
 import gdsfactory as gf
-from gdsfactory.typings import ComponentSpec
-
+from gdsfactory.typings import ComponentSpec, Size, LayerSpec
 
 import gf180mcu
 
 
 @gf.cell
-def nwell_psub_photodiode(width: int = 5):
+def nwell_psub_photodiode(width: int = 5, nplus_contact_distacne_from_top_of_nwell=0.11, nplus_contact_additional_offset_from_left=0.2):
     """Defines a nwell p-substrate photo diode
 
     Args:
@@ -30,14 +29,17 @@ def nwell_psub_photodiode(width: int = 5):
             p_round = p.round_corners(rinner, router, n)
             photo_diode_rounded.add_polygon(p_round, layer=layer)
 
+    contact_size = 0.36
     contact_layer = photo_diode_rounded.add_ref(
-        gf180mcu.cells.via_stack(x_range=(0, 0.5), y_range=(0, 1)))
+        gf180mcu.cells.via_stack(x_range=(0, contact_size), y_range=(0, contact_size)))
 
     rounded_corner_width_and_height = gf.kcl.dbu * router
     nplus = photo_diode_rounded.add_ref(gf.components.rectangle(size=(
-        0.4, contact_layer.ysize + (0.4 - contact_layer.xsize)), layer=gf180mcu.LAYER.nplus))
-    nplus.dxmax = photo_diode_rounded.dxmax
-    nplus.dymax = photo_diode_rounded.dymax - rounded_corner_width_and_height
+        0.6, contact_layer.ysize + (0.6 - contact_layer.xsize)), layer=gf180mcu.LAYER.nplus))
+    nplus.dxmax = photo_diode_rounded.dxmax - rounded_corner_width_and_height + \
+        nplus_contact_additional_offset_from_left
+    nplus.dymax = photo_diode_rounded.dymax - \
+        nplus_contact_distacne_from_top_of_nwell
 
     contact_layer.center = nplus.center
     photo_diode_rounded.add_ports(contact_layer.ports)
@@ -53,8 +55,8 @@ def reset_transistor(photodiode_spec: ComponentSpec = nwell_psub_photodiode, res
     photodiode = gf.get_component(photodiode_spec)
     # Create reset transistor
     nfet_component = gf180mcu.cells.nfet(
-        w_gate=0.36, l_gate=0.36, label=True, sd_label=['S', 'D'], g_label=["gate"]).copy()
-    gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.36,
+        w_gate=0.36, l_gate=0.36, label=True, sd_label=['S', 'D'], g_label=["gate"], gate_con_pos="bottom").copy()
+    gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.34,
                                        port_layer=gf180mcu.LAYER.metal1, layer_label=gf180mcu.LAYER.metal1_label, port_type="electrical")
 
     nfet_ref = reset_transistor.add_ref(nfet_component)
@@ -67,6 +69,15 @@ def reset_transistor(photodiode_spec: ComponentSpec = nwell_psub_photodiode, res
 
     reset_transistor.center = photodiode.ports["e1"].center
     reset_transistor.dxmin = photodiode.dxmax + reset_distance_from_photo_diode
+    reset_transistor.y = reset_transistor.y + \
+        (reset_transistor.y - reset_transistor.ports["e1"].y)
+
+    contact_min_size = 0.22
+    metal1_drain_contact = reset_transistor.add_ref(gf180mcu.cells.via_stack(
+        x_range=(0, contact_min_size), y_range=(0, contact_min_size)))
+    metal1_drain_contact.center = reset_transistor.ports['e2'].center
+    reset_transistor.ports['e2'].orientation = 90
+    reset_transistor.ports['e3'].orientation = 90
 
     return reset_transistor
 
@@ -77,9 +88,10 @@ def source_follower_nfet(photodiode_spec: ComponentSpec = nwell_psub_photodiode,
     photodiode = gf.get_component(photodiode_spec)
     reset_transistor = gf.get_component(reset_transistor_spec)
 
+    width_of_gate = 1.5
     nfet_component = gf180mcu.cells.nfet(
-        w_gate=1.5, l_gate=0.36, label=True, sd_label=['D', 'S'], g_label=["gate"], enable_left_diffusion_contacts=False).copy()
-    gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.36,
+        w_gate=width_of_gate, l_gate=0.36, label=True, sd_label=['D', 'S'], g_label=["gate"], enable_left_diffusion_contacts=False).copy()
+    gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.34,
                                        port_layer=gf180mcu.LAYER.metal1, layer_label=gf180mcu.LAYER.metal1_label, port_type="electrical", guess_port_orientation=False, port_orientation=270)
 
     # # Add patch metal to meet overlap rules on M1 to contact
@@ -98,6 +110,13 @@ def source_follower_nfet(photodiode_spec: ComponentSpec = nwell_psub_photodiode,
     source_follower_nfet.add_ports(nfet_ref.ports)
     source_follower_nfet.rotate(180, center=source_follower_nfet.center)
 
+    # power for the source follower transistor
+    vss_connection = source_follower_nfet << gf180mcu.cells.via_stack(
+        x_range=(0, 0.22), y_range=(0, width_of_gate), metal_level=2, via_size=(0.26, 0.26), via_spacing=(0.28, 0.36))
+    vss_connection.center = source_follower_nfet.ports['e2'].center
+    source_follower_nfet.add_port("source_follower_vss_con", center=vss_connection.center,
+                                  port_type="electrical", layer=gf180mcu.LAYER.metal2, orientation=270, width=vss_connection.xsize)
+
     return source_follower_nfet
 
 
@@ -110,20 +129,65 @@ def row_select(source_follower_spec: ComponentSpec = source_follower_nfet):
     # Create reset transistor
     nfet_component = gf180mcu.cells.nfet(
         w_gate=0.36, l_gate=0.36, label=True, sd_label=['S', 'D'], g_label=["gate"], enable_left_diffusion_contacts=False).copy()
-    gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.36,
+    gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.34,
                                        port_layer=gf180mcu.LAYER.metal1, layer_label=gf180mcu.LAYER.metal1_label, port_type="electrical")
 
     nfet_ref = row_select.add_ref(nfet_component)
     row_select.add_ports(nfet_ref.ports)
-
-    row_select.pprint_ports()
 
     row_select.x = row_select.x + \
         (source_follower.ports["e1"].x - row_select.ports["e1"].x) + 0.23
     row_select.y = row_select.y + \
         (source_follower.ports["e1"].y - row_select.ports["e1"].y)
 
+    # Add metal2 contact for the output of the transistor. This is what will connect
+    # to the column readout circuits.
+    contact_min_size = 0.22
+    reset_transistor_contact = row_select.add_ref(gf180mcu.cells.via_stack(
+        x_range=(0, contact_min_size), y_range=(0, contact_min_size), metal_level=2, m_enc=0.08, via_size=(0.26, 0.26)))
+    reset_transistor_contact.center = row_select.ports["e2"].center
+
     return row_select
+
+
+@gf.cell
+def row_connector(size: Size, port_name: str | None = "via_port1", x_location: float = 0.0, orientation: float = 270, layer: LayerSpec = gf180mcu.LAYER.metal1, via_spec: ComponentSpec = None):
+    row_connector = gf.Component()
+    via_ref = None
+    wire = gf.components.rectangle(
+        size, layer=layer)
+    row_ref = row_connector << wire
+    row_connector.add_port(name="direct_metal_contact", port_type="electrical",
+                           center=row_ref.center, layer=layer, width=size[1], orientation=orientation + 90)
+
+    if via_spec:
+        via_ref = row_connector << gf.get_component(via_spec)
+        via_ref.center = row_ref.center
+        via_ref.x += x_location - via_ref.center[0]
+
+        row_connector.add_port(name=port_name, port_type="electrical", center=via_ref.center,
+                               layer=layer, width=via_spec.xsize, orientation=orientation)
+    return row_connector
+
+
+@gf.cell
+def poly_metal1_single_via():
+    min_contact_size = 0.22
+    component = gf.Component()
+    via_stack = component << gf180mcu.cells.via_stack(
+        x_range=(0, min_contact_size), y_range=(0, min_contact_size))
+    poly_enclosure = component << gf.components.rectangle(
+        size=(0.36, 0.36), layer=gf180mcu.LAYER.poly2)
+
+    poly_enclosure.center = via_stack.center
+    return component
+
+
+@gf.cell
+def metal1_to_metal2_via():
+    via = gf180mcu.cells.via_stack(
+        x_range=(0, 0.22), y_range=(0, 0.22), via_size=(0.26, 0.26), m_enc=0.08, metal_level=2)
+    return via
 
 
 @gf.cell
@@ -139,43 +203,116 @@ def active_pixel_3t(
     source_follower_nfet = gf.get_component(source_follower_spec)
     row_select = gf.get_component(row_select_spec)
 
-    source_follower_nfet.pprint_ports()
-
     photodiode_ref = active_pixel << photodiode
     active_pixel << reset_transistor
     active_pixel << source_follower_nfet
     active_pixel << row_select
 
-    # 4a. Define a cross-section for the metal route
-    #     We'll tell it to use metal1 and the same width as the port
-    metal1_xs = gf.cross_section.cross_section(
-        layer=gf180mcu.LAYER.metal1,
-        width=reset_transistor.ports["e1"].width,
+    row_metal1_spacing = 0.23
+    # The width of the connections like VSS, Reset and Row Select
+    row_line_metal1_width = 0.25
+    min_metal2_width = 0.28
+    padding = 0.25
+
+    row_base_widths = active_pixel.xsize
+    horizontal_spacing = padding*2
+    # Create VSS Line
+    vss_voltage_line = active_pixel << row_connector(
+        size=(row_base_widths + horizontal_spacing, row_line_metal1_width), via_spec=metal1_to_metal2_via(), x_location=source_follower_nfet.ports[
+            'source_follower_vss_con'].center[0] + padding)
+    vss_voltage_line.ymin = photodiode.ymax - 0.065
+    vss_voltage_line.x -= horizontal_spacing/2
+
+    # Create Row Reset Line
+    row_reset = active_pixel << row_connector(size=(
+        row_base_widths + horizontal_spacing, row_line_metal1_width), x_location=reset_transistor.ports['e3'].center[0] + padding, via_spec=poly_metal1_single_via())
+    row_reset.ymin = vss_voltage_line.ymax + row_metal1_spacing
+    row_reset.x -= horizontal_spacing/2
+
+    # Create Row Enable Line
+    row_enable = active_pixel << row_connector(
+        size=(row_base_widths + horizontal_spacing, row_line_metal1_width), x_location=row_select.ports['e3'].center[0] + padding, via_spec=poly_metal1_single_via(), orientation=90)
+    row_enable.ymax = photodiode.ymin
+    row_enable.x -= horizontal_spacing/2
+
+    # ensure that the pixel is square.
+    if (active_pixel.ysize < row_base_widths):
+        row_enable.y -= row_base_widths - active_pixel.ysize
+
+    vertical_spacing = padding * 2
+    column_readout = active_pixel << gf.components.rectangle(
+        size=(min_metal2_width, active_pixel.ysize + vertical_spacing), layer=gf180mcu.LAYER.metal2)
+    column_readout.x = row_select.ports['e2'].center[0]
+    column_readout.ymin = active_pixel.ymin - vertical_spacing/2
+
+    preffered_poly_width = 0.36
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port1=row_reset.ports['via_port1'],
+        port2=reset_transistor.ports["e3"],
+        width=preffered_poly_width,
+        layer=gf180mcu.LAYER.poly2,
+        cross_section="metal1"
     )
 
-    # 4b. Call the router
-    #     We connect the ports from the *references*
-    route = gf.routing.route_single_electrical(
+    min_metal1_width = 0.23
+    metal1_cross_section = gf.cross_section.cross_section(
+        width=min_metal1_width,
+        layer=gf180mcu.LAYER.metal1,
+    )
+
+    metal2_cross_section = gf.cross_section.cross_section(
+        width=min_metal2_width,
+        layer=gf180mcu.LAYER.metal2,
+    )
+
+    # Route photodiode N+ to reset transistor.
+    gf.routing.route_single_electrical(
         component=active_pixel,
         port1=photodiode_ref.ports["e1"],
         port2=reset_transistor.ports["e1"],
-        cross_section=metal1_xs,
+        cross_section=metal1_cross_section,
     )
 
-    # 4a. Define a cross-section for the metal route
-    #     We'll tell it to use metal1 and the same width as the port
-    metal1_xs = gf.cross_section.cross_section(
-        layer=gf180mcu.LAYER.metal1,
-        width=source_follower_nfet.ports["e3"].width,
-    )
-
-    # 4b. Call the router
-    #     We connect the ports from the *references*
-    route = gf.routing.route_single_electrical(
+    # Route source follower to photodiode output, creating a net between
+    # source follower, reset transistor, and photodiode
+    gf.routing.route_single_electrical(
         component=active_pixel,
         port2=source_follower_nfet.ports["e3"],
         port1=reset_transistor.ports["e1"],
-        cross_section=metal1_xs,
+        cross_section=metal1_cross_section,
+    )
+
+    # Route VSS to other side of reset to provide reset voltage.
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port2=vss_voltage_line.ports["direct_metal_contact"],
+        port1=reset_transistor.ports["e2"],
+        cross_section=metal1_cross_section,
+    )
+
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port2=vss_voltage_line.ports["via_port1"],
+        port1=source_follower_nfet.ports['source_follower_vss_con'],
+        cross_section=metal2_cross_section
+    )
+
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port2=vss_voltage_line.ports["via_port1"],
+        port1=source_follower_nfet.ports['source_follower_vss_con'],
+        cross_section=metal2_cross_section
+    )
+
+    # Route row enable gate
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port1=row_select.ports['e3'],
+        port2=row_enable.ports["via_port1"],
+        width=preffered_poly_width,
+        layer=gf180mcu.LAYER.poly2,
+        cross_section="metal1"
     )
 
     return active_pixel
@@ -187,5 +324,7 @@ gf.kcl.dbu = 5e-3  # set 1 DataBase Unit to 5 nm
 gf180mcu.PDK.activate()
 
 com = active_pixel_3t()
+c = gf.Component()
+c.add_ref(com, rows=10, columns=10, row_pitch=com.xsize, column_pitch=com.ysize)
 
-com.show()
+c.show()
