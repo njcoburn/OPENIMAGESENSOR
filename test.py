@@ -28,7 +28,7 @@ def nwell_psub_photodiode(width: int = 5, nplus_contact_distacne_from_top_of_nwe
     photo_diode_rounded = gf.Component()
     for layer, polygons in photo_diode_rect.get_polygons().items():
         for p in polygons:
-            #p_round = p.round_corners(rinner, router, n)
+            # p_round = p.round_corners(rinner, router, n)
             photo_diode_rounded.add_polygon(p, layer=layer)
 
     contact_size = 0.36
@@ -57,7 +57,7 @@ def reset_transistor(photodiode_spec: ComponentSpec = nwell_psub_photodiode, res
     photodiode = gf.get_component(photodiode_spec)
     # Create reset transistor
     nfet_component = gf180mcu.cells.nfet(
-        w_gate=0.36, l_gate=0.36, label=True, sd_label=['S', 'D'], g_label=["gate"], gate_con_pos="bottom").copy()
+        w_gate=0.37, l_gate=0.36, label=True, sd_label=['S', 'D'], g_label=["gate"], gate_con_pos="bottom").copy()
     gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.34,
                                        port_layer=gf180mcu.LAYER.metal1, layer_label=gf180mcu.LAYER.metal1_label, port_type="electrical")
 
@@ -130,7 +130,7 @@ def row_select(source_follower_spec: ComponentSpec = source_follower_nfet):
     source_follower = gf.get_component(source_follower_spec)
     # Create reset transistor
     nfet_component = gf180mcu.cells.nfet(
-        w_gate=0.36, l_gate=0.36, label=True, sd_label=['S', 'D'], g_label=["gate"], enable_left_diffusion_contacts=False).copy()
+        w_gate=0.37, l_gate=0.36, label=True, sd_label=['S', 'D'], g_label=["gate"], enable_left_diffusion_contacts=False).copy()
     gf.add_ports.add_ports_from_labels(component=nfet_component, port_width=0.34,
                                        port_layer=gf180mcu.LAYER.metal1, layer_label=gf180mcu.LAYER.metal1_label, port_type="electrical")
 
@@ -212,7 +212,7 @@ def body_contact(source_follower_spec: ComponentSpec = source_follower_nfet):
     pplus_ref.xmin = source_follower.xmin
 
     contact << gf180mcu.cells.via_stack(
-        x_range=(pplus_ref.xmin, pplus_ref.xmax), y_range=(pplus_ref.ymin, pplus_ref.ymax), via_size=(0.26, 0.26),via_spacing=(0.36, 0.36), m_enc=0.08, metal_level=2)
+        x_range=(pplus_ref.xmin, pplus_ref.xmax), y_range=(pplus_ref.ymin, pplus_ref.ymax), via_size=(0.26, 0.26), via_spacing=(0.36, 0.36), m_enc=0.08, metal_level=2)
 
     contact.y -= 0.12
 
@@ -242,7 +242,6 @@ def active_pixel_3t(
     active_pixel << source_follower_nfet
     active_pixel << row_select
     active_pixel << body_contact
-
 
     row_metal1_spacing = 0.23
     # The width of the connections like VSS, Reset and Row Select
@@ -282,19 +281,23 @@ def active_pixel_3t(
     column_readout.ymin = active_pixel.ymin - vertical_spacing/2
 
     # Create GND Connection and ensure tranisistors are covered from light
-    ground_connection_light_blocker_ref1 = active_pixel << gf.components.rectangle(size=(vss_voltage_line.xmax - photodiode.xmax, column_readout.ymax - body_contact.ymin), layer=gf180mcu.LAYER.metal3)
+    ground_connection_light_blocker_ref1 = active_pixel << gf.components.rectangle(size=(
+        vss_voltage_line.xmax - photodiode.xmax, column_readout.ymax - body_contact.ymin), layer=gf180mcu.LAYER.metal3)
     ground_connection_light_blocker_ref1.xmin = photodiode.xmax
     ground_connection_light_blocker_ref1.ymax = column_readout.ymax
 
-    ground_connection_light_blocker_ref2 = active_pixel << gf.components.rectangle(size=(vss_voltage_line.xmax - column_readout.xmin,  column_readout.ysize), layer=gf180mcu.LAYER.metal3)
+    ground_connection_light_blocker_ref2 = active_pixel << gf.components.rectangle(size=(
+        vss_voltage_line.xmax - column_readout.xmin,  column_readout.ysize), layer=gf180mcu.LAYER.metal3)
     ground_connection_light_blocker_ref2.xmax = ground_connection_light_blocker_ref1.xmax
     ground_connection_light_blocker_ref2.ymin = column_readout.ymin
 
-    ground_connection_light_blocker_ref3 = active_pixel << gf.components.rectangle(size=(row_reset.xsize, column_readout.ymax - photodiode.ymax), centered=True, layer=gf180mcu.LAYER.metal3)
+    ground_connection_light_blocker_ref3 = active_pixel << gf.components.rectangle(size=(
+        row_reset.xsize, column_readout.ymax - photodiode.ymax), centered=True, layer=gf180mcu.LAYER.metal3)
     ground_connection_light_blocker_ref3.xmin = vss_voltage_line.xmin
     ground_connection_light_blocker_ref3.ymax = column_readout.ymax
 
-    ground_connection_light_blocker_ref4 = active_pixel << gf.components.rectangle(size=(row_enable.xsize, 0.28), layer=gf180mcu.LAYER.metal3)
+    ground_connection_light_blocker_ref4 = active_pixel << gf.components.rectangle(
+        size=(row_enable.xsize, 0.28), layer=gf180mcu.LAYER.metal3)
     ground_connection_light_blocker_ref4.xmin = row_enable.xmin
     ground_connection_light_blocker_ref4.ymin = column_readout.ymin
 
@@ -344,6 +347,32 @@ def active_pixel_3t(
         cross_section=metal1_cross_section,
     )
 
+    spacing_from_column_readout_m2 = 0.33
+
+    top_vss_connect_port = active_pixel << gf.components.rectangle(size=(
+        min_metal2_width, min_metal2_width), layer=gf180mcu.LAYER.metal2, port_type="electrical", port_orientations=[270])
+    top_vss_connect_port.center = vss_voltage_line.ports["via_port1"].center
+    top_vss_connect_port.ymax = active_pixel.ymax
+
+    bottom_vss_connect_port = active_pixel << gf.components.rectangle(size=(
+        min_metal2_width, min_metal2_width), layer=gf180mcu.LAYER.metal2, port_type="electrical", port_orientations=[0])
+    bottom_vss_connect_port.center = vss_voltage_line.ports["via_port1"].center
+    bottom_vss_connect_port.ymin = active_pixel.ymin
+
+    bottom_right_vss_connect_port = active_pixel << gf.components.rectangle(size=(
+        min_metal2_width, min_metal2_width), layer=gf180mcu.LAYER.metal2, port_type="electrical", port_orientations=[180, 90])
+    bottom_right_vss_connect_port.center = vss_voltage_line.ports["via_port1"].center
+    bottom_right_vss_connect_port.ymin = active_pixel.ymin
+    bottom_right_vss_connect_port.xmax = column_readout.xmin - \
+        spacing_from_column_readout_m2
+
+    right_of_source_follwer_vss_connect_port = active_pixel << gf.components.rectangle(size=(
+        min_metal2_width, min_metal2_width), layer=gf180mcu.LAYER.metal2, port_type="electrical", port_orientations=[180, 270])
+    right_of_source_follwer_vss_connect_port.center = source_follower_nfet.ports[
+        "source_follower_vss_con"].center
+    right_of_source_follwer_vss_connect_port.xmax = column_readout.xmin - \
+        spacing_from_column_readout_m2
+
     gf.routing.route_single_electrical(
         component=active_pixel,
         port2=vss_voltage_line.ports["via_port1"],
@@ -353,8 +382,30 @@ def active_pixel_3t(
 
     gf.routing.route_single_electrical(
         component=active_pixel,
-        port2=vss_voltage_line.ports["via_port1"],
+        port2=top_vss_connect_port.ports["e1"],
         port1=source_follower_nfet.ports['source_follower_vss_con'],
+        cross_section=metal2_cross_section
+    )
+
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port2=bottom_vss_connect_port.ports["e1"],
+        port1=bottom_right_vss_connect_port.ports["e1"],
+        cross_section=metal2_cross_section
+    )
+
+    source_follower_nfet.ports["source_follower_vss_con"].orientation = 0
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port2=source_follower_nfet.ports["source_follower_vss_con"],
+        port1=right_of_source_follwer_vss_connect_port.ports["e1"],
+        cross_section=metal2_cross_section
+    )
+
+    gf.routing.route_single_electrical(
+        component=active_pixel,
+        port1=right_of_source_follwer_vss_connect_port.ports["e2"],
+        port2=bottom_right_vss_connect_port.ports["e2"],
         cross_section=metal2_cross_section
     )
 
@@ -369,7 +420,8 @@ def active_pixel_3t(
     )
 
     # Create extra nwell to fill out the space
-    nwell_extra_ref = active_pixel << gf.components.rectangle(size = (body_contact.xmax - photodiode.xmin, (body_contact.ymin - 0.4) - row_enable.ymax), layer=gf180mcu.LAYER.nwell)
+    nwell_extra_ref = active_pixel << gf.components.rectangle(size=(
+        body_contact.xmax - photodiode.xmin - 0.07, (body_contact.ymin - 0.4) - row_enable.ymax), layer=gf180mcu.LAYER.nwell)
     nwell_extra_ref.ymin = row_enable.ymax
     nwell_extra_ref.xmin = photodiode.xmin
 
@@ -383,8 +435,8 @@ def active_pixel_3t(
             rounded_poly = polygon.round_corners(rinner, router, n)
             rounded_nwell.add_polygon(rounded_poly, layer=layer)
 
-
-    active_pixel = active_pixel.remove_layers(layers = [gf180mcu.LAYER.nwell], unlock=True)
+    active_pixel = active_pixel.remove_layers(
+        layers=[gf180mcu.LAYER.nwell], unlock=True)
     active_pixel.add_ref(rounded_nwell)
 
     return active_pixel
@@ -397,5 +449,5 @@ gf180mcu.PDK.activate()
 
 com = active_pixel_3t()
 c = gf.Component()
-c.add_ref(com, rows=2, columns=2, row_pitch=com.xsize, column_pitch=com.ysize)
+c.add_ref(com, rows=300, columns=500, row_pitch=com.xsize, column_pitch=com.ysize)
 c.show()
