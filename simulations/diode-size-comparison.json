@@ -1,0 +1,110 @@
+{
+  "scope": "Typical-corner LVS-matched schematic simulation. Equal assumed photocurrent density, not calibrated irradiance. No extracted wire/fill parasitics or optical/noise characterization.",
+  "exposure_to_sample_us": 950,
+  "reset_high_us": 20,
+  "column_load": "1 MOhm || 1 pF",
+  "variants": [
+    {
+      "size_um": 5,
+      "area_um2": 25,
+      "fill_factor_percent": 0.625,
+      "photocurrents_pA": [
+        0,
+        5.0,
+        15.0
+      ],
+      "column_samples_V": [
+        0.9339458467072,
+        0.7694526455761999,
+        0.4540299737221997
+      ],
+      "dark_subtracted_signal_mV": [
+        0.0,
+        164.49320113100018,
+        479.9158729850003
+      ],
+      "effective_sense_capacitance_fF": 18.690142586049678,
+      "max_reset_error_mV": 0.00054999999998806,
+      "frame2_to3_max_change_uV": 1.783175100134038,
+      "verification": {
+        "magic_drc_errors": 0,
+        "lvs": "unique match",
+        "xschem_lvs": "unique match",
+        "mosfets": 27,
+        "diodes": 9,
+        "klayout_violations": {},
+        "klayout_total": 0,
+        "gds_sha256": "3fe23bb19c69359d79f868721790a7f9170bf19412e781174a046bae64a8b522",
+        "scope": "Local GF180MCUD core checks; not wafer.space tapeout signoff."
+      }
+    },
+    {
+      "size_um": 10,
+      "area_um2": 100,
+      "fill_factor_percent": 2.5,
+      "photocurrents_pA": [
+        0,
+        20.0,
+        60.0
+      ],
+      "column_samples_V": [
+        0.9524743126427501,
+        0.76290087557375,
+        0.40421411646399996
+      ],
+      "dark_subtracted_signal_mV": [
+        0.0,
+        189.5734370690001,
+        548.2601961787501
+      ],
+      "effective_sense_capacitance_fF": 65.58249264320699,
+      "max_reset_error_mV": 0.0022200000000527353,
+      "frame2_to3_max_change_uV": 0.1872293999838348,
+      "verification": {
+        "magic_drc_errors": 0,
+        "lvs": "unique match",
+        "xschem_lvs": "unique match",
+        "mosfets": 27,
+        "diodes": 9,
+        "klayout_violations": {},
+        "klayout_total": 0,
+        "gds_sha256": "eb6692e41cad1fed2bae323bd38047892c76e3ad7e3b229ab9c220864dafd8a4",
+        "scope": "Local GF180MCUD core checks; not wafer.space tapeout signoff."
+      }
+    },
+    {
+      "size_um": 20,
+      "area_um2": 400,
+      "fill_factor_percent": 10.0,
+      "photocurrents_pA": [
+        0,
+        80.0,
+        240.0
+      ],
+      "column_samples_V": [
+        0.9589029694675,
+        0.757471583433,
+        0.37941404076689994
+      ],
+      "dark_subtracted_signal_mV": [
+        0.0,
+        201.43138603449995,
+        579.4889287006
+      ],
+      "effective_sense_capacitance_fF": 249.04813468556605,
+      "max_reset_error_mV": 0.008870000000049671,
+      "frame2_to3_max_change_uV": 0.01693959994497618,
+      "verification": {
+        "magic_drc_errors": 0,
+        "lvs": "unique match",
+        "xschem_lvs": "unique match",
+        "mosfets": 27,
+        "diodes": 9,
+        "klayout_violations": {},
+        "klayout_total": 0,
+        "gds_sha256": "c13f591c900c559247e70bba34224b5e6b400531436e80be69d8fe37379e5ef5",
+        "scope": "Local GF180MCUD core checks; not wafer.space tapeout signoff."
+      }
+    }
+  ]
+}

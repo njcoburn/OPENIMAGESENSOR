@@ -1,0 +1,5 @@
+set PDK_ROOT /foss/pdks
+if {[info exists env(PDK_ROOT)]} {set PDK_ROOT $env(PDK_ROOT)}
+source $PDK_ROOT/gf180mcuD/libs.tech/xschem/xschemrc
+# Resolve repository-owned hierarchical symbols from any working directory.
+append XSCHEM_LIBRARY_PATH :[file dirname [file normalize [info script]]]

@@ -1,0 +1,106 @@
+# Path to a 3×3 GF180 monochrome array
+
+## Target and interface
+
+Nine identical 3T pixels in three rows and three columns. Shared VDD (3.3 V),
+VRESET (initial candidate 2.0 V), and substrate/ground; RST[0:2], ROW[0:2],
+and COL[0:2]. Only one row selected at a time. Use one load/readout path per
+column. Keep the ADC, optical-current sources and ideal timing sources outside
+the physical array. The first layout target is a core with labeled ports,
+not a packaged chip or complete pad ring.
+
+Array acceptance requires genuine connected column buses, distinct row/reset
+nets, nine extracted photodiodes and 27 extracted MOSFETs, without black-boxing
+the pixel or diode. A placement-only array does not satisfy this target.
+
+## Milestones
+
+1. **Done: transistor flow probe.** Magic device generation, physical terminal
+   ports, GDS export, extraction and Netgen comparison against an independent
+   netlist. W=1 um, L=0.5 um. Zero Magic DRC errors and unique LVS match.
+2. **Next: photodiode extraction probe.** Installed Magic supports
+   diode_nd2ps_03v3 (N+/substrate) generation/extraction. Validate this candidate
+   or prove the desired n-well diode with an appropriate extraction flow.
+   Electrical extraction does not establish quantum efficiency or dark current.
+3. **One physical pixel.** Select geometry, include real junction areas and
+   perimeters in electrical simulation, route supplies and ports, run DRC/LVS.
+   Replace the assumed 10 fF with a justified model/extracted total; do not
+   physically instantiate the optical current source.
+4. **3×3 array.** Import checked primitive/pixel GDS into gdsfactory, place
+   nine cells, route three reset lines, three select lines, three column buses
+   and supplies, then recheck DRC and hierarchical LVS. Verify shared nets and
+   all nine pixels rather than treating cells as opaque black boxes.
+5. **Extracted simulation.** Row scan with a known 3×3 photocurrent pattern,
+   column settling, reset repeatability, and comparison to schematic simulation.
+6. **Manufacturing checks.** Full PDK/run-specific checks, density/fill,
+   antenna/ERC, pads/protection, optical opening constraints and packaging.
+   A clean local core check is not shuttle signoff.
+
+## Installed tools and current limitations
+
+Gdsfactory 9.44.0 is installed, but the old prototype's `gf180mcu` Python
+module is missing. Installed GF180 KLayout PCells and Magic generators provide
+alternative primitive sources. Use gdsfactory for assembly/routing after
+checking imported geometry. The old test.py has not been converted or run.
+
+The installed Magic extraction rules explicitly list N+/substrate and
+P+/n-well diode devices; an n-well/substrate device was not found in that list.
+The old prototype's n-well diode must therefore not be assumed LVS-ready.
+
+The flow probe initially hit metal spacing/minimum-area errors. The final
+probe uses relaxed L=0.5 um, wider guard clearance, and enlarged gate landing
+pads. These changes belong only to the probe; the electrical pixel still uses
+its original transistor lengths and zero diffusion-area defaults.
+
+## Reproduce the probe
+
+```sh
+bash scripts/check-layout-probe.sh
+```
+
+Results: build/layout-probe-verified/{nfet_probe.gds,nfet_probe.mag,
+nfet_probe.spice,magic.log,lvs.log}. Source: primitive-probe.tcl and
+nfet_probe.spice. The netlist is independently written; LVS is not a comparison
+of the extracted netlist to itself. The script fails unless DRC reports zero
+and LVS reports a unique match.
+
+## Completed 3×3 milestone
+
+`array_3x3.py` now imports the checked transistor and diode primitive GDS into
+gdsfactory and routes nine physical pixels. `add_fill.py` adds isolated density
+fill while protecting all nine optical apertures. The original `test.py` is
+unchanged; its missing `gf180mcu` module is not required for this path.
+
+The actual primitive sizes are W=1 um / L=0.5 um for all three MOSFETs, and
+5×5 um for the N+/substrate diode. All reset gates and the source-follower
+supply use 3.3 V; the proposed reset drain supply is 2.0 V. These differ from
+the earlier assumed-capacitance simulation, so the physical Xschem pixel was
+updated to match. Pixel pitch is deliberately generous at 80×50 um.
+
+```sh
+bash scripts/verify-array.sh
+```
+
+This builds the filled GDS, reads it back in Magic, runs local Magic DRC,
+extracts a complete hierarchy, compares against the independent netlist and
+Xschem, runs the installed full KLayout GF180MCUD deck, recursively verifies
+27 MOSFETs and nine diodes, simulates three frames, and renders layout images.
+The checker fails on any DRC error, unmatched circuit or missing device.
+
+Latest evidence: `simulations/array-verification.json` contains the GDS hash
+and verification summary. Full reports are generated in `build/array-check`.
+`array_extracted.spice` retains hierarchy and diode perimeter units. The flat
+export mode was not used because its diode perimeter scaling needed separate
+validation. No devices are black-boxed to obtain the reported match.
+
+GDS database unit is 1 nm as required by the installed KLayout deck. The
+geometry stays on the intended 5 nm manufacturing grid. Density fill was
+verified with all installed deck defaults for GF180MCUD: five metal layers,
+11K top metal and MIM option B. These process options must still be checked
+against the chosen wafer.space run.
+
+**Remaining:** extracted wiring/fill parasitics, transistor column bias,
+optical characterization, compact pixel geometry, full chip pads/protection,
+optical package and run-specific submission checks. The earlier milestone
+list above is the development history; milestones 2–4 now have working local
+implementations. Milestone 5 (extracted simulation) is not complete.

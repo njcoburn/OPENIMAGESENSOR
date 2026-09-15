@@ -1,2 +1,23 @@
 devenv/
 build/
+# Generated transient waveforms
+simulations/pixel_0
+simulations/pixel_1p
+simulations/pixel_5p
+simulations/raw_*
+simulations/pixel_from_schematic.spice
+simulations/pixel-response.png
+simulations/cycles_0
+simulations/cycles_1p
+simulations/cycles_5p
+simulations/cycles_raw_*
+simulations/cycles_from_schematic.spice
+
+simulations/reset_candidate.spice
+simulations/reset_candidate_*
+
+# Local runtime and Python caches
+__pycache__/
+*.pyc
+.venv/
+.env

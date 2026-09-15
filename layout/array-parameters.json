@@ -1,0 +1,16 @@
+{
+  "pixel_pitch_um": [
+    80,
+    50
+  ],
+  "diode_area_um2": 25,
+  "diode_perimeter_um": 20,
+  "nfet_W_um": 1,
+  "nfet_L_um": 0.5,
+  "routing_bounds_um": [
+    -10.3,
+    -0.2,
+    240.2,
+    145.2
+  ]
+}

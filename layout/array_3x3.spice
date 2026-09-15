@@ -1,0 +1,18 @@
+* Independent hierarchical electrical reference. Simulation light is external.
+.subckt pixel_physical VDD VRESET GND RST ROW COL
+Xrst VRESET RST sense GND nfet_03v3 W=1u L=0.5u
+Xsf VDD sense sf GND nfet_03v3 W=1u L=0.5u
+Xsel sf ROW COL GND nfet_03v3 W=1u L=0.5u
+Dphoto GND sense diode_nd2ps_03v3 area=25p pj=20u
+.ends pixel_physical
+.subckt array_3x3 VDD VRESET GND RST0 RST1 RST2 ROW0 ROW1 ROW2 COL0 COL1 COL2
+X00 VDD VRESET GND RST0 ROW0 COL0 pixel_physical
+X01 VDD VRESET GND RST0 ROW0 COL1 pixel_physical
+X02 VDD VRESET GND RST0 ROW0 COL2 pixel_physical
+X10 VDD VRESET GND RST1 ROW1 COL0 pixel_physical
+X11 VDD VRESET GND RST1 ROW1 COL1 pixel_physical
+X12 VDD VRESET GND RST1 ROW1 COL2 pixel_physical
+X20 VDD VRESET GND RST2 ROW2 COL0 pixel_physical
+X21 VDD VRESET GND RST2 ROW2 COL1 pixel_physical
+X22 VDD VRESET GND RST2 ROW2 COL2 pixel_physical
+.ends array_3x3

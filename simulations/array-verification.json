@@ -1,0 +1,11 @@
+{
+  "magic_drc_errors": 0,
+  "lvs": "unique match",
+  "xschem_lvs": "unique match",
+  "mosfets": 27,
+  "diodes": 9,
+  "klayout_violations": {},
+  "klayout_total": 0,
+  "gds_sha256": "41c8edba91973fb1e08dc8e21e9a3008973939c2499bb09f8c414c13f8a183f4",
+  "scope": "Local GF180MCUD core checks; not wafer.space tapeout signoff."
+}

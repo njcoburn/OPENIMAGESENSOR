@@ -1,0 +1,4 @@
+* Independent reference for the layout flow probe, not a sensor pixel.
+.subckt nfet_probe D G S B
+X0 D G S B nfet_03v3 W=1u L=0.5u
+.ends nfet_probe

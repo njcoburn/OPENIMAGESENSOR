@@ -1,0 +1,31 @@
+GF180 3T pixel first electrical test -- assumed optical model
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.options gmin=1e-17 abstol=1e-16 reltol=1e-5
+.param iph=1p
+Vdd vdd 0 3.3
+Vrst rst 0 PULSE(3.3 0 11u 10n 10n 4m 5m)
+Vrow row 0 3.3
+Xrst vdd rst sense 0 nfet_03v3 W=1u L=0.28u
+Xsf vdd sense sf 0 nfet_03v3 W=5u L=0.5u
+Xsel sf row col 0 nfet_03v3 W=2u L=0.28u
+* Behavioral photodiode: capacitance and leakage are assumptions, not GF data.
+Dphoto 0 sense photo
+.model photo D(Is=1e-18 N=1 Cjo=0)
+Csense sense 0 10f
+Iphoto sense 0 {iph}
+Ibias col 0 1u
+Ccol col 0 1p
+.control
+set wr_singlescale
+set wr_vecnames
+foreach light 0 1p 5p
+alter Iphoto $light
+tran 1u 1m
+wrdata simulations/pixel_$light v(sense) v(col)
+meas tran sense_start FIND v(sense) AT=20u
+meas tran sense_end FIND v(sense) AT=1m
+end
+quit
+.endc
+.end
