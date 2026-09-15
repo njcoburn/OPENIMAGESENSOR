@@ -55,7 +55,9 @@ progress=runpy.run_path(str(root/'scripts/overview-progress.py'))['render'](root
 html=html.replace('<section id="status"><h2>Current milestone</h2>', '<section id="status"><h2>First four-cycle milestone (historical baseline)</h2>')
 array_progress=runpy.run_path(str(root/'scripts/overview-array.py'))['render'](root)
 size_progress=runpy.run_path(str(root/'scripts/overview-size-study.py'))['render'](root)
-html=html.replace('<main>', '<main>'+size_progress+array_progress+progress, 1)
+camera_plan=runpy.run_path(str(root/'scripts/overview-camera-plan.py'))['render'](root)
+html=html.replace('<main>', '<main>'+camera_plan+size_progress+array_progress+progress, 1)
+if camera_plan:html=html.replace('<a href="#repeatability">', '<a href="#camera-plan">Camera plan</a><a href="#resolution-demo">Resolution demo</a><a href="#repeatability">',1)
 if size_progress:html=html.replace('<a href="#repeatability">', '<a href="#size-study">Diode sizes</a><a href="#repeatability">', 1)
 if array_progress:
  html=html.replace('<a href="#repeatability">', '<a href="#verified-array">Verified array</a><a href="#array-operation">Array scan</a><a href="#repeatability">', 1)
