@@ -17,6 +17,24 @@ These are local core checks, not a completed camera or manufacturing signoff.
 - [Simulation notes](simulations/README.md).
 - [Original gdsfactory prototype](test.py), preserved unchanged.
 
+## Labeled 20 µm pixel layout
+
+![Labeled GF180 3×3 layout showing reset, source follower, row select, photodiode, horizontal buses, column output and dummy fill](docs/assets/large-pixel-labeled.png)
+
+The larger variant has nine **20 × 20 µm photodiode junctions** at an
+80 × 50 µm pixel pitch. Labels identify one representative pixel; its three
+transistors and photodiode repeat nine times. Callouts use source coordinates
+over the original VNC screenshot. [Open the scalable image](docs/assets/large-pixel-labeled.svg).
+
+## 3×3 array schematic
+
+![Xschem schematic of nine three-transistor pixels with shared row controls and three column outputs](docs/assets/xschem-array.png)
+
+Each block contains a reset transistor, source follower, row-select transistor
+and photodiode. The rows share reset/select controls and the three columns provide
+separate outputs. This hierarchy is shared by all three diode-size variants.
+[Open the Xschem source](xschem/array_3x3.sch).
+
 ## Checkpoint and workstation setup
 
 - [Docker/VNC setup, checkpoint restore and full reproduction](docs/docker-setup.md).
