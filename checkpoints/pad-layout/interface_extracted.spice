@@ -1,0 +1,74 @@
+* NGSPICE file created from analog_pad_interface.ext - technology: gf180mcuD
+
+.subckt analog_secondary PAD CORE VSS VDD
+D0 VSS CORE diode_nd2ps_03v3 pj=26u area=12p
+X0 CORE PAD VSS ppolyf_u r_width=3.2u r_length=1u
+D1 CORE VDD diode_pd2nw_03v3 pj=26u area=12p
+.ends
+
+.subckt comp018green_esd_hbm w_n51_7356# a_1131_1121# dw_n51_n51#
+D0 dw_n51_n51# a_1131_1121# diode_nd2ps_06v0 pj=0.106m area=0.15n
+D1 dw_n51_n51# a_1131_1121# diode_nd2ps_06v0 pj=0.106m area=0.15n
+D2 a_1131_1121# w_n51_7356# diode_pd2nw_06v0 pj=0.106m area=0.15n
+D3 dw_n51_n51# a_1131_1121# diode_nd2ps_06v0 pj=0.106m area=0.15n
+D4 dw_n51_n51# a_1131_1121# diode_nd2ps_06v0 pj=0.106m area=0.15n
+D5 a_1131_1121# w_n51_7356# diode_pd2nw_06v0 pj=0.106m area=0.15n
+D6 a_1131_1121# w_n51_7356# diode_pd2nw_06v0 pj=0.106m area=0.15n
+D7 a_1131_1121# w_n51_7356# diode_pd2nw_06v0 pj=0.106m area=0.15n
+.ends
+
+.subckt GF_NI_ASIG_5P0_BASE a_13985_889# m2_828_38097# comp018green_esd_hbm_0/a_1131_1121#
++ m2_13160_36497# w_1350_806# w_2400_15668#
+Xcomp018green_esd_hbm_0 w_2400_15668# comp018green_esd_hbm_0/a_1131_1121# w_1350_806#
++ comp018green_esd_hbm
+X0 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X1 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X2 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X3 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X4 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X5 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X6 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X7 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X8 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X9 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X10 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X11 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X12 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X13 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X14 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X15 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X16 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X17 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X18 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X19 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X20 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X21 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X22 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X23 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X24 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X25 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X26 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X27 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X28 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X29 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+D0 w_1350_806# w_2400_15668# diode_nd2ps_06v0 pj=82u area=40p
+X30 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X31 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X32 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+D1 w_1350_806# w_2400_15668# diode_nd2ps_06v0 pj=82u area=40p
+X33 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+D2 w_1350_806# w_2400_15668# diode_nd2ps_06v0 pj=82u area=40p
+X34 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+X35 w_2400_15668# w_1350_806# cap_nmos_06v0 c_width=15u c_length=15u
+D3 w_1350_806# w_2400_15668# diode_nd2ps_06v0 pj=82u area=40p
+.ends
+
+.subckt gf180mcu_fd_io__asig_5p0 VDD DVSS DVDD ASIG5V VSS
+XGF_NI_ASIG_5P0_BASE_0 VSS VDD ASIG5V VSS DVSS DVDD GF_NI_ASIG_5P0_BASE
+.ends
+
+.subckt analog_pad_interface PAD CORE VDD VSS
+Xanalog_secondary_0 PAD CORE VSS VDD analog_secondary
+Xgf180mcu_fd_io__asig_5p0_0 VDD VSS VDD PAD VSS gf180mcu_fd_io__asig_5p0
+.ends
+

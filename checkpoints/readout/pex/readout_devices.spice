@@ -1,0 +1,10 @@
+* Extracted devices with wiring resistors shorted and parasitic C omitted.
+.subckt readout_devices GND BIAS COL0 COL1 COL2 OUT SEL0 SEL1 SEL2
+X0 OUT SEL0 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X1 OUT SEL2 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X2 COL0 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+X3 COL2 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+X4 OUT SEL1 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X5 BIAS BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+X6 COL1 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+.ends readout_devices

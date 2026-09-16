@@ -1,0 +1,233 @@
+{
+  "status": "resolved_for_tested_nominal_and_hot_three_frame_cases",
+  "production_configuration": {
+    "connection": "direct original supply-pad pair",
+    "abstol_A": 1e-12,
+    "reltol": 5e-05,
+    "gmin_S": 1e-17,
+    "chgtol_C": 1e-16,
+    "method": "gear",
+    "step_us": 0.1,
+    "timeout_s": 1200,
+    "ramp_us": 1000,
+    "post_ramp_reset_us": 200
+  },
+  "primary_cases": [
+    "nominal_pair_abs1e-12_step0.1us",
+    "hot_pair_abs1e-12_step0.1us"
+  ],
+  "independent_strict_cases": [
+    "adapter_nominal_pair_abs1e-14_step0.1us",
+    "adapter_hot_pair_abs1e-14_step0.1us",
+    "adapter_hot_pair_abs1e-14_step0.05us_monitor"
+  ],
+  "total_verified_scans": 5,
+  "samples_per_scan": 27,
+  "max_sampling_error_mV": 0.22057453982005093,
+  "max_frame2_to_frame3_change_uV": 0.30999999989234084,
+  "comparisons": {
+    "nominal_direct_vs_strict": {
+      "max_output_difference_uV": 0.3800000003550963,
+      "max_hold_difference_uV": 0.3799999999110071
+    },
+    "hot_direct_vs_strict": {
+      "max_output_difference_uV": 0.2299999999344493,
+      "max_hold_difference_uV": 0.2299999999344493
+    },
+    "hot_vs_finer_strict": {
+      "max_output_difference_uV": 1.1799999999340116,
+      "max_hold_difference_uV": 1.1800000003781008
+    },
+    "strict_hot_timestep_and_relative_tolerance": {
+      "max_output_difference_uV": 1.0700000001584442,
+      "max_hold_difference_uV": 1.0800000000976695
+    }
+  },
+  "strict_reference_comparisons": {
+    "nominal_pair_abs1e-12_step0.1us": {
+      "max_output_difference_uV": 0.3400000001541059,
+      "max_hold_difference_uV": 0.3399999999320613,
+      "source": "build/clamp-imaging/matched-control/scan/typical_27C_3.3V_diode_typical_rc1_rb1_ramp1000us_C1p_step0.1us"
+    },
+    "hot_pair_abs1e-12_step0.1us": {
+      "max_output_difference_uV": 0.29999999995311555,
+      "max_hold_difference_uV": 0.29999999995311555,
+      "source": "build/clamp-imaging/matched-control/scan/typical_125C_3.0V_diode_ff_rc1_rb1_ramp1000us_C1p_step0.1us"
+    }
+  },
+  "interface_monitor": {
+    "max_rail_difference_V": 0.0,
+    "max_rail_difference_with_saved_precision_bound_V": 1e-08,
+    "max_internal_current_balance_error_A": 0.0,
+    "max_net_interface_power_W": 0.0,
+    "post_startup_max_clamp_gate_V": 3.73387237e-09,
+    "pass": true
+  },
+  "scope": "Typical MOS, nominal 27C/3.3V and hot 125C/3.0V diode_ff; extracted core/local protection, foundry supply clamps, ideal rails and generic finite-transition ADC model. Not ESD, full power-network, or full PVT qualification.",
+  "unchanged_gds_sha256": {
+    "checkpoints/integrated/sensor_3x3.gds": "8a2183fd85d5a6b81bcaceb10eeb00f906018574902c4bdfe2199a5c41b222b7",
+    "checkpoints/pad-layout/analog_pad_interface.gds": "3517bdda5385d7037ce8158520db6ab9d38e220ffc478867a3a5a6addcff3ecf"
+  },
+  "diagnostic_status": {
+    "no-uic": {
+      "status": "timeout",
+      "wall_s": 600.091089338006
+    },
+    "abstol5e13": {
+      "status": "timeout",
+      "wall_s": 600.1022380899813
+    },
+    "iterations": {
+      "status": "timeout",
+      "wall_s": 600.0775577159948
+    },
+    "isolated": {
+      "status": "complete",
+      "wall_s": 46.57985526198172
+    },
+    "euler": {
+      "status": "timeout",
+      "wall_s": 600.0466112110007
+    },
+    "trap": {
+      "status": "failed",
+      "wall_s": 307.8554623980017
+    },
+    "abstol11": {
+      "status": "complete",
+      "wall_s": 590.4036890220013
+    },
+    "adapter": {
+      "status": "complete",
+      "wall_s": 568.7455903739901
+    },
+    "board": {
+      "status": "timeout",
+      "wall_s": 600.0619765979936
+    },
+    "klu12": {
+      "status": "failed",
+      "wall_s": 18.63006582800881
+    },
+    "saved": {
+      "status": "timeout",
+      "wall_s": 600.0095216560003
+    },
+    "pivot": {
+      "status": "timeout",
+      "wall_s": 600.0802319800132
+    },
+    "abstol12": {
+      "status": "timeout",
+      "wall_s": 600.1153863600048
+    },
+    "klu": {
+      "status": "failed",
+      "wall_s": 12.377855261991499
+    },
+    "no-bypass": {
+      "status": "timeout",
+      "wall_s": 600.1265435869864
+    },
+    "gmin15": {
+      "status": "timeout",
+      "wall_s": 600.0690725619788
+    },
+    "probe": {
+      "status": "timeout",
+      "wall_s": 600.1543239040184
+    }
+  },
+  "unfinished_extra_refinement": {
+    "status": "stopped_unfinished",
+    "error": "Simulation failed: /foss/designs/build/clamp-frames/hot_pair_abs1e-12_step0.05us_rel5e-05/scan/typical_125C_3.0V_diode_ff_rc1_rb1_ramp1000us_C1p_step0.05us/run.log",
+    "screen_pass": false,
+    "corner": "typical",
+    "temp_C": 125,
+    "supply_V": 3.0,
+    "diode": "diode_ff",
+    "rcol_scale": 1,
+    "rbuf_scale": 1,
+    "ramp_us": 1000,
+    "external_bias_C_pF": 1,
+    "step_us": 0.05,
+    "scan_delay_s": 0.0012,
+    "label": "hot_pair_abs1e-12_step0.05us_rel5e-05",
+    "clamped": true,
+    "adapter": false,
+    "monitor": false,
+    "reltol": 5e-05,
+    "abstol_A": 1e-12,
+    "runtime_s": {
+      "scan/typical_125C_3.0V_diode_ff_rc1_rb1_ramp1000us_C1p_step0.05us": 548.6177355950058
+    },
+    "original_status": "failed",
+    "stopped_by_agent": true,
+    "stop_reason": "Redundant direct fine-step experiment stopped after nominal/hot direct runs, strict independent runs, and the stricter independent 50ns run all passed. No result is inferred for this unfinished run."
+  },
+  "finite_source_port_diagnostic": {
+    "cases": {
+      "27C_R1": {
+        "source_R_ohm": 1,
+        "temp_C": 27,
+        "dc_rail_difference_V": 1.000088900582341e-12,
+        "dc_source_current_difference_A": 9.99644811372491e-13,
+        "max_complex_rail_difference_V": 7.327539942102729e-13,
+        "max_relative_complex_source_current_difference": 0.0026195890163679234,
+        "max_complex_source_current_difference_A": 7.327539975983734e-13,
+        "max_mixed_current_error_ratio": 0.3047343796067983,
+        "frequency_count": 181,
+        "frequency_min_Hz": 1.0,
+        "frequency_max_Hz": 999999999.9999859,
+        "pass": true
+      },
+      "27C_R1000": {
+        "source_R_ohm": 1000,
+        "temp_C": 27,
+        "dc_rail_difference_V": 4.168974943041803e-09,
+        "dc_source_current_difference_A": 4.168975061003e-12,
+        "max_complex_rail_difference_V": 4.364004494292052e-09,
+        "max_relative_complex_source_current_difference": 0.010834902570896653,
+        "max_complex_source_current_difference_A": 4.364004520546704e-12,
+        "max_mixed_current_error_ratio": 1.261195562055155,
+        "frequency_count": 181,
+        "frequency_min_Hz": 1.0,
+        "frequency_max_Hz": 999999999.9999859,
+        "pass": false
+      },
+      "125C_R1": {
+        "source_R_ohm": 1,
+        "temp_C": 125,
+        "dc_rail_difference_V": 4.440892098500626e-13,
+        "dc_source_current_difference_A": 4.440892098500626e-13,
+        "max_complex_rail_difference_V": 7.557303921231064e-13,
+        "max_relative_complex_source_current_difference": 9.274633752224236e-06,
+        "max_complex_source_current_difference_A": 7.557303921231064e-13,
+        "max_mixed_current_error_ratio": 0.12522585918288331,
+        "frequency_count": 181,
+        "frequency_min_Hz": 1.0,
+        "frequency_max_Hz": 999999999.9999859,
+        "pass": true
+      },
+      "125C_R1000": {
+        "source_R_ohm": 1000,
+        "temp_C": 125,
+        "dc_rail_difference_V": 5.621375809283791e-09,
+        "dc_source_current_difference_A": 5.621375760711533e-12,
+        "max_complex_rail_difference_V": 4.67365564569487e-09,
+        "max_relative_complex_source_current_difference": 0.00011943521343190393,
+        "max_complex_source_current_difference_A": 4.673655614058911e-12,
+        "max_mixed_current_error_ratio": 1.6128412086943982,
+        "frequency_count": 181,
+        "frequency_min_Hz": 1.0,
+        "frequency_max_Hz": 999999999.9999859,
+        "pass": false
+      }
+    },
+    "current_comparison_tolerance": {
+      "absolute_A": 1e-12,
+      "relative": 1e-05
+    },
+    "scope": "Exact algebraic port equivalence check, full clamp models, 1/1000ohm source; no decoupling hiding clamp admittance."
+  }
+}

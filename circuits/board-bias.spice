@@ -1,0 +1,8 @@
+* External PCB resistors; existing on-chip diode-connected MOS devices set currents.
+* Cext is an assumed pad/trace load, not extracted pad/ESD capacitance.
+.subckt board_bias VDD GND BIAS PREF params: RCOL=5.1meg RBUF=49.9k CEXT=5p
+Rcolumn VDD BIAS {RCOL}
+Rbuffer PREF GND {RBUF}
+Ccolumn BIAS GND {CEXT}
+Cbuffer PREF GND {CEXT}
+.ends board_bias

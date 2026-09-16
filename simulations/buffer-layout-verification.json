@@ -1,0 +1,7 @@
+{
+  "magic_drc_count": 0,
+  "klayout_drc_count": 0,
+  "lvs_unique_match": true,
+  "gds_sha256": "5e98fa06f7acb3346f29b88ca2010463cc845926be22e9bdcbccf2b5518a10af",
+  "scope": "Standalone three-PMOS buffer, including fill; not physically connected to readout or pads. Buffer wiring parasitics not yet simulated."
+}

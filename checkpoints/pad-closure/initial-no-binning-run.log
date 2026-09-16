@@ -1,0 +1,14 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: supply-pad clamp pair: normal-voltage characterization
+
+Error on line 1646 or its substitute:
+  m.xvdd.x2.m0 xvdd.n4 xvdd.n6 vp vp pfet_06v0 ad=    3.120000000000000e-11     as=    5.280000000000000e-11     delvto=   -0.000000000000000e+00     l=    7.000000000000000e-07     m=    1.000000000000000e+00     mulu0=    1.000000000000000e+00     nf=    2.000000000000000e+00     nrd=    2.167000000000000e-03     nrs=    3.667000000000000e-03     pd=    1.210400000000000e-04     ps=    2.417600000000000e-04     sa=    4.400000000000000e-07     sb=    4.400000000000000e-07     sd=    5.200000000000000e-07     w=    1.200000000000000e-04   
+could not find a valid modelname
+    Simulation interrupted due to error!
+
+Error: incomplete or empty netlist
+       or no ".plot", ".print", or ".fourier" lines in batch mode;
+no simulations run!

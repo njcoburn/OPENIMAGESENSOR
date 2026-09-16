@@ -1,0 +1,145 @@
+{
+  "raw_netlist_sha256": "302252b4cc6aaf63ac396f71babdd36b54c665352d8c806d75def30f3e98986a",
+  "resistors": 524,
+  "raw_capacitors": 1050160,
+  "retained_nodes_including_ground": 412,
+  "eliminated_capacitive_nodes": 143268,
+  "output_capacitors": 281,
+  "max_schur_residual_fF": 1.304512053934559e-15,
+  "random_voltage_charge_error_fC": 1.6058265828178264e-12,
+  "random_voltage_energy_error_fJ_times2": 4.547473508864641e-13,
+  "min_capacitance_eigenvalue_fF": -1.2815340140063242e-13,
+  "max_capacitance_matrix_row_error_fF": 3.989901551540093e-06,
+  "node_map": {
+    "02": {
+      "sense": "n389",
+      "anode": "n247",
+      "sf": "n400"
+    },
+    "12": {
+      "sense": "n393",
+      "anode": "n247",
+      "sf": "n402"
+    },
+    "22": {
+      "sense": "n397",
+      "anode": "n247",
+      "sf": "n404"
+    },
+    "00": {
+      "sense": "n371",
+      "anode": "n243",
+      "sf": "n406"
+    },
+    "01": {
+      "sense": "n359",
+      "anode": "n245",
+      "sf": "n382"
+    },
+    "10": {
+      "sense": "n375",
+      "anode": "n243",
+      "sf": "n408"
+    },
+    "11": {
+      "sense": "n363",
+      "anode": "n245",
+      "sf": "n384"
+    },
+    "20": {
+      "sense": "n379",
+      "anode": "n243",
+      "sf": "n410"
+    },
+    "21": {
+      "sense": "n367",
+      "anode": "n245",
+      "sf": "n386"
+    }
+  },
+  "physical_devices": {
+    "02": {
+      "diode": "D0",
+      "reset": "X26",
+      "source_follower": "X21",
+      "select": "X20"
+    },
+    "12": {
+      "diode": "D1",
+      "reset": "X33",
+      "source_follower": "X31",
+      "select": "X29"
+    },
+    "22": {
+      "diode": "D2",
+      "reset": "X2",
+      "source_follower": "X0",
+      "select": "X35"
+    },
+    "00": {
+      "diode": "D3",
+      "reset": "X9",
+      "source_follower": "X7",
+      "select": "X5"
+    },
+    "01": {
+      "diode": "D4",
+      "reset": "X4",
+      "source_follower": "X19",
+      "select": "X14"
+    },
+    "10": {
+      "diode": "D5",
+      "reset": "X16",
+      "source_follower": "X13",
+      "select": "X12"
+    },
+    "11": {
+      "diode": "D6",
+      "reset": "X10",
+      "source_follower": "X28",
+      "select": "X24"
+    },
+    "20": {
+      "diode": "D7",
+      "reset": "X27",
+      "source_follower": "X23",
+      "select": "X17"
+    },
+    "21": {
+      "diode": "D8",
+      "reset": "X18",
+      "source_follower": "X34",
+      "select": "X32"
+    }
+  },
+  "method": "Schur complement; floating fill at zero net charge. C below 1e-6 fF omitted with bounded row-sum error.",
+  "shunt_placement_approximation": {
+    "BIAS": {
+      "negative_shunts_fF": [
+        [
+          "BIAS.n0",
+          "GND",
+          -4.17931
+        ]
+      ],
+      "signed_sum_fF": 45.71564,
+      "placement": "net port",
+      "alternate_node": "n7",
+      "resistive_distance_ohm": 38.314
+    },
+    "OUT": {
+      "negative_shunts_fF": [
+        [
+          "OUT.n0",
+          "GND",
+          -3.3208200000000003
+        ]
+      ],
+      "signed_sum_fF": 85.81705,
+      "placement": "net port",
+      "alternate_node": "n262",
+      "resistive_distance_ohm": 209.995
+    }
+  }
+}

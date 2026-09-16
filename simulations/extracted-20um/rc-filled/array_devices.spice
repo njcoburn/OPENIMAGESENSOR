@@ -1,0 +1,39 @@
+* Extracted devices with wiring resistors shorted and parasitic C omitted.
+.subckt array_devices COL0 COL1 COL2 GND VRESET VDD RST0 ROW0 RST1 ROW1 RST2 ROW2
+X0 VRESET RST0 s01 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D0 GND s01 diode_nd2ps_03v3 pj=80u area=0.4n
+X1 VRESET RST1 s11 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X2 f10 ROW1 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D1 GND s11 diode_nd2ps_03v3 pj=80u area=0.4n
+X3 VDD s02 f02 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D2 GND s22 diode_nd2ps_03v3 pj=80u area=0.4n
+X4 f00 ROW0 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X5 VDD s10 f10 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X6 VRESET RST2 s21 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X7 VRESET RST1 s10 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X8 f20 ROW2 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X9 VDD s20 f20 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D3 GND s02 diode_nd2ps_03v3 pj=80u area=0.4n
+X10 f11 ROW1 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X11 f01 ROW0 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X12 VRESET RST0 s02 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X13 VRESET RST2 s20 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D4 GND s12 diode_nd2ps_03v3 pj=80u area=0.4n
+X14 VDD s00 f00 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X15 VDD s11 f11 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X16 f12 ROW1 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X17 VDD s12 f12 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D5 GND s20 diode_nd2ps_03v3 pj=80u area=0.4n
+X18 f21 ROW2 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X19 VRESET RST1 s12 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D6 GND s00 diode_nd2ps_03v3 pj=80u area=0.4n
+X20 VDD s21 f21 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D7 GND s21 diode_nd2ps_03v3 pj=80u area=0.4n
+X21 f22 ROW2 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D8 GND s10 diode_nd2ps_03v3 pj=80u area=0.4n
+X22 VDD s01 f01 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X23 VDD s22 f22 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X24 VRESET RST0 s00 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X25 VRESET RST2 s22 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X26 f02 ROW0 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends array_devices

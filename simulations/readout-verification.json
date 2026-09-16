@@ -1,0 +1,7 @@
+{
+  "magic_drc_count": 0,
+  "klayout_drc_count": 0,
+  "lvs_unique_match": true,
+  "gds_sha256": "ddb8978ff451a5dc4eb7f5fc63ebd47e7fab15da96ebd14ae34f3f519deab916",
+  "scope": "Standalone bias/mux block, 7 NMOS; includes density fill. Not connected physically to array. No pad ring, output buffer or readout RC extraction yet."
+}

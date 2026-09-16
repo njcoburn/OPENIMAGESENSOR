@@ -1,0 +1,33 @@
+{
+  "cases": {
+    "nominal": {
+      "temp_C": 27,
+      "supply_V": 3.3,
+      "max_active_core_supply_drop_mV": 2.567318279999675,
+      "max_active_ground_rise_mV": 1.43835837,
+      "max_source_current_mA": 0.43208196000000004,
+      "startup_supply_error_pct": 0.0388989133636386,
+      "rail_screen_pass": true
+    },
+    "hot": {
+      "temp_C": 125,
+      "supply_V": 3.0,
+      "max_active_core_supply_drop_mV": 2.450788780000046,
+      "max_active_ground_rise_mV": 1.37297884,
+      "max_source_current_mA": 0.393137526,
+      "startup_supply_error_pct": 0.038904154600005736,
+      "rail_screen_pass": true
+    }
+  },
+  "lead_R_ohm": {
+    "VSS": 7.19454,
+    "VDD": 5.14704
+  },
+  "clamps": 10,
+  "filler_instances": 125,
+  "scope": "Installed schematic models for ring macro devices plus Magic RC from isolated actual connecting wires. Ring metal resistance and full assembly coupling are NOT included in this test. Substrate capacitances of the isolated wires reference core ground. 33k core load plus 100uA load pulses; not a camera-image scan.",
+  "adapter": false,
+  "practical_tolerance": true,
+  "fine_step": false,
+  "source_model_sha256": "710732fd6a69e165caa2c29e4cdf81b11af41da32705fcd860b7ecfb09630dd1"
+}

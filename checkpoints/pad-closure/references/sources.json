@@ -1,0 +1,10 @@
+{
+  "wafer-space-precheck.py": {
+    "url": "https://raw.githubusercontent.com/wafer-space/gf180mcu-precheck/main/precheck.py",
+    "sha256": "ffdc8da31a2ec69eee95d18190a044957d148d7ed217ab553726e0c2825cc4d8"
+  },
+  "wafer-space-template.yaml": {
+    "url": "https://raw.githubusercontent.com/wafer-space/gf180mcu-project-template/main/librelane/config.yaml",
+    "sha256": "4ef7336d0a945461dac30f068e225a021dd5755eb490e03179bfbf81dbab2639"
+  }
+}

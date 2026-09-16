@@ -1,0 +1,65 @@
+{
+  "cases": {
+    "27C_R1": {
+      "source_R_ohm": 1,
+      "temp_C": 27,
+      "dc_rail_difference_V": 1.000088900582341e-12,
+      "dc_source_current_difference_A": 9.99644811372491e-13,
+      "max_complex_rail_difference_V": 7.327539942102729e-13,
+      "max_relative_complex_source_current_difference": 0.0026195890163679234,
+      "max_complex_source_current_difference_A": 7.327539975983734e-13,
+      "max_mixed_current_error_ratio": 0.3047343796067983,
+      "frequency_count": 181,
+      "frequency_min_Hz": 1.0,
+      "frequency_max_Hz": 999999999.9999859,
+      "pass": true
+    },
+    "27C_R1000": {
+      "source_R_ohm": 1000,
+      "temp_C": 27,
+      "dc_rail_difference_V": 4.168974943041803e-09,
+      "dc_source_current_difference_A": 4.168975061003e-12,
+      "max_complex_rail_difference_V": 4.364004494292052e-09,
+      "max_relative_complex_source_current_difference": 0.010834902570896653,
+      "max_complex_source_current_difference_A": 4.364004520546704e-12,
+      "max_mixed_current_error_ratio": 1.261195562055155,
+      "frequency_count": 181,
+      "frequency_min_Hz": 1.0,
+      "frequency_max_Hz": 999999999.9999859,
+      "pass": false
+    },
+    "125C_R1": {
+      "source_R_ohm": 1,
+      "temp_C": 125,
+      "dc_rail_difference_V": 4.440892098500626e-13,
+      "dc_source_current_difference_A": 4.440892098500626e-13,
+      "max_complex_rail_difference_V": 7.557303921231064e-13,
+      "max_relative_complex_source_current_difference": 9.274633752224236e-06,
+      "max_complex_source_current_difference_A": 7.557303921231064e-13,
+      "max_mixed_current_error_ratio": 0.12522585918288331,
+      "frequency_count": 181,
+      "frequency_min_Hz": 1.0,
+      "frequency_max_Hz": 999999999.9999859,
+      "pass": true
+    },
+    "125C_R1000": {
+      "source_R_ohm": 1000,
+      "temp_C": 125,
+      "dc_rail_difference_V": 5.621375809283791e-09,
+      "dc_source_current_difference_A": 5.621375760711533e-12,
+      "max_complex_rail_difference_V": 4.67365564569487e-09,
+      "max_relative_complex_source_current_difference": 0.00011943521343190393,
+      "max_complex_source_current_difference_A": 4.673655614058911e-12,
+      "max_mixed_current_error_ratio": 1.6128412086943982,
+      "frequency_count": 181,
+      "frequency_min_Hz": 1.0,
+      "frequency_max_Hz": 999999999.9999859,
+      "pass": false
+    }
+  },
+  "current_comparison_tolerance": {
+    "absolute_A": 1e-12,
+    "relative": 1e-05
+  },
+  "scope": "Exact algebraic port equivalence check, full clamp models, 1/1000ohm source; no decoupling hiding clamp admittance."
+}

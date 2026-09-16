@@ -1,0 +1,210 @@
+{
+  "ss_-40C_20uA_0.1us_probe_sense": {
+    "status": "simulation_failed",
+    "error": "/foss/designs/build/buffer-hardening/ss_-40C_20uA_0.1us_probe_sense/20uA_100pF_sampled5us",
+    "corner": "ss",
+    "temp_C": -40,
+    "precharge": false,
+    "bias_reference_uA": 20
+  },
+  "ss_-40C_20uA_0.1us_startup_reset": {
+    "bias_reference_uA": 20,
+    "board_capacitance_pF": 100,
+    "adc_sampling": true,
+    "acquisition_us": 5,
+    "samples": [
+      {
+        "row": 0,
+        "col": 0,
+        "input_V": 0.765085929,
+        "output_V": 2.24563586,
+        "static_expected_V": 2.245709963219855,
+        "tracking_error_mV": -0.07410321985501511,
+        "hold_error_mV": -0.07445321985510844
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "input_V": 0.604928776,
+        "output_V": 2.12260919,
+        "static_expected_V": 2.12260357752188,
+        "tracking_error_mV": 0.005612478120031739,
+        "hold_error_mV": 0.005632478119910189
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "input_V": 0.2602648690000005,
+        "output_V": 1.8546270800000002,
+        "static_expected_V": 1.8544718222682703,
+        "tracking_error_mV": 0.15525773172986312,
+        "hold_error_mV": 0.15597773172992824
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "input_V": 0.282095667000001,
+        "output_V": 1.8717304700000006,
+        "static_expected_V": 1.8715762277843708,
+        "tracking_error_mV": 0.15424221562976292,
+        "hold_error_mV": 0.1549522156298888
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "input_V": 0.765537862,
+        "output_V": 2.24598136,
+        "static_expected_V": 2.24605591567169,
+        "tracking_error_mV": -0.07455567169012411,
+        "hold_error_mV": -0.07490567169021745
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "input_V": 0.6032282840000004,
+        "output_V": 2.12129648,
+        "static_expected_V": 2.1212911602983002,
+        "tracking_error_mV": 0.005319701699590951,
+        "hold_error_mV": 0.0053397016999134905
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "input_V": 0.608471205,
+        "output_V": 2.12534283,
+        "static_expected_V": 2.125337231778,
+        "tracking_error_mV": 0.005598222000191555,
+        "hold_error_mV": 0.005618222000070006
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "input_V": 0.269175096,
+        "output_V": 1.86161034,
+        "static_expected_V": 1.86145484997272,
+        "tracking_error_mV": 0.15549002727999195,
+        "hold_error_mV": 0.15620002728011784
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "input_V": 0.763368745,
+        "output_V": 2.24432125,
+        "static_expected_V": 2.244395416953375,
+        "tracking_error_mV": -0.07416695337481016,
+        "hold_error_mV": -0.07450695337496427
+      }
+    ],
+    "max_tracking_error_mV": 0.15549002727999195,
+    "mean_total_VDD_power_uW": 133.98686557838738,
+    "testbench_sha256": "41a140847d64ed0f9898037e239ae4d6f4cd7450dc66f1d5d0c23ebf8b950978",
+    "status": "complete",
+    "corner": "ss",
+    "temp_C": -40,
+    "precharge": false,
+    "step_us": 0.1,
+    "diode": "diode_typical",
+    "max_hold_error_mV": 0.15620002728011784,
+    "brightness_order_ok": true
+  },
+  "ss_-40C_40uA_0.1us_startup_reset": {
+    "bias_reference_uA": 40,
+    "board_capacitance_pF": 100,
+    "adc_sampling": true,
+    "acquisition_us": 5,
+    "samples": [
+      {
+        "row": 0,
+        "col": 0,
+        "input_V": 0.765085059,
+        "output_V": 2.29844891,
+        "static_expected_V": 2.298432117994065,
+        "tracking_error_mV": 0.016792005934629373,
+        "hold_error_mV": 0.016912005934788255
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "input_V": 0.604928164,
+        "output_V": 2.17574972,
+        "static_expected_V": 2.1756985886062004,
+        "tracking_error_mV": 0.051131393799863645,
+        "hold_error_mV": 0.05148139379951289
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "input_V": 0.2602645980000005,
+        "output_V": 1.9083784300000004,
+        "static_expected_V": 1.9082503288659003,
+        "tracking_error_mV": 0.12810113410011148,
+        "hold_error_mV": 0.12897113410015315
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "input_V": 0.282095374000001,
+        "output_V": 1.9254440200000007,
+        "static_expected_V": 1.9253155661830708,
+        "tracking_error_mV": 0.12845381692994096,
+        "hold_error_mV": 0.12932381692998263
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "input_V": 0.765536953,
+        "output_V": 2.29879364,
+        "static_expected_V": 2.298776928932355,
+        "tracking_error_mV": 0.016711067644781252,
+        "hold_error_mV": 0.016831067644940134
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "input_V": 0.6032276570000005,
+        "output_V": 2.1744407000000003,
+        "static_expected_V": 2.1743899055186255,
+        "tracking_error_mV": 0.05079448137479403,
+        "hold_error_mV": 0.05114448137488736
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "input_V": 0.608470592,
+        "output_V": 2.17847595,
+        "static_expected_V": 2.17842442877888,
+        "tracking_error_mV": 0.05152122112006552,
+        "hold_error_mV": 0.051881221120098076
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "input_V": 0.269174819,
+        "output_V": 1.91534613,
+        "static_expected_V": 1.91521743999782,
+        "tracking_error_mV": 0.12869000218018734,
+        "hold_error_mV": 0.12956000218000696
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "input_V": 0.763367774,
+        "output_V": 2.29713833,
+        "static_expected_V": 2.29712171253375,
+        "tracking_error_mV": 0.01661746625014615,
+        "hold_error_mV": 0.016737466249860944
+      }
+    ],
+    "max_tracking_error_mV": 0.12869000218018734,
+    "mean_total_VDD_power_uW": 265.780716033165,
+    "testbench_sha256": "9a4c1e881e879092953b42d1929d32f64e2884d7e7777e66d2fb68dc91c5478a",
+    "status": "complete",
+    "corner": "ss",
+    "temp_C": -40,
+    "precharge": false,
+    "step_us": 0.1,
+    "diode": "diode_typical",
+    "max_hold_error_mV": 0.12956000218000696,
+    "brightness_order_ok": true
+  }
+}

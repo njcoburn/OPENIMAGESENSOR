@@ -1,0 +1,7 @@
+* Single-domain functional pad interface, no supply clamp or complete pad ring.
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice
+.include /foss/designs/circuits/analog-secondary.spice
+.subckt analog_pad_interface PAD CORE VDD VSS
+Xpad PAD VDD VSS VDD VSS gf180mcu_fd_io__asig_5p0
+Xsecondary PAD CORE VDD VSS analog_secondary
+.ends analog_pad_interface

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="490" viewBox="0 0 1120 490" role="img" aria-labelledby="title desc">
+<title id="title">Candidate 3.3 V supply-pad arrangement</title><desc id="desc">A board soft-start supply connects through a VDD pad to the analog rail. The VDD and ground pads each contain a rail clamp. Analog pads and local protection use the same rails. This is a circuit proposal, not a routed or ESD-qualified pad ring.</desc>
+<rect width="1120" height="490" rx="12" fill="#f2f6f7"/>
+<g font-family="sans-serif" fill="#183541"><text x="35" y="40" font-size="24" font-weight="bold">One 3.3 V analog domain • candidate arrangement</text>
+<rect x="30" y="95" width="220" height="140" rx="10" fill="white" stroke="#146379" stroke-width="2"/>
+<text x="50" y="130" font-size="19">Board supply</text><text x="50" y="163" font-size="17">1 ms soft-start candidate</text><text x="50" y="193" font-size="17">Then 200 µs reset hold</text>
+<path d="M250 150 H320 M430 150 H1050 M250 380 H1050" fill="none" stroke="#146379" stroke-width="5"/>
+<rect x="320" y="115" width="110" height="70" fill="#d1e7ec" stroke="#146379" stroke-width="2"/><text x="332" y="156" font-size="18">VDD pad</text>
+<rect x="320" y="345" width="110" height="70" fill="#d1e7ec" stroke="#146379" stroke-width="2"/><text x="332" y="386" font-size="18">VSS pad</text>
+<path d="M520 150 V220 M520 310 V380 M695 150 V220 M695 310 V380" stroke="#146379" stroke-width="3" fill="none"/>
+<rect x="460" y="220" width="120" height="90" fill="white" stroke="#146379" stroke-width="2"/><text x="474" y="251" font-size="17">Clamp in</text><text x="474" y="278" font-size="17">VDD pad</text>
+<rect x="635" y="220" width="120" height="90" fill="white" stroke="#146379" stroke-width="2"/><text x="649" y="251" font-size="17">Clamp in</text><text x="649" y="278" font-size="17">VSS pad</text>
+<path d="M925 150 V215 M925 315 V380" stroke="#146379" stroke-width="3" fill="none"/>
+<rect x="825" y="215" width="245" height="100" fill="#e4eedb" stroke="#527843" stroke-width="2"/><text x="840" y="247" font-size="17">Sensor + analog pads</text><text x="840" y="278" font-size="17">+ local protection</text>
+<text x="970" y="130" font-size="17">AVDD</text><text x="970" y="408" font-size="17">AVSS</text>
+<text x="35" y="455" font-size="17">Circuit proposal: ring placement, rail impedance and thin-oxide ESD qualification remain to be completed.</text></g></svg>

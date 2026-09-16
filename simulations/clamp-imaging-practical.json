@@ -1,0 +1,225 @@
+{
+  "cases": {
+    "matched-control/typical_125C_3.0V_diode_ff_rc1_rb1_ramp1000us_C1p_step0.1us": {
+      "status": "complete",
+      "samples": [
+        {
+          "row": 0,
+          "col": 0,
+          "input_V": 1.02753724,
+          "output_V": 2.21000524,
+          "hold_error_mV": 0.018959580600164117,
+          "tracking_error_mV": 0.018859580600327774
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "input_V": 0.807340963,
+          "output_V": 2.04306638,
+          "hold_error_mV": 0.09151282765484936,
+          "tracking_error_mV": 0.09107282765485891
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "input_V": 0.390212005,
+          "output_V": 1.72138824,
+          "hold_error_mV": 0.2192179645250647,
+          "tracking_error_mV": 0.21817796452516802
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "input_V": 0.4187281560000012,
+          "output_V": 1.7435920200000008,
+          "hold_error_mV": 0.21942997171997547,
+          "tracking_error_mV": 0.21838997171985675
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "input_V": 1.02631907,
+          "output_V": 2.20908738,
+          "hold_error_mV": 0.01890149455041623,
+          "tracking_error_mV": 0.018811494550519114
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "input_V": 0.8043255750000006,
+          "output_V": 2.0407637200000006,
+          "hold_error_mV": 0.09067767287529449,
+          "tracking_error_mV": 0.09023767287530404
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "input_V": 0.812916882,
+          "output_V": 2.04732183,
+          "hold_error_mV": 0.09154860548976629,
+          "tracking_error_mV": 0.09109860548983661
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "input_V": 0.399699241,
+          "output_V": 1.72877982,
+          "hold_error_mV": 0.22061712438015135,
+          "tracking_error_mV": 0.21957712438003263
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "input_V": 1.02429451,
+          "output_V": 2.20756201,
+          "hold_error_mV": 0.019059352250216932,
+          "tracking_error_mV": 0.018969352250319815
+        }
+      ],
+      "max_hold_error_mV": 0.22061712438015135,
+      "max_tracking_error_mV": 0.21957712438003263,
+      "brightness_order_ok": true,
+      "mean_column_reference_uA": 0.4683004076356206,
+      "mean_buffer_reference_uA": 34.90518726813781,
+      "startup_reference_relative_error": 2.293461666358354e-06,
+      "mean_VDD_power_uW": 211.21410985837963,
+      "screen_pass": true,
+      "corner": "typical",
+      "temp_C": 125,
+      "supply_V": 3.0,
+      "diode": "diode_ff",
+      "rcol_scale": 1,
+      "rbuf_scale": 1,
+      "ramp_us": 1000,
+      "external_bias_C_pF": 1,
+      "step_us": 0.1,
+      "scan_delay_s": 0.0012
+    },
+    "matched-control/typical_27C_3.3V_diode_typical_rc1_rb1_ramp1000us_C1p_step0.1us": {
+      "status": "complete",
+      "samples": [
+        {
+          "row": 0,
+          "col": 0,
+          "input_V": 0.991733584,
+          "output_V": 2.32208109,
+          "hold_error_mV": 0.006866699759910944,
+          "tracking_error_mV": 0.0068266997601540425
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "input_V": 0.794604056,
+          "output_V": 2.16985743,
+          "hold_error_mV": 0.059390185240371096,
+          "tracking_error_mV": 0.059040185240277765
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "input_V": 0.406802809,
+          "output_V": 1.86617965,
+          "hold_error_mV": 0.1594391287649266,
+          "tracking_error_mV": 0.15850912876502754
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "input_V": 0.431303690000001,
+          "output_V": 1.8855238200000008,
+          "hold_error_mV": 0.1594560734001771,
+          "tracking_error_mV": 0.15852607340005598
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "input_V": 0.991301702,
+          "output_V": 2.32174917,
+          "hold_error_mV": 0.00684153853036662,
+          "tracking_error_mV": 0.0068015385301656295
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "input_V": 0.7922320780000004,
+          "output_V": 2.1680153300000002,
+          "hold_error_mV": 0.05887232001988707,
+          "tracking_error_mV": 0.05852232001979374
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "input_V": 0.798746409,
+          "output_V": 2.17307309,
+          "hold_error_mV": 0.059468530334783054,
+          "tracking_error_mV": 0.05911853033468972
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "input_V": 0.415186149,
+          "output_V": 1.87280164,
+          "hold_error_mV": 0.16036558066012674,
+          "tracking_error_mV": 0.1594255806600664
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "input_V": 0.990603044,
+          "output_V": 2.32121228,
+          "hold_error_mV": 0.006859731660036061,
+          "tracking_error_mV": 0.00681973166027916
+        }
+      ],
+      "max_hold_error_mV": 0.16036558066012674,
+      "max_tracking_error_mV": 0.1594255806600664,
+      "brightness_order_ok": true,
+      "mean_column_reference_uA": 0.507713837859459,
+      "mean_buffer_reference_uA": 39.76191877279485,
+      "startup_reference_relative_error": 2.1353360701859003e-06,
+      "mean_VDD_power_uW": 264.75560633264047,
+      "screen_pass": true,
+      "corner": "typical",
+      "temp_C": 27,
+      "supply_V": 3.3,
+      "diode": "diode_typical",
+      "rcol_scale": 1,
+      "rbuf_scale": 1,
+      "ramp_us": 1000,
+      "external_bias_C_pF": 1,
+      "step_us": 0.1,
+      "scan_delay_s": 0.0012
+    },
+    "with-clamps/typical_27C_3.3V_diode_typical_rc1_rb1_ramp1000us_C1p_step0.1us": {
+      "status": "failed",
+      "error": "600s timeout: /foss/designs/build/clamp-imaging-practical/with-clamps/scan/typical_27C_3.3V_diode_typical_rc1_rb1_ramp1000us_C1p_step0.1us",
+      "screen_pass": false,
+      "corner": "typical",
+      "temp_C": 27,
+      "supply_V": 3.3,
+      "diode": "diode_typical",
+      "rcol_scale": 1,
+      "rbuf_scale": 1,
+      "ramp_us": 1000,
+      "external_bias_C_pF": 1,
+      "step_us": 0.1,
+      "scan_delay_s": 0.0012
+    },
+    "with-clamps/typical_125C_3.0V_diode_ff_rc1_rb1_ramp1000us_C1p_step0.1us": {
+      "status": "failed",
+      "error": "600s timeout: /foss/designs/build/clamp-imaging-practical/with-clamps/scan/typical_125C_3.0V_diode_ff_rc1_rb1_ramp1000us_C1p_step0.1us",
+      "screen_pass": false,
+      "corner": "typical",
+      "temp_C": 125,
+      "supply_V": 3.0,
+      "diode": "diode_ff",
+      "rcol_scale": 1,
+      "rbuf_scale": 1,
+      "ramp_us": 1000,
+      "external_bias_C_pF": 1,
+      "step_us": 0.1,
+      "scan_delay_s": 0.0012
+    }
+  },
+  "scope": "Two matched camera conditions with/without foundry clamp pair. HSPICE compatibility and width-per-finger binning. 1ms ideal supply ramp, 200us post-ramp reset hold; primary/local protection and extracted core retained. Typical MOS-cap section; res_ss. Finite source-impedance tests are separate."
+}

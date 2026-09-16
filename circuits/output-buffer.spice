@@ -1,0 +1,7 @@
+* PMOS source follower for the low-voltage mux output; non-unity gain, shifted output.
+* Ideal external reference current is supplied at PREF. Devices not laid out.
+.subckt output_buffer IN BUF PREF VDD GND
+Xref PREF PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xload BUF PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xfollow GND IN BUF VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+.ends output_buffer

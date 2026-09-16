@@ -1,0 +1,16 @@
+* NGSPICE file created from output_buffer.ext - technology: gf180mcuD
+
+.subckt mirror_pfet B G D S
+X0 D G S B pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=2u
+.ends
+
+.subckt buffer_pfet B G D S
+X0 D G S B pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u
+.ends
+
+.subckt output_buffer IN BUF PREF VDD GND
+Xmirror_pfet_0 VDD PREF BUF VDD mirror_pfet
+Xmirror_pfet_1 VDD PREF PREF VDD mirror_pfet
+Xbuffer_pfet_0 VDD IN GND BUF buffer_pfet
+.ends
+

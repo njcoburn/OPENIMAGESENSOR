@@ -56,7 +56,45 @@ html=html.replace('<section id="status"><h2>Current milestone</h2>', '<section i
 array_progress=runpy.run_path(str(root/'scripts/overview-array.py'))['render'](root)
 size_progress=runpy.run_path(str(root/'scripts/overview-size-study.py'))['render'](root)
 camera_plan=runpy.run_path(str(root/'scripts/overview-camera-plan.py'))['render'](root)
-html=html.replace('<main>', '<main>'+camera_plan+size_progress+array_progress+progress, 1)
+parasitics=runpy.run_path(str(root/'scripts/overview-parasitics.py'))['render'](root)
+column_bias=runpy.run_path(str(root/'scripts/overview-column-bias.py'))['render'](root)
+mux=runpy.run_path(str(root/'scripts/overview-column-mux.py'))['render'](root)
+readout_pex=runpy.run_path(str(root/'scripts/overview-readout-pex.py'))['render'](root)
+buffer=runpy.run_path(str(root/'scripts/overview-output-buffer.py'))['render'](root)
+corners=runpy.run_path(str(root/'scripts/overview-buffer-corners.py'))['render'](root)
+hardening=runpy.run_path(str(root/'scripts/overview-buffer-hardening.py'))['render'](root)
+buffer_pex=runpy.run_path(str(root/'scripts/overview-buffer-pex.py'))['render'](root)
+integrated=runpy.run_path(str(root/'scripts/overview-integrated.py'))['render'](root)
+integrated_corners=runpy.run_path(str(root/'scripts/overview-integrated-corners.py'))['render'](root)
+bias_reference=runpy.run_path(str(root/'scripts/overview-bias-reference.py'))['render'](root)
+power_ring=(root/'docs/power-ring.html').read_text() if (root/'docs/power-ring.html').exists() else ''
+board_supply=(root/'docs/board-supply.html').read_text() if (root/'docs/board-supply.html').exists() else ''
+clamp_convergence=(root/'docs/clamp-convergence.html').read_text() if (root/'docs/clamp-convergence.html').exists() else ''
+pad_closure=(root/'docs/pad-closure.html').read_text() if (root/'docs/pad-closure.html').exists() else ''
+pad_layout=(root/'docs/pad-layout.html').read_text() if (root/'docs/pad-layout.html').exists() else ''
+pad_references=(root/'docs/pad-references.html').read_text()
+pad_evaluation=(root/'docs/pad-evaluation.html').read_text() if (root/'docs/pad-evaluation.html').exists() else ''
+if clamp_convergence:
+ pad_closure=pad_closure.replace('<h2>Pad DRC configuration and supply-clamp evaluation</h2>', '<h2>Earlier checkpoint: pad DRC and supply clamps</h2><p>The later <a href="#clamp-convergence">full-frame verification</a> above supersedes the transient limitation recorded here.</p>',1)
+html=html.replace('<main>', '<main>'+camera_plan+power_ring+board_supply+clamp_convergence+pad_closure+pad_layout+pad_evaluation+pad_references+bias_reference+integrated_corners+integrated+buffer_pex+hardening+corners+buffer+readout_pex+mux+column_bias+parasitics+size_progress+array_progress+progress, 1)
+html=html.replace('<nav>', '<nav><a href="#pad-references">Pad references</a>',1)
+if power_ring:html=html.replace('<nav>', '<nav><a href="#power-ring">Physical supply ring</a>',1)
+if board_supply:html=html.replace('<nav>', '<nav><a href="#board-supply">Board supply</a>',1)
+if clamp_convergence:html=html.replace('<nav>', '<nav><a href="#clamp-convergence">Full clamp transient</a>',1)
+if pad_closure:html=html.replace('<nav>', '<nav><a href="#pad-closure">Supply clamps and pad checks</a>',1)
+if pad_layout:html=html.replace('<nav>', '<nav><a href="#pad-layout">Physical pad interface</a>',1)
+if pad_evaluation:html=html.replace('<nav>', '<nav><a href="#pad-evaluation">Pad evaluation</a>',1)
+if bias_reference:html=html.replace('<nav>', '<nav><a href="#bias-reference">Physical bias and startup</a>',1)
+if integrated_corners:html=html.replace('<nav>', '<nav><a href="#integrated-corners">Connected corner matrix</a>',1)
+if integrated:html=html.replace('<nav>', '<nav><a href="#integrated">Connected layout</a>',1)
+if buffer_pex:html=html.replace('<nav>', '<nav><a href="#buffer-pex">Buffer extraction</a>',1)
+if hardening:html=html.replace('<nav>', '<nav><a href="#buffer-hardening">Revised buffer</a>',1)
+if corners:html=html.replace('<nav>', '<nav><a href="#buffer-corners">Process / temperature</a>',1)
+if buffer:html=html.replace('<nav>', '<nav><a href="#output-buffer">Output buffer</a>',1)
+if readout_pex:html=html.replace('<nav>', '<nav><a href="#readout-pex">Readout extraction</a>',1)
+if mux:html=html.replace('<nav>', '<nav><a href="#column-mux">Mux and layout</a>',1)
+if column_bias:html=html.replace('<nav>', '<nav><a href="#column-bias">Column bias</a>',1)
+if parasitics:html=html.replace('<nav>', '<nav><a href="#parasitics">Extracted RC</a>',1)
 if camera_plan:html=html.replace('<a href="#repeatability">', '<a href="#camera-plan">Camera plan</a><a href="#resolution-demo">Resolution demo</a><a href="#repeatability">',1)
 if size_progress:html=html.replace('<a href="#repeatability">', '<a href="#size-study">Diode sizes</a><a href="#repeatability">', 1)
 if array_progress:

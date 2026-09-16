@@ -1,0 +1,20 @@
+* NGSPICE file created from column_readout.ext - technology: gf180mcuD
+
+.subckt nfet_probe B G D S
+X0 D G S B nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+.ends
+
+.subckt bias_nfet B G D S
+X0 D G S B nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+.ends
+
+.subckt column_readout GND BIAS COL0 COL1 COL2 OUT SEL0 SEL1 SEL2
+Xnfet_probe_0 GND SEL2 OUT COL2 nfet_probe
+Xnfet_probe_1 GND SEL1 OUT COL1 nfet_probe
+Xnfet_probe_2 GND SEL0 OUT COL0 nfet_probe
+Xbias_nfet_0 GND BIAS COL2 GND bias_nfet
+Xbias_nfet_1 GND BIAS COL1 GND bias_nfet
+Xbias_nfet_2 GND BIAS COL0 GND bias_nfet
+Xbias_nfet_3 GND BIAS BIAS GND bias_nfet
+.ends
+

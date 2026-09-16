@@ -1,0 +1,16 @@
+{
+  "raw_netlist_sha256": "6b4c923702ab7bb0fa61b0ce88c8336c2932bdd138b0d4af94b2f989261864e9",
+  "resistors": 19,
+  "raw_capacitors": 150473,
+  "retained_nodes_including_ground": 24,
+  "eliminated_capacitive_nodes": 21085,
+  "output_capacitors": 276,
+  "max_schur_residual_fF": 2.7284841053187847e-12,
+  "random_voltage_charge_error_fC": 3.410605131648481e-13,
+  "random_voltage_energy_error_fJ_times2": 6.252776074688882e-13,
+  "min_capacitance_eigenvalue_fF": 1.1529983791361404,
+  "max_capacitance_matrix_row_error_fF": 1.4210854715202004e-14,
+  "node_map": {},
+  "physical_devices": {},
+  "method": "Schur complement; floating fill at zero net charge. C below 1e-6 fF omitted with bounded row-sum error."
+}

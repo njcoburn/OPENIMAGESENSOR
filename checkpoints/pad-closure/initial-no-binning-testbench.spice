@@ -1,0 +1,23 @@
+Supply-pad clamp pair: normal-voltage characterization
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+.include /foss/designs/checkpoints/pad-closure/supply-pad-models.spice
+.temp -40
+.options gmin=1e-17 abstol=1e-15 reltol=1e-5 method=gear
+Vdd VDD 0 3.0
+Vbranch1 VDD VP 0
+Vbranch2 VDD VG 0
+Xvdd VP 0 0 gf180mcu_fd_io__dvdd
+Xvss VG 0 VG gf180mcu_fd_io__dvss
+.control
+set num_threads=1
+set wr_vecnames
+set wr_singlescale
+op
+wrdata /foss/designs/build/supply-clamps/dc/res_typical_moscap_typical_diode_typical_-40_3.0/wave.txt i(Vdd) i(Vbranch1) i(Vbranch2) v(xvdd.n4)
+quit
+.endc
+.end

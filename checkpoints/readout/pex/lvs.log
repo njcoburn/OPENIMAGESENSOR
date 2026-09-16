@@ -1,0 +1,45 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: readout_devices                 |Circuit 2: column_readout                  
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (7)                              |nfet_03v3 (7)                              
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: readout_devices                 |Circuit 2: column_readout                  
+-------------------------------------------|-------------------------------------------
+BIAS                                       |BIAS                                       
+GND                                        |GND                                        
+COL1                                       |COL1                                       
+COL2                                       |COL2                                       
+COL0                                       |COL0                                       
+SEL1                                       |SEL1                                       
+SEL2                                       |SEL2                                       
+SEL0                                       |SEL0                                       
+OUT                                        |OUT                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes readout_devices and column_readout are equivalent.
+
+Final result: Circuits match uniquely.
+.

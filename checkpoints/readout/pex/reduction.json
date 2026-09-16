@@ -1,0 +1,27 @@
+{
+  "bias_shunt_approximation": {
+    "negative_shunts_fF": [
+      [
+        "BIAS.n0",
+        "GND",
+        -3.5235300000000005
+      ]
+    ],
+    "lumped_bias_shunt_fF": 42.583890000000004,
+    "method": "Conserve signed BIAS-to-GND shunt sum at BIAS port; all resistance and coupling retained. Distributed bias shunt placement is approximated."
+  },
+  "raw_netlist_sha256": "2b71c1bbdb67314d938c86c6c6dce47474e421bd7793f54d9b101a95e60e4217",
+  "resistors": 75,
+  "raw_capacitors": 167677,
+  "retained_nodes_including_ground": 73,
+  "eliminated_capacitive_nodes": 22908,
+  "output_capacitors": 53,
+  "max_schur_residual_fF": 5.273559366969494e-16,
+  "random_voltage_charge_error_fC": 1.4210854715202004e-13,
+  "random_voltage_energy_error_fJ_times2": 2.8421709430404007e-13,
+  "min_capacitance_eigenvalue_fF": -1.8471473016006198e-14,
+  "max_capacitance_matrix_row_error_fF": 7.105427357601002e-15,
+  "node_map": {},
+  "physical_devices": {},
+  "method": "Schur complement; floating fill at zero net charge. C below 1e-6 fF omitted with bounded row-sum error."
+}

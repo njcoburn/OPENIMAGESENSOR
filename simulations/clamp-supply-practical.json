@@ -1,0 +1,203 @@
+{
+  "cases": {
+    "-40C_R0.5_ramp1us": {
+      "temp_C": -40,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1,
+      "peak_source_current_A": 1.48606712,
+      "peak_source_to_rail_drop_V": 0.7430335599999998,
+      "peak_clamp_gate_V": 3.11975591,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 6.90000195e-10,
+      "settled_at_200us": true
+    },
+    "-40C_R0.5_ramp100us": {
+      "temp_C": -40,
+      "source_R_ohm": 0.5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00340051402,
+      "peak_source_to_rail_drop_V": 0.001700259999999787,
+      "peak_clamp_gate_V": 0.208211424,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 6.90004213e-10,
+      "settled_at_200us": true
+    },
+    "-40C_R0.5_ramp1000us": {
+      "temp_C": -40,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.00043005008,
+      "peak_source_to_rail_drop_V": 0.00021502999999967187,
+      "peak_clamp_gate_V": 0.187992992,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 6.90012955e-10,
+      "settled_at_200us": true
+    },
+    "-40C_R5_ramp1us": {
+      "temp_C": -40,
+      "source_R_ohm": 5,
+      "ramp_us": 1,
+      "peak_source_current_A": 0.326238982,
+      "peak_source_to_rail_drop_V": 1.6311949099999998,
+      "peak_clamp_gate_V": 2.45222721,
+      "tail_min_rail_V": 3.29950008,
+      "tail_max_gate_V": 6.90003161e-10,
+      "settled_at_200us": true
+    },
+    "-40C_R5_ramp100us": {
+      "temp_C": -40,
+      "source_R_ohm": 5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00339960072,
+      "peak_source_to_rail_drop_V": 0.016997999999999625,
+      "peak_clamp_gate_V": 0.208210169,
+      "tail_min_rail_V": 3.29950008,
+      "tail_max_gate_V": 6.90002567e-10,
+      "settled_at_200us": true
+    },
+    "-40C_R5_ramp1000us": {
+      "temp_C": -40,
+      "source_R_ohm": 5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.000429946458,
+      "peak_source_to_rail_drop_V": 0.002149729999999739,
+      "peak_clamp_gate_V": 0.187991801,
+      "tail_min_rail_V": 3.29950008,
+      "tail_max_gate_V": 6.90002774e-10,
+      "settled_at_200us": true
+    },
+    "27C_R0.5_ramp1us": {
+      "temp_C": 27,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1,
+      "peak_source_current_A": 1.40162114,
+      "peak_source_to_rail_drop_V": 0.7008105699999998,
+      "peak_clamp_gate_V": 3.08644462,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 8.93752601e-10,
+      "settled_at_200us": true
+    },
+    "27C_R0.5_ramp100us": {
+      "temp_C": 27,
+      "source_R_ohm": 0.5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00340051904,
+      "peak_source_to_rail_drop_V": 0.001700259999999787,
+      "peak_clamp_gate_V": 0.174753511,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 8.93752813e-10,
+      "settled_at_200us": true
+    },
+    "27C_R0.5_ramp1000us": {
+      "temp_C": 27,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.000430050681,
+      "peak_source_to_rail_drop_V": 0.00021502999999967187,
+      "peak_clamp_gate_V": 0.146568234,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 8.93752731e-10,
+      "settled_at_200us": true
+    },
+    "27C_R5_ramp1us": {
+      "temp_C": 27,
+      "source_R_ohm": 5,
+      "ramp_us": 1,
+      "peak_source_current_A": 0.324430181,
+      "peak_source_to_rail_drop_V": 1.6221509099999998,
+      "peak_clamp_gate_V": 2.42261431,
+      "tail_min_rail_V": 3.29950007,
+      "tail_max_gate_V": 8.93739987e-10,
+      "settled_at_200us": true
+    },
+    "27C_R5_ramp100us": {
+      "temp_C": 27,
+      "source_R_ohm": 5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00339960577,
+      "peak_source_to_rail_drop_V": 0.016998029999999886,
+      "peak_clamp_gate_V": 0.174751047,
+      "tail_min_rail_V": 3.29950007,
+      "tail_max_gate_V": 8.93734687e-10,
+      "settled_at_200us": true
+    },
+    "27C_R5_ramp1000us": {
+      "temp_C": 27,
+      "source_R_ohm": 5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.000429947075,
+      "peak_source_to_rail_drop_V": 0.002149739999999678,
+      "peak_clamp_gate_V": 0.146566549,
+      "tail_min_rail_V": 3.29950007,
+      "tail_max_gate_V": 8.93732076e-10,
+      "settled_at_200us": true
+    },
+    "125C_R0.5_ramp1us": {
+      "temp_C": 125,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1,
+      "peak_source_current_A": 1.29058383,
+      "peak_source_to_rail_drop_V": 0.64529192,
+      "peak_clamp_gate_V": 3.09096782,
+      "tail_min_rail_V": 3.29994997,
+      "tail_max_gate_V": 3.6074108e-09,
+      "settled_at_200us": true
+    },
+    "125C_R0.5_ramp100us": {
+      "temp_C": 125,
+      "source_R_ohm": 0.5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00340059522,
+      "peak_source_to_rail_drop_V": 0.001700299999999988,
+      "peak_clamp_gate_V": 0.11909807,
+      "tail_min_rail_V": 3.29994997,
+      "tail_max_gate_V": 3.60739966e-09,
+      "settled_at_200us": true
+    },
+    "125C_R0.5_ramp1000us": {
+      "temp_C": 125,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.000430122427,
+      "peak_source_to_rail_drop_V": 0.00021506999999987286,
+      "peak_clamp_gate_V": 0.0838674182,
+      "tail_min_rail_V": 3.29994997,
+      "tail_max_gate_V": 3.60740674e-09,
+      "settled_at_200us": true
+    },
+    "125C_R5_ramp1us": {
+      "temp_C": 125,
+      "source_R_ohm": 5,
+      "ramp_us": 1,
+      "peak_source_current_A": 0.324742268,
+      "peak_source_to_rail_drop_V": 1.6237113399999998,
+      "peak_clamp_gate_V": 2.36096845,
+      "tail_min_rail_V": 3.29949972,
+      "tail_max_gate_V": 3.60760554e-09,
+      "settled_at_200us": true
+    },
+    "125C_R5_ramp100us": {
+      "temp_C": 125,
+      "source_R_ohm": 5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00339968148,
+      "peak_source_to_rail_drop_V": 0.016998409999999797,
+      "peak_clamp_gate_V": 0.119100641,
+      "tail_min_rail_V": 3.29949972,
+      "tail_max_gate_V": 3.60760521e-09,
+      "settled_at_200us": true
+    },
+    "125C_R5_ramp1000us": {
+      "temp_C": 125,
+      "source_R_ohm": 5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.00043001875,
+      "peak_source_to_rail_drop_V": 0.0021500899999997714,
+      "peak_clamp_gate_V": 0.0838660665,
+      "tail_min_rail_V": 3.29949972,
+      "tail_max_gate_V": 3.60761052e-09,
+      "settled_at_200us": true
+    }
+  },
+  "scope": "One clamp pair; res_ss/moscap_ss/diode_ff, typical HV MOS. Ideal upstream soft-start, 0.5/5ohm source impedance, 100nF decoupling, 33kohm representative load. Not a selected regulator or sensor transient."
+}

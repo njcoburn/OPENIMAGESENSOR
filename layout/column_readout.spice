@@ -1,0 +1,9 @@
+.subckt column_readout GND BIAS COL0 COL1 COL2 OUT SEL0 SEL1 SEL2
+Xref BIAS BIAS GND GND nfet_03v3 w=2u l=2u
+Xb0 COL0 BIAS GND GND nfet_03v3 w=2u l=2u
+Xb1 COL1 BIAS GND GND nfet_03v3 w=2u l=2u
+Xb2 COL2 BIAS GND GND nfet_03v3 w=2u l=2u
+Xm0 OUT SEL0 COL0 GND nfet_03v3 w=1u l=0.5u
+Xm1 OUT SEL1 COL1 GND nfet_03v3 w=1u l=0.5u
+Xm2 OUT SEL2 COL2 GND nfet_03v3 w=1u l=0.5u
+.ends

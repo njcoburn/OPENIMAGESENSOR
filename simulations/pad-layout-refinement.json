@@ -1,0 +1,98 @@
+{
+  "case": "typical_125C_3.0V_diode_ff_rc1_rb1_ramp1us_C1p_step0.05us",
+  "result": {
+    "status": "complete",
+    "samples": [
+      {
+        "row": 0,
+        "col": 0,
+        "input_V": 1.02753691,
+        "output_V": 2.2100039,
+        "hold_error_mV": 0.01784821415018456,
+        "tracking_error_mV": 0.01776821414978258
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "input_V": 0.8073408170000003,
+        "output_V": 2.04306533,
+        "hold_error_mV": 0.0905642716451105,
+        "tracking_error_mV": 0.09013427164505927
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "input_V": 0.3902117710000006,
+        "output_V": 1.7213873800000004,
+        "hold_error_mV": 0.21854027275503007,
+        "tracking_error_mV": 0.21750027275491135
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "input_V": 0.41872786400000117,
+        "output_V": 1.7435911000000008,
+        "hold_error_mV": 0.2187371856801068,
+        "tracking_error_mV": 0.21769718567998808
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "input_V": 1.02631881,
+        "output_V": 2.20908607,
+        "hold_error_mV": 0.01777738765040837,
+        "tracking_error_mV": 0.01769738765045048
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "input_V": 0.8043254980000005,
+        "output_V": 2.0407627400000004,
+        "hold_error_mV": 0.08974645428994066,
+        "tracking_error_mV": 0.08931645428988944
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "input_V": 0.812916679,
+        "output_V": 2.04732074,
+        "hold_error_mV": 0.09059350565499003,
+        "tracking_error_mV": 0.0901635056549388
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "input_V": 0.399698932,
+        "output_V": 1.7287789,
+        "hold_error_mV": 0.21994777976019897,
+        "tracking_error_mV": 0.21889777976014102
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "input_V": 1.02429423,
+        "output_V": 2.20756071,
+        "hold_error_mV": 0.01797033924999525,
+        "tracking_error_mV": 0.017880339250098132
+      }
+    ],
+    "max_hold_error_mV": 0.21994777976019897,
+    "max_tracking_error_mV": 0.21889777976014102,
+    "brightness_order_ok": true,
+    "mean_column_reference_uA": 0.46830040673484097,
+    "mean_buffer_reference_uA": 34.905187200610825,
+    "startup_reference_relative_error": 2.2054077378763637e-06,
+    "mean_VDD_power_uW": 211.2142431737886,
+    "screen_pass": true,
+    "corner": "typical",
+    "temp_C": 125,
+    "supply_V": 3.0,
+    "diode": "diode_ff",
+    "rcol_scale": 1,
+    "rbuf_scale": 1,
+    "ramp_us": 1,
+    "external_bias_C_pF": 1,
+    "step_us": 0.05,
+    "scan_delay_s": 0.00020099999999999998
+  }
+}

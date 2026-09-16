@@ -1,0 +1,145 @@
+{
+  "scope": "Typical corner, 27 C; extracted array with schematic-only bias devices; ideal reference current; no mismatch/noise or pad/ADC loads. Power includes VDD and ideal reference branch, excludes reset/row drivers. Late-window change includes continuing integration, not a step-settling specification.",
+  "array_sha256": "ad31f431225ff94b5394e88a2dcec62f75330783db134bb827e8ba185457caaa",
+  "cases": {
+    "resistor": {
+      "reference_uA": null,
+      "samples_V": [
+        [
+          0.9567586974911,
+          0.7811239982588999,
+          0.4445409942014499
+        ],
+        [
+          0.44617405265420046,
+          0.9584280351577501,
+          0.7837751569537001
+        ],
+        [
+          0.7808053061649999,
+          0.4435946167784997,
+          0.9580900702931501
+        ]
+      ],
+      "row0_signal_mV": [
+        0.0,
+        175.6346992322001,
+        512.2177032896501
+      ],
+      "brightness_order_ok": true,
+      "min_column_V": -0.0018434954,
+      "late_window_change_mV": 12.895959287800629,
+      "dark_late_window_change_mV": 0.6177064293499956,
+      "average_VDD_power_uW": 0.444074504648798,
+      "testbench_sha256": "51eabf61cdd87c9e6fae88fee2b17c934bb4a1604f1c951b97fb104725b299a5"
+    },
+    "mirror_0.25uA": {
+      "reference_uA": 0.25,
+      "samples_V": [
+        [
+          1.015952315756,
+          0.8296376315987999,
+          0.46747220349199975
+        ],
+        [
+          0.4692405652179004,
+          1.0177006653705,
+          0.8324110845596002
+        ],
+        [
+          0.829301436218,
+          0.4664517767360001,
+          1.01737835448
+        ]
+      ],
+      "row0_signal_mV": [
+        0.0,
+        186.3146841572001,
+        548.4801122640001
+      ],
+      "brightness_order_ok": true,
+      "min_column_V": -0.00179337463,
+      "late_window_change_mV": 14.087069512000394,
+      "dark_late_window_change_mV": 0.656142039999974,
+      "average_VDD_power_uW": 0.9830131116635881,
+      "testbench_sha256": "ce87baa28c7132083ec466c3f371100e592e3cb0dc59400be0853816f99b2439",
+      "sampled_sink_current_range_uA": [
+        0.247906113256,
+        0.25332666536145
+      ],
+      "bias_V": 0.668553545
+    },
+    "mirror_0.5uA": {
+      "reference_uA": 0.5,
+      "samples_V": [
+        [
+          0.9874761219045,
+          0.8014869687116999,
+          0.4400413751491999
+        ],
+        [
+          0.44182130425620053,
+          0.989228126009,
+          0.8042842580748002
+        ],
+        [
+          0.8011499139632,
+          0.4390068341684002,
+          0.9888905755428
+        ]
+      ],
+      "row0_signal_mV": [
+        0.0,
+        185.98915319280007,
+        547.4347467553
+      ],
+      "brightness_order_ok": true,
+      "min_column_V": -0.00176266175,
+      "late_window_change_mV": 14.055042787600058,
+      "dark_late_window_change_mV": 0.6537574424000381,
+      "average_VDD_power_uW": 1.95625825466468,
+      "testbench_sha256": "a3a450be0d2f7bab0ea3379cbcd359bf690732772201ae51423ba63a83338064",
+      "sampled_sink_current_range_uA": [
+        0.49523532004959997,
+        0.5044146629169
+      ],
+      "bias_V": 0.70955412
+    },
+    "mirror_1uA": {
+      "reference_uA": 1.0,
+      "samples_V": [
+        [
+          0.95416331428115,
+          0.7686949520928499,
+          0.4083654030134498
+        ],
+        [
+          0.41015402924290006,
+          0.9559150434082,
+          0.77151443602955
+        ],
+        [
+          0.7683526584672499,
+          0.40731107363164964,
+          0.95555869934225
+        ]
+      ],
+      "row0_signal_mV": [
+        0.0,
+        185.4683621883001,
+        545.7979112677002
+      ],
+      "brightness_order_ok": true,
+      "min_column_V": -0.00171938834,
+      "late_window_change_mV": 14.006602256550593,
+      "dark_late_window_change_mV": 0.650493623900017,
+      "average_VDD_power_uW": 3.902417879405319,
+      "testbench_sha256": "5a51e85a83182a567a3be8878e21241190ca16b84ea9f0a1a855bb2c15931ab1",
+      "sampled_sink_current_range_uA": [
+        0.9894362848590499,
+        1.0050946361315
+      ],
+      "bias_V": 0.758661711
+    }
+  }
+}

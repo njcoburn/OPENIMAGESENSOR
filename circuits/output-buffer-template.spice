@@ -1,0 +1,57 @@
+Physical 3x3 GF180 row-scan test
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+.include /foss/designs/simulations/extracted-20um/rc-filled/array_reduced.spice
+.options gmin=1e-17 abstol=1e-14 reltol=1e-4 chgtol=1e-16 trtol=3 method=gear
+Vdd VDD 0 3.3
+Vreset VRESET 0 2.0
+Xarray COL0 COL1 COL2 0 VRESET VDD RST0 ROW0 RST1 ROW1 RST2 ROW2 array_pex
+Vr0 RST0 0 PULSE(0 3.3 50u 10n 10n 20u 3m)
+Vs0 ROW0 0 PULSE(0 3.3 970u 10n 10n 60u 3m)
+Ilight00 xarray.n339 xarray.n186 0.0p
+.ic v(xarray.n339)=0 v(xarray.n333)=0
+Ilight01 xarray.n330 xarray.n187 80.0p
+.ic v(xarray.n330)=0 v(xarray.n324)=0
+Ilight02 xarray.n321 xarray.n176 240.0p
+.ic v(xarray.n321)=0 v(xarray.n315)=0
+Vr1 RST1 0 PULSE(0 3.3 1050u 10n 10n 20u 3m)
+Vs1 ROW1 0 PULSE(0 3.3 1970u 10n 10n 60u 3m)
+Ilight10 xarray.n312 xarray.n186 240.0p
+.ic v(xarray.n312)=0 v(xarray.n306)=0
+Ilight11 xarray.n303 xarray.n187 0.0p
+.ic v(xarray.n303)=0 v(xarray.n297)=0
+Ilight12 xarray.n294 xarray.n176 80.0p
+.ic v(xarray.n294)=0 v(xarray.n288)=0
+Vr2 RST2 0 PULSE(0 3.3 2050u 10n 10n 20u 3m)
+Vs2 ROW2 0 PULSE(0 3.3 2970u 10n 10n 60u 3m)
+Ilight20 xarray.n285 xarray.n186 80.0p
+.ic v(xarray.n285)=0 v(xarray.n279)=0
+Ilight21 xarray.n276 xarray.n187 240.0p
+.ic v(xarray.n276)=0 v(xarray.n270)=0
+Ilight22 xarray.n267 xarray.n176 0.0p
+.ic v(xarray.n267)=0 v(xarray.n261)=0
+Cload0 COL0 0 1p
+.ic v(COL0)=0
+Cload1 COL1 0 1p
+.ic v(COL1)=0
+Cload2 COL2 0 1p
+.ic v(COL2)=0
+Iref VDD BIAS 0.5u
+Vsel0 SEL0 0 PULSE(0 3.3 975u 10n 10n 16u 1m)
+Vsel1 SEL1 0 PULSE(0 3.3 993u 10n 10n 16u 1m)
+Vsel2 SEL2 0 PULSE(0 3.3 1011u 10n 10n 16u 1m)
+Cout OUT 0 1p
+Rout OUT 0 1G
+.ic v(OUT)=0
+.include /foss/designs/build/readout-pex/readout_reduced.spice
+Xreadout 0 BIAS COL0 COL1 COL2 OUT SEL0 SEL1 SEL2 readout_pex
+.control
+set num_threads=1
+set wr_singlescale
+set wr_vecnames
+tran 0.2u 9.05m uic
+wrdata /foss/designs/build/readout-pex/sim/RC/wave.txt v(COL0) v(COL1) v(COL2) v(OUT) v(SEL0) v(SEL1) v(SEL2) v(BIAS) i(Vdd)
+quit
+.endc
+.end

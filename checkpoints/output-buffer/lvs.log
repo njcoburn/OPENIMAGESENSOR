@@ -1,0 +1,41 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell mirror_pfet in circuit output_buffer (0)(2 instances)
+Flattening unmatched subcell buffer_pfet in circuit output_buffer (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: output_buffer                   |Circuit 2: output_buffer                   
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (3)                              |pfet_03v3 (3)                              
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: output_buffer                   |Circuit 2: output_buffer                   
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+IN                                         |IN                                         
+BUF                                        |BUF                                        
+PREF                                       |PREF                                       
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes output_buffer and output_buffer are equivalent.
+
+Final result: Circuits match uniquely.
+.

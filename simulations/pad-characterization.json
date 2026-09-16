@@ -1,0 +1,1195 @@
+{
+  "scope": "Isolated installed pad model with ideal 3.0-3.6V rails; no ESD qualification. Capacitance is AC differential signal capacitance at 1kHz, ideal AC-grounded rails. Representative pin voltages; full rail-range leakage curves also saved. MOS capacitor section fixed typical.",
+  "cases": {
+    "diode_typical_-40C_3V": {
+      "diode": "diode_typical",
+      "temp_C": -40,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.78711694e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.65790161e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.66097673e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.01736777e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.91539714e-13
+        }
+      }
+    },
+    "diode_typical_-40C_3.3V": {
+      "diode": "diode_typical",
+      "temp_C": -40,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.68631476e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.46642233e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.46825303e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.9277458e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.63553198e-13
+        }
+      }
+    },
+    "diode_typical_-40C_3.6V": {
+      "diode": "diode_typical",
+      "temp_C": -40,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.59636661e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.30661703e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.30754337e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.84702199e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.41456341e-13
+        }
+      }
+    },
+    "diode_typical_27C_3V": {
+      "diode": "diode_typical",
+      "temp_C": 27,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 1.77635684e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 9.13561969e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 9.00200319e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 9.00566426e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 6.66133815e-16,
+          "capacitance_F": 9.40064056e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 9.30929216e-13
+        }
+      }
+    },
+    "diode_typical_27C_3.3V": {
+      "diode": "diode_typical",
+      "temp_C": 27,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 1.77635684e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 9.02737483e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.78929072e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.79147504e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 6.66133815e-16,
+          "capacitance_F": 9.30483715e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.98884278e-13
+        }
+      }
+    },
+    "diode_typical_27C_3.6V": {
+      "diode": "diode_typical",
+      "temp_C": 27,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 1.77635684e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 8.93120987e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.61377679e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.61490943e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 6.66133815e-16,
+          "capacitance_F": 9.21886406e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.74082679e-13
+        }
+      }
+    },
+    "diode_typical_85C_3V": {
+      "diode": "diode_typical",
+      "temp_C": 85,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 1.66444636e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 9.96092098e-13,
+          "capacitance_F": 9.36923992e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 9.95648008e-13,
+          "capacitance_F": 9.23112398e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 9.96536187e-13,
+          "capacitance_F": 9.23534529e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 9.9475983e-13,
+          "capacitance_F": 9.66901508e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 9.96536187e-13,
+          "capacitance_F": 9.58766662e-13
+        }
+      }
+    },
+    "diode_typical_85C_3.3V": {
+      "diode": "diode_typical",
+      "temp_C": 85,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 1.66267e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 9.96092098e-13,
+          "capacitance_F": 9.25516251e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 9.95648008e-13,
+          "capacitance_F": 8.99954961e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 9.96536187e-13,
+          "capacitance_F": 9.00206225e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 9.94537785e-13,
+          "capacitance_F": 9.5684746e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 9.96536187e-13,
+          "capacitance_F": 9.22801665e-13
+        }
+      }
+    },
+    "diode_typical_85C_3.6V": {
+      "diode": "diode_typical",
+      "temp_C": 85,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 1.66267e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 9.96092098e-13,
+          "capacitance_F": 9.15423006e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 9.95648008e-13,
+          "capacitance_F": 8.81058184e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 9.96536187e-13,
+          "capacitance_F": 8.81190142e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 9.94537785e-13,
+          "capacitance_F": 9.47855812e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 9.96536187e-13,
+          "capacitance_F": 8.95523664e-13
+        }
+      }
+    },
+    "diode_typical_125C_3V": {
+      "diode": "diode_typical",
+      "temp_C": 125,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 9.34354816e-11,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 5.25992583e-11,
+          "capacitance_F": 9.48175055e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 5.26183541e-11,
+          "capacitance_F": 9.33997961e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 5.26165778e-11,
+          "capacitance_F": 9.34461252e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 5.25228749e-11,
+          "capacitance_F": 9.80832064e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 5.26334532e-11,
+          "capacitance_F": 9.73397858e-13
+        }
+      }
+    },
+    "diode_typical_125C_3.3V": {
+      "diode": "diode_typical",
+      "temp_C": 125,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 9.34345934e-11,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 5.25988142e-11,
+          "capacitance_F": 9.36418256e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 5.26156896e-11,
+          "capacitance_F": 9.09544144e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 5.26156896e-11,
+          "capacitance_F": 9.09818828e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 5.25228749e-11,
+          "capacitance_F": 9.70502268e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 5.26192423e-11,
+          "capacitance_F": 9.34503527e-13
+        }
+      }
+    },
+    "diode_typical_125C_3.6V": {
+      "diode": "diode_typical",
+      "temp_C": 125,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 9.34363698e-11,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 5.25988142e-11,
+          "capacitance_F": 9.26047251e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 5.26156896e-11,
+          "capacitance_F": 8.8975719e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 5.26156896e-11,
+          "capacitance_F": 8.89902146e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 5.25228749e-11,
+          "capacitance_F": 9.61286915e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 5.26156896e-11,
+          "capacitance_F": 9.05470617e-13
+        }
+      }
+    },
+    "diode_ff_-40C_3V": {
+      "diode": "diode_ff",
+      "temp_C": -40,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.90840524e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.79211145e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.79487906e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.115631e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.02385743e-13
+        }
+      }
+    },
+    "diode_ff_-40C_3.3V": {
+      "diode": "diode_ff",
+      "temp_C": -40,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.81768329e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.6197801e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.62142773e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 8.03497122e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.77197878e-13
+        }
+      }
+    },
+    "diode_ff_-40C_3.6V": {
+      "diode": "diode_ff",
+      "temp_C": -40,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.73672995e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.47595533e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.47678903e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.96231979e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 7.57310707e-13
+        }
+      }
+    },
+    "diode_ff_27C_3V": {
+      "diode": "diode_ff",
+      "temp_C": 27,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 3.55271368e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.22205772e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.10180287e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.10509783e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 8.4605765e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 8.37836294e-13
+        }
+      }
+    },
+    "diode_ff_27C_3.3V": {
+      "diode": "diode_ff",
+      "temp_C": 27,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 3.55271368e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.12463735e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 7.91036165e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 7.91232754e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 8.37435344e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 8.0899585e-13
+        }
+      }
+    },
+    "diode_ff_27C_3.6V": {
+      "diode": "diode_ff",
+      "temp_C": 27,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 3.55271368e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 8.03808889e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 7.75239911e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.8817842e-16,
+          "capacitance_F": 7.75341849e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 8.29697765e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 7.86674411e-13
+        }
+      }
+    },
+    "diode_ff_85C_3V": {
+      "diode": "diode_ff",
+      "temp_C": 85,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 1.91491267e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 1.14486198e-12,
+          "capacitance_F": 8.43231593e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 8.30801158e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 8.31181076e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 1.1439738e-12,
+          "capacitance_F": 8.70211358e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.14486198e-12,
+          "capacitance_F": 8.62889996e-13
+        }
+      }
+    },
+    "diode_ff_85C_3.3V": {
+      "diode": "diode_ff",
+      "temp_C": 85,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 1.91668903e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 1.14486198e-12,
+          "capacitance_F": 8.32964626e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 8.09959465e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 8.10185602e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 1.1439738e-12,
+          "capacitance_F": 8.61162714e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 8.30521498e-13
+        }
+      }
+    },
+    "diode_ff_85C_3.6V": {
+      "diode": "diode_ff",
+      "temp_C": 85,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 1.91491267e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 1.14486198e-12,
+          "capacitance_F": 8.23880705e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 7.92952366e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 7.93071127e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 1.1439738e-12,
+          "capacitance_F": 8.53070231e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.14575016e-12,
+          "capacitance_F": 8.05971298e-13
+        }
+      }
+    },
+    "diode_ff_125C_3V": {
+      "diode": "diode_ff",
+      "temp_C": 125,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 1.07451825e-10,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 6.04893913e-11,
+          "capacitance_F": 8.53357549e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 6.05107076e-11,
+          "capacitance_F": 8.40598165e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 6.05107076e-11,
+          "capacitance_F": 8.41015126e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 6.04012396e-11,
+          "capacitance_F": 8.82748858e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 6.05284711e-11,
+          "capacitance_F": 8.76058072e-13
+        }
+      }
+    },
+    "diode_ff_125C_3.3V": {
+      "diode": "diode_ff",
+      "temp_C": 125,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 1.07450049e-10,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 6.04889472e-11,
+          "capacitance_F": 8.4277643e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 6.05089312e-11,
+          "capacitance_F": 8.18589729e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 6.0508043e-11,
+          "capacitance_F": 8.18836945e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 6.04012396e-11,
+          "capacitance_F": 8.73452042e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 6.05124839e-11,
+          "capacitance_F": 8.41053175e-13
+        }
+      }
+    },
+    "diode_ff_125C_3.6V": {
+      "diode": "diode_ff",
+      "temp_C": 125,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 1.07450049e-10,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 6.04889472e-11,
+          "capacitance_F": 8.33442526e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 6.05089312e-11,
+          "capacitance_F": 8.00781471e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 6.05098194e-11,
+          "capacitance_F": 8.00911932e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 6.04012396e-11,
+          "capacitance_F": 8.65158224e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 6.05098194e-11,
+          "capacitance_F": 8.14923556e-13
+        }
+      }
+    },
+    "diode_ss_-40C_3V": {
+      "diode": "diode_ss",
+      "temp_C": -40,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.66582863e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.52369177e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.52707441e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.91910455e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.80693686e-13
+        }
+      }
+    },
+    "diode_ss_-40C_3.3V": {
+      "diode": "diode_ss",
+      "temp_C": -40,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.55494624e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.31306456e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.31507833e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.82052038e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.49908518e-13
+        }
+      }
+    },
+    "diode_ss_-40C_3.6V": {
+      "diode": "diode_ss",
+      "temp_C": -40,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 5.55111512e-17,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.45600328e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.13727874e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.13829771e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.73172419e-13
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": -0.0,
+          "capacitance_F": 9.25601975e-13
+        }
+      }
+    },
+    "diode_ss_27C_3V": {
+      "diode": "diode_ss",
+      "temp_C": 27,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 2.66453526e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 6.66133815e-16,
+          "capacitance_F": 1.00491817e-12
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.90220351e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.90623069e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 1.03407046e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 1.02402214e-12
+        }
+      }
+    },
+    "diode_ss_27C_3.3V": {
+      "diode": "diode_ss",
+      "temp_C": 27,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 2.66453526e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 6.66133815e-16,
+          "capacitance_F": 9.93011231e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.66821979e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.67062255e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 1.02353209e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.88772706e-13
+        }
+      }
+    },
+    "diode_ss_27C_3.6V": {
+      "diode": "diode_ss",
+      "temp_C": 27,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 2.66453526e-15,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 6.66133815e-16,
+          "capacitance_F": 9.82433086e-13
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.47515447e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.47640037e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.4408921e-16,
+          "capacitance_F": 1.01407505e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 1.77635684e-15,
+          "capacitance_F": 9.61490947e-13
+        }
+      }
+    },
+    "diode_ss_85C_3V": {
+      "diode": "diode_ss",
+      "temp_C": 85,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 1.41486822e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 8.46211989e-13,
+          "capacitance_F": 1.03061639e-12
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.45545856e-13,
+          "capacitance_F": 1.01542364e-12
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.46434034e-13,
+          "capacitance_F": 1.01588798e-12
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 8.45323811e-13,
+          "capacitance_F": 1.06359166e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 8.46434034e-13,
+          "capacitance_F": 1.05464333e-12
+        }
+      }
+    },
+    "diode_ss_85C_3.3V": {
+      "diode": "diode_ss",
+      "temp_C": 85,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 1.41753276e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 8.46211989e-13,
+          "capacitance_F": 1.01806788e-12
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.45545856e-13,
+          "capacitance_F": 9.89950457e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.46434034e-13,
+          "capacitance_F": 9.90226847e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 8.45323811e-13,
+          "capacitance_F": 1.05253221e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 8.46434034e-13,
+          "capacitance_F": 1.01508183e-12
+        }
+      }
+    },
+    "diode_ss_85C_3.6V": {
+      "diode": "diode_ss",
+      "temp_C": 85,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 1.41753276e-12,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 8.46211989e-13,
+          "capacitance_F": 1.00696531e-12
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 8.45545856e-13,
+          "capacitance_F": 9.69164003e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 8.46434034e-13,
+          "capacitance_F": 9.69309156e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 8.45323811e-13,
+          "capacitance_F": 1.04264139e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 8.46434034e-13,
+          "capacitance_F": 9.85076031e-13
+        }
+      }
+    },
+    "diode_ss_125C_3V": {
+      "diode": "diode_ss",
+      "temp_C": 125,
+      "supply_V": 3,
+      "max_abs_rail_range_leakage_A": 7.94182498e-11,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 4.47086812e-11,
+          "capacitance_F": 1.04299256e-12
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 4.47242243e-11,
+          "capacitance_F": 1.02739776e-12
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 4.47251125e-11,
+          "capacitance_F": 1.02790738e-12
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.46443993e-11,
+          "capacitance_F": 1.07891527e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 4.47384352e-11,
+          "capacitance_F": 1.07073764e-12
+        }
+      }
+    },
+    "diode_ss_125C_3.3V": {
+      "diode": "diode_ss",
+      "temp_C": 125,
+      "supply_V": 3.3,
+      "max_abs_rail_range_leakage_A": 7.94200261e-11,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 4.47086812e-11,
+          "capacitance_F": 1.03006008e-12
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 4.47233361e-11,
+          "capacitance_F": 1.00049856e-12
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 4.47242243e-11,
+          "capacitance_F": 1.00080071e-12
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.46443993e-11,
+          "capacitance_F": 1.0675525e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 4.4727777e-11,
+          "capacitance_F": 1.02795388e-12
+        }
+      }
+    },
+    "diode_ss_125C_3.6V": {
+      "diode": "diode_ss",
+      "temp_C": 125,
+      "supply_V": 3.6,
+      "max_abs_rail_range_leakage_A": 7.94209143e-11,
+      "pins": {
+        "BIAS": {
+          "voltage_V": 0.71,
+          "leakage_into_pad_A": 4.47086812e-11,
+          "capacitance_F": 1.01865198e-12
+        },
+        "PREF": {
+          "voltage_V": 1.99,
+          "leakage_into_pad_A": 4.4722448e-11,
+          "capacitance_F": 9.78732909e-13
+        },
+        "VRESET": {
+          "voltage_V": 2.0,
+          "leakage_into_pad_A": 4.47242243e-11,
+          "capacitance_F": 9.78892361e-13
+        },
+        "BUF_low": {
+          "voltage_V": 0.4,
+          "leakage_into_pad_A": 4.46443993e-11,
+          "capacitance_F": 1.05741561e-12
+        },
+        "BUF_high": {
+          "voltage_V": 2.5,
+          "leakage_into_pad_A": 4.47251125e-11,
+          "capacitance_F": 9.96017679e-13
+        }
+      }
+    }
+  },
+  "pad_source_sha256": "710732fd6a69e165caa2c29e4cdf81b11af41da32705fcd860b7ecfb09630dd1",
+  "pad_cell_sha256": "97a1eef4e2a1ed6d896e89f8c72d58c4766a65208906f449b4f16cc403b57910"
+}

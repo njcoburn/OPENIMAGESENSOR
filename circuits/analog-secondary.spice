@@ -1,0 +1,6 @@
+* Physical secondary protection candidate. ESD performance is not qualified.
+.subckt analog_secondary PAD CORE VDD VSS
+Xres PAD CORE VSS ppolyf_u r_width=3.2u r_length=1u
+Dlo VSS CORE diode_nd2ps_03v3 area=12p pj=26u
+Dhi CORE VDD diode_pd2nw_03v3 area=12p pj=26u
+.ends analog_secondary

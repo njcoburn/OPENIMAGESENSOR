@@ -1,0 +1,28 @@
+Physical 3x3 GF180 row-scan test
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+.options gmin=1e-17 abstol=1e-14 reltol=5e-5 chgtol=1e-16 trtol=3 method=gear
+.temp 27
+Vdd VDD 0 3.3
+Vin OUT 0 0
+.include /foss/designs/checkpoints/integrated/pex/sensor_reduced.spice
+Xsensor COL0 COL1 COL2 VRESET RST0 ROW0 RST1 ROW1 RST2 ROW2 BIAS SEL0 SEL1 SEL2 PREF BUF OUT 0 VDD sensor_pex
+Ibufref PREF 0 40u
+Rbond BUF BOND 1
+Lbond BOND PAD 5n
+Cpad PAD 0 5p
+Riso PAD ADCIN 100
+Cboard ADCIN 0 100p
+Rinput ADCIN 0 1Meg
+Vreset VRESET 0 2
+Iref VDD BIAS 0.5u
+Vr0 RST0 0 3.3
+Vs0 ROW0 0 3.3
+Vsel0 SEL0 0 0
+Vr1 RST1 0 3.3
+Vs1 ROW1 0 3.3
+Vsel1 SEL1 0 0
+Vr2 RST2 0 3.3
+Vs2 ROW2 0 3.3
+Vsel2 SEL2 0 0

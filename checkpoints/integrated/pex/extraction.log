@@ -1,0 +1,71 @@
+
+Magic 8.3 revision 664 - Compiled on Mon Jun 15 08:31:32 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "/foss/designs/layout/extract-integrated.tcl" from command line.
+Version 8.3 revision 664.  Compiled on Mon Jun 15 08:31:32 AM CEST 2026.
+MAGIC_VERSION=
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "sensor_3x3".
+The current style is "ngspice()".
+EXTRACT_STYLE=
+Extracting rc_sensor into rc_sensor.ext:
+Processing rc_sensor
+Processing cell rc_sensor for resistance extraction.
+Extracting a_1862_41900#
+Extracting a_4862_41900#
+Extracting a_17862_41900#
+Extracting a_20862_41900#
+Extracting a_33862_41900#
+Extracting a_36862_41900#
+Extracting a_1862_31900#
+Extracting a_4862_31900#
+Extracting a_17862_31900#
+Extracting a_20862_31900#
+Extracting a_33862_31900#
+Extracting a_36862_31900#
+Extracting a_1862_21900#
+Extracting a_4862_21900#
+Extracting a_17862_21900#
+Extracting a_20862_21900#
+Extracting a_33862_21900#
+Extracting a_36862_21900#
+Extracting GND
+Extracting VDD
+Extracting RST2
+Extracting VRESET
+Extracting ROW2
+Extracting COL0
+Extracting COL1
+Extracting COL2
+Extracting RST1
+Extracting ROW1
+Extracting RST0
+Extracting ROW0
+Extracting BIAS
+Extracting SEL0
+Extracting OUT
+Extracting SEL1
+Extracting SEL2
+Extracting PREF
+Extracting BUF
+Total Nets: 143305
+Nets extracted: 37 (0.000258)
+Nets output: 37 (0.000258)
+exttospice finished.

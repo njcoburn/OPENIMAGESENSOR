@@ -1,0 +1,49 @@
+* Extracted devices with wiring resistors shorted and parasitic C omitted.
+.subckt sensor_devices COL0 COL1 COL2 VRESET RST0 ROW0 RST1 ROW1 RST2 ROW2 BIAS SEL0 SEL1 SEL2 PREF BUF OUT GND VDD
+X0 VDD s22 f22 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X1 OUT SEL0 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X2 VRESET RST2 s22 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D0 GND s02 diode_nd2ps_03v3 pj=80u area=0.4n
+X3 OUT SEL2 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X4 VRESET RST0 s01 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X5 f00 ROW0 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X6 GND OUT BUF VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u
+D1 GND s12 diode_nd2ps_03v3 pj=80u area=0.4n
+X7 VDD s00 f00 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X8 COL0 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+X9 VRESET RST0 s00 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X10 VRESET RST1 s11 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X11 COL2 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+X12 f10 ROW1 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D2 GND s22 diode_nd2ps_03v3 pj=80u area=0.4n
+X13 VDD s10 f10 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D3 GND s00 diode_nd2ps_03v3 pj=80u area=0.4n
+X14 f01 ROW0 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X15 OUT SEL1 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X16 VRESET RST1 s10 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X17 f20 ROW2 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X18 VRESET RST2 s21 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X19 VDD s01 f01 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D4 GND s01 diode_nd2ps_03v3 pj=80u area=0.4n
+X20 f02 ROW0 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X21 VDD s02 f02 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X22 PREF PREF VDD VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=2u
+X23 VDD s20 f20 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X24 f11 ROW1 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X25 BIAS BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+D5 GND s10 diode_nd2ps_03v3 pj=80u area=0.4n
+X26 VRESET RST0 s02 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X27 VRESET RST2 s20 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X28 VDD s11 f11 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X29 f12 ROW1 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D6 GND s11 diode_nd2ps_03v3 pj=80u area=0.4n
+X30 BUF PREF VDD VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=2u
+X31 VDD s12 f12 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X32 f21 ROW2 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D7 GND s20 diode_nd2ps_03v3 pj=80u area=0.4n
+X33 VRESET RST1 s12 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X34 VDD s21 f21 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X35 f22 ROW2 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D8 GND s21 diode_nd2ps_03v3 pj=80u area=0.4n
+X36 COL1 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+.ends sensor_devices

@@ -1,0 +1,8 @@
+* NGSPICE file created from analog_secondary.ext - technology: gf180mcuD
+
+.subckt analog_secondary PAD CORE VDD VSS
+D0 VSS CORE diode_nd2ps_03v3 pj=26u area=12p
+X0 CORE PAD VSS ppolyf_u r_width=3.2u r_length=1u
+D1 CORE VDD diode_pd2nw_03v3 pj=26u area=12p
+.ends
+

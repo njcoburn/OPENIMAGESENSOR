@@ -1,0 +1,18 @@
+{
+  "ss_-40C_20uA_0.1us_no_inductor": {
+    "status": "simulation_failed",
+    "error": "/foss/designs/build/buffer-hardening/ss_-40C_20uA_0.1us_no_inductor/20uA_100pF_sampled5us",
+    "corner": "ss",
+    "temp_C": -40,
+    "precharge": false,
+    "bias_reference_uA": 20
+  },
+  "ss_-40C_20uA_0.1us_schematic_readout": {
+    "status": "simulation_failed",
+    "error": "/foss/designs/build/buffer-hardening/ss_-40C_20uA_0.1us_schematic_readout/20uA_100pF_sampled5us",
+    "corner": "ss",
+    "temp_C": -40,
+    "precharge": false,
+    "bias_reference_uA": 20
+  }
+}

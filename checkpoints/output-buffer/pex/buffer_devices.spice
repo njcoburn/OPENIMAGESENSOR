@@ -1,0 +1,6 @@
+* Extracted devices with wiring resistors shorted and parasitic C omitted.
+.subckt buffer_devices GND VDD PREF IN BUF
+X0 BUF PREF VDD VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=2u
+X1 GND IN BUF VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u
+X2 PREF PREF VDD VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=2u
+.ends buffer_devices

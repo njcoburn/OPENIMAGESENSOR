@@ -1,0 +1,9 @@
+{
+  "magic_drc_count": 0,
+  "klayout_drc_count": 0,
+  "lvs_unique_match": true,
+  "gds_sha256": "8a2183fd85d5a6b81bcaceb10eeb00f906018574902c4bdfe2199a5c41b222b7",
+  "transistors": 37,
+  "photodiodes": 9,
+  "scope": "Connected 3x3 array, column bias/mux and PMOS buffer with common metal supply/ground and floating density fill. No pads, ESD, reference generators or digital control."
+}

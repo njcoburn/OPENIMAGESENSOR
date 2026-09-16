@@ -1,0 +1,31 @@
+{
+  "rule_selection": "all,-antenna,-density,-cup",
+  "drc_markers": {
+    "wafer-space": 0,
+    "density": 0,
+    "antenna": 0
+  },
+  "previous_unfiltered_CUP3": 87,
+  "full_die_precheck": false,
+  "nominal_pair_leakage_nA": 0.145537545,
+  "max_pair_leakage_nA": 76.1897831,
+  "dc_count": 324,
+  "ideal_startup_count": 24,
+  "ideal_startup_settled": 24,
+  "strict_supply_failed": 8,
+  "practical_supply_failed": 0,
+  "soft_start_cases": 6,
+  "soft_start_settled": 6,
+  "soft_start_peak_source_A": 0.000430122427,
+  "soft_start_max_drop_V": 0.0021500899999997714,
+  "original_imaging_failed": 2,
+  "practical_three_frame_passed": 2,
+  "charge_three_frame_passed": 2,
+  "first_frame_passed": 4,
+  "esd_qualified": false,
+  "gds_sha256": {
+    "checkpoints/integrated/sensor_3x3.gds": "8a2183fd85d5a6b81bcaceb10eeb00f906018574902c4bdfe2199a5c41b222b7",
+    "checkpoints/pad-layout/analog_pad_interface.gds": "3517bdda5385d7037ce8158520db6ab9d38e220ffc478867a3a5a6addcff3ecf"
+  },
+  "first_frame_max_matched_output_difference_uV": 0.3799999999110071
+}

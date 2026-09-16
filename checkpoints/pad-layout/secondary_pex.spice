@@ -1,0 +1,12 @@
+* Extracted local protection: PDK resistor, diodes, Schur-reduced fill/wiring C. Metal wire R not included.
+.subckt secondary_pex PAD CORE VDD VSS
+D0 VSS CORE diode_nd2ps_03v3 pj=26u area=12p
+X0 CORE PAD VSS ppolyf_u r_width=3.2u r_length=1u
+D1 CORE VDD diode_pd2nw_03v3 pj=26u area=12p
+C0 PAD VSS 1.62869659861f
+C1 PAD CORE 0.199014106674f
+C2 PAD VDD 0.0085190626787f
+C3 CORE VSS 7.73440950123f
+C4 CORE VDD 3.52694725274f
+C5 VDD VSS 11.9775073513f
+.ends secondary_pex

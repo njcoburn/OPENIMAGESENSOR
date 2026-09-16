@@ -1,0 +1,52 @@
+* NGSPICE file created from sensor_3x3.ext - technology: gf180mcuD
+
+.subckt sensor_3x3 VDD VRESET GND RST0 RST1 RST2 ROW0 ROW1 ROW2 BIAS SEL0 SEL1 SEL2
++ PREF BUF COL0 COL1 COL2 OUT
+X0 VDD a_33862_41900# a_36862_41900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X1 OUT SEL0 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X2 VRESET RST2 a_33862_41900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D0 GND a_33862_21900# diode_nd2ps_03v3 pj=80u area=0.4n
+X3 OUT SEL2 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X4 VRESET RST0 a_17862_21900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X5 a_4862_21900# ROW0 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X6 GND OUT BUF VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u
+D1 GND a_33862_31900# diode_nd2ps_03v3 pj=80u area=0.4n
+X7 VDD a_1862_21900# a_4862_21900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X8 COL0 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+X9 VRESET RST0 a_1862_21900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X10 VRESET RST1 a_17862_31900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X11 COL2 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+X12 a_4862_31900# ROW1 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D2 GND a_33862_41900# diode_nd2ps_03v3 pj=80u area=0.4n
+X13 VDD a_1862_31900# a_4862_31900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D3 GND a_1862_21900# diode_nd2ps_03v3 pj=80u area=0.4n
+X14 a_20862_21900# ROW0 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X15 OUT SEL1 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X16 VRESET RST1 a_1862_31900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X17 a_4862_41900# ROW2 COL0 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X18 VRESET RST2 a_17862_41900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X19 VDD a_17862_21900# a_20862_21900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D4 GND a_17862_21900# diode_nd2ps_03v3 pj=80u area=0.4n
+X20 a_36862_21900# ROW0 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X21 VDD a_33862_21900# a_36862_21900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X22 PREF PREF VDD VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=2u
+X23 VDD a_1862_41900# a_4862_41900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X24 a_20862_31900# ROW1 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X25 BIAS BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+D5 GND a_1862_31900# diode_nd2ps_03v3 pj=80u area=0.4n
+X26 VRESET RST0 a_33862_21900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X27 VRESET RST2 a_1862_41900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X28 VDD a_17862_31900# a_20862_31900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X29 a_36862_31900# ROW1 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D6 GND a_17862_31900# diode_nd2ps_03v3 pj=80u area=0.4n
+X30 BUF PREF VDD VDD pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=2u
+X31 VDD a_33862_31900# a_36862_31900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X32 a_20862_41900# ROW2 COL1 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D7 GND a_1862_41900# diode_nd2ps_03v3 pj=80u area=0.4n
+X33 VRESET RST1 a_33862_31900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X34 VDD a_17862_41900# a_20862_41900# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+X35 a_36862_41900# ROW2 COL2 GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u
+D8 GND a_17862_41900# diode_nd2ps_03v3 pj=80u area=0.4n
+X36 COL1 BIAS GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+.ends
+

@@ -1,0 +1,7 @@
+* Candidate supply-pad pair for one 3.3V analog power domain.
+* Library model snapshot and res/moscap/diode sections must be included by testbench.
+* This is not a complete ring or an ESD-qualified interface.
+.subckt sensor_supply_pads AVDD AVSS
+Xvdd AVDD AVSS AVSS gf180mcu_fd_io__dvdd
+Xvss AVDD AVSS AVDD gf180mcu_fd_io__dvss
+.ends sensor_supply_pads

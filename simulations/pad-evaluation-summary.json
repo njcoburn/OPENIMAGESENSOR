@@ -1,0 +1,12 @@
+{
+  "isolated_cases": 36,
+  "dc_cases_per_candidate": 84,
+  "secondary_finite_switch_pass": 5,
+  "secondary_finite_switch_cases": 5,
+  "worst_hold_error_mV": 0.21695332465987427,
+  "refined_hot_hold_error_mV": 0.2164260101900073,
+  "refined_hot_max_sample_change_mV": 0.0009699999998780129,
+  "pad_only_matched_switch_max_sample_change_mV": 2.0000000100495186e-05,
+  "max_rail_range_leakage_nA": 0.107451825,
+  "ideal_secondary_failed_cases": 5
+}

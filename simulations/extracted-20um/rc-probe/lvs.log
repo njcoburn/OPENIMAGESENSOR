@@ -1,0 +1,50 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pixel_physical in circuit array_3x3 (1)(9 instances)
+
+Subcircuit summary:
+Circuit 1: array_devices                   |Circuit 2: array_3x3                       
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (27)                             |nfet_03v3 (27)                             
+diode_nd2ps_03v3 (9)                       |diode_nd2ps_03v3 (9)                       
+Number of devices: 36                      |Number of devices: 36                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: array_devices                   |Circuit 2: array_3x3                       
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+COL2                                       |COL2                                       
+COL1                                       |COL1                                       
+COL0                                       |COL0                                       
+RST2                                       |RST2                                       
+RST1                                       |RST1                                       
+RST0                                       |RST0                                       
+ROW2                                       |ROW2                                       
+ROW0                                       |ROW0                                       
+ROW1                                       |ROW1                                       
+VDD                                        |VDD                                        
+VRESET                                     |VRESET                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes array_devices and array_3x3 are equivalent.
+
+Final result: Circuits match uniquely.
+.

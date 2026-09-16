@@ -1,0 +1,59 @@
+
+Magic 8.3 revision 664 - Compiled on Mon Jun 15 08:31:32 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "/foss/designs/layout/check-readout.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nfet_probe".
+Moving label "D" from ndiff to ndiffc in cell nfet_probe.
+Moving label "S" from ndiff to ndiffc in cell nfet_probe.
+Reading "bias_nfet".
+Moving label "D" from ndiff to ndiffc in cell bias_nfet.
+Moving label "S" from ndiff to ndiffc in cell bias_nfet.
+Reading "column_readout".
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+The selected label is already a port.
+Do "port help" to get a list of options.
+Loading DRC CIF style.
+READOUT_DRC_COUNT=0
+No errors found.
+READOUT_DRC_DETAILS=
+Extracting nfet_probe into nfet_probe.ext:
+Processing nfet_probe
+Extracting bias_nfet into bias_nfet.ext:
+Processing bias_nfet
+Extracting column_readout into column_readout.ext:
+Processing column_readout
+exttospice finished.

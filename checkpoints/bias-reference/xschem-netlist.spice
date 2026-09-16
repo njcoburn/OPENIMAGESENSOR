@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/xschem/board_bias.sch
+**.subckt board_bias VDD GND BIAS PREF
+*.iopin VDD
+*.iopin GND
+*.iopin BIAS
+*.iopin PREF
+Rcolumn VDD BIAS 5.1meg
+Ccolumn BIAS GND 5p
+Rbuffer PREF GND 49.9k
+Cbuffer PREF GND 5p
+**.ends
+.end

@@ -1,0 +1,39 @@
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u                        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+
+Subcircuit summary:
+Circuit 1: analog_secondary                |Circuit 2: analog_secondary                
+-------------------------------------------|-------------------------------------------
+diode_nd2ps_03v3 (1)                       |diode_nd2ps_03v3 (1)                       
+ppolyf_u (1)                               |ppolyf_u (1)                               
+diode_pd2nw_03v3 (1)                       |diode_pd2nw_03v3 (1)                       
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: analog_secondary                |Circuit 2: analog_secondary                
+-------------------------------------------|-------------------------------------------
+PAD                                        |PAD                                        
+VDD                                        |VDD                                        
+CORE                                       |CORE                                       
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes analog_secondary and analog_secondary are equivalent.
+
+Final result: Circuits match uniquely.
+.

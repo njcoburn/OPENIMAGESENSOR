@@ -1,0 +1,179 @@
+{
+  "cases": {
+    "-40C_R0.5_ramp1us": {
+      "temp_C": -40,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "Preserved failed simulation; see run.log"
+    },
+    "-40C_R0.5_ramp100us": {
+      "temp_C": -40,
+      "source_R_ohm": 0.5,
+      "ramp_us": 100,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "Preserved failed simulation; see run.log"
+    },
+    "-40C_R0.5_ramp1000us": {
+      "temp_C": -40,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1000,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "Preserved failed simulation; see run.log"
+    },
+    "-40C_R5_ramp1us": {
+      "temp_C": -40,
+      "source_R_ohm": 5,
+      "ramp_us": 1,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "Preserved failed simulation; see run.log"
+    },
+    "-40C_R5_ramp100us": {
+      "temp_C": -40,
+      "source_R_ohm": 5,
+      "ramp_us": 100,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "Preserved failed simulation; see run.log"
+    },
+    "-40C_R5_ramp1000us": {
+      "temp_C": -40,
+      "source_R_ohm": 5,
+      "ramp_us": 1000,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "Preserved failed simulation; see run.log"
+    },
+    "27C_R0.5_ramp1us": {
+      "temp_C": 27,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1,
+      "peak_source_current_A": 1.40162158,
+      "peak_source_to_rail_drop_V": 0.7008107899999998,
+      "peak_clamp_gate_V": 3.08706597,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 8.93754928e-10,
+      "settled_at_200us": true
+    },
+    "27C_R0.5_ramp100us": {
+      "temp_C": 27,
+      "source_R_ohm": 0.5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00340051904,
+      "peak_source_to_rail_drop_V": 0.001700259999999787,
+      "peak_clamp_gate_V": 0.174752694,
+      "tail_min_rail_V": 3.29995,
+      "tail_max_gate_V": 8.9375754e-10,
+      "settled_at_200us": true
+    },
+    "27C_R0.5_ramp1000us": {
+      "temp_C": 27,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1000,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "Preserved failed simulation; see run.log"
+    },
+    "27C_R5_ramp1us": {
+      "temp_C": 27,
+      "source_R_ohm": 5,
+      "ramp_us": 1,
+      "peak_source_current_A": 0.324388619,
+      "peak_source_to_rail_drop_V": 1.6219430999999997,
+      "peak_clamp_gate_V": 2.42386106,
+      "tail_min_rail_V": 3.29950007,
+      "tail_max_gate_V": 8.93744204e-10,
+      "settled_at_200us": true
+    },
+    "27C_R5_ramp100us": {
+      "temp_C": 27,
+      "source_R_ohm": 5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00339960577,
+      "peak_source_to_rail_drop_V": 0.016998029999999886,
+      "peak_clamp_gate_V": 0.174751598,
+      "tail_min_rail_V": 3.29950007,
+      "tail_max_gate_V": 8.93738927e-10,
+      "settled_at_200us": true
+    },
+    "27C_R5_ramp1000us": {
+      "temp_C": 27,
+      "source_R_ohm": 5,
+      "ramp_us": 1000,
+      "status": "simulation_failed",
+      "settled_at_200us": false,
+      "error": "/foss/designs/build/clamp-supply/27C_R5_ramp1000us Warning: m=xx on .subckt line will override multiplier m hierarchy!\n\nWarning: diode_nd2ps_06v0: IKR too small - model effect disabled!\n\nNote: Compatibility modes selected: hs a\n\n\nCircuit: supply-pad clamp pair: normal-voltage characterization\n\nDoing analysis at TEMP = 27.000000 and TNOM = 27.000000\n\nUsing SPARSE 1.3 as Direct Linear Solver\nOperating point simulation skipped by 'uic',\n  now using transient initial conditions.\ndoAnalyses: TRAN:  Timestep too small; time = 2e-10, timestep = 2.5e-20: trouble with node \"e.xvss.x3.ec_moscap#branch\"\n\n\ntran simulation(s) aborted\n\nNo. of Data Rows : 1\nngspice-46 done\n"
+    },
+    "125C_R0.5_ramp1us": {
+      "temp_C": 125,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1,
+      "peak_source_current_A": 1.29058316,
+      "peak_source_to_rail_drop_V": 0.6452915799999999,
+      "peak_clamp_gate_V": 3.08954674,
+      "tail_min_rail_V": 3.29994997,
+      "tail_max_gate_V": 3.60741798e-09,
+      "settled_at_200us": true
+    },
+    "125C_R0.5_ramp100us": {
+      "temp_C": 125,
+      "source_R_ohm": 0.5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00340059523,
+      "peak_source_to_rail_drop_V": 0.001700299999999988,
+      "peak_clamp_gate_V": 0.11909849,
+      "tail_min_rail_V": 3.29994997,
+      "tail_max_gate_V": 3.60740616e-09,
+      "settled_at_200us": true
+    },
+    "125C_R0.5_ramp1000us": {
+      "temp_C": 125,
+      "source_R_ohm": 0.5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.000430122431,
+      "peak_source_to_rail_drop_V": 0.00021506000000037773,
+      "peak_clamp_gate_V": 0.0838674174,
+      "tail_min_rail_V": 3.29994997,
+      "tail_max_gate_V": 3.60738032e-09,
+      "settled_at_200us": true
+    },
+    "125C_R5_ramp1us": {
+      "temp_C": 125,
+      "source_R_ohm": 5,
+      "ramp_us": 1,
+      "peak_source_current_A": 0.324717457,
+      "peak_source_to_rail_drop_V": 1.62358729,
+      "peak_clamp_gate_V": 2.35957383,
+      "tail_min_rail_V": 3.29949972,
+      "tail_max_gate_V": 3.60760651e-09,
+      "settled_at_200us": true
+    },
+    "125C_R5_ramp100us": {
+      "temp_C": 125,
+      "source_R_ohm": 5,
+      "ramp_us": 100,
+      "peak_source_current_A": 0.00339968148,
+      "peak_source_to_rail_drop_V": 0.016998409999999797,
+      "peak_clamp_gate_V": 0.119100421,
+      "tail_min_rail_V": 3.29949972,
+      "tail_max_gate_V": 3.60762585e-09,
+      "settled_at_200us": true
+    },
+    "125C_R5_ramp1000us": {
+      "temp_C": 125,
+      "source_R_ohm": 5,
+      "ramp_us": 1000,
+      "peak_source_current_A": 0.000430018748,
+      "peak_source_to_rail_drop_V": 0.0021500899999997714,
+      "peak_clamp_gate_V": 0.0838660654,
+      "tail_min_rail_V": 3.29949972,
+      "tail_max_gate_V": 3.60760586e-09,
+      "settled_at_200us": true
+    }
+  },
+  "scope": "One clamp pair; res_ss/moscap_ss/diode_ff, typical HV MOS. Ideal upstream soft-start, 0.5/5ohm source impedance, 100nF decoupling, 33kohm representative load. Not a selected regulator or sensor transient."
+}

@@ -1,0 +1,76 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell array_3x3 in circuit sensor_3x3 (1)(1 instance)
+Flattening unmatched subcell pixel_physical in circuit sensor_3x3 (1)(9 instances)
+Flattening unmatched subcell column_readout in circuit sensor_3x3 (1)(1 instance)
+Flattening unmatched subcell output_buffer in circuit sensor_3x3 (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: sensor_devices                  |Circuit 2: sensor_3x3                      
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (34)                             |nfet_03v3 (34)                             
+diode_nd2ps_03v3 (9)                       |diode_nd2ps_03v3 (9)                       
+pfet_03v3 (3)                              |pfet_03v3 (3)                              
+Number of devices: 46                      |Number of devices: 46                      
+Number of nets: 37                         |Number of nets: 37                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sensor_devices                  |Circuit 2: sensor_3x3                      
+-------------------------------------------|-------------------------------------------
+VRESET                                     |VRESET                                     
+COL0                                       |COL0                                       
+COL1                                       |COL1                                       
+COL2                                       |COL2                                       
+BIAS                                       |BIAS                                       
+SEL0                                       |SEL0                                       
+SEL1                                       |SEL1                                       
+SEL2                                       |SEL2                                       
+OUT                                        |OUT                                        
+GND                                        |GND                                        
+BUF                                        |BUF                                        
+RST0                                       |RST0                                       
+RST1                                       |RST1                                       
+RST2                                       |RST2                                       
+ROW0                                       |ROW0                                       
+ROW1                                       |ROW1                                       
+ROW2                                       |ROW2                                       
+PREF                                       |PREF                                       
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sensor_devices and sensor_3x3 are equivalent.
+
+Final result: Circuits match uniquely.
+.

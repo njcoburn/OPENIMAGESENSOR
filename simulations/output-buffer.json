@@ -1,0 +1,470 @@
+{
+  "cases": {
+    "5uA_100pF": {
+      "bias_reference_uA": 5,
+      "board_capacitance_pF": 100,
+      "adc_sampling": false,
+      "samples": [
+        {
+          "row": 0,
+          "col": 0,
+          "input_V": 0.9883278492937501,
+          "output_V": 2.019425481750007,
+          "static_expected_V": 2.1669772064538324,
+          "tracking_error_mV": -147.55172470382539,
+          "hold_error_mV": null
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "input_V": 0.8050646092445001,
+          "output_V": 2.0258844668325,
+          "static_expected_V": 2.0255802595801176,
+          "tracking_error_mV": 0.304207252382227,
+          "hold_error_mV": null
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "input_V": 0.43950051146935026,
+          "output_V": 1.7406419215865003,
+          "static_expected_V": 1.7399797251670328,
+          "tracking_error_mV": 0.6621964194675201,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "input_V": 0.46145549945850073,
+          "output_V": 1.7545360066409976,
+          "static_expected_V": 1.7572564340415648,
+          "tracking_error_mV": -2.7204274005672158,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "input_V": 0.9896212593486,
+          "output_V": 2.0411303070419944,
+          "static_expected_V": 2.1679705777112086,
+          "tracking_error_mV": -126.84027066921422,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "input_V": 0.8040232834930003,
+          "output_V": 2.0250781719925004,
+          "static_expected_V": 2.024773273775735,
+          "tracking_error_mV": 0.3048982167652703,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "input_V": 0.8086538493861501,
+          "output_V": 1.9599885385739813,
+          "static_expected_V": 2.028361535581377,
+          "tracking_error_mV": -68.37299700739563,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "input_V": 0.44857750373279986,
+          "output_V": 1.7477892240639998,
+          "static_expected_V": 1.7471243823375642,
+          "tracking_error_mV": 0.664841726435661,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "input_V": 0.988814890064,
+          "output_V": 2.037350554435985,
+          "static_expected_V": 2.1673512659414036,
+          "tracking_error_mV": -130.00071150541848,
+          "hold_error_mV": null
+        }
+      ],
+      "max_tracking_error_mV": 147.55172470382539,
+      "mean_total_VDD_power_uW": 35.04969238360951,
+      "testbench_sha256": "4315588e247c392c940addced5801bec48f65a079687e44b8b3e04a0753a527e"
+    },
+    "20uA_100pF": {
+      "bias_reference_uA": 20,
+      "board_capacitance_pF": 100,
+      "adc_sampling": false,
+      "samples": [
+        {
+          "row": 0,
+          "col": 0,
+          "input_V": 0.9882956210956501,
+          "output_V": 2.2611191500585,
+          "static_expected_V": 2.2611110213285555,
+          "tracking_error_mV": 0.008128729944711921,
+          "hold_error_mV": null
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "input_V": 0.8050646779408002,
+          "output_V": 2.119165523568,
+          "static_expected_V": 2.1190978624236925,
+          "tracking_error_mV": 0.06766114430734049,
+          "hold_error_mV": null
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "input_V": 0.43950045334550014,
+          "output_V": 1.8323577037650003,
+          "static_expected_V": 1.8321765635645564,
+          "tracking_error_mV": 0.18114020044390777,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "input_V": 0.4614492744816006,
+          "output_V": 1.8497101805600005,
+          "static_expected_V": 1.8495286174199677,
+          "tracking_error_mV": 0.18156314003281437,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "input_V": 0.9895846067561,
+          "output_V": 2.262113584761,
+          "static_expected_V": 2.2621054286510947,
+          "tracking_error_mV": 0.008156109905232967,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "input_V": 0.8040233771991503,
+          "output_V": 2.1183544767590003,
+          "static_expected_V": 2.118287199383311,
+          "tracking_error_mV": 0.06727737568956726,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "input_V": 0.808607251491,
+          "output_V": 2.12192362408,
+          "static_expected_V": 2.1218555602705345,
+          "tracking_error_mV": 0.06806380946544621,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "input_V": 0.4485776229862495,
+          "output_V": 1.8395364495274997,
+          "static_expected_V": 1.8393545373972737,
+          "tracking_error_mV": 0.18191213022600294,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "input_V": 0.9887790399890001,
+          "output_V": 2.2614921501735,
+          "static_expected_V": 2.261483962085114,
+          "tracking_error_mV": 0.008188088385985282,
+          "hold_error_mV": null
+        }
+      ],
+      "max_tracking_error_mV": 0.18191213022600294,
+      "mean_total_VDD_power_uW": 134.1162874980724,
+      "testbench_sha256": "081c44137882799e434c4c0764716e7da8769a3771741860e0fda9ffa99e121b"
+    },
+    "20uA_1000pF": {
+      "bias_reference_uA": 20,
+      "board_capacitance_pF": 1000,
+      "adc_sampling": false,
+      "samples": [
+        {
+          "row": 0,
+          "col": 0,
+          "input_V": 0.9883128858897999,
+          "output_V": 1.9932136078990024,
+          "static_expected_V": 2.2611243405129744,
+          "tracking_error_mV": -267.910732613972,
+          "hold_error_mV": null
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "input_V": 0.8050641426961002,
+          "output_V": 2.120948847335,
+          "static_expected_V": 2.119097445730341,
+          "tracking_error_mV": 1.8514016046591308,
+          "hold_error_mV": null
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "input_V": 0.43949281812200014,
+          "output_V": 1.845167965430001,
+          "static_expected_V": 1.8321705246372337,
+          "tracking_error_mV": 12.997440792767323,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "input_V": 0.4614774675090007,
+          "output_V": 1.7907395167549855,
+          "static_expected_V": 1.8495508965369751,
+          "tracking_error_mV": -58.81137978198958,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "input_V": 0.989604454879,
+          "output_V": 2.013208887509987,
+          "static_expected_V": 2.2621207407832276,
+          "tracking_error_mV": -248.9118532732406,
+          "hold_error_mV": null
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "input_V": 0.8040217915514503,
+          "output_V": 2.121414888053501,
+          "static_expected_V": 2.1182859649407195,
+          "tracking_error_mV": 3.1289231127815675,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "input_V": 0.80863657228645,
+          "output_V": 1.9316378088234933,
+          "static_expected_V": 2.1218783824048812,
+          "tracking_error_mV": -190.2405735813879,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "input_V": 0.44857081001799975,
+          "output_V": 1.8508728013419988,
+          "static_expected_V": 1.839349150962381,
+          "tracking_error_mV": 11.523650379617889,
+          "hold_error_mV": null
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "input_V": 0.9887992049694,
+          "output_V": 2.016527836314497,
+          "static_expected_V": 2.261499518661718,
+          "tracking_error_mV": -244.971682347221,
+          "hold_error_mV": null
+        }
+      ],
+      "max_tracking_error_mV": 267.910732613972,
+      "mean_total_VDD_power_uW": 134.1184790850685,
+      "testbench_sha256": "2771ee0778c37eafd852cc78384dd6d08cfa331ddf46fafc89eb7ecb714a0bda"
+    },
+    "20uA_100pF_sampled": {
+      "bias_reference_uA": 20,
+      "board_capacitance_pF": 100,
+      "adc_sampling": true,
+      "samples": [
+        {
+          "row": 0,
+          "col": 0,
+          "input_V": 0.988479943,
+          "output_V": 2.04298029,
+          "static_expected_V": 2.261253219226495,
+          "tracking_error_mV": -218.2729292264951,
+          "hold_error_mV": -218.55921922649512
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "input_V": 0.805283499,
+          "output_V": 1.92473715,
+          "static_expected_V": 2.11926821680649,
+          "tracking_error_mV": -194.53106680649012,
+          "hold_error_mV": -194.81789680648998
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "input_V": 0.43977397900000037,
+          "output_V": 1.6848573599998773,
+          "static_expected_V": 1.8323929032104704,
+          "tracking_error_mV": -147.53554321059315,
+          "hold_error_mV": -147.81647321059333
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "input_V": 0.4617218940000008,
+          "output_V": 1.6994351199997535,
+          "static_expected_V": 1.8497440509050906,
+          "tracking_error_mV": -150.30893090533715,
+          "hold_error_mV": -150.590640905337
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "input_V": 0.989768946,
+          "output_V": 2.04380896,
+          "static_expected_V": 2.26224763992589,
+          "tracking_error_mV": -218.43867992589017,
+          "hold_error_mV": -218.7249599258898
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "input_V": 0.8042370290000002,
+          "output_V": 1.9240655499997505,
+          "static_expected_V": 2.11845352944679,
+          "tracking_error_mV": -194.38797944703956,
+          "hold_error_mV": -194.67480944703942
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "input_V": 0.808827129,
+          "output_V": 1.92703771,
+          "static_expected_V": 2.12202670412844,
+          "tracking_error_mV": -194.98899412843994,
+          "hold_error_mV": -195.27582412844004
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "input_V": 0.448851149,
+          "output_V": 1.69088678,
+          "static_expected_V": 1.839570791166635,
+          "tracking_error_mV": -148.684011166635,
+          "hold_error_mV": -148.96527116663495
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "input_V": 0.988972502,
+          "output_V": 2.04328486,
+          "static_expected_V": 2.26163321125543,
+          "tracking_error_mV": -218.34835125542983,
+          "hold_error_mV": -218.63464125542987
+        }
+      ],
+      "max_tracking_error_mV": 218.43867992589017,
+      "mean_total_VDD_power_uW": 134.11725354198856,
+      "testbench_sha256": "afed53cd87c27aaeb0dfcd19e0a38ae6fc6ff56e2adf0c17b6dc683a68a0c4ef"
+    },
+    "20uA_100pF_sampled5us": {
+      "bias_reference_uA": 20,
+      "board_capacitance_pF": 100,
+      "adc_sampling": true,
+      "acquisition_us": 5,
+      "samples": [
+        {
+          "row": 0,
+          "col": 0,
+          "input_V": 0.988297634,
+          "output_V": 2.26090871,
+          "static_expected_V": 2.26111257421381,
+          "tracking_error_mV": -0.20386421381024533,
+          "hold_error_mV": -0.20471421380996446
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "input_V": 0.805066008,
+          "output_V": 2.11903285,
+          "static_expected_V": 2.11909889788808,
+          "tracking_error_mV": -0.06604788808006745,
+          "hold_error_mV": -0.06632788808014212
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "input_V": 0.4395010570000005,
+          "output_V": 1.8323230300000002,
+          "static_expected_V": 1.8321770410130105,
+          "tracking_error_mV": 0.14598898698969798,
+          "hold_error_mV": 0.14658898698982625
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "input_V": 0.461449881000001,
+          "output_V": 1.8496721100000004,
+          "static_expected_V": 1.8495290967120357,
+          "tracking_error_mV": 0.14301328796473278,
+          "hold_error_mV": 0.1436032879646998
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "input_V": 0.989586466,
+          "output_V": 2.2619053,
+          "static_expected_V": 2.26210686299269,
+          "tracking_error_mV": -0.20156299268991873,
+          "hold_error_mV": -0.20240299269014272
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "input_V": 0.8040245510000004,
+          "output_V": 2.1182230199999994,
+          "static_expected_V": 2.1182881131990103,
+          "tracking_error_mV": -0.06509319901093491,
+          "hold_error_mV": -0.06536319901062626
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "input_V": 0.808608546,
+          "output_V": 2.12179104,
+          "static_expected_V": 2.12185656786456,
+          "tracking_error_mV": -0.06552786455982229,
+          "hold_error_mV": -0.06580786455989696
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "input_V": 0.448578182,
+          "output_V": 1.83950202,
+          "static_expected_V": 1.8393549793619302,
+          "tracking_error_mV": 0.1470406380699174,
+          "hold_error_mV": 0.14764063806982364
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "input_V": 0.98878086,
+          "output_V": 2.26128222,
+          "static_expected_V": 2.2614853661599,
+          "tracking_error_mV": -0.20314615990013607,
+          "hold_error_mV": -0.2039961599002993
+        }
+      ],
+      "max_tracking_error_mV": 0.20386421381024533,
+      "mean_total_VDD_power_uW": 134.11708015163362,
+      "testbench_sha256": "1eaecf929b63faae1fddd696ea358609116f5ff8d8999b608ffaf68bff50bbb0"
+    }
+  },
+  "scope": "Schematic PMOS follower on qualified extracted readout and extracted array. Ideal 5/20uA reference. Generic 1ohm/5nH bond path, 5pF pad, 100ohm isolation, 100pF or 1nF board capacitance, 1Meg DC input. Optional ideal switched 20pF sampling capacitor, 100ohm acquisition switch, 1us acquisition. No specific ADC accuracy claim; typical corner only; buffer not laid out.",
+  "numerical_check": {
+    "case": "20uA_100pF_sampled5us",
+    "half_step_max_sample_change_mV": 0.02859999999982321
+  },
+  "source_sha256": {
+    "circuits/output-buffer.spice": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f",
+    "checkpoints/readout/pex/readout_reduced.spice": "7f2d3434425264f56e7f6d999d47ae2e710ab563e2a2d8fadd69e7eecbf93348",
+    "simulations/extracted-20um/rc-filled/array_reduced.spice": "ad31f431225ff94b5394e88a2dcec62f75330783db134bb827e8ba185457caaa"
+  }
+}

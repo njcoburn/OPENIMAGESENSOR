@@ -1,0 +1,13 @@
+{
+  "capacitance_fF": {
+    "PAD-VSS": 1.6286965986108268,
+    "PAD-CORE": 0.19901410667437316,
+    "PAD-VDD": 0.008519062678699455,
+    "CORE-VSS": 7.734409501228052,
+    "CORE-VDD": 3.526947252744907,
+    "VDD-VSS": 11.977507351345166
+  },
+  "raw_capacitors": 8577,
+  "eliminated_floating_nodes": 1089,
+  "scope": "Zero-net-charge floating-fill elimination; lumped terminal capacitances. Metal wiring resistance not included."
+}

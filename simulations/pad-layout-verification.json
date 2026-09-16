@@ -1,0 +1,25 @@
+{
+  "local_magic_drc": 0,
+  "local_klayout_drc": 0,
+  "local_lvs_unique": true,
+  "wrapper_magic_drc": 0,
+  "wrapper_lvs_unique": true,
+  "wrapper_klayout_drc": 87,
+  "stock_pad_klayout_drc": 87,
+  "inherited_markers_exact_match": true,
+  "dc_cases": 36,
+  "selected_imaging_pass": 5,
+  "worst_hold_error_mV": 0.2205734178801766,
+  "fine_hold_error_mV": 0.21994777976019897,
+  "fine_sample_change_mV": 0.00109999999997612,
+  "nominal_resistance_ohm": 149.1176806002143,
+  "resistance_range_ohm": [
+    121.55377025778517,
+    176.42551338465918
+  ],
+  "gds_sha256": {
+    "analog_secondary.gds": "93a777af790242ed7e0d0f05459c197017957e517fa53c018a69412f3068aec6",
+    "analog_pad_interface.gds": "3517bdda5385d7037ce8158520db6ab9d38e220ffc478867a3a5a6addcff3ecf"
+  },
+  "scope": "Local physical protection cell verified; full wrapper has 87 inherited CUP.3 findings. No supply clamp/full ring or ESD qualification. Simulations use extracted local capacitance and PDK poly resistor, schematic primary-pad model; metal wire resistance omitted."
+}
