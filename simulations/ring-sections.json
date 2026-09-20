@@ -1,0 +1,301 @@
+{
+  "cases": {
+    "fill10": {
+      "full": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 0.45849300890220596,
+            "nodes": 199,
+            "resistors": 296,
+            "KCL_residual_A": 1.4210854715202004e-14
+          },
+          "VSS": {
+            "R_ohm": 0.45848181229571766,
+            "nodes": 347,
+            "resistors": 534,
+            "KCL_residual_A": 1.667554982986985e-13
+          },
+          "DVDD": {
+            "R_ohm": 0.4010000000000446,
+            "nodes": 500,
+            "resistors": 794,
+            "KCL_residual_A": 7.105427357601002e-14
+          },
+          "DVSS": {
+            "R_ohm": 0.4010000000000646,
+            "nodes": 400,
+            "resistors": 635,
+            "KCL_residual_A": 1.397770788003072e-13
+          }
+        },
+        "resistors": 2259,
+        "capacitors": 1099,
+        "negative_capacitors": 0,
+        "device_LVS": "unique_match",
+        "LVS_scope": "four separate macro ports",
+        "substrate_ground_connection": false,
+        "extraction_s": 0.46643899302580394,
+        "rc_sha256": "04261ef245a376686eba291857491734e228122f80eefbe2550b0b661ec18589"
+      },
+      "metal": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 0.45849300890221384,
+            "nodes": 76,
+            "resistors": 127,
+            "KCL_residual_A": 3.0232760739323794e-14
+          },
+          "VSS": {
+            "R_ohm": 0.45848265854291936,
+            "nodes": 220,
+            "resistors": 358,
+            "KCL_residual_A": 1.7763568394002505e-13
+          },
+          "DVDD": {
+            "R_ohm": 0.4010000000000446,
+            "nodes": 500,
+            "resistors": 794,
+            "KCL_residual_A": 7.105427357601002e-14
+          },
+          "DVSS": {
+            "R_ohm": 0.4010000000000646,
+            "nodes": 400,
+            "resistors": 635,
+            "KCL_residual_A": 1.397770788003072e-13
+          }
+        },
+        "resistors": 1914,
+        "capacitors": 1164,
+        "negative_capacitors": 4,
+        "device_LVS": "not_applicable_conductor_only",
+        "LVS_scope": "four separate macro ports",
+        "substrate_ground_connection": false,
+        "extraction_s": 0.466306282003643,
+        "rc_sha256": "702d7d5030c4b8058ee2bd964bf17ce8e4c8c15e979cc7f141986680ab416ea6"
+      }
+    },
+    "fill20": {
+      "full": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 0.49908384203799305,
+            "nodes": 444,
+            "resistors": 674,
+            "KCL_residual_A": 4.263256414560601e-14
+          },
+          "VSS": {
+            "R_ohm": 0.49869764328882676,
+            "nodes": 599,
+            "resistors": 988,
+            "KCL_residual_A": 1.1368683772161603e-13
+          },
+          "DVDD": {
+            "R_ohm": 0.45121108961172796,
+            "nodes": 627,
+            "resistors": 1023,
+            "KCL_residual_A": 5.684341886080802e-14
+          },
+          "DVSS": {
+            "R_ohm": 0.45123363514257614,
+            "nodes": 529,
+            "resistors": 863,
+            "KCL_residual_A": 5.684341886080802e-14
+          }
+        },
+        "resistors": 3548,
+        "capacitors": 1601,
+        "negative_capacitors": 0,
+        "device_LVS": "unique_match",
+        "LVS_scope": "four separate macro ports",
+        "substrate_ground_connection": false,
+        "extraction_s": 0.7674226539966185,
+        "rc_sha256": "1eafb7759d203aa703fbfcbe3658db5eac09a29abcfcaf7b465d2ab1f838a1a1"
+      },
+      "metal": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 0.4990838935823343,
+            "nodes": 198,
+            "resistors": 336,
+            "KCL_residual_A": 2.842170943040401e-14
+          },
+          "VSS": {
+            "R_ohm": 0.49874552531807187,
+            "nodes": 381,
+            "resistors": 666,
+            "KCL_residual_A": 1.7053025658242404e-13
+          },
+          "DVDD": {
+            "R_ohm": 0.4512110835282486,
+            "nodes": 627,
+            "resistors": 1023,
+            "KCL_residual_A": 5.684341886080802e-14
+          },
+          "DVSS": {
+            "R_ohm": 0.4512336361535811,
+            "nodes": 529,
+            "resistors": 863,
+            "KCL_residual_A": 7.105427357601002e-14
+          }
+        },
+        "resistors": 2888,
+        "capacitors": 1686,
+        "negative_capacitors": 6,
+        "device_LVS": "not_applicable_conductor_only",
+        "LVS_scope": "four separate macro ports",
+        "substrate_ground_connection": false,
+        "extraction_s": 0.7675883840129245,
+        "rc_sha256": "489ef6eb10a6b8a646fc7de65aa2f2351b112700eeb8859c455f2a8027cef698"
+      }
+    },
+    "corner": {
+      "full": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 1.4098023841923029,
+            "nodes": 8639,
+            "resistors": 14870,
+            "KCL_residual_A": 4.547473508864641e-13
+          },
+          "VSS": {
+            "R_ohm": 1.9092058174365838,
+            "nodes": 168839,
+            "resistors": 311792,
+            "KCL_residual_A": 1.2212175715120566e-12
+          },
+          "DVDD": {
+            "R_ohm": 1.830177091127047,
+            "nodes": 137697,
+            "resistors": 242034,
+            "KCL_residual_A": 3.183231456205249e-12
+          },
+          "DVSS": {
+            "R_ohm": 1.4158652994659044,
+            "nodes": 168839,
+            "resistors": 311792,
+            "KCL_residual_A": 1.7621459846850485e-12
+          }
+        },
+        "resistors": 571532,
+        "capacitors": 147113,
+        "negative_capacitors": 5,
+        "device_LVS": "unique_match",
+        "LVS_scope": "tied analog supply domain",
+        "substrate_ground_connection": true,
+        "extraction_s": 26.907451983977808,
+        "rc_sha256": "9f02fad8b847ea2d2953be22be69e26a8f97aa6cc8903ad0d95deaeddc94c7b2"
+      },
+      "metal": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 1.5989036932572651,
+            "nodes": 7004,
+            "resistors": 12343,
+            "KCL_residual_A": 4.547473508864641e-13
+          },
+          "VSS": {
+            "R_ohm": 1.5466971284668736,
+            "nodes": 7277,
+            "resistors": 13036,
+            "KCL_residual_A": 5.115907697472721e-13
+          },
+          "DVDD": {
+            "R_ohm": 1.7311560244089927,
+            "nodes": 129733,
+            "resistors": 230057,
+            "KCL_residual_A": 2.7355895326763857e-12
+          },
+          "DVSS": {
+            "R_ohm": 1.7866455037312174,
+            "nodes": 109760,
+            "resistors": 196427,
+            "KCL_residual_A": 2.642830398968954e-12
+          }
+        },
+        "resistors": 451863,
+        "capacitors": 250969,
+        "negative_capacitors": 133,
+        "device_LVS": "not_applicable_conductor_only",
+        "LVS_scope": "four separate macro ports",
+        "substrate_ground_connection": false,
+        "extraction_s": 18.17844114798936,
+        "rc_sha256": "984ec63ed675292c29d8ca48a36eabc15c90c8f154e66b6320678a9e388f8f44"
+      }
+    },
+    "corner_fill": {
+      "full": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 1.5768084961101316,
+            "nodes": 9023,
+            "resistors": 15494,
+            "KCL_residual_A": 5.799805080641818e-13
+          },
+          "VSS": {
+            "R_ohm": 1.7641443588800974,
+            "nodes": 179557,
+            "resistors": 329845,
+            "KCL_residual_A": 9.663381206337363e-13
+          },
+          "DVDD": {
+            "R_ohm": 1.3270065835369629,
+            "nodes": 132560,
+            "resistors": 234792,
+            "KCL_residual_A": 1.5916157281026244e-12
+          },
+          "DVSS": {
+            "R_ohm": 1.640148703802432,
+            "nodes": 179557,
+            "resistors": 329845,
+            "KCL_residual_A": 1.8189894035458565e-12
+          }
+        },
+        "resistors": 582967,
+        "capacitors": 142375,
+        "negative_capacitors": 7,
+        "device_LVS": "unique_match",
+        "LVS_scope": "tied analog supply domain",
+        "substrate_ground_connection": true,
+        "extraction_s": 27.608663705002982,
+        "rc_sha256": "c442aeeaa7c6baf4fb0937ccbd21429d26b0e951d3862f15f23716b15de615b1"
+      },
+      "metal": {
+        "rails": {
+          "VDD": {
+            "R_ohm": 1.6668690039342622,
+            "nodes": 7239,
+            "resistors": 12768,
+            "KCL_residual_A": 6.821210263296962e-13
+          },
+          "VSS": {
+            "R_ohm": 1.5629778558848384,
+            "nodes": 7642,
+            "resistors": 13621,
+            "KCL_residual_A": 4.547473508864641e-13
+          },
+          "DVDD": {
+            "R_ohm": 1.2389586749103392,
+            "nodes": 126200,
+            "resistors": 223919,
+            "KCL_residual_A": 1.1368683772161603e-12
+          },
+          "DVSS": {
+            "R_ohm": 1.2911068368441305,
+            "nodes": 113714,
+            "resistors": 201700,
+            "KCL_residual_A": 1.8189894035458565e-12
+          }
+        },
+        "resistors": 452008,
+        "capacitors": 252016,
+        "negative_capacitors": 111,
+        "device_LVS": "not_applicable_conductor_only",
+        "LVS_scope": "four separate macro ports",
+        "substrate_ground_connection": false,
+        "extraction_s": 18.578117627999745,
+        "rc_sha256": "700e0c9e3b4d69f03d1ffce108757afc71a3443965fb4da19d2bbfaf17854251"
+      }
+    }
+  },
+  "scope": "Physical point-to-point terminal resistance in small macro coupons with added 0.4 um M5 measurement leads; resistance includes these leads; all other ports open for each resistor-only solve. This is not an equipotential-edge model, stitched ring, or validated capacitance/transient model."
+}

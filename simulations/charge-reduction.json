@@ -1,0 +1,974 @@
+{
+  "recorded": "2026-09-19 01:11 PDT",
+  "reduction": {
+    "fill10-full": {
+      "source_sha256": "850ffaa1cbe61c9ff2ec5b6eeb0fc9c8cfb407cdaed13eafe8b731bdaca8f34c",
+      "original_resistors": 2259,
+      "reduced_resistors": 1196,
+      "eliminated_nodes": 1370,
+      "retained_resistor_nodes": 76,
+      "devices": 32,
+      "capacitors": 6,
+      "component_checks": [
+        {
+          "retained": 3,
+          "eliminated": 497,
+          "resistors_before": 794,
+          "max_relative_current_error": 1.945150540479601e-12,
+          "max_relative_energy_error": 1.005649382925797e-11,
+          "relative_matrix_reconstruction_error": 7.922087208119792e-13,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 3,
+          "eliminated": 397,
+          "resistors_before": 635,
+          "max_relative_current_error": 4.412297973608974e-12,
+          "max_relative_energy_error": 1.57550079002897e-11,
+          "relative_matrix_reconstruction_error": 1.7709141689903696e-12,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 35,
+          "eliminated": 164,
+          "resistors_before": 296,
+          "max_relative_current_error": 4.661152963739592e-13,
+          "max_relative_energy_error": 5.040963199426202e-14,
+          "relative_matrix_reconstruction_error": 1.3067392721914215e-13,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 35,
+          "eliminated": 312,
+          "resistors_before": 534,
+          "max_relative_current_error": 2.705182463593415e-13,
+          "max_relative_energy_error": 8.018707888977161e-14,
+          "relative_matrix_reconstruction_error": 2.598595176876855e-13,
+          "positive_offdiag_roundoff_S": 0.0
+        }
+      ],
+      "placements": {
+        "DVDD_B": {
+          "alternative": "DVDD_B.n99",
+          "distance_layout_units": 17348.5759646145
+        },
+        "DVSS_B": {
+          "alternative": "DVSS_B.n98",
+          "distance_layout_units": 33309.29651013362
+        },
+        "VDD_B": {
+          "alternative": "VDD_B.n144",
+          "distance_layout_units": 36894.748596514386
+        },
+        "VSS_B": {
+          "alternative": "VSS_B.n179",
+          "distance_layout_units": 36836.820736865986
+        }
+      },
+      "scope": "Remote anchor is a geometric sensitivity probe, not a proven worst-case bound. All device/port/capacitor nodes for both placements are retained."
+    },
+    "fill10-metal": {
+      "source_sha256": "5d462c9d961d2e87a3c8f84c27b04db4260f3d28ba15572e4c31195e239752f1",
+      "original_resistors": 1914,
+      "reduced_resistors": 12,
+      "eliminated_nodes": 1184,
+      "retained_resistor_nodes": 12,
+      "devices": 0,
+      "capacitors": 10,
+      "component_checks": [
+        {
+          "retained": 3,
+          "eliminated": 497,
+          "resistors_before": 794,
+          "max_relative_current_error": 1.945150540479601e-12,
+          "max_relative_energy_error": 1.005649382925797e-11,
+          "relative_matrix_reconstruction_error": 7.922087208119792e-13,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 3,
+          "eliminated": 397,
+          "resistors_before": 635,
+          "max_relative_current_error": 4.412297973608974e-12,
+          "max_relative_energy_error": 1.57550079002897e-11,
+          "relative_matrix_reconstruction_error": 1.7709141689903696e-12,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 3,
+          "eliminated": 73,
+          "resistors_before": 127,
+          "max_relative_current_error": 1.5023868404133334e-13,
+          "max_relative_energy_error": 9.304542469711986e-14,
+          "relative_matrix_reconstruction_error": 1.6210149885606898e-13,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 3,
+          "eliminated": 217,
+          "resistors_before": 358,
+          "max_relative_current_error": 8.072838629225967e-13,
+          "max_relative_energy_error": 2.2449998677354476e-12,
+          "relative_matrix_reconstruction_error": 3.7676341292433916e-13,
+          "positive_offdiag_roundoff_S": 0.0
+        }
+      ],
+      "placements": {
+        "DVDD_B": {
+          "alternative": "DVDD_B.n99",
+          "distance_layout_units": 17348.5759646145
+        },
+        "DVSS_B": {
+          "alternative": "DVSS_B.n98",
+          "distance_layout_units": 33309.29651013362
+        },
+        "VDD_B": {
+          "alternative": "VDD_B.n73",
+          "distance_layout_units": 11939.741412610241
+        },
+        "VSS_B": {
+          "alternative": "VSS_B.n133",
+          "distance_layout_units": 15025.931751475513
+        },
+        "w_n440_13108#": {
+          "alternative": "w_n440_13108#",
+          "distance_layout_units": 0
+        }
+      },
+      "scope": "Remote anchor is a geometric sensitivity probe, not a proven worst-case bound. All device/port/capacitor nodes for both placements are retained."
+    },
+    "corner-full": {
+      "source_sha256": "71f83879ba516b28a70a177c3d3de839073d34387af5d5f8faee8c501ade6a2d",
+      "original_resistors": 571551,
+      "reduced_resistors": 87748,
+      "eliminated_nodes": 316078,
+      "retained_resistor_nodes": 1166,
+      "devices": 358,
+      "capacitors": 127,
+      "component_checks": [
+        {
+          "retained": 158,
+          "eliminated": 8493,
+          "resistors_before": 14890,
+          "max_relative_current_error": 1.0646836139229702e-13,
+          "max_relative_energy_error": 1.146597693449653e-14,
+          "relative_matrix_reconstruction_error": 3.081696257082704e-13,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 228,
+          "eliminated": 137472,
+          "resistors_before": 242036,
+          "max_relative_current_error": 4.915196590087902e-13,
+          "max_relative_energy_error": 3.288316252285878e-13,
+          "relative_matrix_reconstruction_error": 2.059334081571539e-12,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 451,
+          "eliminated": 168392,
+          "resistors_before": 311789,
+          "max_relative_current_error": 6.788784161485421e-13,
+          "max_relative_energy_error": 3.2788649276015735e-13,
+          "relative_matrix_reconstruction_error": 1.764440455776693e-12,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 112,
+          "eliminated": 812,
+          "resistors_before": 1319,
+          "max_relative_current_error": 3.108873117176194e-14,
+          "max_relative_energy_error": 2.1475918462005515e-14,
+          "relative_matrix_reconstruction_error": 2.438881383822428e-14,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 39,
+          "eliminated": 37,
+          "resistors_before": 75,
+          "max_relative_current_error": 4.610373486887847e-16,
+          "max_relative_energy_error": 1.8843663468682387e-16,
+          "relative_matrix_reconstruction_error": 8.070485211442676e-16,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 14,
+          "eliminated": 11,
+          "resistors_before": 24,
+          "max_relative_current_error": 1.7959764496855978e-16,
+          "max_relative_energy_error": 2.0190752371938908e-16,
+          "relative_matrix_reconstruction_error": 1.4891718589526143e-16,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 14,
+          "eliminated": 11,
+          "resistors_before": 24,
+          "max_relative_current_error": 2.2712833925131357e-16,
+          "max_relative_energy_error": 1.86667901430666e-16,
+          "relative_matrix_reconstruction_error": 2.981876005293624e-16,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 39,
+          "eliminated": 37,
+          "resistors_before": 75,
+          "max_relative_current_error": 2.851688680487231e-16,
+          "max_relative_energy_error": 3.1793610050265286e-16,
+          "relative_matrix_reconstruction_error": 5.383264556992706e-16,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 111,
+          "eliminated": 813,
+          "resistors_before": 1319,
+          "max_relative_current_error": 6.33581929713175e-14,
+          "max_relative_energy_error": 2.910602610196216e-14,
+          "relative_matrix_reconstruction_error": 9.198970508029054e-14,
+          "positive_offdiag_roundoff_S": 0.0
+        }
+      ],
+      "placements": {
+        "a_58313_15032.n376": {
+          "alternative": "a_58313_15032.n1",
+          "distance_layout_units": 28322.17541079781
+        },
+        "a_60857_41340.t0": {
+          "alternative": "a_60857_41340.t15",
+          "distance_layout_units": 6446.0
+        },
+        "a_59881_41340.t1": {
+          "alternative": "a_59881_41340.t5",
+          "distance_layout_units": 4085.592368310867
+        },
+        "a_56346_42860#": {
+          "alternative": "a_56346_42860#",
+          "distance_layout_units": 0
+        },
+        "a_56346_55631#": {
+          "alternative": "a_56346_55631#",
+          "distance_layout_units": 0
+        },
+        "a_56066_42758#": {
+          "alternative": "a_56066_42758#",
+          "distance_layout_units": 0
+        },
+        "a_56066_42860#": {
+          "alternative": "a_56066_42860#",
+          "distance_layout_units": 0
+        },
+        "a_55786_42860#": {
+          "alternative": "a_55786_42860#",
+          "distance_layout_units": 0
+        },
+        "a_55786_55631#": {
+          "alternative": "a_55786_55631#",
+          "distance_layout_units": 0
+        },
+        "a_55506_42758#": {
+          "alternative": "a_55506_42758#",
+          "distance_layout_units": 0
+        },
+        "a_55506_42860#": {
+          "alternative": "a_55506_42860#",
+          "distance_layout_units": 0
+        },
+        "a_55226_42860#": {
+          "alternative": "a_55226_42860#",
+          "distance_layout_units": 0
+        },
+        "a_55226_55631#": {
+          "alternative": "a_55226_55631#",
+          "distance_layout_units": 0
+        },
+        "a_54946_42758#": {
+          "alternative": "a_54946_42758#",
+          "distance_layout_units": 0
+        },
+        "a_54946_42860#": {
+          "alternative": "a_54946_42860#",
+          "distance_layout_units": 0
+        },
+        "a_54666_42860#": {
+          "alternative": "a_54666_42860#",
+          "distance_layout_units": 0
+        },
+        "a_54666_55631#": {
+          "alternative": "a_54666_55631#",
+          "distance_layout_units": 0
+        },
+        "a_54386_42758#": {
+          "alternative": "a_54386_42758#",
+          "distance_layout_units": 0
+        },
+        "a_54386_42860#": {
+          "alternative": "a_54386_42860#",
+          "distance_layout_units": 0
+        },
+        "a_54106_42860#": {
+          "alternative": "a_54106_42860#",
+          "distance_layout_units": 0
+        },
+        "a_54106_55631#": {
+          "alternative": "a_54106_55631#",
+          "distance_layout_units": 0
+        },
+        "a_53826_42758#": {
+          "alternative": "a_53826_42758#",
+          "distance_layout_units": 0
+        },
+        "a_53826_42860#": {
+          "alternative": "a_53826_42860#",
+          "distance_layout_units": 0
+        },
+        "a_53546_42860#": {
+          "alternative": "a_53546_42860#",
+          "distance_layout_units": 0
+        },
+        "a_53546_55631#": {
+          "alternative": "a_53546_55631#",
+          "distance_layout_units": 0
+        },
+        "a_53266_42758#": {
+          "alternative": "a_53266_42758#",
+          "distance_layout_units": 0
+        },
+        "a_53266_42860#": {
+          "alternative": "a_53266_42860#",
+          "distance_layout_units": 0
+        },
+        "a_59041_57164#": {
+          "alternative": "a_59041_57164#",
+          "distance_layout_units": 0
+        },
+        "a_58761_57164#": {
+          "alternative": "a_58761_57164#",
+          "distance_layout_units": 0
+        },
+        "a_58761_69935#": {
+          "alternative": "a_58761_69935#",
+          "distance_layout_units": 0
+        },
+        "a_58481_57062#": {
+          "alternative": "a_58481_57062#",
+          "distance_layout_units": 0
+        },
+        "a_58481_57164#": {
+          "alternative": "a_58481_57164#",
+          "distance_layout_units": 0
+        },
+        "a_58201_57164#": {
+          "alternative": "a_58201_57164#",
+          "distance_layout_units": 0
+        },
+        "a_58201_69935#": {
+          "alternative": "a_58201_69935#",
+          "distance_layout_units": 0
+        },
+        "a_57921_57062#": {
+          "alternative": "a_57921_57062#",
+          "distance_layout_units": 0
+        },
+        "a_57921_57164#": {
+          "alternative": "a_57921_57164#",
+          "distance_layout_units": 0
+        },
+        "a_57641_57164#": {
+          "alternative": "a_57641_57164#",
+          "distance_layout_units": 0
+        },
+        "a_57641_69935#": {
+          "alternative": "a_57641_69935#",
+          "distance_layout_units": 0
+        },
+        "a_57361_57062#": {
+          "alternative": "a_57361_57062#",
+          "distance_layout_units": 0
+        },
+        "a_57361_57164#": {
+          "alternative": "a_57361_57164#",
+          "distance_layout_units": 0
+        },
+        "a_57081_57164#": {
+          "alternative": "a_57081_57164#",
+          "distance_layout_units": 0
+        },
+        "a_57081_69935#": {
+          "alternative": "a_57081_69935#",
+          "distance_layout_units": 0
+        },
+        "a_56801_57062#": {
+          "alternative": "a_56801_57062#",
+          "distance_layout_units": 0
+        },
+        "a_56801_57164#": {
+          "alternative": "a_56801_57164#",
+          "distance_layout_units": 0
+        },
+        "a_56521_57164#": {
+          "alternative": "a_56521_57164#",
+          "distance_layout_units": 0
+        },
+        "a_56521_69935#": {
+          "alternative": "a_56521_69935#",
+          "distance_layout_units": 0
+        },
+        "a_56241_57062#": {
+          "alternative": "a_56241_57062#",
+          "distance_layout_units": 0
+        },
+        "a_56241_57164#": {
+          "alternative": "a_56241_57164#",
+          "distance_layout_units": 0
+        },
+        "a_55961_57164#": {
+          "alternative": "a_55961_57164#",
+          "distance_layout_units": 0
+        },
+        "a_55961_69935#": {
+          "alternative": "a_55961_69935#",
+          "distance_layout_units": 0
+        },
+        "a_39525_61194#": {
+          "alternative": "a_39525_61194#",
+          "distance_layout_units": 0
+        },
+        "a_39525_62256.t8": {
+          "alternative": "a_39525_62256.t4",
+          "distance_layout_units": 3034.967050891986
+        },
+        "a_39525_63720.t33": {
+          "alternative": "a_39525_63720.t32",
+          "distance_layout_units": 3929.7700950564526
+        },
+        "a_15044_58302.n529": {
+          "alternative": "a_15044_58302.t6",
+          "distance_layout_units": 27897.12766576516
+        },
+        "VDD_B": {
+          "alternative": "VDD_B.n2779",
+          "distance_layout_units": 40190.872409043324
+        },
+        "DVDD_B": {
+          "alternative": "DVDD_B.n10422",
+          "distance_layout_units": 62565.62338057537
+        },
+        "DVSS_B": {
+          "alternative": "DVSS_B.n16378",
+          "distance_layout_units": 62772.19464062094
+        }
+      },
+      "scope": "Remote anchor is a geometric sensitivity probe, not a proven worst-case bound. All device/port/capacitor nodes for both placements are retained."
+    },
+    "corner-metal": {
+      "source_sha256": "c0d783fc6a44621d25109ba2c271c617fccf7a8d7a22979591c6d99284f81df8",
+      "original_resistors": 451892,
+      "reduced_resistors": 12,
+      "eliminated_nodes": 253777,
+      "retained_resistor_nodes": 12,
+      "devices": 0,
+      "capacitors": 150,
+      "component_checks": [
+        {
+          "retained": 3,
+          "eliminated": 7011,
+          "resistors_before": 12364,
+          "max_relative_current_error": 5.966193231276414e-12,
+          "max_relative_energy_error": 8.041950442283318e-12,
+          "relative_matrix_reconstruction_error": 6.321523418412371e-12,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 3,
+          "eliminated": 109758,
+          "resistors_before": 196431,
+          "max_relative_current_error": 1.5897290212517631e-10,
+          "max_relative_energy_error": 1.4117701243693392e-10,
+          "relative_matrix_reconstruction_error": 9.563794964800683e-11,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 3,
+          "eliminated": 129728,
+          "resistors_before": 230053,
+          "max_relative_current_error": 1.0978099955578265e-10,
+          "max_relative_energy_error": 1.4624949313694642e-10,
+          "relative_matrix_reconstruction_error": 9.14076635300586e-11,
+          "positive_offdiag_roundoff_S": 0.0
+        },
+        {
+          "retained": 3,
+          "eliminated": 7280,
+          "resistors_before": 13044,
+          "max_relative_current_error": 7.821432220992323e-12,
+          "max_relative_energy_error": 1.3857623950417798e-12,
+          "relative_matrix_reconstruction_error": 2.1299955522173278e-11,
+          "positive_offdiag_roundoff_S": 0.0
+        }
+      ],
+      "placements": {
+        "m1_58289_14649#": {
+          "alternative": "m1_58289_14649#",
+          "distance_layout_units": 0
+        },
+        "m1_60871_41204#": {
+          "alternative": "m1_60871_41204#",
+          "distance_layout_units": 0
+        },
+        "m1_59895_41204#": {
+          "alternative": "m1_59895_41204#",
+          "distance_layout_units": 0
+        },
+        "m1_56068_42760#": {
+          "alternative": "m1_56068_42760#",
+          "distance_layout_units": 0
+        },
+        "m1_55508_42760#": {
+          "alternative": "m1_55508_42760#",
+          "distance_layout_units": 0
+        },
+        "m1_54948_42760#": {
+          "alternative": "m1_54948_42760#",
+          "distance_layout_units": 0
+        },
+        "m1_54388_42760#": {
+          "alternative": "m1_54388_42760#",
+          "distance_layout_units": 0
+        },
+        "m1_53828_42760#": {
+          "alternative": "m1_53828_42760#",
+          "distance_layout_units": 0
+        },
+        "m1_53268_42760#": {
+          "alternative": "m1_53268_42760#",
+          "distance_layout_units": 0
+        },
+        "m1_56348_55663#": {
+          "alternative": "m1_56348_55663#",
+          "distance_layout_units": 0
+        },
+        "m1_55788_55663#": {
+          "alternative": "m1_55788_55663#",
+          "distance_layout_units": 0
+        },
+        "m1_55228_55663#": {
+          "alternative": "m1_55228_55663#",
+          "distance_layout_units": 0
+        },
+        "m1_54668_55663#": {
+          "alternative": "m1_54668_55663#",
+          "distance_layout_units": 0
+        },
+        "m1_54108_55663#": {
+          "alternative": "m1_54108_55663#",
+          "distance_layout_units": 0
+        },
+        "m1_53548_55663#": {
+          "alternative": "m1_53548_55663#",
+          "distance_layout_units": 0
+        },
+        "VDD_B": {
+          "alternative": "VDD_B.n3401",
+          "distance_layout_units": 40303.84915861015
+        },
+        "m1_58483_57064#": {
+          "alternative": "m1_58483_57064#",
+          "distance_layout_units": 0
+        },
+        "m1_57923_57064#": {
+          "alternative": "m1_57923_57064#",
+          "distance_layout_units": 0
+        },
+        "m1_57363_57064#": {
+          "alternative": "m1_57363_57064#",
+          "distance_layout_units": 0
+        },
+        "m1_56803_57064#": {
+          "alternative": "m1_56803_57064#",
+          "distance_layout_units": 0
+        },
+        "m1_56243_57064#": {
+          "alternative": "m1_56243_57064#",
+          "distance_layout_units": 0
+        },
+        "m1_58763_69967#": {
+          "alternative": "m1_58763_69967#",
+          "distance_layout_units": 0
+        },
+        "m1_58203_69967#": {
+          "alternative": "m1_58203_69967#",
+          "distance_layout_units": 0
+        },
+        "m1_57643_69967#": {
+          "alternative": "m1_57643_69967#",
+          "distance_layout_units": 0
+        },
+        "m1_57083_69967#": {
+          "alternative": "m1_57083_69967#",
+          "distance_layout_units": 0
+        },
+        "m1_56523_69967#": {
+          "alternative": "m1_56523_69967#",
+          "distance_layout_units": 0
+        },
+        "m1_55963_69967#": {
+          "alternative": "m1_55963_69967#",
+          "distance_layout_units": 0
+        },
+        "m1_40633_60453#": {
+          "alternative": "m1_40633_60453#",
+          "distance_layout_units": 0
+        },
+        "m1_39569_61348#": {
+          "alternative": "m1_39569_61348#",
+          "distance_layout_units": 0
+        },
+        "m1_39569_62410#": {
+          "alternative": "m1_39569_62410#",
+          "distance_layout_units": 0
+        },
+        "m1_14661_58278#": {
+          "alternative": "m1_14661_58278#",
+          "distance_layout_units": 0
+        },
+        "DVSS_B": {
+          "alternative": "DVSS_B.n67851",
+          "distance_layout_units": 61523.49651962249
+        },
+        "DVDD_B": {
+          "alternative": "DVDD_B.n7149",
+          "distance_layout_units": 62565.62338057537
+        },
+        "VSS_B": {
+          "alternative": "VSS_B.n3232",
+          "distance_layout_units": 37903.035828281616
+        },
+        "w_13108_13108#": {
+          "alternative": "w_13108_13108#",
+          "distance_layout_units": 0
+        }
+      },
+      "scope": "Remote anchor is a geometric sensitivity probe, not a proven worst-case bound. All device/port/capacitor nodes for both placements are retained."
+    }
+  },
+  "serialized_audit": {
+    "fill10-full": {
+      "placements": {
+        "nominal": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        },
+        "remote": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        }
+      },
+      "dc": {
+        "VDD": {
+          "reduced_R_ohm": 0.4518884321240567,
+          "unreduced_R_ohm": 0.4518884321241103,
+          "relative_error": 1.1857181902996672e-13
+        },
+        "VSS": {
+          "reduced_R_ohm": 0.4518833036225637,
+          "unreduced_R_ohm": 0.4518833036227311,
+          "relative_error": 3.7048142331741474e-13
+        },
+        "DVDD": {
+          "reduced_R_ohm": 0.39999999999984615,
+          "unreduced_R_ohm": 0.40000000000026914,
+          "relative_error": 1.0574874309554616e-12
+        },
+        "DVSS": {
+          "reduced_R_ohm": 0.3999999999998365,
+          "unreduced_R_ohm": 0.40000000000043995,
+          "relative_error": 1.5086820681631252e-12
+        }
+      }
+    },
+    "fill10-metal": {
+      "placements": {
+        "nominal": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        },
+        "remote": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        }
+      },
+      "dc": {
+        "VDD": {
+          "reduced_R_ohm": 0.4518884321240523,
+          "unreduced_R_ohm": 0.45188843212411245,
+          "relative_error": 1.3311574065255627e-13
+        },
+        "VSS": {
+          "reduced_R_ohm": 0.451883876811924,
+          "unreduced_R_ohm": 0.45188387681201153,
+          "relative_error": 1.9373391779708982e-13
+        },
+        "DVDD": {
+          "reduced_R_ohm": 0.39999999999984615,
+          "unreduced_R_ohm": 0.40000000000026914,
+          "relative_error": 1.0574874309554616e-12
+        },
+        "DVSS": {
+          "reduced_R_ohm": 0.3999999999998365,
+          "unreduced_R_ohm": 0.40000000000043995,
+          "relative_error": 1.5086820681631252e-12
+        }
+      }
+    },
+    "corner-full": {
+      "placements": {
+        "nominal": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        },
+        "remote": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        }
+      },
+      "dc": {
+        "VDD": {
+          "reduced_R_ohm": 1.3676816139355947,
+          "unreduced_R_ohm": 1.3676816139354209,
+          "relative_error": 1.2723155862204294e-13
+        },
+        "VSS": {
+          "reduced_R_ohm": 1.8699026161673638,
+          "unreduced_R_ohm": 1.8699026162978047,
+          "relative_error": 6.975819921706261e-11
+        },
+        "DVDD": {
+          "reduced_R_ohm": 1.7986916750919302,
+          "unreduced_R_ohm": 1.7986916759259162,
+          "relative_error": 4.636625527965066e-10
+        },
+        "DVSS": {
+          "reduced_R_ohm": 1.3691451876969754,
+          "unreduced_R_ohm": 1.3691451885476096,
+          "relative_error": 6.2128857614141e-10
+        }
+      }
+    },
+    "corner-metal": {
+      "placements": {
+        "nominal": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        },
+        "remote": {
+          "unchanged_device_records": true,
+          "max_collapsed_C_pair_error_fF": 0.0
+        }
+      },
+      "dc": {
+        "VDD": {
+          "reduced_R_ohm": 1.5548859448970407,
+          "unreduced_R_ohm": 1.5548859449145607,
+          "relative_error": 1.1267653476920714e-11
+        },
+        "VSS": {
+          "reduced_R_ohm": 1.509986437556779,
+          "unreduced_R_ohm": 1.5099864374904675,
+          "relative_error": 4.391531582825792e-11
+        },
+        "DVDD": {
+          "reduced_R_ohm": 1.7016876130846275,
+          "unreduced_R_ohm": 1.701687613763889,
+          "relative_error": 3.9916936422912386e-10
+        },
+        "DVSS": {
+          "reduced_R_ohm": 1.739209866250259,
+          "unreduced_R_ohm": 1.7392098668798852,
+          "relative_error": 3.6201852626760456e-10
+        }
+      }
+    }
+  },
+  "initial_placement": {
+    "fixture": "27C typical, 3.3V, shared 2ohm source, two 100kohm standby loads and simultaneous 1mA/rail 1ns-rise steps. AC 1kHz\u20131GHz is a diagnostic sweep, not a claimed valid technology bandwidth. No package inductance.",
+    "runs": [
+      {
+        "case": "fill10-full",
+        "placement": "nominal",
+        "completed": true,
+        "voltage_range_V": [
+          3.29493226227,
+          3.299843547377
+        ],
+        "points": 3026
+      },
+      {
+        "case": "fill10-full",
+        "placement": "remote",
+        "completed": true,
+        "voltage_range_V": [
+          3.294932528785,
+          3.299843225526
+        ],
+        "points": 3036
+      },
+      {
+        "case": "fill10-metal",
+        "placement": "nominal",
+        "completed": true,
+        "voltage_range_V": [
+          3.29493460464,
+          3.299841654465
+        ],
+        "points": 3025
+      },
+      {
+        "case": "fill10-metal",
+        "placement": "remote",
+        "completed": true,
+        "voltage_range_V": [
+          3.294934581147,
+          3.299841673188
+        ],
+        "points": 3026
+      },
+      {
+        "case": "corner-full",
+        "placement": "nominal",
+        "completed": false,
+        "error": "Command '['ngspice', '-b', 'test.spice']' timed out after 120 seconds"
+      },
+      {
+        "case": "corner-full",
+        "placement": "remote",
+        "completed": false,
+        "error": "Command '['ngspice', '-b', 'test.spice']' timed out after 120 seconds"
+      },
+      {
+        "case": "corner-metal",
+        "placement": "nominal",
+        "completed": true,
+        "voltage_range_V": [
+          3.292313800341,
+          3.299767068695
+        ],
+        "points": 3073
+      },
+      {
+        "case": "corner-metal",
+        "placement": "remote",
+        "completed": true,
+        "voltage_range_V": [
+          3.292313005137,
+          3.299768125018
+        ],
+        "points": 3052
+      }
+    ],
+    "comparisons": {
+      "fill10-full": {
+        "max_waveform_difference_V": 1.0285394753228871e-05,
+        "sample_1p5us_difference_V": [
+          0.0,
+          0.0
+        ],
+        "max_transfer_difference_through_1MHz": 5.069059948518132e-07,
+        "max_transfer_difference_through_1GHz": 0.000785979809917868
+      },
+      "fill10-metal": {
+        "max_waveform_difference_V": 2.0541067669022084e-06,
+        "sample_1p5us_difference_V": [
+          0.0,
+          0.0
+        ],
+        "max_transfer_difference_through_1MHz": 4.332663880874256e-07,
+        "max_transfer_difference_through_1GHz": 0.00043429071219922016
+      },
+      "corner-metal": {
+        "max_waveform_difference_V": 7.622883418889614e-05,
+        "sample_1p5us_difference_V": [
+          0.0,
+          0.0
+        ],
+        "max_transfer_difference_through_1MHz": 4.6666020889597096e-05,
+        "max_transfer_difference_through_1GHz": 0.04635911685121402
+      }
+    },
+    "scope": "Two geometric anchor placements only; not a worst-case bound or integrated camera/ADC acceptance test."
+  },
+  "refinement": {
+    "runs": [
+      {
+        "case": "fill10-full",
+        "mode": "nominal",
+        "max_timestep_change_V": 1.2299179500629975e-05,
+        "completed": true
+      },
+      {
+        "case": "fill10-full",
+        "mode": "remote",
+        "max_timestep_change_V": 9.032685342802438e-06,
+        "completed": true
+      },
+      {
+        "case": "fill10-metal",
+        "mode": "nominal",
+        "max_timestep_change_V": 4.403075140047008e-07,
+        "completed": true
+      },
+      {
+        "case": "fill10-metal",
+        "mode": "remote",
+        "max_timestep_change_V": 8.138411398128653e-07,
+        "completed": true
+      },
+      {
+        "case": "corner-metal",
+        "mode": "nominal",
+        "max_timestep_change_V": 1.5008745242184318e-06,
+        "completed": true
+      },
+      {
+        "case": "corner-metal",
+        "mode": "remote",
+        "max_timestep_change_V": 1.5932954391395526e-06,
+        "completed": true
+      }
+    ],
+    "comparisons": {
+      "fill10-full": {
+        "refined_max_placement_difference_V": 8.985734170519066e-06
+      },
+      "fill10-metal": {
+        "refined_max_placement_difference_V": 1.5511092521514058e-06
+      },
+      "corner-metal": {
+        "refined_max_placement_difference_V": 7.62216475114208e-05
+      }
+    }
+  },
+  "corner_ac": {
+    "max_complex_transfer_change_through_1MHz": 6.3673814139936e-05,
+    "max_complex_transfer_change_through_1GHz": 0.05461530117235472
+  },
+  "corner_startup": {
+    "runs": [
+      {
+        "mode": "nominal",
+        "scope": "100us supply ramp; load pulse at 151us; zero-charge startup; 100ns maximum step with adaptive steps at 1ns edges",
+        "completed": false,
+        "error": "['doAnalyses: TRAN:  Timestep too small; time = 0.000100002, timestep = 1.25e-19: trouble with node \"e.x354.ec_moscap#branch\"', 'tran simulation(s) aborted']"
+      },
+      {
+        "mode": "remote",
+        "scope": "100us supply ramp; load pulse at 151us; zero-charge startup; 100ns maximum step with adaptive steps at 1ns edges",
+        "completed": false,
+        "error": "['doAnalyses: TRAN:  Timestep too small; time = 0.000100004, timestep = 1.25e-19: trouble with node \"e.x354.ec_moscap#branch\"', 'tran simulation(s) aborted']"
+      }
+    ]
+  },
+  "max_relative_current_error": 1.5897290212517631e-10,
+  "max_relative_energy_error": 1.4624949313694642e-10,
+  "max_relative_DC_resistance_error": 6.2128857614141e-10,
+  "scope": "Exact resistor-only elimination within numerical tolerance. Two lumped capacitor anchors are sensitivity probes, not a worst-case bound. First release remains 3x3."
+}

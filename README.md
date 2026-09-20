@@ -1,34 +1,175 @@
 # Open Image Sensor
 
+**Resume here:** [Project handoff — 2026-09-19 22:39 PDT](PICK_UP_HERE.md). Stock final-chip DC passes; complete-frame simulation and fabrication qualification remain open.
+
+**Simulator comparison:** matched ngspice 46/47 controls pass, but both extracted stock-model tests fail at startup. Upgrade alone is insufficient; a separate v47 multiplier parser failure has a minimal public issue draft. [Results](docs/ngspice-version-comparison.md).
+
+**Electrical qualification update:** Final-chip lumped capacitance and charge-preserving fill reduction are checked. Stricter pad-corner simulations still fail at the clamp load transition; complete-chip electrical qualification is **not yet passed**. [Results and next steps](docs/scaled-electrical-progress.md).
+
+## Electrical qualification update — 2026-09-19 09:34 PDT
+
+[New control-resolution and extracted-clamp results](docs/scaled-electrical-progress.md): matched capacitor controls pass the unchanged current limit; the isolated extracted clamp completes and passes 25 ns/tolerance voltage refinement. Both complete-corner capacitance placements now complete at 50 ns. These are diagnostic milestones, **not complete-chip qualification**. Final-GDS extraction and the [remaining electrical gates](docs/full-chip-electrical-plan.md) are open.
+
+## Removable sensor tester — KiCad prototype
+
+[KiCad projects and Windows instructions](hardware/carrier/README.md) · [Illustrated overview](docs/carrier-fixture.html) · [Download review ZIP](hardware/carrier/openimagesensor-kicad-review.zip)
+
+![Removable carrier and optical aperture](hardware/carrier/reports/fixture-stack.svg)
+
+40 × 40 mm removable carrier, underside pogo contacts and an ADS1115 tester. Both PCBs pass the current native DRC and pin/net comparison. Electrical, mechanical and wire-bond reviews remain open; this is not a fabrication release.
+
+**Path to a working camera — 19 September 2026:** [Finish the 3×3, characterize the photodiodes, then scale to 64×64](docs/path-to-camera.md). Carrier/interface and manufacturing planning can proceed alongside the clamp-model review.
+
+## Current completion checkpoint — 19 September 2026
+
+**First release: 3×3.** The core has earlier passing checks; the assembled chip is not fabrication-ready. A new evidence-backed numerical candidate passes isolated-clamp voltage refinement and completes both corner-placement transients; the final-chip electrical tests remain open. The working pad arrangement now has verified routing and central fill; density, antenna, main DRC and device LVS pass. Electrical and manufacturing qualification remain open.
+
+**Electrical blocker explained:** [local clamp-model review](docs/clamp-model-review.md). The original failure and subsequent control-resolution findings are documented; the candidate is not yet an accepted full-chip fix. No external expert has yet reviewed the packet.
+
+[Completion plan](COMPLETION_PLAN.md) · [Pins and board interface](docs/demonstrator-interface.md) · [Unsent expert-review package](docs/reviews/clamp-startup-review.md) · [Manufacturing questions](docs/manufacturing-review.md)
+
+Historical diagnostic checkpoints below retain their original scope and limitations.
+
+**MOS-capacitor diagnosis (2026-09-19 01:49 PDT):** 24/24 simple capacitor transients complete; 0/4 initial isolated-clamp transients complete. Integration follow-up: 1/2 complete; refinement: 0/2 pass. [Report and plots](docs/moscap-branch.md).
+
+**Latest simulation check (2026-09-19 01:32 PDT):** DC/AC interface comparison: NOT VERIFIED. Full-corner ramp/load transients: NOT VERIFIED. [Details](docs/corner-interface.md).
+
 An open monochrome image-sensor experiment using GF180MCU, Xschem,
 ngspice, gdsfactory, Magic, KLayout, and Netgen.
 
-**Project checkpoint: 16 September 2026** · [Changelog](CHANGELOG.md) · [Dated next steps and handoff](NEXT_STEPS.md) · [Engineering notebook](docs/overview.html)
+**Project checkpoint: 18 September 2026** · [Changelog](CHANGELOG.md) · [Dated next steps and handoff](NEXT_STEPS.md) · [Engineering notebook](docs/overview.html)
 
-## Architecture overview
+## First release: a 3×3 monochrome demonstrator
 
-Our proposed camera is a **64 × 64 monochrome array** with a **40 µm pixel
-pitch**, retaining the **20 × 20 µm photodiode** inside each pixel. The concept
-reserves space for row control, column readout, multiplexing, output buffering,
-and the perimeter bond pads and protection structures.
+The active target is **nine pixels with external timing and an external ADC**. The core layout and earlier electrical checks exist; functional signal-pad routing is implemented in a working candidate; full-chip verification and optical packaging remain open.
 
-![Conceptual full-slot camera floorplan with a 64×64 array, row control, column circuits and perimeter pads](docs/assets/camera-floorplan-concept.png)
+![Existing connected 3×3 sensor core](docs/assets/integrated-layout.png)
 
-**Planning concept—not a routed or verified 64×64 chip.** The verified hardware
-layout is currently a 3×3 array. The 2.56 × 2.56 mm proposed camera array fits
-within the published 3.05 × 4.24 mm full-slot core as an area estimate; compact
-pixel routing, optical packaging and readout performance still need verification.
+**Current plan:** [completion milestones and stop rule](COMPLETION_PLAN.md) · [logical pins and board interface](docs/demonstrator-interface.md) · [manufacturing questions](docs/manufacturing-review.md) · [simulator review package](docs/reviews/clamp-startup-review.md).
 
-| On the sensor die | On the camera board |
-| --- | --- |
-| Photodiodes and three-transistor pixels | External amplifier and ADC |
-| Row sequencing and column multiplexing | MCU or FPGA for timing and image capture |
-| Column bias, sampling and output buffer | Power supplies, references and connectors |
-| Bond pads and protection | Wire-bond carrier, optical window and lens mount |
+Signal path: light → pixel → column bias/multiplexer → shared buffer → signal pad → board ADC → controller. The earlier power-only vehicle is superseded by the separate routed working-layout checkpoint below.
 
-Signal path: **light → pixel → column readout → output buffer → bond pad →
-board ADC → controller**. This is the proposed system partition; several blocks
-remain to be designed.
+### Filled layout: density and antenna checked
+
+![Filled 3×3 demonstrator core and optical keepouts](docs/assets/filled-core-routing.png)
+
+Regenerated central fill with all nine optical keepouts preserved. Density/antenna and main KLayout DRC report zero violations; device LVS matches uniquely; all 4,566 connectivity checks pass. [Verification report](docs/filled-demonstrator.md) · [HTML overview](docs/overview.html#filled-demonstrator). Full-chip electrical qualification and run-specific manufacturing checks remain open.
+
+### Routed working layout
+
+![Routed 3×3 demonstrator with pad connections](docs/assets/routed-demonstrator.png)
+
+13 functional signal paths routed through local protection; seven supply/return pads connected. Metal connectivity: 4566 checks, PASS. Main KLayout DRC: 0 markers. Magic DRC: 0. Device LVS unique match: True. The four diagnostic signal paths remain disconnected. Final fill, manufacturing and electrical sign-off remain open. [Verification report](docs/routed-demonstrator.md).
+
+### Provisional pad-placement review
+
+![Proposed 24-pad map for the 3×3 demonstrator](docs/assets/proposed-pad-map.png)
+
+Original placement-only concept, now approved for local implementation: 19 core nets, 24 pads. See the newer routed checkpoint above. Die outline and optical packaging remain open. [Pad table and review gates](docs/pad-proposal.md) · [Coordinate CSV](docs/proposed-pad-map.csv).
+
+### Later expansion: 64×64 camera concept
+
+![Later 64×64 floorplan concept](docs/assets/camera-floorplan-concept.png)
+
+This is a future concept, not part of the first release or a routed and verified chip. Earlier area estimates do not establish manufacturing or packaging acceptance.
+
+## 3×3 verification: reduced RC and placement sensitivity
+
+Four resistor reductions pass numerical and DC checks. Full corner: 571,551 → 87,748 resistors; metal-only corner: 451,892 → 12. Placement sensitivity is now measured in coupon fixtures, with numerical and startup limits retained. [Results](docs/charge-reduction.md).
+
+![RC reduction and placement response](docs/assets/charge-reduction.png)
+
+## 3×3 release: charge-conserving RC reference
+
+The first finished chip will be the **3×3 demonstrator**. Eight reference models preserve the original capacitance matrix; 16 independent charge checks pass. Capacitance placement and integrated transient qualification remain open. [Evidence](docs/charge-reference.md) · [Completion plan](COMPLETION_PLAN.md).
+
+![Charge-conserving reference results](docs/assets/charge-reference.png)
+
+## Capacitance correction and path to completion
+
+The area-sign patch removes negative capacitances in all four ring coupons; LVS and DC checks pass. A separate charge-accounting error remains, confirmed with small ngspice controls. [Evidence](docs/capacitance-candidate.md) · [Completion plan](COMPLETION_PLAN.md).
+
+![Capacitance correction and remaining charge error](docs/assets/capacitance-candidate.png)
+
+## Ring-section capacitance gate
+
+Four device LVS checks and 32 DC rail solves pass with matched ring coupons. The combined extraction candidate still produces negative-energy capacitance nodes in the corner; transient acceptance remains blocked. [Audit and next work](docs/ring-candidate.md).
+
+![Ring-section comparison](docs/assets/ring-candidate.png)
+
+## Combined extraction regression
+
+Four LVS comparisons and 80 block transients pass across five process corners and −40 to 125 °C. Largest sampled baseline/candidate difference: 0.02227 µV. Diagnostic candidate only; full-ring extraction remains open. [Report](docs/combined-patch.md).
+
+![Combined patch process/temperature comparison](docs/assets/combined-patch.png)
+
+## Two-layer cause confirmed; device-aware patch tests
+
+The two-layer discrepancy comes from **construction-time triangle reductions** in the tested Magic version. Removing six half-milliohm additions restores the unreduced network result: **0.093837 Ω** for the 300-via control, versus **0.118443 Ω** originally.
+
+![Triangle-reduction comparison and extracted-buffer regression](docs/assets/network-investigation.png)
+
+The separate reader patch preserves devices, capacitances and hierarchy. Four nominal buffer/hierarchy transients pass using the existing verified floating-fill reduction; direct raw-network attempts timed out. The patches remain diagnostic, with combined qualification still ahead.
+
+[Results, source references and reproduction](docs/network-investigation.md) · [Notebook](docs/overview.html#network-investigation)
+
+## Earlier export offset and two-layer via investigation
+
+A controlled one-line reader patch removes the **0.0005 Ω per-resistor export increment** in all five test stacks. An unmodified build with the same configuration reproduces the installed behavior, and independent ngspice checks pass. The full-stack diagnostic export now matches raw resistance: **0.0891035 Ω** instead of **0.0990837 Ω**.
+
+![Export patch comparison and two-layer via-count anomaly](docs/assets/extraction-diagnostics.png)
+
+The two-layer problem remains in **raw extraction**: adding vias to unchanged metal raises Magic resistance while the spatial model decreases. The patch remains diagnostic; full RC qualification is open.
+
+[Evidence, source reference and reproduction](docs/extraction-diagnostics.md) · [Notebook](docs/overview.html#extraction-diagnostics)
+
+## Earlier full-width rail faces: separating rail and probe resistance
+
+Measuring the M5 rail through its full-width ends gives **0.1142857 Ω**, matching the analytic value `0.04 × 20 / 7` and raw Magic extraction. This removes the large narrow-probe discrepancy in the M5 control. With three or more layers, raw Magic and the spatial model agree within **0.013%**. SPICE export adds about **11.2%** to this low-resistance network; that conversion and the exceptional two-layer Magic result remain under investigation.
+
+![Full-width rail measurement and layered comparison](docs/assets/rail-faces.png)
+
+[Results and reproduction](docs/rail-faces.md) · [Living notebook](docs/overview.html#rail-faces)
+
+## Earlier real rail isolation: probe-transition resistance
+
+The disagreement already exists in the actual **M5 rail before vias are added**. Its narrow measurement leads widen into the rail: the spatial mesh settles near **0.5777 Ω**, while Magic gives **0.5143 Ω**, matching a simple series-strip approximation. Adding lower layers reduces the mesh resistance; one Magic stage instead increases, so absolute extraction accuracy remains open.
+
+![Isolated rail geometry, incremental metal layers and refinement](docs/assets/rail-isolation.png)
+
+All five Magic exports pass independent ngspice checks. [Results, corrected extraction syntax and next experiment](docs/rail-isolation.md) · [Notebook](docs/overview.html#rail-isolation)
+
+## Earlier matched terminals, bends and vias
+
+Matching terminal positions closes the straight-strip resistance difference: **0.192 Ω** in the analytic, mesh and raw Magic models. Small bend/via controls now quantify the remaining differences. The real filler still differs by approximately **12–18%** under the matched-plane hypothesis, so full RC qualification remains open.
+
+![Matched terminal, bend and via comparison](docs/assets/geometry-controls.png)
+
+[Results and reproducible experiments](docs/geometry-controls.md) · [Living notebook](docs/overview.html#geometry-controls)
+
+## Earlier terminal calibration update
+
+Corrected ideal-electrode treatment now passes four analytic M5 strip controls at two mesh sizes. The corrected two-filler model passes DC stitching, including an independent ngspice check at 1 µm. **Absolute resistance remains unresolved:** the fine mesh is still about 10–15% above the earlier Magic control.
+
+![Terminal calibration and filler resistance refinement](docs/assets/terminal-calibration.png)
+
+[Results, extraction selection pitfalls and reproduction](docs/terminal-calibration.md) · [Updated notebook](docs/overview.html#terminal-calibration)
+
+## Earlier distributed boundary stitching benchmark
+
+A conductor-only DC benchmark now preserves all **81 metal intervals** between two fillers. The stitched and combined models agree below the **1e-8 relative screen** across four meshes; the exported two-part SPICE model passes an independent ngspice check at the 1 µm mesh.
+
+![Boundary connections, stitching comparison, and spatial refinement](docs/assets/filler-stitch.png)
+
+**This is not yet a stitched Magic RC model.** Absolute resistance remains mesh-sensitive and differs from the earlier Magic extraction. The finer simulator attempt timed out; matrix checks are recorded separately. [Method and remaining work](docs/filler-stitch.md) · [HTML results](docs/overview.html#filler-stitch).
+
+## Small ring-section extraction
+
+Four small coupons now extract in under 29 seconds: one filler, two fillers, a corner, and a corner joined to a filler. Device LVS and the documented DC terminal/current-balance checks pass. The corner checks use our tied analog supply domain.
+
+![Resistance comparison of filler and corner coupons, including measurement leads](docs/assets/ring-sections-resistance.png)
+
+These measurements include external probe leads. Corner substrate coupling, negative capacitance entries, and consistent multiport boundaries still need resolution before full-ring camera simulation. [Experiment notes](docs/ring-sections.md) · [HTML comparison](docs/overview.html#ring-sections).
 
 ## Physical supply ring checkpoint
 

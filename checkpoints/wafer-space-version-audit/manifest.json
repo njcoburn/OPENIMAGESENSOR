@@ -1,0 +1,24 @@
+{
+  "checked": "2026-09-19 11:09 PDT",
+  "files": {
+    "file-comparison.json": "9c5facf7a000c80368ac7b01f363c77fd915e520e4bb382f21e1108d63cb5f22",
+    "download-reference.py": "25f271941ebd997ec1ddf003a1e6e2dbe4e03c5ac03f101d6179186de50315e3",
+    "compare-layout.py": "2c09abf246da15fb562962725821eea20be580e0ce3a6b100b2d8dc27bc613b8",
+    "gf180mcu-project-template-Makefile": "b43941ec511a8c3b34be7b0c484e83c424278cff7a7bf5775cb6de9ec1a6f7d2",
+    "f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7-release.json": "201a4e889ca55468f754c9949bcc323007e690f97f12cf7a6f9958e1d1fb9f0b",
+    "magic-tech.diff": "da0390a63ea251459cebcd97826056da8f7ecbf70998ef7d2e8780c0570356f6",
+    "gds-comparison.json": "e3e30080dca1e685792f25b8c89d0c06150e8bcf17440fa7333f5ce191b88a76",
+    "gf180mcu-precheck-Makefile": "dfca3f707dafcd6e09b2c946333c50786164529d5ba0ae7a3779405054643938",
+    "b344c97eacc2aaf8e14ae7e43e2e9dc0871de2c0-release.json": "d5260069589fa8c4f9d93489b5f8255cb5470cf43fba0ef444d87edbf8adb361",
+    "gf180mcu-project-template-flake.lock": "769e0c70ec50d177661476fe3e68dcf78a5d79865e395ad6486b02db2a539f5d",
+    "template-nodeinfo.json": "0097007c4c68a7a9d47e2281893156a9a1e63e00986ec36b6ee088d66afa983d",
+    "gf180mcu-precheck-flake.lock": "6a1edb9636e68d8c6a4b3fcce37300e01d7f83480ffddce6336b8b306551c4fd",
+    "d658698bd8bcf4e05fc7b5991a701247ba0d744c-release.json": "dbe27a61cd1b404c7aa448a762a13476eb4602c90400c7992054e197cc28d759",
+    "fetch.py": "17ab7ef24b15d72f1edff664ebdfd11f2d582d0ee0d647dc43913b46a96b5f11",
+    "installed/magic.txt": "c42d3cc84461a74cbacc65e2d5bef3c48ff48a79e12b10a056e25d72cfb6d321",
+    "installed/SOURCES": "e77f2b4fbbbe9efd07ebb7fab8979a97f13af3416022567439d4e288dce7172c",
+    "installed/hashes.txt": "fbfaa48e7be2e4ba4b0b8c5bb42fa6908515e0aff40298c7ec3e39ea543c14f6",
+    "installed/nodeinfo.json": "9d99afdc92f97bfe10dd9f6d7f33b5ee941e02ac7defe55d4dd8c00bde2d9b5a",
+    "installed/ngspice.txt": "bdda125b9a905ec889f7a8b39973e02412b0bcd79e6e02e1867368f9ecaa9e54"
+  }
+}

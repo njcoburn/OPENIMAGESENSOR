@@ -1,0 +1,15 @@
+{
+  "recorded": "2026-09-19 02:12 PDT",
+  "files": {
+    "build/pad-proposal/demonstrator_pad_proposal.gds": "2c73e7e40fd8a9bc7ba4a3e1eec239ee21f58eb9c532ff078e20383a47cae36a",
+    "build/pad-proposal/placement.json": "9788607bd7a817432d67e8e1de9151b41e3ac7c1f2c8986babec91fd0674a86a",
+    "layout/demonstrator-pad-proposal.py": "306b417afacbc0007e6db493a9b28cdc4c986535bb67791e1dad421b3b38bb38",
+    "scripts/report-pad-proposal.py": "48b6d4596860b1bad81b0729bd2684a7c5f3aa5baf00fedef0289f5775e584af",
+    "docs/pad-proposal.md": "c8c710cab029537265eebb831fe24081370bd57c45c858cc8251d92b1fbb8fab",
+    "docs/pad-proposal.html": "7672af63f757c92ab1b0ea2667a4cdec3898bc603b8cc74d83910ec704a2bb77",
+    "docs/assets/proposed-pad-map.png": "3bb4a498537ed3f0d82bfec572f53a1920c3df6140db69775826b8e7226df00f",
+    "docs/proposed-pad-map.csv": "3ac96ae936426d7cdf6b4c87725e2b9313dde7bb19c9487f105628d260e6bed1",
+    "simulations/pad-proposal.json": "9788607bd7a817432d67e8e1de9151b41e3ac7c1f2c8986babec91fd0674a86a"
+  },
+  "archive_sha256": "1a4e0b1b1131a7156a86b115be84b2dd9fdbb89a26c64ccf1d429a623f0da46d"
+}

@@ -1,0 +1,46 @@
+{
+  "scope": "Saved isolated 1 kohm / nonlinear MOS capacitor control only; no clamp or full-chip qualification",
+  "equation": "C(Vg) dVg/dt=(Vs-Vg)/1000; C(V)=25u*10u*(0.001107+0.00107*tanh(6.25V-4.1875)); Vs=min(33000*t,3.3)",
+  "reference": {
+    "rtol": 1e-08,
+    "atol_V": 1e-14,
+    "ramp_steps": 211,
+    "hold_steps": 227
+  },
+  "refined_reference": {
+    "rtol": 1e-10,
+    "atol_V": 1e-16,
+    "ramp_steps": 579,
+    "hold_steps": 703
+  },
+  "reference_refinement_max_V": 1.7657653117453265e-11,
+  "reference_refinement_max_A": 1.765763364273644e-14,
+  "high_voltage_time_constant_s": 5.442499999999972e-10,
+  "cases": {
+    "control-original": {
+      "rows": 1557,
+      "max_native_current_error_A": 2.0327862569543084e-09,
+      "max_error_time_s": 0.0001000042470708761,
+      "max_native_voltage_error_V": 2.03278625576786e-06,
+      "max_current_error_away_from_ramp_stop_A": 2.8740749007142015e-12,
+      "wave_sha256": "afeff929f5a94c28506f86544840f8478231b67605ce2dcc22183f125426d366",
+      "deck_sha256": "40d50417a4b4fae3105cba4b5363e523e24fc33f156da09ab37f818d67b08830"
+    },
+    "control-scaled": {
+      "rows": 1552,
+      "max_native_current_error_A": 1.6919264957069476e-09,
+      "max_error_time_s": 0.0001000052289896951,
+      "max_native_voltage_error_V": 1.6919264953507707e-06,
+      "max_current_error_away_from_ramp_stop_A": 2.8740749007142015e-12,
+      "wave_sha256": "b3649cdfc9dbef5a2006350fc54f9453fe54d9fd8e43b5e0b755f58f18a478f6",
+      "deck_sha256": "ef1d04e5f9d26764ea8b535440717629716393c9f14064e852f364bf2c8c904f"
+    }
+  },
+  "saved_pairwise_comparison": {
+    "max_A": 2.707712963898036e-09,
+    "time_s": 0.0001000042470708761,
+    "unchanged_limit_A": 1e-10,
+    "passes": false
+  },
+  "accepted_fix": false
+}

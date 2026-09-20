@@ -1,0 +1,71 @@
+{
+  "runs": [
+    {
+      "mode": "nominal",
+      "completed": true,
+      "error": null,
+      "seconds": 399.8685176150175,
+      "timeout_s": 600,
+      "stats": {
+        "rows": 3480,
+        "end_s": 0.000153,
+        "last_values": [
+          3.299773380711976,
+          3.299761206864928,
+          -6.600250339872105e-05
+        ]
+      },
+      "replaced_moscap_instances": 86,
+      "source_model_sha256": "30d57d5722fe669a80e89f16e0a0dc0f65a27f633df13671366d42e28204c263",
+      "candidate_model_sha256": "e3029db97a59d1be93e2a985debbd8487117d1401e7f4aceb0b93b019c2e39ff",
+      "deck_sha256": "aebfe2d55d8a536787eff034aaaeaf4b20a06991461df0c4d9f517c072865146"
+    },
+    {
+      "mode": "remote",
+      "completed": true,
+      "error": null,
+      "seconds": 399.8335637160344,
+      "timeout_s": 600,
+      "stats": {
+        "rows": 3480,
+        "end_s": 0.000153,
+        "last_values": [
+          3.299773380802767,
+          3.299761207107757,
+          -6.600246508403629e-05
+        ]
+      },
+      "replaced_moscap_instances": 86,
+      "source_model_sha256": "cffadaa6373feefdc26b5f1773fe4af98f43052f2ef5a69d327fa7a3cc544a52",
+      "candidate_model_sha256": "56d66d174376617ccb79654bcd80102fc96675f4322e8df19033a5fb8f634099",
+      "deck_sha256": "127d6db3ff351eb256833a70d7fee1fbc8d4ff347765ed01950d72a1ff34960e"
+    }
+  ],
+  "both_complete": true,
+  "accepted_full_chip_fix": false,
+  "scope": "Complete extracted corner coupon, two lumped-cap placements, typical/27 C; not complete chip; refinement required if complete",
+  "stop_rule": "Exactly two placement runs, 600 s each; no retries.",
+  "placement_comparison": {
+    "full_trace_max": [
+      2.5487254664557923e-05,
+      9.788109732822292e-05,
+      1.0635895345030588e-05
+    ],
+    "post_startup_max": [
+      2.5487254664557923e-05,
+      9.788109732822292e-05,
+      1.0635895345030588e-05
+    ],
+    "at_151_5us": [
+      6.440759037218413e-11,
+      6.137828023611291e-10,
+      5.5768050333943053e-11
+    ],
+    "column_units": [
+      "rail V",
+      "digital rail V",
+      "source A"
+    ],
+    "scope": "Two recorded lumped-capacitor placements on one full corner coupon at 50 ns maximum step; not a spatial worst-case bound or refined performance claim"
+  }
+}

@@ -67,6 +67,27 @@ buffer_pex=runpy.run_path(str(root/'scripts/overview-buffer-pex.py'))['render'](
 integrated=runpy.run_path(str(root/'scripts/overview-integrated.py'))['render'](root)
 integrated_corners=runpy.run_path(str(root/'scripts/overview-integrated-corners.py'))['render'](root)
 bias_reference=runpy.run_path(str(root/'scripts/overview-bias-reference.py'))['render'](root)
+pad_proposal=(root/'docs/pad-proposal.html').read_text() if (root/'docs/pad-proposal.html').exists() else ''
+path_to_camera=(root/'docs/path-to-camera.html').read_text() if (root/'docs/path-to-camera.html').exists() else ''
+clamp_model_review=(root/'docs/clamp-model-review.html').read_text() if (root/'docs/clamp-model-review.html').exists() else ''
+filled_demonstrator=(root/'docs/filled-demonstrator.html').read_text() if (root/'docs/filled-demonstrator.html').exists() else ''
+routed_demonstrator=(root/'docs/routed-demonstrator.html').read_text() if (root/'docs/routed-demonstrator.html').exists() else ''
+completion_dashboard=(root/'docs/completion-dashboard.html').read_text() if (root/'docs/completion-dashboard.html').exists() else ''
+moscap_branch=(root/'docs/moscap-branch.html').read_text() if (root/'docs/moscap-branch.html').exists() else ''
+corner_interface=(root/'docs/corner-interface.html').read_text() if (root/'docs/corner-interface.html').exists() else ''
+charge_reduction=(root/'docs/charge-reduction.html').read_text() if (root/'docs/charge-reduction.html').exists() else ''
+charge_reference=(root/'docs/charge-reference.html').read_text() if (root/'docs/charge-reference.html').exists() else ''
+capacitance_candidate=(root/'docs/capacitance-candidate.html').read_text() if (root/'docs/capacitance-candidate.html').exists() else ''
+ring_candidate=(root/'docs/ring-candidate.html').read_text() if (root/'docs/ring-candidate.html').exists() else ''
+combined_patch=(root/'docs/combined-patch.html').read_text() if (root/'docs/combined-patch.html').exists() else ''
+network_investigation=(root/'docs/network-investigation.html').read_text() if (root/'docs/network-investigation.html').exists() else ''
+extraction_diagnostics=(root/'docs/extraction-diagnostics.html').read_text() if (root/'docs/extraction-diagnostics.html').exists() else ''
+rail_faces=(root/'docs/rail-faces.html').read_text() if (root/'docs/rail-faces.html').exists() else ''
+rail_isolation=(root/'docs/rail-isolation.html').read_text() if (root/'docs/rail-isolation.html').exists() else ''
+geometry_controls=(root/'docs/geometry-controls.html').read_text() if (root/'docs/geometry-controls.html').exists() else ''
+terminal_calibration=(root/'docs/terminal-calibration.html').read_text() if (root/'docs/terminal-calibration.html').exists() else ''
+filler_stitch=(root/'docs/filler-stitch.html').read_text() if (root/'docs/filler-stitch.html').exists() else ''
+ring_sections=(root/'docs/ring-sections.html').read_text() if (root/'docs/ring-sections.html').exists() else ''
 power_ring=(root/'docs/power-ring.html').read_text() if (root/'docs/power-ring.html').exists() else ''
 board_supply=(root/'docs/board-supply.html').read_text() if (root/'docs/board-supply.html').exists() else ''
 clamp_convergence=(root/'docs/clamp-convergence.html').read_text() if (root/'docs/clamp-convergence.html').exists() else ''
@@ -76,8 +97,22 @@ pad_references=(root/'docs/pad-references.html').read_text()
 pad_evaluation=(root/'docs/pad-evaluation.html').read_text() if (root/'docs/pad-evaluation.html').exists() else ''
 if clamp_convergence:
  pad_closure=pad_closure.replace('<h2>Pad DRC configuration and supply-clamp evaluation</h2>', '<h2>Earlier checkpoint: pad DRC and supply clamps</h2><p>The later <a href="#clamp-convergence">full-frame verification</a> above supersedes the transient limitation recorded here.</p>',1)
-html=html.replace('<main>', '<main>'+camera_plan+power_ring+board_supply+clamp_convergence+pad_closure+pad_layout+pad_evaluation+pad_references+bias_reference+integrated_corners+integrated+buffer_pex+hardening+corners+buffer+readout_pex+mux+column_bias+parasitics+size_progress+array_progress+progress, 1)
+if rail_isolation:
+ for name in ['terminal_calibration','geometry_controls']:
+  fragment=globals()[name]
+  end=fragment.find('</h2>')+5
+  notice='<p><strong>Correction, 18 September:</strong> the earlier negative-threshold command was rejected by Magic. See <a href="#rail-isolation">the accepted canonical-selection procedure and corrected interpretation</a> above. Earlier measurements are retained as historical evidence.</p>'
+  globals()[name]=fragment[:end]+notice+fragment[end:]
+html=html.replace('<main>', '<main>'+completion_dashboard+path_to_camera+clamp_model_review+filled_demonstrator+routed_demonstrator+pad_proposal+camera_plan+moscap_branch+corner_interface+charge_reduction+charge_reference+capacitance_candidate+ring_candidate+combined_patch+network_investigation+extraction_diagnostics+rail_faces+rail_isolation+geometry_controls+terminal_calibration+filler_stitch+ring_sections+power_ring+board_supply+clamp_convergence+pad_closure+pad_layout+pad_evaluation+pad_references+bias_reference+integrated_corners+integrated+buffer_pex+hardening+corners+buffer+readout_pex+mux+column_bias+parasitics+size_progress+array_progress+progress, 1)
 html=html.replace('<nav>', '<nav><a href="#pad-references">Pad references</a>',1)
+if network_investigation:html=html.replace('<nav>', '<nav><a href="#network-investigation">Reduction and device regressions</a>',1)
+if extraction_diagnostics:html=html.replace('<nav>', '<nav><a href="#extraction-diagnostics">Export and via diagnostics</a>',1)
+if rail_faces:html=html.replace('<nav>', '<nav><a href="#rail-faces">Full-width rail faces</a>',1)
+if rail_isolation:html=html.replace('<nav>', '<nav><a href="#rail-isolation">Real rail isolation</a>',1)
+if geometry_controls:html=html.replace('<nav>', '<nav><a href="#geometry-controls">Matched terminals</a>',1)
+if terminal_calibration:html=html.replace('<nav>', '<nav><a href="#terminal-calibration">Terminal calibration</a>',1)
+if filler_stitch:html=html.replace('<nav>', '<nav><a href="#filler-stitch">Boundary stitching</a>',1)
+if ring_sections:html=html.replace('<nav>', '<nav><a href="#ring-sections">Small ring extraction</a>',1)
 if power_ring:html=html.replace('<nav>', '<nav><a href="#power-ring">Physical supply ring</a>',1)
 if board_supply:html=html.replace('<nav>', '<nav><a href="#board-supply">Board supply</a>',1)
 if clamp_convergence:html=html.replace('<nav>', '<nav><a href="#clamp-convergence">Full clamp transient</a>',1)
@@ -106,5 +141,13 @@ html=html.replace('<a href="#status">Status</a>', '<a href="#repeatability">Repe
 html=html.replace('</main>', '''<section id="checkpoint"><h2>Restore this checkpoint and tool environment</h2><p>The repository includes a checksummed archive of verified GDS, netlists, DRC/LVS reports and simulation waveforms. The localhost desktop uses the checkout mounted at <code>/foss/designs</code>; saved project files are already on the host.</p><p>From a clean checkout:</p><pre><code>docker pull hpretl/iic-osic-tools@sha256:7371bae55da486f492cc270ea6137c4fcf3b11971de7a4506a74f62be143537a
 python3 scripts/restore-checkpoint.py
 bash scripts/start-vnc.sh</code></pre><p>Open <code>http://localhost:8080/vnc.html?autoconnect=true&amp;resize=scale</code> for the desktop. See <a href="https://github.com/njcoburn/OPENIMAGESENSOR/blob/main/docs/docker-setup.md">Docker setup and full reproduction instructions</a>. The restore refuses to overwrite existing artifacts. Browser sessions and the Docker image itself are not in the archive.</p></section></main>''',1)
+html=html.replace('</main>', (root/'docs/carrier-fixture-section.html').read_text()+'</main>', 1)
+html=html.replace('</main>', (root/'docs/scaled-electrical-progress-section.html').read_text()+'</main>', 1)
+html=html.replace('</main>', (root/'docs/wafer-space-version-audit-section.html').read_text()+'</main>', 1)
+html=html.replace('</main>', (root/'docs/ngspice-version-comparison-section.html').read_text()+'</main>', 1)
+html=html.replace('</main>', (root/'docs/gf180-shuttle-references-section.html').read_text()+'</main>', 1)
+if (root/'docs/functional-camera-section.html').exists():
+ html=html.replace('</main>', (root/'docs/functional-camera-section.html').read_text()+'</main>', 1)
+html=html.replace('<main>', '<main><p><strong>Returning to the project?</strong> <a href="../PICK_UP_HERE.md">Read the dated handoff, current blockers and next steps</a>.</p>', 1)
 (root/'docs/overview.html').write_text(html)
 print('Checks passed. Wrote docs/overview.html and simulations/cycle-samples.json')

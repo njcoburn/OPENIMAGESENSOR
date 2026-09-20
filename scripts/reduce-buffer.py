@@ -2,11 +2,12 @@
 Schur complement in femtofarads. No grounding of floating fill, no fitted devices.
 """
 from pathlib import Path
-import re,json,hashlib
+import re,json,hashlib,argparse
 import numpy as np
 from scipy import sparse
 from scipy.sparse.linalg import splu
 root=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser();parser.add_argument('--work-dir',type=Path);args=parser.parse_args()
 def value(s):
  m=re.fullmatch(r'([+-]?[\d.]+(?:[eE][+-]?\d+)?)([a-zA-Z]*)',s);assert m,s
  return float(m[1])*{'':1,'f':1e-15,'p':1e-12,'n':1e-9,'u':1e-6,'m':1e-3,'k':1e3}[m[2].lower()]
@@ -18,7 +19,7 @@ class Union:
   return self.p[x]
  def join(self,a,b):self.p[self.find(a)]=self.find(b)
 for variant in ['buffer-pex']:
- path=root/'build'/variant;source=path/'buffer_rc.spice';text=source.read_text();lines=[x.split() for x in text.splitlines() if x and x[0] not in '*+']
+ path=args.work_dir.resolve() if args.work_dir else root/'build'/variant;source=path/'buffer_rc.spice';text=source.read_text();lines=[x.split() for x in text.splitlines() if x and x[0] not in '*+']
  raw_capacitor_count=sum(t[0][0]=='C' for t in lines)
  ports=next(t[2:] for t in lines if t[0]=='.subckt');devices=[t for t in lines if t[0][0] in 'XD'];resistors=[t for t in lines if t[0][0]=='R'];caps=[(t[1],t[2],value(t[3])*1e15) for t in lines if t[0][0]=='C']
  assert sum(t[0][0]=='X' for t in devices)==3 and sum(t[0][0]=='D' for t in devices)==0

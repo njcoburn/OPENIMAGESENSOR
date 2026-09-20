@@ -1,0 +1,9 @@
+{
+  "capacitor-control": "build/moscap-branch/small-n1-r1000-False-False",
+  "klu-gear-100ns": "build/moscap-branch/clamp-localFalse-smoothFalse",
+  "klu-trap-100ns": "build/moscap-branch/integration-trapezoidal",
+  "klu-trap-50ns": "build/moscap-branch/trap-halfstep",
+  "klu-trap-50ns-strict": "build/moscap-branch/trap-halfstep-strict",
+  "sparse-trap-50ns": "build/bounded-solver/trap-halfstep",
+  "sparse-trap-50ns-strict": "build/bounded-solver/trap-halfstep-strict"
+}

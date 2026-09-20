@@ -1,0 +1,570 @@
+{
+  "name": "die_carrier",
+  "bounds": [
+    30,
+    30,
+    70,
+    70
+  ],
+  "aperture": null,
+  "components": [
+    {
+      "ref": "P1",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        41.25,
+        64.5
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P2",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        44.75,
+        64.5
+      ],
+      "nets": {
+        "1": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P3",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        48.25,
+        64.5
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P4",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        51.75,
+        64.5
+      ],
+      "nets": {
+        "1": "SEL0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P5",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        55.25,
+        64.5
+      ],
+      "nets": {
+        "1": "SEL1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P6",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        58.75,
+        64.5
+      ],
+      "nets": {
+        "1": "SEL2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P7",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        64.5,
+        58.75
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P8",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        64.5,
+        55.25
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P9",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        64.5,
+        51.75
+      ],
+      "nets": {
+        "1": "BUF"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P10",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        64.5,
+        48.25
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P11",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        64.5,
+        44.75
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P12",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        64.5,
+        41.25
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P13",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        58.75,
+        35.5
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P14",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        55.25,
+        35.5
+      ],
+      "nets": {
+        "1": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P15",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        51.75,
+        35.5
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P16",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        48.25,
+        35.5
+      ],
+      "nets": {
+        "1": "RST2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P17",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        44.75,
+        35.5
+      ],
+      "nets": {
+        "1": "ROW2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P18",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        41.25,
+        35.5
+      ],
+      "nets": {
+        "1": "VRESET"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P19",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        35.5,
+        41.25
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P20",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        35.5,
+        44.75
+      ],
+      "nets": {
+        "1": "RST1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P21",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        35.5,
+        48.25
+      ],
+      "nets": {
+        "1": "ROW1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P22",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        35.5,
+        51.75
+      ],
+      "nets": {
+        "1": "RST0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P23",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        35.5,
+        55.25
+      ],
+      "nets": {
+        "1": "ROW0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "P24",
+      "value": "POGO_TARGET",
+      "footprint": "OIS:Target_2p4",
+      "xy": [
+        35.5,
+        58.75
+      ],
+      "nets": {
+        "1": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Target_2p4",
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Target_2p4"
+    },
+    {
+      "ref": "U1",
+      "value": "OIS_3x3_BARE_DIE_PROVISIONAL",
+      "footprint": "OIS:Bond_3x3_PROVISIONAL",
+      "xy": [
+        50,
+        50
+      ],
+      "nets": {
+        "1": "GND",
+        "2": "VDD",
+        "3": "BIAS",
+        "4": "SEL0",
+        "5": "SEL1",
+        "6": "SEL2",
+        "7": "GND",
+        "8": "PREF",
+        "9": "BUF",
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": "GND",
+        "14": "VDD",
+        "15": null,
+        "16": "RST2",
+        "17": "ROW2",
+        "18": "VRESET",
+        "19": "GND",
+        "20": "RST1",
+        "21": "ROW1",
+        "22": "RST0",
+        "23": "ROW0",
+        "24": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Bond_3x3_PROVISIONAL",
+      "side": "F",
+      "note": "Landing pad positions/finish and die attach subject to wire-bond provider; not die pad centers",
+      "local_footprint": "OIS:Bond_3x3_PROVISIONAL"
+    },
+    {
+      "ref": "R1",
+      "value": "5.1M 1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        45,
+        56
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "BIAS"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R2",
+      "value": "49.9k 1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        55,
+        56
+      ],
+      "nets": {
+        "1": "PREF",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "C1",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        45,
+        44
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    }
+  ]
+}

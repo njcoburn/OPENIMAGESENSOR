@@ -1,0 +1,209 @@
+{
+  "seconds": 0.62896154896589,
+  "connections": [
+    {
+      "net": "BUF",
+      "a": "P9.1",
+      "b": "U1.9",
+      "routed": true,
+      "visited": 104
+    },
+    {
+      "net": "BIAS",
+      "a": "R1.2",
+      "b": "U1.3",
+      "routed": true,
+      "visited": 94
+    },
+    {
+      "net": "PREF",
+      "a": "R2.1",
+      "b": "U1.8",
+      "routed": true,
+      "visited": 714
+    },
+    {
+      "net": "RST2",
+      "a": "P16.1",
+      "b": "U1.16",
+      "routed": true,
+      "visited": 104
+    },
+    {
+      "net": "ROW2",
+      "a": "P17.1",
+      "b": "U1.17",
+      "routed": true,
+      "visited": 126
+    },
+    {
+      "net": "VRESET",
+      "a": "P18.1",
+      "b": "U1.18",
+      "routed": true,
+      "visited": 151
+    },
+    {
+      "net": "RST1",
+      "a": "P20.1",
+      "b": "U1.20",
+      "routed": true,
+      "visited": 237
+    },
+    {
+      "net": "ROW1",
+      "a": "P21.1",
+      "b": "U1.21",
+      "routed": true,
+      "visited": 104
+    },
+    {
+      "net": "RST0",
+      "a": "P22.1",
+      "b": "U1.22",
+      "routed": true,
+      "visited": 104
+    },
+    {
+      "net": "ROW0",
+      "a": "P23.1",
+      "b": "U1.23",
+      "routed": true,
+      "visited": 127
+    },
+    {
+      "net": "SEL0",
+      "a": "P4.1",
+      "b": "U1.4",
+      "routed": true,
+      "visited": 104
+    },
+    {
+      "net": "SEL1",
+      "a": "P5.1",
+      "b": "U1.5",
+      "routed": true,
+      "visited": 3581
+    },
+    {
+      "net": "SEL2",
+      "a": "P6.1",
+      "b": "U1.6",
+      "routed": true,
+      "visited": 4772
+    },
+    {
+      "net": "VDD",
+      "a": "C1.1",
+      "b": "U1.14",
+      "routed": true,
+      "visited": 934
+    },
+    {
+      "net": "VDD",
+      "a": "C1.1",
+      "b": "U1.24",
+      "routed": true,
+      "visited": 1244
+    },
+    {
+      "net": "VDD",
+      "a": "U1.24",
+      "b": "R1.1",
+      "routed": true,
+      "visited": 37
+    },
+    {
+      "net": "VDD",
+      "a": "R1.1",
+      "b": "U1.2",
+      "routed": true,
+      "visited": 1003
+    },
+    {
+      "net": "VDD",
+      "a": "R1.1",
+      "b": "P2.1",
+      "routed": true,
+      "visited": 92
+    },
+    {
+      "net": "VDD",
+      "a": "R1.1",
+      "b": "P24.1",
+      "routed": true,
+      "visited": 114
+    },
+    {
+      "net": "VDD",
+      "a": "U1.14",
+      "b": "P14.1",
+      "routed": true,
+      "visited": 127
+    },
+    {
+      "net": "GND",
+      "a": "C1.2",
+      "b": "U1.19",
+      "routed": true,
+      "visited": 46
+    },
+    {
+      "net": "GND",
+      "a": "C1.2",
+      "b": "U1.13",
+      "routed": true,
+      "visited": 921
+    },
+    {
+      "net": "GND",
+      "a": "U1.19",
+      "b": "U1.1",
+      "routed": true,
+      "visited": 419
+    },
+    {
+      "net": "GND",
+      "a": "U1.1",
+      "b": "R2.2",
+      "routed": true,
+      "visited": 1471
+    },
+    {
+      "net": "GND",
+      "a": "R2.2",
+      "b": "U1.7",
+      "routed": true,
+      "visited": 502
+    },
+    {
+      "net": "GND",
+      "a": "R2.2",
+      "b": "P7.1",
+      "routed": true,
+      "visited": 1788
+    },
+    {
+      "net": "GND",
+      "a": "C1.2",
+      "b": "P19.1",
+      "routed": true,
+      "visited": 133
+    },
+    {
+      "net": "GND",
+      "a": "U1.13",
+      "b": "P13.1",
+      "routed": true,
+      "visited": 151
+    },
+    {
+      "net": "GND",
+      "a": "U1.1",
+      "b": "P1.1",
+      "routed": true,
+      "visited": 370
+    }
+  ],
+  "failed": 0
+}

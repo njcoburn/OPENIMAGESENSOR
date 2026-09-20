@@ -1,0 +1,30 @@
+{
+  "runs": [
+    {
+      "mode": "nominal",
+      "completed": false,
+      "error": "AssertionError()",
+      "seconds": 791.3717629819876,
+      "timeout_s": 1200,
+      "comparison": null,
+      "model_sha256": "e3029db97a59d1be93e2a985debbd8487117d1401e7f4aceb0b93b019c2e39ff",
+      "deck_sha256": "350c281990cf95aa3e5b1646d6cab148d83fb829ed15cd5747a3947c262ca70a",
+      "failure_detail": "ngspice TRAN timestep too small at 151 us load onset; e.x354.ehelper#branch; timestep 3.125e-20 s. Partial waveform is not a completed run."
+    },
+    {
+      "mode": "remote",
+      "completed": false,
+      "error": "AssertionError()",
+      "seconds": 792.1807950439979,
+      "timeout_s": 1200,
+      "comparison": null,
+      "model_sha256": "56d66d174376617ccb79654bcd80102fc96675f4322e8df19033a5fb8f634099",
+      "deck_sha256": "04a3d7cdf60ad8cd20c187c104815d56aea589fa5678c5120a9e943f16b4707b",
+      "failure_detail": "ngspice TRAN timestep too small at 151 us load onset; e.x354.ehelper#branch; timestep 3.125e-20 s. Partial waveform is not a completed run."
+    }
+  ],
+  "voltage_screen_pass": false,
+  "accepted_full_chip_fix": false,
+  "scope": "Combined maximum timestep 50\u219225 ns and reltol/abstol refinement; two corner placements, typical/27 C only",
+  "stop_rule": "Two runs only; any failed/incomplete gate prevents promotion."
+}

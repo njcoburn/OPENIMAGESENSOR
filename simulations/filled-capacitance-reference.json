@@ -1,0 +1,25 @@
+{
+  "ext_sha256": "f1f498bb42e05838289032f6f08c36f327bbd6ebcd231119c37d554848dca039",
+  "native_sha256": "05e70d50f2609b95feacea016db4055656cfaddf05f756ae3aafa4c08ce2da33",
+  "reference_sha256": "717095ab1e6fe710bf5c87fb11dce4d50993926142fce792e52a2c8d89024336",
+  "nodes": 358966,
+  "retained_device_port_nodes": 279,
+  "capacitor_pairs": 1904011,
+  "native_capacitors": 1904397,
+  "native_zero_capacitors": 98461,
+  "native_max_pair_error_fF": 0.010000000009313226,
+  "native_max_error_pair": [
+    "GND",
+    "VDD"
+  ],
+  "native_sum_absolute_pair_error_fF": 52.199381790561475,
+  "serialized_reference_max_pair_error_fF": 1.1368683772161603e-13,
+  "original_matrix_preserved_to_numeric_bound": true,
+  "negative_roundoff_entries": 386,
+  "negative_roundoff_sum_abs_F": 3.7571758310000007e-32,
+  "capacitance_matrix_infinity_norm_perturbation_bound_F": 7.514351662000001e-32,
+  "negative_roundoff_limit_per_entry_F": 1e-30,
+  "substrate": "GND",
+  "scope": "Lumped matrix of the final flat extraction, constant wiring C; device records retained; no distributed R or measured capacitance validation",
+  "accepted_full_chip_rc": false
+}

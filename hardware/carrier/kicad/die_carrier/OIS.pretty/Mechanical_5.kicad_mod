@@ -1,0 +1,12 @@
+(footprint "Mechanical_5" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "H5" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp ff8be098-07f6-4659-9f88-de4b9066e547)
+  )
+  (fp_text value "Alignment round" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp 55798297-7c50-4560-b8dc-da6391e82be1)
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 2.049999 2.049999) (drill 2.049999) (layers "*.Mask" "F.Cu" "In1.Cu" "In2.Cu" "B.Cu") (tstamp 895098f6-a348-4016-8ac6-10a9c87a54d5))
+)

@@ -1,0 +1,13 @@
+diff --git a/extflat/EFread.c b/extflat/EFread.c
+index fbd7709..599e7f2 100644
+--- a/extflat/EFread.c
++++ b/extflat/EFread.c
+@@ -599,7 +599,7 @@ resistChanged:
+ 	    /* NOTE:  Value changed to floating-point 12/16/2019;     */
+ 	    case RESISTOR:
+ 		efBuildResistor(def, argv[1], argv[2],
+-			    (float)(0.5 + (double)rscale * atof(argv[3])));
++			    (float)((double)rscale * atof(argv[3])));
+ 		break;
+ 
+ 	    /* abstract (no options/arguments) */

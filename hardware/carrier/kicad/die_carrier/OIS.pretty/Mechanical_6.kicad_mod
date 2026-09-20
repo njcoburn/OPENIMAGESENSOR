@@ -1,0 +1,13 @@
+(footprint "Mechanical_6" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "H6" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp f895016b-7831-4395-887e-c3ed12cc10a2)
+  )
+  (fp_text value "Alignment slot" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp 71035ade-0063-427f-9cb9-1302c62d78b4)
+  )
+  (pad "" np_thru_hole oval (at 0 0) (size 3.05 2.049999) (drill oval 3.05 2.049999) (layers "*.Mask" "F.Cu" "In1.Cu" "In2.Cu" "B.Cu")
+    (thermal_bridge_angle 45) (tstamp b2f365ab-e949-4486-85a3-f14b4f0c499f))
+)

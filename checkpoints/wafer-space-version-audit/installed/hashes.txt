@@ -1,0 +1,2 @@
+f6f4a96e18fc5ad11270ad3451aaecc7ac37fc81eb61e15b0d7d94c7bc594a24  /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice
+806def042390f614dca0c7e1e11504788b0d23073115aa41e1246d21f4a78c82  /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds

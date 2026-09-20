@@ -1,0 +1,1262 @@
+{
+  "scope": "Fresh buffer and readout extraction; reduced fill; readout BIAS capacitance approximation retained",
+  "lvs": [
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "pass": true
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "pass": true
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "pass": true
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "pass": true
+    }
+  ],
+  "runs": [
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.137370994186,
+        2.293086875844
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.102845865998,
+        2.258456864737
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        2.071299273677,
+        2.226816220541
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        2.048870963949,
+        2.204316134825
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.016491276849,
+        2.175249610811
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        1.980472776936,
+        2.139074895287
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        1.947685246401,
+        2.106144478394
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        1.924418575235,
+        2.082770421066
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.254688420069,
+        2.40727969092
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.221629903842,
+        2.374164674061
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        2.191303674354,
+        2.343790347776
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        2.169699455203,
+        2.322147731076
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.219456966124,
+        2.373340388211
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.185760932448,
+        2.339574709923
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        2.1548963097,
+        2.30864964203
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        2.132926549666,
+        2.286632568828
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.053933329028,
+        2.211437216507
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.018571017045,
+        2.175934066337
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        1.986334768021,
+        2.143569430477
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        1.963441694863,
+        2.120579519217
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.137371014763,
+        2.293086896763
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.102845886715,
+        2.258456885786
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        2.071299294551,
+        2.226816241742
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        2.048870984935,
+        2.204316156135
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.016491296445,
+        2.175249630718
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        1.980472796711,
+        2.139074915367
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        1.94768526636,
+        2.106144498653
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        1.924418595341,
+        2.082770441468
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.254688441651,
+        2.40727971287
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.221629925528,
+        2.374164696105
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        2.191303696163,
+        2.343790369945
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        2.169699477114,
+        2.322147753343
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.219456987314,
+        2.373340409758
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.185760953753,
+        2.339574731574
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        2.154896331132,
+        2.308649663811
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        2.132926571198,
+        2.28663259071
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        2.053933349004,
+        2.211437236805
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        2.018571037185,
+        2.175934086794
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        1.986334788345,
+        2.143569451106
+      ]
+    },
+    {
+      "block": "buffer",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        1.963441715314,
+        2.120579539973
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963362165,
+        0.7999940378261,
+        1.099991691543
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963212468,
+        0.7999940239956,
+        1.099991686701783
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963115778,
+        0.7999940143246527,
+        1.0999916809020136
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "typical",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963043567923,
+        0.7999940063688828,
+        1.0999916699380008
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963211249,
+        0.7999940123352,
+        1.099991654814
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.499996308006,
+        0.7999940019177,
+        1.099991655321
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.4999962992818,
+        0.799993994035,
+        1.0999916529949554
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ff",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999962926290893,
+        0.7999939871750384,
+        1.099991648068149
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963501825,
+        0.7999940614071,
+        1.099991725392
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963333983,
+        0.7999940441920904,
+        1.099991714728398
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.499996322725315,
+        0.7999940324479087,
+        1.0999916932631773
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "ss",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963147606706,
+        0.7999940218213817,
+        1.099991619917006
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963252704,
+        0.7999940195513,
+        1.099991665529
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963116995,
+        0.7999940082205,
+        1.099991664511
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963027503,
+        0.799993999863635,
+        1.0999916613159064
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "fs",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999962959517,
+        0.7999939927174019,
+        1.099991655438744
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963466388,
+        0.7999940552378,
+        1.099991716292
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963302781,
+        0.799994038898162,
+        1.0999917074583634
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.499996319851916,
+        0.7999940277875366,
+        1.0999916953060849
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "baseline",
+      "corner": "sf",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963121297703,
+        0.7999940184863626,
+        1.0999916609142117
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963364635,
+        0.7999940380759,
+        1.099991691795234
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963214949,
+        0.7999940242461,
+        1.0999916869537827
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963118264,
+        0.7999940145751527,
+        1.099991681154746
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "typical",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963046059443,
+        0.7999940066197455,
+        1.0999916701908008
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.499996321373,
+        0.799994012586,
+        1.099991655067
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963082551,
+        0.7999940021689,
+        1.099991655574
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.4999962995312,
+        0.7999939942865,
+        1.0999916532479554
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ff",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999962928788893,
+        0.7999939874269385,
+        1.0999916483221488
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963504287,
+        0.7999940616558,
+        1.099991725643
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963336455,
+        0.7999940444416904,
+        1.0999917149793885
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.49999632297301505,
+        0.7999940326976086,
+        1.0999916935150487
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "ss",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963150087707,
+        0.7999940220712808,
+        1.0999916201691637
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963255183,
+        0.7999940198018,
+        1.099991665783
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963119482,
+        0.7999940084716,
+        1.099991664765
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963029995,
+        0.799994000114835,
+        1.0999916615689065
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "fs",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.4999962962011,
+        0.7999939929691019,
+        1.0999916556917433
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": -40,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963468852,
+        0.7999940554869,
+        1.099991716543
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": 27,
+      "pass_run": true,
+      "samples_V": [
+        0.4999963305254,
+        0.799994039147862,
+        1.0999917077103298
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": 85,
+      "pass_run": true,
+      "samples_V": [
+        0.499996320099816,
+        0.7999940280378367,
+        1.0999916955586695
+      ]
+    },
+    {
+      "block": "readout",
+      "mode": "combined",
+      "corner": "sf",
+      "temp": 125,
+      "pass_run": true,
+      "samples_V": [
+        0.49999631237827047,
+        0.799994018736551,
+        1.0999916611669156
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "block": "buffer",
+      "corner": "typical",
+      "temp": -40,
+      "max_sample_delta_V": 2.091899986567114e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "typical",
+      "temp": 27,
+      "max_sample_delta_V": 2.1048999876427388e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "typical",
+      "temp": 85,
+      "max_sample_delta_V": 2.1201000066639608e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "typical",
+      "temp": 125,
+      "max_sample_delta_V": 2.1309999986840467e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ff",
+      "temp": -40,
+      "max_sample_delta_V": 1.990700004839141e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ff",
+      "temp": 27,
+      "max_sample_delta_V": 2.007999988506981e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ff",
+      "temp": 85,
+      "max_sample_delta_V": 2.0258999811062495e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ff",
+      "temp": 125,
+      "max_sample_delta_V": 2.0402000089347894e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ss",
+      "temp": -40,
+      "max_sample_delta_V": 2.1950000039794304e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ss",
+      "temp": 27,
+      "max_sample_delta_V": 2.2043999958754057e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ss",
+      "temp": 85,
+      "max_sample_delta_V": 2.2168999969096603e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "ss",
+      "temp": 125,
+      "max_sample_delta_V": 2.2267000243658686e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "fs",
+      "temp": -40,
+      "max_sample_delta_V": 2.154700018408562e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "fs",
+      "temp": 27,
+      "max_sample_delta_V": 2.1650999659783565e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "fs",
+      "temp": 85,
+      "max_sample_delta_V": 2.1781000114629023e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "fs",
+      "temp": 125,
+      "max_sample_delta_V": 2.1882000211803643e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "sf",
+      "temp": -40,
+      "max_sample_delta_V": 2.0298000169560737e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "sf",
+      "temp": 27,
+      "max_sample_delta_V": 2.0456999649809404e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "sf",
+      "temp": 85,
+      "max_sample_delta_V": 2.0628999841676432e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "buffer",
+      "corner": "sf",
+      "temp": 125,
+      "max_sample_delta_V": 2.0756000029820143e-08,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "typical",
+      "temp": -40,
+      "max_sample_delta_V": 2.522340114552435e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "typical",
+      "temp": 27,
+      "max_sample_delta_V": 2.519997543970476e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "typical",
+      "temp": 85,
+      "max_sample_delta_V": 2.527325015933002e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "typical",
+      "temp": 125,
+      "max_sample_delta_V": 2.528000031531974e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ff",
+      "temp": -40,
+      "max_sample_delta_V": 2.529998432976299e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ff",
+      "temp": 27,
+      "max_sample_delta_V": 2.529998432976299e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ff",
+      "temp": 85,
+      "max_sample_delta_V": 2.5300006534223485e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ff",
+      "temp": 125,
+      "max_sample_delta_V": 2.5399971015360734e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ss",
+      "temp": -40,
+      "max_sample_delta_V": 2.510001095856751e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ss",
+      "temp": 27,
+      "max_sample_delta_V": 2.509905616676633e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ss",
+      "temp": 85,
+      "max_sample_delta_V": 2.518714126154009e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "ss",
+      "temp": 125,
+      "max_sample_delta_V": 2.521578501557542e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "fs",
+      "temp": -40,
+      "max_sample_delta_V": 2.5399993219821226e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "fs",
+      "temp": 27,
+      "max_sample_delta_V": 2.540001542428172e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "fs",
+      "temp": 85,
+      "max_sample_delta_V": 2.5300006534223485e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "fs",
+      "temp": 125,
+      "max_sample_delta_V": 2.5299917716381515e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "sf",
+      "temp": -40,
+      "max_sample_delta_V": 2.5099988754107017e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "sf",
+      "temp": 27,
+      "max_sample_delta_V": 2.5196644770630883e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "sf",
+      "temp": 85,
+      "max_sample_delta_V": 2.525846198864201e-10,
+      "pass_screen": true
+    },
+    {
+      "block": "readout",
+      "corner": "sf",
+      "temp": 125,
+      "max_sample_delta_V": 2.5270385783926486e-10,
+      "pass_screen": true
+    }
+  ],
+  "controls": {
+    "buffer": {
+      "same_capacitance_multiset": false,
+      "same_devices": true,
+      "same_resistor_connectivity": true,
+      "note": "Exact record comparison only: fresh extraction may renumber internal terminals and round capacitance differently. Connectivity is independently gated by LVS."
+    },
+    "readout": {
+      "same_capacitance_multiset": false,
+      "same_devices": false,
+      "same_resistor_connectivity": false,
+      "note": "Exact record comparison only: fresh extraction may renumber internal terminals and round capacitance differently. Connectivity is independently gated by LVS."
+    },
+    "two_end_columns": {
+      "raw_ohm": 0.10514800000000002,
+      "exported_ohm": 0.105148,
+      "unreduced_reference_ohm": 0.10514803612590749,
+      "pass": true
+    },
+    "all_cuts": {
+      "raw_ohm": 0.0938371,
+      "exported_ohm": 0.0938371,
+      "unreduced_reference_ohm": 0.09383720124224756,
+      "pass": true
+    }
+  },
+  "recorded": "2026-09-18 14:06 PDT",
+  "max_sample_delta_V": 2.2267000243658686e-08,
+  "production_gds_sha256": {
+    "build/power-ring/power_ring.gds": "018d51367dc29b877696de12a84f4d7001f75f20fed377c9633edee54fad6be8",
+    "build/power-ring/ring_sensor_power.gds": "07584927d1ae66c4bd2437a0e8c373648f407d70fe5f11a92204b98e6ff4ffba"
+  },
+  "candidate_binary_sha256": "ed7207ecf0ed5c703105dbab1c2a41541ebada14229d56678ff9969bf6d6a463"
+}

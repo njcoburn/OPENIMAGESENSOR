@@ -1,0 +1,16 @@
+{
+  "reference_sha256": "9a49b26a276b873b1159fdc49b2d236b7198525e0d498ee9c4c94e5c223bf3ce",
+  "baseline_sha256": "05e70d50f2609b95feacea016db4055656cfaddf05f756ae3aafa4c08ce2da33",
+  "device_records_match": true,
+  "reference_devices": 4037,
+  "baseline_devices": 4037,
+  "removed_examples": [],
+  "added_examples": [],
+  "capacitor_count": 1904397,
+  "negative_capacitors": 0,
+  "self_capacitors": 0,
+  "port_header_match": true,
+  "original_capacitance_matrix_audit": "Pending",
+  "distributed_wire_resistance": "Absent by design in this baseline",
+  "accepted_full_chip_rc": false
+}

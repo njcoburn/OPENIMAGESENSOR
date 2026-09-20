@@ -1,0 +1,76 @@
+Reference,Value_or_MPN,Footprint,Note
+P1,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P2,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P3,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P4,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P5,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P6,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P7,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P8,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P9,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P10,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P11,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P12,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P13,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P14,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P15,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P16,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P17,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P18,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P19,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P20,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P21,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P22,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P23,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+P24,0906-0-15-20-76-14-11-0,OIS:Pogo_0906_0,Bottom-facing spring; compression height must be confirmed
+J1,CONTROLLER_TIMING,OIS:Connector_PinHeader_2.54mm_PinHeader_2x10_P2.54mm_Vertical,
+J2,3V3_INPUT_ONLY,OIS:Connector_PinHeader_2.54mm_PinHeader_1x02_P2.54mm_Vertical,Regulated current-limited 3.3 V bench source; no onboard regulator
+J3,I2C_AND_ENABLE,OIS:Connector_PinHeader_2.54mm_PinHeader_1x06_P2.54mm_Vertical,
+J4,FAST_ADC_ANALOG,OIS:Connector_PinHeader_2.54mm_PinHeader_1x03_P2.54mm_Vertical,Analog expansion; no 50-ohm termination; external ADC requires load review
+U1,SN74LVC244APW,OIS:Package_SO_TSSOP-20_4.4x6.5mm_P0.65mm,
+C1,100n,OIS:Capacitor_SMD_C_0805_2012Metric,
+U2,SN74LVC244APW,OIS:Package_SO_TSSOP-20_4.4x6.5mm_P0.65mm,
+C2,100n,OIS:Capacitor_SMD_C_0805_2012Metric,
+R1,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R11,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R31,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R2,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R12,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R32,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R3,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R13,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R33,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R4,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R14,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R34,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R5,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R15,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R35,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R6,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R16,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R36,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R7,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R17,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R37,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R8,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R18,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R38,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R9,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R19,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R39,100k,OIS:Resistor_SMD_R_0805_2012Metric,
+R21,10k,OIS:Resistor_SMD_R_0805_2012Metric,
+U3,OPA2320AID,OIS:Package_SO_SOIC-8_3.9x4.9mm_P1.27mm,
+R22,13k 0.1%,OIS:Resistor_SMD_R_0805_2012Metric,
+R23,20k 0.1%,OIS:Resistor_SMD_R_0805_2012Metric,
+C3,100n,OIS:Capacitor_SMD_C_0805_2012Metric,
+C4,10n,OIS:Capacitor_SMD_C_0805_2012Metric,
+U4,ADS1115IDGSR,OIS:Package_SO_VSSOP-10_3x3mm_P0.5mm,
+C5,100n,OIS:Capacitor_SMD_C_0805_2012Metric,
+C6,1u,OIS:Capacitor_SMD_C_0805_2012Metric,
+R24,100,OIS:Resistor_SMD_R_0805_2012Metric,
+C7,10n,OIS:Capacitor_SMD_C_0805_2012Metric,
+R25,100,OIS:Resistor_SMD_R_0805_2012Metric,
+R26,4.7k,OIS:Resistor_SMD_R_0805_2012Metric,
+R27,4.7k,OIS:Resistor_SMD_R_0805_2012Metric,
+R28,4.7k,OIS:Resistor_SMD_R_0805_2012Metric,
+C8,10u,OIS:Capacitor_SMD_C_0805_2012Metric,

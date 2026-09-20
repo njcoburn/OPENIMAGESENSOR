@@ -1,0 +1,78 @@
+{
+  "recorded": "2026-09-18 08:30 PDT",
+  "scope": "Isolated VDD conductor component of the actual two-filler coupon; no device/capacitance qualification.",
+  "cases": {
+    "m5-to-m5": {
+      "Magic_raw_R_ohm": 0.514286,
+      "Magic_SPICE_R_ohm": 0.514786,
+      "ngspice_R_ohm": 0.5147872641630846,
+      "independent_ngspice_pass": true,
+      "resistor_count": 1,
+      "no_duplicate_pairs_and_all_nodes_connected": true,
+      "FV_R_ohm": {
+        "0.0125": 0.5776808973609481,
+        "0.025": 0.5780097729468596,
+        "0.25": 0.5887657981993208,
+        "0.05": 0.5788322826493051,
+        "0.1": 0.5809503783967124
+      }
+    },
+    "m5-to-m4": {
+      "Magic_raw_R_ohm": 0.518443,
+      "Magic_SPICE_R_ohm": 0.518943,
+      "ngspice_R_ohm": 0.5189440526416847,
+      "independent_ngspice_pass": true,
+      "resistor_count": 1,
+      "no_duplicate_pairs_and_all_nodes_connected": true,
+      "FV_R_ohm": {
+        "0.25": 0.5644843842809306,
+        "0.05": 0.5578733521374774,
+        "0.1": 0.5596743579702516
+      }
+    },
+    "m5-to-m3": {
+      "Magic_raw_R_ohm": 0.48914646720723154,
+      "Magic_SPICE_R_ohm": 0.4991194033193289,
+      "ngspice_R_ohm": 0.4991190548681577,
+      "independent_ngspice_pass": true,
+      "resistor_count": 143,
+      "no_duplicate_pairs_and_all_nodes_connected": true,
+      "FV_R_ohm": {
+        "0.25": 0.5597431949599553,
+        "0.05": 0.55313236573253,
+        "0.1": 0.5549334156405663
+      }
+    },
+    "m5-to-m2": {
+      "Magic_raw_R_ohm": 0.4891093070655083,
+      "Magic_SPICE_R_ohm": 0.4990913721604037,
+      "ngspice_R_ohm": 0.4990916531911921,
+      "independent_ngspice_pass": true,
+      "resistor_count": 240,
+      "no_duplicate_pairs_and_all_nodes_connected": true,
+      "FV_R_ohm": {
+        "0.25": 0.559702178511743,
+        "0.05": 0.5530702322741924,
+        "0.1": 0.5548586252987188
+      }
+    },
+    "m5-to-m1": {
+      "Magic_raw_R_ohm": 0.48910361560504834,
+      "Magic_SPICE_R_ohm": 0.49908389358232286,
+      "ngspice_R_ohm": 0.49908418052872977,
+      "independent_ngspice_pass": true,
+      "resistor_count": 336,
+      "no_duplicate_pairs_and_all_nodes_connected": true,
+      "FV_R_ohm": {
+        "0.25": 0.5596928149097312,
+        "0.05": 0.5530645573224848,
+        "0.1": 0.5548535136617208
+      }
+    }
+  },
+  "M5_series_strip_R_ohm": 0.5142857142857143,
+  "Magic_M4_addition_increases_R": true,
+  "FV_0p1um_added_conductors_monotonic": true,
+  "Magic_threshold_correction": "Earlier -1 command was rejected with Usage; current extraction uses accepted threshold 0, include VDD_B, and extresist all.",
+  "full_RC_qualified": false
+}

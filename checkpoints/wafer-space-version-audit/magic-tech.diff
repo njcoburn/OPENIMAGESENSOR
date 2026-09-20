@@ -1,0 +1,11 @@
+--- installed
++++ template
+@@ -15,7 +15,7 @@
+ end
+ 
+ version
+- version 1.0.599-0-gb344c97
++ version 1.0.588-52-gf6eeac7
+  description "Global Foundries 180mcu: open PDK rules and DRC"
+  requires magic-8.3.411
+ end

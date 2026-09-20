@@ -1,0 +1,66 @@
+{
+  "recorded": "2026-09-19 03:15 PDT",
+  "fill": {
+    "source_sha256": "4f7ceff617ac2b89c4ce4a46c1aa487b00f320544045d8d8c26ad000e5962993",
+    "fill_bounds_um": [
+      356,
+      356,
+      854,
+      854
+    ],
+    "optical_keepout_um": 26,
+    "layers": {
+      "30": {
+        "tiles": 14516,
+        "added_um2": 58064.0,
+        "coverage_before_percent": 23.50293053753159,
+        "coverage_after_percent": 27.468779864763338
+      },
+      "34": {
+        "tiles": 72664,
+        "added_um2": 104636.15999999999,
+        "coverage_before_percent": 35.490166805272864,
+        "coverage_after_percent": 42.636957325046104
+      },
+      "36": {
+        "tiles": 64732,
+        "added_um2": 93214.08,
+        "coverage_before_percent": 48.18339168431118,
+        "coverage_after_percent": 54.55003877125879
+      },
+      "42": {
+        "tiles": 68460,
+        "added_um2": 98582.4,
+        "coverage_before_percent": 59.08026052223209,
+        "coverage_after_percent": 65.81357108845025
+      },
+      "46": {
+        "tiles": 70333,
+        "added_um2": 101279.51999999999,
+        "coverage_before_percent": 59.13560522546274,
+        "coverage_after_percent": 66.05313271675432
+      },
+      "81": {
+        "tiles": 67789,
+        "added_um2": 97616.15999999999,
+        "coverage_before_percent": 60.76063001885117,
+        "coverage_after_percent": 67.42794509295813
+      }
+    },
+    "floating_fill": true,
+    "added_vias": 0,
+    "gds_sha256": "6e24ca965e7a8328d6f6169556f331f14cff125ef9b033ea400cf289b7402f01"
+  },
+  "connectivity_pass": true,
+  "connectivity_checks": 4566,
+  "density_antenna": {
+    "count": 0,
+    "categories": {}
+  },
+  "main_drc": {
+    "count": 0,
+    "categories": {}
+  },
+  "lvs_unique_match": true,
+  "scope": "Installed GF180MCU D density/antenna/main decks on working layout extent; CUP and run-specific manufacturing precheck excluded; no new RC simulation or Magic DRC on filled revision."
+}

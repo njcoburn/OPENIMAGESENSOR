@@ -1,0 +1,58 @@
+{
+  "completed": true,
+  "accepted_full_chip_rc": false,
+  "source_sha256": "717095ab1e6fe710bf5c87fb11dce4d50993926142fce792e52a2c8d89024336",
+  "scope": "Exact constant-C Schur reduction at zero floating charge, within recorded numerical checks. No distributed wire R. All semiconductor records retained.",
+  "nodes": 358773,
+  "retained_nodes": 279,
+  "floating_nodes_eliminated": 358494,
+  "disconnected_nodes": 0,
+  "original_capacitor_pairs": 1904011,
+  "condensed_capacitor_pairs": 2179,
+  "factor_nonzeros": 131201178,
+  "symmetry_error_fF": 2.5494273359072395e-11,
+  "representation_max_entry_error_fF": 9.342329576611519e-09,
+  "max_positive_offdiagonal_roundoff_fF": 0,
+  "max_basis_floating_residual_fF": 7.105427357601002e-15,
+  "checks": [
+    {
+      "case": "common-mode",
+      "max_port_charge_error_fC": 6.249236743595581e-11,
+      "max_charge_error_limit_ratio": 0.062492367435936266,
+      "twice_energy_error_fJ": 9.62957561334525e-11,
+      "twice_energy_error_limit_fJ": 1e-09,
+      "max_floating_charge_residual_fC": 7.198382156570204e-15,
+      "passed": true
+    },
+    {
+      "case": 17,
+      "max_port_charge_error_fC": 2.1827872842550278e-09,
+      "max_charge_error_limit_ratio": 0.00015929319265716677,
+      "twice_energy_error_fJ": 1.3096723705530167e-08,
+      "twice_energy_error_limit_fJ": 0.00023958009436509992,
+      "max_floating_charge_residual_fC": 7.029099524658022e-15,
+      "passed": true
+    },
+    {
+      "case": 23,
+      "max_port_charge_error_fC": 5.275069270282984e-10,
+      "max_charge_error_limit_ratio": 0.00024767369525432895,
+      "twice_energy_error_fJ": 5.638867150992155e-10,
+      "twice_energy_error_limit_fJ": 1.713505350030349e-05,
+      "max_floating_charge_residual_fC": 4.202894475047007e-15,
+      "passed": true
+    },
+    {
+      "case": 31,
+      "max_port_charge_error_fC": 7.916241884231567e-09,
+      "max_charge_error_limit_ratio": 0.00022725665063449442,
+      "twice_energy_error_fJ": 9.255018085241318e-09,
+      "twice_energy_error_limit_fJ": 0.00026616755772569076,
+      "max_floating_charge_residual_fC": 6.553382104557484e-15,
+      "passed": true
+    }
+  ],
+  "seconds": 175.08714783395408,
+  "output_sha256": "969c0dd3f7e9d3c575de307837d603203eae0b6caa39a687bb8915c923fc352a",
+  "devices_unchanged": true
+}

@@ -1,0 +1,360 @@
+{
+  "recorded": "2026-09-19 00:42 PDT",
+  "release_scope": "3x3 demonstrator first, confirmed by user",
+  "models": {
+    "control-tee": {
+      "source": "build/capacitance-candidate/controls/tee/area-fixed",
+      "source_rc_sha256": "9894bc05708ae4c8567771de8478bba3b6c7d3adafa794fd2a6cf6657ebad331",
+      "source_ext_sha256": "03e78720a80cd75078011863810ba476a183704418076ec7e690fdf007f82842",
+      "resistors": 1,
+      "devices": 0,
+      "capacitors": 3,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "w_0_0#"
+    },
+    "control-tee-rotated": {
+      "source": "build/capacitance-candidate/controls/tee-rotated/area-fixed",
+      "source_rc_sha256": "b1865bb5e87d3873646e8a4aca07973161ffec621b61e29a77bfda716de7ad68",
+      "source_ext_sha256": "061dee3ff7d126b2b10283f488f1a8244ed15379de92bc5af249bed8ded6e6ab",
+      "resistors": 1,
+      "devices": 0,
+      "capacitors": 3,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "w_0_0#"
+    },
+    "control-long-tee": {
+      "source": "build/capacitance-candidate/controls/long-tee/area-fixed",
+      "source_rc_sha256": "c3a179803fc6d96ca92116eb159ef6c9b126c4304ee7817f7d5f8a0b6faec096",
+      "source_ext_sha256": "a621fb2a83e0279c2411416253032b750f42e46c959e47f895841f6897bf9370",
+      "resistors": 1,
+      "devices": 0,
+      "capacitors": 3,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "w_0_0#"
+    },
+    "control-long-tee-rotated": {
+      "source": "build/capacitance-candidate/controls/long-tee-rotated/area-fixed",
+      "source_rc_sha256": "7dbceff478bc65b2798e25eeabc807280998e08a5f09a2435da6fcecd78d05ca",
+      "source_ext_sha256": "418c6d2d0284e25f843eb4bf1cde009e8ac5172a6475b1c99d3cfb970b9ac67a",
+      "resistors": 1,
+      "devices": 0,
+      "capacitors": 3,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "w_0_0#"
+    },
+    "fill10-full": {
+      "source": "build/ring-candidate/area-fixed/fill10/full",
+      "source_rc_sha256": "afd11228b729881ab0740b718dc3c1477f6cf1a8f0f5f556bf93a8b0d0a69128",
+      "source_ext_sha256": "ce761cd66cc8870c68f4632d18a33033023279d8ef42ed66c5dddae823d6b830",
+      "resistors": 2259,
+      "devices": 32,
+      "capacitors": 6,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "VSS_B"
+    },
+    "fill10-metal": {
+      "source": "build/ring-candidate/area-fixed/fill10/metal",
+      "source_rc_sha256": "debc050411f0df3691b762bd53adb1e6f46de679a7e6ef20c1f65ca6ccf90f2d",
+      "source_ext_sha256": "32d7a9d60c0359c2628183466a7662b18a96d12026d74ef0d7afe6bb504e59bd",
+      "resistors": 1914,
+      "devices": 0,
+      "capacitors": 10,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "w_n440_13108#"
+    },
+    "corner-full": {
+      "source": "build/ring-candidate/area-fixed/corner/full",
+      "source_rc_sha256": "64286f3dced9428ec66ed104e4abefd35ed05b94b2447b3cf28f5c75a078b23a",
+      "source_ext_sha256": "3b2c4087dda12bc3adbb294a81874a18fee6693c1420852f541203628c7a98dc",
+      "resistors": 571551,
+      "devices": 358,
+      "capacitors": 127,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "DVSS_B"
+    },
+    "corner-metal": {
+      "source": "build/ring-candidate/area-fixed/corner/metal",
+      "source_rc_sha256": "064cdcb7ce8364f167e2d58846a7cd7c651365adb171c859086ebf11bcddc29e",
+      "source_ext_sha256": "8191309bc3086ba44883ccb2c726b319388f67fa2432862450b7e199d36098b2",
+      "resistors": 451892,
+      "devices": 0,
+      "capacitors": 150,
+      "max_collapsed_pair_error_fF": 0.0,
+      "all_capacitors_nonnegative": true,
+      "placement": "original lumped C attached to recorded R anchors; not a validated spatial C distribution",
+      "substrate": "w_13108_13108#"
+    }
+  },
+  "serialized_audit": {
+    "control-long-tee": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 2.220446049250313e-16,
+      "capacitance_pairs": 3,
+      "reference_sha256": "f04c4b96a12bd53c78751f984996b6409e450b327a5ee77d3abbd4ff92d43723"
+    },
+    "control-long-tee-rotated": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 2.220446049250313e-16,
+      "capacitance_pairs": 3,
+      "reference_sha256": "b365a6d2785bfb89d4d028b7f4dcba903713c3a93e166c0a5ae202df0834a634"
+    },
+    "control-tee": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 4.440892098500626e-16,
+      "capacitance_pairs": 3,
+      "reference_sha256": "47d085da6e5ee8c158fabbb2c3807d89cae9769c353f91c244c9c9d89593f440"
+    },
+    "control-tee-rotated": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 4.440892098500626e-16,
+      "capacitance_pairs": 3,
+      "reference_sha256": "692c6e413b14b731dcfddce6e5544cfb63c1523d7f384700b3366ce7365f027e"
+    },
+    "corner-full": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 1.4210854715202004e-14,
+      "capacitance_pairs": 127,
+      "reference_sha256": "71f83879ba516b28a70a177c3d3de839073d34387af5d5f8faee8c501ade6a2d"
+    },
+    "corner-metal": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 1.1368683772161603e-13,
+      "capacitance_pairs": 150,
+      "reference_sha256": "c0d783fc6a44621d25109ba2c271c617fccf7a8d7a22979591c6d99284f81df8"
+    },
+    "fill10-full": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 1.4210854715202004e-14,
+      "capacitance_pairs": 6,
+      "reference_sha256": "850ffaa1cbe61c9ff2ec5b6eeb0fc9c8cfb407cdaed13eafe8b731bdaca8f34c"
+    },
+    "fill10-metal": {
+      "unchanged_resistors_and_devices": true,
+      "max_serialized_pair_error_fF": 1.4210854715202004e-14,
+      "capacitance_pairs": 10,
+      "reference_sha256": "5d462c9d961d2e87a3c8f84c27b04db4260f3d28ba15572e4c31195e239752f1"
+    }
+  },
+  "ngspice_checks": {
+    "tee": {
+      "common": {
+        "expected_charge_fC": [
+          1.30234,
+          5.29304
+        ],
+        "ngspice_charge_fC": [
+          1.30234,
+          5.29304
+        ],
+        "max_error_fC": 0.0,
+        "pass": true
+      },
+      "differential": {
+        "expected_charge_fC": [
+          9.12294,
+          -13.11364
+        ],
+        "ngspice_charge_fC": [
+          9.12294,
+          -13.11364
+        ],
+        "max_error_fC": 0.0,
+        "pass": true
+      },
+      "signal_basis": {
+        "expected_charge_fC": [
+          5.21264,
+          -3.9103000000000003
+        ],
+        "ngspice_charge_fC": [
+          5.21264,
+          -3.9103
+        ],
+        "max_error_fC": 4.440892098500626e-16,
+        "pass": true
+      },
+      "plate_basis": {
+        "expected_charge_fC": [
+          -3.9103000000000003,
+          9.20334
+        ],
+        "ngspice_charge_fC": [
+          -3.9103,
+          9.20334
+        ],
+        "max_error_fC": 4.440892098500626e-16,
+        "pass": true
+      }
+    },
+    "tee-rotated": {
+      "common": {
+        "expected_charge_fC": [
+          1.30234,
+          5.29304
+        ],
+        "ngspice_charge_fC": [
+          1.30234,
+          5.29304
+        ],
+        "max_error_fC": 0.0,
+        "pass": true
+      },
+      "differential": {
+        "expected_charge_fC": [
+          9.12294,
+          -13.11364
+        ],
+        "ngspice_charge_fC": [
+          9.12294,
+          -13.11364
+        ],
+        "max_error_fC": 0.0,
+        "pass": true
+      },
+      "signal_basis": {
+        "expected_charge_fC": [
+          5.21264,
+          -3.9103000000000003
+        ],
+        "ngspice_charge_fC": [
+          5.21264,
+          -3.9103
+        ],
+        "max_error_fC": 4.440892098500626e-16,
+        "pass": true
+      },
+      "plate_basis": {
+        "expected_charge_fC": [
+          -3.9103000000000003,
+          9.20334
+        ],
+        "ngspice_charge_fC": [
+          -3.9103,
+          9.20334
+        ],
+        "max_error_fC": 4.440892098500626e-16,
+        "pass": true
+      }
+    },
+    "long-tee": {
+      "common": {
+        "expected_charge_fC": [
+          1.5771600000000001,
+          5.293040000000001
+        ],
+        "ngspice_charge_fC": [
+          1.57716,
+          5.29304
+        ],
+        "max_error_fC": 8.881784197001252e-16,
+        "pass": true
+      },
+      "differential": {
+        "expected_charge_fC": [
+          12.119219999999999,
+          -15.8351
+        ],
+        "ngspice_charge_fC": [
+          12.11922,
+          -15.8351
+        ],
+        "max_error_fC": 1.7763568394002505e-15,
+        "pass": true
+      },
+      "signal_basis": {
+        "expected_charge_fC": [
+          6.84819,
+          -5.27103
+        ],
+        "ngspice_charge_fC": [
+          6.84819,
+          -5.27103
+        ],
+        "max_error_fC": 0.0,
+        "pass": true
+      },
+      "plate_basis": {
+        "expected_charge_fC": [
+          -5.27103,
+          10.564070000000001
+        ],
+        "ngspice_charge_fC": [
+          -5.27103,
+          10.56407
+        ],
+        "max_error_fC": 1.7763568394002505e-15,
+        "pass": true
+      }
+    },
+    "long-tee-rotated": {
+      "common": {
+        "expected_charge_fC": [
+          1.5771600000000001,
+          5.293040000000001
+        ],
+        "ngspice_charge_fC": [
+          1.57716,
+          5.29304
+        ],
+        "max_error_fC": 8.881784197001252e-16,
+        "pass": true
+      },
+      "differential": {
+        "expected_charge_fC": [
+          12.119219999999999,
+          -15.8351
+        ],
+        "ngspice_charge_fC": [
+          12.11922,
+          -15.8351
+        ],
+        "max_error_fC": 1.7763568394002505e-15,
+        "pass": true
+      },
+      "signal_basis": {
+        "expected_charge_fC": [
+          6.84819,
+          -5.27103
+        ],
+        "ngspice_charge_fC": [
+          6.84819,
+          -5.27103
+        ],
+        "max_error_fC": 0.0,
+        "pass": true
+      },
+      "plate_basis": {
+        "expected_charge_fC": [
+          -5.27103,
+          10.564070000000001
+        ],
+        "ngspice_charge_fC": [
+          -5.27103,
+          10.56407
+        ],
+        "max_error_fC": 1.7763568394002505e-15,
+        "pass": true
+      }
+    }
+  },
+  "placement_scope": "lumped original capacitance at explicit R anchors; distributed-R retained; spatial placement not qualified",
+  "native_export_status": "not corrected or adopted",
+  "production_gds_sha256": {
+    "build/power-ring/power_ring.gds": "018d51367dc29b877696de12a84f4d7001f75f20fed377c9633edee54fad6be8",
+    "build/power-ring/ring_sensor_power.gds": "07584927d1ae66c4bd2437a0e8c373648f407d70fe5f11a92204b98e6ff4ffba"
+  }
+}

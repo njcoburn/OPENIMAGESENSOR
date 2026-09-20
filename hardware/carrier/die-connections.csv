@@ -1,0 +1,25 @@
+die_pad,external_net,board_connection,status
+P01,GND,GND,working map; final bond review pending
+P02,VDD,3V3_SENSOR,working map; final bond review pending
+P03,PAD_BIAS,5.1M to 3V3_SENSOR,working map; final bond review pending
+P04,PAD_SEL0,timing interface SEL0,working map; final bond review pending
+P05,PAD_SEL1,timing interface SEL1,working map; final bond review pending
+P06,PAD_SEL2,timing interface SEL2,working map; final bond review pending
+P07,GND,GND,working map; final bond review pending
+P08,PAD_PREF,49.9k to GND,working map; final bond review pending
+P09,PAD_BUF,ADC signal path,working map; final bond review pending
+P10,NC_P10,unbonded,working map; final bond review pending
+P11,NC_P11,unbonded,working map; final bond review pending
+P12,NC_P12,unbonded,working map; final bond review pending
+P13,GND,GND,working map; final bond review pending
+P14,VDD,3V3_SENSOR,working map; final bond review pending
+P15,NC_P15,unbonded,working map; final bond review pending
+P16,PAD_RST2,timing interface RST2,working map; final bond review pending
+P17,PAD_ROW2,timing interface ROW2,working map; final bond review pending
+P18,PAD_VRESET,2V0_RESET_TRACKED,working map; final bond review pending
+P19,GND,GND,working map; final bond review pending
+P20,PAD_RST1,timing interface RST1,working map; final bond review pending
+P21,PAD_ROW1,timing interface ROW1,working map; final bond review pending
+P22,PAD_RST0,timing interface RST0,working map; final bond review pending
+P23,PAD_ROW0,timing interface ROW0,working map; final bond review pending
+P24,VDD,3V3_SENSOR,working map; final bond review pending

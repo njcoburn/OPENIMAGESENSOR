@@ -1,0 +1,1693 @@
+{
+  "name": "tester_dock",
+  "bounds": [
+    10,
+    10,
+    110,
+    90
+  ],
+  "aperture": [
+    39,
+    39,
+    61,
+    61
+  ],
+  "components": [
+    {
+      "ref": "P1",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        41.25,
+        64.5
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P2",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        44.75,
+        64.5
+      ],
+      "nets": {
+        "1": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P3",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        48.25,
+        64.5
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P4",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        51.75,
+        64.5
+      ],
+      "nets": {
+        "1": "SEL0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P5",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        55.25,
+        64.5
+      ],
+      "nets": {
+        "1": "SEL1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P6",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        58.75,
+        64.5
+      ],
+      "nets": {
+        "1": "SEL2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P7",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        64.5,
+        58.75
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P8",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        64.5,
+        55.25
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P9",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        64.5,
+        51.75
+      ],
+      "nets": {
+        "1": "BUF"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P10",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        64.5,
+        48.25
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P11",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        64.5,
+        44.75
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P12",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        64.5,
+        41.25
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P13",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        58.75,
+        35.5
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P14",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        55.25,
+        35.5
+      ],
+      "nets": {
+        "1": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P15",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        51.75,
+        35.5
+      ],
+      "nets": {
+        "1": null
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P16",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        48.25,
+        35.5
+      ],
+      "nets": {
+        "1": "RST2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P17",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        44.75,
+        35.5
+      ],
+      "nets": {
+        "1": "ROW2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P18",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        41.25,
+        35.5
+      ],
+      "nets": {
+        "1": "VRESET"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P19",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        35.5,
+        41.25
+      ],
+      "nets": {
+        "1": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P20",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        35.5,
+        44.75
+      ],
+      "nets": {
+        "1": "RST1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P21",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        35.5,
+        48.25
+      ],
+      "nets": {
+        "1": "ROW1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P22",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        35.5,
+        51.75
+      ],
+      "nets": {
+        "1": "RST0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P23",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        35.5,
+        55.25
+      ],
+      "nets": {
+        "1": "ROW0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "P24",
+      "value": "0906-0-15-20-76-14-11-0",
+      "footprint": "OIS:Pogo_0906_0",
+      "xy": [
+        35.5,
+        58.75
+      ],
+      "nets": {
+        "1": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": "Pogo_0906_0",
+      "side": "B",
+      "note": "Bottom-facing spring; compression height must be confirmed",
+      "local_footprint": "OIS:Pogo_0906_0"
+    },
+    {
+      "ref": "J1",
+      "value": "CONTROLLER_TIMING",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical",
+      "xy": [
+        18,
+        32
+      ],
+      "nets": {
+        "1": "CTL_RST0",
+        "2": "GND",
+        "3": "CTL_RST1",
+        "4": "GND",
+        "5": "CTL_RST2",
+        "6": "GND",
+        "7": "CTL_ROW0",
+        "8": "GND",
+        "9": "CTL_ROW1",
+        "10": "GND",
+        "11": "CTL_ROW2",
+        "12": "GND",
+        "13": "CTL_SEL0",
+        "14": "GND",
+        "15": "CTL_SEL1",
+        "16": "GND",
+        "17": "CTL_SEL2",
+        "18": "GND",
+        "19": "VDD",
+        "20": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Connector_PinHeader_2.54mm_PinHeader_2x10_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J2",
+      "value": "3V3_INPUT_ONLY",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "xy": [
+        18,
+        18
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {
+        "1": "power_out",
+        "2": "power_out"
+      },
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "Regulated current-limited 3.3 V bench source; no onboard regulator",
+      "local_footprint": "OIS:Connector_PinHeader_2.54mm_PinHeader_1x02_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J3",
+      "value": "I2C_AND_ENABLE",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "xy": [
+        100,
+        22
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND",
+        "3": "SDA",
+        "4": "SCL",
+        "5": "ADC_RDY",
+        "6": "IO_OE_N"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Connector_PinHeader_2.54mm_PinHeader_1x06_P2.54mm_Vertical"
+    },
+    {
+      "ref": "J4",
+      "value": "FAST_ADC_ANALOG",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "xy": [
+        103,
+        65
+      ],
+      "nets": {
+        "1": "FAST_OUT",
+        "2": "GND",
+        "3": "VRESET"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "Analog expansion; no 50-ohm termination; external ADC requires load review",
+      "local_footprint": "OIS:Connector_PinHeader_2.54mm_PinHeader_1x03_P2.54mm_Vertical"
+    },
+    {
+      "ref": "U1",
+      "value": "SN74LVC244APW",
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+      "xy": [
+        34,
+        20
+      ],
+      "nets": {
+        "1": "IO_OE_N",
+        "19": "IO_OE_N",
+        "10": "GND",
+        "20": "VDD",
+        "2": "CTL_RST0",
+        "18": "DRV_RST0",
+        "4": "CTL_RST1",
+        "16": "DRV_RST1",
+        "6": "CTL_RST2",
+        "14": "DRV_RST2",
+        "8": "CTL_ROW0",
+        "12": "DRV_ROW0",
+        "11": "CTL_ROW1",
+        "9": "DRV_ROW1",
+        "13": "CTL_ROW2",
+        "7": "DRV_ROW2",
+        "15": "CTL_SEL0",
+        "5": "DRV_SEL0",
+        "17": "CTL_SEL1",
+        "3": "DRV_SEL1"
+      },
+      "names": {
+        "1": "1OE_N",
+        "19": "2OE_N",
+        "10": "GND",
+        "20": "VCC",
+        "2": "1A1",
+        "18": "1Y1",
+        "4": "1A2",
+        "16": "1Y2",
+        "6": "1A3",
+        "14": "1Y3",
+        "8": "1A4",
+        "12": "1Y4",
+        "11": "2A1",
+        "9": "2Y1",
+        "13": "2A2",
+        "7": "2Y2",
+        "15": "2A3",
+        "5": "2Y3",
+        "17": "2A4",
+        "3": "2Y4"
+      },
+      "types": {
+        "1": "input",
+        "19": "input",
+        "10": "power_in",
+        "20": "power_in",
+        "2": "input",
+        "18": "tri_state",
+        "4": "input",
+        "16": "tri_state",
+        "6": "input",
+        "14": "tri_state",
+        "8": "input",
+        "12": "tri_state",
+        "11": "input",
+        "9": "tri_state",
+        "13": "input",
+        "7": "tri_state",
+        "15": "input",
+        "5": "tri_state",
+        "17": "input",
+        "3": "tri_state"
+      },
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Package_SO_TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    {
+      "ref": "C1",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        34,
+        14
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    },
+    {
+      "ref": "U2",
+      "value": "SN74LVC244APW",
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+      "xy": [
+        59,
+        20
+      ],
+      "nets": {
+        "1": "IO_OE_N",
+        "19": "IO_OE_N",
+        "10": "GND",
+        "20": "VDD",
+        "2": "CTL_SEL2",
+        "18": "DRV_SEL2",
+        "4": "GND",
+        "16": null,
+        "6": "GND",
+        "14": null,
+        "8": "GND",
+        "12": null,
+        "11": "GND",
+        "9": null,
+        "13": "GND",
+        "7": null,
+        "15": "GND",
+        "5": null,
+        "17": "GND",
+        "3": null
+      },
+      "names": {
+        "1": "1OE_N",
+        "19": "2OE_N",
+        "10": "GND",
+        "20": "VCC",
+        "2": "1A1",
+        "18": "1Y1",
+        "4": "1A2",
+        "16": "1Y2",
+        "6": "1A3",
+        "14": "1Y3",
+        "8": "1A4",
+        "12": "1Y4",
+        "11": "2A1",
+        "9": "2Y1",
+        "13": "2A2",
+        "7": "2Y2",
+        "15": "2A3",
+        "5": "2Y3",
+        "17": "2A4",
+        "3": "2Y4"
+      },
+      "types": {
+        "1": "input",
+        "19": "input",
+        "10": "power_in",
+        "20": "power_in",
+        "2": "input",
+        "18": "tri_state",
+        "4": "input",
+        "16": "tri_state",
+        "6": "input",
+        "14": "tri_state",
+        "8": "input",
+        "12": "tri_state",
+        "11": "input",
+        "9": "tri_state",
+        "13": "input",
+        "7": "tri_state",
+        "15": "input",
+        "5": "tri_state",
+        "17": "input",
+        "3": "tri_state"
+      },
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Package_SO_TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        59,
+        14
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    },
+    {
+      "ref": "R1",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        27,
+        27
+      ],
+      "nets": {
+        "1": "DRV_RST0",
+        "2": "RST0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R11",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        27,
+        74
+      ],
+      "nets": {
+        "1": "RST0",
+        "2": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R31",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        27,
+        79
+      ],
+      "nets": {
+        "1": "CTL_RST0",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R2",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        32,
+        27
+      ],
+      "nets": {
+        "1": "DRV_RST1",
+        "2": "RST1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R12",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        32,
+        74
+      ],
+      "nets": {
+        "1": "RST1",
+        "2": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R32",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        32,
+        79
+      ],
+      "nets": {
+        "1": "CTL_RST1",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R3",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        37,
+        27
+      ],
+      "nets": {
+        "1": "DRV_RST2",
+        "2": "RST2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R13",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        37,
+        74
+      ],
+      "nets": {
+        "1": "RST2",
+        "2": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R33",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        37,
+        79
+      ],
+      "nets": {
+        "1": "CTL_RST2",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R4",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        42,
+        27
+      ],
+      "nets": {
+        "1": "DRV_ROW0",
+        "2": "ROW0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R14",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        42,
+        74
+      ],
+      "nets": {
+        "1": "ROW0",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R34",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        42,
+        79
+      ],
+      "nets": {
+        "1": "CTL_ROW0",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R5",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        47,
+        27
+      ],
+      "nets": {
+        "1": "DRV_ROW1",
+        "2": "ROW1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R15",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        47,
+        74
+      ],
+      "nets": {
+        "1": "ROW1",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R35",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        47,
+        79
+      ],
+      "nets": {
+        "1": "CTL_ROW1",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R6",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        52,
+        27
+      ],
+      "nets": {
+        "1": "DRV_ROW2",
+        "2": "ROW2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R16",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        52,
+        74
+      ],
+      "nets": {
+        "1": "ROW2",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R36",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        52,
+        79
+      ],
+      "nets": {
+        "1": "CTL_ROW2",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R7",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        57,
+        27
+      ],
+      "nets": {
+        "1": "DRV_SEL0",
+        "2": "SEL0"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R17",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        57,
+        74
+      ],
+      "nets": {
+        "1": "SEL0",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R37",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        57,
+        79
+      ],
+      "nets": {
+        "1": "CTL_SEL0",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R8",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        62,
+        27
+      ],
+      "nets": {
+        "1": "DRV_SEL1",
+        "2": "SEL1"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R18",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        62,
+        74
+      ],
+      "nets": {
+        "1": "SEL1",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R38",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        62,
+        79
+      ],
+      "nets": {
+        "1": "CTL_SEL1",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R9",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        67,
+        27
+      ],
+      "nets": {
+        "1": "DRV_SEL2",
+        "2": "SEL2"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R19",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        67,
+        74
+      ],
+      "nets": {
+        "1": "SEL2",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R39",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        67,
+        79
+      ],
+      "nets": {
+        "1": "CTL_SEL2",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R21",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        81,
+        24
+      ],
+      "nets": {
+        "1": "IO_OE_N",
+        "2": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "U3",
+      "value": "OPA2320AID",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "xy": [
+        77,
+        52
+      ],
+      "nets": {
+        "1": "BUF_DRV",
+        "2": "BUF_DRV",
+        "3": "BUF",
+        "4": "GND",
+        "5": "RESET_DIV",
+        "6": "VRESET",
+        "7": "VRESET",
+        "8": "VDD"
+      },
+      "names": {
+        "1": "OUT_A",
+        "2": "IN-_A",
+        "3": "IN+_A",
+        "4": "V-",
+        "5": "IN+_B",
+        "6": "IN-_B",
+        "7": "OUT_B",
+        "8": "V+"
+      },
+      "types": {
+        "1": "output",
+        "2": "input",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "input",
+        "7": "output",
+        "8": "power_in"
+      },
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Package_SO_SOIC-8_3.9x4.9mm_P1.27mm"
+    },
+    {
+      "ref": "R22",
+      "value": "13k 0.1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        72,
+        60
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "RESET_DIV"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R23",
+      "value": "20k 0.1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        78,
+        60
+      ],
+      "nets": {
+        "1": "RESET_DIV",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "C3",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        77,
+        45
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    },
+    {
+      "ref": "C4",
+      "value": "10n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        84,
+        60
+      ],
+      "nets": {
+        "1": "RESET_DIV",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    },
+    {
+      "ref": "U4",
+      "value": "ADS1115IDGSR",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "xy": [
+        95,
+        48
+      ],
+      "nets": {
+        "1": "GND",
+        "2": "ADC_RDY",
+        "3": "GND",
+        "4": "ADC_IN",
+        "5": "GND",
+        "6": "GND",
+        "7": "GND",
+        "8": "VDD",
+        "9": "SDA",
+        "10": "SCL"
+      },
+      "names": {
+        "1": "ADDR",
+        "2": "ALERT_RDY",
+        "3": "GND",
+        "4": "AIN0",
+        "5": "AIN1",
+        "6": "AIN2",
+        "7": "AIN3",
+        "8": "VDD",
+        "9": "SDA",
+        "10": "SCL"
+      },
+      "types": {
+        "1": "input",
+        "2": "open_collector",
+        "3": "power_in",
+        "4": "input",
+        "5": "input",
+        "6": "input",
+        "7": "input",
+        "8": "power_in",
+        "9": "bidirectional",
+        "10": "input"
+      },
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Package_SO_VSSOP-10_3x3mm_P0.5mm"
+    },
+    {
+      "ref": "C5",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        95,
+        41
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    },
+    {
+      "ref": "C6",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        100,
+        41
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    },
+    {
+      "ref": "R24",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        87,
+        52
+      ],
+      "nets": {
+        "1": "BUF_DRV",
+        "2": "ADC_IN"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "C7",
+      "value": "10n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        90,
+        56
+      ],
+      "nets": {
+        "1": "ADC_IN",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    },
+    {
+      "ref": "R25",
+      "value": "100",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        95,
+        65
+      ],
+      "nets": {
+        "1": "BUF_DRV",
+        "2": "FAST_OUT"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R26",
+      "value": "4.7k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        86,
+        37
+      ],
+      "nets": {
+        "1": "SDA",
+        "2": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R27",
+      "value": "4.7k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        91,
+        37
+      ],
+      "nets": {
+        "1": "SCL",
+        "2": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "R28",
+      "value": "4.7k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "xy": [
+        96,
+        37
+      ],
+      "nets": {
+        "1": "ADC_RDY",
+        "2": "VDD"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Resistor_SMD_R_0805_2012Metric"
+    },
+    {
+      "ref": "C8",
+      "value": "10u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        23,
+        18
+      ],
+      "nets": {
+        "1": "VDD",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "rotation": 0,
+      "custom": null,
+      "side": "F",
+      "note": "",
+      "local_footprint": "OIS:Capacitor_SMD_C_0805_2012Metric"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "recorded": "2026-09-18 11:10 PDT",
+  "scope": "Full-width M5 electrodes on the clipped real VDD conductor stack. Diagnostic DC comparison, not full RC qualification.",
+  "analytic_M5_R_ohm": 0.1142857142857143,
+  "M5_probe_configuration_minus_ideal_body_R_ohm": 0.46339518307523375,
+  "cases": {
+    "m5-to-m5": {
+      "Magic_raw_R_ohm": 0.114286,
+      "Magic_SPICE_R_ohm": 0.114786,
+      "ngspice_R_ohm": 0.1147860000000636,
+      "ngspice_pass": true,
+      "resistor_count": 1,
+      "export_resistor_offset_range_ohm": [
+        0.0005000000000000004,
+        0.0005000000000000004
+      ],
+      "FV_R_ohm": {
+        "0.25": 0.11428571428570512,
+        "0.1": 0.11428571428599159,
+        "0.05": 0.11428571428361697
+      },
+      "raw_vs_FV_pct": 0.00025000183514478636,
+      "export_vs_FV_pct": 0.4377500018431846,
+      "last_mesh_change_pct": -2.0777823905859805e-09
+    },
+    "m5-to-m4": {
+      "Magic_raw_R_ohm": 0.118443,
+      "Magic_SPICE_R_ohm": 0.11894300000000001,
+      "ngspice_R_ohm": 0.11894299999996166,
+      "ngspice_pass": true,
+      "resistor_count": 1,
+      "export_resistor_offset_range_ohm": [
+        0.0004999999999999866,
+        0.0004999999999999866
+      ],
+      "FV_R_ohm": {
+        "0.25": 0.09386071553268038,
+        "0.1": 0.09385547109987051,
+        "0.05": 0.09385296336209606
+      },
+      "raw_vs_FV_pct": 26.20059693057599,
+      "export_vs_FV_pct": 26.7333451593889,
+      "last_mesh_change_pct": -0.002671914322160962
+    },
+    "m5-to-m3": {
+      "Magic_raw_R_ohm": 0.08914631720718393,
+      "Magic_SPICE_R_ohm": 0.09911925331936589,
+      "ngspice_R_ohm": 0.09911925331905623,
+      "ngspice_pass": true,
+      "resistor_count": 143,
+      "export_resistor_offset_range_ohm": [
+        0.0004999999999999996,
+        0.0005000000000000004
+      ],
+      "FV_R_ohm": {
+        "0.25": 0.08916547756342465,
+        "0.1": 0.08916007713390041,
+        "0.05": 0.0891574823591769
+      },
+      "raw_vs_FV_pct": -0.012522955670735136,
+      "export_vs_FV_pct": 11.173230441902016,
+      "last_mesh_change_pct": -0.002910242798026541
+    },
+    "m5-to-m2": {
+      "Magic_raw_R_ohm": 0.08910915726877279,
+      "Magic_SPICE_R_ohm": 0.09909122242964441,
+      "ngspice_R_ohm": 0.09909122242986694,
+      "ngspice_pass": true,
+      "resistor_count": 240,
+      "export_resistor_offset_range_ohm": [
+        0.0004999999999997229,
+        0.000500000000000167
+      ],
+      "FV_R_ohm": {
+        "0.25": 0.08912914426914428,
+        "0.1": 0.08912241058480133,
+        "0.05": 0.0891200750566878
+      },
+      "raw_vs_FV_pct": -0.012250649371725597,
+      "export_vs_FV_pct": 11.188441399554616,
+      "last_mesh_change_pct": -0.0026205845400806282
+    },
+    "m5-to-m1": {
+      "Magic_raw_R_ohm": 0.08910346560496409,
+      "Magic_SPICE_R_ohm": 0.09908374358236324,
+      "ngspice_R_ohm": 0.09908374358263695,
+      "ngspice_pass": true,
+      "resistor_count": 336,
+      "export_resistor_offset_range_ohm": [
+        0.0004999999999997229,
+        0.0005000100000000004
+      ],
+      "FV_R_ohm": {
+        "0.25": 0.08912275023895828,
+        "0.1": 0.08911661317736518,
+        "0.05": 0.08911441758610067
+      },
+      "raw_vs_FV_pct": -0.012289797131870284,
+      "export_vs_FV_pct": 11.187107839907506,
+      "last_mesh_change_pct": -0.0024637283512318753
+    }
+  },
+  "full_RC_qualified": false
+}

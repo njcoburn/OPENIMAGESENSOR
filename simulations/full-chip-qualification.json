@@ -1,0 +1,43 @@
+{
+  "target": "Final filled 3x3 / 24-pad demonstrator",
+  "gds": "build/filled-demonstrator/demonstrator_filled.gds",
+  "gds_sha256": "6e24ca965e7a8328d6f6169556f331f14cff125ef9b033ea400cf289b7402f01",
+  "device_lvs_netlist": "build/filled-demonstrator/routed_extracted.spice",
+  "device_lvs_netlist_sha256": "9a49b26a276b873b1159fdc49b2d236b7198525e0d498ee9c4c94e5c223bf3ce",
+  "device_lvs_is_post_fill_rc": false,
+  "required_stages": [
+    {
+      "stage": "Isolated MOS-cap control equivalence",
+      "status": "50/25 ps local control comparisons pass; typical 27 C only",
+      "evidence": "simulations/clamp-control-breakpoints.json"
+    },
+    {
+      "stage": "Isolated extracted clamp",
+      "status": "50 ns isolated candidate and both 25 ns normal/strict voltage refinement screens pass; current-equivalence coverage remains limited",
+      "evidence": "simulations/clamp-scaled-refinement.json"
+    },
+    {
+      "stage": "Capacitance placement and complete pad-ring model",
+      "status": "Both 50 ns corner runs complete, but both combined 25 ns/strict-tolerance checks abort at 151 us load onset in e.x354.ehelper#branch. Candidate not promoted.",
+      "evidence": "simulations/corner-scaled-refinement.json"
+    },
+    {
+      "stage": "Final GDS parasitic extraction",
+      "status": "Final-GDS lumped capacitance extracted; all 4037 semiconductor records and ports match device LVS. Floating-fill reduction passes recorded charge/energy checks, leaving 2179 capacitances on 279 nodes. No accepted distributed-wire-R model."
+    },
+    {
+      "stage": "Nominal startup and repeated 9-pixel frames",
+      "status": "Not qualified on final filled chip"
+    },
+    {
+      "stage": "Process / voltage / temperature and external loading",
+      "status": "Not qualified on final filled chip; ADS1115 slow sequence must be distinguished from earlier 18 us slots"
+    }
+  ],
+  "accepted_full_chip": false,
+  "updated": "2026-09-19 11:30 PDT",
+  "simulator_version_comparison": {
+    "evidence": "simulations/ngspice-version-comparison.json",
+    "status": "Matched 46/47 capacitor controls pass. Both extracted stock-model runs fail at startup; separate v47 multiplier parser error reproduced without PDK. No upgrade accepted."
+  }
+}

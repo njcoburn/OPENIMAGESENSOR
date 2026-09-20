@@ -1,0 +1,32 @@
+[
+  {
+    "file": "libs.tech/ngspice/sm141064.ngspice",
+    "installed_sha256": "f6f4a96e18fc5ad11270ad3451aaecc7ac37fc81eb61e15b0d7d94c7bc594a24",
+    "reference_sha256": "f6f4a96e18fc5ad11270ad3451aaecc7ac37fc81eb61e15b0d7d94c7bc594a24",
+    "identical": true
+  },
+  {
+    "file": "libs.tech/ngspice/design.ngspice",
+    "installed_sha256": "7e222f050318388f37543a64fbd0be55cc15e4b93f57501a09f7c159c4c9e561",
+    "reference_sha256": "7e222f050318388f37543a64fbd0be55cc15e4b93f57501a09f7c159c4c9e561",
+    "identical": true
+  },
+  {
+    "file": "libs.tech/magic/gf180mcuD.tech",
+    "installed_sha256": "2662e35e3dc94c88d55fc795e30ac22378561be4556bb3b5f248a1daa2ac1cd8",
+    "reference_sha256": "f0c3a445aa0a2a9b7a1f10530a6c011800a41fcad36c12d8bb9b792a59c74f44",
+    "identical": false
+  },
+  {
+    "file": "libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds",
+    "installed_sha256": "806def042390f614dca0c7e1e11504788b0d23073115aa41e1246d21f4a78c82",
+    "reference_sha256": "c8ccb709da1935bb7c0276fa8abb55b957f45c14d0a2f97b0852ac30dcb98893",
+    "identical": false
+  },
+  {
+    "file": "libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice",
+    "installed_sha256": "710732fd6a69e165caa2c29e4cdf81b11af41da32705fcd860b7ecfb09630dd1",
+    "reference_sha256": "710732fd6a69e165caa2c29e4cdf81b11af41da32705fcd860b7ecfb09630dd1",
+    "identical": true
+  }
+]

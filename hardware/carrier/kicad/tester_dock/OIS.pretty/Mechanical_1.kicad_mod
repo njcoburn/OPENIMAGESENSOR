@@ -1,0 +1,12 @@
+(footprint "Mechanical_1" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "H1" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp c9fc7a9a-3bd3-428f-9314-d9c188a5bc5a)
+  )
+  (fp_text value "M3 clearance" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp 4574df74-0c1d-434c-a538-35f0c95226b5)
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers "*.Mask" "F.Cu" "In1.Cu" "In2.Cu" "B.Cu") (tstamp f3e9652f-e034-46a9-857b-99fe73c1e494))
+)

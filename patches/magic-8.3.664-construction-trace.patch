@@ -1,0 +1,39 @@
+diff --git a/resis/ResMerge.c b/resis/ResMerge.c
+index e201a10..4516dda 100644
+--- a/resis/ResMerge.c
++++ b/resis/ResMerge.c
+@@ -1,3 +1,4 @@
++#include <stdlib.h>
+ 
+ #ifndef lint
+ static char rcsid[] __attribute__ ((unused)) = "$Header: /usr/cvsroot/magic-8.0/resis/ResMerge.c,v 1.1.1.1 2008/02/03 20:43:50 tim Exp $";
+@@ -53,6 +54,7 @@ ResDoneWithNode(resptr)
+ 
+     resptr2 = NULL;
+     resptr->rn_status |= RES_TRUE;
++    if (getenv("OIS_NO_REDUCE") != NULL) return;
+     status = UNTOUCHED;
+ 
+     /* are there any resistors? */
+diff --git a/resis/ResRex.c b/resis/ResRex.c
+index 6d7756c..1ba36b5 100644
+--- a/resis/ResRex.c
++++ b/resis/ResRex.c
+@@ -1280,6 +1280,17 @@ ResProcessNode(
+ 	}
+ 	else
+ 	{
++
++            { resResistor *q;
++              TxPrintf("OIS_BEGIN %s\n", node->name);
++              for (q=ResResList; q; q=q->rr_nextResistor)
++                TxPrintf("OIS_EDGE %p %p %.12g %s %s\n",
++                  (void *)q->rr_connection1, (void *)q->rr_connection2,
++                  (double)q->rr_value / 1000.0,
++                  q->rr_connection1->rn_name ? q->rr_connection1->rn_name : "-",
++                  q->rr_connection2->rn_name ? q->rr_connection2->rn_name : "-");
++              TxPrintf("OIS_END\n");
++            }
+ 	    ResDoSimplify(resisdata);
+ 	    if (ResOptionsFlags & ResOpt_DoLumpFile)
+ 		ResWriteLumpFile(node, resisdata);

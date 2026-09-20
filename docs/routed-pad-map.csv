@@ -1,0 +1,25 @@
+pad_id,original_core_net,external_net,connection,pad_reference_x_um,pad_reference_y_um
+P01,GND,GND,power ring and core,392.985,32.735
+P02,VDD,VDD,power ring and core,468.90000000000003,34.275
+P03,BIAS,PAD_BIAS,primary pad -> secondary protection -> core,542.595,33.1
+P04,SEL0,PAD_SEL0,primary pad -> secondary protection -> core,617.595,33.1
+P05,SEL1,PAD_SEL1,primary pad -> secondary protection -> core,692.595,33.1
+P06,SEL2,PAD_SEL2,primary pad -> secondary protection -> core,767.595,33.1
+P07,GND,GND,power ring and core,1177.265,392.985
+P08,PREF,PAD_PREF,primary pad -> secondary protection -> core,1176.9,467.595
+P09,BUF,PAD_BUF,primary pad -> secondary protection -> core,1176.9,542.595
+P10,COL2,NC_P10,primary pad only; core diagnostic disconnected,1176.9,617.595
+P11,COL1,NC_P11,primary pad only; core diagnostic disconnected,1176.9,692.595
+P12,COL0,NC_P12,primary pad only; core diagnostic disconnected,1176.9,767.595
+P13,GND,GND,power ring and core,817.015,1177.265
+P14,VDD,VDD,power ring and core,741.1,1175.7250000000001
+P15,OUT,NC_P15,primary pad only; core diagnostic disconnected,667.405,1176.9
+P16,RST2,PAD_RST2,primary pad -> secondary protection -> core,592.405,1176.9
+P17,ROW2,PAD_ROW2,primary pad -> secondary protection -> core,517.405,1176.9
+P18,VRESET,PAD_VRESET,primary pad -> secondary protection -> core,442.40500000000003,1176.9
+P19,GND,GND,power ring and core,32.735,817.015
+P20,RST1,PAD_RST1,primary pad -> secondary protection -> core,33.1,742.405
+P21,ROW1,PAD_ROW1,primary pad -> secondary protection -> core,33.1,667.405
+P22,RST0,PAD_RST0,primary pad -> secondary protection -> core,33.1,592.405
+P23,ROW0,PAD_ROW0,primary pad -> secondary protection -> core,33.1,517.405
+P24,VDD,VDD,power ring and core,34.275,441.1

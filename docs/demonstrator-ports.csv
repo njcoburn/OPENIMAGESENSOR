@@ -1,0 +1,20 @@
+core_net,role,physical_pad,connector_pin,status
+VDD,supply,P02 / P14 / P24,TBD,routed working candidate; final qualification open
+VRESET,supply,P18,TBD,routed working candidate; final qualification open
+GND,supply,P01 / P07 / P13 / P19,TBD,routed working candidate; final qualification open
+RST0,controller_input,P22,TBD,routed working candidate; final qualification open
+RST1,controller_input,P20,TBD,routed working candidate; final qualification open
+RST2,controller_input,P16,TBD,routed working candidate; final qualification open
+ROW0,controller_input,P23,TBD,routed working candidate; final qualification open
+ROW1,controller_input,P21,TBD,routed working candidate; final qualification open
+ROW2,controller_input,P17,TBD,routed working candidate; final qualification open
+BIAS,bias,P03,TBD,routed working candidate; final qualification open
+SEL0,controller_input,P04,TBD,routed working candidate; final qualification open
+SEL1,controller_input,P05,TBD,routed working candidate; final qualification open
+SEL2,controller_input,P06,TBD,routed working candidate; final qualification open
+PREF,bias,P08,TBD,routed working candidate; final qualification open
+BUF,analog_output,P09,TBD,routed working candidate; final qualification open
+COL0,diagnostic,P12,TBD,diagnostic pad disconnected from core
+COL1,diagnostic,P11,TBD,diagnostic pad disconnected from core
+COL2,diagnostic,P10,TBD,diagnostic pad disconnected from core
+OUT,diagnostic,P15,TBD,diagnostic pad disconnected from core

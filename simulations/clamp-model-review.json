@@ -1,0 +1,30 @@
+{
+  "hypothesis": "Rescale ngspice internal helper capacitance 1 F to 1 pF and inversely rescale behavioral current gain; unchanged terminal C(V).",
+  "runs": [
+    {
+      "case": "control-original",
+      "completed": true,
+      "error": null,
+      "seconds": 0.13238076999550685,
+      "deck_sha256": "40d50417a4b4fae3105cba4b5363e523e24fc33f156da09ab37f818d67b08830"
+    },
+    {
+      "case": "control-scaled",
+      "completed": true,
+      "error": null,
+      "seconds": 0.06584901799215004,
+      "deck_sha256": "ef1d04e5f9d26764ea8b535440717629716393c9f14064e852f364bf2c8c904f"
+    }
+  ],
+  "control_comparison": {
+    "max_absolute_column_differences": [
+      2.707712964511444e-06,
+      2.707712963898036e-09
+    ],
+    "header": " time                   v(gate)                i(Vsrc)               "
+  },
+  "accepted_full_chip_fix": false,
+  "scope": "One standalone pair and at most one 50 ns clamp diagnostic; no solver/tolerance sweep, no foundry file edit; 27 C typical only.",
+  "recorded": "2026-09-19 04:08 PDT",
+  "verdict": "Unresolved: scaled control exceeds current-difference screen; extracted-clamp trial not run."
+}

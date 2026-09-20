@@ -1,0 +1,38 @@
+{
+  "tester_dock": {
+    "schematic_pin_net_match": true,
+    "pin_count": 186,
+    "drc_summary": [
+      "** Drc report for /work/hardware/carrier/kicad/tester_dock/tester_dock.kicad_pcb **",
+      "** Created on 2026-09-19 15:29:11 **",
+      "** Found 0 DRC violations **",
+      "** Found 0 unconnected pads **",
+      "** Found 0 Footprint errors **",
+      "** End of Report **"
+    ],
+    "kicad_version": "7.0.11+dfsg-1build4",
+    "error_count": 0,
+    "warning_count": 0,
+    "pcb_sha256": "81cd06f67dc383f4828fe8084246d264125f164276a9716446207cfa6a0a2b6a",
+    "schematic_sha256": "6d6002f71993a8e1ce018069e4cfd1d9455ae22690c0feef1190eb2822eb6119",
+    "erc": "Not run: use KiCad GUI"
+  },
+  "die_carrier": {
+    "schematic_pin_net_match": true,
+    "pin_count": 44,
+    "drc_summary": [
+      "** Drc report for /work/hardware/carrier/kicad/die_carrier/die_carrier.kicad_pcb **",
+      "** Created on 2026-09-19 15:29:13 **",
+      "** Found 0 DRC violations **",
+      "** Found 0 unconnected pads **",
+      "** Found 0 Footprint errors **",
+      "** End of Report **"
+    ],
+    "kicad_version": "7.0.11+dfsg-1build4",
+    "error_count": 0,
+    "warning_count": 0,
+    "pcb_sha256": "eb68b61547ec40e41d57bc744b39e07a3baca6989324beab65d52e3237b48974",
+    "schematic_sha256": "7e587e8cedd77496095456b841ae4fd0a423c61612c017c622a90df58fa9c00a",
+    "erc": "Not run: use KiCad GUI"
+  }
+}

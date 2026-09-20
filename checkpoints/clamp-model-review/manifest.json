@@ -1,0 +1,25 @@
+{
+  "recorded": "2026-09-19 04:08 PDT",
+  "files": {
+    "build/clamp-model-review/review.json": "675803b46c3ec4b9170b7f8b88a21f92e61f772e131e4f380349a32de63cbb83",
+    "build/clamp-model-review/expanded.log": "8dd13648674a514ce42b0d3017345f12fd290355190be36e8b0051452048c643",
+    "build/clamp-model-review/parse.spice": "594e364127c5bc13e72102f2d6133c5051783a0bad47fcd228ae3bc0f1eea027",
+    "build/clamp-model-review/control-original/test.spice": "40d50417a4b4fae3105cba4b5363e523e24fc33f156da09ab37f818d67b08830",
+    "build/clamp-model-review/control-original/tran.dat": "afeff929f5a94c28506f86544840f8478231b67605ce2dcc22183f125426d366",
+    "build/clamp-model-review/control-original/ngspice.log": "92e2acef65b5170aa3c7c2a179eeaf06c76ab609df9ac96fb418391c49f0327e",
+    "build/clamp-model-review/control-scaled/test.spice": "ef1d04e5f9d26764ea8b535440717629716393c9f14064e852f364bf2c8c904f",
+    "build/clamp-model-review/control-scaled/tran.dat": "b3649cdfc9dbef5a2006350fc54f9453fe54d9fd8e43b5e0b755f58f18a478f6",
+    "build/clamp-model-review/control-scaled/ngspice.log": "dbee02eaada80fc4b860fc5fc30b3f93a7de6b216b83f8ff6de6230810b77e59",
+    "scripts/review-clamp-scaling.py": "39286b18c0c0f33e63e932937896867b73652ebfde0ec45d014c2c661cf76904",
+    "scripts/report-clamp-model-review.py": "c7689f86add15db97e20e7cb7fffe31f110b2ae7c5c0653b7f35ed144a8b5aa2",
+    "scripts/run-tools.sh": "581173547546bac970ec6c890f3d945a15951c4d134da6d1bcea002b1a4d0f43",
+    "simulations/clamp-model-review.json": "48fe34d2aa23766b54612ce23c8f581a50385e8416df54e1f82c5e4d59ac2a7c",
+    "docs/clamp-model-review.md": "88e6dba3106983ea187e42f64bb14b9b5c0a8e9133484289bade3c3224b9aafb",
+    "docs/clamp-model-review.html": "b79efd5051f00b78ca6dd03b111e581125f417d022c5955fa13228c641d997f9",
+    "checkpoints/clamp-review/package/init/.spiceinit": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b",
+    "checkpoints/clamp-review/package/pdk-provenance.json": "506c7737cc08d8b13294b4230c0efebc2265952c94b6e6eba79250989c6b58c0",
+    "checkpoints/clamp-review/package/cases/capacitor-control/test.spice": "40d50417a4b4fae3105cba4b5363e523e24fc33f156da09ab37f818d67b08830",
+    "checkpoints/clamp-review/package/cases/klu-trap-50ns/test.spice": "e0f719a23c2b5de3e7774da35c4daf845dc075880abc712f1c592fe1a4e2f41a"
+  },
+  "archive_sha256": "29023728420a382c50ec7276fc46afe900b11ddc6b2df6f2771b13483412642c"
+}

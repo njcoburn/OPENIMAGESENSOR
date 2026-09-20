@@ -1,0 +1,618 @@
+{
+  "status": "Placement only; unrouted, unapproved custom-carrier concept",
+  "nominal_ring_um": [
+    1210,
+    1210
+  ],
+  "actual_gds_bbox_um": "(0,0;1210,1210)",
+  "core_bbox_um": [
+    437.90000000000003,
+    484.40000000000003,
+    772.1,
+    725.6
+  ],
+  "core_translation_um": [
+    474.9,
+    478.4
+  ],
+  "core_source_sha256": "8a2183fd85d5a6b81bcaceb10eeb00f906018574902c4bdfe2199a5c41b222b7",
+  "pad_count": 24,
+  "unique_nets": 19,
+  "supply_pad_count": 7,
+  "corner_count": 4,
+  "clamp_count_from_macro_inventory": 15,
+  "instances": [
+    {
+      "macro": "cor",
+      "rotation_deg": 0,
+      "x_um": 0,
+      "y_um": 0
+    },
+    {
+      "macro": "cor",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 0
+    },
+    {
+      "macro": "cor",
+      "rotation_deg": 180,
+      "x_um": 1210,
+      "y_um": 1210
+    },
+    {
+      "macro": "cor",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 1210
+    },
+    {
+      "macro": "dvss",
+      "rotation_deg": 0,
+      "x_um": 355,
+      "y_um": 0
+    },
+    {
+      "macro": "dvdd",
+      "rotation_deg": 0,
+      "x_um": 430,
+      "y_um": 0
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 0,
+      "x_um": 505,
+      "y_um": 0
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 0,
+      "x_um": 580,
+      "y_um": 0
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 0,
+      "x_um": 655,
+      "y_um": 0
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 0,
+      "x_um": 730,
+      "y_um": 0
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 0,
+      "x_um": 805,
+      "y_um": 0
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 0,
+      "x_um": 815,
+      "y_um": 0
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 0,
+      "x_um": 825,
+      "y_um": 0
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 0,
+      "x_um": 835,
+      "y_um": 0
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 0,
+      "x_um": 845,
+      "y_um": 0
+    },
+    {
+      "macro": "dvss",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 355
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 430
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 505
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 580
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 655
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 730
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 805
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 815
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 825
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 835
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 90,
+      "x_um": 1210,
+      "y_um": 845
+    },
+    {
+      "macro": "dvss",
+      "rotation_deg": 180,
+      "x_um": 855,
+      "y_um": 1210
+    },
+    {
+      "macro": "dvdd",
+      "rotation_deg": 180,
+      "x_um": 780,
+      "y_um": 1210
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 180,
+      "x_um": 705,
+      "y_um": 1210
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 180,
+      "x_um": 630,
+      "y_um": 1210
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 180,
+      "x_um": 555,
+      "y_um": 1210
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 180,
+      "x_um": 480,
+      "y_um": 1210
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 180,
+      "x_um": 405,
+      "y_um": 1210
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 180,
+      "x_um": 395,
+      "y_um": 1210
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 180,
+      "x_um": 385,
+      "y_um": 1210
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 180,
+      "x_um": 375,
+      "y_um": 1210
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 180,
+      "x_um": 365,
+      "y_um": 1210
+    },
+    {
+      "macro": "dvss",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 855
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 780
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 705
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 630
+    },
+    {
+      "macro": "asig_5p0",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 555
+    },
+    {
+      "macro": "dvdd",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 480
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 405
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 395
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 385
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 375
+    },
+    {
+      "macro": "fill10",
+      "rotation_deg": 270,
+      "x_um": 0,
+      "y_um": 365
+    }
+  ],
+  "pads": [
+    {
+      "pad_id": "P01",
+      "core_net": "GND",
+      "side": "south",
+      "macro": "gf180mcu_fd_io__dvss",
+      "rotation_deg": 0,
+      "origin_x_um": 355,
+      "origin_y_um": 0,
+      "pad_label_x_um": 392.985,
+      "pad_label_y_um": 32.735,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P02",
+      "core_net": "VDD",
+      "side": "south",
+      "macro": "gf180mcu_fd_io__dvdd",
+      "rotation_deg": 0,
+      "origin_x_um": 430,
+      "origin_y_um": 0,
+      "pad_label_x_um": 468.90000000000003,
+      "pad_label_y_um": 34.275,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P03",
+      "core_net": "BIAS",
+      "side": "south",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 0,
+      "origin_x_um": 505,
+      "origin_y_um": 0,
+      "pad_label_x_um": 542.595,
+      "pad_label_y_um": 33.1,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P04",
+      "core_net": "SEL0",
+      "side": "south",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 0,
+      "origin_x_um": 580,
+      "origin_y_um": 0,
+      "pad_label_x_um": 617.595,
+      "pad_label_y_um": 33.1,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P05",
+      "core_net": "SEL1",
+      "side": "south",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 0,
+      "origin_x_um": 655,
+      "origin_y_um": 0,
+      "pad_label_x_um": 692.595,
+      "pad_label_y_um": 33.1,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P06",
+      "core_net": "SEL2",
+      "side": "south",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 0,
+      "origin_x_um": 730,
+      "origin_y_um": 0,
+      "pad_label_x_um": 767.595,
+      "pad_label_y_um": 33.1,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P07",
+      "core_net": "GND",
+      "side": "east",
+      "macro": "gf180mcu_fd_io__dvss",
+      "rotation_deg": 90,
+      "origin_x_um": 1210,
+      "origin_y_um": 355,
+      "pad_label_x_um": 1177.265,
+      "pad_label_y_um": 392.985,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P08",
+      "core_net": "PREF",
+      "side": "east",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 90,
+      "origin_x_um": 1210,
+      "origin_y_um": 430,
+      "pad_label_x_um": 1176.9,
+      "pad_label_y_um": 467.595,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P09",
+      "core_net": "BUF",
+      "side": "east",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 90,
+      "origin_x_um": 1210,
+      "origin_y_um": 505,
+      "pad_label_x_um": 1176.9,
+      "pad_label_y_um": 542.595,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P10",
+      "core_net": "COL2",
+      "side": "east",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 90,
+      "origin_x_um": 1210,
+      "origin_y_um": 580,
+      "pad_label_x_um": 1176.9,
+      "pad_label_y_um": 617.595,
+      "bond_status": "optional diagnostic / loading review"
+    },
+    {
+      "pad_id": "P11",
+      "core_net": "COL1",
+      "side": "east",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 90,
+      "origin_x_um": 1210,
+      "origin_y_um": 655,
+      "pad_label_x_um": 1176.9,
+      "pad_label_y_um": 692.595,
+      "bond_status": "optional diagnostic / loading review"
+    },
+    {
+      "pad_id": "P12",
+      "core_net": "COL0",
+      "side": "east",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 90,
+      "origin_x_um": 1210,
+      "origin_y_um": 730,
+      "pad_label_x_um": 1176.9,
+      "pad_label_y_um": 767.595,
+      "bond_status": "optional diagnostic / loading review"
+    },
+    {
+      "pad_id": "P13",
+      "core_net": "GND",
+      "side": "north",
+      "macro": "gf180mcu_fd_io__dvss",
+      "rotation_deg": 180,
+      "origin_x_um": 855,
+      "origin_y_um": 1210,
+      "pad_label_x_um": 817.015,
+      "pad_label_y_um": 1177.265,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P14",
+      "core_net": "VDD",
+      "side": "north",
+      "macro": "gf180mcu_fd_io__dvdd",
+      "rotation_deg": 180,
+      "origin_x_um": 780,
+      "origin_y_um": 1210,
+      "pad_label_x_um": 741.1,
+      "pad_label_y_um": 1175.7250000000001,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P15",
+      "core_net": "OUT",
+      "side": "north",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 180,
+      "origin_x_um": 705,
+      "origin_y_um": 1210,
+      "pad_label_x_um": 667.405,
+      "pad_label_y_um": 1176.9,
+      "bond_status": "optional diagnostic / loading review"
+    },
+    {
+      "pad_id": "P16",
+      "core_net": "RST2",
+      "side": "north",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 180,
+      "origin_x_um": 630,
+      "origin_y_um": 1210,
+      "pad_label_x_um": 592.405,
+      "pad_label_y_um": 1176.9,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P17",
+      "core_net": "ROW2",
+      "side": "north",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 180,
+      "origin_x_um": 555,
+      "origin_y_um": 1210,
+      "pad_label_x_um": 517.405,
+      "pad_label_y_um": 1176.9,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P18",
+      "core_net": "VRESET",
+      "side": "north",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 180,
+      "origin_x_um": 480,
+      "origin_y_um": 1210,
+      "pad_label_x_um": 442.40500000000003,
+      "pad_label_y_um": 1176.9,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P19",
+      "core_net": "GND",
+      "side": "west",
+      "macro": "gf180mcu_fd_io__dvss",
+      "rotation_deg": 270,
+      "origin_x_um": 0,
+      "origin_y_um": 855,
+      "pad_label_x_um": 32.735,
+      "pad_label_y_um": 817.015,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P20",
+      "core_net": "RST1",
+      "side": "west",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 270,
+      "origin_x_um": 0,
+      "origin_y_um": 780,
+      "pad_label_x_um": 33.1,
+      "pad_label_y_um": 742.405,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P21",
+      "core_net": "ROW1",
+      "side": "west",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 270,
+      "origin_x_um": 0,
+      "origin_y_um": 705,
+      "pad_label_x_um": 33.1,
+      "pad_label_y_um": 667.405,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P22",
+      "core_net": "RST0",
+      "side": "west",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 270,
+      "origin_x_um": 0,
+      "origin_y_um": 630,
+      "pad_label_x_um": 33.1,
+      "pad_label_y_um": 592.405,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P23",
+      "core_net": "ROW0",
+      "side": "west",
+      "macro": "gf180mcu_fd_io__asig_5p0",
+      "rotation_deg": 270,
+      "origin_x_um": 0,
+      "origin_y_um": 555,
+      "pad_label_x_um": 33.1,
+      "pad_label_y_um": 517.405,
+      "bond_status": "proposed functional bond"
+    },
+    {
+      "pad_id": "P24",
+      "core_net": "VDD",
+      "side": "west",
+      "macro": "gf180mcu_fd_io__dvdd",
+      "rotation_deg": 270,
+      "origin_x_um": 0,
+      "origin_y_um": 480,
+      "pad_label_x_um": 34.275,
+      "pad_label_y_um": 441.1,
+      "bond_status": "proposed functional bond"
+    }
+  ],
+  "checks": [
+    "All 19 schematic ports assigned",
+    "24 unique pad IDs",
+    "Side-length accounting exact",
+    "Core inside nominal ring opening",
+    "Translation on layout grid"
+  ],
+  "limitations": [
+    "No routing, local secondary protection, seal ring, optical mask changes or ESD qualification",
+    "No DRC/LVS/density/antenna/precheck run on proposal",
+    "PAD-label coordinates are not approved bond centers",
+    "Macro bounding boxes include process-layer overhang; bbox overlap is not used as a DRC test",
+    "Diagnostic pad leakage/capacitance and added clamps require requalification"
+  ]
+}

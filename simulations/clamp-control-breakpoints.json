@@ -1,0 +1,103 @@
+{
+  "hypothesis": "Native waveform/reference audit found unresolved sub-ns ramp-stop settling. Insert collinear PWL knots at two fixed local resolutions; physical source unchanged.",
+  "runs": [
+    {
+      "case": "original-50ps",
+      "completed": true,
+      "error": null,
+      "seconds": 0.3409064239822328,
+      "deck_sha256": "155c70c78985cc7fecf16f1a4ac2c4ffb39a8f03defe24aced4ebd28fc9d63ae"
+    },
+    {
+      "case": "scaled-50ps",
+      "completed": true,
+      "error": null,
+      "seconds": 0.27521686698310077,
+      "deck_sha256": "3aef46ab40bd5933615613af772ac3f886428e5d596869cf318b330c8f5cc2ca"
+    },
+    {
+      "case": "original-25ps",
+      "completed": true,
+      "error": null,
+      "seconds": 0.3300458010053262,
+      "deck_sha256": "c3befe391b7e1341fad89214834d87b23a212541e18c1786dcfe524eefc9cf50"
+    },
+    {
+      "case": "scaled-25ps",
+      "completed": true,
+      "error": null,
+      "seconds": 0.3307625509914942,
+      "deck_sha256": "96ceacd34645412978650e5b2475c993ff7dcfbb3b56359b2a27d399ce397828"
+    },
+    {
+      "case": "clamp-scaled-50ns",
+      "completed": true,
+      "error": null,
+      "seconds": 104.0138539239997,
+      "deck_sha256": "581dd2a23b2b21d6aa27d978dba5bcb1fbd3f37f3a0a52f6b32ece690a49ec73"
+    }
+  ],
+  "comparisons": {
+    "50": {
+      "max_pair_V": 1.4934769782429616e-09,
+      "max_pair_A": 1.4934769782392272e-12,
+      "max_native_reference_A": {
+        "original": 2.8740749007142015e-12,
+        "scaled": 2.8740749007142015e-12
+      },
+      "passes": true
+    },
+    "25": {
+      "max_pair_V": 1.4934769782429616e-09,
+      "max_pair_A": 1.4934769782392272e-12,
+      "max_native_reference_A": {
+        "original": 2.8740749007142015e-12,
+        "scaled": 2.8740749007142015e-12
+      },
+      "passes": true
+    },
+    "original-refinement": {
+      "max_A": 1.8857871783090276e-12,
+      "passes": true
+    },
+    "scaled-refinement": {
+      "max_A": 1.8857498817476766e-12,
+      "passes": true
+    }
+  },
+  "control_gate_passed": true,
+  "accepted_full_chip_fix": false,
+  "stop_rule": "Four controls and at most one gated clamp run; stop after this batch. Full-chip and charge/PVT qualification remain open.",
+  "charge_bookkeeping": {
+    "original-50ps": {
+      "integrated_source_charge_C": 1.4375650918089257e-12,
+      "terminal_equation_charge_C": 1.4375651331750705e-12,
+      "charge_residual_C": -4.136614486559548e-20,
+      "relative_charge_residual": -2.8775144799340232e-08,
+      "wave_sha256": "51b4ce4fd636616cf522b097897d656ae48e192bd3fcb7ab5d83b9efdd3d9e2d"
+    },
+    "original-25ps": {
+      "integrated_source_charge_C": 1.4375650901127082e-12,
+      "terminal_equation_charge_C": 1.4375651331750697e-12,
+      "charge_residual_C": -4.3062361510476075e-20,
+      "relative_charge_residual": -2.995506813341156e-08,
+      "wave_sha256": "0c17792c91fb3e007e2e50864edef2dc8626048f58bbec91fd369ca182b826ea"
+    },
+    "scaled-50ps": {
+      "integrated_source_charge_C": 1.4375651942219669e-12,
+      "terminal_equation_charge_C": 1.4375651331750705e-12,
+      "charge_residual_C": 6.104689633726147e-20,
+      "relative_charge_residual": 4.2465482035189995e-08,
+      "wave_sha256": "7a9a4dc9ec7b588ed680f4dfd97b974c55582fa6bd3044eec62df6826b663179"
+    },
+    "scaled-25ps": {
+      "integrated_source_charge_C": 1.43756519252714e-12,
+      "terminal_equation_charge_C": 1.4375651331750705e-12,
+      "charge_residual_C": 5.93520695012128e-20,
+      "relative_charge_residual": 4.128652548084912e-08,
+      "wave_sha256": "0b55f41e317eb70ede637e17ddfcf2bd27b7889207b7d72db890a90a8b740c13"
+    }
+  },
+  "recorded": "2026-09-19 09:16 PDT",
+  "charge_scope": "Numerical source-current quadrature versus analytic integral of C(V); report only, not all-corner charge qualification."
+}

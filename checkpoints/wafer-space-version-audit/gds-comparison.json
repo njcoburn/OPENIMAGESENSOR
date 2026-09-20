@@ -1,0 +1,7 @@
+{
+  "gds_equal_excluding_BGNLIB_BGNSTR_dates": true,
+  "installed_timestamp_records": 963,
+  "reference_timestamp_records": 963,
+  "installed_normalized_sha256": "e4f5cb4304f80d220cb0e73e7fe52d77616a053ec541da17f6af84266a66424f",
+  "reference_normalized_sha256": "e4f5cb4304f80d220cb0e73e7fe52d77616a053ec541da17f6af84266a66424f"
+}

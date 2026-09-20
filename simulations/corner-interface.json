@@ -1,0 +1,146 @@
+{
+  "strict": {
+    "runs": [
+      {
+        "mode": "nominal",
+        "adapter": false,
+        "analysis": "equivalence",
+        "completed": true
+      },
+      {
+        "mode": "nominal",
+        "adapter": true,
+        "analysis": "equivalence",
+        "completed": true
+      },
+      {
+        "mode": "remote",
+        "adapter": false,
+        "analysis": "equivalence",
+        "completed": true
+      },
+      {
+        "mode": "remote",
+        "adapter": true,
+        "analysis": "equivalence",
+        "completed": true
+      }
+    ],
+    "equivalence": [
+      {
+        "mode": "nominal",
+        "analysis": "dc",
+        "max_mixed_error_ratio": 0.0009119274043456785,
+        "passed": true
+      },
+      {
+        "mode": "nominal",
+        "analysis": "ac",
+        "max_mixed_error_ratio": 4.10236474138294,
+        "passed": false
+      },
+      {
+        "mode": "remote",
+        "analysis": "dc",
+        "max_mixed_error_ratio": 0.0016439152915054404,
+        "passed": true
+      },
+      {
+        "mode": "remote",
+        "analysis": "ac",
+        "max_mixed_error_ratio": 1.1254398803565335,
+        "passed": false
+      }
+    ],
+    "scope": "27C typical; common-mode AC 1kHz\u20131GHz; eight port currents plus rail voltages; no physical buffer",
+    "startup_is_diagnostic": true,
+    "startup": [
+      {
+        "mode": "nominal",
+        "adapter": true,
+        "analysis": "startup",
+        "completed": false,
+        "error": "['doAnalyses: TRAN:  Timestep too small; time = 1e-09, timestep = 1.25e-19: cause unrecorded.', 'tran simulation(s) aborted']"
+      },
+      {
+        "mode": "remote",
+        "adapter": true,
+        "analysis": "startup",
+        "completed": false,
+        "error": "['doAnalyses: TRAN:  Timestep too small; time = 1e-09, timestep = 1.25e-19: trouble with node \"e.x354.ec_moscap#branch\"', 'tran simulation(s) aborted']"
+      }
+    ]
+  },
+  "practical_startup": {
+    "runs": [
+      {
+        "mode": "nominal",
+        "adapter": false,
+        "analysis": "equivalence",
+        "completed": true
+      },
+      {
+        "mode": "nominal",
+        "adapter": true,
+        "analysis": "equivalence",
+        "completed": true
+      },
+      {
+        "mode": "remote",
+        "adapter": false,
+        "analysis": "equivalence",
+        "completed": true
+      },
+      {
+        "mode": "remote",
+        "adapter": true,
+        "analysis": "equivalence",
+        "completed": true
+      }
+    ],
+    "equivalence": [
+      {
+        "mode": "nominal",
+        "analysis": "dc",
+        "max_mixed_error_ratio": 0.0009119274043456785,
+        "passed": true
+      },
+      {
+        "mode": "nominal",
+        "analysis": "ac",
+        "max_mixed_error_ratio": 4.10236474138294,
+        "passed": false
+      },
+      {
+        "mode": "remote",
+        "analysis": "dc",
+        "max_mixed_error_ratio": 0.0016439152915054404,
+        "passed": true
+      },
+      {
+        "mode": "remote",
+        "analysis": "ac",
+        "max_mixed_error_ratio": 1.1254398803565335,
+        "passed": false
+      }
+    ],
+    "scope": "27C typical; common-mode AC 1kHz\u20131GHz; eight port currents plus rail voltages; no physical buffer",
+    "startup_is_diagnostic": true,
+    "startup": [
+      {
+        "mode": "nominal",
+        "adapter": true,
+        "analysis": "startup-practical",
+        "completed": false,
+        "error": "['doAnalyses: TRAN:  Timestep too small; time = 1e-09, timestep = 1.25e-19: cause unrecorded.', 'tran simulation(s) aborted']"
+      },
+      {
+        "mode": "remote",
+        "adapter": true,
+        "analysis": "startup-practical",
+        "completed": false,
+        "error": "['doAnalyses: TRAN:  Timestep too small; time = 1e-09, timestep = 1.25e-19: trouble with node \"e.x354.ec_moscap#branch\"', 'tran simulation(s) aborted']"
+      }
+    ]
+  }
+}

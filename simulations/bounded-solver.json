@@ -1,0 +1,25 @@
+{
+  "runs": [
+    {
+      "case": "trap-halfstep",
+      "changed": "KLU to SPARSE only",
+      "source_sha256": "e0f719a23c2b5de3e7774da35c4daf845dc075880abc712f1c592fe1a4e2f41a",
+      "completed": false,
+      "timeout_s": 120,
+      "failure": "Command '['ngspice', '-b', 'test.spice']' timed out after 119.99994688498555 seconds",
+      "runtime_s": 120.00556033296743
+    },
+    {
+      "case": "trap-halfstep-strict",
+      "changed": "KLU to SPARSE only",
+      "source_sha256": "59219601cda64dfc343894a716164d3a3e74effb9081bd0ff15eedd440228dbb",
+      "completed": false,
+      "timeout_s": 120,
+      "failure": "Command '['ngspice', '-b', 'test.spice']' timed out after 119.99995415203739 seconds",
+      "runtime_s": 120.0060692789848
+    }
+  ],
+  "stop_rule": "Exactly these two solver-only trials; no automatic retries. Any incomplete case stops this investigation and triggers expert-review preparation.",
+  "accepted": false,
+  "next_gate": "Stop local solver experimentation; send prepared reproducer for expert review when explicitly authorized."
+}

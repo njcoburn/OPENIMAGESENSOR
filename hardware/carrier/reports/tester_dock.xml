@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/work/hardware/carrier/kicad/tester_dock/tester_dock.kicad_sch</source>
+    <date>Sat Sep 19 15:29:09 2026</date>
+    <tool>Eeschema 7.0.11+dfsg-1build4</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>tester_dock - engineering review Rev A</title>
+        <company/>
+        <rev>A</rev>
+        <date>2026-09-19</date>
+        <source>tester_dock.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f107a976-6e0f-525c-ad25-ac5022178526</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09bc2923-2523-57b1-a2df-2ad2c8074d9d</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f9c7d3ac-23d9-5978-8042-f69aac4ecd14</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10n</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37041138-3eca-50cc-9557-050eff9ca132</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5330190e-400e-5b9c-873c-fa892dc2f660</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1u</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1499bce3-8b3a-5d2b-8b01-17f3e70b31bc</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>10n</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2e29874-28f1-5896-855a-2784be13e627</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>10u</value>
+      <footprint>OIS:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_C8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>36d7ecf5-e341-55ba-94c7-8aa7c7bda890</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>CONTROLLER_TIMING</value>
+      <footprint>OIS:Connector_PinHeader_2.54mm_PinHeader_2x10_P2.54mm_Vertical</footprint>
+      <libsource lib="OIS" part="Part_J1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9c9dedf-4bd3-55b0-9101-7da243f2a9e0</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>3V3_INPUT_ONLY</value>
+      <footprint>OIS:Connector_PinHeader_2.54mm_PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="OIS" part="Part_J2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a0e419d1-f1fa-5f67-82b1-a8adeb4d1397</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>I2C_AND_ENABLE</value>
+      <footprint>OIS:Connector_PinHeader_2.54mm_PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <libsource lib="OIS" part="Part_J3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2765c70-ee43-5a3f-8a85-af856f2ffef2</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>FAST_ADC_ANALOG</value>
+      <footprint>OIS:Connector_PinHeader_2.54mm_PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="OIS" part="Part_J4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d916a60-d86e-5426-8a95-33ad20600f00</tstamps>
+    </comp>
+    <comp ref="P1">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cbd8ea9d-bcdc-510f-8969-4caa2875283b</tstamps>
+    </comp>
+    <comp ref="P2">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd3aae75-5cba-5a5f-b501-11fde052db1e</tstamps>
+    </comp>
+    <comp ref="P3">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30a5bbb2-59a3-5424-b5b5-d845061a5f4b</tstamps>
+    </comp>
+    <comp ref="P4">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b721e0f8-5182-58d4-b0d1-9967af728437</tstamps>
+    </comp>
+    <comp ref="P5">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e235451c-6b31-5f47-b98b-469d5b7481b6</tstamps>
+    </comp>
+    <comp ref="P6">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>200d671f-13b1-5309-bdbb-7172e9fd25e3</tstamps>
+    </comp>
+    <comp ref="P7">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88fed51a-334b-5a7e-a184-8a4857c8cbeb</tstamps>
+    </comp>
+    <comp ref="P8">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55f1a3ca-4f0a-5492-8126-6e9f8a1c974f</tstamps>
+    </comp>
+    <comp ref="P9">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P9" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09ab9c17-7e1f-5b1e-a9d9-e393d3ba1777</tstamps>
+    </comp>
+    <comp ref="P10">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P10" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9b9a6eb-4d36-5f27-9566-f56404f1eb9e</tstamps>
+    </comp>
+    <comp ref="P11">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P11" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acbbf243-fc21-5108-b26e-345acc0b3ec7</tstamps>
+    </comp>
+    <comp ref="P12">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P12" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0ea7f60-beb5-5ce0-aa22-e7d6a1dd6469</tstamps>
+    </comp>
+    <comp ref="P13">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P13" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2bc78c2-c90e-53c1-a92a-bff4625a9e78</tstamps>
+    </comp>
+    <comp ref="P14">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P14" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f028497-aa2a-5c20-8ed8-a4afaaf0c9d8</tstamps>
+    </comp>
+    <comp ref="P15">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P15" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9bdc68d8-ad78-5e45-aafd-1861644324c2</tstamps>
+    </comp>
+    <comp ref="P16">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P16" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e7a792d-3696-5802-a06c-3d6ad904d049</tstamps>
+    </comp>
+    <comp ref="P17">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P17" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ca08d21-dd60-557a-abbc-81012d176e2a</tstamps>
+    </comp>
+    <comp ref="P18">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P18" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e11d086c-c156-5b44-aae2-d0ec08b602a2</tstamps>
+    </comp>
+    <comp ref="P19">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P19" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4e0e800-4071-51e0-86bb-a9feb4280f43</tstamps>
+    </comp>
+    <comp ref="P20">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P20" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e197d43f-795d-5f54-a827-fb759c5bbe53</tstamps>
+    </comp>
+    <comp ref="P21">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P21" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2d53310-21b4-57ba-8ad4-43c7cae06f21</tstamps>
+    </comp>
+    <comp ref="P22">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P22" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca208360-3003-5ef5-92bc-6302d160521e</tstamps>
+    </comp>
+    <comp ref="P23">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P23" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b938007a-cbe4-5b0d-8e19-9342032b978f</tstamps>
+    </comp>
+    <comp ref="P24">
+      <value>0906-0-15-20-76-14-11-0</value>
+      <footprint>OIS:Pogo_0906_0</footprint>
+      <libsource lib="OIS" part="Part_P24" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dab6deb6-237f-5c3c-a333-3522b56e01b7</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eeb2229b-114e-586e-88e0-0fbbca583085</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d879e23-f80b-5866-b784-650809113917</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c252893-52dc-5699-8efb-56ed15a8a3ff</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b15c181c-6274-5e9b-8408-e0244f7ab6f1</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>321843e8-1d76-5679-8c54-0a7ce5d886bc</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d31981d7-2651-57bb-b56d-eab36f1666e2</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9146fe2b-8459-5239-8af5-afbd7929fe61</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>231ae594-0574-5ead-b485-426ece7d4f28</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R9" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>688898a0-d18d-521a-a423-d7e4bb598a87</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R11" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be6957fd-a2de-5a53-9dc0-8e538dbbc359</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R12" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8fe8be8a-e35d-5673-920a-1013ff2288f1</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R13" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ee32add-2072-56d6-bc5f-61a60d2eebf8</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R14" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>670a8b65-23c8-5297-bdb3-6e9206573a41</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R15" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5e60882-c40b-567b-bd88-ea280e3eb28d</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R16" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>baf7b7d6-2e7a-50af-9511-8111fa9da25f</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R17" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f46d738b-b573-56e4-8e9d-1f24b413778e</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R18" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77252ec4-f6f0-5048-9dcf-064a93324cfe</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R19" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ceefea7f-636d-505b-b9b3-70177a100c3b</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R21" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12fb9920-8de7-5ae0-9ae9-4a5c0b5ce068</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>13k 0.1%</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R22" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5e06e007-b3bb-587f-b89f-40f3a5ab64e3</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>20k 0.1%</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R23" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09cc94ac-c630-52be-8d89-4533663d49e1</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R24" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ff441522-f012-5ec4-b902-4ea4fb3d7bb2</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>100</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R25" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>220f5417-3b88-50b6-bde6-dd46dd1bc211</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>4.7k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R26" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>02c7cabb-90f8-50d5-a7b3-5edada782c66</tstamps>
+    </comp>
+    <comp ref="R27">
+      <value>4.7k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R27" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8d40fff-378c-5efd-87fa-b9620bd6d267</tstamps>
+    </comp>
+    <comp ref="R28">
+      <value>4.7k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R28" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb74d912-ce1f-5c58-a7f7-282e826b973d</tstamps>
+    </comp>
+    <comp ref="R31">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R31" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b4eca794-9335-57f2-a6d2-46fbe2b1bcd8</tstamps>
+    </comp>
+    <comp ref="R32">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ec772b5-617f-5fb6-9704-3d9a2f504836</tstamps>
+    </comp>
+    <comp ref="R33">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R33" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60ddf9dc-9acc-524f-a9c6-8a32a6528c32</tstamps>
+    </comp>
+    <comp ref="R34">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R34" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>26180c98-5ece-5e71-8507-38faf02f525e</tstamps>
+    </comp>
+    <comp ref="R35">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R35" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7c5db84-7190-52d1-83f3-ad5257a917bc</tstamps>
+    </comp>
+    <comp ref="R36">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R36" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37707a18-8e82-574c-9b76-2f8f7e1c5489</tstamps>
+    </comp>
+    <comp ref="R37">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R37" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aacb9433-611b-5fa7-9cc5-f349de3a3909</tstamps>
+    </comp>
+    <comp ref="R38">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R38" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c783e5e3-3a5f-54e0-8ebf-6ae00ff3bafe</tstamps>
+    </comp>
+    <comp ref="R39">
+      <value>100k</value>
+      <footprint>OIS:Resistor_SMD_R_0805_2012Metric</footprint>
+      <libsource lib="OIS" part="Part_R39" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30004fb7-709b-5f17-bcd7-b0b9d3b40130</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>SN74LVC244APW</value>
+      <footprint>OIS:Package_SO_TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <libsource lib="OIS" part="Part_U1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b4729f6-156c-5d45-b9a4-0b3aa250fd85</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>SN74LVC244APW</value>
+      <footprint>OIS:Package_SO_TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <libsource lib="OIS" part="Part_U2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd1ac049-9993-5e06-ba80-c41c7411c9bd</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>OPA2320AID</value>
+      <footprint>OIS:Package_SO_SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="OIS" part="Part_U3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5be373d3-4abc-5878-bc44-5e335181eb48</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>ADS1115IDGSR</value>
+      <footprint>OIS:Package_SO_VSSOP-10_3x3mm_P0.5mm</footprint>
+      <libsource lib="OIS" part="Part_U4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="tester_dock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9aaafee-e80c-5d9f-967f-30b701b80715</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="OIS" part="Part_C1">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_C2">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_C3">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_C4">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10n</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_C5">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_C6">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_C7">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10n</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_C8">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10u</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_J1">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONTROLLER_TIMING</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="15" name="15" type="passive"/>
+        <pin num="16" name="16" type="passive"/>
+        <pin num="17" name="17" type="passive"/>
+        <pin num="18" name="18" type="passive"/>
+        <pin num="19" name="19" type="passive"/>
+        <pin num="20" name="20" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_J2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">3V3_INPUT_ONLY</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="power_out"/>
+        <pin num="2" name="2" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_J3">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">I2C_AND_ENABLE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_J4">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">FAST_ADC_ANALOG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P1">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P10">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P11">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P12">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P13">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P14">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P15">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P16">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P17">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P18">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P19">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P2">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P20">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P21">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P22">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P23">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P24">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P3">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P4">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P5">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P6">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P7">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P8">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_P9">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">0906-0-15-20-76-14-11-0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R1">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R11">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R12">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R13">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R14">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R15">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R16">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R17">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R18">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R19">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R2">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R21">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R22">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">13k 0.1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R23">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">20k 0.1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R24">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R25">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R26">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">4.7k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R27">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">4.7k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R28">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">4.7k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R3">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R31">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R32">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R33">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R34">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R35">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R36">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R37">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R38">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R39">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R4">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R5">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R6">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R7">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R8">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_R9">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_U1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC244APW</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1OE_N" type="input"/>
+        <pin num="2" name="1A1" type="input"/>
+        <pin num="3" name="2Y4" type="tri_state"/>
+        <pin num="4" name="1A2" type="input"/>
+        <pin num="5" name="2Y3" type="tri_state"/>
+        <pin num="6" name="1A3" type="input"/>
+        <pin num="7" name="2Y2" type="tri_state"/>
+        <pin num="8" name="1A4" type="input"/>
+        <pin num="9" name="2Y1" type="tri_state"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="2A1" type="input"/>
+        <pin num="12" name="1Y4" type="tri_state"/>
+        <pin num="13" name="2A2" type="input"/>
+        <pin num="14" name="1Y3" type="tri_state"/>
+        <pin num="15" name="2A3" type="input"/>
+        <pin num="16" name="1Y2" type="tri_state"/>
+        <pin num="17" name="2A4" type="input"/>
+        <pin num="18" name="1Y1" type="tri_state"/>
+        <pin num="19" name="2OE_N" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_U2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC244APW</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1OE_N" type="input"/>
+        <pin num="2" name="1A1" type="input"/>
+        <pin num="3" name="2Y4" type="tri_state"/>
+        <pin num="4" name="1A2" type="input"/>
+        <pin num="5" name="2Y3" type="tri_state"/>
+        <pin num="6" name="1A3" type="input"/>
+        <pin num="7" name="2Y2" type="tri_state"/>
+        <pin num="8" name="1A4" type="input"/>
+        <pin num="9" name="2Y1" type="tri_state"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="2A1" type="input"/>
+        <pin num="12" name="1Y4" type="tri_state"/>
+        <pin num="13" name="2A2" type="input"/>
+        <pin num="14" name="1Y3" type="tri_state"/>
+        <pin num="15" name="2A3" type="input"/>
+        <pin num="16" name="1Y2" type="tri_state"/>
+        <pin num="17" name="2A4" type="input"/>
+        <pin num="18" name="1Y1" type="tri_state"/>
+        <pin num="19" name="2OE_N" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_U3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OPA2320AID</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT_A" type="output"/>
+        <pin num="2" name="IN-_A" type="input"/>
+        <pin num="3" name="IN+_A" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="IN+_B" type="input"/>
+        <pin num="6" name="IN-_B" type="input"/>
+        <pin num="7" name="OUT_B" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="OIS" part="Part_U4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADS1115IDGSR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADDR" type="input"/>
+        <pin num="2" name="ALERT_RDY" type="open_collector"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="AIN0" type="input"/>
+        <pin num="5" name="AIN1" type="input"/>
+        <pin num="6" name="AIN2" type="input"/>
+        <pin num="7" name="AIN3" type="input"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="SDA" type="bidirectional"/>
+        <pin num="10" name="SCL" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="/ADC_IN">
+      <node ref="C7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R24" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="AIN0" pintype="input"/>
+    </net>
+    <net code="2" name="/ADC_RDY">
+      <node ref="J3" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="R28" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="ALERT_RDY" pintype="open_collector"/>
+    </net>
+    <net code="3" name="/BUF">
+      <node ref="P9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="IN+_A" pintype="input"/>
+    </net>
+    <net code="4" name="/BUF_DRV">
+      <node ref="R24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R25" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="OUT_A" pintype="output"/>
+      <node ref="U3" pin="2" pinfunction="IN-_A" pintype="input"/>
+    </net>
+    <net code="5" name="/CTL_ROW0">
+      <node ref="J1" pin="7" pinfunction="7" pintype="passive"/>
+      <node ref="R34" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="1A4" pintype="input"/>
+    </net>
+    <net code="6" name="/CTL_ROW1">
+      <node ref="J1" pin="9" pinfunction="9" pintype="passive"/>
+      <node ref="R35" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="2A1" pintype="input"/>
+    </net>
+    <net code="7" name="/CTL_ROW2">
+      <node ref="J1" pin="11" pinfunction="11" pintype="passive"/>
+      <node ref="R36" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="2A2" pintype="input"/>
+    </net>
+    <net code="8" name="/CTL_RST0">
+      <node ref="J1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R31" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="1A1" pintype="input"/>
+    </net>
+    <net code="9" name="/CTL_RST1">
+      <node ref="J1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R32" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="1A2" pintype="input"/>
+    </net>
+    <net code="10" name="/CTL_RST2">
+      <node ref="J1" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="R33" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="1A3" pintype="input"/>
+    </net>
+    <net code="11" name="/CTL_SEL0">
+      <node ref="J1" pin="13" pinfunction="13" pintype="passive"/>
+      <node ref="R37" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="2A3" pintype="input"/>
+    </net>
+    <net code="12" name="/CTL_SEL1">
+      <node ref="J1" pin="15" pinfunction="15" pintype="passive"/>
+      <node ref="R38" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="2A4" pintype="input"/>
+    </net>
+    <net code="13" name="/CTL_SEL2">
+      <node ref="J1" pin="17" pinfunction="17" pintype="passive"/>
+      <node ref="R39" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="1A1" pintype="input"/>
+    </net>
+    <net code="14" name="/DRV_ROW0">
+      <node ref="R4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="1Y4" pintype="tri_state"/>
+    </net>
+    <net code="15" name="/DRV_ROW1">
+      <node ref="R5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="2Y1" pintype="tri_state"/>
+    </net>
+    <net code="16" name="/DRV_ROW2">
+      <node ref="R6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="2Y2" pintype="tri_state"/>
+    </net>
+    <net code="17" name="/DRV_RST0">
+      <node ref="R1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="1Y1" pintype="tri_state"/>
+    </net>
+    <net code="18" name="/DRV_RST1">
+      <node ref="R2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="1Y2" pintype="tri_state"/>
+    </net>
+    <net code="19" name="/DRV_RST2">
+      <node ref="R3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="1Y3" pintype="tri_state"/>
+    </net>
+    <net code="20" name="/DRV_SEL0">
+      <node ref="R7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="2Y3" pintype="tri_state"/>
+    </net>
+    <net code="21" name="/DRV_SEL1">
+      <node ref="R8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="2Y4" pintype="tri_state"/>
+    </net>
+    <net code="22" name="/DRV_SEL2">
+      <node ref="R9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="1Y1" pintype="tri_state"/>
+    </net>
+    <net code="23" name="/FAST_OUT">
+      <node ref="J4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R25" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="24" name="/GND">
+      <node ref="C1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J1" pin="10" pinfunction="10" pintype="passive"/>
+      <node ref="J1" pin="12" pinfunction="12" pintype="passive"/>
+      <node ref="J1" pin="14" pinfunction="14" pintype="passive"/>
+      <node ref="J1" pin="16" pinfunction="16" pintype="passive"/>
+      <node ref="J1" pin="18" pinfunction="18" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J1" pin="20" pinfunction="20" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="J1" pin="8" pinfunction="8" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="2" pintype="power_out"/>
+      <node ref="J3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="P1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="P13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="P19" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="P7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R14" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R15" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R16" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R17" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R18" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R19" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R23" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R31" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R32" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R33" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R34" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R35" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R36" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R37" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R38" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R39" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="2A1" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="2A2" pintype="input"/>
+      <node ref="U2" pin="15" pinfunction="2A3" pintype="input"/>
+      <node ref="U2" pin="17" pinfunction="2A4" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="1A2" pintype="input"/>
+      <node ref="U2" pin="6" pinfunction="1A3" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="1A4" pintype="input"/>
+      <node ref="U3" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="ADDR" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="AIN1" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="AIN2" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="AIN3" pintype="input"/>
+    </net>
+    <net code="25" name="/IO_OE_N">
+      <node ref="J3" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="R21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="1OE_N" pintype="input"/>
+      <node ref="U1" pin="19" pinfunction="2OE_N" pintype="input"/>
+      <node ref="U2" pin="1" pinfunction="1OE_N" pintype="input"/>
+      <node ref="U2" pin="19" pinfunction="2OE_N" pintype="input"/>
+    </net>
+    <net code="26" name="/RESET_DIV">
+      <node ref="C4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R22" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="IN+_B" pintype="input"/>
+    </net>
+    <net code="27" name="/ROW0">
+      <node ref="P23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="28" name="/ROW1">
+      <node ref="P21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="29" name="/ROW2">
+      <node ref="P17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="30" name="/RST0">
+      <node ref="P22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="31" name="/RST1">
+      <node ref="P20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="32" name="/RST2">
+      <node ref="P16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="33" name="/SCL">
+      <node ref="J3" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="R27" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="10" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="34" name="/SDA">
+      <node ref="J3" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R26" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="/SEL0">
+      <node ref="P4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="36" name="/SEL1">
+      <node ref="P5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="37" name="/SEL2">
+      <node ref="P6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R19" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="38" name="/VDD">
+      <node ref="C1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J1" pin="19" pinfunction="19" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1" pintype="power_out"/>
+      <node ref="J3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="P14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="P2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="P24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R11" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R21" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R26" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R27" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R28" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="20" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="V+" pintype="power_in"/>
+      <node ref="U4" pin="8" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="39" name="/VRESET">
+      <node ref="J4" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="P18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="IN-_B" pintype="input"/>
+      <node ref="U3" pin="7" pinfunction="OUT_B" pintype="output"/>
+    </net>
+    <net code="40" name="unconnected-(P3-Pad1)">
+      <node ref="P3" pin="1" pinfunction="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(P8-Pad1)">
+      <node ref="P8" pin="1" pinfunction="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(P10-Pad1)">
+      <node ref="P10" pin="1" pinfunction="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(P11-Pad1)">
+      <node ref="P11" pin="1" pinfunction="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(P12-Pad1)">
+      <node ref="P12" pin="1" pinfunction="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(P15-Pad1)">
+      <node ref="P15" pin="1" pinfunction="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U2-1Y2-Pad16)">
+      <node ref="U2" pin="16" pinfunction="1Y2" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U2-1Y3-Pad14)">
+      <node ref="U2" pin="14" pinfunction="1Y3" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U2-1Y4-Pad12)">
+      <node ref="U2" pin="12" pinfunction="1Y4" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U2-2Y1-Pad9)">
+      <node ref="U2" pin="9" pinfunction="2Y1" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U2-2Y2-Pad7)">
+      <node ref="U2" pin="7" pinfunction="2Y2" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U2-2Y3-Pad5)">
+      <node ref="U2" pin="5" pinfunction="2Y3" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U2-2Y4-Pad3)">
+      <node ref="U2" pin="3" pinfunction="2Y4" pintype="tri_state+no_connect"/>
+    </net>
+  </nets>
+</export>

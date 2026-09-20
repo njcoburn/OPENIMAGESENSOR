@@ -1,5 +1,13 @@
 # Sensor references
 
+## Filled-layout checkpoint — 2026-09-19 03:15 PDT
+
+[Filled-layout verification](filled-demonstrator.md) and [HTML overview](overview.html#filled-demonstrator): density/antenna, main DRC and device LVS results for the latest working revision.
+
+## Current working layout
+
+[Routed demonstrator report](routed-demonstrator.md) · [Working external pad names](routed-pad-map.csv) · [Current completion plan](../COMPLETION_PLAN.md). The standalone [HTML overview](overview.html) includes the routed-layout images and verification summary.
+
 ## Image Sensor Basics
 
 - Author: Yuhao Zhu, University of Rochester.
@@ -94,3 +102,7 @@ The notebook now starts with the verified 3×3 layout and scan results.
 Reproduce with `bash scripts/verify-array.sh`, then rebuild the notebook.
 The filled GDS and all reports are generated under `build/`; the checked
 GDS fingerprint is saved in `simulations/array-verification.json`.
+
+## Latest handoff
+
+[Pick up here](../PICK_UP_HERE.md) — current results, numerical blockers, evidence locations and ordered next tasks.

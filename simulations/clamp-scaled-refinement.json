@@ -1,0 +1,59 @@
+{
+  "runs": [
+    {
+      "case": "25ns",
+      "completed": true,
+      "error": null,
+      "seconds": 176.26285583002027,
+      "timeout_s": 300,
+      "comparison": {
+        "full_trace_max_by_column": [
+          8.184159246616533e-06,
+          8.194160454333437e-06,
+          4.753943161350804e-06,
+          4.5720927316058105e-08
+        ],
+        "post_startup_max_by_column": [
+          2.3343330912695137e-07,
+          3.2751991252411017e-07,
+          5.035429646582656e-07,
+          4.5720927316058105e-08
+        ],
+        "rail_refinement_pass": true,
+        "moscap_refinement_pass": true,
+        "scope": "150\u2013153 us including load edges; full-trace differences retained separately"
+      },
+      "deck_sha256": "8d2cba31e84c48b768d3e9053c23ae74501eb8565513ea36c33a604a86c450dc"
+    },
+    {
+      "case": "25ns-strict",
+      "completed": true,
+      "error": null,
+      "seconds": 212.84897625999292,
+      "timeout_s": 300,
+      "comparison": {
+        "full_trace_max_by_column": [
+          8.184159246616533e-06,
+          8.194160454333437e-06,
+          4.841028846680473e-06,
+          5.814355728534068e-08
+        ],
+        "post_startup_max_by_column": [
+          2.47915007633992e-07,
+          2.766887310379218e-07,
+          5.860373923916029e-07,
+          4.833416182245011e-08
+        ],
+        "rail_refinement_pass": true,
+        "moscap_refinement_pass": true,
+        "scope": "150\u2013153 us including load edges; full-trace differences retained separately"
+      },
+      "deck_sha256": "10480d1c50aca3e4fa7dead8699f2338f9133bd64d46c7c99323a89e24e20e95"
+    }
+  ],
+  "base_deck_sha256": "581dd2a23b2b21d6aa27d978dba5bcb1fbd3f37f3a0a52f6b32ece690a49ec73",
+  "base_wave_sha256": "ca2e2e1ad9c4d231b3ae32d5700e774d4144719a575246d221453769fe9775e3",
+  "accepted_full_chip_fix": false,
+  "refinement_screen_pass": true,
+  "stop_rule": "Exactly these two refinement runs. Any incomplete or failed comparison blocks promotion; no retries."
+}

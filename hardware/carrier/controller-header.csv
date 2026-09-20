@@ -1,0 +1,21 @@
+connector,pin,net,direction_from_controller
+J1,1,RST0,output via power-aware interface
+J1,2,GND,return
+J1,3,RST1,output via power-aware interface
+J1,4,GND,return
+J1,5,RST2,output via power-aware interface
+J1,6,GND,return
+J1,7,ROW0,output via power-aware interface
+J1,8,GND,return
+J1,9,ROW1,output via power-aware interface
+J1,10,GND,return
+J1,11,ROW2,output via power-aware interface
+J1,12,GND,return
+J1,13,SEL0,output via power-aware interface
+J1,14,GND,return
+J1,15,SEL1,output via power-aware interface
+J1,16,GND,return
+J1,17,SEL2,output via power-aware interface
+J1,18,GND,return
+J1,19,SENSOR_VIO_SENSE,input/reference only
+J1,20,GND,return

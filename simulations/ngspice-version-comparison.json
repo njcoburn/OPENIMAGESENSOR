@@ -1,0 +1,237 @@
+{
+  "updated": "2026-09-19 11:29 PDT",
+  "runs": [
+    {
+      "version": "46",
+      "case": "capacitor-control",
+      "completed": true,
+      "error": null,
+      "returncode": 0,
+      "last_time_s": 0.000153,
+      "rows": 8565,
+      "seconds": 0.3485438160132617,
+      "stats": {
+        "header": " time                   v(gate)                i(Vsrc)               ",
+        "final_values": [
+          3.299999999999999,
+          -4.336808689942018e-19
+        ],
+        "min_values": [
+          3.26935528315323e-05,
+          -1.796025001117585e-08
+        ],
+        "max_values": [
+          3.300000000000026,
+          2.645453300864631e-17
+        ]
+      },
+      "exe_sha256": "a1c0e4e89c464ccd68931de0d41af4d346747d18e940fa5ba7b77040597827ff",
+      "deck_sha256": "c3befe391b7e1341fad89214834d87b23a212541e18c1786dcfe524eefc9cf50",
+      "model_sha256": "f847702db64c6567d61e6a7266bb0d8f9e3bef326a0425b7bc9516546236e085"
+    },
+    {
+      "version": "47",
+      "case": "capacitor-control",
+      "completed": true,
+      "error": null,
+      "returncode": 0,
+      "last_time_s": 0.000153,
+      "rows": 8565,
+      "seconds": 0.24816113099223003,
+      "stats": {
+        "header": " time                   v(gate)                i(Vsrc)               ",
+        "final_values": [
+          3.299999999996699,
+          -3.30074509391487e-15
+        ],
+        "min_values": [
+          3.269355313510102e-05,
+          -1.796025331452303e-08
+        ],
+        "max_values": [
+          3.299999999996704,
+          -3.295974604355933e-15
+        ]
+      },
+      "exe_sha256": "ccd69e327d44b7a41e0019b6a0609c1a41e65ddebac38ddb207524145713d0a0",
+      "deck_sha256": "c3befe391b7e1341fad89214834d87b23a212541e18c1786dcfe524eefc9cf50",
+      "model_sha256": "f847702db64c6567d61e6a7266bb0d8f9e3bef326a0425b7bc9516546236e085"
+    },
+    {
+      "version": "46",
+      "case": "extracted-stock",
+      "completed": false,
+      "error": "doAnalyses: TRAN:  Timestep too small; time = 2.5e-10, timestep = 3.125e-20: trouble with node \"e.x354.ec_moscap#branch\"; tran simulation(s) aborted",
+      "returncode": 0,
+      "last_time_s": 2.5e-10,
+      "rows": 1,
+      "seconds": 20.024497841950506,
+      "stats": null,
+      "exe_sha256": "a1c0e4e89c464ccd68931de0d41af4d346747d18e940fa5ba7b77040597827ff",
+      "deck_sha256": "350c281990cf95aa3e5b1646d6cab148d83fb829ed15cd5747a3947c262ca70a",
+      "model_sha256": "30d57d5722fe669a80e89f16e0a0dc0f65a27f633df13671366d42e28204c263"
+    },
+    {
+      "version": "47",
+      "case": "extracted-stock",
+      "completed": false,
+      "error": "doAnalyses: TRAN:  Timestep too small; time = 3.125e-11, timestep = 3.125e-20: trouble with node \"v.x354.vcurrmeasc_moscap#branch\"; tran simulation(s) aborted",
+      "returncode": 0,
+      "last_time_s": 3.125e-11,
+      "rows": 1,
+      "seconds": 42.642966373008676,
+      "stats": null,
+      "exe_sha256": "ccd69e327d44b7a41e0019b6a0609c1a41e65ddebac38ddb207524145713d0a0",
+      "deck_sha256": "350c281990cf95aa3e5b1646d6cab148d83fb829ed15cd5747a3947c262ca70a",
+      "model_sha256": "30d57d5722fe669a80e89f16e0a0dc0f65a27f633df13671366d42e28204c263"
+    },
+    {
+      "version": "46",
+      "case": "stock-corner",
+      "completed": false,
+      "error": "doAnalyses: TRAN:  Timestep too small; time = 2.5e-10, timestep = 3.125e-20: trouble with node \"e.xcorner.x24.ec_moscap#branch\"; tran simulation(s) aborted",
+      "returncode": 0,
+      "last_time_s": 2.5e-10,
+      "rows": 1,
+      "seconds": 0.22310768201714382,
+      "stats": null,
+      "exe_sha256": "a1c0e4e89c464ccd68931de0d41af4d346747d18e940fa5ba7b77040597827ff",
+      "deck_sha256": "350c281990cf95aa3e5b1646d6cab148d83fb829ed15cd5747a3947c262ca70a",
+      "model_sha256": "8acb7cac338dd66638cd42d1049cb40f37df3c667e7897b14a612c9986c3d762"
+    },
+    {
+      "version": "47",
+      "case": "stock-corner",
+      "completed": false,
+      "error": "Error on line 1412 or its substitute:; Error: incomplete or empty netlist",
+      "returncode": 1,
+      "last_time_s": null,
+      "rows": 0,
+      "seconds": 0.11817722202977166,
+      "stats": null,
+      "exe_sha256": "ccd69e327d44b7a41e0019b6a0609c1a41e65ddebac38ddb207524145713d0a0",
+      "deck_sha256": "350c281990cf95aa3e5b1646d6cab148d83fb829ed15cd5747a3947c262ca70a",
+      "model_sha256": "8acb7cac338dd66638cd42d1049cb40f37df3c667e7897b14a612c9986c3d762"
+    }
+  ],
+  "control_audit": {
+    "cases": [
+      {
+        "version": "46",
+        "reference_refinement_A": 1.765763364273644e-14,
+        "max_native_current_error_A": 2.8740749007142015e-12,
+        "max_native_voltage_error_V": 2.8740749007197816e-09,
+        "integrated_charge_C": 1.437564936889124e-12,
+        "expected_charge_C": 1.4375648267270777e-12,
+        "charge_relative_error": 7.663101121630305e-08,
+        "pass_screen": true,
+        "wave_sha256": "0c17792c91fb3e007e2e50864edef2dc8626048f58bbec91fd369ca182b826ea"
+      },
+      {
+        "version": "47",
+        "reference_refinement_A": 1.765812695340143e-14,
+        "max_native_current_error_A": 2.874378469434503e-12,
+        "max_native_voltage_error_V": 2.8743784694405068e-09,
+        "integrated_charge_C": 1.4375652768504523e-12,
+        "expected_charge_C": 1.437564826725279e-12,
+        "charge_relative_error": 3.1311643479128745e-07,
+        "pass_screen": true,
+        "wave_sha256": "57e7a15d758d43a809731d2a510088578a1729ee562e277d8dee9e58d9b74545"
+      }
+    ],
+    "control_screen_pass": true,
+    "current_limit_A": 1e-10,
+    "voltage_limit_V": 1e-05,
+    "charge_relative_limit": 1e-05,
+    "scope": "One 25x10 um typical capacitor at 27 C; resolved ramp stop. Not general model or full-chip qualification."
+  },
+  "accepted_full_chip": false,
+  "upgrade_resolves_failure": false,
+  "multiplier_reproducer": {
+    "cases": [
+      {
+        "case": "default",
+        "version": "46",
+        "passed": true,
+        "errors": [],
+        "returncode": 0,
+        "deck_sha256": "9f92212a125ea5e50e51f6d3bc78dd264fd6bb3e52f7ffbd604da474498a0afa"
+      },
+      {
+        "case": "default",
+        "version": "47",
+        "passed": true,
+        "errors": [],
+        "returncode": 0,
+        "deck_sha256": "9f92212a125ea5e50e51f6d3bc78dd264fd6bb3e52f7ffbd604da474498a0afa"
+      },
+      {
+        "case": "m1",
+        "version": "46",
+        "passed": true,
+        "errors": [],
+        "returncode": 0,
+        "deck_sha256": "d5c50932fd7706ad5e49498c78b7b4a0c28471663bb09489897749554cf8d756"
+      },
+      {
+        "case": "m1",
+        "version": "47",
+        "passed": false,
+        "errors": [
+          "Error on line 5 or its substitute:",
+          "  unknown parameter (e9) ",
+          "    Simulation interrupted due to error!",
+          "Error: incomplete or empty netlist"
+        ],
+        "returncode": 1,
+        "deck_sha256": "d5c50932fd7706ad5e49498c78b7b4a0c28471663bb09489897749554cf8d756"
+      },
+      {
+        "case": "m8",
+        "version": "46",
+        "passed": true,
+        "errors": [],
+        "returncode": 0,
+        "deck_sha256": "ca9f3e669a742e399b7241cd8bff2fc0c1306eb58509c4a7cd3ccec3dbe10ad1"
+      },
+      {
+        "case": "m8",
+        "version": "47",
+        "passed": false,
+        "errors": [
+          "Error on line 5 or its substitute:",
+          "  unknown parameter (e9) ",
+          "    Simulation interrupted due to error!",
+          "Error: incomplete or empty netlist"
+        ],
+        "returncode": 1,
+        "deck_sha256": "ca9f3e669a742e399b7241cd8bff2fc0c1306eb58509c4a7cd3ccec3dbe10ad1"
+      },
+      {
+        "case": "m70",
+        "version": "46",
+        "passed": true,
+        "errors": [],
+        "returncode": 0,
+        "deck_sha256": "78c6e3e771bf9dfb7ef88498fb0aebb95daa80b89271af78aaa16c03baedc2c8"
+      },
+      {
+        "case": "m70",
+        "version": "47",
+        "passed": false,
+        "errors": [
+          "Error on line 5 or its substitute:",
+          "  unknown parameter (e9) ",
+          "    Simulation interrupted due to error!",
+          "Error: incomplete or empty netlist"
+        ],
+        "returncode": 1,
+        "deck_sha256": "78c6e3e771bf9dfb7ef88498fb0aebb95daa80b89271af78aaa16c03baedc2c8"
+      }
+    ],
+    "scope": "PDK-free operating-point parser reproducer only; no transient or chip qualification",
+    "source_location": "ngspice-47/src/frontend/inpcom.c capacitance formulation: tprintf appends e9 to mstr; eval_mvalue may already return scientific notation or expression."
+  },
+  "stock_comparison": null,
+  "extracted_comparison": null
+}

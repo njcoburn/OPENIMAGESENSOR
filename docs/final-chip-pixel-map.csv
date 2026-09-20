@@ -1,0 +1,10 @@
+row,column,photodiode,sense,ground,reset,source_follower,row_select,reset_gate,row_gate,column_node,area_um2
+0,0,D261,a_96842_117580#,GND,X3457,X1979,X1572,sensor_3x3_0.RST0,sensor_3x3_0.ROW0,sensor_3x3_0.COL0,400
+0,1,D119,a_112842_117580#,GND,X219,X2526,X1042,sensor_3x3_0.RST0,sensor_3x3_0.ROW0,sensor_3x3_0.COL1,400
+0,2,D77,a_128842_117580#,GND,X3425,X427,X2713,sensor_3x3_0.RST0,sensor_3x3_0.ROW0,sensor_3x3_0.COL2,400
+1,0,D40,a_96842_127580#,GND,X382,X2667,X2269,sensor_3x3_0.RST1,sensor_3x3_0.ROW1,sensor_3x3_0.COL0,400
+1,1,D160,a_112842_127580#,GND,X896,X3168,X1683,sensor_3x3_0.RST1,sensor_3x3_0.ROW1,sensor_3x3_0.COL1,400
+1,2,D129,a_128842_127580#,GND,X334,X1092,X3398,sensor_3x3_0.RST1,sensor_3x3_0.ROW1,sensor_3x3_0.COL2,400
+2,0,D97,a_96842_137580#,GND,X1035,X3334,X2943,sensor_3x3_0.RST2,sensor_3x3_0.ROW2,sensor_3x3_0.COL0,400
+2,1,D212,a_112842_137580#,GND,X1524,X96,X2379,sensor_3x3_0.RST2,sensor_3x3_0.ROW2,sensor_3x3_0.COL1,400
+2,2,D171,a_128842_137580#,GND,X987,X1737,X311,sensor_3x3_0.RST2,sensor_3x3_0.ROW2,sensor_3x3_0.COL2,400

@@ -1,0 +1,12 @@
+{
+  "recorded": "2026-09-19 02:57 PDT",
+  "gds_sha256": "4f7ceff617ac2b89c4ce4a46c1aa487b00f320544045d8d8c26ad000e5962993",
+  "reference_sha256": "f2214973862fa8921fd0b5967bee13e2fd50dfbbd29cee0fc70559e0fadcff3b",
+  "physical_connectivity": true,
+  "physical_checks": 4566,
+  "klayout_main_drc_items": 0,
+  "klayout_categories": {},
+  "magic_drc_count": 0,
+  "lvs_unique_match": true,
+  "scope": "Working custom-carrier layout; main KLayout selection all,-antenna,-density,-cup; no density/antenna/CUP, optical packaging, ESD or full-chip electrical sign-off; no regeneration of central dummy fill"
+}

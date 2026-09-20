@@ -1,0 +1,2660 @@
+{
+  "recorded": "2026-09-18 23:55 PDT",
+  "dc": {
+    "baseline": {
+      "cases": {
+        "fill10": {
+          "full": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 0.4584930089022102,
+                "nodes": 198,
+                "resistors": 295,
+                "KCL_residual_A": 1.7041923427996153e-14
+              },
+              "VSS": {
+                "R_ohm": 0.4584818122969207,
+                "nodes": 348,
+                "resistors": 534,
+                "KCL_residual_A": 1.1368683772161603e-13
+              },
+              "DVDD": {
+                "R_ohm": 0.4010000000000446,
+                "nodes": 500,
+                "resistors": 794,
+                "KCL_residual_A": 7.105427357601002e-14
+              },
+              "DVSS": {
+                "R_ohm": 0.4010000000000646,
+                "nodes": 400,
+                "resistors": 635,
+                "KCL_residual_A": 1.397770788003072e-13
+              }
+            },
+            "resistors": 2258,
+            "capacitors": 1099,
+            "negative_capacitors": 0,
+            "device_LVS": "unique_match",
+            "LVS_scope": "four separate macro ports",
+            "substrate_ground_connection": false,
+            "extraction_s": 3.8511281150276773,
+            "rc_sha256": "782663194a46409770c98602cbfa9b9c7dc2c840d298e7d24cb9aaf8b4956fc0"
+          },
+          "metal": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 0.4584930089022106,
+                "nodes": 74,
+                "resistors": 124,
+                "KCL_residual_A": 3.134298376394895e-14
+              },
+              "VSS": {
+                "R_ohm": 0.45848265854292325,
+                "nodes": 220,
+                "resistors": 358,
+                "KCL_residual_A": 1.6697754290362354e-13
+              },
+              "DVDD": {
+                "R_ohm": 0.4010000000000446,
+                "nodes": 500,
+                "resistors": 794,
+                "KCL_residual_A": 7.105427357601002e-14
+              },
+              "DVSS": {
+                "R_ohm": 0.4010000000000646,
+                "nodes": 400,
+                "resistors": 635,
+                "KCL_residual_A": 1.397770788003072e-13
+              }
+            },
+            "resistors": 1911,
+            "capacitors": 1163,
+            "negative_capacitors": 4,
+            "device_LVS": "not_applicable_conductor_only",
+            "LVS_scope": "four separate macro ports",
+            "substrate_ground_connection": false,
+            "extraction_s": 2.7885594469844364,
+            "rc_sha256": "5226e360a8202857a2abfa3fe552625eaa1355766e6fcc78ed49c65794421efa"
+          }
+        },
+        "corner": {
+          "full": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 1.4098083718329626,
+                "nodes": 8648,
+                "resistors": 14888,
+                "KCL_residual_A": 4.547473508864641e-13
+              },
+              "VSS": {
+                "R_ohm": 1.9092074409913495,
+                "nodes": 168854,
+                "resistors": 311802,
+                "KCL_residual_A": 1.0826894936144527e-12
+              },
+              "DVDD": {
+                "R_ohm": 1.8301770946603761,
+                "nodes": 137700,
+                "resistors": 242038,
+                "KCL_residual_A": 3.1228353236656403e-12
+              },
+              "DVSS": {
+                "R_ohm": 1.4160253666701224,
+                "nodes": 168854,
+                "resistors": 311802,
+                "KCL_residual_A": 3.188005415211137e-12
+              }
+            },
+            "resistors": 571564,
+            "capacitors": 147122,
+            "negative_capacitors": 5,
+            "device_LVS": "unique_match",
+            "LVS_scope": "tied analog supply domain",
+            "substrate_ground_connection": true,
+            "extraction_s": 143.3684061249951,
+            "rc_sha256": "0e06b307318a07a3d8101b5868267e4743f036d1b70d835fca89f9270233db11"
+          },
+          "metal": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 1.598888634487027,
+                "nodes": 7017,
+                "resistors": 12370,
+                "KCL_residual_A": 5.613287612504791e-13
+              },
+              "VSS": {
+                "R_ohm": 1.5466875119386592,
+                "nodes": 7275,
+                "resistors": 13034,
+                "KCL_residual_A": 9.094947017729282e-13
+              },
+              "DVDD": {
+                "R_ohm": 1.7311556848611112,
+                "nodes": 129729,
+                "resistors": 230049,
+                "KCL_residual_A": 1.7352230763378884e-12
+              },
+              "DVSS": {
+                "R_ohm": 1.7866454093914028,
+                "nodes": 109762,
+                "resistors": 196432,
+                "KCL_residual_A": 2.7284841053187847e-12
+              }
+            },
+            "resistors": 451885,
+            "capacitors": 250975,
+            "negative_capacitors": 136,
+            "device_LVS": "not_applicable_conductor_only",
+            "LVS_scope": "four separate macro ports",
+            "substrate_ground_connection": false,
+            "extraction_s": 101.55260466400068,
+            "rc_sha256": "e80a785505fbd54c24b97af02a3279eed307cecb85b2a97eac31cbaadf4c1891"
+          }
+        }
+      },
+      "scope": "Physical point-to-point terminal resistance in small macro coupons with added 0.4 um M5 measurement leads; resistance includes these leads; all other ports open for each resistor-only solve. This is not an equipotential-edge model, stitched ring, or validated capacitance/transient model."
+    },
+    "combined": {
+      "cases": {
+        "fill10": {
+          "full": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 0.45188843212411467,
+                "nodes": 199,
+                "resistors": 296,
+                "KCL_residual_A": 2.842170943040401e-14
+              },
+              "VSS": {
+                "R_ohm": 0.45188330362278833,
+                "nodes": 347,
+                "resistors": 534,
+                "KCL_residual_A": 3.674838211509268e-13
+              },
+              "DVDD": {
+                "R_ohm": 0.40000000000026914,
+                "nodes": 500,
+                "resistors": 794,
+                "KCL_residual_A": 9.094947017729282e-13
+              },
+              "DVSS": {
+                "R_ohm": 0.40000000000043995,
+                "nodes": 400,
+                "resistors": 635,
+                "KCL_residual_A": 1.0828005159169152e-12
+              }
+            },
+            "resistors": 2259,
+            "capacitors": 1099,
+            "negative_capacitors": 0,
+            "device_LVS": "unique_match",
+            "LVS_scope": "four separate macro ports",
+            "substrate_ground_connection": false,
+            "extraction_s": 2.9387107549700886,
+            "rc_sha256": "a7189c4470aa177746337274a4bb137826185e7e6acb24885e10d6637d38da2d"
+          },
+          "metal": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 0.45188843212412194,
+                "nodes": 74,
+                "resistors": 124,
+                "KCL_residual_A": 5.684341886080802e-14
+              },
+              "VSS": {
+                "R_ohm": 0.45188387681198755,
+                "nodes": 219,
+                "resistors": 358,
+                "KCL_residual_A": 3.754357935648045e-13
+              },
+              "DVDD": {
+                "R_ohm": 0.40000000000026914,
+                "nodes": 500,
+                "resistors": 794,
+                "KCL_residual_A": 9.094947017729282e-13
+              },
+              "DVSS": {
+                "R_ohm": 0.40000000000043995,
+                "nodes": 400,
+                "resistors": 635,
+                "KCL_residual_A": 1.0828005159169152e-12
+              }
+            },
+            "resistors": 1911,
+            "capacitors": 1163,
+            "negative_capacitors": 4,
+            "device_LVS": "not_applicable_conductor_only",
+            "LVS_scope": "four separate macro ports",
+            "substrate_ground_connection": false,
+            "extraction_s": 2.635089560993947,
+            "rc_sha256": "ba94832439b2cfb02e92a623ce2cb378e9a33b76b5d3a97c8b42f47a27748bc5"
+          }
+        },
+        "corner": {
+          "full": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 1.367681613874071,
+                "nodes": 8640,
+                "resistors": 14868,
+                "KCL_residual_A": 3.183231456205249e-12
+              },
+              "VSS": {
+                "R_ohm": 1.86990260943253,
+                "nodes": 168838,
+                "resistors": 311790,
+                "KCL_residual_A": 1.3313616875620937e-10
+              },
+              "DVDD": {
+                "R_ohm": 1.798691675905369,
+                "nodes": 137693,
+                "resistors": 242035,
+                "KCL_residual_A": 1.390958459523972e-10
+              },
+              "DVSS": {
+                "R_ohm": 1.369145187760944,
+                "nodes": 168838,
+                "resistors": 311790,
+                "KCL_residual_A": 2.354084141162338e-10
+              }
+            },
+            "resistors": 571529,
+            "capacitors": 147113,
+            "negative_capacitors": 5,
+            "device_LVS": "unique_match",
+            "LVS_scope": "tied analog supply domain",
+            "substrate_ground_connection": true,
+            "extraction_s": 132.70046661701053,
+            "rc_sha256": "5a689e572a206b42aa36f9de1ef6ed025f85d2d7d963586c41aa24c451c90cce"
+          },
+          "metal": {
+            "rails": {
+              "VDD": {
+                "R_ohm": 1.5548859449523222,
+                "nodes": 7017,
+                "resistors": 12362,
+                "KCL_residual_A": 7.1596062412027095e-12
+              },
+              "VSS": {
+                "R_ohm": 1.509986437401813,
+                "nodes": 7287,
+                "resistors": 13051,
+                "KCL_residual_A": 5.820766091346741e-11
+              },
+              "DVDD": {
+                "R_ohm": 1.7016876138869956,
+                "nodes": 129717,
+                "resistors": 230027,
+                "KCL_residual_A": 1.5097317840329083e-10
+              },
+              "DVSS": {
+                "R_ohm": 1.7392098672232397,
+                "nodes": 109768,
+                "resistors": 196441,
+                "KCL_residual_A": 1.1641532182693481e-10
+              }
+            },
+            "resistors": 451881,
+            "capacitors": 250970,
+            "negative_capacitors": 132,
+            "device_LVS": "not_applicable_conductor_only",
+            "LVS_scope": "four separate macro ports",
+            "substrate_ground_connection": false,
+            "extraction_s": 56.99557296099374,
+            "rc_sha256": "2be3dfb85de1fd00908a9b58db077933d6e2e30ac5ad50c2bba84b945c178663"
+          }
+        }
+      },
+      "scope": "Physical point-to-point terminal resistance in small macro coupons with added 0.4 um M5 measurement leads; resistance includes these leads; all other ports open for each resistor-only solve. This is not an equipotential-edge model, stitched ring, or validated capacitance/transient model."
+    }
+  },
+  "capacitance": {
+    "baseline": {
+      "fill10": {
+        "full": {
+          "raw_rnode_witnesses": [],
+          "extraction_diagnostics": [],
+          "negative_capacitors": [],
+          "negative_sum_fF": 0,
+          "capacitors": 1099,
+          "negative_diagonal_count": 0,
+          "energy_witnesses": [],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"VSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "nonnegative_capacitor_network"
+        },
+        "metal": {
+          "raw_rnode_witnesses": [
+            "rnode \"VSS_B.n45\" 0 -22907.5 244 49343 0",
+            "rnode \"VSS_B.n66\" 0 -22906.8 1880 49343 0",
+            "rnode \"VSS_B.n97\" 0 -2745.4 1756 64858 0",
+            "rnode \"VSS_B.n133\" 0 -2746.06 120 64858 0"
+          ],
+          "extraction_diagnostics": [],
+          "negative_capacitors": [
+            {
+              "name": "C59",
+              "a": "VSS_B.n45",
+              "b": "w_n440_13108#",
+              "fF": -22.9075
+            },
+            {
+              "name": "C71",
+              "a": "VSS_B.n66",
+              "b": "w_n440_13108#",
+              "fF": -22.9068
+            },
+            {
+              "name": "C93",
+              "a": "VSS_B.n97",
+              "b": "w_n440_13108#",
+              "fF": -2.7454
+            },
+            {
+              "name": "C120",
+              "a": "VSS_B.n133",
+              "b": "w_n440_13108#",
+              "fF": -2.74606
+            }
+          ],
+          "negative_sum_fF": -51.30576,
+          "capacitors": 1163,
+          "negative_diagonal_count": 4,
+          "energy_witnesses": [
+            {
+              "node": "VSS_B.n45",
+              "C_diagonal_fF": -22.9075,
+              "energy_J_at_1V": -1.145375e-14
+            },
+            {
+              "node": "VSS_B.n66",
+              "C_diagonal_fF": -22.9068,
+              "energy_J_at_1V": -1.1453400000000001e-14
+            },
+            {
+              "node": "VSS_B.n133",
+              "C_diagonal_fF": -2.74606,
+              "energy_J_at_1V": -1.3730300000000001e-15
+            },
+            {
+              "node": "VSS_B.n97",
+              "C_diagonal_fF": -2.7454,
+              "energy_J_at_1V": -1.3727000000000002e-15
+            }
+          ],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"VSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "reject_negative_energy"
+        }
+      },
+      "corner": {
+        "full": {
+          "raw_rnode_witnesses": [
+            "rnode \"DVDD_B.n86194\" 0 -1.17245 49172 37819 0",
+            "rnode \"DVDD_B.n101950\" 0 -1.44307 46648 28928 0",
+            "rnode \"VDD_B.n4360\" 0 -6.11951 57980 56127 0",
+            "rnode \"VDD_B.n5301\" 0 -3.5022 56000 58107 0",
+            "rnode \"VDD_B.n7160\" 0 -9.48573 57452 56567 0"
+          ],
+          "extraction_diagnostics": [
+            "Input off lambda grid by 4/5; snapped to grid.",
+            "Missing rptr at (59232 62219).",
+            "Missing rptr at (37248 36555)."
+          ],
+          "negative_capacitors": [
+            {
+              "name": "C87584",
+              "a": "DVDD_B.n86194",
+              "b": "DVSS_B",
+              "fF": -0.00117
+            },
+            {
+              "name": "C103296",
+              "a": "DVDD_B.n101950",
+              "b": "DVSS_B",
+              "fF": -0.00144
+            },
+            {
+              "name": "C143002",
+              "a": "VDD_B.n4360",
+              "b": "DVSS_B",
+              "fF": -0.00612
+            },
+            {
+              "name": "C143942",
+              "a": "VDD_B.n5301",
+              "b": "DVSS_B",
+              "fF": -0.0035
+            },
+            {
+              "name": "C145800",
+              "a": "VDD_B.n7160",
+              "b": "DVSS_B",
+              "fF": -0.00949
+            }
+          ],
+          "negative_sum_fF": -0.02172,
+          "capacitors": 147122,
+          "negative_diagonal_count": 5,
+          "energy_witnesses": [
+            {
+              "node": "VDD_B.n7160",
+              "C_diagonal_fF": -0.00949,
+              "energy_J_at_1V": -4.7450000000000006e-18
+            },
+            {
+              "node": "VDD_B.n4360",
+              "C_diagonal_fF": -0.00612,
+              "energy_J_at_1V": -3.06e-18
+            },
+            {
+              "node": "VDD_B.n5301",
+              "C_diagonal_fF": -0.0035,
+              "energy_J_at_1V": -1.7500000000000003e-18
+            },
+            {
+              "node": "DVDD_B.n101950",
+              "C_diagonal_fF": -0.00144,
+              "energy_J_at_1V": -7.200000000000001e-19
+            },
+            {
+              "node": "DVDD_B.n86194",
+              "C_diagonal_fF": -0.00117,
+              "energy_J_at_1V": -5.850000000000001e-19
+            }
+          ],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"DVSS_B\" \"VSS_B\"",
+            "equiv \"DVSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "reject_negative_energy"
+        },
+        "metal": {
+          "raw_rnode_witnesses": [
+            "rnode \"VSS_B.n2901\" 0 -1808.69 66087 48903 0",
+            "rnode \"VSS_B.n2902\" 0 -7009.75 65963 48903 0",
+            "rnode \"VSS_B.n3161\" 0 -4045.38 60339 48903 0",
+            "rnode \"VSS_B.n3176\" 0 -12910 58603 48903 0",
+            "rnode \"VSS_B.n3412\" 0 -7358.11 63456 48903 0",
+            "rnode \"VSS_B.n3421\" 0 -1587.06 62464 48903 0",
+            "rnode \"VSS_B.n3456\" 0 -69.2914 63230 39320 0",
+            "rnode \"VSS_B.n3460\" 0 -56.8011 62690 39320 0",
+            "rnode \"VSS_B.n3461\" 0 -9.08174 63446 39428 0",
+            "rnode \"VSS_B.n3462\" 0 -32.6497 63446 39428 0",
+            "rnode \"VSS_B.n3738\" 0 -2.09755 58888 52955 0",
+            "rnode \"VSS_B.n4415\" 0 -1.90839 57132 54831 0",
+            "rnode \"VSS_B.n4878\" 0 -13.2301 55060 56783 0",
+            "rnode \"VSS_B.n5548\" 0 -1.73506 52024 59819 0",
+            "rnode \"VSS_B.n6421\" 0 -16.5775 50678 61175 0",
+            "rnode \"VSS_B.n6589\" 0 -2.13834 52619 59187 0",
+            "rnode \"VSS_B.n6874\" 0 -4.05688 59008 52851 0",
+            "rnode \"VSS_B.n7265\" 0 -16.295 60883 50947 0",
+            "rnode \"DVDD_B.n7097\" 0 -14.3141 42720 60632 0",
+            "rnode \"DVDD_B.n7098\" 0 -13.5399 42720 60740 0",
+            "rnode \"DVDD_B.n7102\" 0 -13.5399 42720 61172 0",
+            "rnode \"DVDD_B.n7103\" 0 -6.46723 42720 61280 0",
+            "rnode \"DVDD_B.n7106\" 0 -13.5399 42720 61604 0",
+            "rnode \"DVDD_B.n7107\" 0 -2.69516 42720 61712 0",
+            "rnode \"DVDD_B.n7110\" 0 -11.1823 42720 62036 0",
+            "rnode \"DVDD_B.n7111\" 0 -13.5399 42720 62144 0",
+            "rnode \"DVDD_B.n7122\" 0 -9.53203 42720 63981 0",
+            "rnode \"DVDD_B.n7123\" 0 -13.5399 42720 64089 0",
+            "rnode \"DVDD_B.n7127\" 0 -13.5399 42720 64521 0",
+            "rnode \"DVDD_B.n7128\" 0 -11.2493 42720 64629 0",
+            "rnode \"DVDD_B.n7132\" 0 -13.5399 42720 66984 0",
+            "rnode \"DVDD_B.n7136\" 0 -13.0683 42720 67524 0",
+            "rnode \"DVDD_B.n7138\" 0 -15.1204 42720 67740 0",
+            "rnode \"DVDD_B.n7141\" 0 -7.71295 42612 68496 0",
+            "rnode \"DVDD_B.n7142\" 0 -13.5399 42612 68496 0",
+            "rnode \"DVDD_B.n7144\" 0 -5.82691 42612 68496 0",
+            "rnode \"DVDD_B.n20422\" 0 -4.85403 47822 52759 0",
+            "rnode \"DVDD_B.n21444\" 0 -1.36479 55617 44988 0",
+            "rnode \"DVDD_B.n22980\" 0 -1.14902 54618 45922 0",
+            "rnode \"DVDD_B.n23002\" 0 -1.34809 54354 46192 0",
+            "rnode \"DVDD_B.n23007\" 0 -1.10178 54421 46186 0",
+            "rnode \"DVDD_B.n23010\" 0 -5.03631 54316 46192 0",
+            "rnode \"DVDD_B.n23192\" 0 -1.80226 53097 47506 0",
+            "rnode \"DVDD_B.n23199\" 0 -13.7619 52965 47506 0",
+            "rnode \"DVDD_B.n23407\" 0 -2.6536 51680 48798 0",
+            "rnode \"DVDD_B.n23637\" 0 -4.69537 49436 51042 0",
+            "rnode \"DVDD_B.n23687\" 0 -4.02752 49591 50882 0",
+            "rnode \"DVDD_B.n23699\" 0 -3.20146 49172 51306 0",
+            "rnode \"DVDD_B.n24300\" 0 -2.14303 45592 54974 0",
+            "rnode \"DVDD_B.n24580\" 0 -1.21961 43683 56893 0",
+            "rnode \"DVDD_B.n25643\" 0 -6.46699 43930 56559 0",
+            "rnode \"DVDD_B.n26411\" 0 -3.69844 54316 46192 0",
+            "rnode \"DVDD_B.n68553\" 0 -1.55291 46982 49006 0",
+            "rnode \"DVDD_B.n110765\" 0 -5.56783 44844 30651 0",
+            "rnode \"DVDD_B.n111813\" 0 -6.77379 38738 36811 0",
+            "rnode \"DVDD_B.n111917\" 0 -6.26123 38078 37451 0",
+            "rnode \"DVDD_B.n113776\" 0 -1.36697 28432 47143 0",
+            "rnode \"DVDD_B.n115508\" 0 -6.26123 38078 37451 0",
+            "rnode \"DVDD_B.n116118\" 0 -1.23468 45425 30134 0",
+            "rnode \"DVDD_B.n118392\" 0 -1.15719 54731 61707 0",
+            "rnode \"DVDD_B.n118466\" 0 -1.06689 55196 61261 0",
+            "rnode \"DVDD_B.n118485\" 0 -1.45684 55325 61179 0",
+            "rnode \"DVDD_B.n121505\" 0 -6.20157 61282 57489 0",
+            "rnode \"DVDD_B.n123396\" 0 -3.37546 58870 59736 0",
+            "rnode \"DVDD_B.n123408\" 0 -4.02469 59210 59469 0",
+            "rnode \"DVDD_B.n123491\" 0 -1.01929 59428 59340 0",
+            "rnode \"DVDD_B.n123553\" 0 -4.3793 60292 58413 0",
+            "rnode \"DVSS_B.n6462\" 0 -3184.27 49535 58592 0",
+            "rnode \"DVSS_B.n6496\" 0 -997.802 49535 60328 0",
+            "rnode \"DVSS_B.n6502\" 0 -17.9036 39440 62679 0",
+            "rnode \"DVSS_B.n7027\" 0 -391.451 49535 62453 0",
+            "rnode \"DVSS_B.n7051\" 0 -1814.89 49535 63445 0",
+            "rnode \"DVSS_B.n7106\" 0 -1728.97 49535 65952 0",
+            "rnode \"DVSS_B.n7107\" 0 -446.117 49535 66076 0",
+            "rnode \"DVSS_B.n9722\" 0 -1.34394 47374 50895 0",
+            "rnode \"DVSS_B.n10564\" 0 -8.75235 52588 45618 0",
+            "rnode \"DVSS_B.n10836\" 0 -8.75235 54568 43638 0",
+            "rnode \"DVSS_B.n11576\" 0 -1.91037 54700 43506 0",
+            "rnode \"DVSS_B.n11808\" 0 -1.91037 52720 45486 0",
+            "rnode \"DVSS_B.n12104\" 0 -1.35101 51202 47132 0",
+            "rnode \"DVSS_B.n12652\" 0 -4.27506 48133 50134 0",
+            "rnode \"DVSS_B.n12832\" 0 -1.02014 47143 51190 0",
+            "rnode \"DVSS_B.n13277\" 0 -1.87892 44404 53802 0",
+            "rnode \"DVSS_B.n13670\" 0 -3.15649 42193 56074 0",
+            "rnode \"DVSS_B.n14247\" 0 -3.15587 42193 56074 0",
+            "rnode \"DVSS_B.n14309\" 0 -1.051 42939 55352 0",
+            "rnode \"DVSS_B.n14667\" 0 -1.96927 48600 49606 0",
+            "rnode \"DVSS_B.n14738\" 0 -1.051 48879 49412 0",
+            "rnode \"DVSS_B.n14879\" 0 -2.8852 51390 46848 0",
+            "rnode \"DVSS_B.n14977\" 0 -1.44582 53641 44590 0",
+            "rnode \"DVSS_B.n20074\" 0 -855.124 70158 62498 0",
+            "rnode \"DVSS_B.n20499\" 0 -1.80884 62564 65135 0",
+            "rnode \"DVSS_B.n28375\" 0 -4.34476 42412 35376 0",
+            "rnode \"DVSS_B.n33356\" 0 -5.13207 33718 44116 0",
+            "rnode \"DVSS_B.n33676\" 0 -3.82583 31351 46568 0",
+            "rnode \"DVSS_B.n35055\" 0 -2.74919 28510 49408 0",
+            "rnode \"DVSS_B.n35279\" 0 -1.1327 31323 46568 0",
+            "rnode \"DVSS_B.n35605\" 0 -6.34775 32666 45172 0",
+            "rnode \"DVSS_B.n36384\" 0 -1008.55 28106 49021 0",
+            "rnode \"DVSS_B.n36390\" 0 -1464.3 27194 49021 0",
+            "rnode \"DVSS_B.n36391\" 0 -1571.43 23503 49021 0",
+            "rnode \"DVSS_B.n36454\" 0 -777.536 18715 49021 0",
+            "rnode \"DVSS_B.n36456\" 0 -1375.56 18563 49021 0",
+            "rnode \"DVSS_B.n46423\" 0 -874.358 53727 22834 0",
+            "rnode \"DVSS_B.n46424\" 0 -874.358 51291 22834 0",
+            "rnode \"DVSS_B.n56835\" 0 -830.207 38519 34482 0",
+            "rnode \"DVSS_B.n56856\" 0 -1071.38 38515 35186 0",
+            "rnode \"DVSS_B.n83209\" 0 -1.08261 34192 34653 0",
+            "rnode \"DVSS_B.n84524\" 0 -2.32328 30182 38613 0",
+            "rnode \"VDD_B.n212\" 0 -16.0633 61676 52431 0",
+            "rnode \"VDD_B.n1148\" 0 -145.859 62047 42600 0",
+            "rnode \"VDD_B.n1152\" 0 -36.8238 61615 42600 0",
+            "rnode \"VDD_B.n1153\" 0 -41.5537 61507 42600 0",
+            "rnode \"VDD_B.n1156\" 0 -57.6007 61075 42600 0",
+            "rnode \"VDD_B.n1158\" 0 -57.6007 60643 42600 0",
+            "rnode \"VDD_B.n1162\" 0 -60.8943 62263 42708 0",
+            "rnode \"VDD_B.n1166\" 0 -27.5126 62263 42708 0",
+            "rnode \"VDD_B.n1167\" 0 -36.8238 62263 42708 0",
+            "rnode \"VDD_B.n3041\" 0 -133.123 67751 42600 0",
+            "rnode \"VDD_B.n3044\" 0 -57.6007 67319 42600 0",
+            "rnode \"VDD_B.n3046\" 0 -57.6007 66887 42600 0",
+            "rnode \"VDD_B.n3048\" 0 -32.8121 68507 42708 0",
+            "rnode \"VDD_B.n3050\" 0 -55.5948 68507 42708 0",
+            "rnode \"VDD_B.n3310\" 0 -47.8561 64424 42600 0",
+            "rnode \"VDD_B.n3311\" 0 -19.4891 64424 42600 0",
+            "rnode \"VDD_B.n3314\" 0 -57.6007 63992 42600 0",
+            "rnode \"VDD_B.n3317\" 0 -40.5508 64640 42708 0",
+            "rnode \"VDD_B.n3321\" 0 -47.8561 64640 42708 0",
+            "rnode \"VDD_B.n3966\" 0 -15.4536 57188 56919 0",
+            "rnode \"VDD_B.n4323\" 0 -14.1814 58640 55467 0",
+            "rnode \"VDD_B.n4682\" 0 -13.3838 56264 57843 0",
+            "rnode \"VDD_B.n4693\" 0 -58.8834 56000 58107 0",
+            "rnode \"VDD_B.n5222\" 0 -58.8834 54020 60087 0",
+            "rnode \"VDD_B.n5242\" 0 -13.3838 54284 59823 0",
+            "rnode \"VDD_B.n6435\" 0 -44.8831 54107 60095 0",
+            "rnode \"VDD_B.n6606\" 0 -6.56099 58464 55627 0"
+          ],
+          "extraction_diagnostics": [],
+          "negative_capacitors": [
+            {
+              "name": "C2978",
+              "a": "VSS_B.n2901",
+              "b": "w_13108_13108#",
+              "fF": -1.80869
+            },
+            {
+              "name": "C2979",
+              "a": "VSS_B.n2902",
+              "b": "w_13108_13108#",
+              "fF": -7.00975
+            },
+            {
+              "name": "C3181",
+              "a": "VSS_B.n3161",
+              "b": "w_13108_13108#",
+              "fF": -4.04538
+            },
+            {
+              "name": "C3196",
+              "a": "VSS_B.n3176",
+              "b": "w_13108_13108#",
+              "fF": -12.91
+            },
+            {
+              "name": "C3373",
+              "a": "VSS_B.n3412",
+              "b": "w_13108_13108#",
+              "fF": -7.35811
+            },
+            {
+              "name": "C3382",
+              "a": "VSS_B.n3421",
+              "b": "w_13108_13108#",
+              "fF": -1.58706
+            },
+            {
+              "name": "C3405",
+              "a": "VSS_B.n3456",
+              "b": "w_13108_13108#",
+              "fF": -0.06929
+            },
+            {
+              "name": "C3409",
+              "a": "VSS_B.n3460",
+              "b": "w_13108_13108#",
+              "fF": -0.0568
+            },
+            {
+              "name": "C3410",
+              "a": "VSS_B.n3461",
+              "b": "w_13108_13108#",
+              "fF": -0.00908
+            },
+            {
+              "name": "C3411",
+              "a": "VSS_B.n3462",
+              "b": "w_13108_13108#",
+              "fF": -0.03265
+            },
+            {
+              "name": "C3662",
+              "a": "VSS_B.n3738",
+              "b": "w_13108_13108#",
+              "fF": -0.0021
+            },
+            {
+              "name": "C4319",
+              "a": "VSS_B.n4415",
+              "b": "w_13108_13108#",
+              "fF": -0.00191
+            },
+            {
+              "name": "C4781",
+              "a": "VSS_B.n4878",
+              "b": "w_13108_13108#",
+              "fF": -0.01323
+            },
+            {
+              "name": "C5451",
+              "a": "VSS_B.n5548",
+              "b": "w_13108_13108#",
+              "fF": -0.00174
+            },
+            {
+              "name": "C6315",
+              "a": "VSS_B.n6421",
+              "b": "w_13108_13108#",
+              "fF": -0.01658
+            },
+            {
+              "name": "C6483",
+              "a": "VSS_B.n6589",
+              "b": "w_13108_13108#",
+              "fF": -0.00214
+            },
+            {
+              "name": "C6766",
+              "a": "VSS_B.n6874",
+              "b": "w_13108_13108#",
+              "fF": -0.00406
+            },
+            {
+              "name": "C7157",
+              "a": "VSS_B.n7265",
+              "b": "w_13108_13108#",
+              "fF": -0.01629
+            },
+            {
+              "name": "C14005",
+              "a": "DVDD_B.n7097",
+              "b": "w_13108_13108#",
+              "fF": -0.01431
+            },
+            {
+              "name": "C14006",
+              "a": "DVDD_B.n7098",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14010",
+              "a": "DVDD_B.n7102",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14011",
+              "a": "DVDD_B.n7103",
+              "b": "w_13108_13108#",
+              "fF": -0.00647
+            },
+            {
+              "name": "C14014",
+              "a": "DVDD_B.n7106",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14015",
+              "a": "DVDD_B.n7107",
+              "b": "w_13108_13108#",
+              "fF": -0.0027
+            },
+            {
+              "name": "C14018",
+              "a": "DVDD_B.n7110",
+              "b": "w_13108_13108#",
+              "fF": -0.01118
+            },
+            {
+              "name": "C14019",
+              "a": "DVDD_B.n7111",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14030",
+              "a": "DVDD_B.n7122",
+              "b": "w_13108_13108#",
+              "fF": -0.00953
+            },
+            {
+              "name": "C14031",
+              "a": "DVDD_B.n7123",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14035",
+              "a": "DVDD_B.n7127",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14036",
+              "a": "DVDD_B.n7128",
+              "b": "w_13108_13108#",
+              "fF": -0.01125
+            },
+            {
+              "name": "C14040",
+              "a": "DVDD_B.n7132",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14044",
+              "a": "DVDD_B.n7136",
+              "b": "w_13108_13108#",
+              "fF": -0.01307
+            },
+            {
+              "name": "C14046",
+              "a": "DVDD_B.n7138",
+              "b": "w_13108_13108#",
+              "fF": -0.01512
+            },
+            {
+              "name": "C14048",
+              "a": "DVDD_B.n7141",
+              "b": "w_13108_13108#",
+              "fF": -0.00771
+            },
+            {
+              "name": "C14049",
+              "a": "DVDD_B.n7142",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14051",
+              "a": "DVDD_B.n7144",
+              "b": "w_13108_13108#",
+              "fF": -0.00583
+            },
+            {
+              "name": "C26947",
+              "a": "DVDD_B.n20422",
+              "b": "w_13108_13108#",
+              "fF": -0.00485
+            },
+            {
+              "name": "C27958",
+              "a": "DVDD_B.n21444",
+              "b": "w_13108_13108#",
+              "fF": -0.00136
+            },
+            {
+              "name": "C29481",
+              "a": "DVDD_B.n22980",
+              "b": "w_13108_13108#",
+              "fF": -0.00115
+            },
+            {
+              "name": "C29503",
+              "a": "DVDD_B.n23002",
+              "b": "w_13108_13108#",
+              "fF": -0.00135
+            },
+            {
+              "name": "C29508",
+              "a": "DVDD_B.n23007",
+              "b": "w_13108_13108#",
+              "fF": -0.0011
+            },
+            {
+              "name": "C29511",
+              "a": "DVDD_B.n23010",
+              "b": "w_13108_13108#",
+              "fF": -0.00504
+            },
+            {
+              "name": "C29693",
+              "a": "DVDD_B.n23192",
+              "b": "w_13108_13108#",
+              "fF": -0.0018
+            },
+            {
+              "name": "C29700",
+              "a": "DVDD_B.n23199",
+              "b": "w_13108_13108#",
+              "fF": -0.01376
+            },
+            {
+              "name": "C29903",
+              "a": "DVDD_B.n23407",
+              "b": "w_13108_13108#",
+              "fF": -0.00265
+            },
+            {
+              "name": "C30132",
+              "a": "DVDD_B.n23637",
+              "b": "w_13108_13108#",
+              "fF": -0.0047
+            },
+            {
+              "name": "C30182",
+              "a": "DVDD_B.n23687",
+              "b": "w_13108_13108#",
+              "fF": -0.00403
+            },
+            {
+              "name": "C30194",
+              "a": "DVDD_B.n23699",
+              "b": "w_13108_13108#",
+              "fF": -0.0032
+            },
+            {
+              "name": "C30790",
+              "a": "DVDD_B.n24300",
+              "b": "w_13108_13108#",
+              "fF": -0.00214
+            },
+            {
+              "name": "C31068",
+              "a": "DVDD_B.n24580",
+              "b": "w_13108_13108#",
+              "fF": -0.00122
+            },
+            {
+              "name": "C32131",
+              "a": "DVDD_B.n25643",
+              "b": "w_13108_13108#",
+              "fF": -0.00647
+            },
+            {
+              "name": "C32894",
+              "a": "DVDD_B.n26411",
+              "b": "w_13108_13108#",
+              "fF": -0.0037
+            },
+            {
+              "name": "C74919",
+              "a": "DVDD_B.n68553",
+              "b": "w_13108_13108#",
+              "fF": -0.00155
+            },
+            {
+              "name": "C117030",
+              "a": "DVDD_B.n110765",
+              "b": "w_13108_13108#",
+              "fF": -0.00557
+            },
+            {
+              "name": "C118064",
+              "a": "DVDD_B.n111813",
+              "b": "w_13108_13108#",
+              "fF": -0.00677
+            },
+            {
+              "name": "C118167",
+              "a": "DVDD_B.n111917",
+              "b": "w_13108_13108#",
+              "fF": -0.00626
+            },
+            {
+              "name": "C119998",
+              "a": "DVDD_B.n113776",
+              "b": "w_13108_13108#",
+              "fF": -0.00137
+            },
+            {
+              "name": "C121719",
+              "a": "DVDD_B.n115508",
+              "b": "w_13108_13108#",
+              "fF": -0.00626
+            },
+            {
+              "name": "C122325",
+              "a": "DVDD_B.n116118",
+              "b": "w_13108_13108#",
+              "fF": -0.00123
+            },
+            {
+              "name": "C124579",
+              "a": "DVDD_B.n118392",
+              "b": "w_13108_13108#",
+              "fF": -0.00116
+            },
+            {
+              "name": "C124653",
+              "a": "DVDD_B.n118466",
+              "b": "w_13108_13108#",
+              "fF": -0.00107
+            },
+            {
+              "name": "C124672",
+              "a": "DVDD_B.n118485",
+              "b": "w_13108_13108#",
+              "fF": -0.00146
+            },
+            {
+              "name": "C127683",
+              "a": "DVDD_B.n121505",
+              "b": "w_13108_13108#",
+              "fF": -0.0062
+            },
+            {
+              "name": "C129556",
+              "a": "DVDD_B.n123396",
+              "b": "w_13108_13108#",
+              "fF": -0.00338
+            },
+            {
+              "name": "C129568",
+              "a": "DVDD_B.n123408",
+              "b": "w_13108_13108#",
+              "fF": -0.00402
+            },
+            {
+              "name": "C129651",
+              "a": "DVDD_B.n123491",
+              "b": "w_13108_13108#",
+              "fF": -0.00102
+            },
+            {
+              "name": "C129713",
+              "a": "DVDD_B.n123553",
+              "b": "w_13108_13108#",
+              "fF": -0.00438
+            },
+            {
+              "name": "C142094",
+              "a": "DVSS_B.n6462",
+              "b": "w_13108_13108#",
+              "fF": -3.18427
+            },
+            {
+              "name": "C142114",
+              "a": "DVSS_B.n6496",
+              "b": "w_13108_13108#",
+              "fF": -0.9978
+            },
+            {
+              "name": "C142120",
+              "a": "DVSS_B.n6502",
+              "b": "w_13108_13108#",
+              "fF": -0.0179
+            },
+            {
+              "name": "C142524",
+              "a": "DVSS_B.n7027",
+              "b": "w_13108_13108#",
+              "fF": -0.39145
+            },
+            {
+              "name": "C142538",
+              "a": "DVSS_B.n7051",
+              "b": "w_13108_13108#",
+              "fF": -1.81489
+            },
+            {
+              "name": "C142587",
+              "a": "DVSS_B.n7106",
+              "b": "w_13108_13108#",
+              "fF": -1.72897
+            },
+            {
+              "name": "C142588",
+              "a": "DVSS_B.n7107",
+              "b": "w_13108_13108#",
+              "fF": -0.44612
+            },
+            {
+              "name": "C145015",
+              "a": "DVSS_B.n9722",
+              "b": "w_13108_13108#",
+              "fF": -0.00134
+            },
+            {
+              "name": "C145851",
+              "a": "DVSS_B.n10564",
+              "b": "w_13108_13108#",
+              "fF": -0.00875
+            },
+            {
+              "name": "C146121",
+              "a": "DVSS_B.n10836",
+              "b": "w_13108_13108#",
+              "fF": -0.00875
+            },
+            {
+              "name": "C146859",
+              "a": "DVSS_B.n11576",
+              "b": "w_13108_13108#",
+              "fF": -0.00191
+            },
+            {
+              "name": "C147081",
+              "a": "DVSS_B.n11808",
+              "b": "w_13108_13108#",
+              "fF": -0.00191
+            },
+            {
+              "name": "C147375",
+              "a": "DVSS_B.n12104",
+              "b": "w_13108_13108#",
+              "fF": -0.00135
+            },
+            {
+              "name": "C147919",
+              "a": "DVSS_B.n12652",
+              "b": "w_13108_13108#",
+              "fF": -0.00428
+            },
+            {
+              "name": "C148096",
+              "a": "DVSS_B.n12832",
+              "b": "w_13108_13108#",
+              "fF": -0.00102
+            },
+            {
+              "name": "C148536",
+              "a": "DVSS_B.n13277",
+              "b": "w_13108_13108#",
+              "fF": -0.00188
+            },
+            {
+              "name": "C148921",
+              "a": "DVSS_B.n13670",
+              "b": "w_13108_13108#",
+              "fF": -0.00316
+            },
+            {
+              "name": "C149495",
+              "a": "DVSS_B.n14247",
+              "b": "w_13108_13108#",
+              "fF": -0.00316
+            },
+            {
+              "name": "C149557",
+              "a": "DVSS_B.n14309",
+              "b": "w_13108_13108#",
+              "fF": -0.00105
+            },
+            {
+              "name": "C149913",
+              "a": "DVSS_B.n14667",
+              "b": "w_13108_13108#",
+              "fF": -0.00197
+            },
+            {
+              "name": "C149984",
+              "a": "DVSS_B.n14738",
+              "b": "w_13108_13108#",
+              "fF": -0.00105
+            },
+            {
+              "name": "C150125",
+              "a": "DVSS_B.n14879",
+              "b": "w_13108_13108#",
+              "fF": -0.00289
+            },
+            {
+              "name": "C150222",
+              "a": "DVSS_B.n14977",
+              "b": "w_13108_13108#",
+              "fF": -0.00145
+            },
+            {
+              "name": "C155280",
+              "a": "DVSS_B.n20074",
+              "b": "w_13108_13108#",
+              "fF": -0.85512
+            },
+            {
+              "name": "C155700",
+              "a": "DVSS_B.n20499",
+              "b": "w_13108_13108#",
+              "fF": -0.00181
+            },
+            {
+              "name": "C163534",
+              "a": "DVSS_B.n28375",
+              "b": "w_13108_13108#",
+              "fF": -0.00434
+            },
+            {
+              "name": "C168514",
+              "a": "DVSS_B.n33356",
+              "b": "w_13108_13108#",
+              "fF": -0.00513
+            },
+            {
+              "name": "C168834",
+              "a": "DVSS_B.n33676",
+              "b": "w_13108_13108#",
+              "fF": -0.00383
+            },
+            {
+              "name": "C170203",
+              "a": "DVSS_B.n35055",
+              "b": "w_13108_13108#",
+              "fF": -0.00275
+            },
+            {
+              "name": "C170427",
+              "a": "DVSS_B.n35279",
+              "b": "w_13108_13108#",
+              "fF": -0.00113
+            },
+            {
+              "name": "C170753",
+              "a": "DVSS_B.n35605",
+              "b": "w_13108_13108#",
+              "fF": -0.00635
+            },
+            {
+              "name": "C171526",
+              "a": "DVSS_B.n36384",
+              "b": "w_13108_13108#",
+              "fF": -1.00855
+            },
+            {
+              "name": "C171532",
+              "a": "DVSS_B.n36390",
+              "b": "w_13108_13108#",
+              "fF": -1.4643
+            },
+            {
+              "name": "C171533",
+              "a": "DVSS_B.n36391",
+              "b": "w_13108_13108#",
+              "fF": -1.57143
+            },
+            {
+              "name": "C171596",
+              "a": "DVSS_B.n36454",
+              "b": "w_13108_13108#",
+              "fF": -0.77754
+            },
+            {
+              "name": "C171598",
+              "a": "DVSS_B.n36456",
+              "b": "w_13108_13108#",
+              "fF": -1.37556
+            },
+            {
+              "name": "C181266",
+              "a": "DVSS_B.n46423",
+              "b": "w_13108_13108#",
+              "fF": -0.87436
+            },
+            {
+              "name": "C181267",
+              "a": "DVSS_B.n46424",
+              "b": "w_13108_13108#",
+              "fF": -0.87436
+            },
+            {
+              "name": "C191667",
+              "a": "DVSS_B.n56835",
+              "b": "w_13108_13108#",
+              "fF": -0.83021
+            },
+            {
+              "name": "C191688",
+              "a": "DVSS_B.n56856",
+              "b": "w_13108_13108#",
+              "fF": -1.07138
+            },
+            {
+              "name": "C217818",
+              "a": "DVSS_B.n83209",
+              "b": "w_13108_13108#",
+              "fF": -0.00108
+            },
+            {
+              "name": "C219125",
+              "a": "DVSS_B.n84524",
+              "b": "w_13108_13108#",
+              "fF": -0.00232
+            },
+            {
+              "name": "C244332",
+              "a": "VDD_B.n212",
+              "b": "w_13108_13108#",
+              "fF": -0.01606
+            },
+            {
+              "name": "C245267",
+              "a": "VDD_B.n1148",
+              "b": "w_13108_13108#",
+              "fF": -0.14586
+            },
+            {
+              "name": "C245271",
+              "a": "VDD_B.n1152",
+              "b": "w_13108_13108#",
+              "fF": -0.03682
+            },
+            {
+              "name": "C245272",
+              "a": "VDD_B.n1153",
+              "b": "w_13108_13108#",
+              "fF": -0.04155
+            },
+            {
+              "name": "C245275",
+              "a": "VDD_B.n1156",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C245277",
+              "a": "VDD_B.n1158",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C245281",
+              "a": "VDD_B.n1162",
+              "b": "w_13108_13108#",
+              "fF": -0.06089
+            },
+            {
+              "name": "C245282",
+              "a": "VDD_B.n1166",
+              "b": "w_13108_13108#",
+              "fF": -0.02751
+            },
+            {
+              "name": "C245283",
+              "a": "VDD_B.n1167",
+              "b": "w_13108_13108#",
+              "fF": -0.03682
+            },
+            {
+              "name": "C247102",
+              "a": "VDD_B.n3041",
+              "b": "w_13108_13108#",
+              "fF": -0.13312
+            },
+            {
+              "name": "C247105",
+              "a": "VDD_B.n3044",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C247107",
+              "a": "VDD_B.n3046",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C247109",
+              "a": "VDD_B.n3048",
+              "b": "w_13108_13108#",
+              "fF": -0.03281
+            },
+            {
+              "name": "C247110",
+              "a": "VDD_B.n3050",
+              "b": "w_13108_13108#",
+              "fF": -0.05559
+            },
+            {
+              "name": "C247316",
+              "a": "VDD_B.n3310",
+              "b": "w_13108_13108#",
+              "fF": -0.04786
+            },
+            {
+              "name": "C247317",
+              "a": "VDD_B.n3311",
+              "b": "w_13108_13108#",
+              "fF": -0.01949
+            },
+            {
+              "name": "C247320",
+              "a": "VDD_B.n3314",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C247323",
+              "a": "VDD_B.n3317",
+              "b": "w_13108_13108#",
+              "fF": -0.04055
+            },
+            {
+              "name": "C247326",
+              "a": "VDD_B.n3321",
+              "b": "w_13108_13108#",
+              "fF": -0.04786
+            },
+            {
+              "name": "C247933",
+              "a": "VDD_B.n3966",
+              "b": "w_13108_13108#",
+              "fF": -0.01545
+            },
+            {
+              "name": "C248288",
+              "a": "VDD_B.n4323",
+              "b": "w_13108_13108#",
+              "fF": -0.01418
+            },
+            {
+              "name": "C248647",
+              "a": "VDD_B.n4682",
+              "b": "w_13108_13108#",
+              "fF": -0.01338
+            },
+            {
+              "name": "C248658",
+              "a": "VDD_B.n4693",
+              "b": "w_13108_13108#",
+              "fF": -0.05888
+            },
+            {
+              "name": "C249187",
+              "a": "VDD_B.n5222",
+              "b": "w_13108_13108#",
+              "fF": -0.05888
+            },
+            {
+              "name": "C249207",
+              "a": "VDD_B.n5242",
+              "b": "w_13108_13108#",
+              "fF": -0.01338
+            },
+            {
+              "name": "C250396",
+              "a": "VDD_B.n6435",
+              "b": "w_13108_13108#",
+              "fF": -0.04488
+            },
+            {
+              "name": "C250566",
+              "a": "VDD_B.n6606",
+              "b": "w_13108_13108#",
+              "fF": -0.00656
+            }
+          ],
+          "negative_sum_fF": -55.87582,
+          "capacitors": 250975,
+          "negative_diagonal_count": 136,
+          "energy_witnesses": [
+            {
+              "node": "VSS_B.n3176",
+              "C_diagonal_fF": -12.91,
+              "energy_J_at_1V": -6.455000000000001e-15
+            },
+            {
+              "node": "VSS_B.n3412",
+              "C_diagonal_fF": -7.35811,
+              "energy_J_at_1V": -3.679055e-15
+            },
+            {
+              "node": "VSS_B.n2902",
+              "C_diagonal_fF": -7.00975,
+              "energy_J_at_1V": -3.5048750000000004e-15
+            },
+            {
+              "node": "VSS_B.n3161",
+              "C_diagonal_fF": -4.04538,
+              "energy_J_at_1V": -2.02269e-15
+            },
+            {
+              "node": "DVSS_B.n6462",
+              "C_diagonal_fF": -3.18427,
+              "energy_J_at_1V": -1.5921350000000002e-15
+            },
+            {
+              "node": "DVSS_B.n7051",
+              "C_diagonal_fF": -1.81489,
+              "energy_J_at_1V": -9.07445e-16
+            },
+            {
+              "node": "VSS_B.n2901",
+              "C_diagonal_fF": -1.80869,
+              "energy_J_at_1V": -9.043450000000001e-16
+            },
+            {
+              "node": "DVSS_B.n7106",
+              "C_diagonal_fF": -1.72897,
+              "energy_J_at_1V": -8.64485e-16
+            },
+            {
+              "node": "VSS_B.n3421",
+              "C_diagonal_fF": -1.58706,
+              "energy_J_at_1V": -7.9353e-16
+            },
+            {
+              "node": "DVSS_B.n36391",
+              "C_diagonal_fF": -1.57143,
+              "energy_J_at_1V": -7.857150000000001e-16
+            }
+          ],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"VSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "reject_negative_energy"
+        }
+      }
+    },
+    "combined": {
+      "fill10": {
+        "full": {
+          "raw_rnode_witnesses": [],
+          "extraction_diagnostics": [],
+          "negative_capacitors": [],
+          "negative_sum_fF": 0,
+          "capacitors": 1099,
+          "negative_diagonal_count": 0,
+          "energy_witnesses": [],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"VSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "nonnegative_capacitor_network"
+        },
+        "metal": {
+          "raw_rnode_witnesses": [
+            "rnode \"VSS_B.n45\" 0 -22907.5 244 49343 0",
+            "rnode \"VSS_B.n66\" 0 -22906.8 1880 49343 0",
+            "rnode \"VSS_B.n97\" 0 -2745.4 1756 64858 0",
+            "rnode \"VSS_B.n133\" 0 -2746.06 120 64858 0"
+          ],
+          "extraction_diagnostics": [],
+          "negative_capacitors": [
+            {
+              "name": "C59",
+              "a": "VSS_B.n45",
+              "b": "w_n440_13108#",
+              "fF": -22.9075
+            },
+            {
+              "name": "C71",
+              "a": "VSS_B.n66",
+              "b": "w_n440_13108#",
+              "fF": -22.9068
+            },
+            {
+              "name": "C93",
+              "a": "VSS_B.n97",
+              "b": "w_n440_13108#",
+              "fF": -2.7454
+            },
+            {
+              "name": "C120",
+              "a": "VSS_B.n133",
+              "b": "w_n440_13108#",
+              "fF": -2.74606
+            }
+          ],
+          "negative_sum_fF": -51.30576,
+          "capacitors": 1163,
+          "negative_diagonal_count": 4,
+          "energy_witnesses": [
+            {
+              "node": "VSS_B.n45",
+              "C_diagonal_fF": -22.9075,
+              "energy_J_at_1V": -1.145375e-14
+            },
+            {
+              "node": "VSS_B.n66",
+              "C_diagonal_fF": -22.9068,
+              "energy_J_at_1V": -1.1453400000000001e-14
+            },
+            {
+              "node": "VSS_B.n133",
+              "C_diagonal_fF": -2.74606,
+              "energy_J_at_1V": -1.3730300000000001e-15
+            },
+            {
+              "node": "VSS_B.n97",
+              "C_diagonal_fF": -2.7454,
+              "energy_J_at_1V": -1.3727000000000002e-15
+            }
+          ],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"VSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "reject_negative_energy"
+        }
+      },
+      "corner": {
+        "full": {
+          "raw_rnode_witnesses": [
+            "rnode \"DVDD_B.n86191\" 0 -1.18354 49172 37819 0",
+            "rnode \"DVDD_B.n101945\" 0 -1.44314 46648 28928 0",
+            "rnode \"VDD_B.n4352\" 0 -6.1195 57980 56127 0",
+            "rnode \"VDD_B.n5293\" 0 -3.66695 56000 58107 0",
+            "rnode \"VDD_B.n7152\" 0 -9.48572 57452 56567 0"
+          ],
+          "extraction_diagnostics": [
+            "Input off lambda grid by 4/5; snapped to grid.",
+            "Missing rptr at (37248 36555)."
+          ],
+          "negative_capacitors": [
+            {
+              "name": "C87584",
+              "a": "DVDD_B.n86191",
+              "b": "DVSS_B",
+              "fF": -0.00118
+            },
+            {
+              "name": "C103296",
+              "a": "DVDD_B.n101945",
+              "b": "DVSS_B",
+              "fF": -0.00144
+            },
+            {
+              "name": "C142993",
+              "a": "VDD_B.n4352",
+              "b": "DVSS_B",
+              "fF": -0.00612
+            },
+            {
+              "name": "C143933",
+              "a": "VDD_B.n5293",
+              "b": "DVSS_B",
+              "fF": -0.00367
+            },
+            {
+              "name": "C145791",
+              "a": "VDD_B.n7152",
+              "b": "DVSS_B",
+              "fF": -0.00949
+            }
+          ],
+          "negative_sum_fF": -0.0219,
+          "capacitors": 147113,
+          "negative_diagonal_count": 5,
+          "energy_witnesses": [
+            {
+              "node": "VDD_B.n7152",
+              "C_diagonal_fF": -0.00949,
+              "energy_J_at_1V": -4.7450000000000006e-18
+            },
+            {
+              "node": "VDD_B.n4352",
+              "C_diagonal_fF": -0.00612,
+              "energy_J_at_1V": -3.06e-18
+            },
+            {
+              "node": "VDD_B.n5293",
+              "C_diagonal_fF": -0.00367,
+              "energy_J_at_1V": -1.8350000000000003e-18
+            },
+            {
+              "node": "DVDD_B.n101945",
+              "C_diagonal_fF": -0.00144,
+              "energy_J_at_1V": -7.200000000000001e-19
+            },
+            {
+              "node": "DVDD_B.n86191",
+              "C_diagonal_fF": -0.00118,
+              "energy_J_at_1V": -5.9e-19
+            }
+          ],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"DVSS_B\" \"VSS_B\"",
+            "equiv \"DVSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "reject_negative_energy"
+        },
+        "metal": {
+          "raw_rnode_witnesses": [
+            "rnode \"VSS_B.n2901\" 0 -1808.69 66087 48903 0",
+            "rnode \"VSS_B.n2902\" 0 -7009.76 65963 48903 0",
+            "rnode \"VSS_B.n3164\" 0 -4045.39 60339 48903 0",
+            "rnode \"VSS_B.n3180\" 0 -12910 58603 48903 0",
+            "rnode \"VSS_B.n3420\" 0 -7358.12 63456 48903 0",
+            "rnode \"VSS_B.n3429\" 0 -1587.06 62464 48903 0",
+            "rnode \"VSS_B.n3466\" 0 -69.2915 63230 39320 0",
+            "rnode \"VSS_B.n3469\" 0 -113.602 62690 39320 0",
+            "rnode \"VSS_B.n3471\" 0 -9.08175 63446 39428 0",
+            "rnode \"VSS_B.n3750\" 0 -2.09756 58888 52955 0",
+            "rnode \"VSS_B.n4427\" 0 -1.9084 57132 54831 0",
+            "rnode \"VSS_B.n4890\" 0 -13.2301 55060 56783 0",
+            "rnode \"VSS_B.n5560\" 0 -1.73575 52024 59819 0",
+            "rnode \"VSS_B.n6433\" 0 -16.5775 50678 61175 0",
+            "rnode \"VSS_B.n6601\" 0 -2.1572 52619 59187 0",
+            "rnode \"VSS_B.n6886\" 0 -4.05689 59008 52851 0",
+            "rnode \"VSS_B.n7277\" 0 -16.295 60883 50947 0",
+            "rnode \"DVDD_B.n7095\" 0 -14.314 42720 60632 0",
+            "rnode \"DVDD_B.n7096\" 0 -13.5398 42720 60740 0",
+            "rnode \"DVDD_B.n7100\" 0 -13.5398 42720 61172 0",
+            "rnode \"DVDD_B.n7101\" 0 -6.46722 42720 61280 0",
+            "rnode \"DVDD_B.n7104\" 0 -13.5398 42720 61604 0",
+            "rnode \"DVDD_B.n7105\" 0 -2.69516 42720 61712 0",
+            "rnode \"DVDD_B.n7108\" 0 -11.1823 42720 62036 0",
+            "rnode \"DVDD_B.n7109\" 0 -13.5398 42720 62144 0",
+            "rnode \"DVDD_B.n7120\" 0 -9.53202 42720 63981 0",
+            "rnode \"DVDD_B.n7121\" 0 -13.5398 42720 64089 0",
+            "rnode \"DVDD_B.n7125\" 0 -13.5398 42720 64521 0",
+            "rnode \"DVDD_B.n7126\" 0 -11.2492 42720 64629 0",
+            "rnode \"DVDD_B.n7130\" 0 -15.9496 42720 66876 0",
+            "rnode \"DVDD_B.n20410\" 0 -4.85406 47822 52759 0",
+            "rnode \"DVDD_B.n21432\" 0 -1.36717 55617 44988 0",
+            "rnode \"DVDD_B.n22968\" 0 -1.14982 54618 45922 0",
+            "rnode \"DVDD_B.n22990\" 0 -1.34831 54354 46192 0",
+            "rnode \"DVDD_B.n22995\" 0 -1.10171 54421 46186 0",
+            "rnode \"DVDD_B.n22998\" 0 -5.0363 54316 46192 0",
+            "rnode \"DVDD_B.n23180\" 0 -1.80225 53097 47506 0",
+            "rnode \"DVDD_B.n23187\" 0 -13.7632 52965 47506 0",
+            "rnode \"DVDD_B.n23395\" 0 -2.6536 51680 48798 0",
+            "rnode \"DVDD_B.n23625\" 0 -4.69537 49436 51042 0",
+            "rnode \"DVDD_B.n23675\" 0 -4.02751 49591 50882 0",
+            "rnode \"DVDD_B.n23687\" 0 -3.20146 49172 51306 0",
+            "rnode \"DVDD_B.n24288\" 0 -2.14302 45592 54974 0",
+            "rnode \"DVDD_B.n24568\" 0 -1.22898 43683 56893 0",
+            "rnode \"DVDD_B.n25631\" 0 -6.46698 43930 56559 0",
+            "rnode \"DVDD_B.n26399\" 0 -3.69844 54316 46192 0",
+            "rnode \"DVDD_B.n68541\" 0 -1.55291 46982 49006 0",
+            "rnode \"DVDD_B.n110753\" 0 -5.56783 44844 30651 0",
+            "rnode \"DVDD_B.n111801\" 0 -6.77378 38738 36811 0",
+            "rnode \"DVDD_B.n111905\" 0 -6.26122 38078 37451 0",
+            "rnode \"DVDD_B.n113764\" 0 -1.36697 28432 47143 0",
+            "rnode \"DVDD_B.n115496\" 0 -6.26122 38078 37451 0",
+            "rnode \"DVDD_B.n116106\" 0 -1.23468 45425 30134 0",
+            "rnode \"DVDD_B.n118380\" 0 -1.15865 54731 61707 0",
+            "rnode \"DVDD_B.n118454\" 0 -1.06689 55196 61261 0",
+            "rnode \"DVDD_B.n118473\" 0 -1.48317 55325 61179 0",
+            "rnode \"DVDD_B.n121493\" 0 -6.21223 61282 57489 0",
+            "rnode \"DVDD_B.n123384\" 0 -3.37546 58870 59736 0",
+            "rnode \"DVDD_B.n123396\" 0 -3.96873 59210 59469 0",
+            "rnode \"DVDD_B.n123479\" 0 -1.02146 59428 59340 0",
+            "rnode \"DVDD_B.n123541\" 0 -4.64366 60292 58413 0",
+            "rnode \"DVSS_B.n6463\" 0 -3184.27 49535 58592 0",
+            "rnode \"DVSS_B.n6497\" 0 -997.801 49535 60328 0",
+            "rnode \"DVSS_B.n6503\" 0 -28.0202 39440 62679 0",
+            "rnode \"DVSS_B.n7029\" 0 -391.451 49535 62453 0",
+            "rnode \"DVSS_B.n7053\" 0 -1814.89 49535 63445 0",
+            "rnode \"DVSS_B.n7107\" 0 -1728.97 49535 65952 0",
+            "rnode \"DVSS_B.n7109\" 0 -446.116 49535 66076 0",
+            "rnode \"DVSS_B.n9723\" 0 -1.34561 47374 50895 0",
+            "rnode \"DVSS_B.n10565\" 0 -8.75234 52588 45618 0",
+            "rnode \"DVSS_B.n10837\" 0 -8.75234 54568 43638 0",
+            "rnode \"DVSS_B.n11577\" 0 -1.91037 54700 43506 0",
+            "rnode \"DVSS_B.n11809\" 0 -1.91037 52720 45486 0",
+            "rnode \"DVSS_B.n12105\" 0 -1.35313 51202 47132 0",
+            "rnode \"DVSS_B.n12653\" 0 -4.27543 48133 50134 0",
+            "rnode \"DVSS_B.n12833\" 0 -1.02294 47143 51190 0",
+            "rnode \"DVSS_B.n13278\" 0 -1.87892 44404 53802 0",
+            "rnode \"DVSS_B.n13671\" 0 -3.15699 42193 56074 0",
+            "rnode \"DVSS_B.n14248\" 0 -3.15699 42193 56074 0",
+            "rnode \"DVSS_B.n14310\" 0 -1.051 42939 55352 0",
+            "rnode \"DVSS_B.n14668\" 0 -1.96927 48600 49606 0",
+            "rnode \"DVSS_B.n14739\" 0 -1.051 48879 49412 0",
+            "rnode \"DVSS_B.n14880\" 0 -2.8852 51390 46848 0",
+            "rnode \"DVSS_B.n14978\" 0 -1.44801 53641 44590 0",
+            "rnode \"DVSS_B.n20076\" 0 -855.123 70158 62498 0",
+            "rnode \"DVSS_B.n20502\" 0 -1.80883 62564 65135 0",
+            "rnode \"DVSS_B.n28378\" 0 -4.34475 42412 35376 0",
+            "rnode \"DVSS_B.n33359\" 0 -5.13299 33718 44116 0",
+            "rnode \"DVSS_B.n33679\" 0 -3.84036 31351 46568 0",
+            "rnode \"DVSS_B.n35058\" 0 -2.75496 28510 49408 0",
+            "rnode \"DVSS_B.n35282\" 0 -1.32878 31323 46568 0",
+            "rnode \"DVSS_B.n35608\" 0 -6.34866 32666 45172 0",
+            "rnode \"DVSS_B.n36387\" 0 -1008.55 28106 49021 0",
+            "rnode \"DVSS_B.n36393\" 0 -1464.3 27194 49021 0",
+            "rnode \"DVSS_B.n36394\" 0 -1571.43 23503 49021 0",
+            "rnode \"DVSS_B.n36457\" 0 -777.535 18715 49021 0",
+            "rnode \"DVSS_B.n36459\" 0 -1375.56 18563 49021 0",
+            "rnode \"DVSS_B.n46426\" 0 -874.357 53727 22834 0",
+            "rnode \"DVSS_B.n46427\" 0 -874.357 51291 22834 0",
+            "rnode \"DVSS_B.n56838\" 0 -831.427 38519 34482 0",
+            "rnode \"DVSS_B.n56859\" 0 -1071.46 38515 35186 0",
+            "rnode \"DVSS_B.n83215\" 0 -1.10746 34192 34653 0",
+            "rnode \"DVSS_B.n84530\" 0 -2.32328 30182 38613 0",
+            "rnode \"VDD_B.n212\" 0 -16.0633 61676 52431 0",
+            "rnode \"VDD_B.n1148\" 0 -47.5713 61939 42600 0",
+            "rnode \"VDD_B.n1150\" 0 -57.6006 61507 42600 0",
+            "rnode \"VDD_B.n1153\" 0 -52.8708 61183 42600 0",
+            "rnode \"VDD_B.n1154\" 0 -9.45975 61075 42600 0",
+            "rnode \"VDD_B.n1157\" 0 -57.6006 60643 42600 0",
+            "rnode \"VDD_B.n1159\" 0 -60.8942 62263 42708 0",
+            "rnode \"VDD_B.n1160\" 0 -20.7768 62263 42708 0",
+            "rnode \"VDD_B.n1161\" 0 -57.6006 62263 42708 0",
+            "rnode \"VDD_B.n1163\" 0 -52.8708 62263 42708 0",
+            "rnode \"VDD_B.n1165\" 0 -11.4656 62263 42708 0",
+            "rnode \"VDD_B.n3038\" 0 -65.5972 67751 42600 0",
+            "rnode \"VDD_B.n3041\" 0 -57.6006 67319 42600 0",
+            "rnode \"VDD_B.n3044\" 0 -24.7886 66995 42600 0",
+            "rnode \"VDD_B.n3045\" 0 -32.8121 66779 42600 0",
+            "rnode \"VDD_B.n3049\" 0 -57.6006 68507 42708 0",
+            "rnode \"VDD_B.n3050\" 0 -55.5948 68507 42708 0",
+            "rnode \"VDD_B.n3306\" 0 -47.8561 64532 42600 0",
+            "rnode \"VDD_B.n3307\" 0 -19.4891 64424 42600 0",
+            "rnode \"VDD_B.n3311\" 0 -131.818 63992 42600 0",
+            "rnode \"VDD_B.n3315\" 0 -47.8561 64640 42708 0",
+            "rnode \"VDD_B.n3966\" 0 -15.4536 57188 56919 0",
+            "rnode \"VDD_B.n4323\" 0 -14.1835 58640 55467 0",
+            "rnode \"VDD_B.n4682\" 0 -13.3838 56264 57843 0",
+            "rnode \"VDD_B.n4693\" 0 -58.8834 56000 58107 0",
+            "rnode \"VDD_B.n5222\" 0 -58.8834 54020 60087 0",
+            "rnode \"VDD_B.n5242\" 0 -13.3838 54284 59823 0",
+            "rnode \"VDD_B.n6435\" 0 -44.883 54107 60095 0",
+            "rnode \"VDD_B.n6606\" 0 -6.58974 58464 55627 0"
+          ],
+          "extraction_diagnostics": [],
+          "negative_capacitors": [
+            {
+              "name": "C2979",
+              "a": "VSS_B.n2901",
+              "b": "w_13108_13108#",
+              "fF": -1.80869
+            },
+            {
+              "name": "C2980",
+              "a": "VSS_B.n2902",
+              "b": "w_13108_13108#",
+              "fF": -7.00976
+            },
+            {
+              "name": "C3182",
+              "a": "VSS_B.n3164",
+              "b": "w_13108_13108#",
+              "fF": -4.04539
+            },
+            {
+              "name": "C3197",
+              "a": "VSS_B.n3180",
+              "b": "w_13108_13108#",
+              "fF": -12.91
+            },
+            {
+              "name": "C3375",
+              "a": "VSS_B.n3420",
+              "b": "w_13108_13108#",
+              "fF": -7.35812
+            },
+            {
+              "name": "C3384",
+              "a": "VSS_B.n3429",
+              "b": "w_13108_13108#",
+              "fF": -1.58706
+            },
+            {
+              "name": "C3407",
+              "a": "VSS_B.n3466",
+              "b": "w_13108_13108#",
+              "fF": -0.06929
+            },
+            {
+              "name": "C3410",
+              "a": "VSS_B.n3469",
+              "b": "w_13108_13108#",
+              "fF": -0.1136
+            },
+            {
+              "name": "C3412",
+              "a": "VSS_B.n3471",
+              "b": "w_13108_13108#",
+              "fF": -0.00908
+            },
+            {
+              "name": "C3665",
+              "a": "VSS_B.n3750",
+              "b": "w_13108_13108#",
+              "fF": -0.0021
+            },
+            {
+              "name": "C4322",
+              "a": "VSS_B.n4427",
+              "b": "w_13108_13108#",
+              "fF": -0.00191
+            },
+            {
+              "name": "C4784",
+              "a": "VSS_B.n4890",
+              "b": "w_13108_13108#",
+              "fF": -0.01323
+            },
+            {
+              "name": "C5454",
+              "a": "VSS_B.n5560",
+              "b": "w_13108_13108#",
+              "fF": -0.00174
+            },
+            {
+              "name": "C6318",
+              "a": "VSS_B.n6433",
+              "b": "w_13108_13108#",
+              "fF": -0.01658
+            },
+            {
+              "name": "C6486",
+              "a": "VSS_B.n6601",
+              "b": "w_13108_13108#",
+              "fF": -0.00216
+            },
+            {
+              "name": "C6769",
+              "a": "VSS_B.n6886",
+              "b": "w_13108_13108#",
+              "fF": -0.00406
+            },
+            {
+              "name": "C7160",
+              "a": "VSS_B.n7277",
+              "b": "w_13108_13108#",
+              "fF": -0.01629
+            },
+            {
+              "name": "C14008",
+              "a": "DVDD_B.n7095",
+              "b": "w_13108_13108#",
+              "fF": -0.01431
+            },
+            {
+              "name": "C14009",
+              "a": "DVDD_B.n7096",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14013",
+              "a": "DVDD_B.n7100",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14014",
+              "a": "DVDD_B.n7101",
+              "b": "w_13108_13108#",
+              "fF": -0.00647
+            },
+            {
+              "name": "C14017",
+              "a": "DVDD_B.n7104",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14018",
+              "a": "DVDD_B.n7105",
+              "b": "w_13108_13108#",
+              "fF": -0.0027
+            },
+            {
+              "name": "C14021",
+              "a": "DVDD_B.n7108",
+              "b": "w_13108_13108#",
+              "fF": -0.01118
+            },
+            {
+              "name": "C14022",
+              "a": "DVDD_B.n7109",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14033",
+              "a": "DVDD_B.n7120",
+              "b": "w_13108_13108#",
+              "fF": -0.00953
+            },
+            {
+              "name": "C14034",
+              "a": "DVDD_B.n7121",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14038",
+              "a": "DVDD_B.n7125",
+              "b": "w_13108_13108#",
+              "fF": -0.01354
+            },
+            {
+              "name": "C14039",
+              "a": "DVDD_B.n7126",
+              "b": "w_13108_13108#",
+              "fF": -0.01125
+            },
+            {
+              "name": "C14043",
+              "a": "DVDD_B.n7130",
+              "b": "w_13108_13108#",
+              "fF": -0.01595
+            },
+            {
+              "name": "C26940",
+              "a": "DVDD_B.n20410",
+              "b": "w_13108_13108#",
+              "fF": -0.00485
+            },
+            {
+              "name": "C27951",
+              "a": "DVDD_B.n21432",
+              "b": "w_13108_13108#",
+              "fF": -0.00137
+            },
+            {
+              "name": "C29474",
+              "a": "DVDD_B.n22968",
+              "b": "w_13108_13108#",
+              "fF": -0.00115
+            },
+            {
+              "name": "C29496",
+              "a": "DVDD_B.n22990",
+              "b": "w_13108_13108#",
+              "fF": -0.00135
+            },
+            {
+              "name": "C29501",
+              "a": "DVDD_B.n22995",
+              "b": "w_13108_13108#",
+              "fF": -0.0011
+            },
+            {
+              "name": "C29504",
+              "a": "DVDD_B.n22998",
+              "b": "w_13108_13108#",
+              "fF": -0.00504
+            },
+            {
+              "name": "C29686",
+              "a": "DVDD_B.n23180",
+              "b": "w_13108_13108#",
+              "fF": -0.0018
+            },
+            {
+              "name": "C29693",
+              "a": "DVDD_B.n23187",
+              "b": "w_13108_13108#",
+              "fF": -0.01376
+            },
+            {
+              "name": "C29896",
+              "a": "DVDD_B.n23395",
+              "b": "w_13108_13108#",
+              "fF": -0.00265
+            },
+            {
+              "name": "C30125",
+              "a": "DVDD_B.n23625",
+              "b": "w_13108_13108#",
+              "fF": -0.0047
+            },
+            {
+              "name": "C30175",
+              "a": "DVDD_B.n23675",
+              "b": "w_13108_13108#",
+              "fF": -0.00403
+            },
+            {
+              "name": "C30187",
+              "a": "DVDD_B.n23687",
+              "b": "w_13108_13108#",
+              "fF": -0.0032
+            },
+            {
+              "name": "C30783",
+              "a": "DVDD_B.n24288",
+              "b": "w_13108_13108#",
+              "fF": -0.00214
+            },
+            {
+              "name": "C31061",
+              "a": "DVDD_B.n24568",
+              "b": "w_13108_13108#",
+              "fF": -0.00123
+            },
+            {
+              "name": "C32124",
+              "a": "DVDD_B.n25631",
+              "b": "w_13108_13108#",
+              "fF": -0.00647
+            },
+            {
+              "name": "C32887",
+              "a": "DVDD_B.n26399",
+              "b": "w_13108_13108#",
+              "fF": -0.0037
+            },
+            {
+              "name": "C74912",
+              "a": "DVDD_B.n68541",
+              "b": "w_13108_13108#",
+              "fF": -0.00155
+            },
+            {
+              "name": "C117023",
+              "a": "DVDD_B.n110753",
+              "b": "w_13108_13108#",
+              "fF": -0.00557
+            },
+            {
+              "name": "C118057",
+              "a": "DVDD_B.n111801",
+              "b": "w_13108_13108#",
+              "fF": -0.00677
+            },
+            {
+              "name": "C118160",
+              "a": "DVDD_B.n111905",
+              "b": "w_13108_13108#",
+              "fF": -0.00626
+            },
+            {
+              "name": "C119991",
+              "a": "DVDD_B.n113764",
+              "b": "w_13108_13108#",
+              "fF": -0.00137
+            },
+            {
+              "name": "C121712",
+              "a": "DVDD_B.n115496",
+              "b": "w_13108_13108#",
+              "fF": -0.00626
+            },
+            {
+              "name": "C122318",
+              "a": "DVDD_B.n116106",
+              "b": "w_13108_13108#",
+              "fF": -0.00123
+            },
+            {
+              "name": "C124572",
+              "a": "DVDD_B.n118380",
+              "b": "w_13108_13108#",
+              "fF": -0.00116
+            },
+            {
+              "name": "C124646",
+              "a": "DVDD_B.n118454",
+              "b": "w_13108_13108#",
+              "fF": -0.00107
+            },
+            {
+              "name": "C124665",
+              "a": "DVDD_B.n118473",
+              "b": "w_13108_13108#",
+              "fF": -0.00148
+            },
+            {
+              "name": "C127676",
+              "a": "DVDD_B.n121493",
+              "b": "w_13108_13108#",
+              "fF": -0.00621
+            },
+            {
+              "name": "C129549",
+              "a": "DVDD_B.n123384",
+              "b": "w_13108_13108#",
+              "fF": -0.00338
+            },
+            {
+              "name": "C129561",
+              "a": "DVDD_B.n123396",
+              "b": "w_13108_13108#",
+              "fF": -0.00397
+            },
+            {
+              "name": "C129644",
+              "a": "DVDD_B.n123479",
+              "b": "w_13108_13108#",
+              "fF": -0.00102
+            },
+            {
+              "name": "C129706",
+              "a": "DVDD_B.n123541",
+              "b": "w_13108_13108#",
+              "fF": -0.00464
+            },
+            {
+              "name": "C142087",
+              "a": "DVSS_B.n6463",
+              "b": "w_13108_13108#",
+              "fF": -3.18427
+            },
+            {
+              "name": "C142107",
+              "a": "DVSS_B.n6497",
+              "b": "w_13108_13108#",
+              "fF": -0.9978
+            },
+            {
+              "name": "C142113",
+              "a": "DVSS_B.n6503",
+              "b": "w_13108_13108#",
+              "fF": -0.02802
+            },
+            {
+              "name": "C142519",
+              "a": "DVSS_B.n7029",
+              "b": "w_13108_13108#",
+              "fF": -0.39145
+            },
+            {
+              "name": "C142533",
+              "a": "DVSS_B.n7053",
+              "b": "w_13108_13108#",
+              "fF": -1.81489
+            },
+            {
+              "name": "C142582",
+              "a": "DVSS_B.n7107",
+              "b": "w_13108_13108#",
+              "fF": -1.72897
+            },
+            {
+              "name": "C142583",
+              "a": "DVSS_B.n7109",
+              "b": "w_13108_13108#",
+              "fF": -0.44612
+            },
+            {
+              "name": "C145010",
+              "a": "DVSS_B.n9723",
+              "b": "w_13108_13108#",
+              "fF": -0.00135
+            },
+            {
+              "name": "C145846",
+              "a": "DVSS_B.n10565",
+              "b": "w_13108_13108#",
+              "fF": -0.00875
+            },
+            {
+              "name": "C146116",
+              "a": "DVSS_B.n10837",
+              "b": "w_13108_13108#",
+              "fF": -0.00875
+            },
+            {
+              "name": "C146854",
+              "a": "DVSS_B.n11577",
+              "b": "w_13108_13108#",
+              "fF": -0.00191
+            },
+            {
+              "name": "C147076",
+              "a": "DVSS_B.n11809",
+              "b": "w_13108_13108#",
+              "fF": -0.00191
+            },
+            {
+              "name": "C147370",
+              "a": "DVSS_B.n12105",
+              "b": "w_13108_13108#",
+              "fF": -0.00135
+            },
+            {
+              "name": "C147914",
+              "a": "DVSS_B.n12653",
+              "b": "w_13108_13108#",
+              "fF": -0.00428
+            },
+            {
+              "name": "C148091",
+              "a": "DVSS_B.n12833",
+              "b": "w_13108_13108#",
+              "fF": -0.00102
+            },
+            {
+              "name": "C148531",
+              "a": "DVSS_B.n13278",
+              "b": "w_13108_13108#",
+              "fF": -0.00188
+            },
+            {
+              "name": "C148916",
+              "a": "DVSS_B.n13671",
+              "b": "w_13108_13108#",
+              "fF": -0.00316
+            },
+            {
+              "name": "C149490",
+              "a": "DVSS_B.n14248",
+              "b": "w_13108_13108#",
+              "fF": -0.00316
+            },
+            {
+              "name": "C149552",
+              "a": "DVSS_B.n14310",
+              "b": "w_13108_13108#",
+              "fF": -0.00105
+            },
+            {
+              "name": "C149908",
+              "a": "DVSS_B.n14668",
+              "b": "w_13108_13108#",
+              "fF": -0.00197
+            },
+            {
+              "name": "C149979",
+              "a": "DVSS_B.n14739",
+              "b": "w_13108_13108#",
+              "fF": -0.00105
+            },
+            {
+              "name": "C150120",
+              "a": "DVSS_B.n14880",
+              "b": "w_13108_13108#",
+              "fF": -0.00289
+            },
+            {
+              "name": "C150217",
+              "a": "DVSS_B.n14978",
+              "b": "w_13108_13108#",
+              "fF": -0.00145
+            },
+            {
+              "name": "C155275",
+              "a": "DVSS_B.n20076",
+              "b": "w_13108_13108#",
+              "fF": -0.85512
+            },
+            {
+              "name": "C155695",
+              "a": "DVSS_B.n20502",
+              "b": "w_13108_13108#",
+              "fF": -0.00181
+            },
+            {
+              "name": "C163529",
+              "a": "DVSS_B.n28378",
+              "b": "w_13108_13108#",
+              "fF": -0.00434
+            },
+            {
+              "name": "C168509",
+              "a": "DVSS_B.n33359",
+              "b": "w_13108_13108#",
+              "fF": -0.00513
+            },
+            {
+              "name": "C168829",
+              "a": "DVSS_B.n33679",
+              "b": "w_13108_13108#",
+              "fF": -0.00384
+            },
+            {
+              "name": "C170198",
+              "a": "DVSS_B.n35058",
+              "b": "w_13108_13108#",
+              "fF": -0.00275
+            },
+            {
+              "name": "C170422",
+              "a": "DVSS_B.n35282",
+              "b": "w_13108_13108#",
+              "fF": -0.00133
+            },
+            {
+              "name": "C170748",
+              "a": "DVSS_B.n35608",
+              "b": "w_13108_13108#",
+              "fF": -0.00635
+            },
+            {
+              "name": "C171521",
+              "a": "DVSS_B.n36387",
+              "b": "w_13108_13108#",
+              "fF": -1.00855
+            },
+            {
+              "name": "C171527",
+              "a": "DVSS_B.n36393",
+              "b": "w_13108_13108#",
+              "fF": -1.4643
+            },
+            {
+              "name": "C171528",
+              "a": "DVSS_B.n36394",
+              "b": "w_13108_13108#",
+              "fF": -1.57143
+            },
+            {
+              "name": "C171591",
+              "a": "DVSS_B.n36457",
+              "b": "w_13108_13108#",
+              "fF": -0.77753
+            },
+            {
+              "name": "C171593",
+              "a": "DVSS_B.n36459",
+              "b": "w_13108_13108#",
+              "fF": -1.37556
+            },
+            {
+              "name": "C181261",
+              "a": "DVSS_B.n46426",
+              "b": "w_13108_13108#",
+              "fF": -0.87436
+            },
+            {
+              "name": "C181262",
+              "a": "DVSS_B.n46427",
+              "b": "w_13108_13108#",
+              "fF": -0.87436
+            },
+            {
+              "name": "C191662",
+              "a": "DVSS_B.n56838",
+              "b": "w_13108_13108#",
+              "fF": -0.83143
+            },
+            {
+              "name": "C191683",
+              "a": "DVSS_B.n56859",
+              "b": "w_13108_13108#",
+              "fF": -1.07146
+            },
+            {
+              "name": "C217815",
+              "a": "DVSS_B.n83215",
+              "b": "w_13108_13108#",
+              "fF": -0.00111
+            },
+            {
+              "name": "C219122",
+              "a": "DVSS_B.n84530",
+              "b": "w_13108_13108#",
+              "fF": -0.00232
+            },
+            {
+              "name": "C244329",
+              "a": "VDD_B.n212",
+              "b": "w_13108_13108#",
+              "fF": -0.01606
+            },
+            {
+              "name": "C245264",
+              "a": "VDD_B.n1148",
+              "b": "w_13108_13108#",
+              "fF": -0.04757
+            },
+            {
+              "name": "C245266",
+              "a": "VDD_B.n1150",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C245269",
+              "a": "VDD_B.n1153",
+              "b": "w_13108_13108#",
+              "fF": -0.05287
+            },
+            {
+              "name": "C245270",
+              "a": "VDD_B.n1154",
+              "b": "w_13108_13108#",
+              "fF": -0.00946
+            },
+            {
+              "name": "C245273",
+              "a": "VDD_B.n1157",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C245275",
+              "a": "VDD_B.n1159",
+              "b": "w_13108_13108#",
+              "fF": -0.06089
+            },
+            {
+              "name": "C245276",
+              "a": "VDD_B.n1160",
+              "b": "w_13108_13108#",
+              "fF": -0.02078
+            },
+            {
+              "name": "C245277",
+              "a": "VDD_B.n1161",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C245278",
+              "a": "VDD_B.n1163",
+              "b": "w_13108_13108#",
+              "fF": -0.05287
+            },
+            {
+              "name": "C245280",
+              "a": "VDD_B.n1165",
+              "b": "w_13108_13108#",
+              "fF": -0.01147
+            },
+            {
+              "name": "C247097",
+              "a": "VDD_B.n3038",
+              "b": "w_13108_13108#",
+              "fF": -0.0656
+            },
+            {
+              "name": "C247100",
+              "a": "VDD_B.n3041",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C247103",
+              "a": "VDD_B.n3044",
+              "b": "w_13108_13108#",
+              "fF": -0.02479
+            },
+            {
+              "name": "C247104",
+              "a": "VDD_B.n3045",
+              "b": "w_13108_13108#",
+              "fF": -0.03281
+            },
+            {
+              "name": "C247107",
+              "a": "VDD_B.n3049",
+              "b": "w_13108_13108#",
+              "fF": -0.0576
+            },
+            {
+              "name": "C247108",
+              "a": "VDD_B.n3050",
+              "b": "w_13108_13108#",
+              "fF": -0.05559
+            },
+            {
+              "name": "C247310",
+              "a": "VDD_B.n3306",
+              "b": "w_13108_13108#",
+              "fF": -0.04786
+            },
+            {
+              "name": "C247311",
+              "a": "VDD_B.n3307",
+              "b": "w_13108_13108#",
+              "fF": -0.01949
+            },
+            {
+              "name": "C247315",
+              "a": "VDD_B.n3311",
+              "b": "w_13108_13108#",
+              "fF": -0.13182
+            },
+            {
+              "name": "C247319",
+              "a": "VDD_B.n3315",
+              "b": "w_13108_13108#",
+              "fF": -0.04786
+            },
+            {
+              "name": "C247928",
+              "a": "VDD_B.n3966",
+              "b": "w_13108_13108#",
+              "fF": -0.01545
+            },
+            {
+              "name": "C248283",
+              "a": "VDD_B.n4323",
+              "b": "w_13108_13108#",
+              "fF": -0.01418
+            },
+            {
+              "name": "C248642",
+              "a": "VDD_B.n4682",
+              "b": "w_13108_13108#",
+              "fF": -0.01338
+            },
+            {
+              "name": "C248653",
+              "a": "VDD_B.n4693",
+              "b": "w_13108_13108#",
+              "fF": -0.05888
+            },
+            {
+              "name": "C249182",
+              "a": "VDD_B.n5222",
+              "b": "w_13108_13108#",
+              "fF": -0.05888
+            },
+            {
+              "name": "C249202",
+              "a": "VDD_B.n5242",
+              "b": "w_13108_13108#",
+              "fF": -0.01338
+            },
+            {
+              "name": "C250391",
+              "a": "VDD_B.n6435",
+              "b": "w_13108_13108#",
+              "fF": -0.04488
+            },
+            {
+              "name": "C250561",
+              "a": "VDD_B.n6606",
+              "b": "w_13108_13108#",
+              "fF": -0.00659
+            }
+          ],
+          "negative_sum_fF": -55.81411,
+          "capacitors": 250970,
+          "negative_diagonal_count": 132,
+          "energy_witnesses": [
+            {
+              "node": "VSS_B.n3180",
+              "C_diagonal_fF": -12.91,
+              "energy_J_at_1V": -6.455000000000001e-15
+            },
+            {
+              "node": "VSS_B.n3420",
+              "C_diagonal_fF": -7.35812,
+              "energy_J_at_1V": -3.67906e-15
+            },
+            {
+              "node": "VSS_B.n2902",
+              "C_diagonal_fF": -7.00976,
+              "energy_J_at_1V": -3.5048800000000003e-15
+            },
+            {
+              "node": "VSS_B.n3164",
+              "C_diagonal_fF": -4.04539,
+              "energy_J_at_1V": -2.0226950000000004e-15
+            },
+            {
+              "node": "DVSS_B.n6463",
+              "C_diagonal_fF": -3.18427,
+              "energy_J_at_1V": -1.5921350000000002e-15
+            },
+            {
+              "node": "DVSS_B.n7053",
+              "C_diagonal_fF": -1.81489,
+              "energy_J_at_1V": -9.07445e-16
+            },
+            {
+              "node": "VSS_B.n2901",
+              "C_diagonal_fF": -1.80869,
+              "energy_J_at_1V": -9.043450000000001e-16
+            },
+            {
+              "node": "DVSS_B.n7107",
+              "C_diagonal_fF": -1.72897,
+              "energy_J_at_1V": -8.64485e-16
+            },
+            {
+              "node": "VSS_B.n3429",
+              "C_diagonal_fF": -1.58706,
+              "energy_J_at_1V": -7.9353e-16
+            },
+            {
+              "node": "DVSS_B.n36394",
+              "C_diagonal_fF": -1.57143,
+              "energy_J_at_1V": -7.857150000000001e-16
+            }
+          ],
+          "ground_aliases_ext": [
+            "equiv \"DVSS_B\" \"DVSS_A\"",
+            "equiv \"VSS_B\" \"VSS_A\""
+          ],
+          "capacitance_gate": "reject_negative_energy"
+        }
+      }
+    }
+  },
+  "production_gds_sha256": {
+    "build/power-ring/power_ring.gds": "018d51367dc29b877696de12a84f4d7001f75f20fed377c9633edee54fad6be8",
+    "build/power-ring/ring_sensor_power.gds": "07584927d1ae66c4bd2437a0e8c373648f407d70fe5f11a92204b98e6ff4ffba"
+  }
+}

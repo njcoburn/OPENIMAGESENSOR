@@ -21,3 +21,8 @@ __pycache__/
 *.pyc
 .venv/
 .env
+
+# KiCad local UI state, locks and embedded edit history
+hardware/**/.history/
+*.kicad_prl
+~*.lck

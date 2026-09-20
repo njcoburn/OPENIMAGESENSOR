@@ -1,0 +1,721 @@
+{
+  "recorded": "2026-09-19 00:28 PDT",
+  "capacitance": {
+    "fill10": {
+      "full": {
+        "raw_rnode_witnesses": [],
+        "extraction_diagnostics": [],
+        "negative_capacitors": [],
+        "negative_sum_fF": 0,
+        "capacitors": 1100,
+        "negative_diagonal_count": 0,
+        "energy_witnesses": [],
+        "ground_aliases_ext": [
+          "equiv \"DVSS_B\" \"DVSS_A\"",
+          "equiv \"VSS_B\" \"VSS_A\""
+        ],
+        "capacitance_gate": "nonnegative_capacitor_network"
+      },
+      "metal": {
+        "raw_rnode_witnesses": [],
+        "extraction_diagnostics": [],
+        "negative_capacitors": [],
+        "negative_sum_fF": 0,
+        "capacitors": 1163,
+        "negative_diagonal_count": 0,
+        "energy_witnesses": [],
+        "ground_aliases_ext": [
+          "equiv \"DVSS_B\" \"DVSS_A\"",
+          "equiv \"VSS_B\" \"VSS_A\""
+        ],
+        "capacitance_gate": "nonnegative_capacitor_network"
+      }
+    },
+    "corner": {
+      "full": {
+        "raw_rnode_witnesses": [],
+        "extraction_diagnostics": [
+          "Input off lambda grid by 4/5; snapped to grid.",
+          "Missing rptr at (59232 62219).",
+          "Missing rptr at (37248 36555)."
+        ],
+        "negative_capacitors": [],
+        "negative_sum_fF": 0,
+        "capacitors": 147122,
+        "negative_diagonal_count": 0,
+        "energy_witnesses": [],
+        "ground_aliases_ext": [
+          "equiv \"DVSS_B\" \"DVSS_A\"",
+          "equiv \"DVSS_B\" \"VSS_B\"",
+          "equiv \"DVSS_B\" \"VSS_A\""
+        ],
+        "capacitance_gate": "nonnegative_capacitor_network"
+      },
+      "metal": {
+        "raw_rnode_witnesses": [],
+        "extraction_diagnostics": [],
+        "negative_capacitors": [],
+        "negative_sum_fF": 0,
+        "capacitors": 250984,
+        "negative_diagonal_count": 0,
+        "energy_witnesses": [],
+        "ground_aliases_ext": [
+          "equiv \"DVSS_B\" \"DVSS_A\"",
+          "equiv \"VSS_B\" \"VSS_A\""
+        ],
+        "capacitance_gate": "nonnegative_capacitor_network"
+      }
+    }
+  },
+  "dc": {
+    "cases": {
+      "fill10": {
+        "full": {
+          "rails": {
+            "VDD": {
+              "R_ohm": 0.4518884321241103,
+              "nodes": 199,
+              "resistors": 296,
+              "KCL_residual_A": 2.842170943040401e-14
+            },
+            "VSS": {
+              "R_ohm": 0.4518833036227311,
+              "nodes": 347,
+              "resistors": 534,
+              "KCL_residual_A": 3.507749646303182e-13
+            },
+            "DVDD": {
+              "R_ohm": 0.40000000000026914,
+              "nodes": 500,
+              "resistors": 794,
+              "KCL_residual_A": 9.094947017729282e-13
+            },
+            "DVSS": {
+              "R_ohm": 0.40000000000043995,
+              "nodes": 400,
+              "resistors": 635,
+              "KCL_residual_A": 1.0828005159169152e-12
+            }
+          },
+          "resistors": 2259,
+          "capacitors": 1100,
+          "negative_capacitors": 0,
+          "device_LVS": "unique_match",
+          "LVS_scope": "four separate macro ports",
+          "substrate_ground_connection": false,
+          "extraction_s": 1.2727985620149411,
+          "rc_sha256": "afd11228b729881ab0740b718dc3c1477f6cf1a8f0f5f556bf93a8b0d0a69128"
+        },
+        "metal": {
+          "rails": {
+            "VDD": {
+              "R_ohm": 0.45188843212411245,
+              "nodes": 76,
+              "resistors": 127,
+              "KCL_residual_A": 5.684341886080802e-14
+            },
+            "VSS": {
+              "R_ohm": 0.45188387681201153,
+              "nodes": 220,
+              "resistors": 358,
+              "KCL_residual_A": 6.821210263296962e-13
+            },
+            "DVDD": {
+              "R_ohm": 0.40000000000026914,
+              "nodes": 500,
+              "resistors": 794,
+              "KCL_residual_A": 9.094947017729282e-13
+            },
+            "DVSS": {
+              "R_ohm": 0.40000000000043995,
+              "nodes": 400,
+              "resistors": 635,
+              "KCL_residual_A": 1.0828005159169152e-12
+            }
+          },
+          "resistors": 1914,
+          "capacitors": 1163,
+          "negative_capacitors": 0,
+          "device_LVS": "not_applicable_conductor_only",
+          "LVS_scope": "four separate macro ports",
+          "substrate_ground_connection": false,
+          "extraction_s": 1.2239096319535747,
+          "rc_sha256": "debc050411f0df3691b762bd53adb1e6f46de679a7e6ef20c1f65ca6ccf90f2d"
+        }
+      },
+      "corner": {
+        "full": {
+          "rails": {
+            "VDD": {
+              "R_ohm": 1.3676816139354209,
+              "nodes": 8651,
+              "resistors": 14890,
+              "KCL_residual_A": 2.7284841053187847e-12
+            },
+            "VSS": {
+              "R_ohm": 1.8699026162978047,
+              "nodes": 168843,
+              "resistors": 311789,
+              "KCL_residual_A": 8.731149137020111e-11
+            },
+            "DVDD": {
+              "R_ohm": 1.7986916759259162,
+              "nodes": 137700,
+              "resistors": 242036,
+              "KCL_residual_A": 1.0265921446261927e-10
+            },
+            "DVSS": {
+              "R_ohm": 1.3691451885476096,
+              "nodes": 168843,
+              "resistors": 311789,
+              "KCL_residual_A": 1.2839260904451422e-10
+            }
+          },
+          "resistors": 571551,
+          "capacitors": 147122,
+          "negative_capacitors": 0,
+          "device_LVS": "unique_match",
+          "LVS_scope": "tied analog supply domain",
+          "substrate_ground_connection": true,
+          "extraction_s": 71.12683747999836,
+          "rc_sha256": "64286f3dced9428ec66ed104e4abefd35ed05b94b2447b3cf28f5c75a078b23a"
+        },
+        "metal": {
+          "rails": {
+            "VDD": {
+              "R_ohm": 1.5548859449145607,
+              "nodes": 7014,
+              "resistors": 12364,
+              "KCL_residual_A": 5.141387315887869e-12
+            },
+            "VSS": {
+              "R_ohm": 1.5099864374904675,
+              "nodes": 7283,
+              "resistors": 13044,
+              "KCL_residual_A": 3.54702933691442e-11
+            },
+            "DVDD": {
+              "R_ohm": 1.701687613763889,
+              "nodes": 129731,
+              "resistors": 230053,
+              "KCL_residual_A": 1.9736035028472543e-10
+            },
+            "DVSS": {
+              "R_ohm": 1.7392098668798852,
+              "nodes": 109761,
+              "resistors": 196431,
+              "KCL_residual_A": 1.1641532182693481e-10
+            }
+          },
+          "resistors": 451892,
+          "capacitors": 250984,
+          "negative_capacitors": 0,
+          "device_LVS": "not_applicable_conductor_only",
+          "LVS_scope": "four separate macro ports",
+          "substrate_ground_connection": false,
+          "extraction_s": 46.78961778903613,
+          "rc_sha256": "064cdcb7ce8364f167e2d58846a7cd7c651365adb171c859086ebf11bcddc29e"
+        }
+      }
+    },
+    "scope": "Physical point-to-point terminal resistance in small macro coupons with added 0.4 um M5 measurement leads; resistance includes these leads; all other ports open for each resistor-only solve. This is not an equipotential-edge model, stitched ring, or validated capacitance/transient model."
+  },
+  "max_DC_change_ohm": 6.865274793099729e-09,
+  "partition_conservation": {
+    "combined": {
+      "fill10": {
+        "full": [
+          {
+            "net": "VSS_B",
+            "original_node_shunt_aF": 0.0,
+            "incident_coupling_aF": 0.0,
+            "redistributed_sum_aF": 0.0,
+            "relative_error": 0.0,
+            "rnodes": 347,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 121347.0,
+            "incident_coupling_aF": 116927.0,
+            "redistributed_sum_aF": 116926.9446999999,
+            "relative_error": -4.729446585867747e-07,
+            "rnodes": 199,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 75198.6,
+            "incident_coupling_aF": 102804.5,
+            "redistributed_sum_aF": 102804.56660000073,
+            "relative_error": 6.478315709250122e-07,
+            "rnodes": 400,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 72173.6,
+            "incident_coupling_aF": 101132.9,
+            "redistributed_sum_aF": 101132.83330000081,
+            "relative_error": -6.595281968662546e-07,
+            "rnodes": 500,
+            "negative_rnodes": 0
+          }
+        ],
+        "metal": [
+          {
+            "net": "VSS_B",
+            "original_node_shunt_aF": 88714.8,
+            "incident_coupling_aF": 187930.69999999998,
+            "redistributed_sum_aF": 187930.6404000003,
+            "relative_error": -3.171381774645357e-07,
+            "rnodes": 219,
+            "negative_rnodes": 4
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 45718.6,
+            "incident_coupling_aF": 196219.7,
+            "redistributed_sum_aF": 196219.61649999995,
+            "relative_error": -4.2554340907729394e-07,
+            "rnodes": 74,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 22715.6,
+            "incident_coupling_aF": 154627.8,
+            "redistributed_sum_aF": 154627.86989999947,
+            "relative_error": 4.520532496638136e-07,
+            "rnodes": 400,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 24097.6,
+            "incident_coupling_aF": 148688.4,
+            "redistributed_sum_aF": 148688.31120000093,
+            "relative_error": -5.972221038520536e-07,
+            "rnodes": 500,
+            "negative_rnodes": 0
+          }
+        ]
+      },
+      "corner": {
+        "full": [
+          {
+            "net": "a_15044_58302#",
+            "original_node_shunt_aF": 288147.0,
+            "incident_coupling_aF": 226226.69277000002,
+            "redistributed_sum_aF": 226226.4959000001,
+            "relative_error": -8.702332935006771e-07,
+            "rnodes": 924,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_39525_63720#",
+            "original_node_shunt_aF": 12196.3,
+            "incident_coupling_aF": 25981.6319,
+            "redistributed_sum_aF": 25981.645799999973,
+            "relative_error": 5.349933378371271e-07,
+            "rnodes": 76,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_39525_62256#",
+            "original_node_shunt_aF": 5701.76,
+            "incident_coupling_aF": 9667.79061,
+            "redistributed_sum_aF": 9667.790799999999,
+            "relative_error": 1.965288725240348e-08,
+            "rnodes": 25,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_59881_41340#",
+            "original_node_shunt_aF": 5701.95,
+            "incident_coupling_aF": 9668.08081,
+            "redistributed_sum_aF": 9668.080800000002,
+            "relative_error": -1.0343312312869826e-09,
+            "rnodes": 25,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_60857_41340#",
+            "original_node_shunt_aF": 12198.3,
+            "incident_coupling_aF": 25988.638,
+            "redistributed_sum_aF": 25988.644000000004,
+            "relative_error": 2.3087012119913095e-07,
+            "rnodes": 76,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_58313_15032#",
+            "original_node_shunt_aF": 288119.0,
+            "incident_coupling_aF": 226213.99276999998,
+            "redistributed_sum_aF": 226213.65249999912,
+            "relative_error": -1.5041951945259576e-06,
+            "rnodes": 924,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 0.0,
+            "incident_coupling_aF": 0.0,
+            "redistributed_sum_aF": 0.0,
+            "relative_error": 0.0,
+            "rnodes": 168838,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 3005480.0,
+            "incident_coupling_aF": 645533.177719,
+            "redistributed_sum_aF": 645564.2470445794,
+            "relative_error": 4.812971145668174e-05,
+            "rnodes": 137693,
+            "negative_rnodes": 68
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 1248420.0,
+            "incident_coupling_aF": 617314.7506219997,
+            "redistributed_sum_aF": 617308.7855330082,
+            "relative_error": -9.662962023107885e-06,
+            "rnodes": 8640,
+            "negative_rnodes": 5
+          }
+        ],
+        "metal": [
+          {
+            "net": "VSS_B",
+            "original_node_shunt_aF": 349865.0,
+            "incident_coupling_aF": 1329581.3865089999,
+            "redistributed_sum_aF": 1329579.7499349725,
+            "relative_error": -1.2308942077313524e-06,
+            "rnodes": 7287,
+            "negative_rnodes": 19
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 962252.0,
+            "incident_coupling_aF": 2490737.434539701,
+            "redistributed_sum_aF": 2490594.8664468816,
+            "relative_error": -5.723931027103645e-05,
+            "rnodes": 129717,
+            "negative_rnodes": 96
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 1128680.0,
+            "incident_coupling_aF": 2416470.133444,
+            "redistributed_sum_aF": 2416463.3581636855,
+            "relative_error": -2.8037922839300267e-06,
+            "rnodes": 109768,
+            "negative_rnodes": 65
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 220469.0,
+            "incident_coupling_aF": 1312117.247541,
+            "redistributed_sum_aF": 1312126.9262500114,
+            "relative_error": 7.376405599166917e-06,
+            "rnodes": 7017,
+            "negative_rnodes": 31
+          }
+        ]
+      }
+    },
+    "area-fixed": {
+      "fill10": {
+        "full": [
+          {
+            "net": "VSS_B",
+            "original_node_shunt_aF": 0.0,
+            "incident_coupling_aF": 0.0,
+            "redistributed_sum_aF": 0.0,
+            "relative_error": 0.0,
+            "rnodes": 347,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 121347.0,
+            "incident_coupling_aF": 116927.0,
+            "redistributed_sum_aF": 116926.93590000008,
+            "relative_error": -5.482052897613456e-07,
+            "rnodes": 199,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 75198.6,
+            "incident_coupling_aF": 102804.5,
+            "redistributed_sum_aF": 102804.56660000073,
+            "relative_error": 6.478315709250122e-07,
+            "rnodes": 400,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 72173.6,
+            "incident_coupling_aF": 101132.9,
+            "redistributed_sum_aF": 101132.83330000081,
+            "relative_error": -6.595281968662546e-07,
+            "rnodes": 500,
+            "negative_rnodes": 0
+          }
+        ],
+        "metal": [
+          {
+            "net": "VSS_B",
+            "original_node_shunt_aF": 88714.8,
+            "incident_coupling_aF": 187930.69999999998,
+            "redistributed_sum_aF": 187930.7688999997,
+            "relative_error": 3.6662450425559576e-07,
+            "rnodes": 220,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 45718.6,
+            "incident_coupling_aF": 196219.7,
+            "redistributed_sum_aF": 196219.61439999996,
+            "relative_error": -4.3624569831394717e-07,
+            "rnodes": 76,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 22715.6,
+            "incident_coupling_aF": 154627.8,
+            "redistributed_sum_aF": 154627.86989999947,
+            "relative_error": 4.520532496638136e-07,
+            "rnodes": 400,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 24097.6,
+            "incident_coupling_aF": 148688.40000000002,
+            "redistributed_sum_aF": 148688.3102000009,
+            "relative_error": -6.039475783846831e-07,
+            "rnodes": 500,
+            "negative_rnodes": 0
+          }
+        ]
+      },
+      "corner": {
+        "full": [
+          {
+            "net": "a_15044_58302#",
+            "original_node_shunt_aF": 288147.0,
+            "incident_coupling_aF": 226226.69277000002,
+            "redistributed_sum_aF": 226226.4960000001,
+            "relative_error": -8.697912589930542e-07,
+            "rnodes": 924,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_39525_63720#",
+            "original_node_shunt_aF": 12196.3,
+            "incident_coupling_aF": 25981.6319,
+            "redistributed_sum_aF": 25981.64460000001,
+            "relative_error": 4.88806863984055e-07,
+            "rnodes": 76,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_39525_62256#",
+            "original_node_shunt_aF": 5701.76,
+            "incident_coupling_aF": 9667.79061,
+            "redistributed_sum_aF": 9667.790799999999,
+            "relative_error": 1.965288725240348e-08,
+            "rnodes": 25,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_59881_41340#",
+            "original_node_shunt_aF": 5701.95,
+            "incident_coupling_aF": 9668.08081,
+            "redistributed_sum_aF": 9668.0824,
+            "relative_error": 1.6445869982865694e-07,
+            "rnodes": 25,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_60857_41340#",
+            "original_node_shunt_aF": 12198.3,
+            "incident_coupling_aF": 25988.638,
+            "redistributed_sum_aF": 25988.63419999998,
+            "relative_error": -1.4621774409337063e-07,
+            "rnodes": 76,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "a_58313_15032#",
+            "original_node_shunt_aF": 288119.0,
+            "incident_coupling_aF": 226213.99276999998,
+            "redistributed_sum_aF": 226213.65249999912,
+            "relative_error": -1.5041951945259576e-06,
+            "rnodes": 924,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 0.0,
+            "incident_coupling_aF": 0.0,
+            "redistributed_sum_aF": 0.0,
+            "relative_error": 0.0,
+            "rnodes": 168843,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 3005480.0,
+            "incident_coupling_aF": 645533.177719,
+            "redistributed_sum_aF": 645563.0656219067,
+            "relative_error": 4.629956125917414e-05,
+            "rnodes": 137700,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 1248420.0,
+            "incident_coupling_aF": 617314.7506219997,
+            "redistributed_sum_aF": 617309.0681860085,
+            "relative_error": -9.205087008721186e-06,
+            "rnodes": 8651,
+            "negative_rnodes": 0
+          }
+        ],
+        "metal": [
+          {
+            "net": "VSS_B",
+            "original_node_shunt_aF": 349865.0,
+            "incident_coupling_aF": 1329581.386509,
+            "redistributed_sum_aF": 1329567.910820026,
+            "relative_error": -1.013528702407793e-05,
+            "rnodes": 7283,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVDD_B",
+            "original_node_shunt_aF": 962252.0,
+            "incident_coupling_aF": 2490737.434539701,
+            "redistributed_sum_aF": 2490588.503976128,
+            "relative_error": -5.979376288625831e-05,
+            "rnodes": 129731,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "DVSS_B",
+            "original_node_shunt_aF": 1128680.0,
+            "incident_coupling_aF": 2416470.1334440005,
+            "redistributed_sum_aF": 2416464.2474149205,
+            "relative_error": -2.4357963289342386e-06,
+            "rnodes": 109761,
+            "negative_rnodes": 0
+          },
+          {
+            "net": "VDD_B",
+            "original_node_shunt_aF": 220469.0,
+            "incident_coupling_aF": 1312117.2475410001,
+            "redistributed_sum_aF": 1312126.877192529,
+            "relative_error": 7.339017566326322e-06,
+            "rnodes": 7014,
+            "negative_rnodes": 0
+          }
+        ]
+      }
+    }
+  },
+  "max_partition_relative_error": 5.979376288625831e-05,
+  "common_mode_accounting": {
+    "tee": {
+      "combined": {
+        "original_shunt_sum_fF": 6.5953800000000005,
+        "incident_coupling_sum_fF": 3.9103000000000003,
+        "exported_common_mode_fF": 10.505680000000002,
+        "ngspice_common_mode_fF": 10.50568,
+        "excess_fF": 3.910300000000001,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      },
+      "area-fixed": {
+        "original_shunt_sum_fF": 6.5953800000000005,
+        "incident_coupling_sum_fF": 3.9103000000000003,
+        "exported_common_mode_fF": 10.505680000000002,
+        "ngspice_common_mode_fF": 10.50568,
+        "excess_fF": 3.910300000000001,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      }
+    },
+    "tee-rotated": {
+      "combined": {
+        "original_shunt_sum_fF": 6.5953800000000005,
+        "incident_coupling_sum_fF": 3.9103000000000003,
+        "exported_common_mode_fF": 10.505680000000002,
+        "ngspice_common_mode_fF": 10.50568,
+        "excess_fF": 3.910300000000001,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      },
+      "area-fixed": {
+        "original_shunt_sum_fF": 6.5953800000000005,
+        "incident_coupling_sum_fF": 3.9103000000000003,
+        "exported_common_mode_fF": 10.505680000000002,
+        "ngspice_common_mode_fF": 10.50568,
+        "excess_fF": 3.910300000000001,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      }
+    },
+    "long-tee": {
+      "combined": {
+        "original_shunt_sum_fF": 6.8702000000000005,
+        "incident_coupling_sum_fF": 5.27103,
+        "exported_common_mode_fF": 12.14123,
+        "ngspice_common_mode_fF": 12.14123,
+        "excess_fF": 5.27103,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      },
+      "area-fixed": {
+        "original_shunt_sum_fF": 6.8702000000000005,
+        "incident_coupling_sum_fF": 5.27103,
+        "exported_common_mode_fF": 12.14123,
+        "ngspice_common_mode_fF": 12.14123,
+        "excess_fF": 5.27103,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      }
+    },
+    "long-tee-rotated": {
+      "combined": {
+        "original_shunt_sum_fF": 6.8702000000000005,
+        "incident_coupling_sum_fF": 5.27103,
+        "exported_common_mode_fF": 12.14123,
+        "ngspice_common_mode_fF": 12.14123,
+        "excess_fF": 5.27103,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      },
+      "area-fixed": {
+        "original_shunt_sum_fF": 6.8702000000000005,
+        "incident_coupling_sum_fF": 5.27103,
+        "exported_common_mode_fF": 12.14123,
+        "ngspice_common_mode_fF": 12.14123,
+        "excess_fF": 5.27103,
+        "negative_exported_caps": 0,
+        "charge_conserving": false
+      }
+    }
+  },
+  "status": "area_sign_corrected_in_isolated_candidate; exported_charge_accounting_still_fails",
+  "binary_sha256": "8bcf5b5ce4752d6fe3e05ba604beba08d539bb265b348ff4955c8ab44f69a215",
+  "production_gds_sha256": {
+    "build/power-ring/power_ring.gds": "018d51367dc29b877696de12a84f4d7001f75f20fed377c9633edee54fad6be8",
+    "build/power-ring/ring_sensor_power.gds": "07584927d1ae66c4bd2437a0e8c373648f407d70fe5f11a92204b98e6ff4ffba"
+  }
+}

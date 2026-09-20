@@ -1,0 +1,38 @@
+# Isolated real VDD rail
+
+Recorded **2026-09-18 08:30 PDT**.
+
+![Rail isolation results](assets/rail-isolation.png)
+
+The discrepancy is present before any via is added. The finest M5-only mesh gives 0.577681 Ω at 0.0125 µm maximum cell size; the last refinement changes it by 0.057%. This is evidence of numerical stabilization, not an independent accuracy certification. The top-metal-only Magic result equals the one-dimensional series-strip estimate: 0.04 × (4 / 0.4 + 20 / 7) = 0.514286 Ω. The spatial mesh predicts additional resistance around the abrupt narrow-lead-to-wide-rail transitions. This strongly implicates probe-transition modeling; it does not independently prove either model's accuracy for the full rail.
+
+Adding M4 increases Magic's effective resistance slightly, while the spatial model decreases as expected when a passive parallel path is added. This diagnostic monotonicity failure means these Magic exports should not be treated as an absolute DC reference without further investigation. The SPICE exports pass independent ngspice solves, which validates solving the exported networks, not their geometric accuracy.
+
+Correction to earlier notes: the installed Magic rejects `extresist threshold -1` with a usage message. The earlier runs therefore did not prove a negative-threshold recipe. These rail results were rerun using accepted `extresist threshold 0`, explicit `extresist include VDD_B`, and `extresist all`; logs are checked for usage errors. Earlier checkpoint archives are preserved as historical evidence.
+
+The full isolated Magic SPICE model reproduces the earlier four-rail VDD result (0.499084 Ω), confirming that isolation preserves this measurement. Raw versus exported resistance differs by about 0.00998 Ω for this multi-resistor network, so the single-resistor 0.0005 Ω observation must not be applied as a blanket terminal correction. Only the VDD-connected conductor component is retained at each stage; adding layers can connect more of the original rail geometry. These are diagnostic conductor coupons, not DRC/LVS-qualified layout revisions. The production sensor and power-ring GDS remain unchanged. Full RC, corner substrate coupling and negative capacitance remain unqualified.
+
+Next: separate probe access resistance from the macro by moving measurements to full-width rail faces. Compare that de-embedded M5 control with an analytic strip and the layered rail with an independent field solver or a validated access-resistance model before returning to full-ring RC.
+
+## Results
+
+| Layers | Magic raw Ω | Magic SPICE Ω | FV 0.1 µm Ω |
+| --- | ---: | ---: | ---: |
+| m5-to-m5 | 0.514286 | 0.514786 | 0.580950 |
+| m5-to-m4 | 0.518443 | 0.518943 | 0.559674 |
+| m5-to-m3 | 0.489146 | 0.499119 | 0.554933 |
+| m5-to-m2 | 0.489109 | 0.499091 | 0.554859 |
+| m5-to-m1 | 0.489104 | 0.499084 | 0.554854 |
+
+All completed mesh results and finer refinements are recorded in [the JSON summary](../simulations/rail-isolation.json). DC partition agreement is checked below 1e-8 relative; every Magic resistor network is checked for duplicate node pairs, disconnected nodes and agreement with ngspice. Mesh refinement is not an independent continuum error bound.
+
+## Reproduction
+
+```sh
+bash scripts/run-tools.sh python3 scripts/run-rail-isolation.py
+bash scripts/run-tools.sh python3 scripts/refine-rail-probes.py
+bash scripts/run-tools.sh python3 scripts/report-rail-isolation.py
+bash scripts/run-tools.sh python3 scripts/build-overview.py
+```
+
+Use the pinned Docker environment and the parent [matched-terminal checkpoint](geometry-controls.md). Each mesh has a 180-second watchdog. The checksummed `checkpoints/rail-isolation/evidence.tar.gz` retains geometry, extraction logs/netlists, results, scripts and figures. Large sparse matrices and generated FV SPICE decks are reproducible and omitted; this is a compact result/input checkpoint. Restore into a separate directory.

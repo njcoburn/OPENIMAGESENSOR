@@ -1,0 +1,30 @@
+diff --git a/resis/ResMerge.c b/resis/ResMerge.c
+index e201a10..d922357 100644
+--- a/resis/ResMerge.c
++++ b/resis/ResMerge.c
+@@ -609,9 +609,9 @@ ResTriangleCheck(resptr)
+ 			r2 = (((float)rr2->rr_value) * ((float)rr3->rr_value)) * denom;
+ 			r3 = (((float)rr1->rr_value) * ((float)rr3->rr_value)) * denom;
+ 
+-			rr1->rr_value = r1 + 0.5;
+-			rr2->rr_value = r2 + 0.5;
+-			rr3->rr_value = r3 + 0.5;
++			rr1->rr_value = r1 ;
++			rr2->rr_value = r2 ;
++			rr3->rr_value = r3 ;
+ 			ASSERT(rr1->rr_value >= 0, "Triangle");
+ 			ASSERT(rr2->rr_value >= 0, "Triangle");
+ 			ASSERT(rr3->rr_value >= 0, "Triangle");
+@@ -744,9 +744,9 @@ ResTriangleCheck(resptr)
+ 
+ 		    r3 = (((float)rr1->rr_value) * ((float)rr3->rr_value)) * denom;
+ 
+-		    rr1->rr_value = r1 + 0.5;
+-		    rr2->rr_value = r2 + 0.5;
+-		    rr3->rr_value = r3 + 0.5;
++		    rr1->rr_value = r1 ;
++		    rr2->rr_value = r2 ;
++		    rr3->rr_value = r3 ;
+ 		    ASSERT(rr1->rr_value >= 0, "Triangle");
+ 		    ASSERT(rr2->rr_value >= 0, "Triangle");
+ 		    ASSERT(rr3->rr_value >= 0, "Triangle");

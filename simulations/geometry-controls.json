@@ -1,0 +1,174 @@
+{
+  "recorded": "2026-09-18 07:45 PDT",
+  "scope": "Matched terminal planes, bends and M4/M5 via diagnostic coupons; matrix-only FV runs. Not DRC-qualified cells or full RC extraction.",
+  "controls": {
+    "straight": {
+      "Magic_raw_ohm": 0.192,
+      "Magic_SPICE_ohm": 0.1925,
+      "mesh_steps_um": [
+        0.2,
+        0.1,
+        0.05
+      ],
+      "FV_ohm": [
+        0.19199999999999134,
+        0.19200000000000628,
+        0.19200000000010353
+      ],
+      "fine_vs_raw_pct": 5.39124300757976e-11,
+      "last_refinement_pct": 5.064837438339964e-11,
+      "single_path_audit_pass": true
+    },
+    "bend": {
+      "Magic_raw_ohm": 0.232,
+      "Magic_SPICE_ohm": 0.2325,
+      "mesh_steps_um": [
+        0.2,
+        0.1,
+        0.05
+      ],
+      "FV_ohm": [
+        0.23816831308544886,
+        0.23738724861477595,
+        0.23708338988982977
+      ],
+      "fine_vs_raw_pct": 2.191116331823162,
+      "last_refinement_pct": -0.1280012834384614,
+      "single_path_audit_pass": true
+    },
+    "via_bridge": {
+      "Magic_raw_ohm": 9.2545,
+      "Magic_SPICE_ohm": 9.255,
+      "mesh_steps_um": [
+        0.2,
+        0.1,
+        0.05
+      ],
+      "FV_ohm": [
+        9.316032705480762,
+        9.309963516461755,
+        9.306892621606009
+      ],
+      "fine_vs_raw_pct": 0.566131304835582,
+      "last_refinement_pct": -0.03298503641089301,
+      "single_path_audit_pass": true
+    },
+    "wide_via_bridge": {
+      "Magic_raw_ohm": 3.2545,
+      "Magic_SPICE_ohm": 3.255,
+      "mesh_steps_um": [
+        0.2,
+        0.1,
+        0.05
+      ],
+      "FV_ohm": [
+        3.259373850807855,
+        3.257379477362498,
+        3.256333411578369
+      ],
+      "fine_vs_raw_pct": 0.05633466210996918,
+      "last_refinement_pct": -0.032113721824522656,
+      "single_path_audit_pass": true
+    }
+  },
+  "matched_filler": {
+    "ngspice_R_ohm": {},
+    "ngspice_relative_error": {},
+    "ngspice_check_pass": false,
+    "ngspice_status": "not_requested",
+    "step_um": 0.25,
+    "via_edges_aligned": false,
+    "electrode_model": "equipotential",
+    "geometry_file": "build/geometry-controls/filler-matched.json",
+    "method": "Independent conductor-only finite-volume DC network; exact Manhattan metal coverage; per-cut via conductance distributed by overlap area; outer electrode geometry from ports; treatment recorded in electrode_model. No devices/substrate/capacitance.",
+    "monolithic": {
+      "VDD": {
+        "R_ohm": 0.5612779223449825,
+        "KCL_residual_A": 2.930988785010413e-14,
+        "network_nodes": 86956,
+        "energy_relative_error": 9.110793508604114e-13
+      },
+      "VSS": {
+        "R_ohm": 0.5619215358924275,
+        "KCL_residual_A": 3.2862601528904634e-14,
+        "network_nodes": 95660,
+        "energy_relative_error": 1.1078095608467568e-12
+      },
+      "DVDD": {
+        "R_ohm": 0.5320807101206839,
+        "KCL_residual_A": 4.574118861455645e-14,
+        "network_nodes": 174060,
+        "energy_relative_error": 6.052718861208459e-12
+      },
+      "DVSS": {
+        "R_ohm": 0.5321378336897078,
+        "KCL_residual_A": 4.618527782440651e-14,
+        "network_nodes": 147964,
+        "energy_relative_error": 5.788563764512641e-12
+      }
+    },
+    "stitched": {
+      "VDD": {
+        "R_ohm": 0.5612779223449486,
+        "KCL_residual_A": 2.634004125923184e-14,
+        "network_nodes": 87145,
+        "energy_relative_error": 1.2052120027774257e-12
+      },
+      "VSS": {
+        "R_ohm": 0.5619215358928145,
+        "KCL_residual_A": 2.398081733190338e-14,
+        "network_nodes": 97131,
+        "energy_relative_error": 5.196253156812849e-13
+      },
+      "DVDD": {
+        "R_ohm": 0.5320807101205213,
+        "KCL_residual_A": 4.973799150320701e-14,
+        "network_nodes": 175665,
+        "energy_relative_error": 6.874201009465445e-12
+      },
+      "DVSS": {
+        "R_ohm": 0.5321378336898746,
+        "KCL_residual_A": 4.796163466380676e-14,
+        "network_nodes": 149275,
+        "energy_relative_error": 5.860542661564575e-12
+      }
+    },
+    "relative_stitch_error": {
+      "VDD": 6.050715484207103e-14,
+      "VSS": 6.885603198725221e-13,
+      "DVDD": 3.056443986793056e-13,
+      "DVSS": 3.133049375492192e-13
+    },
+    "stitch_limit": 1e-08,
+    "stitch_pass": true,
+    "boundary_intervals": 81,
+    "boundary_ports": 4576,
+    "metal_area_dbu2": {
+      "34": 4934376200,
+      "36": 3396105400,
+      "42": 5067800000,
+      "46": 5067800000,
+      "81": 5074840000
+    },
+    "via_conductance_S": {
+      "35": 78.22222222222243,
+      "38": 185.33333333333658,
+      "40": 2453.3333333329047,
+      "41": 2453.3333333329047
+    },
+    "node_counts": [
+      504640,
+      509216
+    ],
+    "geometry_sha256": "646dfc981a580fca17d6c98c6141faa8df013c819fd11e1a6a1e12b3a92881d0",
+    "elapsed_s": 12.852938049996737
+  },
+  "matched_filler_vs_earlier_Magic_pct": {
+    "VDD": 12.461638125853082,
+    "VSS": 12.666982933644476,
+    "DVDD": 17.92279257860303,
+    "DVSS": 17.929558227478925
+  },
+  "absolute_filler_convergence_established": false,
+  "full_RC_qualified": false
+}

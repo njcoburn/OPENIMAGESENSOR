@@ -1,0 +1,140 @@
+{
+  "recorded": "2026-09-18 13:17 PDT",
+  "source_commit": "381714e2d5debf2ded71c5a6b6604e6b936422cf",
+  "triangle_offset_cause_confirmed_on_two_controls": true,
+  "construction": {
+    "all_cuts-normal": {
+      "resistors": 1,
+      "zero_resistors": 0,
+      "R_ohm": 0.118443,
+      "ngspice_R_ohm": 0.118443
+    },
+    "two_end_columns-normal": {
+      "resistors": 1,
+      "zero_resistors": 0,
+      "R_ohm": 0.106148,
+      "ngspice_R_ohm": 0.106148
+    },
+    "all_cuts-unreduced": {
+      "resistors": 360,
+      "zero_resistors": 0,
+      "R_ohm": 0.09383720124224756,
+      "ngspice_R_ohm": 0.09383720124225
+    },
+    "two_end_columns-unreduced": {
+      "resistors": 24,
+      "zero_resistors": 0,
+      "R_ohm": 0.10514803612590749,
+      "ngspice_R_ohm": 0.1051480361259
+    },
+    "all_cuts-fixed": {
+      "resistors": 1,
+      "zero_resistors": 0,
+      "R_ohm": 0.0938371,
+      "ngspice_R_ohm": 0.0938371
+    },
+    "two_end_columns-fixed": {
+      "resistors": 1,
+      "zero_resistors": 0,
+      "R_ohm": 0.10514799999999999,
+      "ngspice_R_ohm": 0.105148
+    },
+    "scope": "Six raw networks independently solved in ngspice; triangle-candidate agreement with unreduced matrix solve checked within 2e-6 relative, accounting for printed precision."
+  },
+  "device_export_audit": {
+    "buffer": {
+      "counts": {
+        "R": 19,
+        "C": 150473,
+        "X": 3,
+        ".subckt": 1
+      },
+      "nonresistor_records_identical_ignoring_cap_names_and_order": true,
+      "same_resistor_nodes": true,
+      "simulations": {
+        "baseline": {
+          "status": "failed_or_timeout",
+          "detail": "Command '['ngspice', '-b', '/foss/designs/build/network-investigation/device-export/buffer/baseline.cir']' timed out after 89.99997384799644 seconds"
+        },
+        "patched": {
+          "status": "failed_or_timeout",
+          "detail": "Command '['ngspice', '-b', '/foss/designs/build/network-investigation/device-export/buffer/patched.cir']' timed out after 89.99998210603371 seconds"
+        }
+      }
+    },
+    "hierarchy": {
+      "counts": {
+        "R": 19,
+        "C": 150473,
+        "X": 5,
+        ".subckt": 2
+      },
+      "nonresistor_records_identical_ignoring_cap_names_and_order": true,
+      "same_resistor_nodes": true,
+      "simulations": {
+        "baseline": {
+          "status": "failed_or_timeout",
+          "detail": "Command '['ngspice', '-b', '/foss/designs/build/network-investigation/device-export/hierarchy/baseline.cir']' timed out after 89.99998475500615 seconds"
+        },
+        "patched": {
+          "status": "failed_or_timeout",
+          "detail": "Command '['ngspice', '-b', '/foss/designs/build/network-investigation/device-export/hierarchy/patched.cir']' timed out after 89.9999800499645 seconds"
+        }
+      }
+    },
+    "scope": "Nominal 27C, 3.3V, 40uA reference, 0.7-to-0.9V input and 100pF load, 6us full-RC transient. 1e12-ohm rshunt stabilizes floating extracted fill nodes; this numerical loading is a test condition, not a production model change."
+  },
+  "reduced_RC_transients": {
+    "scope": "Nominal 6us buffer and two-instance hierarchy transients using the existing verified Schur capacitance reduction, with charge-neutral floating fill. No artificial shunt added. Full raw-network attempts retained separately.",
+    "reduction": {
+      "raw_netlist_sha256": "6b4c923702ab7bb0fa61b0ce88c8336c2932bdd138b0d4af94b2f989261864e9",
+      "resistors": 19,
+      "raw_capacitors": 150473,
+      "retained_nodes_including_ground": 24,
+      "eliminated_capacitive_nodes": 21085,
+      "output_capacitors": 276,
+      "max_schur_residual_fF": 2.7284841053187847e-12,
+      "random_voltage_charge_error_fC": 3.410605131648481e-13,
+      "random_voltage_energy_error_fJ_times2": 6.252776074688882e-13,
+      "min_capacitance_eigenvalue_fF": 1.1529983791361404,
+      "max_capacitance_matrix_row_error_fF": 1.4210854715202004e-14,
+      "node_map": {},
+      "physical_devices": {},
+      "method": "Schur complement; floating fill at zero net charge. C below 1e-6 fF omitted with bounded row-sum error."
+    },
+    "cases": {
+      "buffer": {
+        "baseline": {
+          "final_buffer_V": 2.258456864737,
+          "points": 626,
+          "pass": true
+        },
+        "patched": {
+          "final_buffer_V": 2.258456885785,
+          "points": 626,
+          "pass": true
+        },
+        "max_buffer_difference_V": 4.6422099497789304e-08
+      },
+      "hierarchy": {
+        "baseline": {
+          "final_buffer_V": 2.258456864735,
+          "points": 626,
+          "pass": true
+        },
+        "patched": {
+          "final_buffer_V": 2.258456885785,
+          "points": 626,
+          "pass": true
+        },
+        "max_buffer_difference_V": 4.6426869904081514e-08
+      }
+    }
+  },
+  "reader_and_triangle_patches_tested_separately": true,
+  "combined_patch_production_qualification": false,
+  "production_tools_or_netlists_changed": false,
+  "full_RC_qualified": false,
+  "trace_binary_sha256": "4a9c824d7df2c1f4e9fb540759bf7d46c353dac4f166afdbc70492cf3d65b078",
+  "triangle_candidate_binary_sha256": "04273bd49aa151e5dbd6b39cf0988823457ed8fecc599ed2542e6167ebe1d119"
+}

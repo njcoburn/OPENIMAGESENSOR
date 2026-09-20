@@ -1,0 +1,69 @@
+* Independent functional reference for the routed 24-pad working layout.
+* Four diagnostic pad diodes are present but disconnected from sensor diagnostics.
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice
+.include /foss/designs/circuits/integrated.spice
+.include /foss/designs/circuits/analog-secondary.spice
+.subckt demonstrator_routed GND VDD PAD_BIAS PAD_SEL0 PAD_SEL1 PAD_SEL2 PAD_PREF PAD_BUF NC_P10 NC_P11 NC_P12 NC_P15 PAD_RST2 PAD_ROW2 PAD_VRESET PAD_RST1 PAD_ROW1 PAD_RST0 PAD_ROW0
+Xcore VDD CORE_VRESET GND CORE_RST0 CORE_RST1 CORE_RST2 CORE_ROW0 CORE_ROW1 CORE_ROW2 CORE_BIAS CORE_SEL0 CORE_SEL1 CORE_SEL2 CORE_PREF CORE_BUF CORE_COL0 CORE_COL1 CORE_COL2 CORE_OUT sensor_3x3
+XP01 VDD GND VDD gf180mcu_fd_io__dvss
+XP02 VDD GND GND gf180mcu_fd_io__dvdd
+XP03 PAD_BIAS VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P03 PAD_BIAS CORE_BIAS VDD GND analog_secondary
+XP04 PAD_SEL0 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P04 PAD_SEL0 CORE_SEL0 VDD GND analog_secondary
+XP05 PAD_SEL1 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P05 PAD_SEL1 CORE_SEL1 VDD GND analog_secondary
+XP06 PAD_SEL2 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P06 PAD_SEL2 CORE_SEL2 VDD GND analog_secondary
+XP07 VDD GND VDD gf180mcu_fd_io__dvss
+XP08 PAD_PREF VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P08 PAD_PREF CORE_PREF VDD GND analog_secondary
+XP09 PAD_BUF VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P09 PAD_BUF CORE_BUF VDD GND analog_secondary
+XP10 NC_P10 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+XP11 NC_P11 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+XP12 NC_P12 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+XP13 VDD GND VDD gf180mcu_fd_io__dvss
+XP14 VDD GND GND gf180mcu_fd_io__dvdd
+XP15 NC_P15 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+XP16 PAD_RST2 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P16 PAD_RST2 CORE_RST2 VDD GND analog_secondary
+XP17 PAD_ROW2 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P17 PAD_ROW2 CORE_ROW2 VDD GND analog_secondary
+XP18 PAD_VRESET VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P18 PAD_VRESET CORE_VRESET VDD GND analog_secondary
+XP19 VDD GND VDD gf180mcu_fd_io__dvss
+XP20 PAD_RST1 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P20 PAD_RST1 CORE_RST1 VDD GND analog_secondary
+XP21 PAD_ROW1 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P21 PAD_ROW1 CORE_ROW1 VDD GND analog_secondary
+XP22 PAD_RST0 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P22 PAD_RST0 CORE_RST0 VDD GND analog_secondary
+XP23 PAD_ROW0 VDD GND VDD GND gf180mcu_fd_io__asig_5p0
+Xprotect_P23 PAD_ROW0 CORE_ROW0 VDD GND analog_secondary
+XP24 VDD GND GND gf180mcu_fd_io__dvdd
+Xcorner0 VDD GND VDD GND gf180mcu_fd_io__cor
+Xcorner1 VDD GND VDD GND gf180mcu_fd_io__cor
+Xcorner2 VDD GND VDD GND gf180mcu_fd_io__cor
+Xcorner3 VDD GND VDD GND gf180mcu_fd_io__cor
+Xfill0 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill1 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill2 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill3 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill4 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill5 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill6 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill7 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill8 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill9 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill10 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill11 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill12 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill13 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill14 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill15 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill16 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill17 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill18 VDD GND VDD GND gf180mcu_fd_io__fill10
+Xfill19 VDD GND VDD GND gf180mcu_fd_io__fill10
+.ends demonstrator_routed

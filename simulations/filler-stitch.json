@@ -1,0 +1,389 @@
+{
+  "scope": "Conductor-only finite-volume DC stitching benchmark. NOT stitched Magic RC/device extraction or a qualified full-ring camera model.",
+  "meshes": [
+    {
+      "step_um": 2.0,
+      "method": "Independent conductor-only finite-volume DC network; exact Manhattan metal coverage; per-cut via conductance distributed by overlap area; finite equipotential 0.2um-square outer electrodes. No devices/substrate/capacitance.",
+      "monolithic": {
+        "VDD": {
+          "R_ohm": 0.5881978355521202,
+          "KCL_residual_A": 7.105427357601002e-14,
+          "network_nodes": 5010,
+          "energy_relative_error": 6.379747759035259e-14
+        },
+        "VSS": {
+          "R_ohm": 0.5904238569274669,
+          "KCL_residual_A": 8.79296635503124e-14,
+          "network_nodes": 8060,
+          "energy_relative_error": 8.969427243372005e-14
+        },
+        "DVDD": {
+          "R_ohm": 0.560232942640155,
+          "KCL_residual_A": 9.559020242022598e-14,
+          "network_nodes": 13902,
+          "energy_relative_error": 2.7862937964103333e-13
+        },
+        "DVSS": {
+          "R_ohm": 0.5649547801801258,
+          "KCL_residual_A": 9.947598300641403e-14,
+          "network_nodes": 11832,
+          "energy_relative_error": 5.296089450576619e-13
+        }
+      },
+      "stitched": {
+        "VDD": {
+          "R_ohm": 0.5881978355520993,
+          "KCL_residual_A": 5.684341886080802e-14,
+          "network_nodes": 5067,
+          "energy_relative_error": 7.361247414271716e-15
+        },
+        "VSS": {
+          "R_ohm": 0.5904238569278074,
+          "KCL_residual_A": 7.205347429817266e-14,
+          "network_nodes": 8395,
+          "energy_relative_error": 2.2188520224681054e-13
+        },
+        "DVDD": {
+          "R_ohm": 0.5602329426402232,
+          "KCL_residual_A": 1.0591527654923993e-13,
+          "network_nodes": 14250,
+          "energy_relative_error": 1.0285110101968614e-13
+        },
+        "DVSS": {
+          "R_ohm": 0.5649547801805741,
+          "KCL_residual_A": 7.460698725481052e-14,
+          "network_nodes": 12114,
+          "energy_relative_error": 2.4073133866238257e-13
+        }
+      },
+      "relative_stitch_error": {
+        "VDD": 3.5638159090467525e-14,
+        "VSS": 5.766498389903063e-13,
+        "DVDD": 1.2168044349891716e-13,
+        "DVSS": 7.935874180020619e-13
+      },
+      "stitch_limit": 1e-08,
+      "stitch_pass": true,
+      "boundary_intervals": 81,
+      "boundary_ports": 1022,
+      "metal_area_dbu2": {
+        "34": 4934376200,
+        "36": 3396105400,
+        "42": 5067800000,
+        "46": 5067800000,
+        "81": 5074840000
+      },
+      "via_conductance_S": {
+        "35": 78.22222222222243,
+        "38": 185.33333333333658,
+        "40": 2453.3333333329047,
+        "41": 2453.3333333329047
+      },
+      "node_counts": [
+        38804,
+        39826
+      ],
+      "geometry_sha256": "d4ad6fb24f0d326871c9bd433e098b000d9c9c1cfbc9659ebc4143b8cefef180",
+      "elapsed_s": 1.99362693700823
+    },
+    {
+      "ngspice_R_ohm": {
+        "VDD": 0.5821775,
+        "VSS": 0.5823479,
+        "DVDD": 0.5530491,
+        "DVSS": 0.5533751
+      },
+      "ngspice_relative_error": {
+        "VDD": 3.8068413532599266e-08,
+        "VSS": 5.262912183834345e-08,
+        "DVDD": 4.395818087310488e-08,
+        "DVSS": 6.354158776922247e-08
+      },
+      "ngspice_check_pass": true,
+      "step_um": 1.0,
+      "method": "Independent conductor-only finite-volume DC network; exact Manhattan metal coverage; per-cut via conductance distributed by overlap area; finite equipotential 0.2um-square outer electrodes. No devices/substrate/capacitance.",
+      "monolithic": {
+        "VDD": {
+          "R_ohm": 0.5821775221626231,
+          "KCL_residual_A": 4.263256414560601e-14,
+          "network_nodes": 8506,
+          "energy_relative_error": 5.568492613495118e-14
+        },
+        "VSS": {
+          "R_ohm": 0.5823479306485023,
+          "KCL_residual_A": 3.708144902248023e-14,
+          "network_nodes": 13020,
+          "energy_relative_error": 8.369359315275472e-14
+        },
+        "DVDD": {
+          "R_ohm": 0.5530491243108244,
+          "KCL_residual_A": 5.417888360170764e-14,
+          "network_nodes": 21810,
+          "energy_relative_error": 3.77402150106694e-13
+        },
+        "DVSS": {
+          "R_ohm": 0.5533750648374922,
+          "KCL_residual_A": 4.574118861455645e-14,
+          "network_nodes": 19008,
+          "energy_relative_error": 6.508358834241414e-13
+        }
+      },
+      "stitched": {
+        "VDD": {
+          "R_ohm": 0.5821775221625747,
+          "KCL_residual_A": 4.263256414560601e-14,
+          "network_nodes": 8578,
+          "energy_relative_error": 1.3310985767876424e-13
+        },
+        "VSS": {
+          "R_ohm": 0.5823479306484602,
+          "KCL_residual_A": 5.284661597215745e-14,
+          "network_nodes": 13492,
+          "energy_relative_error": 3.012206769507107e-14
+        },
+        "DVDD": {
+          "R_ohm": 0.5530491243110334,
+          "KCL_residual_A": 5.88418203051333e-14,
+          "network_nodes": 22308,
+          "energy_relative_error": 2.4872407658617936e-13
+        },
+        "DVSS": {
+          "R_ohm": 0.5533750648376697,
+          "KCL_residual_A": 6.394884621840902e-14,
+          "network_nodes": 19425,
+          "energy_relative_error": 8.827613708586016e-14
+        }
+      },
+      "relative_stitch_error": {
+        "VDD": 8.315570454442422e-14,
+        "VSS": 7.227551890309769e-14,
+        "DVDD": 3.7769787297747826e-13,
+        "DVSS": 3.2085445411667024e-13
+      },
+      "stitch_limit": 1e-08,
+      "stitch_pass": true,
+      "boundary_intervals": 81,
+      "boundary_ports": 1459,
+      "metal_area_dbu2": {
+        "34": 4934376200,
+        "36": 3396105400,
+        "42": 5067800000,
+        "46": 5067800000,
+        "81": 5074840000
+      },
+      "via_conductance_S": {
+        "35": 78.22222222222243,
+        "38": 185.33333333333658,
+        "40": 2453.3333333329047,
+        "41": 2453.3333333329047
+      },
+      "node_counts": [
+        62344,
+        63803
+      ],
+      "geometry_sha256": "d4ad6fb24f0d326871c9bd433e098b000d9c9c1cfbc9659ebc4143b8cefef180",
+      "elapsed_s": 32.07251296797767
+    },
+    {
+      "ngspice_R_ohm": {},
+      "ngspice_relative_error": {},
+      "ngspice_check_pass": false,
+      "ngspice_status": "not_requested",
+      "step_um": 0.5,
+      "method": "Independent conductor-only finite-volume DC network; exact Manhattan metal coverage; per-cut via conductance distributed by overlap area; finite equipotential 0.2um-square outer electrodes. No devices/substrate/capacitance.",
+      "monolithic": {
+        "VDD": {
+          "R_ohm": 0.5771403834395461,
+          "KCL_residual_A": 2.3092638912203256e-14,
+          "network_nodes": 24556,
+          "energy_relative_error": 1.1157239603387425e-13
+        },
+        "VSS": {
+          "R_ohm": 0.5780218909746793,
+          "KCL_residual_A": 2.842170943040401e-14,
+          "network_nodes": 30176,
+          "energy_relative_error": 2.8753303184786556e-13
+        },
+        "DVDD": {
+          "R_ohm": 0.5479184006514386,
+          "KCL_residual_A": 3.2862601528904634e-14,
+          "network_nodes": 52494,
+          "energy_relative_error": 1.0327827555684346e-12
+        },
+        "DVSS": {
+          "R_ohm": 0.5480105977014966,
+          "KCL_residual_A": 3.197442310920451e-14,
+          "network_nodes": 44944,
+          "energy_relative_error": 7.443212612276249e-13
+        }
+      },
+      "stitched": {
+        "VDD": {
+          "R_ohm": 0.5771403834395997,
+          "KCL_residual_A": 2.6645352591003757e-14,
+          "network_nodes": 24661,
+          "energy_relative_error": 1.9679062265972888e-13
+        },
+        "VSS": {
+          "R_ohm": 0.578021890974878,
+          "KCL_residual_A": 3.241851231905457e-14,
+          "network_nodes": 30956,
+          "energy_relative_error": 1.594204518594832e-13
+        },
+        "DVDD": {
+          "R_ohm": 0.5479184006515511,
+          "KCL_residual_A": 3.863576125695545e-14,
+          "network_nodes": 53328,
+          "energy_relative_error": 8.913500768578793e-13
+        },
+        "DVSS": {
+          "R_ohm": 0.5480105977016295,
+          "KCL_residual_A": 3.730349362740526e-14,
+          "network_nodes": 45631,
+          "energy_relative_error": 6.227663464924235e-13
+        }
+      },
+      "relative_stitch_error": {
+        "VDD": 9.281464485866309e-14,
+        "VSS": 3.4372504842394846e-13,
+        "DVDD": 2.0516921495072893e-13,
+        "DVSS": 2.424727085781342e-13
+      },
+      "stitch_limit": 1e-08,
+      "stitch_pass": true,
+      "boundary_intervals": 81,
+      "boundary_ports": 2406,
+      "metal_area_dbu2": {
+        "34": 4934376200,
+        "36": 3396105400,
+        "42": 5067800000,
+        "46": 5067800000,
+        "81": 5074840000
+      },
+      "via_conductance_S": {
+        "35": 78.22222222222243,
+        "38": 185.33333333333658,
+        "40": 2453.3333333329047,
+        "41": 2453.3333333329047
+      },
+      "node_counts": [
+        152170,
+        154576
+      ],
+      "geometry_sha256": "d4ad6fb24f0d326871c9bd433e098b000d9c9c1cfbc9659ebc4143b8cefef180",
+      "elapsed_s": 3.777894358994672
+    },
+    {
+      "ngspice_R_ohm": {},
+      "ngspice_relative_error": {},
+      "ngspice_check_pass": false,
+      "step_um": 0.25,
+      "method": "Independent conductor-only finite-volume DC network; exact Manhattan metal coverage; per-cut via conductance distributed by overlap area; finite equipotential 0.2um-square outer electrodes. No devices/substrate/capacitance.",
+      "monolithic": {
+        "VDD": {
+          "R_ohm": 0.565872038137337,
+          "KCL_residual_A": 3.375077994860476e-14,
+          "network_nodes": 87528,
+          "energy_relative_error": 1.7135831501755055e-12
+        },
+        "VSS": {
+          "R_ohm": 0.5665254647037211,
+          "KCL_residual_A": 5.595524044110789e-14,
+          "network_nodes": 96232,
+          "energy_relative_error": 8.452209483138611e-13
+        },
+        "DVDD": {
+          "R_ohm": 0.5366782182775977,
+          "KCL_residual_A": 5.1514348342607263e-14,
+          "network_nodes": 174440,
+          "energy_relative_error": 7.0486611585354185e-12
+        },
+        "DVSS": {
+          "R_ohm": 0.5367354713938339,
+          "KCL_residual_A": 5.062616992290714e-14,
+          "network_nodes": 148344,
+          "energy_relative_error": 5.880256071409431e-12
+        }
+      },
+      "stitched": {
+        "VDD": {
+          "R_ohm": 0.5658720381374606,
+          "KCL_residual_A": 2.7533531010703882e-14,
+          "network_nodes": 87720,
+          "energy_relative_error": 1.2181861437414003e-12
+        },
+        "VSS": {
+          "R_ohm": 0.5665254647040335,
+          "KCL_residual_A": 2.842170943040401e-14,
+          "network_nodes": 97711,
+          "energy_relative_error": 3.860619680448384e-13
+        },
+        "DVDD": {
+          "R_ohm": 0.5366782182776498,
+          "KCL_residual_A": 4.085620730620576e-14,
+          "network_nodes": 176048,
+          "energy_relative_error": 7.0716236622355334e-12
+        },
+        "DVSS": {
+          "R_ohm": 0.5367354713937256,
+          "KCL_residual_A": 5.1514348342607263e-14,
+          "network_nodes": 149658,
+          "energy_relative_error": 6.275127636076541e-12
+        }
+      },
+      "relative_stitch_error": {
+        "VDD": 2.1826984664130578e-13,
+        "VSS": 5.515587986337778e-13,
+        "DVDD": 9.725553695716371e-14,
+        "DVSS": 2.0183854587685346e-13
+      },
+      "stitch_limit": 1e-08,
+      "stitch_pass": true,
+      "boundary_intervals": 81,
+      "boundary_ports": 4593,
+      "metal_area_dbu2": {
+        "34": 4934376200,
+        "36": 3396105400,
+        "42": 5067800000,
+        "46": 5067800000,
+        "81": 5074840000
+      },
+      "via_conductance_S": {
+        "35": 78.22222222222243,
+        "38": 185.33333333333658,
+        "40": 2453.3333333329047,
+        "41": 2453.3333333329047
+      },
+      "node_counts": [
+        506544,
+        511137
+      ],
+      "geometry_sha256": "d4ad6fb24f0d326871c9bd433e098b000d9c9c1cfbc9659ebc4143b8cefef180",
+      "elapsed_s": 14.608473280008184
+    }
+  ],
+  "all_81_intervals_match_independent_KLayout_geometry": true,
+  "boundary_nodes_have_two_half_connections": true,
+  "omitted_port_negative_control_detected": true,
+  "max_relative_stitch_error": 7.935874180020619e-13,
+  "independent_ngspice_pass_at_1um": true,
+  "ngspice_0p5um_attempt": {
+    "status": "timeout",
+    "timeout_s": 120,
+    "scope": "Independent ngspice run of 0.5 um hierarchical model; no pass claimed. Matrix DC/stitch results are evaluated separately."
+  },
+  "last_mesh_change_pct": {
+    "VDD": 1.9524444356248116,
+    "VSS": 1.988925757045723,
+    "DVDD": 2.0514336369205965,
+    "DVSS": 2.057465011617221
+  },
+  "Magic_diagnostic_difference_pct": {
+    "VDD": 13.382147854063064,
+    "VSS": 13.590084711521566,
+    "DVDD": 18.941718825042607,
+    "DVSS": 18.948462257621145
+  },
+  "absolute_resistance_converged": false,
+  "full_RC_stitch_qualified": false
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="570" viewBox="0 0 1100 570">
+<rect width="1100" height="570" fill="#f4f7fb"/>
+<g font-family="Arial,sans-serif" fill="#163044">
+<text x="50" y="48" font-size="28" font-weight="bold">Swappable 40 × 40 mm die carrier</text>
+<text x="50" y="80" font-size="18">Conceptual side section • vertical spacing exaggerated • dimensions subject to assembly review</text>
+<path d="M550 115v140" stroke="#edb12b" stroke-width="8"/>
+<path d="M535 238l15 23 15-23" fill="none" stroke="#edb12b" stroke-width="8"/>
+<text x="580" y="150" font-size="20">Light enters through the aperture</text>
+<path d="M120 225H440V250H120ZM660 225H980V250H660Z" fill="#357f70" stroke="#123e3b" stroke-width="2"/>
+<text x="140" y="209" font-size="19">Tester PCB (100 × 80 mm)</text>
+<path d="M285 250v13l-9 8 18 10-18 10 18 10-9 8v18M815 250v13l-9 8 18 10-18 10 18 10-9 8v18" fill="none" stroke="#a57e26" stroke-width="6"/>
+<text x="850" y="291" font-size="17">Pogo pins</text>
+<rect x="225" y="335" width="650" height="23" fill="#357f70" stroke="#123e3b" stroke-width="2"/>
+<rect x="271" y="330" width="28" height="5" fill="#d4a536"/>
+<rect x="801" y="330" width="28" height="5" fill="#d4a536"/>
+<rect x="508" y="318" width="84" height="16" fill="#586592"/>
+<path d="M513 319Q482 283 468 332M587 319Q618 283 632 332" fill="none" stroke="#d4a536" stroke-width="3"/>
+<text x="420" y="389" font-size="19">Carrier: die and bond wires face upward</text>
+<rect x="345" y="251" width="20" height="82" fill="#b7c4ce" stroke="#526575"/>
+<rect x="735" y="251" width="20" height="82" fill="#b7c4ce" stroke="#526575"/>
+<path d="M355 215v159M745 215v159" stroke="#526575" stroke-width="5"/>
+<text x="120" y="431" font-size="18">Rigid stops set the board gap and spring compression; screws retain the carrier.</text>
+<text x="120" y="466" font-size="18">Pogo pins touch plated carrier targets, never the bare die.</text>
+<text x="120" y="514" font-size="20" font-weight="bold">Power off before swapping • bond finish and stop height must be confirmed</text>
+</g></svg>

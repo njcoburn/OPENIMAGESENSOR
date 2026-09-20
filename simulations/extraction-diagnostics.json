@@ -1,0 +1,97 @@
+{
+  "recorded": "2026-09-18 12:27 PDT",
+  "Magic_version": "8.3.664",
+  "source_commit": "381714e2d5debf2ded71c5a6b6604e6b936422cf",
+  "source_url": "https://github.com/RTimothyEdwards/magic/blob/381714e2d5debf2ded71c5a6b6604e6b936422cf/extflat/EFread.c#L598",
+  "export_reader_offset_confirmed": true,
+  "patched_export_diagnostic_only": true,
+  "two_layer_raw_extraction_issue_resolved": false,
+  "exports": {
+    "m5-to-m5": {
+      "raw_ohm": 0.114286,
+      "installed_and_unmodified_build_ohm": 0.114786,
+      "patched_ohm": 0.114286,
+      "patched_ngspice_ohm": 0.11428600000006123,
+      "same_raw_inputs": true,
+      "edge_offset_removed": true
+    },
+    "m5-to-m4": {
+      "raw_ohm": 0.118443,
+      "installed_and_unmodified_build_ohm": 0.11894300000000001,
+      "patched_ohm": 0.118443,
+      "patched_ngspice_ohm": 0.11844299999996061,
+      "same_raw_inputs": true,
+      "edge_offset_removed": true
+    },
+    "m5-to-m3": {
+      "raw_ohm": 0.08914631720718393,
+      "installed_and_unmodified_build_ohm": 0.09911925331936589,
+      "patched_ohm": 0.08914631720718393,
+      "patched_ngspice_ohm": 0.08914631720751601,
+      "same_raw_inputs": true,
+      "edge_offset_removed": true
+    },
+    "m5-to-m2": {
+      "raw_ohm": 0.08910915726877279,
+      "installed_and_unmodified_build_ohm": 0.09909122242964441,
+      "patched_ohm": 0.08910915726877258,
+      "patched_ngspice_ohm": 0.08910915726899804,
+      "same_raw_inputs": true,
+      "edge_offset_removed": true
+    },
+    "m5-to-m1": {
+      "raw_ohm": 0.08910346560496409,
+      "installed_and_unmodified_build_ohm": 0.09908374358236324,
+      "patched_ohm": 0.08910346560496299,
+      "patched_ngspice_ohm": 0.08910346560459836,
+      "same_raw_inputs": true,
+      "edge_offset_removed": true
+    }
+  },
+  "via_controls": {
+    "two_end_cuts": {
+      "cuts": 2,
+      "raw_ohm": 0.114067,
+      "exported_ohm": 0.11456699999999999,
+      "FV_ohm": {
+        "0.1": 0.11308011667112355,
+        "0.05": 0.11307969400977941
+      },
+      "raw_vs_fine_pct": 0.8731063511148163
+    },
+    "two_end_columns": {
+      "cuts": 20,
+      "raw_ohm": 0.106148,
+      "exported_ohm": 0.106648,
+      "FV_ohm": {
+        "0.1": 0.10515700009143746,
+        "0.05": 0.10515454001742447
+      },
+      "raw_vs_fine_pct": 0.9447618547053782
+    },
+    "missing_one_cut": {
+      "cuts": 299,
+      "raw_ohm": 0.11847,
+      "exported_ohm": 0.11897,
+      "FV_ohm": {
+        "0.1": 0.09387943909554662,
+        "0.05": 0.09387692717025949
+      },
+      "raw_vs_fine_pct": 26.197142973307376
+    },
+    "all_cuts": {
+      "cuts": 300,
+      "raw_ohm": 0.118443,
+      "exported_ohm": 0.11894300000000001,
+      "FV_ohm": {
+        "0.1": 0.09385547109987051,
+        "0.05": 0.09385296336209606
+      },
+      "raw_vs_fine_pct": 26.20059693057599
+    }
+  },
+  "patched_binary_sha256": "3f92f176841e100ecc031a50609fa43f6b5c3c8ee3e7083af09c1978471ef457",
+  "baseline_binary_sha256": "6ff908e2790bc73917736b4324c54e96e63f5cec6d3077d0f3d29135c1f39054",
+  "production_tools_or_netlists_changed": false,
+  "full_RC_qualified": false
+}
