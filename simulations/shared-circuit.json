@@ -1,0 +1,566 @@
+{
+  "accepted_full_chip": false,
+  "source_model_sha256": "3d1971b0cbda6c98086b0b846123414ac2ecccc29870b029eab16c5f7c748469",
+  "source_raw_sha256": "e7cec687a2a9f54de99c93ac8e0e3bb833bd5a54a6c6898cc0fc6c88210038b5",
+  "cases": [
+    {
+      "name": "camera-no-clamps-20260920",
+      "clamps": [],
+      "retained_device_records": 317,
+      "model_sha256": "b93032658489bb09e2c0910841caae2b8b9ea47ddb678cdc95e022dd1f26dc1a",
+      "deck_sha256": "c57ae190d9a79e048164c5486ca57f935a3cbc1b00746bce18ab65a5181558f2",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 180.0,
+      "completed": true,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 47.05482339499986,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 15707,
+      "end_s": 0.0032800000000000004,
+      "vectors": 161,
+      "classification": "completed diagnostic",
+      "crossed_original_reset_failure": true,
+      "retained_samples": [
+        {
+          "row": 0,
+          "column": 0,
+          "hold_V": 2.318734567130579,
+          "difference_from_original_uV": -0.019278874940908963
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "hold_V": 2.164289289681046,
+          "difference_from_original_uV": -0.022053107784358872
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "hold_V": 1.859437271806273,
+          "difference_from_original_uV": -0.02215511418768301
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "hold_V": 1.8756719744943937,
+          "difference_from_original_uV": -0.08619124192144056
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "hold_V": 2.3166285514862657,
+          "difference_from_original_uV": -0.10022083651861635
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "hold_V": 2.1612259039420847,
+          "difference_from_original_uV": 0.0036589522522945117
+        }
+      ]
+    },
+    {
+      "name": "camera-clamp0-20260920",
+      "clamps": [
+        0
+      ],
+      "retained_device_records": 453,
+      "model_sha256": "07e23f7881a43a7f7fcc19078f21381b9b420f3e5b6874d9a8a774615abc858e",
+      "deck_sha256": "c57ae190d9a79e048164c5486ca57f935a3cbc1b00746bce18ab65a5181558f2",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 180.0,
+      "completed": true,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 63.01578054999982,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 15599,
+      "end_s": 0.0032800000000000004,
+      "vectors": 200,
+      "classification": "completed diagnostic",
+      "crossed_original_reset_failure": true,
+      "retained_samples": [
+        {
+          "row": 0,
+          "column": 0,
+          "hold_V": 2.318734573366882,
+          "difference_from_original_uV": -0.01304257191137026
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "hold_V": 2.1642892952875945,
+          "difference_from_original_uV": -0.016446559225613555
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "hold_V": 1.8594372762161977,
+          "difference_from_original_uV": -0.017745189540008255
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "hold_V": 1.875671992346702,
+          "difference_from_original_uV": -0.06833893362312438
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "hold_V": 2.316628682060703,
+          "difference_from_original_uV": 0.030353600966037675
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "hold_V": 2.161225894680644,
+          "difference_from_original_uV": -0.005602488251099658
+        }
+      ]
+    },
+    {
+      "name": "camera-clamps0-6-20260920",
+      "clamps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "supply": "original",
+      "retained_device_records": 1269,
+      "model_sha256": "aab989d0b66ff073bdaa972928344f999a0c41e1b432dd64869cc6710363c822",
+      "deck_sha256": "c57ae190d9a79e048164c5486ca57f935a3cbc1b00746bce18ab65a5181558f2",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 300.0,
+      "completed": false,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": true,
+      "seconds": 300.0051474789998,
+      "returncode": -15,
+      "solver_errors": [],
+      "points": 14790,
+      "end_s": 0.0032300200068793587,
+      "vectors": 434,
+      "classification": "watchdog stop",
+      "crossed_original_reset_failure": false,
+      "retained_samples": [
+        {
+          "row": 0,
+          "column": 0,
+          "hold_V": 2.3187347852238864,
+          "difference_from_original_uV": 0.1988144324727159
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "hold_V": 2.16428952572941,
+          "difference_from_original_uV": 0.21399525618193138
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "hold_V": 1.8594375186189933,
+          "difference_from_original_uV": 0.22465760607381924
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "hold_V": 1.8756721331117816,
+          "difference_from_original_uV": 0.07242614596947305
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "hold_V": 2.3166286641689506,
+          "difference_from_original_uV": 0.012461848442057999
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "hold_V": 2.1612259296196688,
+          "difference_from_original_uV": 0.029336536311319605
+        }
+      ]
+    },
+    {
+      "name": "all-clamps-ideal-supply-20260920",
+      "clamps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supply": "ideal",
+      "retained_device_records": 2357,
+      "model_sha256": "3d1971b0cbda6c98086b0b846123414ac2ecccc29870b029eab16c5f7c748469",
+      "deck_sha256": "cadbb9075d6afcb04e7f94ab599219a38f365270ecb8654b8350c4c8f07e667a",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 180.0,
+      "completed": false,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 12.266639925000163,
+      "returncode": 0,
+      "solver_errors": [
+        "doAnalyses: TRAN:  Timestep too small; time = 0.00122, timestep = 6.25e-18: trouble with node \"vresetdrive#branch\"",
+        "run simulation(s) aborted"
+      ],
+      "points": 254,
+      "end_s": 0.0012200000778657314,
+      "vectors": 747,
+      "classification": "solver abort",
+      "crossed_original_reset_failure": false,
+      "retained_samples": []
+    },
+    {
+      "name": "ideal-supply-local46-control-20260920",
+      "clamps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supply": "ideal",
+      "retained_device_records": 2357,
+      "simulator": "/foss/designs/build/ngspice-version-comparison/install-46/bin/ngspice",
+      "simulator_sha256": "a1c0e4e89c464ccd68931de0d41af4d346747d18e940fa5ba7b77040597827ff",
+      "model_sha256": "3d1971b0cbda6c98086b0b846123414ac2ecccc29870b029eab16c5f7c748469",
+      "deck_sha256": "06f5a23c2dc850dfd6d7a284c5e0baf7e119e3e1ed59d8469f36b89efd493ef8",
+      "target_s": 0.00123,
+      "max_step_ns": 5000,
+      "timeout_s": 60.0,
+      "completed": false,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 11.570254131000183,
+      "returncode": 0,
+      "solver_errors": [
+        "doAnalyses: TRAN:  Timestep too small; time = 0.00122, timestep = 6.25e-18: trouble with node \"vresetdrive#branch\"",
+        "run simulation(s) aborted"
+      ],
+      "points": 254,
+      "end_s": 0.0012200000778657314,
+      "vectors": 747,
+      "classification": "solver abort",
+      "crossed_original_reset_failure": false,
+      "retained_samples": []
+    },
+    {
+      "name": "all-clamps-norton-drivers-20260920",
+      "clamps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supply": "original",
+      "drivers": "norton",
+      "retained_device_records": 2357,
+      "simulator": "/foss/tools/bin/ngspice",
+      "simulator_sha256": "6aacaca88f656e5e19074ac070fb410bf6cc437df1de88ec28d50a24c6239a1b",
+      "model_sha256": "3d1971b0cbda6c98086b0b846123414ac2ecccc29870b029eab16c5f7c748469",
+      "deck_sha256": "da9a010612f93ad7bf99ada3d115928119a318fe705466e5d8070ed6b9b1d547",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 300.0,
+      "completed": false,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": true,
+      "seconds": 300.00927818300033,
+      "returncode": -15,
+      "solver_errors": [],
+      "points": 11472,
+      "end_s": 0.0031980040461343506,
+      "vectors": 728,
+      "classification": "watchdog stop",
+      "crossed_original_reset_failure": false,
+      "retained_samples": [
+        {
+          "row": 0,
+          "column": 0,
+          "hold_V": 2.3187344844227447,
+          "difference_from_original_uV": -0.10198670929995046
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "hold_V": 2.164289203649311,
+          "difference_from_original_uV": -0.10808484285362852
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "hold_V": 1.859437143288752,
+          "difference_from_original_uV": -0.15067263525736507
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "hold_V": 1.8756719315493284,
+          "difference_from_original_uV": -0.12913630720312597
+        }
+      ]
+    },
+    {
+      "name": "ideal-supply-norton-reset-20260920",
+      "clamps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supply": "ideal",
+      "drivers": "thevenin",
+      "reset_driver": "norton",
+      "retained_device_records": 2357,
+      "simulator": "/foss/tools/bin/ngspice",
+      "simulator_sha256": "6aacaca88f656e5e19074ac070fb410bf6cc437df1de88ec28d50a24c6239a1b",
+      "model_sha256": "3d1971b0cbda6c98086b0b846123414ac2ecccc29870b029eab16c5f7c748469",
+      "deck_sha256": "b510ac9efb317cb32f398f8521db96bc72c63cf7370b7062a0af4c201a461f2a",
+      "target_s": 0.00123,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "completed": true,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 12.688123174999873,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 541,
+      "end_s": 0.0012300000000000002,
+      "vectors": 746,
+      "classification": "completed diagnostic",
+      "crossed_original_reset_failure": false,
+      "retained_samples": []
+    },
+    {
+      "name": "no-clamps-ideal-short-20260920",
+      "clamps": [],
+      "supply": "ideal",
+      "drivers": "thevenin",
+      "reset_driver": "thevenin",
+      "retained_device_records": 317,
+      "simulator": "/foss/tools/bin/ngspice",
+      "simulator_sha256": "6aacaca88f656e5e19074ac070fb410bf6cc437df1de88ec28d50a24c6239a1b",
+      "model_sha256": "b93032658489bb09e2c0910841caae2b8b9ea47ddb678cdc95e022dd1f26dc1a",
+      "deck_sha256": "06f5a23c2dc850dfd6d7a284c5e0baf7e119e3e1ed59d8469f36b89efd493ef8",
+      "target_s": 0.00123,
+      "max_step_ns": 5000,
+      "timeout_s": 60.0,
+      "completed": false,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 0.8688011879999067,
+      "returncode": 0,
+      "solver_errors": [
+        "doAnalyses: TRAN:  Timestep too small; time = 0.00122, timestep = 6.25e-18: trouble with node \"bdrive_row2#branch\"",
+        "run simulation(s) aborted"
+      ],
+      "points": 255,
+      "end_s": 0.0012200000779173468,
+      "vectors": 162,
+      "classification": "solver abort",
+      "crossed_original_reset_failure": false,
+      "retained_samples": []
+    },
+    {
+      "name": "clamp0-ideal-short-20260920",
+      "clamps": [
+        0
+      ],
+      "supply": "ideal",
+      "drivers": "thevenin",
+      "reset_driver": "thevenin",
+      "retained_device_records": 453,
+      "simulator": "/foss/tools/bin/ngspice",
+      "simulator_sha256": "6aacaca88f656e5e19074ac070fb410bf6cc437df1de88ec28d50a24c6239a1b",
+      "model_sha256": "07e23f7881a43a7f7fcc19078f21381b9b420f3e5b6874d9a8a774615abc858e",
+      "deck_sha256": "06f5a23c2dc850dfd6d7a284c5e0baf7e119e3e1ed59d8469f36b89efd493ef8",
+      "target_s": 0.00123,
+      "max_step_ns": 5000,
+      "timeout_s": 60.0,
+      "completed": false,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 1.4730350150002778,
+      "returncode": 0,
+      "solver_errors": [
+        "doAnalyses: TRAN:  Timestep too small; time = 0.00122, timestep = 6.25e-18: trouble with node \"vresetdrive#branch\"",
+        "run simulation(s) aborted"
+      ],
+      "points": 254,
+      "end_s": 0.0012200000778657314,
+      "vectors": 201,
+      "classification": "solver abort",
+      "crossed_original_reset_failure": false,
+      "retained_samples": []
+    },
+    {
+      "name": "no-clamps-ideal-norton-reset-20260920",
+      "clamps": [],
+      "supply": "ideal",
+      "drivers": "thevenin",
+      "reset_driver": "norton",
+      "retained_device_records": 317,
+      "simulator": "/foss/tools/bin/ngspice",
+      "simulator_sha256": "6aacaca88f656e5e19074ac070fb410bf6cc437df1de88ec28d50a24c6239a1b",
+      "model_sha256": "b93032658489bb09e2c0910841caae2b8b9ea47ddb678cdc95e022dd1f26dc1a",
+      "deck_sha256": "b510ac9efb317cb32f398f8521db96bc72c63cf7370b7062a0af4c201a461f2a",
+      "target_s": 0.00123,
+      "max_step_ns": 5000,
+      "timeout_s": 60.0,
+      "completed": true,
+      "accepted_full_chip": false,
+      "scope": "Restore shared camera circuitry and selected supply-clamp domains.\n\nKeeps the original full-chip testbench and time-zero history. Semiconductor and\nresistor connectivity, excluding global supply/ground rails, partitions the\nmodel into the functional camera, unused pads, and 15 clamp timing domains.\nAll non-clamp domains remain. Omitted clamp nodes are AC-grounded in incident\nlinear capacitors; capacitors wholly inside omitted domains are removed.\nThis is an isolation experiment, not a proposed physical model correction.\n",
+      "timed_out": false,
+      "seconds": 0.6177359819998856,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 541,
+      "end_s": 0.0012300000000000002,
+      "vectors": 161,
+      "classification": "completed diagnostic",
+      "crossed_original_reset_failure": false,
+      "retained_samples": []
+    }
+  ],
+  "driver_equation_baseline": {
+    "rst0": {
+      "max_residual_A": 1.093010810982939e-09,
+      "max_equivalent_voltage_residual_uV": 0.1093010810982939
+    },
+    "rst1": {
+      "max_residual_A": 1.0270536929604668e-09,
+      "max_equivalent_voltage_residual_uV": 0.10270536929604668
+    },
+    "rst2": {
+      "max_residual_A": 1.0270536926352061e-09,
+      "max_equivalent_voltage_residual_uV": 0.10270536926352061
+    },
+    "row0": {
+      "max_residual_A": 8.118028484681294e-10,
+      "max_equivalent_voltage_residual_uV": 0.08118028484681294
+    },
+    "row1": {
+      "max_residual_A": 8.156087418940625e-10,
+      "max_equivalent_voltage_residual_uV": 0.08156087418940625
+    },
+    "row2": {
+      "max_residual_A": 8.470329472543003e-22,
+      "max_equivalent_voltage_residual_uV": 8.470329472543003e-14
+    },
+    "sel0": {
+      "max_residual_A": 1.0803698165034667e-09,
+      "max_equivalent_voltage_residual_uV": 0.10803698165034667
+    },
+    "sel1": {
+      "max_residual_A": 1.4147108202793024e-09,
+      "max_equivalent_voltage_residual_uV": 0.14147108202793024
+    },
+    "sel2": {
+      "max_residual_A": 1.1540433282391724e-09,
+      "max_equivalent_voltage_residual_uV": 0.11540433282391724
+    }
+  },
+  "full_restoration_model_exact": true,
+  "ideal_supply_local46_exact_match": true,
+  "short_reset_formulation_comparison": {
+    "scope": "Common captured interval of ideal-supply controls only; interpolated waveforms, not full-chip qualification",
+    "end_s": 0.0012200000778657314,
+    "max_voltage_difference_uV": {
+      "v(vdd)": 0.0,
+      "v(pad_vreset)": 1.127320459204384e-06,
+      "v(sensor_3x3_0.vreset)": 2.760014439218139e-07,
+      "v(a_96842_117580#)": 1.7763568394002505e-08,
+      "v(a_112842_117580#)": 1.4654943925052066e-08,
+      "v(a_128842_117580#)": 1.532107773982716e-08,
+      "v(a_96842_127580#)": 9.992007221626409e-09,
+      "v(a_112842_127580#)": 9.992007221626409e-09,
+      "v(a_128842_127580#)": 9.769962616701378e-09,
+      "v(a_96842_137580#)": 1.509903313490213e-08,
+      "v(a_112842_137580#)": 1.021405182655144e-08,
+      "v(a_128842_137580#)": 1.176836406102666e-08
+    }
+  },
+  "small_short_reset_formulation_comparison": {
+    "scope": "Common interval of 317-device ideal-supply control; different event from original third-row failure",
+    "end_s": 0.0012200000779173468,
+    "max_voltage_difference_uV": {
+      "v(vdd)": 0.0,
+      "v(pad_vreset)": 0.0004538138753673593,
+      "v(sensor_3x3_0.vreset)": 0.0017982590971854506,
+      "v(a_96842_117580#)": 0.0007560527759409297,
+      "v(a_112842_117580#)": 0.0007435791982146611,
+      "v(a_128842_117580#)": 0.0007668088386481031,
+      "v(a_96842_127580#)": 0.0007827678505378799,
+      "v(a_112842_127580#)": 0.0007530835954838722,
+      "v(a_128842_127580#)": 0.0007668135015848065,
+      "v(a_96842_137580#)": 0.0007363938347992871,
+      "v(a_112842_137580#)": 0.0007313227801120092,
+      "v(a_128842_137580#)": 0.0007271157009824947
+    }
+  }
+}

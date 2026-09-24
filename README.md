@@ -1,6 +1,20 @@
 # Open Image Sensor
 
-**Resume here:** [Project handoff — 2026-09-19 22:39 PDT](PICK_UP_HERE.md). Stock final-chip DC passes; complete-frame simulation and fabrication qualification remain open.
+**Resume here:** [Project handoff — 2026-09-24](PICK_UP_HERE.md). The full extracted camera completes three frames; remaining qualification gates are tracked there.
+
+**Latest result:** Three full-camera frames complete with 27 samples. Frame-two/three drift is 5.733 µV, and matching DC readout references are checked. [Results and exact scope](docs/three-frames.md).
+
+![Three full-camera frames and their differences](docs/assets/three-frames.png)
+
+**Standalone rows:** All three rows have identical local devices, and all 12 standalone reset tests complete—including pad protection, finite supply and finer-step controls. These earlier isolated tests led into the successful staged/full-frame follow-up. [Step-by-step row report](docs/standalone-row.md).
+
+![Full-chip reset comparison and standalone third-row tests](docs/assets/standalone-row.png)
+
+**Earlier frame attempt:** Explicit solver abort at 3.27002 ms after 21.06 minutes; six pixels retained, third row missing. [Results and failure plots](docs/streamed-frame.md). The instrumented rerun reproduces the failure exactly; isolated row tests are described above.
+
+**Switching diagnostic:** The unchanged candidate crosses the previously reported row-turn-off stall and completes through 3.24 ms. Streaming capture retains six pixel samples; no complete frame or fabrication pass is claimed. [Results and plots](docs/functional-camera-diagnostic.md).
+
+![Completed row-switching diagnostic; not a full frame](docs/assets/functional-camera-diagnostic.png)
 
 **Simulator comparison:** matched ngspice 46/47 controls pass, but both extracted stock-model tests fail at startup. Upgrade alone is insufficient; a separate v47 multiplier parser failure has a minimal public issue draft. [Results](docs/ngspice-version-comparison.md).
 

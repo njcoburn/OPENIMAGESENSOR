@@ -1,0 +1,390 @@
+{
+  "updated": "2026-09-20 01:15 PDT",
+  "run": "nominal-frame-stream",
+  "frame_completed": false,
+  "accepted_full_chip": false,
+  "result": {
+    "source": "frame-5000ns",
+    "control": "baseline",
+    "modifications": [],
+    "timeout_s": 3600.0,
+    "target_s": 0.00425,
+    "source_deck_sha256": "7d8f25c4237879f4b56d88d8cea95bdc79381778258310e6c8ed2ec34733fcf9",
+    "deck_sha256": "a4298393b709bf61b91e3ecc4df5154c8dcf98ec48a85eb2a5743b736c98e47e",
+    "model_sha256": "3d1971b0cbda6c98086b0b846123414ac2ecccc29870b029eab16c5f7c748469",
+    "completed": false,
+    "accepted_full_chip": false,
+    "scope": "Diagnostic with bias-frozen MOS capacitance; original history from t=0; no qualification claim.",
+    "seconds": 1263.3935609600003,
+    "timed_out": false,
+    "returncode": 0,
+    "points": 17764,
+    "end_s": 0.003270020000138615,
+    "last_timestep_s": 1.3861524775227174e-13,
+    "solver": "KLU"
+  },
+  "diagnostic": {
+    "run": "nominal-frame-stream",
+    "completed": false,
+    "end_s": 0.003270020000138615,
+    "points": 17764,
+    "min_timestep_s": 6.774095173689432e-15,
+    "tiny_step_count": 11201,
+    "tiny_step_clusters": [
+      {
+        "time_us": 3230.0,
+        "points": 2366
+      },
+      {
+        "time_us": 3198.0,
+        "points": 473
+      },
+      {
+        "time_us": 3180.0,
+        "points": 450
+      },
+      {
+        "time_us": 3193.0,
+        "points": 390
+      },
+      {
+        "time_us": 3216.0,
+        "points": 382
+      },
+      {
+        "time_us": 2230.0,
+        "points": 361
+      },
+      {
+        "time_us": 2175.0,
+        "points": 349
+      },
+      {
+        "time_us": 3170.0,
+        "points": 346
+      },
+      {
+        "time_us": 2170.0,
+        "points": 343
+      },
+      {
+        "time_us": 3211.0,
+        "points": 340
+      }
+    ],
+    "accepted_full_chip": false,
+    "supply_V": {
+      "min": 3.2975792410803497,
+      "max": 3.300487599716739
+    },
+    "sampling_peak_abs_A": {
+      "i(@bsample[i])": 0.016966986085438077,
+      "i(@bsample_reset[i])": 0.017627103804930384
+    },
+    "clamp_timing_V": {
+      "v(pex_safe_5)": {
+        "min": 3.299619660183349,
+        "max": 3.2998391979287334
+      },
+      "v(pex_safe_2)": {
+        "min": 3.2996195307086564,
+        "max": 3.2998391979278567
+      },
+      "v(pex_safe_9)": {
+        "min": 3.2996119194511375,
+        "max": 3.299839197936569
+      },
+      "v(pex_safe_10)": {
+        "min": 3.2996119194530875,
+        "max": 3.299839197938895
+      },
+      "v(pex_safe_14)": {
+        "min": 3.2996281592752346,
+        "max": 3.299839197929388
+      },
+      "v(pex_safe_12)": {
+        "min": 3.2996281592750747,
+        "max": 3.2998391979317554
+      },
+      "v(pex_safe_11)": {
+        "min": 3.299628160114747,
+        "max": 3.299839197927575
+      },
+      "v(pex_safe_4)": {
+        "min": 3.299619531136231,
+        "max": 3.299839197934247
+      },
+      "v(pex_safe_0)": {
+        "min": 3.2996195319240798,
+        "max": 3.2998391979330206
+      },
+      "v(pex_safe_3)": {
+        "min": 3.299619659547828,
+        "max": 3.2998391979309663
+      },
+      "v(pex_safe_7)": {
+        "min": 3.299619662136353,
+        "max": 3.2998391979280712
+      },
+      "v(pex_safe_13)": {
+        "min": 3.2996281601156827,
+        "max": 3.299839197932401
+      },
+      "v(pex_safe_6)": {
+        "min": 3.299619531614429,
+        "max": 3.299839197934078
+      },
+      "v(pex_safe_8)": {
+        "min": 3.2996119186677384,
+        "max": 3.2998391979316635
+      },
+      "v(pex_safe_1)": {
+        "min": 3.299619661724441,
+        "max": 3.2998391979290402
+      }
+    },
+    "retained_window_only": true,
+    "rounded_progress_clusters": [
+      {
+        "display": "3.23002e-03",
+        "accepted_points": 2264,
+        "first_s": 0.003230015027964032,
+        "last_s": 0.003230024970910123,
+        "actual_progress_s": 9.942946091034272e-09
+      },
+      {
+        "display": "3.18000e-03",
+        "accepted_points": 390,
+        "first_s": 0.00318,
+        "last_s": 0.0031800049828282916,
+        "actual_progress_s": 4.982828291470731e-09
+      },
+      {
+        "display": "3.19800e-03",
+        "accepted_points": 385,
+        "first_s": 0.003198,
+        "last_s": 0.003198004998035326,
+        "actual_progress_s": 4.998035326320843e-09
+      },
+      {
+        "display": "3.21600e-03",
+        "accepted_points": 283,
+        "first_s": 0.0032159999999999997,
+        "last_s": 0.0032160049978553562,
+        "actual_progress_s": 4.997855356566466e-09
+      },
+      {
+        "display": "2.23002e-03",
+        "accepted_points": 269,
+        "first_s": 0.002230015019761209,
+        "last_s": 0.0022300247868368324,
+        "actual_progress_s": 9.767075623539484e-09
+      }
+    ],
+    "switch_equation_max_residual_A": {
+      "i(@bsample[i])": 2.7755575615628914e-17,
+      "i(@bsample_reset[i])": 2.7755575615628914e-17
+    },
+    "cap_range_retained_window": [
+      {
+        "pair": [
+          "VDD",
+          "GND"
+        ],
+        "min_V": 3.2975792410803497,
+        "max_V": 3.300487599716739,
+        "max_relative_C_error": 4.440892098500626e-16
+      },
+      {
+        "pair": [
+          "PEX_SAFE_5",
+          "GND"
+        ],
+        "min_V": 3.299619660183349,
+        "max_V": 3.2998391979287334,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_2",
+          "GND"
+        ],
+        "min_V": 3.2996195307086564,
+        "max_V": 3.2998391979278567,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_9",
+          "GND"
+        ],
+        "min_V": 3.2996119194511375,
+        "max_V": 3.299839197936569,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_10",
+          "GND"
+        ],
+        "min_V": 3.2996119194530875,
+        "max_V": 3.299839197938895,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_14",
+          "GND"
+        ],
+        "min_V": 3.2996281592752346,
+        "max_V": 3.299839197929388,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_12",
+          "GND"
+        ],
+        "min_V": 3.2996281592750747,
+        "max_V": 3.2998391979317554,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_11",
+          "GND"
+        ],
+        "min_V": 3.299628160114747,
+        "max_V": 3.299839197927575,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_4",
+          "GND"
+        ],
+        "min_V": 3.299619531136231,
+        "max_V": 3.299839197934247,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_0",
+          "GND"
+        ],
+        "min_V": 3.2996195319240798,
+        "max_V": 3.2998391979330206,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_3",
+          "GND"
+        ],
+        "min_V": 3.299619659547828,
+        "max_V": 3.2998391979309663,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_7",
+          "GND"
+        ],
+        "min_V": 3.299619662136353,
+        "max_V": 3.2998391979280712,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_13",
+          "GND"
+        ],
+        "min_V": 3.2996281601156827,
+        "max_V": 3.299839197932401,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_6",
+          "GND"
+        ],
+        "min_V": 3.299619531614429,
+        "max_V": 3.299839197934078,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_8",
+          "GND"
+        ],
+        "min_V": 3.2996119186677384,
+        "max_V": 3.2998391979316635,
+        "max_relative_C_error": 0.0
+      },
+      {
+        "pair": [
+          "PEX_SAFE_1",
+          "GND"
+        ],
+        "min_V": 3.299619661724441,
+        "max_V": 3.2998391979290402,
+        "max_relative_C_error": 0.0
+      }
+    ],
+    "retained_samples": [
+      {
+        "row": 0,
+        "column": 0,
+        "time_s": 0.002185,
+        "light_pA": 0,
+        "hold_V": 2.318734586409454,
+        "hold_minus_adc_mV": 3.984453655903053e-05
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "time_s": 0.0022029999999999997,
+        "light_pA": 80,
+        "hold_V": 2.1642893117341537,
+        "hold_minus_adc_mV": 0.0003511337447470453
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "time_s": 0.002221,
+        "light_pA": 240,
+        "hold_V": 1.8594372939613872,
+        "hold_minus_adc_mV": 0.0009324512664221629
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "time_s": 0.003185,
+        "light_pA": 240,
+        "hold_V": 1.8756720606856356,
+        "hold_minus_adc_mV": 0.0009390190232050344
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "time_s": 0.0032029999999999997,
+        "light_pA": 0,
+        "hold_V": 2.316628651707102,
+        "hold_minus_adc_mV": 4.020049226838296e-05
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "time_s": 0.003221,
+        "light_pA": 80,
+        "hold_V": 2.1612259002831324,
+        "hold_minus_adc_mV": 0.00035056588032489344
+      }
+    ]
+  },
+  "frame_analysis": null,
+  "solver_failure": [
+    "doAnalyses: TRAN:  Timestep too small; time = 0.00327002, timestep = 6.25e-18: trouble with node \"bdrive_row1#branch\"",
+    "run simulation(s) aborted"
+  ]
+}

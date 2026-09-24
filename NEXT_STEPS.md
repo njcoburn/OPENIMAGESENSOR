@@ -1,6 +1,62 @@
 # Next steps — 3×3 demonstrator
 
-**Resume here:** [Project handoff — 2026-09-19 22:39 PDT](PICK_UP_HERE.md). Stock final-chip DC passes; complete-frame simulation and fabrication qualification remain open.
+## Latest: three-frame and nominal readout checks — 2026-09-24
+
+**The full extracted 3×3 camera completes three consecutive frames: 27/27 samples.** Brightness ordering passes: True; control-state checks pass: True. Frame-two/three maximum change is **5.733 µV** against the retained **50 µV** screen (pass).
+
+All 27 matching DC references were checked. Maximum HOLD tracking error is **167.766 µV**, and ADCIN error is **166.826 µV**, against the **500 µV** screen (pass). Sampled bias agreement within 1%: True.
+
+The model is unchanged from the successful single-frame run; only stop time changed to 10.25 ms. It retains the equivalent reset source, all clamp domains, full-layout wiring capacitance and a 1 µs maximum step. Constant illumination was repeated. Reset voltages and capacitor bias ranges are recorded; this is not changing-scene, startup, optical/noise, full-RC or fabrication qualification.
+
+**Next:** Run a bounded full-chip load/process/voltage/temperature matrix, revalidating the frozen-capacitor approximation at each operating condition. Nonlinear startup and distributed wire resistance remain separate gates. No simulation remains running.
+
+[Report and waveforms](docs/three-frames.md), `simulations/three-frames.json`, and verified evidence in `checkpoints/three-frames/`.
+
+
+## Earlier: staged integration and full-frame success — 2026-09-21
+
+**The full extracted 3×3 normal-operation candidate now completes a frame to 4.25 ms, with all nine pixels in the expected brightness order.** Only the 2 V / 1 Ω reset reference was rewritten as an electrically equivalent Norton source. The full chip model, all fifteen clamp domains, supply, control timing and tolerances are unchanged. The first six samples match the original failed trace within 0.060 µV. The 1 µs maximum-step rerun also completes all nine samples; maximum difference from 5 µs is 2.778 µV.
+
+Staged shared-readout, buffer, ADC-load and finite-supply tests also pass on 3×3 and 4×4 array-core PEX models. The rail-diode control revealed a small numerical failure resolved by the same equivalent-source rewrite. The earlier stage-7 watchdog and other failed controls are retained.
+
+**Next:** repeated full-chip frames and frame stability, matched DC transfer/settling reference, load/PVT checks, nonlinear startup and distributed wiring resistance. This is a first normal-operation imaging result, not fabrication qualification; MOS capacitors remain bias-frozen. No simulation remains running.
+
+[Detailed report](docs/staged-integration.md), `simulations/staged-integration.json`, and verified evidence in `checkpoints/staged-integration/`.
+
+
+## Earlier: physical array extension tests — 2026-09-20
+
+**3×3, 4×3, 3×4 and 4×4 unfilled physical arrays all pass DRC/device LVS and complete three frames in both device-only and C-only PEX simulations.** Every sampled pixel has the expected brightness ordering. These use 100 Ω control drivers and independent column loads, without shared readout/pads/clamps/fill or distributed wiring resistance. An initial ideal-driver C-only 3×3 failure is retained separately. The original full-chip failure is unresolved; no simulation remains running.
+
+[Results and exact scope](docs/array-extension.md), `simulations/array-extension.json`, and `checkpoints/array-extension/`. Next: integrate the shared readout into this parameterized, working array baseline, then restore supply/pad/clamp blocks in stages. Do not treat these core passes as complete-camera qualification.
+
+
+## Shared-circuit numerical investigation — 2026-09-20
+
+Shared camera/readout tests cross the third-row reset with zero or one supply-clamp domain; seven domains time out near the earlier row turn-off. A separate ideal-supply failure now reproduces in under a second and disappears when only the reset reference is expressed with the same terminal-current equation. This is numerical sensitivity in a different early control, not a resolved original third-row failure. The full-model nine-driver rewrite also times out before the target event. [All ten outcomes and scope](docs/shared-circuit.md).
+
+Next: instrument the fast failed/completed pair, then test a supported change on the original finite-supply circuit. Exact evidence is archived in `checkpoints/shared-circuit/`; no simulation remains running.
+
+## Standalone row investigation — 2026-09-20
+
+All three extracted rows have identical local device/resistor records after renaming. All 12 isolated reset tests complete with staged capacitance/pad protection, third-row finite-supply and finer-step controls. The full-chip internal capture reproduces the earlier failure exactly; no causal device or fix is established. Shared circuitry and charge history remain outside the standalone checks. [Step-by-step results](docs/standalone-row.md).
+
+Next: restore shared column/readout and supply/clamp circuitry in stages to minimize the failure. Exact inputs/results and the internal full-chip trace are archived in `checkpoints/standalone-row/`. No simulation remains running.
+
+**Resume here:** [Project handoff — 2026-09-20](PICK_UP_HERE.md). Stock final-chip DC passes; complete-frame simulation and fabrication qualification remain open.
+
+## Streamed nine-pixel attempt — 2026-09-20
+
+The unchanged frame attempt crosses the earlier slowdown but aborts at **3.27002 ms** after 21.06 minutes, before third-row readout. Six samples and 17,764 points are preserved. This is an explicit timestep failure, not a watchdog stop. The failure coincides with the third-row reset fall; ngspice names `bdrive_row1#branch`, which does not by itself establish the cause. [Results](docs/streamed-frame.md).
+
+Next: internal gate/device capture around this transition and one justified correction, then a completed nine-pixel transient, matched references and refinement. Three preliminary static-reference probes pass the 0.5 mV screen; no full-frame pass is claimed. Updated the overview and archived the exact evidence.
+
+## Row-switching capture — 2026-09-20
+
+The unchanged candidate completes a 3.24 ms streamed diagnostic in 1,166.94 s, crossing the previously reported row-turn-off stall. Six samples and the captured MOS-cap ranges are checked; no complete frame exists. The matched row-slew control shifts the slow region with the falling-edge endpoint; no timing change is promoted. [Results](docs/functional-camera-diagnostic.md).
+
+Next: one unchanged nominal frame through 4.25 ms with streaming output, original bias/history and an explicit 3,600 s watchdog. Then check nine samples, matched DC settling and numerical refinement before repeated frames or PVT. See the handoff for commands and checkpoint restoration.
+
 
 ## Normal-operation candidate — 2026-09-19 13:46 PDT
 

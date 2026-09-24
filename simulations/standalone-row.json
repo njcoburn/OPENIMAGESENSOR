@@ -1,0 +1,475 @@
+{
+  "rows_identical_devices": true,
+  "device_records_per_row": 34,
+  "source_model_sha256": "3d1971b0cbda6c98086b0b846123414ac2ecccc29870b029eab16c5f7c748469",
+  "source_raw_sha256": "e7cec687a2a9f54de99c93ac8e0e3bb833bd5a54a6c6898cc0fc6c88210038b5",
+  "incident_capacitance_fF": [
+    {
+      "PAD_ROW": 1290.2003710031604,
+      "PAD_RST": 1290.0006703939127,
+      "SENSE1": 20.556434395926047,
+      "SF1": 14.779601159378087,
+      "SENSE2": 21.13685583182652,
+      "SF2": 14.953221993028835,
+      "SENSE0": 21.07345771241339,
+      "SF0": 14.796104070168923,
+      "ROW": 85.00735791339137,
+      "RST": 75.38407847190332
+    },
+    {
+      "PAD_ROW": 1289.9227695305308,
+      "PAD_RST": 1290.1953777649492,
+      "SENSE1": 20.48937871264512,
+      "SF1": 15.031248582042792,
+      "SENSE2": 21.01826592663034,
+      "SF2": 15.215391842858669,
+      "SENSE0": 20.97317022528812,
+      "SF0": 15.032156339403347,
+      "ROW": 70.04374816047131,
+      "RST": 73.89439246577648
+    },
+    {
+      "PAD_ROW": 1290.278664201828,
+      "PAD_RST": 1289.8245287030795,
+      "SENSE1": 20.816891573934345,
+      "SF1": 14.456659499992432,
+      "SENSE2": 21.41126165810948,
+      "SF2": 14.562917009549441,
+      "SENSE0": 21.288791073427006,
+      "SF0": 14.458067633884605,
+      "ROW": 74.92307402372666,
+      "RST": 82.82131606197241
+    }
+  ],
+  "cases": [
+    {
+      "row": 0,
+      "stage": "devices",
+      "target_s": 0.00128,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 14,
+      "deck_sha256": "f45e69c50a1207ebbee08f95c19b321d56bee5ea7930799a64b274e3780d5a31",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.1663948000000346,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 523,
+      "end_s": 0.00128,
+      "sense_after_reset_V": {
+        "a_96842_117580#": 1.9975433343679763,
+        "a_112842_117580#": 1.9972347972304212,
+        "a_128842_117580#": 1.996617758231565
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 0,
+      "stage": "caps",
+      "target_s": 0.00128,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 14,
+      "deck_sha256": "90becc4d81998fc193a38b17eccc3aef324bd558a830f628be4be98ccb13344a",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.26687365799989493,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 976,
+      "end_s": 0.00128,
+      "sense_after_reset_V": {
+        "a_96842_117580#": 1.985054336209217,
+        "a_112842_117580#": 1.985349865317435,
+        "a_128842_117580#": 1.9842997096838413
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 0,
+      "stage": "pads",
+      "target_s": 0.00128,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 34,
+      "deck_sha256": "7532fd9ea5b1d357eda5d090ed932f393ce19d44635357c01c9d0813fa5feb2e",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.2664841409998644,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 1020,
+      "end_s": 0.00128,
+      "sense_after_reset_V": {
+        "a_96842_117580#": 1.9850555266428755,
+        "a_112842_117580#": 1.9853510500433817,
+        "a_128842_117580#": 1.984300959566506
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 1,
+      "stage": "devices",
+      "target_s": 0.00228,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 14,
+      "deck_sha256": "cc94da1e83a350182b70535e7f531da8cc7abe1bd918954f4571d3e8c1d44b6c",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.16537877899986597,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 760,
+      "end_s": 0.0022800000000000003,
+      "sense_after_reset_V": {
+        "a_96842_127580#": 1.996617225385013,
+        "a_112842_127580#": 1.9975428219098628,
+        "a_128842_127580#": 1.9972342710361346
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 1,
+      "stage": "caps",
+      "target_s": 0.00228,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 14,
+      "deck_sha256": "8a7d68c63d8e1d8622f42aea74f3353db49dd4ec344af66c0d67da1b967032d2",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.26639823899995463,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 1246,
+      "end_s": 0.0022800000000000003,
+      "sense_after_reset_V": {
+        "a_96842_127580#": 1.9839169771847576,
+        "a_112842_127580#": 1.9852433662036337,
+        "a_128842_127580#": 1.9846255231739258
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 1,
+      "stage": "pads",
+      "target_s": 0.00228,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 34,
+      "deck_sha256": "e89fc375bec70b812fd89e423e1875d91e6c683819cc01a3afedc4b307840bb1",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.2683648479999192,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 1270,
+      "end_s": 0.0022800000000000003,
+      "sense_after_reset_V": {
+        "a_96842_127580#": 1.9839182798148718,
+        "a_112842_127580#": 1.985244574509529,
+        "a_128842_127580#": 1.98462677823945
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 2,
+      "stage": "devices",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 14,
+      "deck_sha256": "beef34306870f4604c902814db385cb15ad741dab9c5ed8784194fc1d44efa15",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.21546004400011043,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 975,
+      "end_s": 0.0032800000000000004,
+      "sense_after_reset_V": {
+        "a_96842_137580#": 1.9972343416793301,
+        "a_112842_137580#": 1.996617295417319,
+        "a_128842_137580#": 1.9975428903787458
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 2,
+      "stage": "caps",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 14,
+      "deck_sha256": "fb7e474d8fce7f72d9de47856afbb58ac8edfdb0ce7c0f1297d2c051860a3867",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.3165620970000873,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 1472,
+      "end_s": 0.0032800000000000004,
+      "sense_after_reset_V": {
+        "a_96842_137580#": 1.9855372692804414,
+        "a_112842_137580#": 1.9854347465296558,
+        "a_128842_137580#": 1.9858632365060975
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 2,
+      "stage": "pads",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 34,
+      "deck_sha256": "e659b4f537d06b0e42c3327609f986daefbea27534a7cfd3b18f807244455666",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.31768754299991997,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 1492,
+      "end_s": 0.0032800000000000004,
+      "sense_after_reset_V": {
+        "a_96842_137580#": 1.9855384703896273,
+        "a_112842_137580#": 1.9854359662232046,
+        "a_128842_137580#": 1.9858644045927931
+      },
+      "run": "isolation-20260920"
+    },
+    {
+      "row": 2,
+      "stage": "pads",
+      "supply": "ideal",
+      "target_s": 0.00328,
+      "max_step_ns": 100.0,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "VDD": 3.299839197917057,
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 34,
+      "deck_sha256": "cd5b4e8dbf15078503b71fb0af46b9e08a6b61d014e9e6625f83508fe4505163",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 4.336400464999997,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 33685,
+      "end_s": 0.0032800000000000004,
+      "sense_after_reset_V": {
+        "a_96842_137580#": 1.985538418020402,
+        "a_112842_137580#": 1.9854359766318557,
+        "a_128842_137580#": 1.985864347260869
+      },
+      "run": "isolation-fine-20260920"
+    },
+    {
+      "row": 2,
+      "stage": "pads",
+      "supply": "finite",
+      "target_s": 0.00328,
+      "max_step_ns": 5000,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 34,
+      "deck_sha256": "cfa0b354840828380c3dbf3d052c1d3e901c2034223f6289f8a55e9a66cabf70",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 0.37224618699997336,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 1512,
+      "end_s": 0.0032800000000000004,
+      "sense_after_reset_V": {
+        "a_96842_137580#": 1.985537212790639,
+        "a_112842_137580#": 1.9854347440564863,
+        "a_128842_137580#": 1.9858631640469468
+      },
+      "run": "isolation-finite-20260920"
+    },
+    {
+      "row": 2,
+      "stage": "pads",
+      "supply": "finite",
+      "target_s": 0.00328,
+      "max_step_ns": 100.0,
+      "timeout_s": 90.0,
+      "boundary_values_V": {
+        "sensor_3x3_0.COL0": 2.110896695598203e-09,
+        "sensor_3x3_0.COL1": 2.110896695598202e-09,
+        "sensor_3x3_0.COL2": 2.110896695598202e-09,
+        "sensor_3x3_0.VRESET": 1.999999840160983
+      },
+      "semiconductor_and_resistor_count": 34,
+      "deck_sha256": "eaec08c9cf7365232c6774346a66d17c40f03cdba77083d26d678e6a40ac25e0",
+      "completed": true,
+      "accepted_full_chip": false,
+      "timed_out": false,
+      "seconds": 4.335496166000212,
+      "returncode": 0,
+      "solver_errors": [],
+      "points": 33707,
+      "end_s": 0.0032800000000000004,
+      "sense_after_reset_V": {
+        "a_96842_137580#": 1.985537204400999,
+        "a_112842_137580#": 1.9854347997943316,
+        "a_128842_137580#": 1.9858631388847254
+      },
+      "run": "isolation-finite-fine-20260920"
+    }
+  ],
+  "isolated_refinement": [
+    {
+      "supply": "ideal",
+      "checkpoint": "1 us after row-2 reset edge; isolated sense nodes, not ADC samples",
+      "maximum_difference_uV": 0.05733192409707044
+    },
+    {
+      "supply": "finite",
+      "checkpoint": "1 us after row-2 reset edge; isolated sense nodes, not ADC samples",
+      "maximum_difference_uV": 0.055737845228165384
+    }
+  ],
+  "captured_full_chip_reset_windows": [
+    {
+      "row": 0,
+      "window_points": 259,
+      "window_last_relative_ns": 19.78004842946926,
+      "reset_gate_range_V": [
+        0.0032963930713114636,
+        3.2997073243196016
+      ],
+      "column0_sense_range_V": [
+        1.9850432004208662,
+        1.9999995374288941
+      ],
+      "column0_reset_drain_current_range_A": [
+        7.793237740445887e-38,
+        3.9931754453776645e-09
+      ]
+    },
+    {
+      "row": 1,
+      "window_points": 267,
+      "window_last_relative_ns": 19.59237324808405,
+      "reset_gate_range_V": [
+        0.003296393568130023,
+        3.299707448658573
+      ],
+      "column0_sense_range_V": [
+        1.9847433118743816,
+        1.9999910448891571
+      ],
+      "column0_reset_drain_current_range_A": [
+        7.88539885645653e-38,
+        4.156863373168431e-09
+      ]
+    },
+    {
+      "row": 2,
+      "window_points": 116,
+      "window_last_relative_ns": 0.00013861481407140275,
+      "reset_gate_range_V": [
+        0.08654580643901523,
+        3.2997076381617836
+      ],
+      "column0_sense_range_V": [
+        1.9861313180400382,
+        1.9999967085145391
+      ],
+      "column0_reset_drain_current_range_A": [
+        7.410291822186923e-38,
+        4.101367123621332e-09
+      ]
+    }
+  ],
+  "accepted_full_chip": false,
+  "failure_reproduced_in_isolated_row": false,
+  "conclusion": "Identical local device topology; all 12 isolated cases cross reset. Shared chip feedback and charge history remain untested by this isolation; no causal device identified."
+}

@@ -1,5 +1,15 @@
 # Sensor references
 
+[Latest: three-frame and nominal readout checks](three-frames.md) — 27 samples, repeatability, reset behavior and matching DC references.
+
+[Earlier: staged integration and first full-camera frame](staged-integration.md) — nine completed samples with the unchanged extracted chip model and an equivalent reset source; qualification remains open.
+
+[Physical array extension tests](array-extension.md) — 3×3, 4×3, 3×4 and 4×4 complete three frames with extracted capacitance; core-only scope.
+
+[Earlier: shared-circuit numerical investigation](shared-circuit.md) — restored readout controls and a fast failed/completed source-equation pair; original full-chip failure unresolved.
+
+[Standalone row investigation](standalone-row.md) — identical local device topology, twelve completed isolated tests; full-chip failure remains unresolved.
+
 ## Filled-layout checkpoint — 2026-09-19 03:15 PDT
 
 [Filled-layout verification](filled-demonstrator.md) and [HTML overview](overview.html#filled-demonstrator): density/antenna, main DRC and device LVS results for the latest working revision.

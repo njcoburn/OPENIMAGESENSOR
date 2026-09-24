@@ -1,6 +1,12 @@
 # Final filled 3×3: normal-operation simulation candidate
 
+**Latest — 2026-09-24:** Three consecutive full-camera frames and matching DC readout references are complete. [Current results and scope](three-frames.md). Earlier results below remain historical.
+
+**Latest follow-up — 2026-09-21:** The full extracted candidate completes all nine samples after an electrically equivalent reset-source rewrite. The 1 µs maximum-step rerun also completes all nine samples; maximum difference from 5 µs is 2.778 µV. [Current staged/full-frame evidence](staged-integration.md). The older run descriptions below are retained as history; remaining gates are in the current report.
+
 Updated 2026-09-19 13:46 PDT.
+
+**2026-09-20 follow-up:** the unchanged KLU/trapezoidal candidate completes a streamed diagnostic through **3.24 ms**, crossing the previously reported second-row turn-off stall in about 19.5 minutes. Six samples and the retained capacitor ranges are checked; a complete frame remains unverified. See [switching diagnostics and exact evidence](functional-camera-diagnostic.md). Historical full-frame attempts below retain their original stop classifications.
 
 The stock-model DC operating point completes with every final-chip device and the condensed wiring capacitance retained. Initial voltage guesses (`.nodeset`, released during the DC solve) resolve floating unused-pad initialization. No external resistor or device was added to the chip model.
 
@@ -10,7 +16,7 @@ The stock-model DC operating point completes with every final-chip device and th
 
 For the transient candidate, 1,680 nonlinear MOS capacitors are replaced by their capacitance at that measured bias. The typical foundry equation is `C(V) = area × (0.001107 + 0.00107 tanh(6.25 V − 4.1875))`. Every other netlist record is preserved. This approximation must remain valid throughout the run; it is not suitable for a supply ramp.
 
-## Latest run: frame-5000ns-gear
+## Historical run: frame-5000ns-gear
 
 Completed: **False**. Integration: gear. Maximum timestep: 5000 ns; ngspice also uses smaller adaptive steps. Typical process, 27 °C, constant 3.3 V source with 2 Ω series resistance. Three illumination levels: 0, 80 and 240 pA. External load: bond model, 100 Ω isolation, 100 pF board capacitance, 1 MΩ input and 20 pF sampled capacitor.
 

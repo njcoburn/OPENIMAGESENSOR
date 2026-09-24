@@ -148,6 +148,24 @@ html=html.replace('</main>', (root/'docs/ngspice-version-comparison-section.html
 html=html.replace('</main>', (root/'docs/gf180-shuttle-references-section.html').read_text()+'</main>', 1)
 if (root/'docs/functional-camera-section.html').exists():
  html=html.replace('</main>', (root/'docs/functional-camera-section.html').read_text()+'</main>', 1)
+if (root/'docs/functional-camera-diagnostic-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/functional-camera-diagnostic-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#functional-camera-diagnostic">Row-switching diagnostic</a>', 1)
+if (root/'docs/streamed-frame-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/streamed-frame-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#streamed-frame">Nine-pixel frame</a>', 1)
+if (root/'docs/standalone-row-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/standalone-row-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#standalone-row">Standalone rows</a>', 1)
+if (root/'docs/shared-circuit-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/shared-circuit-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#shared-circuit">Shared-circuit diagnosis</a>', 1)
+if (root/'docs/staged-integration-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/staged-integration-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#staged-integration">Full-frame success</a>', 1)
+if (root/'docs/three-frames-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/three-frames-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#three-frames">Three-frame verification</a>', 1)
 html=html.replace('<main>', '<main><p><strong>Returning to the project?</strong> <a href="../PICK_UP_HERE.md">Read the dated handoff, current blockers and next steps</a>.</p>', 1)
 (root/'docs/overview.html').write_text(html)
 print('Checks passed. Wrote docs/overview.html and simulations/cycle-samples.json')
