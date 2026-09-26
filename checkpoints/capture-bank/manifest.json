@@ -1,0 +1,955 @@
+{
+  "files": {
+    "CHANGELOG.md": {
+      "bytes": 37263,
+      "sha256": "e86105bfaf7246cbaa053a1e1fbf4c562de681347d1603657d5cb3471cd9adc0"
+    },
+    "COMPLETION_PLAN.md": {
+      "bytes": 26975,
+      "sha256": "0aafc909e3cc8ff977c934f5da26f016aa2911b2797e1448e326db715bbb6f3d"
+    },
+    "NEXT_STEPS.md": {
+      "bytes": 50958,
+      "sha256": "6a06e6fc00ff03679330c91e06e8e5385f5e31b29733d1d88528e4a5655cd218"
+    },
+    "PICK_UP_HERE.md": {
+      "bytes": 38133,
+      "sha256": "6e3aed04007ad8d2c44399fb6615ca36bddf4f0483639da3245e56da0fe8628f"
+    },
+    "README.md": {
+      "bytes": 29876,
+      "sha256": "e100430b1ab9bc679b827b874ac2cb9dc31c00754ad9c2806bf05aec40da58ad"
+    },
+    "build/capture-bank-c2-v1-20260925/bank.gds": {
+      "bytes": 4482414,
+      "sha256": "3da672149fbc58f01f3375ed8bd89ae265cb9d6a4508eea9cd80a39475a460e6"
+    },
+    "build/capture-bank-c2-v1-20260925/build.json": {
+      "bytes": 1005,
+      "sha256": "94d19ed7d49f320bd4dabb295fd528e940afc057f21ae8836993e122d7636ec6"
+    },
+    "build/capture-bank-c2-v1-20260925/direct.spice": {
+      "bytes": 2558,
+      "sha256": "3e3799f4d9b1dd969c155395df39ae79661314b964883147756dac2d8e0797b3"
+    },
+    "build/capture-bank-c2-v1-20260925/drc-details.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "build/capture-bank-c2-v1-20260925/extract.log": {
+      "bytes": 3061,
+      "sha256": "b9fa5965756a8246190ada5bee3af50c67d86ef38c1b4ed4e1057a5e05af274e"
+    },
+    "build/capture-bank-c2-v1-20260925/extract.tcl": {
+      "bytes": 778,
+      "sha256": "f0ac7aa8d60e1c1e5bf950a44d3d9832aa837e9be8e6895bd6c29145f994eda5"
+    },
+    "build/capture-bank-c2-v1-20260925/flat.ext": {
+      "bytes": 10926,
+      "sha256": "be210ccb3e7e6b946d53d1523f33ab7ce08d09a8f7384e695f011cd879b5ebd0"
+    },
+    "build/capture-bank-c2-v1-20260925/flat.mag": {
+      "bytes": 97605,
+      "sha256": "571b520056599488615cab480b59697369e1c0047207099987be82f6d815d56d"
+    },
+    "build/capture-bank-c2-v1-20260925/flat.res.ext": {
+      "bytes": 17395,
+      "sha256": "d544a5cbaad09c81d92a418b55b137baef30d6ae6b58d617031a30c1061d41cc"
+    },
+    "build/capture-bank-c2-v1-20260925/klayout.log": {
+      "bytes": 95658,
+      "sha256": "98299795c8a1f7a9fc2f4421309d49e26663ebf1e85db98ed387f58abd35fa18"
+    },
+    "build/capture-bank-c2-v1-20260925/main-drc.lyrdb": {
+      "bytes": 136520,
+      "sha256": "b2feff99e9de8b1eba3d2e9117b0e0bce8ffa09223f87216c0b34ae0edefc7d5"
+    },
+    "build/capture-bank-c2-v1-20260925/raw-rc.spice": {
+      "bytes": 12810,
+      "sha256": "57f2c4dde7a0bb5e4ff2ecfc86380adb897d82f44028d5a454cc8b92a030cd83"
+    },
+    "build/capture-bank-c2-v1-20260925/reference.spice": {
+      "bytes": 2694,
+      "sha256": "d99416a0d5a47de8e93eafb4eaae3e8e050dac5d77d72fc7d81a66638186da8f"
+    },
+    "build/capture-bank-c2-v1-20260925/runner.py": {
+      "bytes": 7133,
+      "sha256": "dcbd48fdc2151aece518ac1deed82b69191c4cec8e33d0c372a62d508fb9ce79"
+    },
+    "build/capture-bank-c2-v1-20260925/verify-runner.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "build/capture-bank-c2-v2-20260925/bank.gds": {
+      "bytes": 4500206,
+      "sha256": "bd4761a0b1b5be3db1b6684af36ab6988af81280057d65c16a61f8d6d330b016"
+    },
+    "build/capture-bank-c2-v2-20260925/build.json": {
+      "bytes": 1071,
+      "sha256": "58d42199acf07a724d7dfdfb05366f0e94a3b8c22f9ed33ea5ab4b835cd84a7b"
+    },
+    "build/capture-bank-c2-v2-20260925/collapsed-lvs.log": {
+      "bytes": 5606,
+      "sha256": "f3f958a7895635aa874479e09d1fa5ef71a6766a8bb0566d18c2eadd0ca356bc"
+    },
+    "build/capture-bank-c2-v2-20260925/collapsed-netgen.log": {
+      "bytes": 5278,
+      "sha256": "ab61e2c36e6efdb98e5485a399e8b73c07aed92fc8844e132fc8b6c0cdc83f15"
+    },
+    "build/capture-bank-c2-v2-20260925/collapsed.spice": {
+      "bytes": 2508,
+      "sha256": "196f90c94f2bc68e1d883bdf4e0ddc067dbbf35ebcc18da8a35ed0c705bc79d0"
+    },
+    "build/capture-bank-c2-v2-20260925/direct-lvs.log": {
+      "bytes": 5596,
+      "sha256": "1fb5f1a55e4f2a3e52eda23d57447079a188fdfa8c0c8a44718b32e672fa6b79"
+    },
+    "build/capture-bank-c2-v2-20260925/direct-netgen.log": {
+      "bytes": 5238,
+      "sha256": "0d39267dcd51f42d35a622b66d3d6a0726306b3d3ae68219d211e887d0355edb"
+    },
+    "build/capture-bank-c2-v2-20260925/direct.spice": {
+      "bytes": 2558,
+      "sha256": "3e3799f4d9b1dd969c155395df39ae79661314b964883147756dac2d8e0797b3"
+    },
+    "build/capture-bank-c2-v2-20260925/drc-details.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "build/capture-bank-c2-v2-20260925/extract.log": {
+      "bytes": 3061,
+      "sha256": "2ae95139113f31c76eda16874092f2908911dd5932a69e36139c6146a3a7430b"
+    },
+    "build/capture-bank-c2-v2-20260925/extract.tcl": {
+      "bytes": 778,
+      "sha256": "0f6e3e13dc4efe41b529e8ae4a56b7f0e65f332953cd2fd11a4a154be7a24051"
+    },
+    "build/capture-bank-c2-v2-20260925/flat.ext": {
+      "bytes": 10933,
+      "sha256": "ba4f821207e64fcad368d81a302f4fb6baecd8aee480ab5c46026d65c16356e9"
+    },
+    "build/capture-bank-c2-v2-20260925/flat.mag": {
+      "bytes": 122945,
+      "sha256": "e7e41844cb2cbfcba8639d1d31b6ef28f37b7d63ae96c7ebceff2b55f210ada6"
+    },
+    "build/capture-bank-c2-v2-20260925/flat.res.ext": {
+      "bytes": 24339,
+      "sha256": "4ddef0d9dde762d77cf32acc698a9805aac3d2f04217501326753447ab875310"
+    },
+    "build/capture-bank-c2-v2-20260925/klayout.log": {
+      "bytes": 95491,
+      "sha256": "32658d6fc1599a55446c15f5de35e77681549a23cf27dbb5cf5d09ef11c708ed"
+    },
+    "build/capture-bank-c2-v2-20260925/main-drc.lyrdb": {
+      "bytes": 134567,
+      "sha256": "4ad2d9bfc866ec0810017f8274f5fbebcee7b0d5a05c30bef76a33665fa1b82d"
+    },
+    "build/capture-bank-c2-v2-20260925/raw-rc.spice": {
+      "bytes": 17899,
+      "sha256": "9bbd01b6ed539b2c003b2f74f0f049c32d5dbe6f62d5beb813ebfc89222f0cba"
+    },
+    "build/capture-bank-c2-v2-20260925/rc-far.spice": {
+      "bytes": 17474,
+      "sha256": "562b9eabf56b477fc17dc6bed7f6b07eae802688a23aab220cee595dddf12aa1"
+    },
+    "build/capture-bank-c2-v2-20260925/rc-port.spice": {
+      "bytes": 17462,
+      "sha256": "dd9638d8956724feee26c02adb4bba4539460302ebe6a0f09b6195926c5c9968"
+    },
+    "build/capture-bank-c2-v2-20260925/reference.spice": {
+      "bytes": 2694,
+      "sha256": "d99416a0d5a47de8e93eafb4eaae3e8e050dac5d77d72fc7d81a66638186da8f"
+    },
+    "build/capture-bank-c2-v2-20260925/runner.py": {
+      "bytes": 7629,
+      "sha256": "e501722e55da9a8b52efdf472dce0f871984c2f01fcbf84675097c92703b6509"
+    },
+    "build/capture-bank-c2-v2-20260925/verification.json": {
+      "bytes": 6866,
+      "sha256": "9b937e95753fced41af789038a412253bdb4742ad426e0ec078fda4661d02ed3"
+    },
+    "build/capture-bank-c2-v2-20260925/verify-runner.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "build/capture-bank-c64-v2-20260925/bank.gds": {
+      "bytes": 143044118,
+      "sha256": "b8f7376859ab10e8697d8ed23b4e40985257296d7c8083d57f3fe977863d687e"
+    },
+    "build/capture-bank-c64-v2-20260925/build.json": {
+      "bytes": 5311,
+      "sha256": "086969662b5312f4078b0876c34160001316cfd981084eefc329a65b85e7f754"
+    },
+    "build/capture-bank-c64-v2-20260925/collapsed-lvs.log": {
+      "bytes": 32888,
+      "sha256": "8dfd3c990f6536fca063c0f50100bf2c612e0a998760ec201d2404a5dea5aa2c"
+    },
+    "build/capture-bank-c64-v2-20260925/collapsed-netgen.log": {
+      "bytes": 5297,
+      "sha256": "850e9fb16979ae1c22107146bbfed6c79761a66efb0de7aaab9dcd019fe9351e"
+    },
+    "build/capture-bank-c64-v2-20260925/collapsed.spice": {
+      "bytes": 75958,
+      "sha256": "408b912b73ef493a3b6729b651ba768a67e70bc0f113b96ebd9cf0b8a52bc633"
+    },
+    "build/capture-bank-c64-v2-20260925/diagnostic-audit.json": {
+      "bytes": 996,
+      "sha256": "4ebb161835b4c891b61dd022073c4e7074daaf3edfd95d8f50d861dfc11f99e0"
+    },
+    "build/capture-bank-c64-v2-20260925/direct-lvs.log": {
+      "bytes": 32878,
+      "sha256": "a7800ef0377973482b07f62b5951b9f47b03c4264dea13c954c4ce99ad8382fd"
+    },
+    "build/capture-bank-c64-v2-20260925/direct-netgen.log": {
+      "bytes": 5257,
+      "sha256": "7e3bed0911ba906cfc900462985ef28d0c6bd9a13fb0efb22c9fdce60c13e649"
+    },
+    "build/capture-bank-c64-v2-20260925/direct.spice": {
+      "bytes": 76058,
+      "sha256": "8968722e872ad0db0b0c96ddd05ed1af3e2d8ddd1e2dbbcf9642e9deb3b5e96d"
+    },
+    "build/capture-bank-c64-v2-20260925/drc-details.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "build/capture-bank-c64-v2-20260925/extract.log": {
+      "bytes": 33033,
+      "sha256": "4e2a5dcd3d04547a7e6c73f5de20a5f11ce846123270db07e7ab17fa0310689b"
+    },
+    "build/capture-bank-c64-v2-20260925/extract.tcl": {
+      "bytes": 2847,
+      "sha256": "599f95064b3d3c1f1f2848a606b14aa192504a1d4fdbb3c83e40554adbda48ab"
+    },
+    "build/capture-bank-c64-v2-20260925/flat.ext": {
+      "bytes": 269775,
+      "sha256": "6f15920e022a1e5c9e9c8795c26d052c697ba1ed40c204c0b5c410dc67675a05"
+    },
+    "build/capture-bank-c64-v2-20260925/flat.mag": {
+      "bytes": 3484667,
+      "sha256": "eabba7baa1ecf5022b1a297073e413c1030c8cd5ddabf95214700babbf735d5a"
+    },
+    "build/capture-bank-c64-v2-20260925/flat.res.ext": {
+      "bytes": 754289,
+      "sha256": "152f5770c458c8a91e059b7bb2cf2595d0c2b05738e60d3ce13762884944184b"
+    },
+    "build/capture-bank-c64-v2-20260925/klayout.log": {
+      "bytes": 95585,
+      "sha256": "9c665509d777fdc21b624e821d7f1eaba8a4c9f376a3b122d143e49ac7ac9dc0"
+    },
+    "build/capture-bank-c64-v2-20260925/main-drc.lyrdb": {
+      "bytes": 134567,
+      "sha256": "4ad2d9bfc866ec0810017f8274f5fbebcee7b0d5a05c30bef76a33665fa1b82d"
+    },
+    "build/capture-bank-c64-v2-20260925/raw-rc.spice": {
+      "bytes": 569637,
+      "sha256": "4d583267a8ccb0965356451ace1f3cf9794ef6526b27f011a9581f1539f1bf8b"
+    },
+    "build/capture-bank-c64-v2-20260925/rc-far.spice": {
+      "bytes": 554667,
+      "sha256": "7961b27d40c268c0d04d52138c4de9c1e65a16c2f88155dc10ec1c956ace5873"
+    },
+    "build/capture-bank-c64-v2-20260925/rc-port.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-c64-v2-20260925/reference.spice": {
+      "bytes": 81238,
+      "sha256": "a816b4b519b2b809c4a48c25412d15463cfb64371266e0ea44fbaec665f057ba"
+    },
+    "build/capture-bank-c64-v2-20260925/runner.py": {
+      "bytes": 7629,
+      "sha256": "e501722e55da9a8b52efdf472dce0f871984c2f01fcbf84675097c92703b6509"
+    },
+    "build/capture-bank-c64-v2-20260925/verification.json": {
+      "bytes": 142798,
+      "sha256": "bfd19ab41a379778c89163ffbfdcde6c0d27a1a915ef80be79dd8652642f733e"
+    },
+    "build/capture-bank-c64-v2-20260925/verify-runner.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "build/capture-bank-dc-matrix-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-0/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-0/op.raw": {
+      "bytes": 31881,
+      "sha256": "8739075a0895ace4c4ce17dddb01c20796bf0f3ebd2b0ab861b9800a3820cb10"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-0/result.json": {
+      "bytes": 38377,
+      "sha256": "351c182b02c45114daa12506855eb392cbac36883946e101a97e7ac76626ac28"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-0/test.spice": {
+      "bytes": 23500,
+      "sha256": "5079a40c5986e2be1e3ba9f0199e53361e37487e2e8d730b6d2593a5e81e6d63"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.2/op.raw": {
+      "bytes": 31881,
+      "sha256": "5a5bbe34f83c1f719b68a62845bd65f14c1ed2b82acac14714faf408838fa5fd"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.2/result.json": {
+      "bytes": 37295,
+      "sha256": "cc984f5abdf440d87334d704f0b56f0548f86c3bf7fbda52fc6a206ddd148b2a"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.2/test.spice": {
+      "bytes": 23628,
+      "sha256": "e35d5abbd2e9cc27b0ad79385134b59bb6e997d12cb795c44545c9fc28a7a542"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.6/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.6/op.raw": {
+      "bytes": 31881,
+      "sha256": "74c76eec283212406b9fe242d946a4f987c808c9e42b8a097941e033c3c59d55"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.6/result.json": {
+      "bytes": 37300,
+      "sha256": "868e3f2338d93e853faf64e7b3db8712e84ed3390915e91976e60311db3615fb"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-1.6/test.spice": {
+      "bytes": 23628,
+      "sha256": "d3eafd34876ae96dc36cc0ab73648dcaf93d093c646e92e46b50719a80d007e6"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-2/op.raw": {
+      "bytes": 31881,
+      "sha256": "d0c2f92ba8fd89b41add2e1ea9ff709e7543949df0247e98d87e85bfc6ab1baf"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-2/result.json": {
+      "bytes": 37385,
+      "sha256": "f9181f24b38531c254bbd56392bc765b43c552cc8b1c0d5b68deef0467705731"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-125-2/test.spice": {
+      "bytes": 23500,
+      "sha256": "3a0aee85183019bcfde437aea6727f62545005fb2aec8b7a8c6214f283124354"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-0/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-0/op.raw": {
+      "bytes": 31881,
+      "sha256": "270eccd7c3ddd7981a83f0e2e3654136268290bc72fe88fa21fae4b929b77039"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-0/result.json": {
+      "bytes": 38446,
+      "sha256": "c7b3414902de028154010a417f02e7ce8154a31e3ff6b678b1df3d00a2de9834"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-0/test.spice": {
+      "bytes": 23499,
+      "sha256": "30111ff978e7d2078a3aa827576d10f9d0ee8a776affd02e97005cdf552afebb"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.2/op.raw": {
+      "bytes": 31881,
+      "sha256": "2500cbc2fbaafee3df7676349ad4c0d3a8b8e5e72767849d0772433b2338e7a8"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.2/result.json": {
+      "bytes": 37275,
+      "sha256": "e3a0875011335422775638f094b45d799acb4e736ab2f324f5f431b8c0e9a08b"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.2/test.spice": {
+      "bytes": 23627,
+      "sha256": "b6b1b31ad1394ae9d7d5b9d465dad8729307d0cd94f1766fa514938a1b8341c2"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.6/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.6/op.raw": {
+      "bytes": 31881,
+      "sha256": "00d8c7cc8563b26bbe875a97a3fb7e3c5eee06037489fb4c390ac414f62ab835"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.6/result.json": {
+      "bytes": 37307,
+      "sha256": "39a1d60f2fffc219a1ce58814218c416072adad6d8a1c089f2d1f93fdb443726"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-1.6/test.spice": {
+      "bytes": 23627,
+      "sha256": "0bac98980b1c21423f587a4a94eaed756fb6ef5c2e5746fff06520e242216ecd"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-2/op.raw": {
+      "bytes": 31881,
+      "sha256": "f6aec3a819544903165a9202c6622138babab29473f1bdba95a2e13268981feb"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-2/result.json": {
+      "bytes": 37359,
+      "sha256": "e96db86994980b5cf4cdc375ad1e95adb8d692e322f0ce339c9a2ea36ddb568a"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port-27-2/test.spice": {
+      "bytes": 23499,
+      "sha256": "cede707468e9533450deffb934c784dbc06a6bb1c23038dd3a9117202f1587aa"
+    },
+    "build/capture-bank-dc-matrix-20260925/rc-port.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-0/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-0/op.raw": {
+      "bytes": 4277,
+      "sha256": "3709d7b9ba04a67dd4ce968d393395dea35fb33deacbf116efc34528e818b0f3"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-0/result.json": {
+      "bytes": 5452,
+      "sha256": "f6bbd97a0fc3d780374e90f72ff45c80e5c8a3fdd3805431d4c303c40b82a812"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-0/test.spice": {
+      "bytes": 10682,
+      "sha256": "b0072c6508fc4ac67512fa69bf7b5261086cb911ee2d08181d591aeac28ff696"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.2/op.raw": {
+      "bytes": 4277,
+      "sha256": "8b4fca191ec48e97403c72d79b93f90571c3552677032bcb449ff5ad9f863b25"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.2/result.json": {
+      "bytes": 5232,
+      "sha256": "1589ce325158fc53323faa36db7210d7845d85ab4b99700197cc62704b7c6506"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.2/test.spice": {
+      "bytes": 10810,
+      "sha256": "fd569b7ba67f82b61f813f6f25c88ea2e5ecae74f23fb33aaff9ec3f53f00066"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.6/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "bd6b683f936d46122fbbb3b17f7527ada5a7fd933ac5652b17d34aacbbde77de"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.6/result.json": {
+      "bytes": 5230,
+      "sha256": "e5afb9fc9535fadc392db34a0be8ae4eb57cf67c321e62fcec4e28e1be887c96"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-1.6/test.spice": {
+      "bytes": 10810,
+      "sha256": "a46e0a42b76ab5cfc188efba30a2b841183120761bfc7d994092d2b2a5c08987"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-2/op.raw": {
+      "bytes": 4277,
+      "sha256": "2e762ddd815f4d4c827c1dd573ddf3af20be3cf182bd3bb9c8a6dd717d576f7e"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-2/result.json": {
+      "bytes": 5265,
+      "sha256": "6ad532c4a2e950839e08d91c5e7fa9985a91ed91aa30f9498721607daf5009c4"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-125-2/test.spice": {
+      "bytes": 10682,
+      "sha256": "b9df9ced4f5ee5cbb9a565e4093694b6122d4b654561457a2e4a19acc6c5fb1b"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-0/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-0/op.raw": {
+      "bytes": 4277,
+      "sha256": "9430765ff8b804c2442de7dedd7c038b976bb35be6a0dee579c78a125791a18a"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-0/result.json": {
+      "bytes": 5452,
+      "sha256": "026aa13be8fc94d5e36eea14382eec06b192050a1165df29d05029102a88e775"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-0/test.spice": {
+      "bytes": 10681,
+      "sha256": "439fb2ed51aa0f0e91d3d066eefd67e80b39ffdb83bdfc93bfe0e62ab68ac23f"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.2/op.raw": {
+      "bytes": 4277,
+      "sha256": "9c79747d7b84022d071aaab544552bb5998c45770f1dcdaa38a32a87297b98fb"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.2/result.json": {
+      "bytes": 5264,
+      "sha256": "9adb27ffe554483ae993cffd06deee6a9645c738ec98d6f28ae654d50dc433ff"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.2/test.spice": {
+      "bytes": 10809,
+      "sha256": "c539c3b399e8ddad0d6b1e1a616f82f076b3af766a003e96d6a2d47e724d0d53"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.6/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "a516f54c5255dc2c2227445b9bb4a2981fa28c9dab7bd9256ee5277a818390c2"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.6/result.json": {
+      "bytes": 5137,
+      "sha256": "99601d542fa8fc60facf85c08c6511121be9d8d352c266e1af8b66da28e32f5f"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-1.6/test.spice": {
+      "bytes": 10809,
+      "sha256": "441114b40dd738ad49a62fbeb567a22f594de2f886c6c6c5812a17dc4cf4c43f"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-2/op.raw": {
+      "bytes": 4277,
+      "sha256": "69d3b868603e7217b94cd5f860b7daaf593fa12c051b0d08b9989d7e588f170b"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-2/result.json": {
+      "bytes": 5262,
+      "sha256": "73352d6cd5978124911c3be774bd164ae44e0d81653151f260a367998a6b1d33"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference-27-2/test.spice": {
+      "bytes": 10681,
+      "sha256": "6f3e9d6b013089adb1c766e54949c54a8248917b4a32d3c00cc88ad33fa87524"
+    },
+    "build/capture-bank-dc-matrix-20260925/reference.spice": {
+      "bytes": 81228,
+      "sha256": "c8155cc0e04beba4fc92b9743f56d8e68b571341c6da5ee15c69c538ab67789f"
+    },
+    "build/capture-bank-dc-matrix-20260925/report.json": {
+      "bytes": 394174,
+      "sha256": "77b331558251683680781846bc3851908e1e8f25f9ae21b94fa84b447aaf8d00"
+    },
+    "build/capture-bank-dc-matrix-20260925/runner.py": {
+      "bytes": 6285,
+      "sha256": "ee4e700482fb6f806ff4e073a555e49d143f745061e63b82dd2873ed0c41b49e"
+    },
+    "build/capture-bank-dc-sparse-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-125-1.6/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-125-1.6/op.raw": {
+      "bytes": 31881,
+      "sha256": "9edcbba871a0640f4239e5d3e92b3b0cf37030d7bf23b84b1e0a519a4c2d1583"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-125-1.6/result.json": {
+      "bytes": 37300,
+      "sha256": "f63f7b405f3eb46225954bc93d4a92ca8ae03116b131726bd14e0a92606f5ac6"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-125-1.6/test.spice": {
+      "bytes": 23628,
+      "sha256": "36fc336031a166e12af4a9169f23228c8493ac21258912bc7e08e19ca5167a8e"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-27-1.6/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-27-1.6/op.raw": {
+      "bytes": 31881,
+      "sha256": "c1e7f05423ac5e17925fea155c39b0c7dc636b68c97c8239d0763635d5c04f67"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-27-1.6/result.json": {
+      "bytes": 37307,
+      "sha256": "80e108c026aa8ae2ff571009e7909ff14fb7eb9a2097245cc08dd3e7f317d225"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port-27-1.6/test.spice": {
+      "bytes": 23627,
+      "sha256": "98e1e4c8f6c06bec9f994c9c6f1ecb42e43a6ef7ca9aef908b251719c3b85d77"
+    },
+    "build/capture-bank-dc-sparse-20260925/rc-port.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-125-1.6/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-125-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "0f89d17c661802b1788761f50e999b982dad92eaa34922099cdb3b7a51c541ad"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-125-1.6/result.json": {
+      "bytes": 5230,
+      "sha256": "f092f526a7de06c83df75f5f8eb0a4465baf90760c1019f1469b2537f253bc01"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-125-1.6/test.spice": {
+      "bytes": 10810,
+      "sha256": "49dd7d98e76ab1bc635309601f1137f3b3cdc304c3a1483201938c4ab9fe8831"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-27-1.6/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-27-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "80fcc1a454f19bfafd5d60dce9ce70ae743acdca6a53c8125a2335605cab4915"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-27-1.6/result.json": {
+      "bytes": 5138,
+      "sha256": "264b05bbcf2b99c4f7ec44805374d06c802940880ebebce7d38de88c9c0de099"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference-27-1.6/test.spice": {
+      "bytes": 10809,
+      "sha256": "a48b34c92921ce5a8c93da915e9eb9eb1ab18a7438ae0ce3c3d2e57865461d61"
+    },
+    "build/capture-bank-dc-sparse-20260925/reference.spice": {
+      "bytes": 81228,
+      "sha256": "c8155cc0e04beba4fc92b9743f56d8e68b571341c6da5ee15c69c538ab67789f"
+    },
+    "build/capture-bank-dc-sparse-20260925/report.json": {
+      "bytes": 98195,
+      "sha256": "aebeead6c3ccd93bb783392a7c31f208713beffe57a47065504ed2938fc5aed6"
+    },
+    "build/capture-bank-dc-sparse-20260925/runner.py": {
+      "bytes": 6285,
+      "sha256": "ee4e700482fb6f806ff4e073a555e49d143f745061e63b82dd2873ed0c41b49e"
+    },
+    "build/capture-bank-row-27-200-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-row-27-200-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-row-27-200-20260925/bank.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-row-27-200-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-row-27-200-20260925/ngspice.log": {
+      "bytes": 540741,
+      "sha256": "0047eae63e02b47824aa90f4678a3ce328cca48ed72ea48c916c833c92b87219"
+    },
+    "build/capture-bank-row-27-200-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-row-27-200-20260925/result.json": {
+      "bytes": 56064,
+      "sha256": "5a4f4235d5c6798ad8b3320440214588928eced323064132fd3309fb335f4014"
+    },
+    "build/capture-bank-row-27-200-20260925/runner.py": {
+      "bytes": 7320,
+      "sha256": "7488cbefbc7d19121c9ea77d95198b12e445cb56e948bd289d8c0fb255b10061"
+    },
+    "build/capture-bank-row-27-200-20260925/stream.raw": {
+      "bytes": 28668868,
+      "sha256": "a9bd88b1d8215f67afa5b1e812d2c7f3fa8d9dca50c6581893404453c9d32965"
+    },
+    "build/capture-bank-row-27-200-20260925/test.spice": {
+      "bytes": 55974,
+      "sha256": "535635493b57c018ecdad99dfcc0af446466c21351e83339a538ed2e029b09df"
+    },
+    "build/capture-bank-row-27-200-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/bank.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/ngspice.log": {
+      "bytes": 106,
+      "sha256": "38629358399c715250a6744de0706a8acf5ae64fbd743e80df4128e778150abd"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/result.json": {
+      "bytes": 45500,
+      "sha256": "8a979c0d813812d5cb6b93e158c9275b37814cd9055409d6512202274047458e"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/runner.py": {
+      "bytes": 9169,
+      "sha256": "228599792a6704e6a158e334b295a1c4eff36fe718ca3ce4999d9bedc9cb2c7f"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/test.spice": {
+      "bytes": 55959,
+      "sha256": "5ade1fbcbdbb60c2ff3d616844c77d08e46ce0c1151ef7c24d57a59e05adacac"
+    },
+    "build/capture-bank-row-27-klu-op-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "build/capture-bank-row-27-op-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-row-27-op-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-row-27-op-20260925/bank.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-row-27-op-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-row-27-op-20260925/ngspice.log": {
+      "bytes": 196,
+      "sha256": "6a2b73443503935470667f4bf4c838dd78cc00ecaa1568ba05d6ccc7cc09d467"
+    },
+    "build/capture-bank-row-27-op-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-row-27-op-20260925/result.json": {
+      "bytes": 45492,
+      "sha256": "2d37525c3ce96b60ff33b582c04a4f8f3791c162dd5bf1b789bf21ec723a6d86"
+    },
+    "build/capture-bank-row-27-op-20260925/runner.py": {
+      "bytes": 7320,
+      "sha256": "7488cbefbc7d19121c9ea77d95198b12e445cb56e948bd289d8c0fb255b10061"
+    },
+    "build/capture-bank-row-27-op-20260925/test.spice": {
+      "bytes": 55949,
+      "sha256": "e36b74ec785120580e30fb60e886ef7b7cbfcf8440e1ae1f571d723b2b5bd34d"
+    },
+    "build/capture-bank-row-27-op-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/bank.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/ngspice.log": {
+      "bytes": 478,
+      "sha256": "33e3f54fc414e06d0ed66f3f47394f2cafa732d5f18e25d5d1c8852503792c59"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/nodesets.json": {
+      "bytes": 66674,
+      "sha256": "eeab4e6d5e3389a649c53b95e363dea254dfa4f226885bca11f1e7597da7d43b"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/op.raw": {
+      "bytes": 569,
+      "sha256": "63de5f871178ac80bcc3ad707bed607e4b16a179ede97d968a953ebd98241282"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/result.json": {
+      "bytes": 45966,
+      "sha256": "a5419710b29261a4bd5f648e04cb64222535bd143994b41f59785fcbeea2ebcb"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/runner.py": {
+      "bytes": 9169,
+      "sha256": "228599792a6704e6a158e334b295a1c4eff36fe718ca3ce4999d9bedc9cb2c7f"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/test.spice": {
+      "bytes": 124497,
+      "sha256": "baaba96f842d9fdab224141ccd4ecab2c0daf21b0c8f4bae68891e38883f9b0b"
+    },
+    "build/capture-bank-row-27-seeded-klu-op-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/bank.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/ngspice.log": {
+      "bytes": 87,
+      "sha256": "154c88a7d552b2fe149681911f4e2850b55abc84e322f7defc4967bdfe84266b"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/nodesets.json": {
+      "bytes": 66674,
+      "sha256": "eeab4e6d5e3389a649c53b95e363dea254dfa4f226885bca11f1e7597da7d43b"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/result.json": {
+      "bytes": 45481,
+      "sha256": "46ac7281a13f947a5faf01d560cd651ae82a5100a3ea68386b9920ad151e2ef2"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/runner.py": {
+      "bytes": 9034,
+      "sha256": "ee63d7c7e96503884796132c0285228cd0adb7bc8e9435837859713b13e1e6b7"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/test.spice": {
+      "bytes": 124487,
+      "sha256": "4b68c8421162236b0a66510a421cf862ef222b7ab29c26b2e3fbb03162d9f5ff"
+    },
+    "build/capture-bank-row-27-seeded-op-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "build/capture-column-routed-v8-20260925/column.gds": {
+      "bytes": 325586,
+      "sha256": "424b65d272d63f33fae3dbe369815f5971182217c363baffb90bf90ecac7a6c3"
+    },
+    "build/capture-column-routed-v8-20260925/verification.json": {
+      "bytes": 2830,
+      "sha256": "5e3489ad6b2352ba114803684926a8273bccbc889e064f09ddf63e910a6f5954"
+    },
+    "build/grid-readout-20260924/27-100/r1c64-rc-port/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/grid-readout-20260924/27-100/r1c64-rc-port/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/grid-readout-20260924/27-100/r1c64-rc-port/transient/test.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "checkpoints/capture-column-preparation/capture-column.spice": {
+      "bytes": 1508,
+      "sha256": "efe870de57ee451782f39103b909cac065d015e2042c6e8f95092fa659df7429"
+    },
+    "docs/README.md": {
+      "bytes": 7500,
+      "sha256": "dc9afc642edd38af0262a7ba547f18a90a5fb1cc425b8d425d1f757ef9fb3ab4"
+    },
+    "docs/assets/capture-bank.png": {
+      "bytes": 137075,
+      "sha256": "6a8ac182b6c63bd6a6c43cf026a1a72bf51458bebcdccef6a3e0b5c581530d79"
+    },
+    "docs/capture-bank-section.html": {
+      "bytes": 183253,
+      "sha256": "a2107399a2205bf34b8688509e5ca9850f00651a856d3bf97ba1a2146668b911"
+    },
+    "docs/capture-bank.md": {
+      "bytes": 8607,
+      "sha256": "d4821a8f4c95e6bdbcbf6c8c66634b1cec0eea9d2a1cbc54cd113c3187e62ff5"
+    },
+    "docs/capture-tile-plan.md": {
+      "bytes": 5423,
+      "sha256": "23c6272de0214eb856b39f87ec13e8e957c90f61c83cd270538d1573c0a17823"
+    },
+    "docs/completion-dashboard.html": {
+      "bytes": 5905,
+      "sha256": "f182546f77c193ac889c607230e48fa2236a987a942abfa6c155d1a0c01119d6"
+    },
+    "scripts/audit-capture-bank.py": {
+      "bytes": 4291,
+      "sha256": "fdc7f739d515ae8662fc6be895ea9671bb70d9f190282fa752291a07b042693c"
+    },
+    "scripts/build-capture-bank.py": {
+      "bytes": 7629,
+      "sha256": "e501722e55da9a8b52efdf472dce0f871984c2f01fcbf84675097c92703b6509"
+    },
+    "scripts/build-overview.py": {
+      "bytes": 30644,
+      "sha256": "e9180b54aa4fcc8b8329a9fcde09b5035c154e57a9bf274c64865b6b4cb63177"
+    },
+    "scripts/checkpoint-capture-bank.py": {
+      "bytes": 4272,
+      "sha256": "f761983050973e8e14b04d0ea1822c0d8a027d962dd8a5f5cd3da7be060c4968"
+    },
+    "scripts/diagnose-capture-transient.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "scripts/report-capture-bank.py": {
+      "bytes": 13638,
+      "sha256": "2b80de5315e19f9b83ef903bf89f83920311d8ddf5d79777d4a6c7cb8900ccaa"
+    },
+    "scripts/run-tools.sh": {
+      "bytes": 568,
+      "sha256": "581173547546bac970ec6c890f3d945a15951c4d134da6d1bcea002b1a4d0f43"
+    },
+    "scripts/screen-capture-bank-dc.py": {
+      "bytes": 6285,
+      "sha256": "ee4e700482fb6f806ff4e073a555e49d143f745061e63b82dd2873ed0c41b49e"
+    },
+    "scripts/simulate-capture-bank.py": {
+      "bytes": 9169,
+      "sha256": "228599792a6704e6a158e334b295a1c4eff36fe718ca3ce4999d9bedc9cb2c7f"
+    },
+    "scripts/verify-capture-bank.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "simulations/capture-bank.json": {
+      "bytes": 862931,
+      "sha256": "ec0889f594f1b01c2678e7d37be66fc000c856f36021ffc03a64a09faa1d4bff"
+    }
+  },
+  "archive_sha256": "9c12bb4f5cf0600c702ba6e0a1e7a7f7e3088070396ccba90a8171be9c28fa89",
+  "archive_bytes": 47694126,
+  "read_back_verified": true,
+  "parts": [
+    {
+      "name": "evidence.tar.gz.part-0000",
+      "bytes": 41943040,
+      "sha256": "9f9febbc123a0eaa3631e296a7abde33c5740a8746c1e60be35dd72e3776eb9a"
+    },
+    {
+      "name": "evidence.tar.gz.part-0001",
+      "bytes": 5751086,
+      "sha256": "d4c5727893ef4a1d5149d7b173abf968ad71c214e41ee90cd6603890e8cd8c60"
+    }
+  ]
+}

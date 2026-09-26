@@ -1,6 +1,53 @@
 # Sensor references
 
-[Latest: three-frame and nominal readout checks](three-frames.md) — 27 samples, repeatability, reset behavior and matching DC references.
+[Latest: compact shared two-column bank](compact-bank.md) — physical reference
+MOS and shared supply/reference/capture/output buses; main DRC/both LVS paths,
+100 transients and 240 references pass. 419.033 µV worst capture/readout error;
+5.821 mV separate layout–schematic difference. Compact 1×64 remains next.
+
+[Earlier: physically joined compact tile](compact-tile.md) — actual COL/VDD/GND
+connections pass main DRC/both LVS paths and 54 transients/72 references.
+419.404 µV worst capture/readout error; separate layout–schematic integrated
+response shift up to 3.922 mV. The two-column follow-up is above.
+
+[Latest: compact capture column](compact-capture.md) — 40 µm pitch; scoped
+DRC/LVS and abutment-spacing checks pass; 60 transients and 36 references pass.
+165.716 µV tracking, 395.222 µV layout–schematic shift, 0.262 µV refinement.
+The physical pixel join and two-column follow-up are above.
+
+[Latest: compact reset follow-up](compact-reset.md) — 12 nominal/hot transients
+and six extended-reference sets pass. Conserved-total shunt placement resolves
+the isolated development-screen abort; raw distributed extraction remains diagnostic.
+
+[Earlier: compact 40 µm pixel](compact-pixel.md) — Docker restored; single-pixel
+and 2×2 main DRC/LVS pass, 2×2 nominal/hot electrical and refinement screens pass.
+The reset follow-up is above; full-bank initialization remains unresolved.
+
+[Current: 64×64 first-silicon plan](../COMPLETION_PLAN.md) · [wafer.space slot-fit study](64x64-slot-fit.md) · [Bank solver preparation](bank-solver-preparation.md). The existing layout does not fit the full slot; compact tiles are the next implementation priority. Older checkpoints below retain their original scope.
+
+[Latest: physical bank routing reinforcement](bank-reinforcement.md) — both DRC/LVS paths pass; worst static shift improves to 1.320 mV; coupled initialization and full readout remain open.
+
+[Latest: shared-bank routing diagnosis](bank-routing.md) — eight audited static controls and bounded coupled reset tests; full readout remains unqualified.
+
+[Current: shared 64-column physical bank](capture-bank.md) — passing main DRC and both LVS paths; static spatial shifts and coupled-row electrical qualification remain open.
+
+[Earlier: physical capture column qualified](capture-column-qualification.md) — 48 completed nominal/hot runs; 176.560 µV tracking, 0.318 µV refinement; passing DRC/LVS. Shared-bank follow-up is above.
+
+[Earlier: first capture/readout column](physical-capture-column.md) — original layout and capacitor-device controls; the later qualification resolves its transient blocker.
+
+[Current: full readout on the physical grid](grid-readout.md) — complete nominal/hot accuracy, refinement and reference-settling checks. [Next: physical capture/readout tile](capture-tile-plan.md).
+
+[Earlier: row power-feed investigation](row-power.md) — verified turn-on dip, resistance-only diagnosis, physical upper-metal grid and its qualification status.
+
+[Earlier: power-routing and column-capture recovery](array-recovery.md) — measured rail improvements, numerical checks, capture and hot-retention experiments.
+
+[Latest: extracted 64-pixel row and column tests](array-strips.md) — wire resistance, settling, supply drop, exposure skew and refinement.
+
+[Earlier: readout/cold-pad proposals](readout-followup.md) · [Tapeout readiness and larger-array planning](tapeout-readiness.md).
+
+- [Load and operating-corner results](camera-operating-corners.md): passing conditions, capacitive-load settling limits, cold DC gaps and selected repeatability/refinement checks.
+
+[Earlier: three-frame and nominal readout checks](three-frames.md) — 27 samples, repeatability, reset behavior and matching DC references.
 
 [Earlier: staged integration and first full-camera frame](staged-integration.md) — nine completed samples with the unchanged extracted chip model and an equivalent reset source; qualification remains open.
 

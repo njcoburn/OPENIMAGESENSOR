@@ -1,0 +1,13 @@
+* Conditional 1f5 MIM candidate; manufacturing option unselected.
+* Requires the original PDK model and its corner/Monte Carlo parameters.
+* Separate bottom-metal islands; join with upper-metal routes.
+.subckt capture_storage_1f5 STORE GND
+Xplate0 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+Xplate1 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+Xplate2 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+Xplate3 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+Xplate4 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+Xplate5 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+Xplate6 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+Xplate7 STORE GND cap_mim_1f5_m4m5_noshield c_width=64u c_length=52.210u
+.ends capture_storage_1f5

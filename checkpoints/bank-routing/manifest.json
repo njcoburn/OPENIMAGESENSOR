@@ -1,0 +1,473 @@
+{
+  "files": {
+    "CHANGELOG.md": {
+      "bytes": 37826,
+      "sha256": "d26cd2044ffc2d51d8988b16977a2abec338b9fa64f5a7e55b19aa799ec29daa"
+    },
+    "COMPLETION_PLAN.md": {
+      "bytes": 28525,
+      "sha256": "d9d45043f6aacd7b263795ea245f950a8ab9deba307fea1f174fedbb97a66115"
+    },
+    "NEXT_STEPS.md": {
+      "bytes": 52508,
+      "sha256": "ac8938b1652cdf9f500a3de5d21a696ef7ff59dd091d9f08baf7b081232dc5f2"
+    },
+    "PICK_UP_HERE.md": {
+      "bytes": 39683,
+      "sha256": "abe970e6883eccb79ca9398df85f64810921833cae686e5057955820dce190c2"
+    },
+    "README.md": {
+      "bytes": 30208,
+      "sha256": "67037bc55720b1994b9aa16f372f857d1257c8591b892618d87dc87ccd31e2b3"
+    },
+    "build/capture-bank-reset-gear-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-reset-gear-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-reset-gear-20260925/bank.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-reset-gear-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-reset-gear-20260925/ngspice.log": {
+      "bytes": 196,
+      "sha256": "6a2b73443503935470667f4bf4c838dd78cc00ecaa1568ba05d6ccc7cc09d467"
+    },
+    "build/capture-bank-reset-gear-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-reset-gear-20260925/result.json": {
+      "bytes": 45572,
+      "sha256": "55e0a056604b97c3ab06a958f7f00840ba932ab3227493acb0aec2776cf7d883"
+    },
+    "build/capture-bank-reset-gear-20260925/runner.py": {
+      "bytes": 9436,
+      "sha256": "3614f6171d6c60dde49b501d82135e6cc15a169300d9f2b76db8ab50b3edc3b0"
+    },
+    "build/capture-bank-reset-gear-20260925/stream.raw": {
+      "bytes": 192,
+      "sha256": "2deb87a66dc8563fbb0c59fe2b509ee8e5248b867a42fb95bd2c9015cb0a3d91"
+    },
+    "build/capture-bank-reset-gear-20260925/test.spice": {
+      "bytes": 55975,
+      "sha256": "6c761742e8583380a913d14cffdb7991af9a701dda184c8efddd07aa644d0483"
+    },
+    "build/capture-bank-reset-gear-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "build/capture-bank-reset-reference-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-reset-reference-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-reset-reference-20260925/bank.spice": {
+      "bytes": 81228,
+      "sha256": "c8155cc0e04beba4fc92b9743f56d8e68b571341c6da5ee15c69c538ab67789f"
+    },
+    "build/capture-bank-reset-reference-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-reset-reference-20260925/ngspice.log": {
+      "bytes": 186428,
+      "sha256": "78bb23dea72989eaaca6a6c75cced9a9911d7ae0b366bc47610071469c0538a8"
+    },
+    "build/capture-bank-reset-reference-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-reset-reference-20260925/result.json": {
+      "bytes": 45835,
+      "sha256": "701d79d002b6d7b4578a18c992f4990d9465eebd33980efbee050b2b88031a39"
+    },
+    "build/capture-bank-reset-reference-20260925/runner.py": {
+      "bytes": 9436,
+      "sha256": "3614f6171d6c60dde49b501d82135e6cc15a169300d9f2b76db8ab50b3edc3b0"
+    },
+    "build/capture-bank-reset-reference-20260925/stream.raw": {
+      "bytes": 21650553,
+      "sha256": "cb0f1a382f3ff5415783755b26296466f09250001f169be0ac5618c74c76b598"
+    },
+    "build/capture-bank-reset-reference-20260925/test.spice": {
+      "bytes": 43170,
+      "sha256": "080b173ebcad48dbaa55b577dd28b6769096bb86d586fa0e66df9f71bfae595f"
+    },
+    "build/capture-bank-reset-reference-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "build/capture-bank-routing-analysis-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-routing-analysis-20260925/bias/model.spice": {
+      "bytes": 550472,
+      "sha256": "0936211d4c5b2ca61b8bc38daf02ee2cb505c6b2111ec1becacaa30f87b2dd77"
+    },
+    "build/capture-bank-routing-analysis-20260925/bias/result.json": {
+      "bytes": 445,
+      "sha256": "b3cbc5896c404faa1306ef91e8dff62bacd0ca0a338f4d549321217621ec5f16"
+    },
+    "build/capture-bank-routing-analysis-20260925/bias/test.spice": {
+      "bytes": 22429,
+      "sha256": "ba76c5f0579b1daca52433c43c9a5a9496ac3c42384ed08f692d8a06cd2a1944"
+    },
+    "build/capture-bank-routing-analysis-20260925/full/model.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-routing-analysis-20260925/full/result.json": {
+      "bytes": 429,
+      "sha256": "afda9226402e15ef185d9190f862f30ddb63bd25a2c0ef342db8369bddb85300"
+    },
+    "build/capture-bank-routing-analysis-20260925/full/test.spice": {
+      "bytes": 23573,
+      "sha256": "935febc386899acd0306f1d6afe622d9b391505daec20ea8e9e6f471588b4067"
+    },
+    "build/capture-bank-routing-analysis-20260925/ground/model.spice": {
+      "bytes": 412231,
+      "sha256": "335028b52859911f8af717e904700e45187a999ed111cbc66f4db2a2a163a043"
+    },
+    "build/capture-bank-routing-analysis-20260925/ground/result.json": {
+      "bytes": 447,
+      "sha256": "08ebfd2bdfe7e11a776a69e23175042b83e83fa81a1ed6c09583000b45f7309f"
+    },
+    "build/capture-bank-routing-analysis-20260925/ground/test.spice": {
+      "bytes": 20106,
+      "sha256": "4859fd72b7e4aa19b3247dafee24878ad7a3def049469e04b57bd59e5a1c427d"
+    },
+    "build/capture-bank-routing-analysis-20260925/original-deck.spice": {
+      "bytes": 23627,
+      "sha256": "b6b1b31ad1394ae9d7d5b9d465dad8729307d0cd94f1766fa514938a1b8341c2"
+    },
+    "build/capture-bank-routing-analysis-20260925/original-model.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-routing-analysis-20260925/pref/model.spice": {
+      "bytes": 549801,
+      "sha256": "1398b1f45e3ca4c0433ea8c8de7846aacd626148cc2664f47cf070cd952e4346"
+    },
+    "build/capture-bank-routing-analysis-20260925/pref/result.json": {
+      "bytes": 445,
+      "sha256": "643132356d3a99298a56fae29a925aa3b51d78d9ab78bc7f8afc3697f38829ed"
+    },
+    "build/capture-bank-routing-analysis-20260925/pref/test.spice": {
+      "bytes": 23573,
+      "sha256": "935febc386899acd0306f1d6afe622d9b391505daec20ea8e9e6f471588b4067"
+    },
+    "build/capture-bank-routing-analysis-20260925/references/model.spice": {
+      "bytes": 545804,
+      "sha256": "9d04cc94eb34cf9de3f0ab5139d187b55fa22b3d63c2014defe59834612a6798"
+    },
+    "build/capture-bank-routing-analysis-20260925/references/result.json": {
+      "bytes": 463,
+      "sha256": "2be7cd11a74e924bad7e49c005019a34eb1d49ff10e519aba58a098f96a022ca"
+    },
+    "build/capture-bank-routing-analysis-20260925/references/test.spice": {
+      "bytes": 22429,
+      "sha256": "ba76c5f0579b1daca52433c43c9a5a9496ac3c42384ed08f692d8a06cd2a1944"
+    },
+    "build/capture-bank-routing-analysis-20260925/report.json": {
+      "bytes": 255203,
+      "sha256": "4b79fe4e527e2c8abc64a16822e52a41f8c692ada2fc098c2170812e24b61138"
+    },
+    "build/capture-bank-routing-analysis-20260925/runner.py": {
+      "bytes": 10917,
+      "sha256": "620c420f942eeefd027f84bf09bc8330006e42e3c80026dd9a2ed12145986878"
+    },
+    "build/capture-bank-routing-analysis-20260925/supplies/model.spice": {
+      "bytes": 331892,
+      "sha256": "8eb76cddd9964a30bf55c97299c32b2a73f95a90751c4dcd09ee70ae5d8ee1a8"
+    },
+    "build/capture-bank-routing-analysis-20260925/supplies/result.json": {
+      "bytes": 460,
+      "sha256": "4c61c41d650afa385a8175f536b3105b8b2ab934c75a3c79d363896ce253de49"
+    },
+    "build/capture-bank-routing-analysis-20260925/supplies/test.spice": {
+      "bytes": 19005,
+      "sha256": "63c94b922c7f259c7c6e3cbb3caff7b316a5fa542494b22c6cc3c7e67e97f1c7"
+    },
+    "build/capture-bank-routing-analysis-20260925/supplies-references/model.spice": {
+      "bytes": 323227,
+      "sha256": "a773165305df18ed1a2bf8c0f6f643ad0aa2d137619b7d1917a84de8b75c94ea"
+    },
+    "build/capture-bank-routing-analysis-20260925/supplies-references/result.json": {
+      "bytes": 495,
+      "sha256": "de3e6e502d5b9454a441cd918de9b4a0bf2a73a6c5d3b8ba1f73d6e8de56283f"
+    },
+    "build/capture-bank-routing-analysis-20260925/supplies-references/test.spice": {
+      "bytes": 17861,
+      "sha256": "a97eb7e5b54cd5c7a8bf02ee5e4e5a95036e84adfb9c1655f8f37199e96d9eb4"
+    },
+    "build/capture-bank-routing-analysis-20260925/vdd/model.spice": {
+      "bytes": 474130,
+      "sha256": "b4da5fbd1301904e3b445e4fce45ba1a1ea57c9243ada45a3841aa4cdac84819"
+    },
+    "build/capture-bank-routing-analysis-20260925/vdd/result.json": {
+      "bytes": 444,
+      "sha256": "3f5fd6bd8cd8cc277c939387736442e63972c1ab852b3de9242cd415c5eb487d"
+    },
+    "build/capture-bank-routing-analysis-20260925/vdd/test.spice": {
+      "bytes": 22472,
+      "sha256": "3417f43c779000b521d6d0fca3e7f2d0932f248eeffb24ac9abad141c2719fbd"
+    },
+    "build/capture-bank-routing-controls-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-routing-controls-20260925/bias/model.spice": {
+      "bytes": 550472,
+      "sha256": "0936211d4c5b2ca61b8bc38daf02ee2cb505c6b2111ec1becacaa30f87b2dd77"
+    },
+    "build/capture-bank-routing-controls-20260925/bias/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/bias/op.raw": {
+      "bytes": 29393,
+      "sha256": "f0d5260fa503d4cb10422bc7fdd5d7b584aa10ffd0a8d31f2e4186d790a4aebe"
+    },
+    "build/capture-bank-routing-controls-20260925/bias/result.json": {
+      "bytes": 36508,
+      "sha256": "fc12d21f8896e01042e60139891514401c985a3bb866f695ef749244f296c6ac"
+    },
+    "build/capture-bank-routing-controls-20260925/bias/test.spice": {
+      "bytes": 22429,
+      "sha256": "ba76c5f0579b1daca52433c43c9a5a9496ac3c42384ed08f692d8a06cd2a1944"
+    },
+    "build/capture-bank-routing-controls-20260925/full/model.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-routing-controls-20260925/full/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/full/op.raw": {
+      "bytes": 31881,
+      "sha256": "cacaaf3c2143958928cf6521169aa30cd03d5aa94bc04d9371c5532c732c1482"
+    },
+    "build/capture-bank-routing-controls-20260925/full/result.json": {
+      "bytes": 39366,
+      "sha256": "4de0ef0a2c18d66f04f89960a5d9503a6bde1c09226c8990ce7d999642ed68ff"
+    },
+    "build/capture-bank-routing-controls-20260925/full/test.spice": {
+      "bytes": 23573,
+      "sha256": "935febc386899acd0306f1d6afe622d9b391505daec20ea8e9e6f471588b4067"
+    },
+    "build/capture-bank-routing-controls-20260925/ground/model.spice": {
+      "bytes": 412231,
+      "sha256": "335028b52859911f8af717e904700e45187a999ed111cbc66f4db2a2a163a043"
+    },
+    "build/capture-bank-routing-controls-20260925/ground/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/ground/op.raw": {
+      "bytes": 24382,
+      "sha256": "b8df2ffdd6f832fdf16ee83b9c4927964d0dd11bb053cc79e841f704226b6507"
+    },
+    "build/capture-bank-routing-controls-20260925/ground/result.json": {
+      "bytes": 30312,
+      "sha256": "d20ea9a823e660e01a8f75d4df26cddc813d1eb07d20b4caf7107542c689c9b5"
+    },
+    "build/capture-bank-routing-controls-20260925/ground/test.spice": {
+      "bytes": 20106,
+      "sha256": "4859fd72b7e4aa19b3247dafee24878ad7a3def049469e04b57bd59e5a1c427d"
+    },
+    "build/capture-bank-routing-controls-20260925/original-deck.spice": {
+      "bytes": 23627,
+      "sha256": "b6b1b31ad1394ae9d7d5b9d465dad8729307d0cd94f1766fa514938a1b8341c2"
+    },
+    "build/capture-bank-routing-controls-20260925/original-model.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-routing-controls-20260925/pref/model.spice": {
+      "bytes": 549801,
+      "sha256": "1398b1f45e3ca4c0433ea8c8de7846aacd626148cc2664f47cf070cd952e4346"
+    },
+    "build/capture-bank-routing-controls-20260925/pref/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/pref/op.raw": {
+      "bytes": 31881,
+      "sha256": "66441dbb16a8cc9e7afc0b8871629efc46f04210d868398b3377c1919834d908"
+    },
+    "build/capture-bank-routing-controls-20260925/pref/result.json": {
+      "bytes": 39433,
+      "sha256": "440555d99270e35b5bab0c97190bcbf07aa224d359ad127933584188ef5e941d"
+    },
+    "build/capture-bank-routing-controls-20260925/pref/test.spice": {
+      "bytes": 23573,
+      "sha256": "935febc386899acd0306f1d6afe622d9b391505daec20ea8e9e6f471588b4067"
+    },
+    "build/capture-bank-routing-controls-20260925/references/model.spice": {
+      "bytes": 545804,
+      "sha256": "9d04cc94eb34cf9de3f0ab5139d187b55fa22b3d63c2014defe59834612a6798"
+    },
+    "build/capture-bank-routing-controls-20260925/references/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/references/op.raw": {
+      "bytes": 29393,
+      "sha256": "879b79600f76183847e38da8a72e150a66a60f50c8a0139aacd14ddd0ef2d864"
+    },
+    "build/capture-bank-routing-controls-20260925/references/result.json": {
+      "bytes": 36587,
+      "sha256": "10ad1de34070c748cfa9a473eb06048c20aa276e374c6af2695dd78b161a4faa"
+    },
+    "build/capture-bank-routing-controls-20260925/references/test.spice": {
+      "bytes": 22429,
+      "sha256": "ba76c5f0579b1daca52433c43c9a5a9496ac3c42384ed08f692d8a06cd2a1944"
+    },
+    "build/capture-bank-routing-controls-20260925/report.json": {
+      "bytes": 546402,
+      "sha256": "a4b91e083d5009679a0e702413a9b9dd4dd477a93a97dc3e5a6ff5aee40d6182"
+    },
+    "build/capture-bank-routing-controls-20260925/runner.py": {
+      "bytes": 10917,
+      "sha256": "620c420f942eeefd027f84bf09bc8330006e42e3c80026dd9a2ed12145986878"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies/model.spice": {
+      "bytes": 331892,
+      "sha256": "8eb76cddd9964a30bf55c97299c32b2a73f95a90751c4dcd09ee70ae5d8ee1a8"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies/op.raw": {
+      "bytes": 21937,
+      "sha256": "26918f6e875245549a17fec0bb26cf56802e3d70876ae1f8dfd60a765f87f7e4"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies/result.json": {
+      "bytes": 27537,
+      "sha256": "4874f35aaadf159222340b5e8c807a0541c162741b2892a4be5809d74f1824af"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies/test.spice": {
+      "bytes": 19005,
+      "sha256": "63c94b922c7f259c7c6e3cbb3caff7b316a5fa542494b22c6cc3c7e67e97f1c7"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies-references/model.spice": {
+      "bytes": 323227,
+      "sha256": "a773165305df18ed1a2bf8c0f6f643ad0aa2d137619b7d1917a84de8b75c94ea"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies-references/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies-references/op.raw": {
+      "bytes": 19449,
+      "sha256": "703dd4b909cb89df8df06830c33c27b1d58ac87569bffefaeac11c1df0ac0e7f"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies-references/result.json": {
+      "bytes": 24712,
+      "sha256": "24852267a5f7011816626c26f07d1d2f5d2a549bb7e648b9cc53161679b4a034"
+    },
+    "build/capture-bank-routing-controls-20260925/supplies-references/test.spice": {
+      "bytes": 17861,
+      "sha256": "a97eb7e5b54cd5c7a8bf02ee5e4e5a95036e84adfb9c1655f8f37199e96d9eb4"
+    },
+    "build/capture-bank-routing-controls-20260925/vdd/model.spice": {
+      "bytes": 474130,
+      "sha256": "b4da5fbd1301904e3b445e4fce45ba1a1ea57c9243ada45a3841aa4cdac84819"
+    },
+    "build/capture-bank-routing-controls-20260925/vdd/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-routing-controls-20260925/vdd/op.raw": {
+      "bytes": 29436,
+      "sha256": "9327b5777e9be51ee969609cdb1b83ba262cad4d617fffc9b0b6db942c8a3f6a"
+    },
+    "build/capture-bank-routing-controls-20260925/vdd/result.json": {
+      "bytes": 36546,
+      "sha256": "8e3f24d41a8278de96f7500a7ff9379992cc8edacbf9685db0307f2411ae7be2"
+    },
+    "build/capture-bank-routing-controls-20260925/vdd/test.spice": {
+      "bytes": 22472,
+      "sha256": "3417f43c779000b521d6d0fca3e7f2d0932f248eeffb24ac9abad141c2719fbd"
+    },
+    "docs/README.md": {
+      "bytes": 7659,
+      "sha256": "de6ed9daa258427eadb53aa4b9cc7badff21341a1489d0d74730946ef550d7fc"
+    },
+    "docs/assets/bank-routing.png": {
+      "bytes": 126307,
+      "sha256": "20aa56381491662c5f4e23d70b4bb200e687838aa07f9e11bdcd12d236b1114f"
+    },
+    "docs/bank-routing-section.html": {
+      "bytes": 530,
+      "sha256": "fb544ee32779567dac093a9b7419e072eb3c178d44df5dc1beef68da6ff37530"
+    },
+    "docs/bank-routing.md": {
+      "bytes": 4877,
+      "sha256": "49a6191c615b319d6261f248dbdeb2de25a3f29661e1c49e7b8fedaf9fab6e02"
+    },
+    "docs/capture-bank.md": {
+      "bytes": 8776,
+      "sha256": "6e8c5140c3a1e1309f62365529a285467fc9ed94009405fdee4a5bdafcd50cc3"
+    },
+    "docs/completion-dashboard.html": {
+      "bytes": 6148,
+      "sha256": "11d77db2a92bb8e95686468925ecf7c60cd087df8e6d1e58760fdd7e3e1af868"
+    },
+    "docs/overview.html": {
+      "bytes": 18930122,
+      "sha256": "5a4bf2bde570f2c75405461d4872fd73293652beed70e8270d839126ea27f782"
+    },
+    "scripts/build-overview.py": {
+      "bytes": 30881,
+      "sha256": "36bdbefccccf4395b31bb672c4973f4cbc6aa1bf69f925a0fece58b821000dad"
+    },
+    "scripts/checkpoint-bank-routing.py": {
+      "bytes": 3467,
+      "sha256": "4863b34746b062e01def9240ac00a52813a845b0a5d66c06340484f828951363"
+    },
+    "scripts/diagnose-bank-routing.py": {
+      "bytes": 10917,
+      "sha256": "620c420f942eeefd027f84bf09bc8330006e42e3c80026dd9a2ed12145986878"
+    },
+    "scripts/diagnose-capture-transient.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "scripts/report-bank-routing.py": {
+      "bytes": 10534,
+      "sha256": "ae627dc7c911b884a8e12c7f655b1e1cf297ecde5258dac93e065f8eaf70cef2"
+    },
+    "scripts/run-tools.sh": {
+      "bytes": 568,
+      "sha256": "581173547546bac970ec6c890f3d945a15951c4d134da6d1bcea002b1a4d0f43"
+    },
+    "scripts/simulate-capture-bank.py": {
+      "bytes": 9436,
+      "sha256": "3614f6171d6c60dde49b501d82135e6cc15a169300d9f2b76db8ab50b3edc3b0"
+    },
+    "simulations/bank-routing.json": {
+      "bytes": 645193,
+      "sha256": "3828f2cc699ca17b46ec559515cede8d0877f22b1b56553f6512b894632ca92a"
+    }
+  },
+  "archive_sha256": "686e74899c7b735dc94a7d9c5cfec37e37fb02cc58f538cb58cb45651a12bb48",
+  "archive_bytes": 31985764,
+  "read_back_verified": true,
+  "prior_checkpoint": "checkpoints/capture-bank",
+  "prior_manifest_sha256": "48edcea1953f10d433276597577cb08af661a243ed9942e8bb52c67b530ce4f5"
+}

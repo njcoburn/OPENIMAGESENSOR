@@ -1,0 +1,346 @@
+{
+  "scope": "One physical pixel and capture column with extracted COL/VDD/GND joins; unfilled conditional-MIM development tile.",
+  "physical": {
+    "scope": "Physically join one compact pixel and capture column, then extract and audit.\n\nUnfilled development tile. Shared references, real drivers and ADC are external.\n",
+    "magic_drc_errors": 0,
+    "bbox_um": "(-11,-77.8;40.2,860.48)",
+    "ports": [
+      "VDD",
+      "VRESET",
+      "GND",
+      "RST0",
+      "ROW0",
+      "COL0",
+      "STORE0",
+      "CBUF0",
+      "BUF",
+      "SC",
+      "SCB",
+      "SEL0",
+      "SELB0",
+      "BIAS",
+      "PREF"
+    ],
+    "clear_aperture_um": [
+      18,
+      18
+    ],
+    "source_hashes": {
+      "build/compact-capture-v4-20260926/column.gds": "b3b330b5bd5552f8bd47b76f0ee4efe79ab1b41c00e6f36cc92ed19ce9a2d18e",
+      "build/compact-pixel-v1-20260926/pixel.gds": "f2dcf499f516af41fa0233fcf47dba8e03d465fb03d41df733dae9bbfd6bd04d"
+    },
+    "klayout_main_drc_errors": 0,
+    "direct_and_resistor_collapsed_lvs": true,
+    "mos": 10,
+    "mim": 8,
+    "diodes": 1,
+    "resistors": 133,
+    "capacitors": 133,
+    "pixel_roles": {
+      "sense": "a_800_n15400.t1",
+      "anode": "GND.t4",
+      "vdd": "VDD.t1"
+    },
+    "negative_capacitors": [
+      [
+        "C122",
+        "COL0.t3",
+        "GND",
+        "-2.89898f"
+      ],
+      [
+        "C124",
+        "COL0.n0",
+        "GND",
+        "-24.1252f"
+      ],
+      [
+        "C129",
+        "BIAS.t0",
+        "GND",
+        "-0.25996f"
+      ],
+      [
+        "C130",
+        "RST0.t0",
+        "GND",
+        "-0.50864f"
+      ],
+      [
+        "C131",
+        "VRESET.t0",
+        "GND",
+        "-1.49304f"
+      ]
+    ],
+    "shunt_approximations": [
+      {
+        "net": "BIAS",
+        "shunts": [
+          [
+            "C67",
+            "BIAS",
+            "GND",
+            "18.64346f"
+          ],
+          [
+            "C129",
+            "BIAS.t0",
+            "GND",
+            "-0.25996f"
+          ]
+        ],
+        "total_F": 1.83835e-14,
+        "far_node": "BIAS.t0",
+        "far_path_ohm": 26.4815
+      },
+      {
+        "net": "COL0",
+        "shunts": [
+          [
+            "C69",
+            "COL0",
+            "GND",
+            "34.8708f"
+          ],
+          [
+            "C122",
+            "COL0.t3",
+            "GND",
+            "-2.89898f"
+          ],
+          [
+            "C123",
+            "COL0.t0",
+            "GND",
+            "2.4437f"
+          ],
+          [
+            "C124",
+            "COL0.n0",
+            "GND",
+            "-24.1252f"
+          ],
+          [
+            "C125",
+            "COL0.t1",
+            "GND",
+            "2.88451f"
+          ],
+          [
+            "C126",
+            "COL0.n1",
+            "GND",
+            "9.04896f"
+          ],
+          [
+            "C127",
+            "COL0.t2",
+            "GND",
+            "8.72768f"
+          ]
+        ],
+        "total_F": 3.095147000000001e-14,
+        "far_node": "COL0.t2",
+        "far_path_ohm": 51.9147
+      },
+      {
+        "net": "RST0",
+        "shunts": [
+          [
+            "C66",
+            "RST0",
+            "GND",
+            "6.22794f"
+          ],
+          [
+            "C130",
+            "RST0.t0",
+            "GND",
+            "-0.50864f"
+          ]
+        ],
+        "total_F": 5.7193000000000005e-15,
+        "far_node": "RST0.t0",
+        "far_path_ohm": 35.2495
+      },
+      {
+        "net": "VRESET",
+        "shunts": [
+          [
+            "C65",
+            "VRESET",
+            "GND",
+            "7.31552f"
+          ],
+          [
+            "C131",
+            "VRESET.t0",
+            "GND",
+            "-1.49304f"
+          ]
+        ],
+        "total_F": 5.822480000000001e-15,
+        "far_node": "VRESET.t0",
+        "far_path_ohm": 22.1248
+      }
+    ],
+    "hashes": {
+      "raw-rc.spice": "c154596c576afe39d7f1804df2dab648ac2a186ff6bb4adba6a4d72b78a995d6",
+      "reference.spice": "abf29baea26034274e64c90b6f0b00547013f9e2f9bd72a1964df71dcda7560a",
+      "direct.spice": "1edd18346e42e58c83f9f1340a4b8ab279dacfe701488ca4d0af926779a796e3",
+      "rc-far.spice": "17edfeed70854131f4710dd2bd456eec7b176044b5007909e97715580cca2751",
+      "rc-col0-far.spice": "6818ff7ea7de88e407ab25e81f23ab3e0c8f79c91a1d4c68ec75383d3ac0ad94",
+      "rc-bias-far.spice": "2aef44ac16e794c72c68813729d6e9aabf89a722268ba2e6986516e085b4be82",
+      "collapsed.spice": "1fd28c3873401408ac4d1cb5b90f630f48a7c414bf4c44d2250d82af7243ed69",
+      "rc-port.spice": "cc2cf550c0c135b0d206df0c71e33d632f6e2b37833f9c00a67504a23b41950b",
+      "rc-vreset-far.spice": "df81082c218caa9f99ce0f1861249c0e7f04b07a4956a83436c62cc80765296c",
+      "rc-rst0-far.spice": "7f062cebc77cdc96b3370a936392efe3f775453e025ce75c438a2a57bee1961f"
+    },
+    "gds_sha256": "42b84247c66afbf94fd7bb150b094399a5dc3316d1f1b402bab9e7b8973f94ca"
+  },
+  "electrical": {
+    "scope": "Run and independently audit the small joined-tile electrical matrix.\n\nTwo temperatures, three imposed photocurrents, two timesteps, physical and\nschematic models; selected single-net and simultaneous shunt placements.\n",
+    "rows": [
+      {
+        "temperature_C": 27,
+        "light_pA": 0,
+        "max_total_capture_readout_error_uV": 102.21381553909836,
+        "max_output_tracking_error_uV": 50.607280442260816,
+        "max_schematic_capture_error_uV": 43.07584180152091,
+        "physical_timestep_difference_uV": 0.1397316551354777,
+        "schematic_timestep_difference_uV": 0.198224040737216,
+        "physical_minus_schematic_magnitude_uV": 470.88440084230854,
+        "max_output_placement_difference_uV": 0.012602249466198145,
+        "max_storage_placement_difference_uV": 0.01625075563005396,
+        "storage_reset_window_change_uV": 0.06726346168939301,
+        "first_output_V": 2.3361916336987876,
+        "late_minus_first_output_uV": -0.8089413303657977,
+        "captured_column_V": 0.8394506622367667
+      },
+      {
+        "temperature_C": 27,
+        "light_pA": 80,
+        "max_total_capture_readout_error_uV": 23.195325162372882,
+        "max_output_tracking_error_uV": 114.3280494981802,
+        "max_schematic_capture_error_uV": 30.251760193777955,
+        "physical_timestep_difference_uV": 0.22951416678296255,
+        "schematic_timestep_difference_uV": 0.29321117267500085,
+        "physical_minus_schematic_magnitude_uV": 2276.3035372475038,
+        "max_output_placement_difference_uV": 0.01396020765653816,
+        "max_storage_placement_difference_uV": 0.017664620544088905,
+        "storage_reset_window_change_uV": 0.06743920522023217,
+        "first_output_V": 2.1384740595867213,
+        "late_minus_first_output_uV": -0.3887170327843137,
+        "captured_column_V": 0.5848021356546699
+      },
+      {
+        "temperature_C": 27,
+        "light_pA": 240,
+        "max_total_capture_readout_error_uV": 147.15237330231724,
+        "max_output_tracking_error_uV": 15.080608745776658,
+        "max_schematic_capture_error_uV": 171.64191784169168,
+        "physical_timestep_difference_uV": 0.052926958371557475,
+        "schematic_timestep_difference_uV": 0.08903093440260079,
+        "physical_minus_schematic_magnitude_uV": 3922.103870196869,
+        "max_output_placement_difference_uV": 0.002496871376322929,
+        "max_storage_placement_difference_uV": 0.0032742012989750435,
+        "storage_reset_window_change_uV": 0.07188930276069705,
+        "first_output_V": 1.785633148194753,
+        "late_minus_first_output_uV": 1.6634481248001265,
+        "captured_column_V": 0.12735669957987922
+      },
+      {
+        "temperature_C": 125,
+        "light_pA": 0,
+        "max_total_capture_readout_error_uV": 419.40421969854924,
+        "max_output_tracking_error_uV": 280.0446779551713,
+        "max_schematic_capture_error_uV": 351.84372499985625,
+        "physical_timestep_difference_uV": 0.3180222316601089,
+        "schematic_timestep_difference_uV": 0.39840584253880706,
+        "physical_minus_schematic_magnitude_uV": 724.7207625371566,
+        "max_output_placement_difference_uV": 0.008814717844529696,
+        "max_storage_placement_difference_uV": 0.012215853772978846,
+        "storage_reset_window_change_uV": -0.2602224304926182,
+        "first_output_V": 2.298692872285056,
+        "late_minus_first_output_uV": -126.93671639096848,
+        "captured_column_V": 0.8426730683868776
+      },
+      {
+        "temperature_C": 125,
+        "light_pA": 80,
+        "max_total_capture_readout_error_uV": 200.6726607595155,
+        "max_output_tracking_error_uV": 243.01131325010772,
+        "max_schematic_capture_error_uV": 144.73311151519397,
+        "physical_timestep_difference_uV": 0.3250153977063519,
+        "schematic_timestep_difference_uV": 0.4039418199930367,
+        "physical_minus_schematic_magnitude_uV": 2519.1484298319187,
+        "max_output_placement_difference_uV": 0.008965543862871073,
+        "max_storage_placement_difference_uV": 0.011528435428509454,
+        "storage_reset_window_change_uV": -0.24692029443329488,
+        "first_output_V": 2.101716869052582,
+        "late_minus_first_output_uV": -120.41674765672639,
+        "captured_column_V": 0.5849929090039396
+      },
+      {
+        "temperature_C": 125,
+        "light_pA": 240,
+        "max_total_capture_readout_error_uV": 153.01800010347756,
+        "max_output_tracking_error_uV": 64.4939363896313,
+        "max_schematic_capture_error_uV": 180.99996913578664,
+        "physical_timestep_difference_uV": 0.1723889020421865,
+        "schematic_timestep_difference_uV": 0.20536119338387948,
+        "physical_minus_schematic_magnitude_uV": 3871.615614801982,
+        "max_output_placement_difference_uV": 0.007007740610021074,
+        "max_storage_placement_difference_uV": 0.008985668792371726,
+        "storage_reset_window_change_uV": -0.21210315143127545,
+        "first_output_V": 1.767343096335835,
+        "late_minus_first_output_uV": -109.22772526500424,
+        "captured_column_V": 0.14947509380020413
+      }
+    ],
+    "checks": {
+      "capture_readout_pass": true,
+      "output_tracking_pass": true,
+      "schematic_capture_pass": true,
+      "timestep_pass": true,
+      "placement_pass": true,
+      "brightness_order_pass": true
+    },
+    "all_checks_pass": true,
+    "main_transients": 24,
+    "placement_transients": 30,
+    "dc_references": 72,
+    "placements_tested": [
+      "rc-port",
+      "rc-far",
+      "rc-bias-far",
+      "rc-col0-far",
+      "rc-rst0-far",
+      "rc-vreset-far"
+    ],
+    "layout": "build/compact-tile-v1-20260926",
+    "layout_gds_sha256": "42b84247c66afbf94fd7bb150b094399a5dc3316d1f1b402bab9e7b8973f94ca",
+    "waveform_audit": "All traces complete, finite, monotonic, max-step checked; samples and capture state independently recomputed.",
+    "limits": "Typical process and nominal wire RC; imposed photocurrents; schematic references/drivers/ADC; single capture and two output reads; no real decoder, full-column loading, repeated captures, optical or manufacturing qualification."
+  },
+  "maxima": {
+    "max_total_capture_readout_error_uV": 419.40421969854924,
+    "max_output_tracking_error_uV": 280.0446779551713,
+    "max_schematic_capture_error_uV": 351.84372499985625,
+    "physical_timestep_difference_uV": 0.3250153977063519,
+    "schematic_timestep_difference_uV": 0.4039418199930367,
+    "physical_minus_schematic_magnitude_uV": 3922.103870196869,
+    "max_output_placement_difference_uV": 0.01396020765653816,
+    "max_storage_placement_difference_uV": 0.017664620544088905,
+    "storage_reset_window_change_uV": 0.2602224304926182,
+    "late_minus_first_output_uV": 126.93671639096848
+  },
+  "reference_transient_fallbacks": 0,
+  "selected_layout": "build/compact-tile-v1-20260926",
+  "selected_matrix": "build/compact-tile-matrix-v1-20260926",
+  "source_hashes": {
+    "build/compact-tile-v1-20260926/verification.json": "201ef4465402b9ef09a06bf1dbab3a0a4ccf23e8245bcc523fef377e1daaa97d",
+    "build/compact-tile-matrix-v1-20260926/report.json": "7c446d14f40d96a6be2160121701fb2067c378447c86cb9f54a75ca2a7b76743"
+  }
+}

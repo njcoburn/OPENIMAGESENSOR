@@ -1,0 +1,109 @@
+{
+  "scope": "Schematic preparation and model arithmetic only; no physical or transient qualification.",
+  "source_sha256": {
+    "source": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e",
+    "model": "9b85cd009968d9aeb6b61046b24a63f39d6a463c4e4aee3949c8fd183c06666f",
+    "rules": "79ac589f69f3a983e253e6c6e15df52180b2b9bf1d760aeb033312c45f1b1dc4"
+  },
+  "matching_columns": 64,
+  "matched_column_elements": 512,
+  "per_column_transistors": {
+    "nmos": 3,
+    "pmos": 4
+  },
+  "shared_reference_transistors": {
+    "nmos": 1,
+    "pmos": 1
+  },
+  "conditional_storage_candidates": {
+    "1f0": {
+      "model": "cap_mim_1f0_m4m5_noshield",
+      "plates": 8,
+      "width_um": 64.0,
+      "length_um": 77.675,
+      "plate_area_um2": 4971.2,
+      "total_plate_area_um2": 39769.6,
+      "bank_64_plate_area_mm2": 2.5452543999999997,
+      "nominal_error_ppm": 15.979999999915506,
+      "model_capacitance_pF_by_temperature_C": {
+        "25": 40.000639199999995,
+        "27": 40.001680027832165,
+        "125": 40.05074800072584
+      },
+      "model_parallel_leakage_ohm_at_25C": null,
+      "voltage_dependence_active_in_saved_model": false,
+      "coefficients": {
+        "c_cox": 0.000987,
+        "c_capsw": 3.3e-10,
+        "c_tc1": 1.302e-05,
+        "c_tc2": -4.93e-09,
+        "c_tnom": 25.0
+      }
+    },
+    "1f5": {
+      "model": "cap_mim_1f5_m4m5_noshield",
+      "plates": 8,
+      "width_um": 64.0,
+      "length_um": 52.21,
+      "plate_area_um2": 3341.44,
+      "total_plate_area_um2": 26731.52,
+      "bank_64_plate_area_mm2": 1.71081728,
+      "nominal_error_ppm": 0.7959999999140877,
+      "model_capacitance_pF_by_temperature_C": {
+        "25": 40.00003184,
+        "27": 40.003269122576874,
+        "125": 40.134847947313524
+      },
+      "model_parallel_leakage_ohm_at_25C": null,
+      "voltage_dependence_active_in_saved_model": false,
+      "coefficients": {
+        "c_cox": 0.00147,
+        "c_capsw": 3.79e-10,
+        "c_tc1": 4.0604e-05,
+        "c_tc2": -6.9e-08,
+        "c_tnom": 25.0
+      }
+    },
+    "2f0": {
+      "model": "cap_mim_2f0_m4m5_noshield",
+      "plates": 8,
+      "width_um": 64.0,
+      "length_um": 38.875,
+      "plate_area_um2": 2488.0,
+      "total_plate_area_um2": 19904.0,
+      "bank_64_plate_area_mm2": 1.273856,
+      "nominal_error_ppm": 30.045000000145095,
+      "model_capacitance_pF_by_temperature_C": {
+        "25": 40.0012018,
+        "27": 40.00236095482576,
+        "125": 40.037402887629
+      },
+      "model_parallel_leakage_ohm_at_25C": 26414909335578.39,
+      "voltage_dependence_active_in_saved_model": false,
+      "coefficients": {
+        "c_cox": 0.00199,
+        "c_capsw": 2.383e-10,
+        "c_tc1": 1.46e-05,
+        "c_tc2": -5.55e-08,
+        "c_tnom": 25.0
+      }
+    }
+  },
+  "physical_layout_complete": false,
+  "drc_pass": null,
+  "lvs_pass": null,
+  "extracted_transient_pass": null,
+  "next_checks": [
+    "PDK capacitor geometry and terminal mapping",
+    "Magic and KLayout DRC including shared-bottom-plate rule",
+    "Device and resistor-collapsed LVS",
+    "Capacitance extraction versus model without double counting",
+    "Matched-terminal column transients and numerical refinement"
+  ],
+  "artifact_sha256": {
+    "capture-column.spice": "efe870de57ee451782f39103b909cac065d015e2042c6e8f95092fa659df7429",
+    "capture-storage-1f0.spice": "72e78d0bf2c924b6d34c3b276e5132732eb3cc2a10c6118edfdae050b5ea0070",
+    "capture-storage-1f5.spice": "c9b8de1e699dc4e789631b764e7259fb2b6961fac8a17ce4b0258820981e5086",
+    "capture-storage-2f0.spice": "0a8fb4bd5b67184b6b08268d3422d682c6b9ca6a76a6f22c4f5bc803a8e025c3"
+  }
+}

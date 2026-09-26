@@ -1,0 +1,1 @@
+Exact planning-file snapshots before the 64×64 wafer.space replan on 2026-09-25. Relative links in these historical copies refer to their original repository-root location. Current instructions are in the root COMPLETION_PLAN.md, NEXT_STEPS.md and PICK_UP_HERE.md. Earlier evidence is unchanged.

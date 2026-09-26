@@ -1,0 +1,41 @@
+{
+  "scope": "Offline algebraic preparation only; no SPICE or new physical qualification",
+  "toolchain_available": false,
+  "unit_tests_passed": 5,
+  "models": {
+    "port": {
+      "original_resistors": 23883,
+      "reduced_resistors": 22924,
+      "eliminated_resistor_only_nodes": 4239,
+      "all_nonresistor_records_identical": true,
+      "protected_nodes": 9721,
+      "random_voltage_probes": 12,
+      "boundary_current_relative_error": 1.9756229062403116e-13,
+      "internal_kcl_scaled_error": 9.820054992899484e-16,
+      "transient_qualified": false,
+      "scope": "Algebraic star-mesh reduction only; existing shunt-placement approximation unchanged.",
+      "max_degree": 4,
+      "source": "build/capture-bank-c64-v5-20260925/rc-port.spice",
+      "source_sha256": "4cbfd073c67349e6c15d087dc09d9766d34f40443dfd6488b1da701eb5fe280a",
+      "model_sha256": "5ab6e5e369bb62b07b0da5639e4e45f7644f94408c6120fac3dfff49d6c84232",
+      "runner_sha256": "af606e32f0311a5118128a13ce909443ed24840b14e3c695d9991c390a631031"
+    },
+    "far": {
+      "original_resistors": 23883,
+      "reduced_resistors": 22924,
+      "eliminated_resistor_only_nodes": 4239,
+      "all_nonresistor_records_identical": true,
+      "protected_nodes": 9721,
+      "random_voltage_probes": 12,
+      "boundary_current_relative_error": 1.9756229062403116e-13,
+      "internal_kcl_scaled_error": 9.820054992899484e-16,
+      "transient_qualified": false,
+      "scope": "Algebraic star-mesh reduction only; existing shunt-placement approximation unchanged.",
+      "max_degree": 4,
+      "source": "build/capture-bank-c64-v5-20260925/rc-far.spice",
+      "source_sha256": "df0675410bf47fff87b0c1c48419aab79c6f1a4557731af2355f332551828de3",
+      "model_sha256": "d33ebf6e40721bc21be09536be1821889c84b0f045cfef1cad3aaea07a2ddba1",
+      "runner_sha256": "af606e32f0311a5118128a13ce909443ed24840b14e3c695d9991c390a631031"
+    }
+  }
+}

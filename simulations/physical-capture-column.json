@@ -1,0 +1,386 @@
+{
+  "scope": "First isolated physical column; physical/device-model checks pass, transient accuracy unqualified.",
+  "physical": {
+    "scope": "Unfilled isolated column; 2 fF MIM candidate, nominal wire RC; no optical array or shared peripheral grid.",
+    "magic_drc_errors": 0,
+    "klayout_main_drc_errors": 0,
+    "excluded_drc_decks": [
+      "antenna",
+      "density",
+      "cup"
+    ],
+    "direct_and_resistor_collapsed_lvs": true,
+    "exact_device_parameters_match": true,
+    "mos": 7,
+    "mim_devices": 8,
+    "resistors": 79,
+    "parasitic_capacitors": 110,
+    "sum_all_parasitic_capacitances_pF": 0.6839203100000001,
+    "negative_parasitic_capacitors": [
+      [
+        "C57",
+        "COL",
+        "GND",
+        "-27.28358f"
+      ],
+      [
+        "C104",
+        "COL.t1",
+        "GND",
+        "-37.5443f"
+      ],
+      [
+        "C106",
+        "COL.t2",
+        "GND",
+        "-43.3488f"
+      ],
+      [
+        "C107",
+        "COL.n1",
+        "GND",
+        "-0.15963p"
+      ]
+    ],
+    "raw_rc_passivity_qualified": false,
+    "capacitance_approximation": {
+      "net": "COL",
+      "removed_shunts": [
+        [
+          "C57",
+          "COL",
+          "GND",
+          "-27.28358f"
+        ],
+        [
+          "C103",
+          "COL.t0",
+          "GND",
+          "0.14724p"
+        ],
+        [
+          "C104",
+          "COL.t1",
+          "GND",
+          "-37.5443f"
+        ],
+        [
+          "C105",
+          "COL.n0",
+          "GND",
+          "0.151p"
+        ],
+        [
+          "C106",
+          "COL.t2",
+          "GND",
+          "-43.3488f"
+        ],
+        [
+          "C107",
+          "COL.n1",
+          "GND",
+          "-0.15963p"
+        ]
+      ],
+      "total_fF": 30.43331999999999,
+      "placements": [
+        "COL",
+        "COL.t0"
+      ],
+      "far_path_ohm": 38.8528,
+      "all_resistors_retained": true,
+      "scope": "Total shunt capacitance preserved; distributed placement approximated and requires sensitivity test."
+    },
+    "mim_plate_areas_um2": [
+      2488.3199999999997,
+      2488.3199999999997,
+      2488.3199999999997,
+      2488.3199999999997,
+      2488.3199999999997,
+      2488.3199999999997,
+      2488.3199999999997,
+      2488.3199999999997
+    ],
+    "separate_bottom_plate_groups": 8,
+    "lower_via_overlap_with_plate_um2": 0,
+    "bbox_um": "(0,-0.2;66.4,678.04)",
+    "geometry_storage_model_pF_at_25C": 40.006315264,
+    "hashes": {
+      "column.gds": "7906158713fea611c5c332fc56ba45a750b623d2dd38b57e685948632ff44647",
+      "direct.spice": "27476729977bfceeab4d4868b50f871cb040317501767436834b7bb9c356a81b",
+      "raw-rc.spice": "a923c9740604ff0737983817efe50629b40ead4750d66d03c1693dd7f1cca5b5",
+      "rc-port.spice": "6b95e0831b3e10ec42d3bd9afe389eaeb250a6096de26ac8857fb992d4809713",
+      "rc-far.spice": "ece4519189fc70be7339dc6ef3313f70ef1fd7634b65ce7a4d1915a6d0b2ae9d",
+      "reference.spice": "a96477f5d9fc3f6c4401348d969b3ffe6d57e838a2305b1b427e1548ff3bb963",
+      "collapsed.spice": "3837e33d63e8ef75b953c368ea45411e9509b807d230877de017a1403799361e",
+      "main-drc.lyrdb": "002b3561ece64bfafa470a9586dff3aabd2f219b97ba802ffe79083aafc324ee"
+    }
+  },
+  "capacitor_control": {
+    "scope": "Small-signal capacitance and DC leakage of the eight extracted MIM devices; routing parasitics excluded, no transient retention qualification.",
+    "source_sha256": "27476729977bfceeab4d4868b50f871cb040317501767436834b7bb9c356a81b",
+    "dimensions_um": [
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      },
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      },
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      },
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      },
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      },
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      },
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      },
+      {
+        "c_width": "64",
+        "c_length": "38.88"
+      }
+    ],
+    "models_sha256": {
+      "sm141064.ngspice": "f6f4a96e18fc5ad11270ad3451aaecc7ac37fc81eb61e15b0d7d94c7bc594a24",
+      "sm141064_mim.spice": "9b85cd009968d9aeb6b61046b24a63f39d6a463c4e4aee3949c8fd183c06666f",
+      "sm141064_mim.ngspice": "9b85cd009968d9aeb6b61046b24a63f39d6a463c4e4aee3949c8fd183c06666f"
+    },
+    "results": [
+      {
+        "temperature_C": 27,
+        "measured_pF": 40.007474567003726,
+        "expected_pF": 40.00747456700372,
+        "measured_leakage_A": -6.057964339199999e-14,
+        "expected_leakage_A": -6.057964339199999e-14
+      },
+      {
+        "temperature_C": 125,
+        "measured_pF": 40.04252097931392,
+        "expected_pF": 40.04252097931392,
+        "measured_leakage_A": -6.052530510463375e-14,
+        "expected_leakage_A": -6.052530510463375e-14
+      }
+    ],
+    "passed": true
+  },
+  "physical_pass": true,
+  "capacitor_control_pass": true,
+  "transient_qualified": false,
+  "timestep_qualified": false,
+  "capacitance_placement_qualified": false,
+  "manufacturing_option_selected": false,
+  "attempts": [
+    {
+      "path": "build/capture-column-fixed-bias-v2-20260925/27-1.6-100",
+      "deck_sha256": "56ee52b9e99ed68b2dc80eec9e70c8aceb65ba1cf1e50984a21711208adb9d96",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 95843,
+        "last_time_s": 8.114856926093337e-07,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "gear",
+      "single_thread": true,
+      "solver": "KLU",
+      "fixed_bias_terminals": true,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-fixed-bias-v2-20260925/27-1.6-50",
+      "deck_sha256": "5bd0ee55f0a24114426053f0464f4b0febba9d568a6d6ec619d2c300deb9f7b7",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 95288,
+        "last_time_s": 8.54924554916227e-07,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "gear",
+      "single_thread": true,
+      "solver": "KLU",
+      "fixed_bias_terminals": true,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-20260925/27-1.6-100",
+      "deck_sha256": "336fc8f9d9e63eeec67d6ed91a0bf34f1f059b1c17805489757e4b920bbe4128",
+      "trace": null,
+      "explicit_abort": false,
+      "setup_failure": true,
+      "integration_method": "trap",
+      "single_thread": false,
+      "solver": "SPARSE",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-20260925/27-1.6-50",
+      "deck_sha256": "5db9436cce8360eca65e4efb9c686e66b1e5f1f3a72f27bdb9aa6edb57f304de",
+      "trace": null,
+      "explicit_abort": false,
+      "setup_failure": true,
+      "integration_method": "trap",
+      "single_thread": false,
+      "solver": "SPARSE",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-gear-20260925/27-1.6-100",
+      "deck_sha256": "7fbbf3b7232148fd84750a275aa3bc46ea704c99f1a77775a01f93b691d2889e",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 7424,
+        "last_time_s": 0.0007415429639602548,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "gear",
+      "single_thread": false,
+      "solver": "KLU",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-gear-20260925/27-1.6-50",
+      "deck_sha256": "64e2a89f3d25db92f7817e9b8e38efde81ac0f38a35eaa21de4ea9130456a381",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 469,
+        "last_time_s": 4.0284693276614045e-08,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "gear",
+      "single_thread": false,
+      "solver": "KLU",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-klu-20260925/27-1.6-100",
+      "deck_sha256": "478e642317fe3232cb42e303db1977bdb3b2383f61ab2800bac8c544e93d2a20",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 12032,
+        "last_time_s": 0.0012000000571079116,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "trap",
+      "single_thread": false,
+      "solver": "KLU",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-klu-20260925/27-1.6-50",
+      "deck_sha256": "203e07b3cb5611a6b0f151ad3780117d625664570515bfc56b2492582de14d94",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 753,
+        "last_time_s": 8.653031595364328e-08,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "trap",
+      "single_thread": false,
+      "solver": "KLU",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-singlethread-20260925/27-1.6-100",
+      "deck_sha256": "83f4e0352d0a73c5e744ee0dd7606ab0bc0944506965c907bf985718f2fa89e3",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 15639,
+        "last_time_s": 0.00140001,
+        "reaches_stop": false
+      },
+      "explicit_abort": true,
+      "setup_failure": false,
+      "integration_method": "trap",
+      "single_thread": true,
+      "solver": "KLU",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2-singlethread-20260925/27-1.6-50",
+      "deck_sha256": "6c523e1c172360f8a977e956f99884c01343eb4fb63fb9dd8a58d4e8191a6d84",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 36309,
+        "last_time_s": 4.082306980110426e-06,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "trap",
+      "single_thread": true,
+      "solver": "KLU",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2b-20260925/27-1.6-100",
+      "deck_sha256": "7b52c84d7776fc134c29cce95629a564423436776577d99f1f56497e05d1e5ca",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 6129,
+        "last_time_s": 0.0006121279999999469,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "trap",
+      "single_thread": false,
+      "solver": "SPARSE",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    },
+    {
+      "path": "build/capture-column-screen-v2b-20260925/27-1.6-50",
+      "deck_sha256": "0c9b9b4d9bb5ea18ecaa2bf6bd309b89fc8240a158d8d066da29bb16129964fb",
+      "trace": {
+        "complete_header": true,
+        "complete_records": 12544,
+        "last_time_s": 0.0006268139999999576,
+        "reaches_stop": false
+      },
+      "explicit_abort": false,
+      "setup_failure": false,
+      "integration_method": "trap",
+      "single_thread": false,
+      "solver": "SPARSE",
+      "fixed_bias_terminals": false,
+      "accepted": false
+    }
+  ],
+  "source_sha256": {
+    "build/capture-column-v2-20260925/verification.json": "31fe8793d1cced003a9f2d10060c660a569787328f57fb51a8390f74ec35f217",
+    "build/capture-capacitance-v3-20260925/report.json": "7efb2679707f1c9ccc684b70bc2c5db5607f3ba033849c818190e45484a1ddbd"
+  }
+}

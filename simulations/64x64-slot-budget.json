@@ -1,0 +1,73 @@
+{
+  "config": {
+    "status": "planning rectangles only; no layout or manufacturing qualification",
+    "checked_on": "2026-09-25",
+    "provider": "wafer.space GF180MCU",
+    "slot_assumption": "1x1 full slot; not a reservation or purchase",
+    "source": "https://mith.ro/gf180mcu-project-template/slots.json",
+    "source_generated_at": "2026-06-04T14:14:46.405443+00:00",
+    "die_um": [
+      3932,
+      5122
+    ],
+    "inside_seal_um": [
+      3880,
+      5070
+    ],
+    "default_core_um": [
+      3048,
+      4238
+    ],
+    "rows": 64,
+    "columns": 64,
+    "existing_pitch_um": [
+      80,
+      50
+    ],
+    "existing_bank_verification": "build/capture-bank-c64-v5-20260925/verification.json",
+    "candidate_pitch_um": [
+      40,
+      40
+    ],
+    "candidate_blocks_um": {
+      "pixel_array": [
+        350,
+        100,
+        2560,
+        2560
+      ],
+      "capture_bank_budget": [
+        200,
+        2760,
+        2700,
+        1100
+      ],
+      "row_driver_budget": [
+        100,
+        100,
+        150,
+        2560
+      ]
+    },
+    "candidate_scope": "Pixel and bank must be repacked and requalified. Empty area reserves routes, references, output/control circuitry and margins; no cell-placement feasibility is established. Core dimensions must be regenerated for the selected pad types and run."
+  },
+  "config_sha256": "c1243d04aeb2c223b2b258a676a476d1e224c2ae11c1f56955c9c6140666590b",
+  "bank_verification_sha256": "a115dc3840fad86ad51b6bdbe10d11a8d39bbcee52ef91cad40e6d67b3806937",
+  "existing_array_um": [
+    5120,
+    3200
+  ],
+  "existing_bank_um": [
+    5198.0,
+    945.04
+  ],
+  "existing_array_fits_inside_seal": false,
+  "existing_bank_fits_inside_seal": false,
+  "existing_array_fits_default_core": false,
+  "existing_array_plus_bank_area_mm2": 21.296317920000003,
+  "default_core_area_mm2": 12.917424,
+  "candidate_block_area_mm2": 9.9076,
+  "remaining_core_budget_mm2": 3.009824,
+  "candidate_rectangles_fit": true,
+  "physical_layout_qualified": false
+}

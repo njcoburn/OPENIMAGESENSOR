@@ -1,5 +1,15 @@
 # GF180 3×3 checkpoint
 
+## Archive storage — 2026-09-26
+
+New generated `evidence.tar.gz` archives and their numbered parts are retained
+locally and excluded from Git. The pending archive set totals about 32 GB;
+source scripts, reports, manifests and reconstruction instructions remain tracked.
+Previously committed archives remain available in Git. A manifest records
+integrity, not remote availability: a fresh clone needs a separate copy of any
+locally retained archive before following its reconstruction instructions.
+No external archive backup has been made as part of this checkpoint.
+
 ## Filled-layout checkpoint — 2026-09-19 03:15 PDT
 
 The latest separate archive is [filled-demonstrator/evidence.tar.gz](filled-demonstrator/evidence.tar.gz), with [hash manifest](filled-demonstrator/manifest.json). See [scope and reproduction](../docs/filled-demonstrator.md); it is not a fabrication release.

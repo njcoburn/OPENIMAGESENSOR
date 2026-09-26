@@ -1,0 +1,1419 @@
+{
+  "files": {
+    "CHANGELOG.md": {
+      "bytes": 38419,
+      "sha256": "016826c9b59bfa49ad178ab3808d8e550b992a2399ee1af9db8591fe0cf1084d"
+    },
+    "COMPLETION_PLAN.md": {
+      "bytes": 30546,
+      "sha256": "0ad6d56dd8c9e16ee7a6dfcfb8d34acb3ca0b218a76034fa8a1a8392cf5d9a81"
+    },
+    "NEXT_STEPS.md": {
+      "bytes": 54529,
+      "sha256": "5e624e00a44709664a6168e26dd9b57e6e64e4a4e98c70de9978e087b0f27305"
+    },
+    "PICK_UP_HERE.md": {
+      "bytes": 41704,
+      "sha256": "6e148506a0b3c05693e2c418aec40086df366954465e35acfcabac1c7823e802"
+    },
+    "README.md": {
+      "bytes": 30706,
+      "sha256": "d16f50e75a9fc253c4df296bba05d49f471c9fed9eb48883331223da3692fc2e"
+    },
+    "build/capture-bank-c2-v3-20260925/bank.gds": {
+      "bytes": 4573294,
+      "sha256": "8801ebd90f241b7690ceb91e876285978b20edf975db9f2f408e9193fefd201e"
+    },
+    "build/capture-bank-c2-v3-20260925/build.json": {
+      "bytes": 1150,
+      "sha256": "f6b1e3f67fee68f91850322fea66a6d3163458a8b9fc8e45ebc958a78345c38a"
+    },
+    "build/capture-bank-c2-v3-20260925/direct.spice": {
+      "bytes": 2558,
+      "sha256": "3e3799f4d9b1dd969c155395df39ae79661314b964883147756dac2d8e0797b3"
+    },
+    "build/capture-bank-c2-v3-20260925/drc-details.txt": {
+      "bytes": 254,
+      "sha256": "006d7680e9abf1680060b9793c226b129562019c1a48dee0eac2ac073bb63b5f"
+    },
+    "build/capture-bank-c2-v3-20260925/extract.log": {
+      "bytes": 3044,
+      "sha256": "20e195e3127c084595fafa2e3d43262e9fdd980b7a33fabbed93c90fe46aa8bc"
+    },
+    "build/capture-bank-c2-v3-20260925/extract.tcl": {
+      "bytes": 778,
+      "sha256": "a680f138b9a18a689f7c193eeba2129efef87e2800d50573d512a95237cfb67f"
+    },
+    "build/capture-bank-c2-v3-20260925/flat.ext": {
+      "bytes": 10948,
+      "sha256": "0a2dfcdca9645ecb9db0b2e9e6eee0be97f0716ca2bb300e9d0b2a7ed8454419"
+    },
+    "build/capture-bank-c2-v3-20260925/flat.mag": {
+      "bytes": 219287,
+      "sha256": "80bae31adf602a1bc8f8c64f8fb09a5c7b669fa6ad28d1c3dea368319b017536"
+    },
+    "build/capture-bank-c2-v3-20260925/flat.res.ext": {
+      "bytes": 54797,
+      "sha256": "ea4f68225dafc230f5d13f4d4c79a7c6509156cc0e97aa22277ea6f6e508372b"
+    },
+    "build/capture-bank-c2-v3-20260925/klayout.log": {
+      "bytes": 95759,
+      "sha256": "7f91c50432edd9a3a1b98e670fbdde12ae10013f3888f809c407160611050dca"
+    },
+    "build/capture-bank-c2-v3-20260925/main-drc.lyrdb": {
+      "bytes": 135726,
+      "sha256": "1e20b377918e6d46fca10341fcbd382c565122130c67b9799e4c200dab213dc5"
+    },
+    "build/capture-bank-c2-v3-20260925/raw-rc.spice": {
+      "bytes": 37714,
+      "sha256": "7bf1a8b41f084ae789fa6492d67d8ed56c59be044322b7e538f233f635eae49e"
+    },
+    "build/capture-bank-c2-v3-20260925/reference.spice": {
+      "bytes": 2694,
+      "sha256": "d99416a0d5a47de8e93eafb4eaae3e8e050dac5d77d72fc7d81a66638186da8f"
+    },
+    "build/capture-bank-c2-v3-20260925/runner.py": {
+      "bytes": 9655,
+      "sha256": "9d019b35e02d9d0bc405589bedd522c0266deead00633f626d3d061a8b69183e"
+    },
+    "build/capture-bank-c2-v4-20260925/bank.gds": {
+      "bytes": 4571758,
+      "sha256": "3a093901f1a5d824a2160521c10b01648a48f53a977c279c5f7c9bdf3a53e48c"
+    },
+    "build/capture-bank-c2-v4-20260925/build.json": {
+      "bytes": 1150,
+      "sha256": "ae7f4f3ef7d548c949ecfda28823e697e365882a4cc7f4af6e0124867b8a75c5"
+    },
+    "build/capture-bank-c2-v4-20260925/collapsed-lvs.log": {
+      "bytes": 5606,
+      "sha256": "f3f958a7895635aa874479e09d1fa5ef71a6766a8bb0566d18c2eadd0ca356bc"
+    },
+    "build/capture-bank-c2-v4-20260925/collapsed-netgen.log": {
+      "bytes": 5278,
+      "sha256": "558c36957ff3991165d2f1e6480e56898bc25b3ed8471b50e242ad36c8e87189"
+    },
+    "build/capture-bank-c2-v4-20260925/collapsed.spice": {
+      "bytes": 2508,
+      "sha256": "196f90c94f2bc68e1d883bdf4e0ddc067dbbf35ebcc18da8a35ed0c705bc79d0"
+    },
+    "build/capture-bank-c2-v4-20260925/direct-lvs.log": {
+      "bytes": 5596,
+      "sha256": "1fb5f1a55e4f2a3e52eda23d57447079a188fdfa8c0c8a44718b32e672fa6b79"
+    },
+    "build/capture-bank-c2-v4-20260925/direct-netgen.log": {
+      "bytes": 5238,
+      "sha256": "8df9c86ea221a6b0488f10c1f20dc5c7eec057e5be93fb4958b8f420c15fb066"
+    },
+    "build/capture-bank-c2-v4-20260925/direct.spice": {
+      "bytes": 2558,
+      "sha256": "3e3799f4d9b1dd969c155395df39ae79661314b964883147756dac2d8e0797b3"
+    },
+    "build/capture-bank-c2-v4-20260925/drc-details.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "build/capture-bank-c2-v4-20260925/extract.log": {
+      "bytes": 3061,
+      "sha256": "da9fa6d9a5518bfa4b42923838e0b5d1c0d164c9c2e4e3ed769e555dfca7f0a8"
+    },
+    "build/capture-bank-c2-v4-20260925/extract.tcl": {
+      "bytes": 778,
+      "sha256": "aa1aaa8cff57b8c92fd57b8f7b71954d0e721c70d0acea69e6ed62fedebafec5"
+    },
+    "build/capture-bank-c2-v4-20260925/flat.ext": {
+      "bytes": 10948,
+      "sha256": "61b62326950e0c41478ed6a6431963cc328da8338f873dbb340f842fc00359a6"
+    },
+    "build/capture-bank-c2-v4-20260925/flat.mag": {
+      "bytes": 217452,
+      "sha256": "46aafd4eea1c0c798f5aff2360aa844a5118ab137789a0628c7aff4590605b50"
+    },
+    "build/capture-bank-c2-v4-20260925/flat.res.ext": {
+      "bytes": 54803,
+      "sha256": "063e011637ee1241fcaca169c85bc3172a0e15f66dbc81fbc9d04b1f0fe892f2"
+    },
+    "build/capture-bank-c2-v4-20260925/klayout.log": {
+      "bytes": 95494,
+      "sha256": "a69302d3d9143e63e9e210d7fcff195da09c245734bb3e913ab9fcaa433321d8"
+    },
+    "build/capture-bank-c2-v4-20260925/main-drc.lyrdb": {
+      "bytes": 134567,
+      "sha256": "4ad2d9bfc866ec0810017f8274f5fbebcee7b0d5a05c30bef76a33665fa1b82d"
+    },
+    "build/capture-bank-c2-v4-20260925/raw-rc.spice": {
+      "bytes": 37703,
+      "sha256": "5d4bba212eaa2296f25235ac59e076baedccde8244a6c3a86722a27ee24c7a58"
+    },
+    "build/capture-bank-c2-v4-20260925/rc-far.spice": {
+      "bytes": 37289,
+      "sha256": "44e2b6673995addb1801b3edcfb8ca2830900938313c31f314b0bc4e967d071c"
+    },
+    "build/capture-bank-c2-v4-20260925/rc-port.spice": {
+      "bytes": 37277,
+      "sha256": "d8b5d46bec669db16ba594574ffd454b904dd6662fc4ddecc2d2e1b73dccd2c3"
+    },
+    "build/capture-bank-c2-v4-20260925/reference.spice": {
+      "bytes": 2694,
+      "sha256": "d99416a0d5a47de8e93eafb4eaae3e8e050dac5d77d72fc7d81a66638186da8f"
+    },
+    "build/capture-bank-c2-v4-20260925/runner.py": {
+      "bytes": 9698,
+      "sha256": "d17a1e4c5aba63ecaf7b6a92bbb995901d2e425738c063086bd22e318e02ce4d"
+    },
+    "build/capture-bank-c2-v4-20260925/verification.json": {
+      "bytes": 6894,
+      "sha256": "265984cacb165d8cbaf376860534f9e9d43d8132d844c1b72ee6693de6d61804"
+    },
+    "build/capture-bank-c2-v4-20260925/verify-runner.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "build/capture-bank-c2-v5-20260925/bank.gds": {
+      "bytes": 4590830,
+      "sha256": "6f756a7bcf90dc535f9cd017afceea1ff99063b280580cf44c3e75bbf46be4ab"
+    },
+    "build/capture-bank-c2-v5-20260925/build.json": {
+      "bytes": 1179,
+      "sha256": "a229ae4843e7cb9cdd56b3fd9a55191966847c86df2081c48e95220d12a9c7b2"
+    },
+    "build/capture-bank-c2-v5-20260925/collapsed-lvs.log": {
+      "bytes": 5606,
+      "sha256": "f3f958a7895635aa874479e09d1fa5ef71a6766a8bb0566d18c2eadd0ca356bc"
+    },
+    "build/capture-bank-c2-v5-20260925/collapsed-netgen.log": {
+      "bytes": 5278,
+      "sha256": "f0e4ab17c72627bda40717248c8036d348cdbe07d643a36fa059f31f6ac28401"
+    },
+    "build/capture-bank-c2-v5-20260925/collapsed.spice": {
+      "bytes": 2508,
+      "sha256": "196f90c94f2bc68e1d883bdf4e0ddc067dbbf35ebcc18da8a35ed0c705bc79d0"
+    },
+    "build/capture-bank-c2-v5-20260925/direct-lvs.log": {
+      "bytes": 5596,
+      "sha256": "1fb5f1a55e4f2a3e52eda23d57447079a188fdfa8c0c8a44718b32e672fa6b79"
+    },
+    "build/capture-bank-c2-v5-20260925/direct-netgen.log": {
+      "bytes": 5238,
+      "sha256": "d258677a837255c2c11af59ec585c2c2527e4be8f1bbdacca95594021e0e8cfe"
+    },
+    "build/capture-bank-c2-v5-20260925/direct.spice": {
+      "bytes": 2558,
+      "sha256": "3e3799f4d9b1dd969c155395df39ae79661314b964883147756dac2d8e0797b3"
+    },
+    "build/capture-bank-c2-v5-20260925/drc-details.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "build/capture-bank-c2-v5-20260925/extract.log": {
+      "bytes": 3061,
+      "sha256": "748c73e1df924e0314c6d1efdc90c6eeb0f1bafdc9b5e16bbf6ebe8a5159efa1"
+    },
+    "build/capture-bank-c2-v5-20260925/extract.tcl": {
+      "bytes": 778,
+      "sha256": "4cf38d46d97f43a63af4f6fe8acd05135ddd1e85de302aecd0220a464cdf718e"
+    },
+    "build/capture-bank-c2-v5-20260925/flat.ext": {
+      "bytes": 10962,
+      "sha256": "48c4444b2631d729380941c9471aaa42ce4a46dd9ad9bbee15827e6443943cae"
+    },
+    "build/capture-bank-c2-v5-20260925/flat.mag": {
+      "bytes": 244494,
+      "sha256": "1a24b60b318d3af3c187ca74c02e5d0e58d9a069d2bf2d5252a7ceae194e4bf1"
+    },
+    "build/capture-bank-c2-v5-20260925/flat.res.ext": {
+      "bytes": 58011,
+      "sha256": "246146e4651bfc87d02fdd1c1673e2205ffe3524f3b1aa9bf0593c574502151b"
+    },
+    "build/capture-bank-c2-v5-20260925/klayout.log": {
+      "bytes": 95495,
+      "sha256": "30e3f8886596d538fdb57ca18e95f5873da76f9ce6b991e946890a484d429227"
+    },
+    "build/capture-bank-c2-v5-20260925/main-drc.lyrdb": {
+      "bytes": 134567,
+      "sha256": "4ad2d9bfc866ec0810017f8274f5fbebcee7b0d5a05c30bef76a33665fa1b82d"
+    },
+    "build/capture-bank-c2-v5-20260925/raw-rc.spice": {
+      "bytes": 40185,
+      "sha256": "5f1223ed035fe598be2f399fcda44308171c9065aa17b6b47a5c7c2bc92eb109"
+    },
+    "build/capture-bank-c2-v5-20260925/rc-far.spice": {
+      "bytes": 39765,
+      "sha256": "69f4be1f9b0d10ccd0c9fd78f527d98a939795d5d5abeb4541405118d8a1bdcb"
+    },
+    "build/capture-bank-c2-v5-20260925/rc-port.spice": {
+      "bytes": 39753,
+      "sha256": "b8fed7433458a4fce9c854f3f0236c55d01c9d827540c6a468f6895fd4921b59"
+    },
+    "build/capture-bank-c2-v5-20260925/reference.spice": {
+      "bytes": 2694,
+      "sha256": "d99416a0d5a47de8e93eafb4eaae3e8e050dac5d77d72fc7d81a66638186da8f"
+    },
+    "build/capture-bank-c2-v5-20260925/runner.py": {
+      "bytes": 10742,
+      "sha256": "f58c06f3b6da03c94a0be471fa3301566872c7cebdc4e0cb2222696914199509"
+    },
+    "build/capture-bank-c2-v5-20260925/verification.json": {
+      "bytes": 6882,
+      "sha256": "d016df98fad293faa553c54588e4cd8280d164e7aa63191755c62a4bf9f50a4e"
+    },
+    "build/capture-bank-c2-v5-20260925/verify-runner.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "build/capture-bank-c64-v4-20260925/bank.gds": {
+      "bytes": 144877462,
+      "sha256": "b0c29bee638f22ec45e52372e5ab3167baafc33572b55302de25ae766ef301b9"
+    },
+    "build/capture-bank-c64-v4-20260925/build.json": {
+      "bytes": 5390,
+      "sha256": "c3e0b0396d9831cabfdfdbfae4967766998d9f9afae06bdb55cd5c22a827244a"
+    },
+    "build/capture-bank-c64-v4-20260925/collapsed-lvs.log": {
+      "bytes": 32888,
+      "sha256": "8dfd3c990f6536fca063c0f50100bf2c612e0a998760ec201d2404a5dea5aa2c"
+    },
+    "build/capture-bank-c64-v4-20260925/collapsed-netgen.log": {
+      "bytes": 5297,
+      "sha256": "2f0f7742c9eaaff1fe2fc7db1c9ed2cbede25209a22057fd93b8ae5ded34b295"
+    },
+    "build/capture-bank-c64-v4-20260925/collapsed.spice": {
+      "bytes": 75958,
+      "sha256": "408b912b73ef493a3b6729b651ba768a67e70bc0f113b96ebd9cf0b8a52bc633"
+    },
+    "build/capture-bank-c64-v4-20260925/direct-lvs.log": {
+      "bytes": 32878,
+      "sha256": "a7800ef0377973482b07f62b5951b9f47b03c4264dea13c954c4ce99ad8382fd"
+    },
+    "build/capture-bank-c64-v4-20260925/direct-netgen.log": {
+      "bytes": 5257,
+      "sha256": "d5d14d1061215a6239f517e0dfedee01aa0c4e2c8a5783daa6b960555acc998d"
+    },
+    "build/capture-bank-c64-v4-20260925/direct.spice": {
+      "bytes": 76058,
+      "sha256": "8968722e872ad0db0b0c96ddd05ed1af3e2d8ddd1e2dbbcf9642e9deb3b5e96d"
+    },
+    "build/capture-bank-c64-v4-20260925/drc-details.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "build/capture-bank-c64-v4-20260925/extract.log": {
+      "bytes": 33033,
+      "sha256": "7eed4105bc90f6f43d06955680eba803107727478d7c71a2cc9baef44aa355cc"
+    },
+    "build/capture-bank-c64-v4-20260925/extract.tcl": {
+      "bytes": 2847,
+      "sha256": "fe8ba15cd3c4d71870c43c87040afcb2802c5684513d4eaff77251663f465e1d"
+    },
+    "build/capture-bank-c64-v4-20260925/flat.ext": {
+      "bytes": 269846,
+      "sha256": "dfdc2eba95382f8a890b127291ed2256d8bc8d2d2a0250c91278f7c8fd46a9ec"
+    },
+    "build/capture-bank-c64-v4-20260925/flat.mag": {
+      "bytes": 6006160,
+      "sha256": "598859948570077663754e599476fc94ede61ea0a7b677ac5f45f159180b694d"
+    },
+    "build/capture-bank-c64-v4-20260925/flat.res.ext": {
+      "bytes": 1586272,
+      "sha256": "f7fac24308e27f847182247068f46d3754fa06c744892a4b7e9b98352d00e3f1"
+    },
+    "build/capture-bank-c64-v4-20260925/klayout.log": {
+      "bytes": 95586,
+      "sha256": "9bb24153bf24f2574a9be9b3cb6e56fdb5cc69748dedb288fa7337aac475835e"
+    },
+    "build/capture-bank-c64-v4-20260925/main-drc.lyrdb": {
+      "bytes": 134567,
+      "sha256": "4ad2d9bfc866ec0810017f8274f5fbebcee7b0d5a05c30bef76a33665fa1b82d"
+    },
+    "build/capture-bank-c64-v4-20260925/raw-rc.spice": {
+      "bytes": 1140921,
+      "sha256": "70f01da2d8ff3004bfed728b954557923477ef24683bdcf8443de8a3042a2be1"
+    },
+    "build/capture-bank-c64-v4-20260925/rc-far.spice": {
+      "bytes": 1125375,
+      "sha256": "4a019382cd0da7c529a50b3065364afd680a5a388ded63c80efc50b420493e1c"
+    },
+    "build/capture-bank-c64-v4-20260925/rc-port.spice": {
+      "bytes": 1125177,
+      "sha256": "81ae48bb63fddfedc331de3fbe8dee96f9d79ab0915f88c5073cd8332251726e"
+    },
+    "build/capture-bank-c64-v4-20260925/reference.spice": {
+      "bytes": 81238,
+      "sha256": "a816b4b519b2b809c4a48c25412d15463cfb64371266e0ea44fbaec665f057ba"
+    },
+    "build/capture-bank-c64-v4-20260925/runner.py": {
+      "bytes": 9698,
+      "sha256": "d17a1e4c5aba63ecaf7b6a92bbb995901d2e425738c063086bd22e318e02ce4d"
+    },
+    "build/capture-bank-c64-v4-20260925/verification.json": {
+      "bytes": 143675,
+      "sha256": "10daa893bb25b2c85e30f4121186fad7f48f9bfc196c67c600f8599f9786704c"
+    },
+    "build/capture-bank-c64-v4-20260925/verify-runner.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "build/capture-bank-c64-v5-20260925/bank.gds": {
+      "bytes": 145487766,
+      "sha256": "827a74a4a0c3e2e432c19d26455a3bc0eab737c93a437ba49ad0b776b7b9d788"
+    },
+    "build/capture-bank-c64-v5-20260925/build.json": {
+      "bytes": 5419,
+      "sha256": "901a8ec3264a8ecde6bb55cd5b7c89315d12e8154b3340f5e04dc609b26d89e0"
+    },
+    "build/capture-bank-c64-v5-20260925/collapsed-lvs.log": {
+      "bytes": 32888,
+      "sha256": "8dfd3c990f6536fca063c0f50100bf2c612e0a998760ec201d2404a5dea5aa2c"
+    },
+    "build/capture-bank-c64-v5-20260925/collapsed-netgen.log": {
+      "bytes": 5297,
+      "sha256": "f27bde904dc588ff12c771765229ea3d9f389764efe5d7c9e1652097111483e0"
+    },
+    "build/capture-bank-c64-v5-20260925/collapsed.spice": {
+      "bytes": 75958,
+      "sha256": "408b912b73ef493a3b6729b651ba768a67e70bc0f113b96ebd9cf0b8a52bc633"
+    },
+    "build/capture-bank-c64-v5-20260925/direct-lvs.log": {
+      "bytes": 32878,
+      "sha256": "a7800ef0377973482b07f62b5951b9f47b03c4264dea13c954c4ce99ad8382fd"
+    },
+    "build/capture-bank-c64-v5-20260925/direct-netgen.log": {
+      "bytes": 5257,
+      "sha256": "73d8983f8c857a6d785011b43687b2759065b97805da2aae4bdba42b677cbc48"
+    },
+    "build/capture-bank-c64-v5-20260925/direct.spice": {
+      "bytes": 76058,
+      "sha256": "8968722e872ad0db0b0c96ddd05ed1af3e2d8ddd1e2dbbcf9642e9deb3b5e96d"
+    },
+    "build/capture-bank-c64-v5-20260925/drc-details.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "build/capture-bank-c64-v5-20260925/extract.log": {
+      "bytes": 33033,
+      "sha256": "3d6b40e8128acdf1b93739ff6d44c3a53f24faf2a5c9fb9ee5ef766fad170a4e"
+    },
+    "build/capture-bank-c64-v5-20260925/extract.tcl": {
+      "bytes": 2847,
+      "sha256": "42464ab958d33c159fb9628b1022a0c6d20afcacbf202fc7ae76cc48e7ca320c"
+    },
+    "build/capture-bank-c64-v5-20260925/flat.ext": {
+      "bytes": 270356,
+      "sha256": "fd2d445682db71641b527aef0e2ae31afc7a3c17dd5adf5fbbf3bf6893cfeb55"
+    },
+    "build/capture-bank-c64-v5-20260925/flat.mag": {
+      "bytes": 6959975,
+      "sha256": "b1289d0859b949eae702f6a8cacc3fc3075de7be26464da77f97427c27f3c750"
+    },
+    "build/capture-bank-c64-v5-20260925/flat.res.ext": {
+      "bytes": 1692173,
+      "sha256": "f760395b2b50534f2df95ecc4ca1fdade7d19b88d6a34eb37e200735e42bb467"
+    },
+    "build/capture-bank-c64-v5-20260925/klayout.log": {
+      "bytes": 95586,
+      "sha256": "4dad6b10f9eb4702236cbf672c24113fae1f0f570127693025adfed85a3c63cb"
+    },
+    "build/capture-bank-c64-v5-20260925/main-drc.lyrdb": {
+      "bytes": 134567,
+      "sha256": "4ad2d9bfc866ec0810017f8274f5fbebcee7b0d5a05c30bef76a33665fa1b82d"
+    },
+    "build/capture-bank-c64-v5-20260925/raw-rc.spice": {
+      "bytes": 1228796,
+      "sha256": "2626e85a42622f11c023e35ef59368d53221a418c07ab30701f4a4356703a417"
+    },
+    "build/capture-bank-c64-v5-20260925/rc-far.spice": {
+      "bytes": 1213367,
+      "sha256": "df0675410bf47fff87b0c1c48419aab79c6f1a4557731af2355f332551828de3"
+    },
+    "build/capture-bank-c64-v5-20260925/rc-port.spice": {
+      "bytes": 1213169,
+      "sha256": "4cbfd073c67349e6c15d087dc09d9766d34f40443dfd6488b1da701eb5fe280a"
+    },
+    "build/capture-bank-c64-v5-20260925/reference.spice": {
+      "bytes": 81238,
+      "sha256": "a816b4b519b2b809c4a48c25412d15463cfb64371266e0ea44fbaec665f057ba"
+    },
+    "build/capture-bank-c64-v5-20260925/runner.py": {
+      "bytes": 10742,
+      "sha256": "f58c06f3b6da03c94a0be471fa3301566872c7cebdc4e0cb2222696914199509"
+    },
+    "build/capture-bank-c64-v5-20260925/verification.json": {
+      "bytes": 143543,
+      "sha256": "a115dc3840fad86ad51b6bdbe10d11a8d39bbcee52ef91cad40e6d67b3806937"
+    },
+    "build/capture-bank-c64-v5-20260925/verify-runner.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "build/capture-bank-local-controls-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-local-controls-20260925/all-wire-nets/model.spice": {
+      "bytes": 238023,
+      "sha256": "06f1aec626590c0db4ae04db69bfe0a8c4381f31b2162ad46867e3cba9c473f5"
+    },
+    "build/capture-bank-local-controls-20260925/all-wire-nets/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/all-wire-nets/op.raw": {
+      "bytes": 6214,
+      "sha256": "817c91f1d5530023e7caa7456e50345b068b46613f452bc1addf58a8f7883bfd"
+    },
+    "build/capture-bank-local-controls-20260925/all-wire-nets/result.json": {
+      "bytes": 13643,
+      "sha256": "a742001a2872d34766ef85315418c634fe294d63f7e80aec6351bc45332f361a"
+    },
+    "build/capture-bank-local-controls-20260925/all-wire-nets/test.spice": {
+      "bytes": 11325,
+      "sha256": "04c446016fd38a5970677307a9caf47ae0f45f35beb6be4ab9dd1b044e625120"
+    },
+    "build/capture-bank-local-controls-20260925/bias/model.spice": {
+      "bytes": 550472,
+      "sha256": "0936211d4c5b2ca61b8bc38daf02ee2cb505c6b2111ec1becacaa30f87b2dd77"
+    },
+    "build/capture-bank-local-controls-20260925/bias/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/bias/op.raw": {
+      "bytes": 29393,
+      "sha256": "b8ff043f44caa02b82d840b1085303fdb9df1edb041712871198130f58eca1b1"
+    },
+    "build/capture-bank-local-controls-20260925/bias/result.json": {
+      "bytes": 36509,
+      "sha256": "3f81f643121605f2faf3ed337d80325aaf69c28cd4aeb9753c50e581875fe91c"
+    },
+    "build/capture-bank-local-controls-20260925/bias/test.spice": {
+      "bytes": 22429,
+      "sha256": "ba76c5f0579b1daca52433c43c9a5a9496ac3c42384ed08f692d8a06cd2a1944"
+    },
+    "build/capture-bank-local-controls-20260925/full/model.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-local-controls-20260925/full/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/full/op.raw": {
+      "bytes": 31881,
+      "sha256": "be94c10f51d23bef18254bbd363bdf8c612ce6b70448fb82600d951659605213"
+    },
+    "build/capture-bank-local-controls-20260925/full/result.json": {
+      "bytes": 39366,
+      "sha256": "eb7fbf5cab9e114bf87ee2751c665f9f3328ed3fab9642266e1c19abad8bb8d2"
+    },
+    "build/capture-bank-local-controls-20260925/full/test.spice": {
+      "bytes": 23573,
+      "sha256": "935febc386899acd0306f1d6afe622d9b391505daec20ea8e9e6f471588b4067"
+    },
+    "build/capture-bank-local-controls-20260925/ground/model.spice": {
+      "bytes": 412231,
+      "sha256": "335028b52859911f8af717e904700e45187a999ed111cbc66f4db2a2a163a043"
+    },
+    "build/capture-bank-local-controls-20260925/ground/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/ground/op.raw": {
+      "bytes": 24382,
+      "sha256": "98be73f40877e3668a2a94bfd3c724f8b39dfd8639dd8c05bcf08b82d21122f5"
+    },
+    "build/capture-bank-local-controls-20260925/ground/result.json": {
+      "bytes": 30313,
+      "sha256": "608b6552470f4933efac94a4d126f8f09c460e3f85401d426378ac926c90197f"
+    },
+    "build/capture-bank-local-controls-20260925/ground/test.spice": {
+      "bytes": 20106,
+      "sha256": "4859fd72b7e4aa19b3247dafee24878ad7a3def049469e04b57bd59e5a1c427d"
+    },
+    "build/capture-bank-local-controls-20260925/original-deck.spice": {
+      "bytes": 23627,
+      "sha256": "b6b1b31ad1394ae9d7d5b9d465dad8729307d0cd94f1766fa514938a1b8341c2"
+    },
+    "build/capture-bank-local-controls-20260925/original-model.spice": {
+      "bytes": 554469,
+      "sha256": "2c0a8bd6b48621d5b7a31fa57b8f9b3a1fe5d2e716dc17eac78ee145ca883434"
+    },
+    "build/capture-bank-local-controls-20260925/pref/model.spice": {
+      "bytes": 549801,
+      "sha256": "1398b1f45e3ca4c0433ea8c8de7846aacd626148cc2664f47cf070cd952e4346"
+    },
+    "build/capture-bank-local-controls-20260925/pref/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/pref/op.raw": {
+      "bytes": 31881,
+      "sha256": "d08c38b843bf21e65b00191febf3c3f53a9ef7b9220d2a5591a3d526c4523015"
+    },
+    "build/capture-bank-local-controls-20260925/pref/result.json": {
+      "bytes": 39433,
+      "sha256": "26a4c2363748317c7b8ff8b2f5890923f4fdd23c59dc285b6a89b1650191c0b0"
+    },
+    "build/capture-bank-local-controls-20260925/pref/test.spice": {
+      "bytes": 23573,
+      "sha256": "935febc386899acd0306f1d6afe622d9b391505daec20ea8e9e6f471588b4067"
+    },
+    "build/capture-bank-local-controls-20260925/references/model.spice": {
+      "bytes": 545804,
+      "sha256": "9d04cc94eb34cf9de3f0ab5139d187b55fa22b3d63c2014defe59834612a6798"
+    },
+    "build/capture-bank-local-controls-20260925/references/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/references/op.raw": {
+      "bytes": 29393,
+      "sha256": "9396c47abb1287d905d7d3ee3d3e9b65bb4c7acc923527024f4cc8da843174c1"
+    },
+    "build/capture-bank-local-controls-20260925/references/result.json": {
+      "bytes": 36587,
+      "sha256": "2bc75db883b05a8852f4db0b5b8a73a08bbd724cada808f483b5d81a169a0a4a"
+    },
+    "build/capture-bank-local-controls-20260925/references/test.spice": {
+      "bytes": 22429,
+      "sha256": "ba76c5f0579b1daca52433c43c9a5a9496ac3c42384ed08f692d8a06cd2a1944"
+    },
+    "build/capture-bank-local-controls-20260925/report.json": {
+      "bytes": 661382,
+      "sha256": "3977039587960ef16a4d9c862d52fa53dd59af0b0b30f2f76faf6f6958b86a89"
+    },
+    "build/capture-bank-local-controls-20260925/runner.py": {
+      "bytes": 11370,
+      "sha256": "b2c52883fb13cf5d262a872f1b69493d0837881ee5abd057bc2985d2f6e59dc0"
+    },
+    "build/capture-bank-local-controls-20260925/supplies/model.spice": {
+      "bytes": 331892,
+      "sha256": "8eb76cddd9964a30bf55c97299c32b2a73f95a90751c4dcd09ee70ae5d8ee1a8"
+    },
+    "build/capture-bank-local-controls-20260925/supplies/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/supplies/op.raw": {
+      "bytes": 21937,
+      "sha256": "cd36d80af65583d6e192f53e501f95aa8aa3a204e0b6015d9a30b476bb0f86e2"
+    },
+    "build/capture-bank-local-controls-20260925/supplies/result.json": {
+      "bytes": 27537,
+      "sha256": "b0ca9218466949a962340829389cb19eb2a03f602b843a8699844b4b64ab6455"
+    },
+    "build/capture-bank-local-controls-20260925/supplies/test.spice": {
+      "bytes": 19005,
+      "sha256": "63c94b922c7f259c7c6e3cbb3caff7b316a5fa542494b22c6cc3c7e67e97f1c7"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references/model.spice": {
+      "bytes": 323227,
+      "sha256": "a773165305df18ed1a2bf8c0f6f643ad0aa2d137619b7d1917a84de8b75c94ea"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references/op.raw": {
+      "bytes": 19449,
+      "sha256": "6eb775f3ed4ba16ed3cf68e9d28f37f46afe956f5fa98fbffaf6a81642e0a626"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references/result.json": {
+      "bytes": 24712,
+      "sha256": "96ea26341f7a3a7bdb65268825cce1798cbce585afb13c05a771abf4cf1bdfed"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references/test.spice": {
+      "bytes": 17861,
+      "sha256": "a97eb7e5b54cd5c7a8bf02ee5e4e5a95036e84adfb9c1655f8f37199e96d9eb4"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-buf/model.spice": {
+      "bytes": 314033,
+      "sha256": "6f175064bd5aacf506539c16104b2ee1775d0aedf84406f5a897425d53a82f08"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-buf/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-buf/op.raw": {
+      "bytes": 19449,
+      "sha256": "45f61480b9f00582a0523a0d3250dc7e4b3e3260b67e0b442159505426bcf270"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-buf/result.json": {
+      "bytes": 24768,
+      "sha256": "980fa992227be57116483c2d4acc53903eb79bc7d82ff43159c9243bc0cc38f3"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-buf/test.spice": {
+      "bytes": 17861,
+      "sha256": "a97eb7e5b54cd5c7a8bf02ee5e4e5a95036e84adfb9c1655f8f37199e96d9eb4"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-cbuf/model.spice": {
+      "bytes": 306343,
+      "sha256": "8eac0bb48d0ceda1ea4e2b1cadf2d1e82a1c81ef0747b3db7fdc280f4a7ec175"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-cbuf/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-cbuf/op.raw": {
+      "bytes": 16899,
+      "sha256": "b69072490fa26b93a58ab6caf4d3d3ceabd5c1904100d1c582e8ae0864458c26"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-cbuf/result.json": {
+      "bytes": 22869,
+      "sha256": "404333feca4e264f515fa11d72627fafa3aa94e369dd3272f2211086250b0c04"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-cbuf/test.spice": {
+      "bytes": 16655,
+      "sha256": "112b90932a3501ef631bdf1495cc61c8ac531b6bb1f7a81223ae019088b4420b"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-col/model.spice": {
+      "bytes": 313215,
+      "sha256": "c44e2755718b2a86bbbb6185ac1904c852f3c490f493e5719492bd0a6c52b569"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-col/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-col/op.raw": {
+      "bytes": 16387,
+      "sha256": "f8f315d99ba3014426fe9fc71ad4b67d27b6d32ef5165b038c2ca7d53db62515"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-col/result.json": {
+      "bytes": 22116,
+      "sha256": "b7ef732f555c95105f66ab8db08c4c7dce52b28ca891250759c04c31f2c44019"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-col/test.spice": {
+      "bytes": 16143,
+      "sha256": "2432884e2ac1331298a5ae889fe8f95e9314fac958efe32f43b5653faca3a1c2"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-store/model.spice": {
+      "bytes": 286427,
+      "sha256": "81678e7c6a32a14270e0c9d4d3f6b5a18355c1abfacc4d07f28e9f101c6bacf8"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-store/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-store/op.raw": {
+      "bytes": 14157,
+      "sha256": "a1d78dd6f14c9a368262f095bc620d935793792a00304913f85242ea49bd3449"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-store/result.json": {
+      "bytes": 19613,
+      "sha256": "206d283ee89778631e616fff37baf98170e8a86f426bddcda9b50d83b7bb07bc"
+    },
+    "build/capture-bank-local-controls-20260925/supplies-references-store/test.spice": {
+      "bytes": 15257,
+      "sha256": "f1ac8e904f89efe6f0e8835a3c49871c00be75848abd2c9bb3534f994f84900a"
+    },
+    "build/capture-bank-local-controls-20260925/vdd/model.spice": {
+      "bytes": 474130,
+      "sha256": "b4da5fbd1301904e3b445e4fce45ba1a1ea57c9243ada45a3841aa4cdac84819"
+    },
+    "build/capture-bank-local-controls-20260925/vdd/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-local-controls-20260925/vdd/op.raw": {
+      "bytes": 29436,
+      "sha256": "d1989786b0808232649e8de9c91f88c2d3b443ce65cdad54c61fee49429349ab"
+    },
+    "build/capture-bank-local-controls-20260925/vdd/result.json": {
+      "bytes": 36546,
+      "sha256": "b27c1acce129be9128bdfedc87bd1f0f6220b162ac0edb196bd07b2adf79419e"
+    },
+    "build/capture-bank-local-controls-20260925/vdd/test.spice": {
+      "bytes": 22472,
+      "sha256": "3417f43c779000b521d6d0fca3e7f2d0932f248eeffb24ac9abad141c2719fbd"
+    },
+    "build/capture-bank-v4-dc-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-0/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-0/op.raw": {
+      "bytes": 31906,
+      "sha256": "9eed845381d477df94f9a484fc865c4959d2129f6b46093bca696e56428cb01e"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-0/result.json": {
+      "bytes": 38393,
+      "sha256": "0637e9391e067cf72cf2ecbb53081e449f57cc15258135dd4048502a76e2cbfe"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-0/test.spice": {
+      "bytes": 23521,
+      "sha256": "81818a8ec73bc19f7cb1e902190c60a4e6dc05151b227535e8d5e8e498196ed1"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.2/op.raw": {
+      "bytes": 31906,
+      "sha256": "174aa3830184b208f048b3a8637b17322e711df44a2561658e3fb2a12a671c47"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.2/result.json": {
+      "bytes": 37307,
+      "sha256": "34ef07f69097a20fdfd3ae3a2d7deb1d08abe6d53be2a5a04434c21491bb1dad"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.2/test.spice": {
+      "bytes": 23649,
+      "sha256": "27b9865c6df8f4c0c37ce7faee63047f90db031342cc5f73f8d48b76e432542c"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.6/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.6/op.raw": {
+      "bytes": 31906,
+      "sha256": "e6be7ff9a87e6656ce013ee40f7800be3fb529609fd16374e665c811742bc223"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.6/result.json": {
+      "bytes": 37372,
+      "sha256": "035b12f47366deaccabc696187922e53ede0db03bd70664000b587a851720b92"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-1.6/test.spice": {
+      "bytes": 23649,
+      "sha256": "cc8d83d455cb5711254b10610090cef93534c5b50514de2c981cd7a978ae582c"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-2/op.raw": {
+      "bytes": 31906,
+      "sha256": "7baee2aafb5fbb059594d838696af90f2244470db3b44052ac6d3b2049fc8d69"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-2/result.json": {
+      "bytes": 37368,
+      "sha256": "fc8804c8072f6b524edbe2eabe946fc16f728f6989d7d42063e76f6085d6d827"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-125-2/test.spice": {
+      "bytes": 23521,
+      "sha256": "7efd8d8578e5ae7fa5bd52e0e4b7f961cfbd17db351f97b6944ca04d4ca15743"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-0/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-0/op.raw": {
+      "bytes": 31906,
+      "sha256": "7fc2236d0e88acb587c0fcb339af0cf7a4a8a29306e78d317a7cf612504e588d"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-0/result.json": {
+      "bytes": 38394,
+      "sha256": "f76e38fe70c0652791b3c908832f2d1f83884eb4816f2b651cbd6859dccf78fe"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-0/test.spice": {
+      "bytes": 23520,
+      "sha256": "cd4089263c5de777a8882ef4ec1459875e8e246b10c9a1ae3f6919126de294fe"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.2/op.raw": {
+      "bytes": 31906,
+      "sha256": "d0c45992643fa9ad4c2efd43fd418cdb20ae7da464af4b378c34ae23cadfb982"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.2/result.json": {
+      "bytes": 37322,
+      "sha256": "52eb732f78e37251b3ba32b3011a006cbcd525fca7d2042e6f296172b3a6a94b"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.2/test.spice": {
+      "bytes": 23648,
+      "sha256": "607f98ff736f6ebdc61cf54e4325a0004d69fd80a10607522f7377d8e49cd8dc"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.6/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.6/op.raw": {
+      "bytes": 31906,
+      "sha256": "f250aab20e7b9153efbd38ce8419b5d61b26c24a9b86322117fbc92b27e497b4"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.6/result.json": {
+      "bytes": 37341,
+      "sha256": "7ba1fea718336b2d9476b4cb54f4430325c6a3115061347793fd844cc82b3902"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-1.6/test.spice": {
+      "bytes": 23648,
+      "sha256": "f6024e74ccb6f0eb54b8726d961c34b550d31d3320893aaf9dcb3d0f9317b182"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-2/op.raw": {
+      "bytes": 31906,
+      "sha256": "08c776141dc55f3b1a9f1b357832112950b0106e93eec9e3fa4909533f48d0fa"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-2/result.json": {
+      "bytes": 37416,
+      "sha256": "8365b8bf29e8bc19c6b40f8e07501c4f03aea2520dddda0bfc09fd7a87ccebeb"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port-27-2/test.spice": {
+      "bytes": 23520,
+      "sha256": "0f4fb7942c2c63fc3a0736684a953b1e572a7c34fc3533678d0655f017cab81f"
+    },
+    "build/capture-bank-v4-dc-20260925/rc-port.spice": {
+      "bytes": 1125177,
+      "sha256": "81ae48bb63fddfedc331de3fbe8dee96f9d79ab0915f88c5073cd8332251726e"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-0/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-0/op.raw": {
+      "bytes": 4277,
+      "sha256": "f69b8f8d9f6a9388bb796ff5f5f1ed82113695d4eeb1c77ed40bdecf15b4c1c5"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-0/result.json": {
+      "bytes": 5454,
+      "sha256": "6a497af974e28b5f0c8f85d48ce9cd407c7d588c78f2dc1d8f5856ab438d318e"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-0/test.spice": {
+      "bytes": 10678,
+      "sha256": "a1826d19d6e9565782ed85f819dbaea90b008c2d2979edbee9d5086d7bc80588"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.2/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.2/op.raw": {
+      "bytes": 4277,
+      "sha256": "0b0677ba17112ed002ecfb9d161240b187c22bb7df2f8feb4e97f852937f54a7"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.2/result.json": {
+      "bytes": 5231,
+      "sha256": "d10eb501724739037696e4b6fcd38f06cfeaae6ec705156dda80dac7cabf18ab"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.2/test.spice": {
+      "bytes": 10806,
+      "sha256": "225f94aa0c64bd6cd7768f41cf69f8258302b9599e62967e5e78be2861cb8461"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.6/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "440308f77f9ea3346d4074aee231a9856dd5b3f56944c75324be512ed3ef9416"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.6/result.json": {
+      "bytes": 5229,
+      "sha256": "67020f463d5ebf409640b989950b4fff562883a7395b75e6363d4d51ed4b35b0"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-1.6/test.spice": {
+      "bytes": 10806,
+      "sha256": "665585c8ab0524f86dc9cd92c0b19b9b489f338f3ac669d45c1a7f6fbd76deac"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-2/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-2/op.raw": {
+      "bytes": 4277,
+      "sha256": "64648b013cbdda4918569f0b732f32c61451def95b97052f36df14728f7568cc"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-2/result.json": {
+      "bytes": 5264,
+      "sha256": "948aa49ed008f6a5755da31024ccdf0ffe171730515a7e00b12cef55e4f0ab40"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-125-2/test.spice": {
+      "bytes": 10678,
+      "sha256": "8e441e708160409be5329ce07b07ba484e0ba6088f16376b41502ac862473eb0"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-0/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-0/op.raw": {
+      "bytes": 4277,
+      "sha256": "b42a8b079a89705ce4797c7dbddcb01d7f50ccf26d343c655431005058db9306"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-0/result.json": {
+      "bytes": 5453,
+      "sha256": "05d10bb4515531d2e4fe45c7cb8d73ecaf9c4517854cfbfa1318eff2a766762e"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-0/test.spice": {
+      "bytes": 10677,
+      "sha256": "660fd180f031754ecd1e133b7f442f527e4912cffd47d4806c3ff98dd678278d"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.2/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.2/op.raw": {
+      "bytes": 4277,
+      "sha256": "6e5a7cc5ab88f41953d0c2578ff7de3b2270feaa4773553e5f9a74766fdad50f"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.2/result.json": {
+      "bytes": 5264,
+      "sha256": "a3d7f33b531fa25bdc4b2ee3cb1e2bc338c64f058f1ccd7fe48c675916dfc5a5"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.2/test.spice": {
+      "bytes": 10805,
+      "sha256": "85ceec877a5e0b31f3bcb69ecf19758839d5116f7f67298e4f50dcdf2ec01634"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.6/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "f710f0770b8ad13c3d3f980eb614e90993623dd0e823a12834b5b5c6e844b033"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.6/result.json": {
+      "bytes": 5137,
+      "sha256": "0e133956aeb3732f647bc911e0ff3dd132b1eb6e498752ca19d7e0e0a7d7714b"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-1.6/test.spice": {
+      "bytes": 10805,
+      "sha256": "644f20011e1bd46dabcc8b7b8e21797fb663a61512a8349f278984beac0831a2"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-2/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-2/op.raw": {
+      "bytes": 4277,
+      "sha256": "66416dc31d299cd4318b99b8f2eae485d4622bbbf3bfb18a37353cdd6f63d41a"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-2/result.json": {
+      "bytes": 5262,
+      "sha256": "96e0b6e77f99b0806b4cd98f1aed0dbd98339c0b59d55600f69720a6d2d64ba8"
+    },
+    "build/capture-bank-v4-dc-20260925/reference-27-2/test.spice": {
+      "bytes": 10677,
+      "sha256": "b18b9ed96739104b6f92739bc751ed602cd90202e8a5b2e15b46a6dcf79508ab"
+    },
+    "build/capture-bank-v4-dc-20260925/reference.spice": {
+      "bytes": 81228,
+      "sha256": "c8155cc0e04beba4fc92b9743f56d8e68b571341c6da5ee15c69c538ab67789f"
+    },
+    "build/capture-bank-v4-dc-20260925/report.json": {
+      "bytes": 394541,
+      "sha256": "6894a825ad933e6b694b329eb2e4e15c22d64a289836e319d292ddf383e77244"
+    },
+    "build/capture-bank-v4-dc-20260925/runner.py": {
+      "bytes": 6285,
+      "sha256": "ee4e700482fb6f806ff4e073a555e49d143f745061e63b82dd2873ed0c41b49e"
+    },
+    "build/capture-bank-v5-dc-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-0/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-0/op.raw": {
+      "bytes": 31907,
+      "sha256": "0a93017a03115b0aaef84cee9c8c07cd27194eaa0868140d8a3e6a3cc10150da"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-0/result.json": {
+      "bytes": 38426,
+      "sha256": "bbc4d9c7ea4718dc3e6c3aea96b01799fb07f3cca48c9e952808a510b193e040"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-0/test.spice": {
+      "bytes": 23522,
+      "sha256": "53f6165a0b32645cb0ab746cd948f95fa8f992ccc9c7f5ea3da85844e062378e"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.2/op.raw": {
+      "bytes": 31907,
+      "sha256": "ce280077506c566bb3415281135cb6ba88a61544de38601087cccd3fb8b26816"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.2/result.json": {
+      "bytes": 37302,
+      "sha256": "16cf826f1536f4854c8d5e5e0584a177a9e6597a73fa2c03a90e8e15c8b6a2d7"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.2/test.spice": {
+      "bytes": 23650,
+      "sha256": "8fc4b15d1a44152abe55cafdf73c4c4de5e7d0f0b450c5eb19d78bf34f0d52a1"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.6/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.6/op.raw": {
+      "bytes": 31907,
+      "sha256": "fec7698941fa688f5daca8cc8d34f301baf2b7ec79503e5b967e02f0478de06b"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.6/result.json": {
+      "bytes": 37368,
+      "sha256": "1f229668837e0bea1ff9ab615a93a15f3ffbf0d6e1313237fbb13be4d2972f8b"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-1.6/test.spice": {
+      "bytes": 23650,
+      "sha256": "e2ae51ea597db93c1e097ae1ff96b9b6956d48d8fafa0a1c395d812ccacd400f"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-2/ngspice.log": {
+      "bytes": 379,
+      "sha256": "ccc12c2aaea1a51c81ba790222f4e5378dc467cdb513648b84c362674004f7ca"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-2/op.raw": {
+      "bytes": 31907,
+      "sha256": "a32f80e09f59da806e08ced0052ee79cb3992931775dfe45d17aacbff0d3f4a5"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-2/result.json": {
+      "bytes": 37408,
+      "sha256": "f415a8e669a0c8d97b68b218f086c377b133a2b911b84fe30bd7cb409c8e6b61"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-125-2/test.spice": {
+      "bytes": 23522,
+      "sha256": "6c4ffccd4b9edf7299e056cb07fa05fbdefaa0d6253c92e890b5ab79c97976ec"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-0/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-0/op.raw": {
+      "bytes": 31907,
+      "sha256": "90b2f0862b68e62281993457339e1b6b7b75f8e4487ffd96a5dcb4c9bbffbb85"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-0/result.json": {
+      "bytes": 38399,
+      "sha256": "752978a1d6d66534c0e6169d7f6159d525948ed93aa6c14097af74e0f44b1c5a"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-0/test.spice": {
+      "bytes": 23521,
+      "sha256": "63f758d09e30884196db13f05ccb34a46da8253f350bc99160206cab565c8cc4"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.2/op.raw": {
+      "bytes": 31907,
+      "sha256": "ec57336bfb36942440df4e3472aa78b9fd0cd65a7de2325425bdca0c3a1f94c9"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.2/result.json": {
+      "bytes": 37329,
+      "sha256": "3f6e75db3c02ee537bfd94f968702996ff3700fb3e99ffb9298de38340d6d17e"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.2/test.spice": {
+      "bytes": 23649,
+      "sha256": "9c612d2ac85624c4296e5bd2bdaed938d671ac9ef1271322e70ff60c9a30ee9b"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.6/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.6/op.raw": {
+      "bytes": 31907,
+      "sha256": "ff9980cbb013bd35c8dd07f4b4e7b53f5fbd98db93b6a14432d81a59a4d8e823"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.6/result.json": {
+      "bytes": 37334,
+      "sha256": "d1185ff9a2ceb59751182f4047e0823c85875520cb897477f3002585a9db757a"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-1.6/test.spice": {
+      "bytes": 23649,
+      "sha256": "b5c6d5c2c09d3bacc7c65571c9f2bad1f9db8d96880192b8b43ce8add0b7b430"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-2/ngspice.log": {
+      "bytes": 378,
+      "sha256": "4d9135129ded06253682eab40bad60ba04f72101310bf1f9415258a6270c1775"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-2/op.raw": {
+      "bytes": 31907,
+      "sha256": "125823a1ed91d692648fe808fe9d87ea53ef9dcdb85ffbdeae406337a9ae5588"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-2/result.json": {
+      "bytes": 37407,
+      "sha256": "48eded7611be40fd62fe0bae7a5196c4db85a0a937f179bf58d986ae3d9c72a6"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port-27-2/test.spice": {
+      "bytes": 23521,
+      "sha256": "8cbd56498e2e4882c0dfa1407fd8e0f6486150ba66274b22dec392d68c8d61b5"
+    },
+    "build/capture-bank-v5-dc-20260925/rc-port.spice": {
+      "bytes": 1213169,
+      "sha256": "4cbfd073c67349e6c15d087dc09d9766d34f40443dfd6488b1da701eb5fe280a"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-0/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-0/op.raw": {
+      "bytes": 4277,
+      "sha256": "ba84973b2294dba201d33ce4d8b7398322cc81c332b284a4aae77d403913edd7"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-0/result.json": {
+      "bytes": 5454,
+      "sha256": "5ac3e6526c5646d7c98170b50df44f2e460aa2f526e9f57d067225f99460f5a5"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-0/test.spice": {
+      "bytes": 10678,
+      "sha256": "b70119a7951c354f4994e5de87dc4560bc496b11a3c0f0bad28ee2e0855cd5fe"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.2/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.2/op.raw": {
+      "bytes": 4277,
+      "sha256": "d8fa5c24ce56c7f24589aa633f1fdcd42f9427f8c6c4114ff7233ff5c70b54a7"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.2/result.json": {
+      "bytes": 5232,
+      "sha256": "58e185e81db881488857aac15a0aee87c3cc17d692ef82bc006d5bfa66f4e6ff"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.2/test.spice": {
+      "bytes": 10806,
+      "sha256": "742900cb896dd6907ba591d2faecc589eab579ce2c9571a5b1daf8982b300ee8"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.6/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "f090b5610d814596bc508dabaf35e4bf0db2cfb880fa3989c8b10200bf038145"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.6/result.json": {
+      "bytes": 5230,
+      "sha256": "36389809bc33ef7b7e8c16eb9a5a4983982a73cca1f6516f7519bd8f3a3dbea0"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-1.6/test.spice": {
+      "bytes": 10806,
+      "sha256": "f2d8a8f96a9bc112e1897bae690307bab8ae75f637459788fe63b9d0442561d4"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-2/ngspice.log": {
+      "bytes": 347,
+      "sha256": "24a609d19f6f5d5a88e5591ffdc469863740de53d8506bf841f6841aff9b220a"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-2/op.raw": {
+      "bytes": 4277,
+      "sha256": "8449047a429937e0e0ccccb070ae5f19fb16df5c257e4c2a4d0c2a1e8b64f225"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-2/result.json": {
+      "bytes": 5264,
+      "sha256": "614403ab1e49531bb7691d48f6ec5ee85ee88ffc447dba940c9ee8052f2221dc"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-125-2/test.spice": {
+      "bytes": 10678,
+      "sha256": "d952fe3d421e5e74cb1f8d3e78caa76a784322acee30dd7ae66e7a9e9cd5145e"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-0/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-0/op.raw": {
+      "bytes": 4277,
+      "sha256": "df2bac2211bfddff1622e39ae10b91bde7687ca40990cea3ecd24678ebd48fd0"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-0/result.json": {
+      "bytes": 5452,
+      "sha256": "e9ed8b475366f06b3f48a7ff8e3be23d49ef5f95b658b79a42a3f91ad1a629ba"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-0/test.spice": {
+      "bytes": 10677,
+      "sha256": "14d3085a7296e066afaa413a232f0ca2b83f698d973e6a06b4638436df288dbc"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.2/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.2/op.raw": {
+      "bytes": 4277,
+      "sha256": "8a66541811ffb3d9c7a0751f542be23c01f4ce24a44e1f2d073b0e698209cf65"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.2/result.json": {
+      "bytes": 5263,
+      "sha256": "4a62c882438c89a4b926b55ba0f2e794df17877290d2d4acf30c105221930b69"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.2/test.spice": {
+      "bytes": 10805,
+      "sha256": "a9193f2839bde4612f6efb5a300cedefc67b4d2b31ee42571f97cf8c58a7e28c"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.6/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.6/op.raw": {
+      "bytes": 4277,
+      "sha256": "2b7e2c7504abde8e5009a8060949260b181d4cd56adeb5345afee4fa6bfb6b99"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.6/result.json": {
+      "bytes": 5138,
+      "sha256": "83c5e0eb28392e6ad94b32a2ef8966f45c549d6cd87164b7728bbb1825e09a4f"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-1.6/test.spice": {
+      "bytes": 10805,
+      "sha256": "fe6cbf6ccfce0676a14a98ca49d22ddcae6ec4f4f82ed4184b10a237d3c7d343"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-2/ngspice.log": {
+      "bytes": 346,
+      "sha256": "dc7375bc966c6e28642b413e1021606370658491493eb83626ed0f3d98c35551"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-2/op.raw": {
+      "bytes": 4277,
+      "sha256": "0557adac7aa972f1f9f0c51cc782b62e0c20464d9c1d39333553be44fd4bbe61"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-2/result.json": {
+      "bytes": 5262,
+      "sha256": "469735080e3c27a91f7b817ba52446d18b7352f68d90d570927a9a853dc439d8"
+    },
+    "build/capture-bank-v5-dc-20260925/reference-27-2/test.spice": {
+      "bytes": 10677,
+      "sha256": "8fb2bdcdaab5d81af15fb61f1a4075ceabcb073e047d64163bde3233d68d4fc6"
+    },
+    "build/capture-bank-v5-dc-20260925/reference.spice": {
+      "bytes": 81228,
+      "sha256": "c8155cc0e04beba4fc92b9743f56d8e68b571341c6da5ee15c69c538ab67789f"
+    },
+    "build/capture-bank-v5-dc-20260925/report.json": {
+      "bytes": 394874,
+      "sha256": "5c687d94a3aaf21b73f01c461515ad6e99a18ed0e7d036593812aec2aa863360"
+    },
+    "build/capture-bank-v5-dc-20260925/runner.py": {
+      "bytes": 6285,
+      "sha256": "ee4e700482fb6f806ff4e073a555e49d143f745061e63b82dd2873ed0c41b49e"
+    },
+    "build/capture-bank-v5-reset-20260925/.spiceinit": {
+      "bytes": 32,
+      "sha256": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b"
+    },
+    "build/capture-bank-v5-reset-20260925/array.spice": {
+      "bytes": 297944,
+      "sha256": "fac3a08ce57b771226467d381eb47577a28bc52eb737b33ec694f6544a3a2036"
+    },
+    "build/capture-bank-v5-reset-20260925/bank.spice": {
+      "bytes": 1213169,
+      "sha256": "4cbfd073c67349e6c15d087dc09d9766d34f40443dfd6488b1da701eb5fe280a"
+    },
+    "build/capture-bank-v5-reset-20260925/buffer.spice": {
+      "bytes": 469,
+      "sha256": "d04d9d731b5721fa6a833d432228e5e71c928d429779e1480f83e9340006084f"
+    },
+    "build/capture-bank-v5-reset-20260925/ngspice.log": {
+      "bytes": 196,
+      "sha256": "6a2b73443503935470667f4bf4c838dd78cc00ecaa1568ba05d6ccc7cc09d467"
+    },
+    "build/capture-bank-v5-reset-20260925/original-fixture.spice": {
+      "bytes": 80830,
+      "sha256": "2f195f2c085847c905991206f47a9297d9a95128588ece21b03b245b0666b13e"
+    },
+    "build/capture-bank-v5-reset-20260925/result.json": {
+      "bytes": 45576,
+      "sha256": "47edfbdbbe5239cb07a4e32fc8ab75f2cfb02d3734ebbae6fb5d982e95253d8b"
+    },
+    "build/capture-bank-v5-reset-20260925/runner.py": {
+      "bytes": 9436,
+      "sha256": "3614f6171d6c60dde49b501d82135e6cc15a169300d9f2b76db8ab50b3edc3b0"
+    },
+    "build/capture-bank-v5-reset-20260925/stream.raw": {
+      "bytes": 192,
+      "sha256": "04b618df8adb0998663db7472f183c852a3c21bafaf2e92ac5e0648b25681f89"
+    },
+    "build/capture-bank-v5-reset-20260925/test.spice": {
+      "bytes": 55995,
+      "sha256": "f35ffe17a7f9e13e4371dca521136f174a15d3f14ac2556c6cfbf1e798899d34"
+    },
+    "build/capture-bank-v5-reset-20260925/trace-reader.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "docs/README.md": {
+      "bytes": 7852,
+      "sha256": "c0a8960434063a92185b7e23dedf6fd4d9c3aad8841b1994d891b99515be41a6"
+    },
+    "docs/assets/bank-reinforcement.png": {
+      "bytes": 146343,
+      "sha256": "f1b3cbb3ae75c94e9cca239c81f3f7e13ceef246dcffb583865b7ccbdba332f1"
+    },
+    "docs/bank-reinforcement-section.html": {
+      "bytes": 195539,
+      "sha256": "14c2af641e1f05d6d78b9f5e814f74cca88dcc5e94b82102c636d53a6a55e60f"
+    },
+    "docs/bank-reinforcement.md": {
+      "bytes": 5901,
+      "sha256": "51c140fd07f010e926557c95fac9cd346a0f64d0b043197414945255e75a2513"
+    },
+    "docs/bank-routing.md": {
+      "bytes": 5053,
+      "sha256": "f37519f4410c2ab76e46c41eb88a1c80c726f03222bd88b61b1f6e5e9d8bac4a"
+    },
+    "docs/capture-bank.md": {
+      "bytes": 8952,
+      "sha256": "f5c9d178e2d155dc6ab31ee53e9919408598eb8e039a6d9b3315d48670fcc57a"
+    },
+    "docs/completion-dashboard.html": {
+      "bytes": 6529,
+      "sha256": "71a438c54a2c673010047908c885992a71605692cf7007db0c98d24c721f789b"
+    },
+    "docs/overview.html": {
+      "bytes": 19126102,
+      "sha256": "1a897aca3cb84f33f15fdebe83c520a6836513ab4766079a5b6fa567b4c8c2fb"
+    },
+    "scripts/build-capture-bank.py": {
+      "bytes": 10683,
+      "sha256": "79c09cebc73d71a1ad2bdfb7197b8941f4641c2ff9a9237c93f0b6b6617ab083"
+    },
+    "scripts/build-overview.py": {
+      "bytes": 31140,
+      "sha256": "aae1518dfdce145471ea418754c124ceb890ee5799c4a6930de9957b751dd62f"
+    },
+    "scripts/checkpoint-bank-reinforcement.py": {
+      "bytes": 4413,
+      "sha256": "9c1e338ddfc1dc93b8ca33e2a64a4229c10d9576dcba99fb2847c965d9143661"
+    },
+    "scripts/diagnose-bank-routing.py": {
+      "bytes": 11370,
+      "sha256": "b2c52883fb13cf5d262a872f1b69493d0837881ee5abd057bc2985d2f6e59dc0"
+    },
+    "scripts/diagnose-capture-transient.py": {
+      "bytes": 6430,
+      "sha256": "4eef651481d6bd7a6a6922fba887213ada849d1667064d24bcffd602e3e4940a"
+    },
+    "scripts/report-bank-reinforcement.py": {
+      "bytes": 16219,
+      "sha256": "25c069d28f0796cf0f1e6efe13282ffd773f208739ac701f9675f89c1c48bf4a"
+    },
+    "scripts/run-tools.sh": {
+      "bytes": 568,
+      "sha256": "581173547546bac970ec6c890f3d945a15951c4d134da6d1bcea002b1a4d0f43"
+    },
+    "scripts/screen-capture-bank-dc.py": {
+      "bytes": 6285,
+      "sha256": "ee4e700482fb6f806ff4e073a555e49d143f745061e63b82dd2873ed0c41b49e"
+    },
+    "scripts/simulate-capture-bank.py": {
+      "bytes": 9436,
+      "sha256": "3614f6171d6c60dde49b501d82135e6cc15a169300d9f2b76db8ab50b3edc3b0"
+    },
+    "scripts/verify-capture-bank.py": {
+      "bytes": 8130,
+      "sha256": "4de164947c6e3de07d13b20339452fb0dc47737ce4873ec61681dae0baad58e1"
+    },
+    "simulations/bank-reinforcement.json": {
+      "bytes": 702638,
+      "sha256": "accb719771aabb97dfd8a282739f44a615faf21bbe8e89fc43965102451b8ed1"
+    }
+  },
+  "archive_sha256": "7ae5bbab476ee67d77c735ad1b0856374c1b4105f780d788284755da460febae",
+  "archive_bytes": 74448242,
+  "read_back_verified": true,
+  "parts": [
+    {
+      "name": "evidence.tar.gz.part-0000",
+      "bytes": 41943040,
+      "sha256": "556769481041e56816f5e4d76051319a2293021e97fecf3a5d742c05fc1d3f8c"
+    },
+    {
+      "name": "evidence.tar.gz.part-0001",
+      "bytes": 32505202,
+      "sha256": "f249f456362063e37e8cf322623b0c88c346695cf9df275968dbdee8b8e32fd2"
+    }
+  ],
+  "dependencies": {
+    "checkpoints/capture-bank": "48edcea1953f10d433276597577cb08af661a243ed9942e8bb52c67b530ce4f5",
+    "checkpoints/bank-routing": "d6d068d64784f8a8e83c270c55ab77d050f2648ecbf01f06fc622a44b993b4ab"
+  }
+}

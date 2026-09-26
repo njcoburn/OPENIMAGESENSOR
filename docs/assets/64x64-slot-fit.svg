@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="690" viewBox="0 0 1120 690">
+<rect width="1120" height="690" fill="#f8fafc"/>
+<style>text{font-family:Arial,sans-serif;fill:#172033} .small{font-size:13px}</style>
+<text x="30" y="32" font-size="23">64 × 64: slot-fit study</text>
+<text x="30" y="57" class="small">Planning rectangles only • candidate needs a new pixel and bank layout</text>
+<text x="35" y="91" font-size="17">Existing array: does not fit</text>
+<rect x="35" y="110" width="335.28000000000003" height="466.18" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+<text x="690" y="91" font-size="17">Compact candidate budget</text>
+<rect x="690" y="110" width="335.28000000000003" height="466.18" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+<rect x="35" y="110" width="563.2" height="352.0" fill="#ef4444" fill-opacity=".2" stroke="#dc2626" stroke-width="2"/>
+<text x="50" y="145" font-size="16">5.120 × 3.200 mm pixel array</text>
+<text x="50" y="168" class="small">Bank, controls and joins still excluded</text>
+<rect x="728.5" y="121.0" width="281.6" height="281.6" fill="#bfdbfe" stroke="#334155"/>
+<rect x="712.0" y="413.6" width="297.0" height="121.0" fill="#a7f3d0" stroke="#334155"/>
+<rect x="701.0" y="121.0" width="16.5" height="281.6" fill="#fcd34d" stroke="#334155"/>
+<text x="750" y="255" font-size="16">64 × 64 at 40 µm pitch</text>
+<text x="750" y="278" class="small">2.560 × 2.560 mm</text>
+<text x="727" y="458" font-size="15">Capture bank: 2.700 × 1.100 mm</text>
+<text x="727" y="480" class="small">Repacked circuit; not existing GDS</text>
+<text x="35" y="605" font-size="15">Gray outline: 3.048 × 4.238 mm default full-slot core (both panels use the same scale)</text>
+<text x="35" y="631" class="small">Yellow: row-driver budget. Remaining space: routing, references, output/control circuits and margins.</text>
+<text x="35" y="657" class="small">Source: wafer.space linked slot JSON, generated 2026-06-04; checked 2026-09-25. No purchased slot assumed.</text>
+</svg>

@@ -1,0 +1,731 @@
+{
+  "scope": "Two physically joined pixels/capture columns with shared reference MOS and extracted shared buses; conditional-MIM unfilled development control.",
+  "physical": {
+    "scope": "Build a compact shared pixel/capture bank and audit its extracted connections.\n\nUnfilled development control with physical reference MOS and shared wiring.\nReference resistors, control drivers and ADC remain external fixtures.\n",
+    "columns": 2,
+    "column_pitch_um": 40,
+    "bus_y_um": {
+      "GND": -10,
+      "VDD": -20,
+      "BIAS": -30,
+      "PREF": -40,
+      "SC": -50,
+      "SCB": -60,
+      "BUF": -70
+    },
+    "magic_drc_errors": 0,
+    "bbox_um": "(-67.56,-117.8;80.2,860.48)",
+    "ports": [
+      "VDD",
+      "VRESET",
+      "GND",
+      "RST0",
+      "ROW0",
+      "BUF",
+      "SC",
+      "SCB",
+      "BIAS",
+      "PREF",
+      "COL0",
+      "STORE0",
+      "CBUF0",
+      "SEL0",
+      "SELB0",
+      "COL1",
+      "STORE1",
+      "CBUF1",
+      "SEL1",
+      "SELB1"
+    ],
+    "clear_aperture_um": [
+      18,
+      18
+    ],
+    "source_hashes": {
+      "build/compact-capture-v4-20260926/column.gds": "b3b330b5bd5552f8bd47b76f0ee4efe79ab1b41c00e6f36cc92ed19ce9a2d18e",
+      "build/compact-pixel-v1-20260926/pixel.gds": "f2dcf499f516af41fa0233fcf47dba8e03d465fb03d41df733dae9bbfd6bd04d"
+    },
+    "klayout_main_drc_errors": 0,
+    "direct_and_resistor_collapsed_lvs": true,
+    "mos": 22,
+    "mim": 16,
+    "diodes": 2,
+    "resistors": 293,
+    "capacitors": 257,
+    "pixel_roles": {
+      "1": {
+        "sense": "a_8800_n23400.t1",
+        "anode": "GND.t48",
+        "vdd": "VDD.t12"
+      },
+      "0": {
+        "sense": "a_800_n23400.t1",
+        "anode": "GND.t11",
+        "vdd": "VDD.t13"
+      }
+    },
+    "negative_capacitors": [
+      [
+        "C224",
+        "SCB.t0",
+        "GND",
+        "-0.22582f"
+      ],
+      [
+        "C225",
+        "SCB.t1",
+        "GND",
+        "-0.4707f"
+      ],
+      [
+        "C227",
+        "COL0.t3",
+        "GND",
+        "-1.98615f"
+      ],
+      [
+        "C229",
+        "COL0.n0",
+        "GND",
+        "-16.5287f"
+      ],
+      [
+        "C233",
+        "COL1.t3",
+        "GND",
+        "-1.98604f"
+      ],
+      [
+        "C235",
+        "COL1.n0",
+        "GND",
+        "-16.5278f"
+      ],
+      [
+        "C239",
+        "SC.t0",
+        "GND",
+        "-0.96138f"
+      ],
+      [
+        "C240",
+        "SC.t1",
+        "GND",
+        "-1.28797f"
+      ],
+      [
+        "C242",
+        "BIAS.t2",
+        "GND",
+        "-0.74426f"
+      ],
+      [
+        "C243",
+        "BIAS.t3",
+        "GND",
+        "-1.03315f"
+      ],
+      [
+        "C247",
+        "BIAS.n1",
+        "GND",
+        "-2.82899f"
+      ]
+    ],
+    "shunt_approximations": [
+      {
+        "net": "BIAS",
+        "shunts": [
+          [
+            "C111",
+            "BIAS",
+            "GND",
+            "48.8847f"
+          ],
+          [
+            "C242",
+            "BIAS.t2",
+            "GND",
+            "-0.74426f"
+          ],
+          [
+            "C243",
+            "BIAS.t3",
+            "GND",
+            "-1.03315f"
+          ],
+          [
+            "C244",
+            "BIAS.n0",
+            "GND",
+            "22.6997f"
+          ],
+          [
+            "C245",
+            "BIAS.t0",
+            "GND",
+            "1.065f"
+          ],
+          [
+            "C246",
+            "BIAS.t1",
+            "GND",
+            "0.55189f"
+          ],
+          [
+            "C247",
+            "BIAS.n1",
+            "GND",
+            "-2.82899f"
+          ]
+        ],
+        "total_F": 6.859489e-14,
+        "far_node": "BIAS.t2",
+        "far_path_ohm": 43.1095
+      },
+      {
+        "net": "COL0",
+        "shunts": [
+          [
+            "C114",
+            "COL0",
+            "GND",
+            "35.736f"
+          ],
+          [
+            "C227",
+            "COL0.t3",
+            "GND",
+            "-1.98615f"
+          ],
+          [
+            "C228",
+            "COL0.t0",
+            "GND",
+            "1.67423f"
+          ],
+          [
+            "C229",
+            "COL0.n0",
+            "GND",
+            "-16.5287f"
+          ],
+          [
+            "C230",
+            "COL0.t1",
+            "GND",
+            "1.97624f"
+          ],
+          [
+            "C231",
+            "COL0.n1",
+            "GND",
+            "6.19963f"
+          ],
+          [
+            "C232",
+            "COL0.t2",
+            "GND",
+            "8.43391f"
+          ]
+        ],
+        "total_F": 3.550516e-14,
+        "far_node": "COL0.t2",
+        "far_path_ohm": 60.9147
+      },
+      {
+        "net": "COL1",
+        "shunts": [
+          [
+            "C113",
+            "COL1",
+            "GND",
+            "35.7383f"
+          ],
+          [
+            "C233",
+            "COL1.t3",
+            "GND",
+            "-1.98604f"
+          ],
+          [
+            "C234",
+            "COL1.t0",
+            "GND",
+            "1.67414f"
+          ],
+          [
+            "C235",
+            "COL1.n0",
+            "GND",
+            "-16.5278f"
+          ],
+          [
+            "C236",
+            "COL1.t1",
+            "GND",
+            "1.97613f"
+          ],
+          [
+            "C237",
+            "COL1.n1",
+            "GND",
+            "6.19928f"
+          ],
+          [
+            "C238",
+            "COL1.t2",
+            "GND",
+            "8.43343f"
+          ]
+        ],
+        "total_F": 3.550744e-14,
+        "far_node": "COL1.t2",
+        "far_path_ohm": 60.9147
+      },
+      {
+        "net": "SC",
+        "shunts": [
+          [
+            "C112",
+            "SC",
+            "GND",
+            "36.337f"
+          ],
+          [
+            "C239",
+            "SC.t0",
+            "GND",
+            "-0.96138f"
+          ],
+          [
+            "C240",
+            "SC.t1",
+            "GND",
+            "-1.28797f"
+          ],
+          [
+            "C241",
+            "SC.n0",
+            "GND",
+            "22.7089f"
+          ]
+        ],
+        "total_F": 5.6796550000000004e-14,
+        "far_node": "SC.t0",
+        "far_path_ohm": 59.559
+      },
+      {
+        "net": "SCB",
+        "shunts": [
+          [
+            "C115",
+            "SCB",
+            "GND",
+            "35.5566f"
+          ],
+          [
+            "C224",
+            "SCB.t0",
+            "GND",
+            "-0.22582f"
+          ],
+          [
+            "C225",
+            "SCB.t1",
+            "GND",
+            "-0.4707f"
+          ],
+          [
+            "C226",
+            "SCB.n0",
+            "GND",
+            "21.4667f"
+          ]
+        ],
+        "total_F": 5.632678000000001e-14,
+        "far_node": "SCB.t0",
+        "far_path_ohm": 72.4615
+      }
+    ],
+    "hashes": {
+      "rc-sc-far.spice": "286c0935bd481b9b85850cfa986a6be557c7474140568ff99da542779df0db85",
+      "raw-rc.spice": "fb4176ac42a49072a60be46d26c453ddc96daf71c3b447937887a25c16f072ca",
+      "reference.spice": "05dfd83af1c9ed53967629751c3100bf0a7ed2c4db89f7bbc1e47cf4f8fdefc5",
+      "direct.spice": "cb940a6dd8e453fef3824e8ac02f33769d51d39e86357661e95a93d896d06c9a",
+      "rc-far.spice": "d113fcc5505bf486676e7d0eb5aea13248229fb15ff68642799d6aed259cdc93",
+      "rc-scb-far.spice": "edf6b9841a8fc96b5f7795946c70d7450574db57998f4451526966e56485b205",
+      "rc-col0-far.spice": "0db366b6be1ac0de1e8ed9f6fa28f8ffa86774e6b040549acd8560a4970e0308",
+      "rc-col1-far.spice": "f9eb91522bd190fdd490fbbfb9aeb5a8131026734c18f108c75357f432811367",
+      "rc-bias-far.spice": "60086953a3db4d37f46a5859f9f2b45236ac6356e1fbb8f7874fcb1cf217dca8",
+      "collapsed.spice": "6ca394fe795f04894af50c9a0aa5e6b661a50bb52f998a46cca56b910d8805a5",
+      "rc-port.spice": "4a406bbcab576b241d393ca1a26a03fa45fbea17a469cd3c57eb9142c52ed760"
+    },
+    "gds_sha256": "fd6e58803b0882b4c01d636bf09aec8d7017c7e6020fa6ce6b2b542023b984a6"
+  },
+  "electrical": {
+    "scope": "Audit two-column shared capture, contrast patterns and numerical sensitivity.\n\nThis is a bounded development screen, not a repeated-frame/full-bank result.\n",
+    "rows": [
+      {
+        "temperature_C": 27,
+        "lights_pA": [
+          0,
+          0
+        ],
+        "max_total_capture_readout_error_uV": 102.08608945472264,
+        "max_output_tracking_error_uV": 50.61083859292381,
+        "max_schematic_capture_error_uV": 40.165292042981804,
+        "physical_timestep_difference_uV": 0.19922015415119176,
+        "schematic_timestep_difference_uV": 0.20681144441425658,
+        "physical_minus_schematic_magnitude_uV": 2247.955067193441,
+        "max_output_placement_difference_uV": 0.018881423979877354,
+        "max_storage_placement_difference_uV": 0.025011318460776977,
+        "max_storage_reset_window_change_uV": 0.08524926420339085,
+        "first_outputs_V": [
+          2.337897987407406,
+          2.337916769868692
+        ],
+        "late_minus_first_output_uV": [
+          -0.7984090037993496,
+          -0.8142070893057962
+        ]
+      },
+      {
+        "temperature_C": 27,
+        "lights_pA": [
+          0,
+          240
+        ],
+        "max_total_capture_readout_error_uV": 148.3529824823915,
+        "max_output_tracking_error_uV": 50.611140088197004,
+        "max_schematic_capture_error_uV": 179.68811090884884,
+        "physical_timestep_difference_uV": 0.20314649917807515,
+        "schematic_timestep_difference_uV": 0.2049271481396886,
+        "physical_minus_schematic_magnitude_uV": 5802.269679708427,
+        "max_output_placement_difference_uV": 0.017791290662927395,
+        "max_storage_placement_difference_uV": 0.022879416444743228,
+        "max_storage_reset_window_change_uV": 0.09016724997201742,
+        "first_outputs_V": [
+          2.337897647480431,
+          1.7874478240430494
+        ],
+        "late_minus_first_output_uV": [
+          -0.798073687136025,
+          1.6635243116347453
+        ]
+      },
+      {
+        "temperature_C": 27,
+        "lights_pA": [
+          240,
+          0
+        ],
+        "max_total_capture_readout_error_uV": 144.91610178679616,
+        "max_output_tracking_error_uV": 31.745912736358406,
+        "max_schematic_capture_error_uV": 174.4383124051563,
+        "physical_timestep_difference_uV": 0.14151295690822963,
+        "schematic_timestep_difference_uV": 0.15984224210896514,
+        "physical_minus_schematic_magnitude_uV": 5820.4718768284365,
+        "max_output_placement_difference_uV": 0.014510086021601865,
+        "max_storage_placement_difference_uV": 0.017393663509501778,
+        "max_storage_reset_window_change_uV": 0.08587726152420316,
+        "first_outputs_V": [
+          1.787460760377233,
+          2.337912304111477
+        ],
+        "late_minus_first_output_uV": [
+          1.6630210943890944,
+          -0.8145479100107877
+        ]
+      },
+      {
+        "temperature_C": 27,
+        "lights_pA": [
+          80,
+          80
+        ],
+        "max_total_capture_readout_error_uV": 24.799344271020374,
+        "max_output_tracking_error_uV": 115.42965479049982,
+        "max_schematic_capture_error_uV": 69.50709228092933,
+        "physical_timestep_difference_uV": 0.29374494570078014,
+        "schematic_timestep_difference_uV": 0.2878204798939521,
+        "physical_minus_schematic_magnitude_uV": 4099.476249266765,
+        "max_output_placement_difference_uV": 0.029898064468625307,
+        "max_storage_placement_difference_uV": 0.03751078314628842,
+        "max_storage_reset_window_change_uV": 0.08563771924929853,
+        "first_outputs_V": [
+          2.140227555372371,
+          2.1402626407712364
+        ],
+        "late_minus_first_output_uV": [
+          -0.3752783248600622,
+          -0.3973132254309064
+        ]
+      },
+      {
+        "temperature_C": 27,
+        "lights_pA": [
+          240,
+          240
+        ],
+        "max_total_capture_readout_error_uV": 147.72916838579064,
+        "max_output_tracking_error_uV": 15.51484780448753,
+        "max_schematic_capture_error_uV": 177.70681973439116,
+        "physical_timestep_difference_uV": 0.09001225875771013,
+        "schematic_timestep_difference_uV": 0.09111002463590978,
+        "physical_minus_schematic_magnitude_uV": 5820.9164392437615,
+        "max_output_placement_difference_uV": 0.01886517653204578,
+        "max_storage_placement_difference_uV": 0.023721712566482367,
+        "max_storage_reset_window_change_uV": 0.09078003029849846,
+        "first_outputs_V": [
+          1.78746061546259,
+          1.7874462131812994
+        ],
+        "late_minus_first_output_uV": [
+          1.662659253609533,
+          1.6635268920150992
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "lights_pA": [
+          0,
+          0
+        ],
+        "max_total_capture_readout_error_uV": 419.0333921330058,
+        "max_output_tracking_error_uV": 281.1517367971028,
+        "max_schematic_capture_error_uV": 348.90730634407066,
+        "physical_timestep_difference_uV": 0.4236077009167616,
+        "schematic_timestep_difference_uV": 0.40110295307371757,
+        "physical_minus_schematic_magnitude_uV": 2294.0485087636907,
+        "max_output_placement_difference_uV": 0.022189085679968912,
+        "max_storage_placement_difference_uV": 0.026978371314712035,
+        "max_storage_reset_window_change_uV": 0.24515372976097183,
+        "first_outputs_V": [
+          2.3001900181267843,
+          2.3002950173164005
+        ],
+        "late_minus_first_output_uV": [
+          -125.86060445007874,
+          -125.38791802896299
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "lights_pA": [
+          0,
+          240
+        ],
+        "max_total_capture_readout_error_uV": 418.10695767807715,
+        "max_output_tracking_error_uV": 281.16349152540465,
+        "max_schematic_capture_error_uV": 349.7970907089254,
+        "physical_timestep_difference_uV": 0.43078370337568117,
+        "schematic_timestep_difference_uV": 0.40908065468414634,
+        "physical_minus_schematic_magnitude_uV": 5590.926746518398,
+        "max_output_placement_difference_uV": 0.01813308636577915,
+        "max_storage_placement_difference_uV": 0.023155201533953118,
+        "max_storage_reset_window_change_uV": 0.24466169268322346,
+        "first_outputs_V": [
+          2.30018937616813,
+          1.7690162162069367
+        ],
+        "late_minus_first_output_uV": [
+          -125.85738325432416,
+          -107.95937543428558
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "lights_pA": [
+          240,
+          0
+        ],
+        "max_total_capture_readout_error_uV": 324.7233806060734,
+        "max_output_tracking_error_uV": 183.51465395571864,
+        "max_schematic_capture_error_uV": 260.0103486742888,
+        "physical_timestep_difference_uV": 0.3689710355025966,
+        "schematic_timestep_difference_uV": 0.3903286076578638,
+        "physical_minus_schematic_magnitude_uV": 5609.861763314683,
+        "max_output_placement_difference_uV": 0.016931372748274498,
+        "max_storage_placement_difference_uV": 0.022838534952107636,
+        "max_storage_reset_window_change_uV": 0.2388669393393883,
+        "first_outputs_V": [
+          1.7690092899207155,
+          2.300268349552237
+        ],
+        "late_minus_first_output_uV": [
+          -108.33612710015039,
+          -125.39009600631701
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "lights_pA": [
+          80,
+          80
+        ],
+        "max_total_capture_readout_error_uV": 203.55416880413202,
+        "max_output_tracking_error_uV": 246.7814866888851,
+        "max_schematic_capture_error_uV": 141.94809797807295,
+        "physical_timestep_difference_uV": 0.39435727083869665,
+        "schematic_timestep_difference_uV": 0.4023401065644805,
+        "physical_minus_schematic_magnitude_uV": 4134.839397144318,
+        "max_output_placement_difference_uV": 0.019673185303048513,
+        "max_storage_placement_difference_uV": 0.02528360132370011,
+        "max_storage_reset_window_change_uV": 0.23193882747740702,
+        "first_outputs_V": [
+          2.10325984284992,
+          2.1033408159288416
+        ],
+        "late_minus_first_output_uV": [
+          -119.44669219010606,
+          -119.06741877343308
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "lights_pA": [
+          240,
+          240
+        ],
+        "max_total_capture_readout_error_uV": 170.52423104679804,
+        "max_output_tracking_error_uV": 65.77990965350722,
+        "max_schematic_capture_error_uV": 202.52394040620737,
+        "physical_timestep_difference_uV": 0.20218969365437545,
+        "schematic_timestep_difference_uV": 0.20675314416074286,
+        "physical_minus_schematic_magnitude_uV": 5610.249233700016,
+        "max_output_placement_difference_uV": 0.017287559606060654,
+        "max_storage_placement_difference_uV": 0.022560527390691476,
+        "max_storage_reset_window_change_uV": 0.19690691402396432,
+        "first_outputs_V": [
+          1.7690090118672996,
+          1.769008525191353
+        ],
+        "late_minus_first_output_uV": [
+          -108.3300157289635,
+          -107.94978016837042
+        ]
+      }
+    ],
+    "neighbor_pattern_response": [
+      {
+        "temperature_C": 27,
+        "column": 0,
+        "light_pA": 0,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -0.3399269750126166,
+          -0.33959165834929195
+        ]
+      },
+      {
+        "temperature_C": 27,
+        "column": 0,
+        "light_pA": 240,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -0.14491464295218748,
+          -0.14527648373174884
+        ]
+      },
+      {
+        "temperature_C": 27,
+        "column": 1,
+        "light_pA": 0,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -4.465757214688892,
+          -4.466098035393884
+        ]
+      },
+      {
+        "temperature_C": 27,
+        "column": 1,
+        "light_pA": 240,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -1.6108617499899225,
+          -1.6108591696095687
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "column": 0,
+        "light_pA": 0,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -0.6419586542349975,
+          -0.6387374584804206
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "column": 0,
+        "light_pA": 240,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -0.2780534158475234,
+          -0.27194204466063354
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "column": 1,
+        "light_pA": 0,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -26.667764163601504,
+          -26.669942140955527
+        ]
+      },
+      {
+        "temperature_C": 125,
+        "column": 1,
+        "light_pA": 240,
+        "neighbor_0_to_240_pA_output_changes_uV": [
+          -7.691015583732863,
+          -7.681420317817711
+        ]
+      }
+    ],
+    "checks": {
+      "capture_readout_pass": true,
+      "output_tracking_pass": true,
+      "schematic_capture_pass": true,
+      "timestep_pass": true,
+      "placement_pass": true,
+      "contrast_order_pass": true,
+      "brightness_order_pass": true
+    },
+    "all_checks_pass": true,
+    "main_transients": 40,
+    "placement_transients": 60,
+    "dc_references": 240,
+    "placements_tested": [
+      "rc-port",
+      "rc-far",
+      "rc-bias-far",
+      "rc-col0-far",
+      "rc-col1-far",
+      "rc-sc-far",
+      "rc-scb-far"
+    ],
+    "layout": "build/compact-bank-c2-v1-20260926",
+    "layout_gds_sha256": "fd6e58803b0882b4c01d636bf09aec8d7017c7e6020fa6ce6b2b542023b984a6",
+    "waveform_audit": "Every transient and DC trace finite and complete; transient monotonic/max-step checks; capture, sampled values and reference errors independently recomputed.",
+    "limits": "Typical process/nominal wire RC; two columns; five imposed photocurrent patterns; one capture/two reads per column; external bias resistors, behavioral drivers and ADC; no real decoder, repeated frames, full loading or manufacturing qualification."
+  },
+  "maxima": {
+    "max_total_capture_readout_error_uV": 419.0333921330058,
+    "max_output_tracking_error_uV": 281.16349152540465,
+    "max_schematic_capture_error_uV": 349.7970907089254,
+    "physical_timestep_difference_uV": 0.43078370337568117,
+    "schematic_timestep_difference_uV": 0.40908065468414634,
+    "physical_minus_schematic_magnitude_uV": 5820.9164392437615,
+    "max_output_placement_difference_uV": 0.029898064468625307,
+    "max_storage_placement_difference_uV": 0.03751078314628842,
+    "max_storage_reset_window_change_uV": 0.24515372976097183,
+    "late_minus_first_output_uV": 125.86060445007874,
+    "neighbor_pattern_response_uV": 26.669942140955527
+  },
+  "reference_transient_fallbacks": 0,
+  "selected_layout": "build/compact-bank-c2-v1-20260926",
+  "selected_matrix": "build/compact-bank-c2-matrix-v1-20260926",
+  "source_hashes": {
+    "build/compact-bank-c2-v1-20260926/verification.json": "5e7a2a42f683a79d3ef0f2d430825437bf73a79ab8e2d23b79d33a0ff3d0d084",
+    "build/compact-bank-c2-matrix-v1-20260926/report.json": "efb6687ed4dc09ea4ecf4b626a562899835b94d42b33e60c68a4c01972e00033"
+  }
+}

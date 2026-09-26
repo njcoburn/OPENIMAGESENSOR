@@ -1,0 +1,882 @@
+Extracted strip imaging
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+.include /foss/designs/build/grid-readout-20260924/27-100/r1c64-rc-port/array.spice
+.include /foss/designs/build/grid-readout-20260924/27-100/r1c64-rc-port/buffer.spice
+.temp 27
+.options gmin=1e-17 abstol=1e-16 reltol=1e-06 chgtol=1e-18 trtol=1 method=trap
+Vsource RAW 0 3.3
+Rsupply RAW VDD 2
+Bresetdrive VRESET 0 I=(V(VRESET)-2)/1
+Xarray VDD VRESET 0 RST0 ROW0 COL0 COL1 COL2 COL3 COL4 COL5 COL6 COL7 COL8 COL9 COL10 COL11 COL12 COL13 COL14 COL15 COL16 COL17 COL18 COL19 COL20 COL21 COL22 COL23 COL24 COL25 COL26 COL27 COL28 COL29 COL30 COL31 COL32 COL33 COL34 COL35 COL36 COL37 COL38 COL39 COL40 COL41 COL42 COL43 COL44 COL45 COL46 COL47 COL48 COL49 COL50 COL51 COL52 COL53 COL54 COL55 COL56 COL57 COL58 COL59 COL60 COL61 COL62 COL63 array
+Bdrive_ROW0 ROW0 0 I=(V(ROW0)-V(CTL_ROW0)*V(VDD))/100
+Rpull_ROW0 ROW0 0 100k
+Bdrive_RST0 RST0 0 I=(V(RST0)-V(CTL_RST0)*V(VDD))/100
+Rpull_RST0 RST0 VDD 100k
+Bdrive_SEL0 SEL0 0 I=(V(SEL0)-V(CTL_SEL0)*V(VDD))/100
+Rpull_SEL0 SEL0 0 100k
+Bdrive_SEL1 SEL1 0 I=(V(SEL1)-V(CTL_SEL1)*V(VDD))/100
+Rpull_SEL1 SEL1 0 100k
+Bdrive_SEL2 SEL2 0 I=(V(SEL2)-V(CTL_SEL2)*V(VDD))/100
+Rpull_SEL2 SEL2 0 100k
+Bdrive_SEL3 SEL3 0 I=(V(SEL3)-V(CTL_SEL3)*V(VDD))/100
+Rpull_SEL3 SEL3 0 100k
+Bdrive_SEL4 SEL4 0 I=(V(SEL4)-V(CTL_SEL4)*V(VDD))/100
+Rpull_SEL4 SEL4 0 100k
+Bdrive_SEL5 SEL5 0 I=(V(SEL5)-V(CTL_SEL5)*V(VDD))/100
+Rpull_SEL5 SEL5 0 100k
+Bdrive_SEL6 SEL6 0 I=(V(SEL6)-V(CTL_SEL6)*V(VDD))/100
+Rpull_SEL6 SEL6 0 100k
+Bdrive_SEL7 SEL7 0 I=(V(SEL7)-V(CTL_SEL7)*V(VDD))/100
+Rpull_SEL7 SEL7 0 100k
+Bdrive_SEL8 SEL8 0 I=(V(SEL8)-V(CTL_SEL8)*V(VDD))/100
+Rpull_SEL8 SEL8 0 100k
+Bdrive_SEL9 SEL9 0 I=(V(SEL9)-V(CTL_SEL9)*V(VDD))/100
+Rpull_SEL9 SEL9 0 100k
+Bdrive_SEL10 SEL10 0 I=(V(SEL10)-V(CTL_SEL10)*V(VDD))/100
+Rpull_SEL10 SEL10 0 100k
+Bdrive_SEL11 SEL11 0 I=(V(SEL11)-V(CTL_SEL11)*V(VDD))/100
+Rpull_SEL11 SEL11 0 100k
+Bdrive_SEL12 SEL12 0 I=(V(SEL12)-V(CTL_SEL12)*V(VDD))/100
+Rpull_SEL12 SEL12 0 100k
+Bdrive_SEL13 SEL13 0 I=(V(SEL13)-V(CTL_SEL13)*V(VDD))/100
+Rpull_SEL13 SEL13 0 100k
+Bdrive_SEL14 SEL14 0 I=(V(SEL14)-V(CTL_SEL14)*V(VDD))/100
+Rpull_SEL14 SEL14 0 100k
+Bdrive_SEL15 SEL15 0 I=(V(SEL15)-V(CTL_SEL15)*V(VDD))/100
+Rpull_SEL15 SEL15 0 100k
+Bdrive_SEL16 SEL16 0 I=(V(SEL16)-V(CTL_SEL16)*V(VDD))/100
+Rpull_SEL16 SEL16 0 100k
+Bdrive_SEL17 SEL17 0 I=(V(SEL17)-V(CTL_SEL17)*V(VDD))/100
+Rpull_SEL17 SEL17 0 100k
+Bdrive_SEL18 SEL18 0 I=(V(SEL18)-V(CTL_SEL18)*V(VDD))/100
+Rpull_SEL18 SEL18 0 100k
+Bdrive_SEL19 SEL19 0 I=(V(SEL19)-V(CTL_SEL19)*V(VDD))/100
+Rpull_SEL19 SEL19 0 100k
+Bdrive_SEL20 SEL20 0 I=(V(SEL20)-V(CTL_SEL20)*V(VDD))/100
+Rpull_SEL20 SEL20 0 100k
+Bdrive_SEL21 SEL21 0 I=(V(SEL21)-V(CTL_SEL21)*V(VDD))/100
+Rpull_SEL21 SEL21 0 100k
+Bdrive_SEL22 SEL22 0 I=(V(SEL22)-V(CTL_SEL22)*V(VDD))/100
+Rpull_SEL22 SEL22 0 100k
+Bdrive_SEL23 SEL23 0 I=(V(SEL23)-V(CTL_SEL23)*V(VDD))/100
+Rpull_SEL23 SEL23 0 100k
+Bdrive_SEL24 SEL24 0 I=(V(SEL24)-V(CTL_SEL24)*V(VDD))/100
+Rpull_SEL24 SEL24 0 100k
+Bdrive_SEL25 SEL25 0 I=(V(SEL25)-V(CTL_SEL25)*V(VDD))/100
+Rpull_SEL25 SEL25 0 100k
+Bdrive_SEL26 SEL26 0 I=(V(SEL26)-V(CTL_SEL26)*V(VDD))/100
+Rpull_SEL26 SEL26 0 100k
+Bdrive_SEL27 SEL27 0 I=(V(SEL27)-V(CTL_SEL27)*V(VDD))/100
+Rpull_SEL27 SEL27 0 100k
+Bdrive_SEL28 SEL28 0 I=(V(SEL28)-V(CTL_SEL28)*V(VDD))/100
+Rpull_SEL28 SEL28 0 100k
+Bdrive_SEL29 SEL29 0 I=(V(SEL29)-V(CTL_SEL29)*V(VDD))/100
+Rpull_SEL29 SEL29 0 100k
+Bdrive_SEL30 SEL30 0 I=(V(SEL30)-V(CTL_SEL30)*V(VDD))/100
+Rpull_SEL30 SEL30 0 100k
+Bdrive_SEL31 SEL31 0 I=(V(SEL31)-V(CTL_SEL31)*V(VDD))/100
+Rpull_SEL31 SEL31 0 100k
+Bdrive_SEL32 SEL32 0 I=(V(SEL32)-V(CTL_SEL32)*V(VDD))/100
+Rpull_SEL32 SEL32 0 100k
+Bdrive_SEL33 SEL33 0 I=(V(SEL33)-V(CTL_SEL33)*V(VDD))/100
+Rpull_SEL33 SEL33 0 100k
+Bdrive_SEL34 SEL34 0 I=(V(SEL34)-V(CTL_SEL34)*V(VDD))/100
+Rpull_SEL34 SEL34 0 100k
+Bdrive_SEL35 SEL35 0 I=(V(SEL35)-V(CTL_SEL35)*V(VDD))/100
+Rpull_SEL35 SEL35 0 100k
+Bdrive_SEL36 SEL36 0 I=(V(SEL36)-V(CTL_SEL36)*V(VDD))/100
+Rpull_SEL36 SEL36 0 100k
+Bdrive_SEL37 SEL37 0 I=(V(SEL37)-V(CTL_SEL37)*V(VDD))/100
+Rpull_SEL37 SEL37 0 100k
+Bdrive_SEL38 SEL38 0 I=(V(SEL38)-V(CTL_SEL38)*V(VDD))/100
+Rpull_SEL38 SEL38 0 100k
+Bdrive_SEL39 SEL39 0 I=(V(SEL39)-V(CTL_SEL39)*V(VDD))/100
+Rpull_SEL39 SEL39 0 100k
+Bdrive_SEL40 SEL40 0 I=(V(SEL40)-V(CTL_SEL40)*V(VDD))/100
+Rpull_SEL40 SEL40 0 100k
+Bdrive_SEL41 SEL41 0 I=(V(SEL41)-V(CTL_SEL41)*V(VDD))/100
+Rpull_SEL41 SEL41 0 100k
+Bdrive_SEL42 SEL42 0 I=(V(SEL42)-V(CTL_SEL42)*V(VDD))/100
+Rpull_SEL42 SEL42 0 100k
+Bdrive_SEL43 SEL43 0 I=(V(SEL43)-V(CTL_SEL43)*V(VDD))/100
+Rpull_SEL43 SEL43 0 100k
+Bdrive_SEL44 SEL44 0 I=(V(SEL44)-V(CTL_SEL44)*V(VDD))/100
+Rpull_SEL44 SEL44 0 100k
+Bdrive_SEL45 SEL45 0 I=(V(SEL45)-V(CTL_SEL45)*V(VDD))/100
+Rpull_SEL45 SEL45 0 100k
+Bdrive_SEL46 SEL46 0 I=(V(SEL46)-V(CTL_SEL46)*V(VDD))/100
+Rpull_SEL46 SEL46 0 100k
+Bdrive_SEL47 SEL47 0 I=(V(SEL47)-V(CTL_SEL47)*V(VDD))/100
+Rpull_SEL47 SEL47 0 100k
+Bdrive_SEL48 SEL48 0 I=(V(SEL48)-V(CTL_SEL48)*V(VDD))/100
+Rpull_SEL48 SEL48 0 100k
+Bdrive_SEL49 SEL49 0 I=(V(SEL49)-V(CTL_SEL49)*V(VDD))/100
+Rpull_SEL49 SEL49 0 100k
+Bdrive_SEL50 SEL50 0 I=(V(SEL50)-V(CTL_SEL50)*V(VDD))/100
+Rpull_SEL50 SEL50 0 100k
+Bdrive_SEL51 SEL51 0 I=(V(SEL51)-V(CTL_SEL51)*V(VDD))/100
+Rpull_SEL51 SEL51 0 100k
+Bdrive_SEL52 SEL52 0 I=(V(SEL52)-V(CTL_SEL52)*V(VDD))/100
+Rpull_SEL52 SEL52 0 100k
+Bdrive_SEL53 SEL53 0 I=(V(SEL53)-V(CTL_SEL53)*V(VDD))/100
+Rpull_SEL53 SEL53 0 100k
+Bdrive_SEL54 SEL54 0 I=(V(SEL54)-V(CTL_SEL54)*V(VDD))/100
+Rpull_SEL54 SEL54 0 100k
+Bdrive_SEL55 SEL55 0 I=(V(SEL55)-V(CTL_SEL55)*V(VDD))/100
+Rpull_SEL55 SEL55 0 100k
+Bdrive_SEL56 SEL56 0 I=(V(SEL56)-V(CTL_SEL56)*V(VDD))/100
+Rpull_SEL56 SEL56 0 100k
+Bdrive_SEL57 SEL57 0 I=(V(SEL57)-V(CTL_SEL57)*V(VDD))/100
+Rpull_SEL57 SEL57 0 100k
+Bdrive_SEL58 SEL58 0 I=(V(SEL58)-V(CTL_SEL58)*V(VDD))/100
+Rpull_SEL58 SEL58 0 100k
+Bdrive_SEL59 SEL59 0 I=(V(SEL59)-V(CTL_SEL59)*V(VDD))/100
+Rpull_SEL59 SEL59 0 100k
+Bdrive_SEL60 SEL60 0 I=(V(SEL60)-V(CTL_SEL60)*V(VDD))/100
+Rpull_SEL60 SEL60 0 100k
+Bdrive_SEL61 SEL61 0 I=(V(SEL61)-V(CTL_SEL61)*V(VDD))/100
+Rpull_SEL61 SEL61 0 100k
+Bdrive_SEL62 SEL62 0 I=(V(SEL62)-V(CTL_SEL62)*V(VDD))/100
+Rpull_SEL62 SEL62 0 100k
+Bdrive_SEL63 SEL63 0 I=(V(SEL63)-V(CTL_SEL63)*V(VDD))/100
+Rpull_SEL63 SEL63 0 100k
+Rbias VDD BIAS 500000
+Cbias BIAS 0 1p
+Xref BIAS BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias0 COL0 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias1 COL1 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias2 COL2 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias3 COL3 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias4 COL4 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias5 COL5 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias6 COL6 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias7 COL7 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias8 COL8 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias9 COL9 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias10 COL10 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias11 COL11 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias12 COL12 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias13 COL13 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias14 COL14 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias15 COL15 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias16 COL16 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias17 COL17 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias18 COL18 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias19 COL19 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias20 COL20 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias21 COL21 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias22 COL22 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias23 COL23 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias24 COL24 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias25 COL25 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias26 COL26 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias27 COL27 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias28 COL28 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias29 COL29 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias30 COL30 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias31 COL31 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias32 COL32 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias33 COL33 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias34 COL34 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias35 COL35 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias36 COL36 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias37 COL37 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias38 COL38 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias39 COL39 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias40 COL40 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias41 COL41 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias42 COL42 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias43 COL43 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias44 COL44 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias45 COL45 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias46 COL46 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias47 COL47 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias48 COL48 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias49 COL49 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias50 COL50 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias51 COL51 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias52 COL52 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias53 COL53 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias54 COL54 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias55 COL55 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias56 COL56 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias57 COL57 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias58 COL58 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias59 COL59 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias60 COL60 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias61 COL61 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias62 COL62 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xbias63 COL63 BIAS 0 0 nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Rpref PREF 0 12400
+Cpref PREF 0 1p
+Rbond BUF BOND 1
+Lbond BOND ADC_PAD 5n
+Cexternal ADC_PAD 0 1p
+Riso ADC_PAD ADCIN 100
+Cboard ADCIN 0 100p
+Rinput ADCIN 0 1Meg
+Csample HOLD 0 20p
+Bsample ADCIN HOLD I=V(ADCIN,HOLD)*(1e-12+(0.01-1e-12)*(0.5+0.5*tanh((V(ACQ)-1.65)/0.1)))
+Bsample_reset HOLD 0 I=V(HOLD)*(1e-12+(0.01-1e-12)*(0.5+0.5*tanh((V(RSTADC)-1.65)/0.1)))
+Xstorage_ref PREF PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Cbus BUF 0 1p
+Rbus BUF 0 1T
+Bcapture SC 0 I=(V(SC)-V(CTL_SC)*V(VDD))/100
+Bcapture_inv SCB 0 I=(V(SCB)-(1-V(CTL_SC))*V(VDD))/100
+Cstore0 STORE0 0 40p
+Bselinv0 SELB0 0 I=(V(SELB0)-(1-V(CTL_SEL0))*V(VDD))/100
+Xholdn0 COL0 SC STORE0 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp0 COL0 SCB STORE0 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload0 CBUF0 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow0 0 STORE0 CBUF0 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn0 BUF SEL0 CBUF0 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp0 BUF SELB0 CBUF0 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore1 STORE1 0 40p
+Bselinv1 SELB1 0 I=(V(SELB1)-(1-V(CTL_SEL1))*V(VDD))/100
+Xholdn1 COL1 SC STORE1 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp1 COL1 SCB STORE1 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload1 CBUF1 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow1 0 STORE1 CBUF1 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn1 BUF SEL1 CBUF1 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp1 BUF SELB1 CBUF1 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore2 STORE2 0 40p
+Bselinv2 SELB2 0 I=(V(SELB2)-(1-V(CTL_SEL2))*V(VDD))/100
+Xholdn2 COL2 SC STORE2 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp2 COL2 SCB STORE2 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload2 CBUF2 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow2 0 STORE2 CBUF2 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn2 BUF SEL2 CBUF2 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp2 BUF SELB2 CBUF2 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore3 STORE3 0 40p
+Bselinv3 SELB3 0 I=(V(SELB3)-(1-V(CTL_SEL3))*V(VDD))/100
+Xholdn3 COL3 SC STORE3 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp3 COL3 SCB STORE3 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload3 CBUF3 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow3 0 STORE3 CBUF3 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn3 BUF SEL3 CBUF3 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp3 BUF SELB3 CBUF3 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore4 STORE4 0 40p
+Bselinv4 SELB4 0 I=(V(SELB4)-(1-V(CTL_SEL4))*V(VDD))/100
+Xholdn4 COL4 SC STORE4 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp4 COL4 SCB STORE4 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload4 CBUF4 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow4 0 STORE4 CBUF4 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn4 BUF SEL4 CBUF4 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp4 BUF SELB4 CBUF4 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore5 STORE5 0 40p
+Bselinv5 SELB5 0 I=(V(SELB5)-(1-V(CTL_SEL5))*V(VDD))/100
+Xholdn5 COL5 SC STORE5 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp5 COL5 SCB STORE5 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload5 CBUF5 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow5 0 STORE5 CBUF5 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn5 BUF SEL5 CBUF5 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp5 BUF SELB5 CBUF5 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore6 STORE6 0 40p
+Bselinv6 SELB6 0 I=(V(SELB6)-(1-V(CTL_SEL6))*V(VDD))/100
+Xholdn6 COL6 SC STORE6 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp6 COL6 SCB STORE6 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload6 CBUF6 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow6 0 STORE6 CBUF6 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn6 BUF SEL6 CBUF6 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp6 BUF SELB6 CBUF6 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore7 STORE7 0 40p
+Bselinv7 SELB7 0 I=(V(SELB7)-(1-V(CTL_SEL7))*V(VDD))/100
+Xholdn7 COL7 SC STORE7 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp7 COL7 SCB STORE7 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload7 CBUF7 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow7 0 STORE7 CBUF7 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn7 BUF SEL7 CBUF7 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp7 BUF SELB7 CBUF7 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore8 STORE8 0 40p
+Bselinv8 SELB8 0 I=(V(SELB8)-(1-V(CTL_SEL8))*V(VDD))/100
+Xholdn8 COL8 SC STORE8 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp8 COL8 SCB STORE8 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload8 CBUF8 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow8 0 STORE8 CBUF8 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn8 BUF SEL8 CBUF8 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp8 BUF SELB8 CBUF8 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore9 STORE9 0 40p
+Bselinv9 SELB9 0 I=(V(SELB9)-(1-V(CTL_SEL9))*V(VDD))/100
+Xholdn9 COL9 SC STORE9 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp9 COL9 SCB STORE9 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload9 CBUF9 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow9 0 STORE9 CBUF9 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn9 BUF SEL9 CBUF9 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp9 BUF SELB9 CBUF9 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore10 STORE10 0 40p
+Bselinv10 SELB10 0 I=(V(SELB10)-(1-V(CTL_SEL10))*V(VDD))/100
+Xholdn10 COL10 SC STORE10 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp10 COL10 SCB STORE10 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload10 CBUF10 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow10 0 STORE10 CBUF10 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn10 BUF SEL10 CBUF10 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp10 BUF SELB10 CBUF10 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore11 STORE11 0 40p
+Bselinv11 SELB11 0 I=(V(SELB11)-(1-V(CTL_SEL11))*V(VDD))/100
+Xholdn11 COL11 SC STORE11 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp11 COL11 SCB STORE11 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload11 CBUF11 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow11 0 STORE11 CBUF11 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn11 BUF SEL11 CBUF11 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp11 BUF SELB11 CBUF11 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore12 STORE12 0 40p
+Bselinv12 SELB12 0 I=(V(SELB12)-(1-V(CTL_SEL12))*V(VDD))/100
+Xholdn12 COL12 SC STORE12 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp12 COL12 SCB STORE12 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload12 CBUF12 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow12 0 STORE12 CBUF12 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn12 BUF SEL12 CBUF12 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp12 BUF SELB12 CBUF12 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore13 STORE13 0 40p
+Bselinv13 SELB13 0 I=(V(SELB13)-(1-V(CTL_SEL13))*V(VDD))/100
+Xholdn13 COL13 SC STORE13 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp13 COL13 SCB STORE13 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload13 CBUF13 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow13 0 STORE13 CBUF13 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn13 BUF SEL13 CBUF13 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp13 BUF SELB13 CBUF13 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore14 STORE14 0 40p
+Bselinv14 SELB14 0 I=(V(SELB14)-(1-V(CTL_SEL14))*V(VDD))/100
+Xholdn14 COL14 SC STORE14 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp14 COL14 SCB STORE14 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload14 CBUF14 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow14 0 STORE14 CBUF14 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn14 BUF SEL14 CBUF14 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp14 BUF SELB14 CBUF14 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore15 STORE15 0 40p
+Bselinv15 SELB15 0 I=(V(SELB15)-(1-V(CTL_SEL15))*V(VDD))/100
+Xholdn15 COL15 SC STORE15 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp15 COL15 SCB STORE15 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload15 CBUF15 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow15 0 STORE15 CBUF15 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn15 BUF SEL15 CBUF15 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp15 BUF SELB15 CBUF15 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore16 STORE16 0 40p
+Bselinv16 SELB16 0 I=(V(SELB16)-(1-V(CTL_SEL16))*V(VDD))/100
+Xholdn16 COL16 SC STORE16 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp16 COL16 SCB STORE16 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload16 CBUF16 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow16 0 STORE16 CBUF16 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn16 BUF SEL16 CBUF16 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp16 BUF SELB16 CBUF16 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore17 STORE17 0 40p
+Bselinv17 SELB17 0 I=(V(SELB17)-(1-V(CTL_SEL17))*V(VDD))/100
+Xholdn17 COL17 SC STORE17 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp17 COL17 SCB STORE17 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload17 CBUF17 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow17 0 STORE17 CBUF17 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn17 BUF SEL17 CBUF17 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp17 BUF SELB17 CBUF17 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore18 STORE18 0 40p
+Bselinv18 SELB18 0 I=(V(SELB18)-(1-V(CTL_SEL18))*V(VDD))/100
+Xholdn18 COL18 SC STORE18 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp18 COL18 SCB STORE18 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload18 CBUF18 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow18 0 STORE18 CBUF18 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn18 BUF SEL18 CBUF18 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp18 BUF SELB18 CBUF18 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore19 STORE19 0 40p
+Bselinv19 SELB19 0 I=(V(SELB19)-(1-V(CTL_SEL19))*V(VDD))/100
+Xholdn19 COL19 SC STORE19 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp19 COL19 SCB STORE19 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload19 CBUF19 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow19 0 STORE19 CBUF19 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn19 BUF SEL19 CBUF19 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp19 BUF SELB19 CBUF19 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore20 STORE20 0 40p
+Bselinv20 SELB20 0 I=(V(SELB20)-(1-V(CTL_SEL20))*V(VDD))/100
+Xholdn20 COL20 SC STORE20 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp20 COL20 SCB STORE20 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload20 CBUF20 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow20 0 STORE20 CBUF20 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn20 BUF SEL20 CBUF20 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp20 BUF SELB20 CBUF20 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore21 STORE21 0 40p
+Bselinv21 SELB21 0 I=(V(SELB21)-(1-V(CTL_SEL21))*V(VDD))/100
+Xholdn21 COL21 SC STORE21 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp21 COL21 SCB STORE21 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload21 CBUF21 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow21 0 STORE21 CBUF21 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn21 BUF SEL21 CBUF21 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp21 BUF SELB21 CBUF21 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore22 STORE22 0 40p
+Bselinv22 SELB22 0 I=(V(SELB22)-(1-V(CTL_SEL22))*V(VDD))/100
+Xholdn22 COL22 SC STORE22 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp22 COL22 SCB STORE22 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload22 CBUF22 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow22 0 STORE22 CBUF22 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn22 BUF SEL22 CBUF22 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp22 BUF SELB22 CBUF22 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore23 STORE23 0 40p
+Bselinv23 SELB23 0 I=(V(SELB23)-(1-V(CTL_SEL23))*V(VDD))/100
+Xholdn23 COL23 SC STORE23 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp23 COL23 SCB STORE23 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload23 CBUF23 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow23 0 STORE23 CBUF23 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn23 BUF SEL23 CBUF23 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp23 BUF SELB23 CBUF23 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore24 STORE24 0 40p
+Bselinv24 SELB24 0 I=(V(SELB24)-(1-V(CTL_SEL24))*V(VDD))/100
+Xholdn24 COL24 SC STORE24 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp24 COL24 SCB STORE24 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload24 CBUF24 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow24 0 STORE24 CBUF24 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn24 BUF SEL24 CBUF24 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp24 BUF SELB24 CBUF24 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore25 STORE25 0 40p
+Bselinv25 SELB25 0 I=(V(SELB25)-(1-V(CTL_SEL25))*V(VDD))/100
+Xholdn25 COL25 SC STORE25 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp25 COL25 SCB STORE25 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload25 CBUF25 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow25 0 STORE25 CBUF25 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn25 BUF SEL25 CBUF25 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp25 BUF SELB25 CBUF25 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore26 STORE26 0 40p
+Bselinv26 SELB26 0 I=(V(SELB26)-(1-V(CTL_SEL26))*V(VDD))/100
+Xholdn26 COL26 SC STORE26 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp26 COL26 SCB STORE26 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload26 CBUF26 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow26 0 STORE26 CBUF26 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn26 BUF SEL26 CBUF26 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp26 BUF SELB26 CBUF26 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore27 STORE27 0 40p
+Bselinv27 SELB27 0 I=(V(SELB27)-(1-V(CTL_SEL27))*V(VDD))/100
+Xholdn27 COL27 SC STORE27 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp27 COL27 SCB STORE27 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload27 CBUF27 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow27 0 STORE27 CBUF27 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn27 BUF SEL27 CBUF27 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp27 BUF SELB27 CBUF27 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore28 STORE28 0 40p
+Bselinv28 SELB28 0 I=(V(SELB28)-(1-V(CTL_SEL28))*V(VDD))/100
+Xholdn28 COL28 SC STORE28 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp28 COL28 SCB STORE28 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload28 CBUF28 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow28 0 STORE28 CBUF28 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn28 BUF SEL28 CBUF28 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp28 BUF SELB28 CBUF28 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore29 STORE29 0 40p
+Bselinv29 SELB29 0 I=(V(SELB29)-(1-V(CTL_SEL29))*V(VDD))/100
+Xholdn29 COL29 SC STORE29 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp29 COL29 SCB STORE29 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload29 CBUF29 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow29 0 STORE29 CBUF29 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn29 BUF SEL29 CBUF29 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp29 BUF SELB29 CBUF29 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore30 STORE30 0 40p
+Bselinv30 SELB30 0 I=(V(SELB30)-(1-V(CTL_SEL30))*V(VDD))/100
+Xholdn30 COL30 SC STORE30 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp30 COL30 SCB STORE30 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload30 CBUF30 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow30 0 STORE30 CBUF30 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn30 BUF SEL30 CBUF30 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp30 BUF SELB30 CBUF30 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore31 STORE31 0 40p
+Bselinv31 SELB31 0 I=(V(SELB31)-(1-V(CTL_SEL31))*V(VDD))/100
+Xholdn31 COL31 SC STORE31 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp31 COL31 SCB STORE31 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload31 CBUF31 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow31 0 STORE31 CBUF31 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn31 BUF SEL31 CBUF31 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp31 BUF SELB31 CBUF31 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore32 STORE32 0 40p
+Bselinv32 SELB32 0 I=(V(SELB32)-(1-V(CTL_SEL32))*V(VDD))/100
+Xholdn32 COL32 SC STORE32 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp32 COL32 SCB STORE32 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload32 CBUF32 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow32 0 STORE32 CBUF32 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn32 BUF SEL32 CBUF32 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp32 BUF SELB32 CBUF32 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore33 STORE33 0 40p
+Bselinv33 SELB33 0 I=(V(SELB33)-(1-V(CTL_SEL33))*V(VDD))/100
+Xholdn33 COL33 SC STORE33 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp33 COL33 SCB STORE33 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload33 CBUF33 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow33 0 STORE33 CBUF33 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn33 BUF SEL33 CBUF33 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp33 BUF SELB33 CBUF33 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore34 STORE34 0 40p
+Bselinv34 SELB34 0 I=(V(SELB34)-(1-V(CTL_SEL34))*V(VDD))/100
+Xholdn34 COL34 SC STORE34 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp34 COL34 SCB STORE34 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload34 CBUF34 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow34 0 STORE34 CBUF34 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn34 BUF SEL34 CBUF34 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp34 BUF SELB34 CBUF34 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore35 STORE35 0 40p
+Bselinv35 SELB35 0 I=(V(SELB35)-(1-V(CTL_SEL35))*V(VDD))/100
+Xholdn35 COL35 SC STORE35 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp35 COL35 SCB STORE35 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload35 CBUF35 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow35 0 STORE35 CBUF35 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn35 BUF SEL35 CBUF35 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp35 BUF SELB35 CBUF35 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore36 STORE36 0 40p
+Bselinv36 SELB36 0 I=(V(SELB36)-(1-V(CTL_SEL36))*V(VDD))/100
+Xholdn36 COL36 SC STORE36 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp36 COL36 SCB STORE36 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload36 CBUF36 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow36 0 STORE36 CBUF36 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn36 BUF SEL36 CBUF36 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp36 BUF SELB36 CBUF36 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore37 STORE37 0 40p
+Bselinv37 SELB37 0 I=(V(SELB37)-(1-V(CTL_SEL37))*V(VDD))/100
+Xholdn37 COL37 SC STORE37 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp37 COL37 SCB STORE37 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload37 CBUF37 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow37 0 STORE37 CBUF37 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn37 BUF SEL37 CBUF37 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp37 BUF SELB37 CBUF37 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore38 STORE38 0 40p
+Bselinv38 SELB38 0 I=(V(SELB38)-(1-V(CTL_SEL38))*V(VDD))/100
+Xholdn38 COL38 SC STORE38 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp38 COL38 SCB STORE38 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload38 CBUF38 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow38 0 STORE38 CBUF38 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn38 BUF SEL38 CBUF38 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp38 BUF SELB38 CBUF38 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore39 STORE39 0 40p
+Bselinv39 SELB39 0 I=(V(SELB39)-(1-V(CTL_SEL39))*V(VDD))/100
+Xholdn39 COL39 SC STORE39 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp39 COL39 SCB STORE39 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload39 CBUF39 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow39 0 STORE39 CBUF39 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn39 BUF SEL39 CBUF39 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp39 BUF SELB39 CBUF39 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore40 STORE40 0 40p
+Bselinv40 SELB40 0 I=(V(SELB40)-(1-V(CTL_SEL40))*V(VDD))/100
+Xholdn40 COL40 SC STORE40 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp40 COL40 SCB STORE40 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload40 CBUF40 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow40 0 STORE40 CBUF40 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn40 BUF SEL40 CBUF40 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp40 BUF SELB40 CBUF40 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore41 STORE41 0 40p
+Bselinv41 SELB41 0 I=(V(SELB41)-(1-V(CTL_SEL41))*V(VDD))/100
+Xholdn41 COL41 SC STORE41 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp41 COL41 SCB STORE41 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload41 CBUF41 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow41 0 STORE41 CBUF41 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn41 BUF SEL41 CBUF41 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp41 BUF SELB41 CBUF41 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore42 STORE42 0 40p
+Bselinv42 SELB42 0 I=(V(SELB42)-(1-V(CTL_SEL42))*V(VDD))/100
+Xholdn42 COL42 SC STORE42 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp42 COL42 SCB STORE42 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload42 CBUF42 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow42 0 STORE42 CBUF42 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn42 BUF SEL42 CBUF42 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp42 BUF SELB42 CBUF42 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore43 STORE43 0 40p
+Bselinv43 SELB43 0 I=(V(SELB43)-(1-V(CTL_SEL43))*V(VDD))/100
+Xholdn43 COL43 SC STORE43 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp43 COL43 SCB STORE43 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload43 CBUF43 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow43 0 STORE43 CBUF43 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn43 BUF SEL43 CBUF43 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp43 BUF SELB43 CBUF43 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore44 STORE44 0 40p
+Bselinv44 SELB44 0 I=(V(SELB44)-(1-V(CTL_SEL44))*V(VDD))/100
+Xholdn44 COL44 SC STORE44 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp44 COL44 SCB STORE44 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload44 CBUF44 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow44 0 STORE44 CBUF44 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn44 BUF SEL44 CBUF44 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp44 BUF SELB44 CBUF44 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore45 STORE45 0 40p
+Bselinv45 SELB45 0 I=(V(SELB45)-(1-V(CTL_SEL45))*V(VDD))/100
+Xholdn45 COL45 SC STORE45 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp45 COL45 SCB STORE45 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload45 CBUF45 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow45 0 STORE45 CBUF45 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn45 BUF SEL45 CBUF45 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp45 BUF SELB45 CBUF45 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore46 STORE46 0 40p
+Bselinv46 SELB46 0 I=(V(SELB46)-(1-V(CTL_SEL46))*V(VDD))/100
+Xholdn46 COL46 SC STORE46 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp46 COL46 SCB STORE46 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload46 CBUF46 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow46 0 STORE46 CBUF46 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn46 BUF SEL46 CBUF46 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp46 BUF SELB46 CBUF46 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore47 STORE47 0 40p
+Bselinv47 SELB47 0 I=(V(SELB47)-(1-V(CTL_SEL47))*V(VDD))/100
+Xholdn47 COL47 SC STORE47 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp47 COL47 SCB STORE47 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload47 CBUF47 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow47 0 STORE47 CBUF47 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn47 BUF SEL47 CBUF47 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp47 BUF SELB47 CBUF47 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore48 STORE48 0 40p
+Bselinv48 SELB48 0 I=(V(SELB48)-(1-V(CTL_SEL48))*V(VDD))/100
+Xholdn48 COL48 SC STORE48 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp48 COL48 SCB STORE48 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload48 CBUF48 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow48 0 STORE48 CBUF48 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn48 BUF SEL48 CBUF48 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp48 BUF SELB48 CBUF48 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore49 STORE49 0 40p
+Bselinv49 SELB49 0 I=(V(SELB49)-(1-V(CTL_SEL49))*V(VDD))/100
+Xholdn49 COL49 SC STORE49 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp49 COL49 SCB STORE49 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload49 CBUF49 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow49 0 STORE49 CBUF49 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn49 BUF SEL49 CBUF49 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp49 BUF SELB49 CBUF49 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore50 STORE50 0 40p
+Bselinv50 SELB50 0 I=(V(SELB50)-(1-V(CTL_SEL50))*V(VDD))/100
+Xholdn50 COL50 SC STORE50 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp50 COL50 SCB STORE50 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload50 CBUF50 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow50 0 STORE50 CBUF50 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn50 BUF SEL50 CBUF50 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp50 BUF SELB50 CBUF50 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore51 STORE51 0 40p
+Bselinv51 SELB51 0 I=(V(SELB51)-(1-V(CTL_SEL51))*V(VDD))/100
+Xholdn51 COL51 SC STORE51 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp51 COL51 SCB STORE51 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload51 CBUF51 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow51 0 STORE51 CBUF51 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn51 BUF SEL51 CBUF51 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp51 BUF SELB51 CBUF51 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore52 STORE52 0 40p
+Bselinv52 SELB52 0 I=(V(SELB52)-(1-V(CTL_SEL52))*V(VDD))/100
+Xholdn52 COL52 SC STORE52 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp52 COL52 SCB STORE52 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload52 CBUF52 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow52 0 STORE52 CBUF52 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn52 BUF SEL52 CBUF52 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp52 BUF SELB52 CBUF52 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore53 STORE53 0 40p
+Bselinv53 SELB53 0 I=(V(SELB53)-(1-V(CTL_SEL53))*V(VDD))/100
+Xholdn53 COL53 SC STORE53 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp53 COL53 SCB STORE53 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload53 CBUF53 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow53 0 STORE53 CBUF53 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn53 BUF SEL53 CBUF53 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp53 BUF SELB53 CBUF53 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore54 STORE54 0 40p
+Bselinv54 SELB54 0 I=(V(SELB54)-(1-V(CTL_SEL54))*V(VDD))/100
+Xholdn54 COL54 SC STORE54 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp54 COL54 SCB STORE54 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload54 CBUF54 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow54 0 STORE54 CBUF54 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn54 BUF SEL54 CBUF54 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp54 BUF SELB54 CBUF54 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore55 STORE55 0 40p
+Bselinv55 SELB55 0 I=(V(SELB55)-(1-V(CTL_SEL55))*V(VDD))/100
+Xholdn55 COL55 SC STORE55 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp55 COL55 SCB STORE55 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload55 CBUF55 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow55 0 STORE55 CBUF55 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn55 BUF SEL55 CBUF55 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp55 BUF SELB55 CBUF55 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore56 STORE56 0 40p
+Bselinv56 SELB56 0 I=(V(SELB56)-(1-V(CTL_SEL56))*V(VDD))/100
+Xholdn56 COL56 SC STORE56 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp56 COL56 SCB STORE56 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload56 CBUF56 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow56 0 STORE56 CBUF56 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn56 BUF SEL56 CBUF56 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp56 BUF SELB56 CBUF56 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore57 STORE57 0 40p
+Bselinv57 SELB57 0 I=(V(SELB57)-(1-V(CTL_SEL57))*V(VDD))/100
+Xholdn57 COL57 SC STORE57 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp57 COL57 SCB STORE57 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload57 CBUF57 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow57 0 STORE57 CBUF57 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn57 BUF SEL57 CBUF57 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp57 BUF SELB57 CBUF57 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore58 STORE58 0 40p
+Bselinv58 SELB58 0 I=(V(SELB58)-(1-V(CTL_SEL58))*V(VDD))/100
+Xholdn58 COL58 SC STORE58 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp58 COL58 SCB STORE58 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload58 CBUF58 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow58 0 STORE58 CBUF58 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn58 BUF SEL58 CBUF58 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp58 BUF SELB58 CBUF58 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore59 STORE59 0 40p
+Bselinv59 SELB59 0 I=(V(SELB59)-(1-V(CTL_SEL59))*V(VDD))/100
+Xholdn59 COL59 SC STORE59 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp59 COL59 SCB STORE59 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload59 CBUF59 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow59 0 STORE59 CBUF59 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn59 BUF SEL59 CBUF59 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp59 BUF SELB59 CBUF59 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore60 STORE60 0 40p
+Bselinv60 SELB60 0 I=(V(SELB60)-(1-V(CTL_SEL60))*V(VDD))/100
+Xholdn60 COL60 SC STORE60 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp60 COL60 SCB STORE60 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload60 CBUF60 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow60 0 STORE60 CBUF60 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn60 BUF SEL60 CBUF60 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp60 BUF SELB60 CBUF60 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore61 STORE61 0 40p
+Bselinv61 SELB61 0 I=(V(SELB61)-(1-V(CTL_SEL61))*V(VDD))/100
+Xholdn61 COL61 SC STORE61 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp61 COL61 SCB STORE61 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload61 CBUF61 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow61 0 STORE61 CBUF61 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn61 BUF SEL61 CBUF61 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp61 BUF SELB61 CBUF61 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore62 STORE62 0 40p
+Bselinv62 SELB62 0 I=(V(SELB62)-(1-V(CTL_SEL62))*V(VDD))/100
+Xholdn62 COL62 SC STORE62 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp62 COL62 SCB STORE62 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload62 CBUF62 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow62 0 STORE62 CBUF62 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn62 BUF SEL62 CBUF62 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp62 BUF SELB62 CBUF62 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Cstore63 STORE63 0 40p
+Bselinv63 SELB63 0 I=(V(SELB63)-(1-V(CTL_SEL63))*V(VDD))/100
+Xholdn63 COL63 SC STORE63 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp63 COL63 SCB STORE63 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload63 CBUF63 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow63 0 STORE63 CBUF63 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn63 BUF SEL63 CBUF63 0 nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp63 BUF SELB63 CBUF63 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Ilight_0_1 xarray.pixel_physical_62/photodiode_0.K.t1 xarray.GND.t15 80p
+Ilight_0_6 xarray.pixel_physical_57/photodiode_0.K.t1 xarray.GND.t283 0p
+Ilight_0_13 xarray.pixel_physical_50/photodiode_0.K.t1 xarray.GND.t161 80p
+Ilight_0_60 xarray.pixel_physical_3/photodiode_0.K.t1 xarray.GND.t271 0p
+Ilight_0_4 xarray.pixel_physical_59/photodiode_0.K.t1 xarray.GND.t259 80p
+Ilight_0_62 xarray.pixel_physical_1/photodiode_0.K.t1 xarray.GND.t303 240p
+Ilight_0_9 xarray.pixel_physical_54/photodiode_0.K.t1 xarray.GND.t291 0p
+Ilight_0_16 xarray.pixel_physical_47/photodiode_0.K.t1 xarray.GND.t183 80p
+Ilight_0_23 xarray.pixel_physical_40/photodiode_0.K.t1 xarray.GND.t98 240p
+Ilight_0_25 xarray.pixel_physical_38/photodiode_0.K.t1 xarray.GND.t111 80p
+Ilight_0_32 xarray.pixel_physical_31/photodiode_0.K.t1 xarray.GND.t6 240p
+Ilight_0_39 xarray.pixel_physical_24/photodiode_0.K.t1 xarray.GND.t155 0p
+Ilight_0_53 xarray.pixel_physical_10/photodiode_0.K.t1 xarray.GND.t2 240p
+Ilight_0_46 xarray.pixel_physical_17/photodiode_0.K.t1 xarray.GND.t151 80p
+Ilight_0_35 xarray.pixel_physical_28/photodiode_0.K.t1 xarray.GND.t266 240p
+Ilight_0_49 xarray.pixel_physical_14/photodiode_0.K.t1 xarray.GND.t273 80p
+Ilight_0_42 xarray.pixel_physical_21/photodiode_0.K.t1 xarray.GND.t127 0p
+Ilight_0_2 xarray.pixel_physical_61/photodiode_0.K.t1 xarray.GND.t300 240p
+Ilight_0_7 xarray.pixel_physical_56/photodiode_0.K.t1 xarray.GND.t278 80p
+Ilight_0_14 xarray.pixel_physical_49/photodiode_0.K.t1 xarray.GND.t105 240p
+Ilight_0_21 xarray.pixel_physical_42/photodiode_0.K.t1 xarray.GND.t157 0p
+Ilight_0_28 xarray.pixel_physical_35/photodiode_0.K.t1 xarray.GND.t8 80p
+Ilight_0_5 xarray.pixel_physical_58/photodiode_0.K.t1 xarray.GND.t12 240p
+Ilight_0_37 xarray.pixel_physical_26/photodiode_0.K.t1 xarray.GND.t166 80p
+Ilight_0_58 xarray.pixel_physical_5/photodiode_0.K.t1 xarray.GND.t117 80p
+Ilight_0_51 xarray.pixel_physical_12/photodiode_0.K.t1 xarray.GND.t175 0p
+Ilight_0_44 xarray.pixel_physical_19/photodiode_0.K.t1 xarray.GND.t192 240p
+Ilight_0_10 xarray.pixel_physical_53/photodiode_0.K.t1 xarray.GND.t305 80p
+Ilight_0_17 xarray.pixel_physical_46/photodiode_0.K.t1 xarray.GND.t170 240p
+Ilight_0_24 xarray.pixel_physical_39/photodiode_0.K.t1 xarray.GND.t317 0p
+Ilight_0_61 xarray.pixel_physical_2/photodiode_0.K.t1 xarray.GND.t89 80p
+Ilight_0_54 xarray.pixel_physical_9/photodiode_0.K.t1 xarray.GND.t20 0p
+Ilight_0_47 xarray.pixel_physical_16/photodiode_0.K.t1 xarray.GND.t188 240p
+Ilight_0_40 xarray.pixel_physical_23/photodiode_0.K.t1 xarray.GND.t119 80p
+Ilight_0_63 xarray.pixel_physical_0/photodiode_0.K.t1 xarray.GND.t296 0p
+Ilight_0_0 xarray.pixel_physical_63/photodiode_0.K.t1 xarray.GND.t262 0p
+Ilight_0_33 xarray.pixel_physical_30/photodiode_0.K.t1 xarray.GND.t121 0p
+Ilight_0_12 xarray.pixel_physical_51/photodiode_0.K.t1 xarray.GND.t149 0p
+Ilight_0_19 xarray.pixel_physical_44/photodiode_0.K.t1 xarray.GND.t186 80p
+Ilight_0_26 xarray.pixel_physical_37/photodiode_0.K.t1 xarray.GND.t314 240p
+Ilight_0_56 xarray.pixel_physical_7/photodiode_0.K.t1 xarray.GND.t309 240p
+Ilight_0_29 xarray.pixel_physical_34/photodiode_0.K.t1 xarray.GND.t143 240p
+Ilight_0_36 xarray.pixel_physical_27/photodiode_0.K.t1 xarray.GND.t179 0p
+Ilight_0_43 xarray.pixel_physical_20/photodiode_0.K.t1 xarray.GND.t135 80p
+Ilight_0_15 xarray.pixel_physical_48/photodiode_0.K.t1 xarray.GND.t275 0p
+Ilight_0_22 xarray.pixel_physical_41/photodiode_0.K.t1 xarray.GND.t101 80p
+Ilight_0_59 xarray.pixel_physical_4/photodiode_0.K.t1 xarray.GND.t95 240p
+Ilight_0_52 xarray.pixel_physical_11/photodiode_0.K.t1 xarray.GND.t307 80p
+Ilight_0_45 xarray.pixel_physical_18/photodiode_0.K.t1 xarray.GND.t280 0p
+Ilight_0_3 xarray.pixel_physical_60/photodiode_0.K.t1 xarray.GND.t264 0p
+Ilight_0_8 xarray.pixel_physical_55/photodiode_0.K.t1 xarray.GND.t108 240p
+Ilight_0_55 xarray.pixel_physical_8/photodiode_0.K.t1 xarray.GND.t0 80p
+Ilight_0_31 xarray.pixel_physical_32/photodiode_0.K.t1 xarray.GND.t141 80p
+Ilight_0_38 xarray.pixel_physical_25/photodiode_0.K.t1 xarray.GND.t138 240p
+Ilight_0_11 xarray.pixel_physical_52/photodiode_0.K.t1 xarray.GND.t163 240p
+Ilight_0_18 xarray.pixel_physical_45/photodiode_0.K.t1 xarray.GND.t103 0p
+Ilight_0_20 xarray.pixel_physical_43/photodiode_0.K.t1 xarray.GND.t311 240p
+Ilight_0_27 xarray.pixel_physical_36/photodiode_0.K.t1 xarray.GND.t146 0p
+Ilight_0_34 xarray.pixel_physical_29/photodiode_0.K.t1 xarray.GND.t114 80p
+Ilight_0_48 xarray.pixel_physical_15/photodiode_0.K.t1 xarray.GND.t177 0p
+Ilight_0_41 xarray.pixel_physical_22/photodiode_0.K.t1 xarray.GND.t153 240p
+Ilight_0_57 xarray.pixel_physical_6/photodiode_0.K.t1 xarray.GND.t173 0p
+Ilight_0_50 xarray.pixel_physical_13/photodiode_0.K.t1 xarray.GND.t132 240p
+Ilight_0_30 xarray.pixel_physical_33/photodiode_0.K.t1 xarray.GND.t268 0p
+Vctl_ROW0 CTL_ROW0 0 PWL(0 0 0.0012 0 0.00120001 1 0.001402 1 0.00140201 0)
+Vctl_RST0 CTL_RST0 0 PWL(0 1 0.0002 1 0.00020001 1 0.00022 1 0.00022001 0 0.001403 0 0.00140301 1 0.002701 1 0.00270101 0)
+Vctl_SEL0 CTL_SEL0 0 PWL(0 0 0.00141 0 0.00141001 1 0.001426 1 0.00142601 0)
+Vctl_SEL1 CTL_SEL1 0 PWL(0 0 0.00143 0 0.00143001 1 0.001446 1 0.00144601 0)
+Vctl_SEL2 CTL_SEL2 0 PWL(0 0 0.00145 0 0.00145001 1 0.001466 1 0.00146601 0)
+Vctl_SEL3 CTL_SEL3 0 PWL(0 0 0.00147 0 0.00147001 1 0.001486 1 0.00148601 0)
+Vctl_SEL4 CTL_SEL4 0 PWL(0 0 0.00149 0 0.00149001 1 0.001506 1 0.00150601 0)
+Vctl_SEL5 CTL_SEL5 0 PWL(0 0 0.00151 0 0.00151001 1 0.001526 1 0.00152601 0)
+Vctl_SEL6 CTL_SEL6 0 PWL(0 0 0.00153 0 0.00153001 1 0.001546 1 0.00154601 0)
+Vctl_SEL7 CTL_SEL7 0 PWL(0 0 0.00155 0 0.00155001 1 0.001566 1 0.00156601 0)
+Vctl_SEL8 CTL_SEL8 0 PWL(0 0 0.00157 0 0.00157001 1 0.001586 1 0.00158601 0)
+Vctl_SEL9 CTL_SEL9 0 PWL(0 0 0.00159 0 0.00159001 1 0.001606 1 0.00160601 0)
+Vctl_SEL10 CTL_SEL10 0 PWL(0 0 0.00161 0 0.00161001 1 0.001626 1 0.00162601 0)
+Vctl_SEL11 CTL_SEL11 0 PWL(0 0 0.00163 0 0.00163001 1 0.001646 1 0.00164601 0)
+Vctl_SEL12 CTL_SEL12 0 PWL(0 0 0.00165 0 0.00165001 1 0.001666 1 0.00166601 0)
+Vctl_SEL13 CTL_SEL13 0 PWL(0 0 0.00167 0 0.00167001 1 0.001686 1 0.00168601 0)
+Vctl_SEL14 CTL_SEL14 0 PWL(0 0 0.00169 0 0.00169001 1 0.001706 1 0.00170601 0)
+Vctl_SEL15 CTL_SEL15 0 PWL(0 0 0.00171 0 0.00171001 1 0.001726 1 0.00172601 0)
+Vctl_SEL16 CTL_SEL16 0 PWL(0 0 0.00173 0 0.00173001 1 0.001746 1 0.00174601 0)
+Vctl_SEL17 CTL_SEL17 0 PWL(0 0 0.00175 0 0.00175001 1 0.001766 1 0.00176601 0)
+Vctl_SEL18 CTL_SEL18 0 PWL(0 0 0.00177 0 0.00177001 1 0.001786 1 0.00178601 0)
+Vctl_SEL19 CTL_SEL19 0 PWL(0 0 0.00179 0 0.00179001 1 0.001806 1 0.00180601 0)
+Vctl_SEL20 CTL_SEL20 0 PWL(0 0 0.00181 0 0.00181001 1 0.001826 1 0.00182601 0)
+Vctl_SEL21 CTL_SEL21 0 PWL(0 0 0.00183 0 0.00183001 1 0.001846 1 0.00184601 0)
+Vctl_SEL22 CTL_SEL22 0 PWL(0 0 0.00185 0 0.00185001 1 0.001866 1 0.00186601 0)
+Vctl_SEL23 CTL_SEL23 0 PWL(0 0 0.00187 0 0.00187001 1 0.001886 1 0.00188601 0)
+Vctl_SEL24 CTL_SEL24 0 PWL(0 0 0.00189 0 0.00189001 1 0.001906 1 0.00190601 0)
+Vctl_SEL25 CTL_SEL25 0 PWL(0 0 0.00191 0 0.00191001 1 0.001926 1 0.00192601 0)
+Vctl_SEL26 CTL_SEL26 0 PWL(0 0 0.00193 0 0.00193001 1 0.001946 1 0.00194601 0)
+Vctl_SEL27 CTL_SEL27 0 PWL(0 0 0.00195 0 0.00195001 1 0.001966 1 0.00196601 0)
+Vctl_SEL28 CTL_SEL28 0 PWL(0 0 0.00197 0 0.00197001 1 0.001986 1 0.00198601 0)
+Vctl_SEL29 CTL_SEL29 0 PWL(0 0 0.00199 0 0.00199001 1 0.002006 1 0.00200601 0)
+Vctl_SEL30 CTL_SEL30 0 PWL(0 0 0.00201 0 0.00201001 1 0.002026 1 0.00202601 0)
+Vctl_SEL31 CTL_SEL31 0 PWL(0 0 0.00203 0 0.00203001 1 0.002046 1 0.00204601 0)
+Vctl_SEL32 CTL_SEL32 0 PWL(0 0 0.00205 0 0.00205001 1 0.002066 1 0.00206601 0)
+Vctl_SEL33 CTL_SEL33 0 PWL(0 0 0.00207 0 0.00207001 1 0.002086 1 0.00208601 0)
+Vctl_SEL34 CTL_SEL34 0 PWL(0 0 0.00209 0 0.00209001 1 0.002106 1 0.00210601 0)
+Vctl_SEL35 CTL_SEL35 0 PWL(0 0 0.00211 0 0.00211001 1 0.002126 1 0.00212601 0)
+Vctl_SEL36 CTL_SEL36 0 PWL(0 0 0.00213 0 0.00213001 1 0.002146 1 0.00214601 0)
+Vctl_SEL37 CTL_SEL37 0 PWL(0 0 0.00215 0 0.00215001 1 0.002166 1 0.00216601 0)
+Vctl_SEL38 CTL_SEL38 0 PWL(0 0 0.00217 0 0.00217001 1 0.002186 1 0.00218601 0)
+Vctl_SEL39 CTL_SEL39 0 PWL(0 0 0.00219 0 0.00219001 1 0.002206 1 0.00220601 0)
+Vctl_SEL40 CTL_SEL40 0 PWL(0 0 0.00221 0 0.00221001 1 0.002226 1 0.00222601 0)
+Vctl_SEL41 CTL_SEL41 0 PWL(0 0 0.00223 0 0.00223001 1 0.002246 1 0.00224601 0)
+Vctl_SEL42 CTL_SEL42 0 PWL(0 0 0.00225 0 0.00225001 1 0.002266 1 0.00226601 0)
+Vctl_SEL43 CTL_SEL43 0 PWL(0 0 0.00227 0 0.00227001 1 0.002286 1 0.00228601 0)
+Vctl_SEL44 CTL_SEL44 0 PWL(0 0 0.00229 0 0.00229001 1 0.002306 1 0.00230601 0)
+Vctl_SEL45 CTL_SEL45 0 PWL(0 0 0.00231 0 0.00231001 1 0.002326 1 0.00232601 0)
+Vctl_SEL46 CTL_SEL46 0 PWL(0 0 0.00233 0 0.00233001 1 0.002346 1 0.00234601 0)
+Vctl_SEL47 CTL_SEL47 0 PWL(0 0 0.00235 0 0.00235001 1 0.002366 1 0.00236601 0)
+Vctl_SEL48 CTL_SEL48 0 PWL(0 0 0.00237 0 0.00237001 1 0.002386 1 0.00238601 0)
+Vctl_SEL49 CTL_SEL49 0 PWL(0 0 0.00239 0 0.00239001 1 0.002406 1 0.00240601 0)
+Vctl_SEL50 CTL_SEL50 0 PWL(0 0 0.00241 0 0.00241001 1 0.002426 1 0.00242601 0)
+Vctl_SEL51 CTL_SEL51 0 PWL(0 0 0.00243 0 0.00243001 1 0.002446 1 0.00244601 0)
+Vctl_SEL52 CTL_SEL52 0 PWL(0 0 0.00245 0 0.00245001 1 0.002466 1 0.00246601 0)
+Vctl_SEL53 CTL_SEL53 0 PWL(0 0 0.00247 0 0.00247001 1 0.002486 1 0.00248601 0)
+Vctl_SEL54 CTL_SEL54 0 PWL(0 0 0.00249 0 0.00249001 1 0.002506 1 0.00250601 0)
+Vctl_SEL55 CTL_SEL55 0 PWL(0 0 0.00251 0 0.00251001 1 0.002526 1 0.00252601 0)
+Vctl_SEL56 CTL_SEL56 0 PWL(0 0 0.00253 0 0.00253001 1 0.002546 1 0.00254601 0)
+Vctl_SEL57 CTL_SEL57 0 PWL(0 0 0.00255 0 0.00255001 1 0.002566 1 0.00256601 0)
+Vctl_SEL58 CTL_SEL58 0 PWL(0 0 0.00257 0 0.00257001 1 0.002586 1 0.00258601 0)
+Vctl_SEL59 CTL_SEL59 0 PWL(0 0 0.00259 0 0.00259001 1 0.002606 1 0.00260601 0)
+Vctl_SEL60 CTL_SEL60 0 PWL(0 0 0.00261 0 0.00261001 1 0.002626 1 0.00262601 0)
+Vctl_SEL61 CTL_SEL61 0 PWL(0 0 0.00263 0 0.00263001 1 0.002646 1 0.00264601 0)
+Vctl_SEL62 CTL_SEL62 0 PWL(0 0 0.00265 0 0.00265001 1 0.002666 1 0.00266601 0)
+Vctl_SEL63 CTL_SEL63 0 PWL(0 0 0.00267 0 0.00267001 1 0.002686 1 0.00268601 0)
+Vctl_sc CTL_SC 0 PWL(0 1 0.0014 1 0.00140001 0)
+Vacq ACQ 0 PWL(0 0 0.001412 0 0.00141201 3.3 0.001422 3.3 0.00142201 0 0.001432 0 0.00143201 3.3 0.001442 3.3 0.00144201 0 0.001452 0 0.00145201 3.3 0.001462 3.3 0.00146201 0 0.001472 0 0.00147201 3.3 0.001482 3.3 0.00148201 0 0.001492 0 0.00149201 3.3 0.001502 3.3 0.00150201 0 0.001512 0 0.00151201 3.3 0.001522 3.3 0.00152201 0 0.001532 0 0.00153201 3.3 0.001542 3.3 0.00154201 0 0.001552 0 0.00155201 3.3 0.001562 3.3 0.00156201 0 0.001572 0 0.00157201 3.3 0.001582 3.3 0.00158201 0 0.001592 0 0.00159201 3.3 0.001602 3.3 0.00160201 0 0.001612 0 0.00161201 3.3 0.001622 3.3 0.00162201 0 0.001632 0 0.00163201 3.3 0.001642 3.3 0.00164201 0 0.001652 0 0.00165201 3.3 0.001662 3.3 0.00166201 0 0.001672 0 0.00167201 3.3 0.001682 3.3 0.00168201 0 0.001692 0 0.00169201 3.3 0.001702 3.3 0.00170201 0 0.001712 0 0.00171201 3.3 0.001722 3.3 0.00172201 0 0.001732 0 0.00173201 3.3 0.001742 3.3 0.00174201 0 0.001752 0 0.00175201 3.3 0.001762 3.3 0.00176201 0 0.001772 0 0.00177201 3.3 0.001782 3.3 0.00178201 0 0.001792 0 0.00179201 3.3 0.001802 3.3 0.00180201 0 0.001812 0 0.00181201 3.3 0.001822 3.3 0.00182201 0 0.001832 0 0.00183201 3.3 0.001842 3.3 0.00184201 0 0.001852 0 0.00185201 3.3 0.001862 3.3 0.00186201 0 0.001872 0 0.00187201 3.3 0.001882 3.3 0.00188201 0 0.001892 0 0.00189201 3.3 0.001902 3.3 0.00190201 0 0.001912 0 0.00191201 3.3 0.001922 3.3 0.00192201 0 0.001932 0 0.00193201 3.3 0.001942 3.3 0.00194201 0 0.001952 0 0.00195201 3.3 0.001962 3.3 0.00196201 0 0.001972 0 0.00197201 3.3 0.001982 3.3 0.00198201 0 0.001992 0 0.00199201 3.3 0.002002 3.3 0.00200201 0 0.002012 0 0.00201201 3.3 0.002022 3.3 0.00202201 0 0.002032 0 0.00203201 3.3 0.002042 3.3 0.00204201 0 0.002052 0 0.00205201 3.3 0.002062 3.3 0.00206201 0 0.002072 0 0.00207201 3.3 0.002082 3.3 0.00208201 0 0.002092 0 0.00209201 3.3 0.002102 3.3 0.00210201 0 0.002112 0 0.00211201 3.3 0.002122 3.3 0.00212201 0 0.002132 0 0.00213201 3.3 0.002142 3.3 0.00214201 0 0.002152 0 0.00215201 3.3 0.002162 3.3 0.00216201 0 0.002172 0 0.00217201 3.3 0.002182 3.3 0.00218201 0 0.002192 0 0.00219201 3.3 0.002202 3.3 0.00220201 0 0.002212 0 0.00221201 3.3 0.002222 3.3 0.00222201 0 0.002232 0 0.00223201 3.3 0.002242 3.3 0.00224201 0 0.002252 0 0.00225201 3.3 0.002262 3.3 0.00226201 0 0.002272 0 0.00227201 3.3 0.002282 3.3 0.00228201 0 0.002292 0 0.00229201 3.3 0.002302 3.3 0.00230201 0 0.002312 0 0.00231201 3.3 0.002322 3.3 0.00232201 0 0.002332 0 0.00233201 3.3 0.002342 3.3 0.00234201 0 0.002352 0 0.00235201 3.3 0.002362 3.3 0.00236201 0 0.002372 0 0.00237201 3.3 0.002382 3.3 0.00238201 0 0.002392 0 0.00239201 3.3 0.002402 3.3 0.00240201 0 0.002412 0 0.00241201 3.3 0.002422 3.3 0.00242201 0 0.002432 0 0.00243201 3.3 0.002442 3.3 0.00244201 0 0.002452 0 0.00245201 3.3 0.002462 3.3 0.00246201 0 0.002472 0 0.00247201 3.3 0.002482 3.3 0.00248201 0 0.002492 0 0.00249201 3.3 0.002502 3.3 0.00250201 0 0.002512 0 0.00251201 3.3 0.002522 3.3 0.00252201 0 0.002532 0 0.00253201 3.3 0.002542 3.3 0.00254201 0 0.002552 0 0.00255201 3.3 0.002562 3.3 0.00256201 0 0.002572 0 0.00257201 3.3 0.002582 3.3 0.00258201 0 0.002592 0 0.00259201 3.3 0.002602 3.3 0.00260201 0 0.002612 0 0.00261201 3.3 0.002622 3.3 0.00262201 0 0.002632 0 0.00263201 3.3 0.002642 3.3 0.00264201 0 0.002652 0 0.00265201 3.3 0.002662 3.3 0.00266201 0 0.002672 0 0.00267201 3.3 0.002682 3.3 0.00268201 0)
+Vrst_adc RSTADC 0 PWL(0 3.3 0.00141 3.3 0.00141001 3.3 0.001411 3.3 0.00141101 0 0.00143 0 0.00143001 3.3 0.001431 3.3 0.00143101 0 0.00145 0 0.00145001 3.3 0.001451 3.3 0.00145101 0 0.00147 0 0.00147001 3.3 0.001471 3.3 0.00147101 0 0.00149 0 0.00149001 3.3 0.001491 3.3 0.00149101 0 0.00151 0 0.00151001 3.3 0.001511 3.3 0.00151101 0 0.00153 0 0.00153001 3.3 0.001531 3.3 0.00153101 0 0.00155 0 0.00155001 3.3 0.001551 3.3 0.00155101 0 0.00157 0 0.00157001 3.3 0.001571 3.3 0.00157101 0 0.00159 0 0.00159001 3.3 0.001591 3.3 0.00159101 0 0.00161 0 0.00161001 3.3 0.001611 3.3 0.00161101 0 0.00163 0 0.00163001 3.3 0.001631 3.3 0.00163101 0 0.00165 0 0.00165001 3.3 0.001651 3.3 0.00165101 0 0.00167 0 0.00167001 3.3 0.001671 3.3 0.00167101 0 0.00169 0 0.00169001 3.3 0.001691 3.3 0.00169101 0 0.00171 0 0.00171001 3.3 0.001711 3.3 0.00171101 0 0.00173 0 0.00173001 3.3 0.001731 3.3 0.00173101 0 0.00175 0 0.00175001 3.3 0.001751 3.3 0.00175101 0 0.00177 0 0.00177001 3.3 0.001771 3.3 0.00177101 0 0.00179 0 0.00179001 3.3 0.001791 3.3 0.00179101 0 0.00181 0 0.00181001 3.3 0.001811 3.3 0.00181101 0 0.00183 0 0.00183001 3.3 0.001831 3.3 0.00183101 0 0.00185 0 0.00185001 3.3 0.001851 3.3 0.00185101 0 0.00187 0 0.00187001 3.3 0.001871 3.3 0.00187101 0 0.00189 0 0.00189001 3.3 0.001891 3.3 0.00189101 0 0.00191 0 0.00191001 3.3 0.001911 3.3 0.00191101 0 0.00193 0 0.00193001 3.3 0.001931 3.3 0.00193101 0 0.00195 0 0.00195001 3.3 0.001951 3.3 0.00195101 0 0.00197 0 0.00197001 3.3 0.001971 3.3 0.00197101 0 0.00199 0 0.00199001 3.3 0.001991 3.3 0.00199101 0 0.00201 0 0.00201001 3.3 0.002011 3.3 0.00201101 0 0.00203 0 0.00203001 3.3 0.002031 3.3 0.00203101 0 0.00205 0 0.00205001 3.3 0.002051 3.3 0.00205101 0 0.00207 0 0.00207001 3.3 0.002071 3.3 0.00207101 0 0.00209 0 0.00209001 3.3 0.002091 3.3 0.00209101 0 0.00211 0 0.00211001 3.3 0.002111 3.3 0.00211101 0 0.00213 0 0.00213001 3.3 0.002131 3.3 0.00213101 0 0.00215 0 0.00215001 3.3 0.002151 3.3 0.00215101 0 0.00217 0 0.00217001 3.3 0.002171 3.3 0.00217101 0 0.00219 0 0.00219001 3.3 0.002191 3.3 0.00219101 0 0.00221 0 0.00221001 3.3 0.002211 3.3 0.00221101 0 0.00223 0 0.00223001 3.3 0.002231 3.3 0.00223101 0 0.00225 0 0.00225001 3.3 0.002251 3.3 0.00225101 0 0.00227 0 0.00227001 3.3 0.002271 3.3 0.00227101 0 0.00229 0 0.00229001 3.3 0.002291 3.3 0.00229101 0 0.00231 0 0.00231001 3.3 0.002311 3.3 0.00231101 0 0.00233 0 0.00233001 3.3 0.002331 3.3 0.00233101 0 0.00235 0 0.00235001 3.3 0.002351 3.3 0.00235101 0 0.00237 0 0.00237001 3.3 0.002371 3.3 0.00237101 0 0.00239 0 0.00239001 3.3 0.002391 3.3 0.00239101 0 0.00241 0 0.00241001 3.3 0.002411 3.3 0.00241101 0 0.00243 0 0.00243001 3.3 0.002431 3.3 0.00243101 0 0.00245 0 0.00245001 3.3 0.002451 3.3 0.00245101 0 0.00247 0 0.00247001 3.3 0.002471 3.3 0.00247101 0 0.00249 0 0.00249001 3.3 0.002491 3.3 0.00249101 0 0.00251 0 0.00251001 3.3 0.002511 3.3 0.00251101 0 0.00253 0 0.00253001 3.3 0.002531 3.3 0.00253101 0 0.00255 0 0.00255001 3.3 0.002551 3.3 0.00255101 0 0.00257 0 0.00257001 3.3 0.002571 3.3 0.00257101 0 0.00259 0 0.00259001 3.3 0.002591 3.3 0.00259101 0 0.00261 0 0.00261001 3.3 0.002611 3.3 0.00261101 0 0.00263 0 0.00263001 3.3 0.002631 3.3 0.00263101 0 0.00265 0 0.00265001 3.3 0.002651 3.3 0.00265101 0 0.00267 0 0.00267001 3.3 0.002671 3.3 0.00267101 0)
+.save v(vdd) v(bias) v(pref) v(buf) v(adcin) v(hold) v(acq) v(rstadc) i(vsource) v(col0) v(col1) v(col2) v(col3) v(col4) v(col5) v(col6) v(col7) v(col8) v(col9) v(col10) v(col11) v(col12) v(col13) v(col14) v(col15) v(col16) v(col17) v(col18) v(col19) v(col20) v(col21) v(col22) v(col23) v(col24) v(col25) v(col26) v(col27) v(col28) v(col29) v(col30) v(col31) v(col32) v(col33) v(col34) v(col35) v(col36) v(col37) v(col38) v(col39) v(col40) v(col41) v(col42) v(col43) v(col44) v(col45) v(col46) v(col47) v(col48) v(col49) v(col50) v(col51) v(col52) v(col53) v(col54) v(col55) v(col56) v(col57) v(col58) v(col59) v(col60) v(col61) v(col62) v(col63) v(xarray.pixel_physical_62/photodiode_0.k.t1) v(xarray.gnd.t15) v(xarray.rst0.t62) v(xarray.row0.t62) v(xarray.vdd.t6) v(xarray.gnd.t18) v(xarray.col1.t0) v(xarray.pixel_physical_57/photodiode_0.k.t1) v(xarray.gnd.t283) v(xarray.rst0.t57) v(xarray.row0.t57) v(xarray.vdd.t59) v(xarray.gnd.t299) v(xarray.col6.t0) v(xarray.pixel_physical_50/photodiode_0.k.t1) v(xarray.gnd.t161) v(xarray.rst0.t50) v(xarray.row0.t50) v(xarray.vdd.t3) v(xarray.gnd.t11) v(xarray.col13.t0) v(xarray.pixel_physical_3/photodiode_0.k.t1) v(xarray.gnd.t271) v(xarray.rst0.t3) v(xarray.row0.t3) v(xarray.vdd.t60) v(xarray.gnd.t302) v(xarray.col60.t0) v(xarray.pixel_physical_59/photodiode_0.k.t1) v(xarray.gnd.t259) v(xarray.rst0.t59) v(xarray.row0.t59) v(xarray.vdd.t54) v(xarray.gnd.t290) v(xarray.col4.t0) v(xarray.pixel_physical_1/photodiode_0.k.t1) v(xarray.gnd.t303) v(xarray.rst0.t1) v(xarray.row0.t1) v(xarray.vdd.t41) v(xarray.gnd.t185) v(xarray.col62.t0) v(xarray.pixel_physical_54/photodiode_0.k.t1) v(xarray.gnd.t291) v(xarray.rst0.t54) v(xarray.row0.t54) v(xarray.vdd.t47) v(xarray.gnd.t277) v(xarray.col9.t0) v(xarray.pixel_physical_47/photodiode_0.k.t1) v(xarray.gnd.t183) v(xarray.rst0.t47) v(xarray.row0.t47) v(xarray.vdd.t5) v(xarray.gnd.t17) v(xarray.col16.t0) v(xarray.pixel_physical_40/photodiode_0.k.t1) v(xarray.gnd.t98) v(xarray.rst0.t40) v(xarray.row0.t40) v(xarray.vdd.t37) v(xarray.gnd.t169) v(xarray.col23.t0) v(xarray.pixel_physical_38/photodiode_0.k.t1) v(xarray.gnd.t111) v(xarray.rst0.t38) v(xarray.row0.t38) v(xarray.vdd.t21) v(xarray.gnd.t123) v(xarray.col25.t0) v(xarray.pixel_physical_31/photodiode_0.k.t1) v(xarray.gnd.t6) v(xarray.rst0.t31) v(xarray.row0.t31) v(xarray.vdd.t53) v(xarray.gnd.t289) v(xarray.col32.t0) v(xarray.pixel_physical_24/photodiode_0.k.t1) v(xarray.gnd.t155) v(xarray.rst0.t24) v(xarray.row0.t24) v(xarray.vdd.t1) v(xarray.gnd.t5) v(xarray.col39.t0) v(xarray.pixel_physical_10/photodiode_0.k.t1) v(xarray.gnd.t2) v(xarray.rst0.t10) v(xarray.row0.t10) v(xarray.vdd.t51) v(xarray.gnd.t287) v(xarray.col53.t0) v(xarray.pixel_physical_17/photodiode_0.k.t1) v(xarray.gnd.t151) v(xarray.rst0.t17) v(xarray.row0.t17) v(xarray.vdd.t0) v(xarray.gnd.t4) v(xarray.col46.t0) v(xarray.pixel_physical_28/photodiode_0.k.t1) v(xarray.gnd.t266) v(xarray.rst0.t28) v(xarray.row0.t28) v(xarray.vdd.t36) v(xarray.gnd.t168) v(xarray.col35.t0) v(xarray.pixel_physical_14/photodiode_0.k.t1) v(xarray.gnd.t273) v(xarray.rst0.t14) v(xarray.row0.t14) v(xarray.vdd.t43) v(xarray.gnd.t191) v(xarray.col49.t0) v(xarray.pixel_physical_21/photodiode_0.k.t1) v(xarray.gnd.t127) v(xarray.rst0.t21) v(xarray.row0.t21) v(xarray.vdd.t15) v(xarray.gnd.t97) v(xarray.col42.t0) v(xarray.pixel_physical_61/photodiode_0.k.t1) v(xarray.gnd.t300) v(xarray.rst0.t61) v(xarray.row0.t61) v(xarray.vdd.t19) v(xarray.gnd.t113) v(xarray.col2.t0) v(xarray.pixel_physical_56/photodiode_0.k.t1) v(xarray.gnd.t278) v(xarray.rst0.t56) v(xarray.row0.t56) v(xarray.vdd.t57) v(xarray.gnd.t295) v(xarray.col7.t0) v(xarray.pixel_physical_49/photodiode_0.k.t1) v(xarray.gnd.t105) v(xarray.rst0.t49) v(xarray.row0.t49) v(xarray.vdd.t34) v(xarray.gnd.t160) v(xarray.col14.t0) v(xarray.pixel_physical_42/photodiode_0.k.t1) v(xarray.gnd.t157) v(xarray.rst0.t42) v(xarray.row0.t42) v(xarray.vdd.t33) v(xarray.gnd.t159) v(xarray.col21.t0) v(xarray.pixel_physical_35/photodiode_0.k.t1) v(xarray.gnd.t8) v(xarray.rst0.t35) v(xarray.row0.t35) v(xarray.vdd.t31) v(xarray.gnd.t145) v(xarray.col28.t0) v(xarray.pixel_physical_58/photodiode_0.k.t1) v(xarray.gnd.t12) v(xarray.rst0.t58) v(xarray.row0.t58) v(xarray.vdd.t4) v(xarray.gnd.t14) v(xarray.col5.t0) v(xarray.pixel_physical_26/photodiode_0.k.t1) v(xarray.gnd.t166) v(xarray.rst0.t26) v(xarray.row0.t26) v(xarray.vdd.t52) v(xarray.gnd.t288) v(xarray.col37.t0) v(xarray.pixel_physical_5/photodiode_0.k.t1) v(xarray.gnd.t117) v(xarray.rst0.t5) v(xarray.row0.t5) v(xarray.vdd.t38) v(xarray.gnd.t172) v(xarray.col58.t0) v(xarray.pixel_physical_12/photodiode_0.k.t1) v(xarray.gnd.t175) v(xarray.rst0.t12) v(xarray.row0.t12) v(xarray.vdd.t27) v(xarray.gnd.t131) v(xarray.col51.t0) v(xarray.pixel_physical_19/photodiode_0.k.t1) v(xarray.gnd.t192) v(xarray.rst0.t19) v(xarray.row0.t19) v(xarray.vdd.t28) v(xarray.gnd.t134) v(xarray.col44.t0) v(xarray.pixel_physical_53/photodiode_0.k.t1) v(xarray.gnd.t305) v(xarray.rst0.t53) v(xarray.row0.t53) v(xarray.vdd.t61) v(xarray.gnd.t313) v(xarray.col10.t0) v(xarray.pixel_physical_46/photodiode_0.k.t1) v(xarray.gnd.t170) v(xarray.rst0.t46) v(xarray.row0.t46) v(xarray.vdd.t13) v(xarray.gnd.t93) v(xarray.col17.t0) v(xarray.pixel_physical_39/photodiode_0.k.t1) v(xarray.gnd.t317) v(xarray.rst0.t39) v(xarray.row0.t39) v(xarray.vdd.t62) v(xarray.gnd.t316) v(xarray.col24.t0) v(xarray.pixel_physical_2/photodiode_0.k.t1) v(xarray.gnd.t89) v(xarray.rst0.t2) v(xarray.row0.t2) v(xarray.vdd.t14) v(xarray.gnd.t94) v(xarray.col61.t0) v(xarray.pixel_physical_9/photodiode_0.k.t1) v(xarray.gnd.t20) v(xarray.rst0.t9) v(xarray.row0.t9) v(xarray.vdd.t8) v(xarray.gnd.t22) v(xarray.col54.t0) v(xarray.pixel_physical_16/photodiode_0.k.t1) v(xarray.gnd.t188) v(xarray.rst0.t16) v(xarray.row0.t16) v(xarray.vdd.t23) v(xarray.gnd.t125) v(xarray.col47.t0) v(xarray.pixel_physical_23/photodiode_0.k.t1) v(xarray.gnd.t119) v(xarray.rst0.t23) v(xarray.row0.t23) v(xarray.vdd.t29) v(xarray.gnd.t137) v(xarray.col40.t0) v(xarray.pixel_physical_0/photodiode_0.k.t1) v(xarray.gnd.t296) v(xarray.rst0.t0) v(xarray.row0.t0) v(xarray.vdd.t48) v(xarray.gnd.t282) v(xarray.col63.t0) v(xarray.pixel_physical_63/photodiode_0.k.t1) v(xarray.gnd.t262) v(xarray.rst0.t63) v(xarray.row0.t63) v(xarray.vdd.t45) v(xarray.gnd.t261) v(xarray.col0.t0) v(xarray.pixel_physical_30/photodiode_0.k.t1) v(xarray.gnd.t121) v(xarray.rst0.t30) v(xarray.row0.t30) v(xarray.vdd.t18) v(xarray.gnd.t110) v(xarray.col33.t0) v(xarray.pixel_physical_51/photodiode_0.k.t1) v(xarray.gnd.t149) v(xarray.rst0.t51) v(xarray.row0.t51) v(xarray.vdd.t17) v(xarray.gnd.t107) v(xarray.col12.t0) v(xarray.pixel_physical_44/photodiode_0.k.t1) v(xarray.gnd.t186) v(xarray.rst0.t44) v(xarray.row0.t44) v(xarray.vdd.t32) v(xarray.gnd.t148) v(xarray.col19.t0) v(xarray.pixel_physical_37/photodiode_0.k.t1) v(xarray.gnd.t314) v(xarray.rst0.t37) v(xarray.row0.t37) v(xarray.vdd.t46) v(xarray.gnd.t270) v(xarray.col26.t0) v(xarray.pixel_physical_7/photodiode_0.k.t1) v(xarray.gnd.t309) v(xarray.rst0.t7) v(xarray.row0.t7) v(xarray.vdd.t7) v(xarray.gnd.t19) v(xarray.col56.t0) v(xarray.pixel_physical_34/photodiode_0.k.t1) v(xarray.gnd.t143) v(xarray.rst0.t34) v(xarray.row0.t34) v(xarray.vdd.t26) v(xarray.gnd.t130) v(xarray.col29.t0) v(xarray.pixel_physical_27/photodiode_0.k.t1) v(xarray.gnd.t179) v(xarray.rst0.t27) v(xarray.row0.t27) v(xarray.vdd.t11) v(xarray.gnd.t91) v(xarray.col36.t0) v(xarray.pixel_physical_20/photodiode_0.k.t1) v(xarray.gnd.t135) v(xarray.rst0.t20) v(xarray.row0.t20) v(xarray.vdd.t24) v(xarray.gnd.t126) v(xarray.col43.t0) v(xarray.pixel_physical_48/photodiode_0.k.t1) v(xarray.gnd.t275) v(xarray.rst0.t48) v(xarray.row0.t48) v(xarray.vdd.t44) v(xarray.gnd.t258) v(xarray.col15.t0) v(xarray.pixel_physical_41/photodiode_0.k.t1) v(xarray.gnd.t101) v(xarray.rst0.t41) v(xarray.row0.t41) v(xarray.vdd.t63) v(xarray.gnd.t319) v(xarray.col22.t0) v(xarray.pixel_physical_4/photodiode_0.k.t1) v(xarray.gnd.t95) v(xarray.rst0.t4) v(xarray.row0.t4) v(xarray.vdd.t22) v(xarray.gnd.t124) v(xarray.col59.t0) v(xarray.pixel_physical_11/photodiode_0.k.t1) v(xarray.gnd.t307) v(xarray.rst0.t11) v(xarray.row0.t11) v(xarray.vdd.t9) v(xarray.gnd.t23) v(xarray.col52.t0) v(xarray.pixel_physical_18/photodiode_0.k.t1) v(xarray.gnd.t280) v(xarray.rst0.t18) v(xarray.row0.t18) v(xarray.vdd.t42) v(xarray.gnd.t190) v(xarray.col45.t0) v(xarray.pixel_physical_60/photodiode_0.k.t1) v(xarray.gnd.t264) v(xarray.rst0.t60) v(xarray.row0.t60) v(xarray.vdd.t55) v(xarray.gnd.t293) v(xarray.col3.t0) v(xarray.pixel_physical_55/photodiode_0.k.t1) v(xarray.gnd.t108) v(xarray.rst0.t55) v(xarray.row0.t55) v(xarray.vdd.t56) v(xarray.gnd.t294) v(xarray.col8.t0) v(xarray.pixel_physical_8/photodiode_0.k.t1) v(xarray.gnd.t0) v(xarray.rst0.t8) v(xarray.row0.t8) v(xarray.vdd.t50) v(xarray.gnd.t286) v(xarray.col55.t0) v(xarray.pixel_physical_32/photodiode_0.k.t1) v(xarray.gnd.t141) v(xarray.rst0.t32) v(xarray.row0.t32) v(xarray.vdd.t39) v(xarray.gnd.t181) v(xarray.col31.t0) v(xarray.pixel_physical_25/photodiode_0.k.t1) v(xarray.gnd.t138) v(xarray.rst0.t25) v(xarray.row0.t25) v(xarray.vdd.t25) v(xarray.gnd.t129) v(xarray.col38.t0) v(xarray.pixel_physical_52/photodiode_0.k.t1) v(xarray.gnd.t163) v(xarray.rst0.t52) v(xarray.row0.t52) v(xarray.vdd.t58) v(xarray.gnd.t298) v(xarray.col11.t0) v(xarray.pixel_physical_45/photodiode_0.k.t1) v(xarray.gnd.t103) v(xarray.rst0.t45) v(xarray.row0.t45) v(xarray.vdd.t12) v(xarray.gnd.t92) v(xarray.col18.t0) v(xarray.pixel_physical_43/photodiode_0.k.t1) v(xarray.gnd.t311) v(xarray.rst0.t43) v(xarray.row0.t43) v(xarray.vdd.t2) v(xarray.gnd.t10) v(xarray.col20.t0) v(xarray.pixel_physical_36/photodiode_0.k.t1) v(xarray.gnd.t146) v(xarray.rst0.t36) v(xarray.row0.t36) v(xarray.vdd.t20) v(xarray.gnd.t116) v(xarray.col27.t0) v(xarray.pixel_physical_29/photodiode_0.k.t1) v(xarray.gnd.t114) v(xarray.rst0.t29) v(xarray.row0.t29) v(xarray.vdd.t30) v(xarray.gnd.t140) v(xarray.col34.t0) v(xarray.pixel_physical_15/photodiode_0.k.t1) v(xarray.gnd.t177) v(xarray.rst0.t15) v(xarray.row0.t15) v(xarray.vdd.t16) v(xarray.gnd.t100) v(xarray.col48.t0) v(xarray.pixel_physical_22/photodiode_0.k.t1) v(xarray.gnd.t153) v(xarray.rst0.t22) v(xarray.row0.t22) v(xarray.vdd.t35) v(xarray.gnd.t165) v(xarray.col41.t0) v(xarray.pixel_physical_6/photodiode_0.k.t1) v(xarray.gnd.t173) v(xarray.rst0.t6) v(xarray.row0.t6) v(xarray.vdd.t49) v(xarray.gnd.t285) v(xarray.col57.t0) v(xarray.pixel_physical_13/photodiode_0.k.t1) v(xarray.gnd.t132) v(xarray.rst0.t13) v(xarray.row0.t13) v(xarray.vdd.t10) v(xarray.gnd.t24) v(xarray.col50.t0) v(xarray.pixel_physical_33/photodiode_0.k.t1) v(xarray.gnd.t268) v(xarray.rst0.t33) v(xarray.row0.t33) v(xarray.vdd.t40) v(xarray.gnd.t182) v(xarray.col30.t0) v(row0) v(rst0) v(sel0) v(sel1) v(sel2) v(sel3) v(sel4) v(sel5) v(sel6) v(sel7) v(sel8) v(sel9) v(sel10) v(sel11) v(sel12) v(sel13) v(sel14) v(sel15) v(sel16) v(sel17) v(sel18) v(sel19) v(sel20) v(sel21) v(sel22) v(sel23) v(sel24) v(sel25) v(sel26) v(sel27) v(sel28) v(sel29) v(sel30) v(sel31) v(sel32) v(sel33) v(sel34) v(sel35) v(sel36) v(sel37) v(sel38) v(sel39) v(sel40) v(sel41) v(sel42) v(sel43) v(sel44) v(sel45) v(sel46) v(sel47) v(sel48) v(sel49) v(sel50) v(sel51) v(sel52) v(sel53) v(sel54) v(sel55) v(sel56) v(sel57) v(sel58) v(sel59) v(sel60) v(sel61) v(sel62) v(sel63) v(sc) v(scb) v(store0) v(cbuf0) v(store1) v(cbuf1) v(store2) v(cbuf2) v(store3) v(cbuf3) v(store4) v(cbuf4) v(store5) v(cbuf5) v(store6) v(cbuf6) v(store7) v(cbuf7) v(store8) v(cbuf8) v(store9) v(cbuf9) v(store10) v(cbuf10) v(store11) v(cbuf11) v(store12) v(cbuf12) v(store13) v(cbuf13) v(store14) v(cbuf14) v(store15) v(cbuf15) v(store16) v(cbuf16) v(store17) v(cbuf17) v(store18) v(cbuf18) v(store19) v(cbuf19) v(store20) v(cbuf20) v(store21) v(cbuf21) v(store22) v(cbuf22) v(store23) v(cbuf23) v(store24) v(cbuf24) v(store25) v(cbuf25) v(store26) v(cbuf26) v(store27) v(cbuf27) v(store28) v(cbuf28) v(store29) v(cbuf29) v(store30) v(cbuf30) v(store31) v(cbuf31) v(store32) v(cbuf32) v(store33) v(cbuf33) v(store34) v(cbuf34) v(store35) v(cbuf35) v(store36) v(cbuf36) v(store37) v(cbuf37) v(store38) v(cbuf38) v(store39) v(cbuf39) v(store40) v(cbuf40) v(store41) v(cbuf41) v(store42) v(cbuf42) v(store43) v(cbuf43) v(store44) v(cbuf44) v(store45) v(cbuf45) v(store46) v(cbuf46) v(store47) v(cbuf47) v(store48) v(cbuf48) v(store49) v(cbuf49) v(store50) v(cbuf50) v(store51) v(cbuf51) v(store52) v(cbuf52) v(store53) v(cbuf53) v(store54) v(cbuf54) v(store55) v(cbuf55) v(store56) v(cbuf56) v(store57) v(cbuf57) v(store58) v(cbuf58) v(store59) v(cbuf59) v(store60) v(cbuf60) v(store61) v(cbuf61) v(store62) v(cbuf62) v(store63) v(cbuf63)
+.tran 100.0n 0.0027 0 100.0n
+.control
+unset klu
+set num_threads=1
+set filetype=binary
+run stream.raw
+quit
+.endc
+.end

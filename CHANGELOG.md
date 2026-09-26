@@ -1,6 +1,176 @@
 # Changelog
 
-## Latest: three-frame and nominal readout checks — 2026-09-24
+## 2026-09-26 — Verify compact shared two-column bank
+
+Built two joined pixels/capture columns with shared physical reference MOS and
+power/reference/capture/output buses at 40 µm pitch. Main DRC, direct LVS and
+RC-collapsed LVS pass, along with 100 transients and 240 references across five
+nominal/hot illumination patterns. Worst capture/readout error is 419.033 µV,
+physical refinement 0.431 µV and selected placement sensitivity 0.038 µV.
+Separate layout–schematic response reaches 5.821 mV; a neighbor illumination
+change produces up to 26.670 µV output change. One capture and two reads per
+column are tested. Compact 1×64, repeated frames and manufacturing remain open.
+Docker restored by opening the Windows application; cancelled a stalled CLI
+restart without interrupting Ubuntu. [Evidence and GDS view](docs/compact-bank.md).
+
+## 2026-09-26 — Verify physically joined compact pixel/capture tile
+
+Connected the compact pixel and column through extracted COL/VDD/GND routes.
+Both main DRC and LVS paths pass; the 18 × 18 µm geometric aperture stays clear.
+All 54 transients and 72 references pass the scoped capture/readout, timestep
+and selected-shunt-placement checks. Worst total error is 419.404 µV; physical
+refinement is 0.325 µV and sampled placement sensitivity stays below 0.018 µV.
+The layout–schematic integrated-response shift reaches 3.922 mV and is recorded
+separately. The test captures once and reads twice after pixel deselection/reset;
+shared-bank and repeated-frame qualification remain open. Docker Desktop/WSL
+access recovered after a transient environment interruption.
+[Evidence and actual layout](docs/compact-tile.md).
+
+## 2026-09-26 — Qualify compact 40 pF capture column
+
+Repacked seven unchanged transistor devices and eight equal-area MIM plates
+at 40 µm pitch. The selected column occupies 36.6 × 861.48 µm and passes
+Magic/KLayout main DRC, direct/RC-collapsed LVS and adjacent-column spacing.
+All 60 nominal/hot transients and 36 DC references pass: 165.716 µV tracking,
+395.222 µV layout–schematic shift, 0.262 µV refinement, 0.024 µV independent
+COL/BIAS shunt-placement sensitivity. The original generator mode retains
+identical polygon geometry and direct extraction. Fixed solver-command
+rewriting when reusing an already-SPARSE fixture, and reject simulator command
+errors. Conditional MIM selection, raw extraction approximations, physical
+pixel joining and shared-bank qualification remain open.
+[Results and reproduction](docs/compact-capture.md).
+
+## 2026-09-26 — Qualify compact reset-shunt approximation
+
+Reproduced the isolated raw hot reset abort at 220.01 µs. Applied the existing
+conserved-total shunt audit to a fresh copy and completed 12 nominal/hot
+transients plus six extended-reference sets. Both isolated placements pass:
+24.204 µV worst tracking, 2.573 µV refinement and 0.035 µV placement sensitivity.
+The unchanged 2×2 boundary control passes. All other extracted records and
+fixture statements are preserved. Raw distributed capacitance remains
+diagnostic; compact capture and a physical joined tile remain next.
+[Report and reproduction](docs/compact-reset.md).
+
+## 2026-09-26 — Restore EDA access and build compact pixel
+
+Confirmed Docker and the pinned ngspice 46 environment. Repacked unchanged
+20 µm diode and transistor primitives at 40 µm pitch. Single-pixel and 2×2
+controls pass Magic/KLayout main DRC and direct/RC-collapsed LVS. The 2×2
+nominal/hot imaging screens reach 191.066/234.550 µV worst tracking error and
+2.804/2.710 µV timestep differences. Seven of eight small-cell transients
+complete; the isolated hot 100 ns run aborts at reset and retains an unqualified
+negative extracted RST capacitance. Raw/reduced full-bank operating-point and
+reset controls all time out at 180 s without samples. Original strip geometry
+passes a regression DRC/LVS control. Preserved evidence and open limits in the
+[compact-pixel report](docs/compact-pixel.md). No release geometry changed.
+
+## 2026-09-25 — Replan 64×64 first silicon for wafer.space
+
+User confirmed wafer.space GF180 and modest frame rate. Checked published slot
+sizes: existing array and reinforced bank cannot fit, even before pads/controls.
+Replaced accumulated 3×3-first planning with a compact-layout critical path and
+archived the prior planning files intact. Added reproducible slot-fit arithmetic,
+a candidate 40 µm-pitch block budget and a diagram. Added resistor-only star-mesh
+preparation: 4239 nodes eliminated with device/capacitor records retained, audited
+port/far models and five analytical/corruption tests. Optional coupled-runner input
+reaudits the supplied equivalent model. Docker WSL integration is unavailable;
+no new SPICE/DRC/LVS or runtime improvement is claimed. No release GDS changed.
+[Plan](COMPLETION_PLAN.md) · [Fit study](docs/64x64-slot-fit.md) ·
+[Solver preparation](docs/bank-solver-preparation.md).
+
+## 2026-09-25 — Reinforce physical bank routing
+
+Built two physically verified 64-column revisions with stronger supplies,
+reference feeds and local buffer current paths. Worst nominal/hot static shift
+falls from 5.331 to 1.320 mV over 1.2–2.0 V; some higher-input cases favor the
+intermediate revision. Audited all 48 DC records and 13 contraction controls.
+The 180 s coupled reset test times out during initialization without transient
+samples. Preserved both revisions, rejected spacing control and runtime evidence.
+[Measurements, scope and reproduction](docs/bank-reinforcement.md).
+
+## 2026-09-25 — Diagnose shared-bank routing
+
+Read back all 16 saved static traces and completed eight selective resistance
+controls. VDD/PREF routing contributes to spatial spread; a 2.199 mV common
+offset remains after idealizing supplies/references. The full-RC control is
+bit-exact with the prior result. An ideal-wire coupled bank crosses reset to
+0.25 ms; a physical-bank Gear attempt times out during initialization.
+Preserved all diagnostics and explicit qualification limits in a new checkpoint.
+[Measurements and reproduction](docs/bank-routing.md).
+
+## 2026-09-25 — Implement the shared physical capture bank
+
+Repeated the qualified column 64 times, placed the two shared reference devices,
+and routed power, capture clocks, references and the output bus. Both main DRC
+checks and both LVS paths pass with exact device parameters. Preserved the
+rejected wide-strap control and all extracted RC. Sixteen isolated DC controls
+complete, exposing millivolt-scale static spatial shifts. Coupled-row numerical
+initialization and full readout accuracy remain open; no camera or tapeout pass
+is claimed. [Results and reproduction](docs/capture-bank.md).
+
+## 2026-09-25 — Qualify the physical capture column
+
+Resolved the transient blocker using independent SPARSE fixtures with unchanged
+error tolerances. All 48 nominal/hot runs complete; worst tracking error is
+176.560 µV, timestep difference 0.318 µV and COL-shunt placement sensitivity
+0.0125 µV. Revised supplies/vias/output routing reduce the largest schematic
+shift from 2140.397 to 482.228 µV without changing any device. Both main DRC
+checks and both LVS paths pass. Audited traces, references, rejected routing
+attempts and solver controls are preserved in a new checkpoint. The shared
+64-column bank remains next. [Report](docs/capture-column-qualification.md).
+
+## 2026-09-25 — First physical capture column
+
+Restored the Docker toolchain and built an isolated seven-transistor/eight-MIM
+column. Magic and KLayout main DRC report zero errors; direct and RC-collapsed
+LVS match with exact device parameters. Independent capacitor controls measure
+40.0075/40.0425 pF at 27/125 °C, matching the installed model. Retained negative
+COL-shunt extraction corrections and two capacitance-placement approximations;
+their sensitivity and the incomplete capture transients remain unqualified.
+No release layout or carrier change. [Report](docs/physical-capture-column.md).
+
+## 2026-09-24 — Prepare the physical capture-column circuit
+
+Exported a seven-transistor column and separate shared references/bias fixture;
+verified all 512 repeated elements against the accepted 64-column deck. Prepared
+three conditional eight-plate MIM storage banks using the archived area, fringe,
+temperature and supported leakage terms. Checked serialized circuit expansion,
+capacitor arithmetic, changed-clock rejection, provenance hashes and identical
+regeneration. Archived the inputs and documented bottom-plate routing constraints
+and inactive voltage-dependence terms. Physical verification awaits restoration
+of Docker/WSL access; no new physical or transient pass is claimed.
+[Preparation report](docs/capture-column-preparation.md).
+
+## 2026-09-24 — Complete grid-row readout qualification
+
+Completed four full 64-column SPARSE transients on the physical M5-grid row. Nominal/hot total errors 173.457/289.658 µV and timestep differences 3.897/3.703 µV pass the retained limits. All sampled controls pass; independent capture and selected output references are verified at double settling duration. Added reproducible workflow, fixture audits, per-column results/plot, physical tile implementation plan and a separate evidence checkpoint. Physical periphery, repeated/multirow operation, wire corners and startup remain open. [Report](docs/grid-readout.md).
+
+## 2026-09-24 — Physical row power-grid diagnosis and improvement
+
+Verified the 354 mV turn-on pulse and its resistance sensitivity; built an M5 power-grid candidate with distributed via arrays. Both DRC checkers and both LVS paths pass, with no added photodiode coverage. Full-wire-R+C turn-on loss falls to 42.574 mV nominal / 34.516 mV hot; nominal refinement and independent-solver controls agree. Both runs reach capture; independent acquisition references are checked at two settling durations. Full serial-output requalification, physical periphery, wire corners and startup remain open. Failed/slow solver controls are preserved separately. [Report](docs/row-power.md).
+
+## 2026-09-24 — Full-row capture and routing recovery
+
+Widened physical strip power rails and verified DRC/direct/RC-collapsed LVS. Added simultaneous transistor column capture and buffered serial output; the selected 40 pF/500 kΩ/12.4 kΩ circuit passes both 64-output nominal/hot accuracy screens (171.295/289.919 µV) and timestep refinement (4.317/4.439 µV). Preserved rejected candidates, incomplete numerical diagnostics and the still-unqualified legacy serial mode. Quantified new charging-current/power-grid and storage-area costs. Storage/periphery physical implementation, startup/full-chip/PVT and release gates remain open. [Report](docs/array-recovery.md).
+
+## 2026-09-24 — Extracted 64-pixel strip tests
+
+Added physical 1×64/64×1 strips and short controls, DRC/LVS, explicit wire-R/C audit, shared-readout settling and free-integration comparisons, timestep and reset-capacitance placement checks. Found long-row exposure skew and bright-pixel over-integration. Existing release layout and carrier unchanged. [Report](docs/array-strips.md).
+
+## 2026-09-24 — Tested timing/bias and cold-pad proposals
+
+- Retained slower-acquisition and intermediate-bias failures; validated the nominal combined 470/100 pF, 30 µs / 50 µs, 12.4 kΩ PREF and explicit 100 kΩ unused-pad termination candidate across 27 samples: 461.383 µV tracking, 5.620 µV drift, 0.278 µV first-frame refinement.
+- Both terminated cold first-frame cases pass; selected FF/cold three frames give 152.650 µV tracking and 5.336 µV drift, with 0.300 µV refinement. Existing unbonded-pad hardware remains unchanged.
+- Documented current/power, timing/exposure and physical-connection tradeoffs, plus tapeout/scaling gates. No full PVT, startup, distributed-R+C or manufacturing release claim.
+
+## 2026-09-24 — Bounded full-camera load/PVT screen
+
+- Screened eight initial conditions with per-condition stock DC bias, recomputed MOS-capacitance corners and full extracted-camera transient/DC readout checks: five pass; heavy capacitive load fails accuracy; two cold corners stop at DC watchdogs.
+- Isolated board/sample capacitance effects and verified the heavy-load result within 5.701 µV at finer timestep. Hot-corner refinement agrees within 0.303 µV.
+- Completed three frames under a 100 kΩ load: 27 samples, 5.550 µV frame-two/three drift and 191.889 µV maximum DC tracking error.
+- Preserved exact models, runs, failed controls and matched references; documented cold unused-pad numerical sensitivity without promoting a diagnostic shunt as a camera fix. Startup and distributed-R+C qualification remain open.
+
+## Earlier: three-frame and nominal readout checks — 2026-09-24
 
 **The full extracted 3×3 camera completes three consecutive frames: 27/27 samples.** Brightness ordering passes: True; control-state checks pass: True. Frame-two/three maximum change is **5.733 µV** against the retained **50 µV** screen (pass).
 

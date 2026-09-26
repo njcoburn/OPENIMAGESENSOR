@@ -40,7 +40,7 @@ darkchange=(samples['0'][3]-samples['0'][2])*1000
 stamp=datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
 html='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Open Image Sensor · Engineering notebook</title>
 <style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f2f5f6;color:#182c3b;font:17px/1.65 system-ui,sans-serif}header{background:#102e3b;color:white;padding:64px max(24px,calc((100vw - 1100px)/2))}header p{max-width:760px;color:#d2e4e9}h1{font-size:clamp(32px,5vw,55px);line-height:1.1;margin:12px 0}h2{font-size:29px;line-height:1.2}h3{font-size:20px}main{max-width:1150px;margin:auto;padding:24px}section{background:white;border:1px solid #dce5e9;border-radius:14px;padding:30px;margin:22px 0}nav{display:flex;flex-wrap:wrap;gap:20px}a{color:#146379}header a{color:#b6e8eb}.tag{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#a6dbd0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#edf5f5;padding:20px;border-radius:10px}.card strong{display:block;font-size:24px}img{display:block;width:100%;height:auto;border-radius:8px}figure{margin:24px 0}figcaption,.small{font-size:14px;color:#526574}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:11px;border-bottom:1px solid #dce5e9}code{background:#eef2f3;padding:2px 5px;font-size:14px}pre{overflow:auto;background:#102e3b;color:#e6f1f1;padding:20px;border-radius:8px}pre code{background:none;color:inherit}.note{border-left:4px solid #d88a32;background:#fff6e9;padding:16px}summary{cursor:pointer;font-weight:650}button{padding:10px 18px;border:1px solid #146379;border-radius:6px;background:#fff;color:#146379;cursor:pointer;margin-right:8px}button[aria-pressed=true]{background:#146379;color:white}.hidden{display:none}@media print{body{background:white}section{break-inside:avoid;border:0;padding:10px}header{padding:25px}button,nav{display:none}.hidden{display:block}}</style></head><body>
-<header><div class="tag">Open Image Sensor / living engineering notebook</div><h1>A monochrome camera,<br>starting with one pixel.</h1><p>GF180MCU · Xschem · ngspice · future gdsfactory layout. This notebook records what we built, what the simulations show, and which assumptions still need physical validation.</p><nav><a href="#status">Status</a><a href="#circuit">Circuit</a><a href="#timing">Timing</a><a href="#results">Results</a><a href="#history">History</a><a href="#reproduce">Reproduce</a></nav></header><main>
+<header><div class="tag">Open Image Sensor / living engineering notebook</div><h1>Building a 64 × 64<br>monochrome image sensor.</h1><p>GF180MCU · Xschem · ngspice · Magic · KLayout. This notebook records what we built, what the simulations show, and which assumptions still need physical validation.</p><nav><a href="#status">Status</a><a href="#circuit">Circuit</a><a href="#timing">Timing</a><a href="#results">Results</a><a href="#history">History</a><a href="#reproduce">Reproduce</a></nav></header><main>
 <section id="status"><h2>Current milestone</h2><p>One three-transistor pixel now runs through four finite reset–integration–readout cycles, starting with discharged sensing and column nodes. Higher photocurrent produces a lower sampled output in every cycle.</p><div class="grid"><div class="card"><strong>4 cycles</strong>1 ms period; a single-pixel experiment, not a demonstrated camera frame rate.</div><div class="card"><strong>3 light levels</strong>0, 1 and 5 pA of assumed photocurrent.</div><div class="card"><strong>3.3 V supply</strong>GF180 3.3 V NMOS electrical models at the typical corner.</div></div><p class="note">The dark output continues to change between cycles. The circuit is not yet a repeatable, calibrated sensor. We have no fabricated-device measurements or layout signoff.</p></section>
 <section id="circuit"><h2>Inside the pixel</h2><p>The sensing node stores charge. Reset charges it; light removes charge during exposure. The source follower buffers its voltage, and the row transistor connects it to a shared column.</p><div class="grid"><div><h3>In the pixel</h3><ul><li><b>Xrst:</b> reset switch.</li><li><b>Dphoto + Csense + Iphoto:</b> simplified photodiode model.</li><li><b>Xsf:</b> source-follower buffer.</li><li><b>Xsel:</b> row-select switch.</li></ul></div><div><h3>Outside the pixel</h3><ul><li><b>Rload:</b> 1 MΩ passive column load.</li><li><b>Ccol:</b> assumed 1 pF column capacitance.</li><li>Ideal supply and timing sources.</li><li>Numerical readout samples; no ADC circuit yet.</li></ul></div></div><figure><img src="SCHEMATIC" alt="Xschem desktop showing the GF180 repeated-cycle pixel schematic"><figcaption>Actual Xschem VNC capture. The model and timing block appear beside the circuit. The capture is a snapshot, not a live stream.</figcaption></figure><p>The first experiment used a continuously selected row and an ideal 1 µA current sink. For disconnected-row operation, this test uses a resistor: an always-on ideal sink could drive an isolated column below ground. This change affects bias and gain, so absolute voltages should not be compared directly between the two experiments.</p></section>
 <section id="timing"><h2>What happens each millisecond?</h2><table><thead><tr><th>Time within cycle</th><th>Operation</th><th>Meaning</th></tr></thead><tbody><tr><td>0–20 µs</td><td>Reset on, row off</td><td>Charge the sensing node through Xrst.</td></tr><tr><td>20–920 µs</td><td>Reset off, row off</td><td>Photocurrent changes the stored sensing voltage.</td></tr><tr><td>920–980 µs</td><td>Row on</td><td>Drive the column through the source follower.</td></tr><tr><td>970 µs</td><td>Sample column</td><td>Record a voltage 50 µs after row selection.</td></tr><tr><td>980–1000 µs</td><td>Row off</td><td>The passive load discharges the column before the next cycle.</td></tr></tbody></table><p><b>Exposure continues during readout.</b> This 3T pixel has no transfer gate or storage shutter. The sample occurs about 950 µs after reset releases. Row selection is an electrical read switch, not an optical shutter.</p><p>Approximately, voltage drop = photocurrent × elapsed exposure / total sensing capacitance. Switching and MOS capacitances also affect the waveforms. A lower sampled voltage corresponds to brighter illumination under comparable reset conditions.</p></section>
@@ -166,6 +166,43 @@ if (root/'docs/staged-integration-section.html').exists():
 if (root/'docs/three-frames-section.html').exists():
  html=html.replace('<main>', '<main>'+(root/'docs/three-frames-section.html').read_text(), 1)
  html=html.replace('<nav>', '<nav><a href="#three-frames">Three-frame verification</a>', 1)
+if (root/'docs/camera-operating-corners-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/camera-operating-corners-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#camera-operating-corners">Load and operating corners</a>', 1)
+if (root/'docs/readout-followup-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/readout-followup-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#readout-followup">Readout follow-up</a>', 1)
+if (root/'docs/array-strips-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/array-strips-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#array-strips">64-pixel strips</a>', 1)
+if (root/'docs/array-recovery-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/array-recovery-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#array-recovery">Array recovery</a>', 1)
+if (root/'docs/row-power-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/row-power-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#row-power">Row power</a>', 1)
+if (root/'docs/grid-readout-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/grid-readout-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#grid-readout">Grid readout</a>', 1)
 html=html.replace('<main>', '<main><p><strong>Returning to the project?</strong> <a href="../PICK_UP_HERE.md">Read the dated handoff, current blockers and next steps</a>.</p>', 1)
+if (root/'docs/capture-column-qualification-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/capture-column-qualification-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#capture-column-qualification">Physical capture column</a>', 1)
+
+if (root/'docs/capture-bank-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/capture-bank-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#capture-bank">Shared capture bank</a>', 1)
+if (root/'docs/bank-routing-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/bank-routing-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#bank-routing">Bank routing diagnosis</a>', 1)
+if (root/'docs/bank-reinforcement-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/bank-reinforcement-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#bank-reinforcement">Bank routing reinforcement</a>', 1)
+if (root/'docs/compact-bank-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/compact-bank-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#compact-bank">Compact two-column results</a>', 1)
+if (root/'docs/64x64-first-silicon-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/64x64-first-silicon-section.html').read_text(), 1)
+html=html.replace('<nav>', '<nav><a href="#first-silicon-64">Current 64×64 plan</a>', 1)
 (root/'docs/overview.html').write_text(html)
 print('Checks passed. Wrote docs/overview.html and simulations/cycle-samples.json')

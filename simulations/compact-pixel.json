@@ -1,0 +1,372 @@
+{
+  "physical": {
+    "pixel_pitch_um": [
+      40,
+      40
+    ],
+    "pixel_bbox_um": "(-0.2,2.2;40.2,38.7)",
+    "diode_area_um2": 400,
+    "diode_perimeter_um": 80,
+    "nfet_W_um": 1,
+    "nfet_L_um": 0.5,
+    "central_clear_aperture_um": [
+      18,
+      18
+    ],
+    "source_sha256": {
+      "build/layout-probe-verified/nfet_probe.gds": "909141d78194a2234c71e17180ebdd5bae4d587f6018e0607dec0d602ff6538b",
+      "build/size-study/20um/build/array-primitives/photodiode.gds": "23891aabd50a314b12f399a805bc616300de3d3fd874dc8dee60bf561cff2643"
+    },
+    "pixel_sha256": "f2dcf499f516af41fa0233fcf47dba8e03d465fb03d41df733dae9bbfd6bd04d",
+    "cases": [
+      {
+        "rows": 1,
+        "columns": 1,
+        "pixel_pitch_um": [
+          40,
+          40
+        ],
+        "power_width_um": 0.4,
+        "pixel_source_sha256": "f2dcf499f516af41fa0233fcf47dba8e03d465fb03d41df733dae9bbfd6bd04d",
+        "drc_count": 0,
+        "lvs_direct_and_rc_collapsed": true,
+        "ports": [
+          "VDD",
+          "VRESET",
+          "GND",
+          "RST0",
+          "ROW0",
+          "COL0"
+        ],
+        "roles": {
+          "rc": {
+            "0_0": {
+              "sense": "pixel_physical_0/photodiode_0.K.t1",
+              "anode": "GND.t2",
+              "reset_gate": "RST0.t0",
+              "select_gate": "ROW0.t0",
+              "vdd": "VDD.t0",
+              "gnd": "GND.t2",
+              "column": "COL0.t0"
+            }
+          },
+          "capacitance": {
+            "0_0": {
+              "sense": "s0_0",
+              "anode": "GND",
+              "reset_gate": "RST0",
+              "select_gate": "ROW0",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL0"
+            }
+          },
+          "devices": {
+            "0_0": {
+              "sense": "s0_0",
+              "anode": "GND",
+              "reset_gate": "RST0",
+              "select_gate": "ROW0",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL0"
+            }
+          }
+        },
+        "resistors": 51,
+        "capacitors": 40,
+        "mos": 3,
+        "diodes": 1,
+        "bbox_um": "(-10.3,-0.2;40.2,39.7)",
+        "hashes": {
+          "raw-rc.spice": "1b69ab20a9e621ae0de5a71dc47c72e40c549c7b9ee80568cf7a64a08cedb16e",
+          "reference.spice": "4ab20acb767ce23c2abae93caccb41877ab47bce7b66c2e36db53933d856daf2",
+          "rc.spice": "f0901883e494f546f356204092a075cd5818ea3d9a15c1aca971d133d46cee36",
+          "devices.spice": "61841dd080f34dd593b2cb351ae3e315ffef3e46b273208bcd9d0bc16cee1e9e",
+          "capacitance.spice": "36ea3224fac500bb9b706cc064fd3fd00430e46cc954cb867c99ed39f95d3ad2",
+          "direct-devices.spice": "a7983ddd120d1108e9f955c2bf1a5e3be3a6a84328984fad0b327ad582c94967"
+        },
+        "gds_sha256": "34d90198330b339a0fe3cd5134fd0dedf84f1673cf49e41909a3d3ac55c6d9c9",
+        "scope": "Unfilled strip; explicit Magic integrated wire resistance and capacitance; no pad/clamp/fill or peripheral wiring extraction. Resistance threshold 1 ohm, minres 0.1 ohm, mindelay 0.",
+        "upper_power_grid": null,
+        "klayout_main_drc_errors": 0,
+        "negative_capacitance_records": [
+          [
+            "C35",
+            "RST0.t0",
+            "GND",
+            "-0.51561f"
+          ]
+        ],
+        "raw_rc_passivity_qualified": false
+      },
+      {
+        "rows": 2,
+        "columns": 2,
+        "pixel_pitch_um": [
+          40,
+          40
+        ],
+        "power_width_um": 0.4,
+        "pixel_source_sha256": "f2dcf499f516af41fa0233fcf47dba8e03d465fb03d41df733dae9bbfd6bd04d",
+        "drc_count": 0,
+        "lvs_direct_and_rc_collapsed": true,
+        "ports": [
+          "VDD",
+          "VRESET",
+          "GND",
+          "RST0",
+          "RST1",
+          "ROW0",
+          "ROW1",
+          "COL0",
+          "COL1"
+        ],
+        "roles": {
+          "rc": {
+            "1_1": {
+              "sense": "pixel_physical_0/photodiode_0.K.t1",
+              "anode": "GND.t6",
+              "reset_gate": "RST1.t0",
+              "select_gate": "ROW1.t0",
+              "vdd": "VDD.t3",
+              "gnd": "GND.t6",
+              "column": "COL1.t0"
+            },
+            "1_0": {
+              "sense": "pixel_physical_1/photodiode_0.K.t1",
+              "anode": "GND.t4",
+              "reset_gate": "RST1.t1",
+              "select_gate": "ROW1.t1",
+              "vdd": "VDD.t1",
+              "gnd": "GND.t4",
+              "column": "COL0.t0"
+            },
+            "0_0": {
+              "sense": "pixel_physical_3/photodiode_0.K.t1",
+              "anode": "GND.t4",
+              "reset_gate": "RST0.t1",
+              "select_gate": "ROW0.t1",
+              "vdd": "VDD.t0",
+              "gnd": "GND.t4",
+              "column": "COL0.t1"
+            },
+            "0_1": {
+              "sense": "pixel_physical_2/photodiode_0.K.t1",
+              "anode": "GND.t6",
+              "reset_gate": "RST0.t0",
+              "select_gate": "ROW0.t0",
+              "vdd": "VDD.t2",
+              "gnd": "GND.t6",
+              "column": "COL1.t1"
+            }
+          },
+          "capacitance": {
+            "1_1": {
+              "sense": "s1_1",
+              "anode": "GND",
+              "reset_gate": "RST1",
+              "select_gate": "ROW1",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL1"
+            },
+            "1_0": {
+              "sense": "s1_0",
+              "anode": "GND",
+              "reset_gate": "RST1",
+              "select_gate": "ROW1",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL0"
+            },
+            "0_0": {
+              "sense": "s0_0",
+              "anode": "GND",
+              "reset_gate": "RST0",
+              "select_gate": "ROW0",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL0"
+            },
+            "0_1": {
+              "sense": "s0_1",
+              "anode": "GND",
+              "reset_gate": "RST0",
+              "select_gate": "ROW0",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL1"
+            }
+          },
+          "devices": {
+            "1_1": {
+              "sense": "s1_1",
+              "anode": "GND",
+              "reset_gate": "RST1",
+              "select_gate": "ROW1",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL1"
+            },
+            "1_0": {
+              "sense": "s1_0",
+              "anode": "GND",
+              "reset_gate": "RST1",
+              "select_gate": "ROW1",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL0"
+            },
+            "0_0": {
+              "sense": "s0_0",
+              "anode": "GND",
+              "reset_gate": "RST0",
+              "select_gate": "ROW0",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL0"
+            },
+            "0_1": {
+              "sense": "s0_1",
+              "anode": "GND",
+              "reset_gate": "RST0",
+              "select_gate": "ROW0",
+              "vdd": "VDD",
+              "gnd": "GND",
+              "column": "COL1"
+            }
+          }
+        },
+        "resistors": 208,
+        "capacitors": 154,
+        "mos": 12,
+        "diodes": 4,
+        "bbox_um": "(-10.3,-0.2;80.2,79.7)",
+        "hashes": {
+          "raw-rc.spice": "e7f83553b5049c61c6f078b0f323eda8d0ca1c28a58fa01adcbfbf6109aa7eff",
+          "reference.spice": "b257a99fd7d3c919d10059915498965b5d575deb1afc4b8826226c4cc57ef5ac",
+          "rc.spice": "675d553a22ea7aebb1bcef2c826db9ca7ed38974f94f23dd9ae83f99d33cf4db",
+          "devices.spice": "d70052ea7cc8fa23d7cba05a34def082d06ba5ea92c5d5f9318c8b5d73c9340d",
+          "capacitance.spice": "0f7f79324cdc3a4e3827619f632a3e79e5d7e49fa945e19e7f474a7d476a3cc6",
+          "direct-devices.spice": "547ec95c8f09c12f6ad62f8476000ebeeb9890cbfc310c3ccd3e28d1eca9de25"
+        },
+        "gds_sha256": "d399acdcf2243af95ab3193ab173b4b38311f02174e88f6dc15a30430d1dedb1",
+        "scope": "Unfilled strip; explicit Magic integrated wire resistance and capacitance; no pad/clamp/fill or peripheral wiring extraction. Resistance threshold 1 ohm, minres 0.1 ohm, mindelay 0.",
+        "upper_power_grid": null,
+        "klayout_main_drc_errors": 0,
+        "negative_capacitance_records": [],
+        "raw_rc_passivity_qualified": true
+      }
+    ],
+    "scope": "Unfilled compact pixel and small boundary controls; no electrical transient or full-chip signoff.",
+    "excluded_drc_decks": [
+      "antenna",
+      "density",
+      "cup"
+    ]
+  },
+  "electrical": [
+    {
+      "case": "r1c1",
+      "temperature_C": 27,
+      "completed": true,
+      "max_tracking_error_uV": 8.660773512580988,
+      "max_timestep_difference_uV": 2.501517356368055,
+      "samples_per_run": 1,
+      "raw_rc_passivity_qualified": false
+    },
+    {
+      "case": "r1c1",
+      "temperature_C": 125,
+      "completed": false,
+      "max_tracking_error_uV": null,
+      "max_timestep_difference_uV": null,
+      "samples_per_run": 0,
+      "raw_rc_passivity_qualified": false,
+      "failures": [
+        {
+          "step_ns": 100.0,
+          "execution": {
+            "seconds": 0.3177319559999887,
+            "timed_out": false,
+            "returncode": 0,
+            "errors": [
+              "doAnalyses: TRAN:  Timestep too small; time = 0.00022001, timestep = 2.03066e-19: cause unrecorded.",
+              "run simulation(s) aborted"
+            ],
+            "warnings": [
+              "Warning: m=xx on .subckt line will override multiplier m hierarchy!"
+            ],
+            "transient_op_fallback": false,
+            "deck_sha256": "376deeb2ccdd6bcbf0ebf1773d988d585d65658be6e0bfa7c10761ec811e12d8",
+            "completed": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "r2c2",
+      "temperature_C": 27,
+      "completed": true,
+      "max_tracking_error_uV": 191.06600321339153,
+      "max_timestep_difference_uV": 2.8039051778172563,
+      "samples_per_run": 4,
+      "raw_rc_passivity_qualified": true
+    },
+    {
+      "case": "r2c2",
+      "temperature_C": 125,
+      "completed": true,
+      "max_tracking_error_uV": 234.54954386181726,
+      "max_timestep_difference_uV": 2.709670984035739,
+      "samples_per_run": 4,
+      "raw_rc_passivity_qualified": true
+    }
+  ],
+  "bank_solver": [
+    {
+      "model": "raw",
+      "analysis": "op",
+      "completed": false,
+      "timed_out": true,
+      "seconds": 180.01116904499997,
+      "points": 0,
+      "result_sha256": "1c4d77e2c3bd9ddddcceba1d6c75fbb5bf2f26fdf7bdbf0113290977f7e4e508"
+    },
+    {
+      "model": "raw",
+      "analysis": "reset",
+      "completed": false,
+      "timed_out": true,
+      "seconds": 180.01168145999998,
+      "points": 0,
+      "result_sha256": "551646781adb26530931fa770270d9925db2f37b5e2d28ff01c4b0f7d0533674"
+    },
+    {
+      "model": "equivalent",
+      "analysis": "op",
+      "completed": false,
+      "timed_out": true,
+      "seconds": 180.01009486000004,
+      "points": 0,
+      "result_sha256": "e0dd3a1f91921a4b6d13e917d9c0fffbb63918d38f277414e6b776a7378970a2"
+    },
+    {
+      "model": "equivalent",
+      "analysis": "reset",
+      "completed": false,
+      "timed_out": true,
+      "seconds": 180.00771796600003,
+      "points": 0,
+      "result_sha256": "297de17c57eb6494af87bfffef190228d93b5319836a69126a8cd4ccac134359"
+    }
+  ],
+  "scope": "Small unfilled compact-pixel development evidence; schematic readout and ideal controls, no physical capture bank or full-chip qualification.",
+  "limits": [
+    "Isolated r1c1 raw RC has a negative RST shunt and remains diagnostic.",
+    "No density, antenna, cup, foundry aperture approval or optical qualification.",
+    "No compact capture column, physical row-bank join, real decoder or full-array loading.",
+    "Matched output references use the existing 200 us optran-assisted DC fixture; independent reference-duration extension remains open."
+  ]
+}

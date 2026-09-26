@@ -1,5 +1,35 @@
 # Manufacturing and optical-access review
 
+## Current direction — 2026-09-25
+
+The user selected **GF180 through wafer.space** for 64×64 first silicon, with
+modest frame rate acceptable. Exact run, slot booking and optical packaging
+remain unconfirmed. The earlier 24-pad, 1.21 mm demonstrator is historical.
+
+The [slot-fit study](64x64-slot-fit.md) uses the published full-slot default
+core (3048 × 4238 µm) as a planning envelope. Existing array and bank geometry
+exceed the slot; compact layouts are required. The [provider's Run 3 table](https://wafer.space/)
+lists purchase on 9 December and clean GDS on 16 December 2026, 23:59 AoE, with
+parts in Q2 2027. No reservation or delivery commitment is inferred.
+
+The [project template](https://github.com/wafer-space/gf180mcu-project-template)
+uses gf180mcuD and permits changing signal-pad types while preserving bondpad
+positions and power pads for its default board. Generate a pad map for analog
+output, VRESET, BIAS/PREF and control signals; verify analog protection/leakage
+and available core dimensions. The default two analog pads do not constitute
+an approved sensor interface. Check the selected run's precise PDK revision,
+metal/MIM options and precheck rules.
+
+Optical access and acceptable passivation/metal/fill keepouts remain unresolved.
+The chip-on-board offering's default-ring requirement does not establish that
+encapsulation is transparent or leaves the junctions accessible. Obtain a
+compatible optical bonding/package specification before release.
+
+The historical draft questions below now apply to a 64×64, 4096-junction sensor;
+update the attached floorplan and bond map accordingly. No message was sent.
+
+## Historical 3×3 review
+
 Checked **2026-09-19 01:59 PDT**. No reservation, purchase, submission or external message has been made.
 
 ## Working decision — 19 September 2026

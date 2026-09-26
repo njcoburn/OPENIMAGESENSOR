@@ -1,8 +1,65 @@
 # Open Image Sensor
 
-**Resume here:** [Project handoff — 2026-09-24](PICK_UP_HERE.md). The full extracted camera completes three frames; remaining qualification gates are tracked there.
+**Current goal: 64×64 first silicon on wafer.space GF180, with modest frame rate.**
+[Completion plan](COMPLETION_PLAN.md) · [Next steps](NEXT_STEPS.md) · [Handoff](PICK_UP_HERE.md)
 
-**Latest result:** Three full-camera frames complete with 27 samples. Frame-two/three drift is 5.733 µV, and matching DC readout references are checked. [Results and exact scope](docs/three-frames.md).
+**New critical constraint:** the existing array and bank do not fit a standard
+full slot. A compact pixel/bank layout is required. The new 40 µm-pitch
+[floorplan budget](docs/64x64-slot-fit.md) fits the published default core as
+planning rectangles; it is not qualified GDS. The full 64×64 chip is not yet assembled.
+
+The extracted 64-pixel row and isolated physical capture column have passing
+electrical evidence. The physical bank passes scoped DRC/LVS, but coupled
+readout, multirow operation, real drivers and final-chip signoff remain open.
+Docker access is restored. The new [40 µm compact pixel](docs/compact-pixel.md)
+and 2×2 control pass main DRC and both LVS paths; the 2×2 nominal/hot electrical
+screens and timestep checks pass. The [reset follow-up](docs/compact-reset.md)
+passes 12 transients and extended references using audited shunt placements;
+the raw isolated extraction remains diagnostic. Raw/reduced full-bank
+initialization still times out in all four bounded
+controls. The new [compact capture column](docs/compact-capture.md) fits 40 µm
+pitch and passes scoped DRC/LVS, adjacent-column spacing, 60 transients and
+36 references. The [physically joined tile](docs/compact-tile.md) now passes
+54 transients and 72 references, with 419.404 µV worst total capture/readout
+error. The [shared two-column bank](docs/compact-bank.md) now passes both main
+DRC/LVS paths, 100 transients and 240 references (419.033 µV worst total error).
+It includes physical reference MOS and shared buses; compact 1×64 is next.
+The separate layout–schematic integrated-response difference reaches 5.821 mV.
+A separate
+3×3 tapeout is not a prerequisite.
+
+## Earlier development checkpoints
+
+The dated entries below retain earlier evidence and historical release targets.
+Use the completion plan above for current priorities.
+
+**Latest physical result:** Reinforced supply/reference and local buffer routing passes both main DRC checks and both LVS paths. Worst nominal/hot static buffer shift across 1.2–2.0 V falls from **5.331 to 1.320 mV**; all 16 selected DC controls complete. The coupled reset test still times out during initialization; full readout remains unqualified. [Measured comparison and tradeoffs](docs/bank-reinforcement.md).
+
+![Physical routing revision comparison](docs/assets/bank-reinforcement.png)
+
+**Earlier physical result:** The shared 64-column capture bank passes Magic/KLayout main DRC and both LVS paths: 450 MOS devices, 512 storage plates and fully extracted shared routing. Isolated DC controls reveal millivolt-scale spatial shifts; coupled-row accuracy is not yet qualified. [Bank measurements and scope](docs/capture-bank.md).
+
+**Earlier diagnosis:** Eight DC controls implicate VDD/PREF routing in the spatial spread; idealizing supplies/references still leaves a 2.199 mV common offset. Full readout qualification remains open. [Measured controls and reset diagnostics](docs/bank-routing.md).
+
+![Shared-bank routing diagnostic](docs/assets/bank-routing.png)
+
+![Physical capture bank and shared supply detail](docs/assets/capture-bank.png)
+
+**Earlier isolated-column result:** The isolated capture/readout column passes all 48 nominal/hot simulations, Magic/KLayout main DRC and both LVS paths. Worst tracking error is 176.560 µV (limit 500); timestep difference is 0.318 µV (limit 10). Shared-bank results are above. [Qualification and scope](docs/capture-column-qualification.md).
+
+**Latest full-row result:** Full 64-column readout on the physical power grid passes at 27/125 °C: 173.457/289.658 µV total output error (limit 500) and 3.897/3.703 µV timestep difference (limit 10). Pixel/row wiring uses extracted R+C; physical storage/periphery, multirow operation and startup remain open. [Results](docs/grid-readout.md) · [Next physical tile](docs/capture-tile-plan.md).
+
+**Earlier grid result:** A physical upper-metal row power grid reduces turn-on VDD loss from 354.35 to 42.57 mV, with passing layout/connectivity checks and nominal edge refinement. Nominal/hot runs complete through capture at about 4.09 mV wiring loss. The full serial-output follow-up is now complete; see the latest result above. [Measurements and scope](docs/row-power.md).
+
+**Earlier capture result:** The revised 64-column capture circuit passes nominal/hot accuracy and timestep checks: 171.295/289.919 µV total error, below 500 µV. It removes the measured serial-exposure gradient in these tests. Physical capacitors, distributed power and peripheral routing remain the next stage; startup/full-chip/tapeout qualification is open. [Results and exact scope](docs/array-recovery.md).
+
+**Earlier strip result:** Extracted 1×64/64×1 tests exposed supply drop, exposure skew and late bright-pixel saturation. The original serial mode's numerical refinement remains unqualified. [Original measurements](docs/array-strips.md).
+
+**Earlier interface result:** The proposed heavy-load interface completes three frames at 0.461 mV tracking error. Explicit unused-pad terminations allow both cold cases to run, including a selected three-frame/refinement check. These are conditional proposals, not released hardware. [Results](docs/readout-followup.md) · [Are we ready for tapeout or a larger array?](docs/tapeout-readiness.md).
+
+**Earlier load/corner screen:** Five initial load/corner conditions pass; heavier capacitive loads miss the existing acquisition-time margin, and two cold corners remain blocked at DC. The 100 kΩ load also has a completed three-frame check. [Results and exact coverage](docs/camera-operating-corners.md).
+
+**Previous nominal result:** Three full-camera frames complete with 27 samples. Frame-two/three drift is 5.733 µV, and matching DC readout references are checked. [Results and exact scope](docs/three-frames.md).
 
 ![Three full-camera frames and their differences](docs/assets/three-frames.png)
 

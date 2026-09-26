@@ -1,5 +1,7 @@
 # Finish the 3×3, then scale to 64×64
 
+**Superseded planning sequence — 2026-09-25:** the user now targets 64×64 first silicon on wafer.space GF180 at a modest frame rate. The [current plan](../COMPLETION_PLAN.md) and [slot-fit study](64x64-slot-fit.md) take precedence. Compact pixel/bank geometry is required; a separate 3×3 tapeout is not a prerequisite. The earlier scope and evidence below are preserved.
+
 Decision guide — 19 September 2026. No geometry changes made.
 
 ## Purpose of the issue

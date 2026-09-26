@@ -22,6 +22,11 @@ __pycache__/
 .venv/
 .env
 
+# Large generated checkpoint archives stay local; manifests and reports are tracked.
+# Archives already committed remain tracked by Git.
+checkpoints/**/evidence.tar.gz
+checkpoints/**/evidence.tar.gz.part-*
+
 # KiCad local UI state, locks and embedded edit history
 hardware/**/.history/
 *.kicad_prl

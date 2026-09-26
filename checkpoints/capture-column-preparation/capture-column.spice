@@ -1,0 +1,30 @@
+* Seven-transistor capture/readout column; storage is a separate two-terminal block.
+* STORE and CBUF are exposed for extraction and matched-terminal checks.
+.subckt capture_column COL STORE CBUF BUF SC SCB SEL SELB BIAS PREF VDD GND
+Xbias COL BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xholdn COL SC STORE GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xholdp COL SCB STORE VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstoreload CBUF PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xstorefollow GND STORE CBUF VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xmuxn BUF SEL CBUF GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xmuxp BUF SELB CBUF VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+.ends capture_column
+
+* Ideal storage control used by the accepted full-row simulation.
+.subckt capture_storage_ideal STORE GND
+Cstore STORE GND 40p
+.ends capture_storage_ideal
+
+* Shared reference devices; instantiate once for the bank.
+.subckt capture_references BIAS PREF VDD GND
+Xref BIAS BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstorage_ref PREF PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+.ends capture_references
+
+* External bias fixture, not on-chip resistor implementation.
+.subckt capture_bias_fixture BIAS PREF VDD GND
+Rbias VDD BIAS 500000
+Rpref PREF GND 12400
+Cbias BIAS GND 1p
+Cpref PREF GND 1p
+.ends capture_bias_fixture

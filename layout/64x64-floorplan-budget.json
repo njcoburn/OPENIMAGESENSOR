@@ -1,0 +1,22 @@
+{
+  "status": "planning rectangles only; no layout or manufacturing qualification",
+  "checked_on": "2026-09-25",
+  "provider": "wafer.space GF180MCU",
+  "slot_assumption": "1x1 full slot; not a reservation or purchase",
+  "source": "https://mith.ro/gf180mcu-project-template/slots.json",
+  "source_generated_at": "2026-06-04T14:14:46.405443+00:00",
+  "die_um": [3932, 5122],
+  "inside_seal_um": [3880, 5070],
+  "default_core_um": [3048, 4238],
+  "rows": 64,
+  "columns": 64,
+  "existing_pitch_um": [80, 50],
+  "existing_bank_verification": "build/capture-bank-c64-v5-20260925/verification.json",
+  "candidate_pitch_um": [40, 40],
+  "candidate_blocks_um": {
+    "pixel_array": [350, 100, 2560, 2560],
+    "capture_bank_budget": [200, 2760, 2700, 1100],
+    "row_driver_budget": [100, 100, 150, 2560]
+  },
+  "candidate_scope": "Pixel and bank must be repacked and requalified. Empty area reserves routes, references, output/control circuitry and margins; no cell-placement feasibility is established. Core dimensions must be regenerated for the selected pad types and run."
+}

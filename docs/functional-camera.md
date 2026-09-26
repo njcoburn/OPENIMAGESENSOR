@@ -1,6 +1,10 @@
 # Final filled 3×3: normal-operation simulation candidate
 
-**Latest — 2026-09-24:** Three consecutive full-camera frames and matching DC readout references are complete. [Current results and scope](three-frames.md). Earlier results below remain historical.
+**Latest interface follow-up — 2026-09-24:** Selected timing/bias and explicitly terminated cold-pad conditions now pass frames/refinement. These require corresponding hardware changes; startup/full-R+C remain open. [Evidence and scope](readout-followup.md).
+
+**Load/corner follow-up — 2026-09-24:** Bounded tests and selected loaded repeatability are complete. Increased capacitive loads reveal a settling limit; two cold corners remain blocked at stock DC. [Measured results and coverage](camera-operating-corners.md). Startup and distributed R+C remain open.
+
+**Earlier nominal result — 2026-09-24:** Three consecutive full-camera frames and matching DC readout references are complete. [Current results and scope](three-frames.md). Earlier results below remain historical.
 
 **Latest follow-up — 2026-09-21:** The full extracted candidate completes all nine samples after an electrically equivalent reset-source rewrite. The 1 µs maximum-step rerun also completes all nine samples; maximum difference from 5 µs is 2.778 µV. [Current staged/full-frame evidence](staged-integration.md). The older run descriptions below are retained as history; remaining gates are in the current report.
 

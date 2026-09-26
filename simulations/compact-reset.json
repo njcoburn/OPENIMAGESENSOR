@@ -1,0 +1,280 @@
+{
+  "scope": "Bounded compact-pixel reset-shunt experiment in the pinned EDA container.\n\nPreserves raw evidence; uses the existing signed-total port/gate approximation.\nThis development screen does not qualify distributed extraction or startup.\n",
+  "source": "/foss/designs/build/compact-pixel-v1-20260926",
+  "audits": {
+    "r1c1": {
+      "negative_capacitors": 1,
+      "corrections": [
+        {
+          "net": "RST0",
+          "original_shunts": [
+            [
+              "C25",
+              "RST0",
+              "GND",
+              "6.29159f"
+            ],
+            [
+              "C35",
+              "RST0.t0",
+              "GND",
+              "-0.51561f"
+            ]
+          ],
+          "signed_total_F": 5.775980000000001e-15,
+          "alternate_gate": "RST0.t0"
+        }
+      ],
+      "collapsed_capacitance_matrix_max_error_F": 0.0,
+      "net_metrics": {
+        "VDD": {
+          "effective_resistance_ohm": {
+            "0_0": 37.9198
+          },
+          "max_ohm": 37.9198,
+          "total_incident_C_F": 1.4521520000000002e-14
+        },
+        "GND": {
+          "effective_resistance_ohm": {
+            "0_0": 31.129771470264615
+          },
+          "max_ohm": 31.129771470264615,
+          "total_incident_C_F": 5.5256030000000004e-14
+        },
+        "COL0": {
+          "effective_resistance_ohm": {
+            "0_0": 38.1222
+          },
+          "max_ohm": 38.1222,
+          "total_incident_C_F": 1.061621e-14
+        },
+        "ROW0": {
+          "effective_resistance_ohm": {
+            "0_0": 39.1195
+          },
+          "max_ohm": 39.1195,
+          "total_incident_C_F": 1.0353280000000001e-14
+        },
+        "RST0": {
+          "effective_resistance_ohm": {
+            "0_0": 35.2495
+          },
+          "max_ohm": 35.2495,
+          "total_incident_C_F": 9.967450000000002e-15
+        }
+      },
+      "models_sha256": {
+        "rc-port.spice": "fe3647fc7eb7fe88a6ef3369be28149b718814f252bc91032ad09ef6605d6e06",
+        "rc-gate.spice": "0210a40675a5ff067d921837b5d13111ab9bcd9357aaae75bbad4533988896ad"
+      },
+      "scope": "All extracted resistors/devices/coupling retained. Only signed reset-net shunts with negative local entries are lumped at reset port (main) or local reset gate (sensitivity). This conserves R-collapsed capacitance but approximates its placement; not signoff distributed capacitance."
+    },
+    "r2c2": {
+      "negative_capacitors": 0,
+      "corrections": [],
+      "collapsed_capacitance_matrix_max_error_F": 0.0,
+      "net_metrics": {
+        "VDD": {
+          "effective_resistance_ohm": {
+            "1_1": 55.8308,
+            "1_0": 46.875800000000005,
+            "0_0": 37.9208,
+            "0_1": 46.8758
+          },
+          "max_ohm": 55.8308,
+          "total_incident_C_F": 4.924996e-14
+        },
+        "GND": {
+          "effective_resistance_ohm": {
+            "1_1": 24.799814385418557,
+            "1_0": 20.563034460613498,
+            "0_0": 20.563034460613498,
+            "0_1": 24.799814385418557
+          },
+          "max_ohm": 24.799814385418557,
+          "total_incident_C_F": 2.0743307000000002e-13
+        },
+        "COL0": {
+          "effective_resistance_ohm": {
+            "1_0": 47.077799999999996,
+            "0_0": 38.1227
+          },
+          "max_ohm": 47.077799999999996,
+          "total_incident_C_F": 2.1560830000000004e-14
+        },
+        "ROW0": {
+          "effective_resistance_ohm": {
+            "0_0": 39.12,
+            "0_1": 48.074999999999996
+          },
+          "max_ohm": 48.074999999999996,
+          "total_incident_C_F": 2.0613870000000004e-14
+        },
+        "ROW1": {
+          "effective_resistance_ohm": {
+            "1_1": 48.074999999999996,
+            "1_0": 39.12
+          },
+          "max_ohm": 48.074999999999996,
+          "total_incident_C_F": 2.0608840000000004e-14
+        },
+        "RST0": {
+          "effective_resistance_ohm": {
+            "0_0": 35.25,
+            "0_1": 44.205000000000005
+          },
+          "max_ohm": 44.205000000000005,
+          "total_incident_C_F": 1.987985e-14
+        },
+        "RST1": {
+          "effective_resistance_ohm": {
+            "1_1": 44.205000000000005,
+            "1_0": 35.25
+          },
+          "max_ohm": 44.205000000000005,
+          "total_incident_C_F": 1.987985e-14
+        }
+      },
+      "models_sha256": {
+        "rc-port.spice": "675d553a22ea7aebb1bcef2c826db9ca7ed38974f94f23dd9ae83f99d33cf4db",
+        "rc-gate.spice": "675d553a22ea7aebb1bcef2c826db9ca7ed38974f94f23dd9ae83f99d33cf4db"
+      },
+      "scope": "All extracted resistors/devices/coupling retained. Only signed reset-net shunts with negative local entries are lumped at reset port (main) or local reset gate (sensitivity). This conserves R-collapsed capacitance but approximates its placement; not signoff distributed capacitance."
+    }
+  },
+  "electrical": [
+    {
+      "case": "r1c1",
+      "temperature_C": 27,
+      "mode": "rc-port",
+      "max_tracking_error_uV": 8.660747938371571,
+      "timestep_difference_uV": 2.535673472081612,
+      "reference_extension_difference_uV": 0.0
+    },
+    {
+      "case": "r1c1",
+      "temperature_C": 27,
+      "mode": "rc-gate",
+      "max_tracking_error_uV": 8.660098782531378,
+      "timestep_difference_uV": 2.50343345387094,
+      "reference_extension_difference_uV": 0.0
+    },
+    {
+      "case": "r1c1",
+      "temperature_C": 125,
+      "mode": "rc-port",
+      "max_tracking_error_uV": 24.20422962057245,
+      "timestep_difference_uV": 2.5731030843800795,
+      "reference_extension_difference_uV": 0.0
+    },
+    {
+      "case": "r1c1",
+      "temperature_C": 125,
+      "mode": "rc-gate",
+      "max_tracking_error_uV": 24.20444302897451,
+      "timestep_difference_uV": 2.5538771737387833,
+      "reference_extension_difference_uV": 0.0
+    },
+    {
+      "case": "r2c2",
+      "temperature_C": 27,
+      "mode": "rc",
+      "max_tracking_error_uV": 191.06600321339153,
+      "timestep_difference_uV": 2.8039051778172563,
+      "reference_extension_difference_uV": 1.5329959524024162e-06
+    },
+    {
+      "case": "r2c2",
+      "temperature_C": 125,
+      "mode": "rc",
+      "max_tracking_error_uV": 234.54954386181726,
+      "timestep_difference_uV": 2.709670984035739,
+      "reference_extension_difference_uV": 0.0
+    }
+  ],
+  "placement_sensitivity": [
+    {
+      "temperature_C": 27,
+      "step_ns": 200,
+      "difference_uV": 0.002311685065592428
+    },
+    {
+      "temperature_C": 27,
+      "step_ns": 100,
+      "difference_uV": 0.029928333145079478
+    },
+    {
+      "temperature_C": 125,
+      "step_ns": 200,
+      "difference_uV": 0.03464815900855456
+    },
+    {
+      "temperature_C": 125,
+      "step_ns": 100,
+      "difference_uV": 0.015422248367258362
+    }
+  ],
+  "unique_transients": 12,
+  "extended_reference_runs": 6,
+  "passed": true,
+  "limits": [
+    "Raw isolated extraction retains its negative shunt.",
+    "Conserved shunt total approximates physical capacitance distribution.",
+    "Schematic periphery and imposed controls; no compact capture bank, physical join or startup qualification."
+  ],
+  "raw_control": {
+    "case": "r1c1",
+    "mode": "rc",
+    "fixture": "imaging",
+    "rows": 1,
+    "columns": 1,
+    "step_ns": 100.0,
+    "method": "trap",
+    "slot_us": 50,
+    "acquisition_us": 30,
+    "pref_ohm": 49900,
+    "bias_ohm": 5100000.0,
+    "read_delay_us": 0,
+    "tolerances": {
+      "reltol": 1e-05,
+      "abstol": 1e-16,
+      "chgtol": 1e-18,
+      "vntol": 1e-06
+    },
+    "transient_only": false,
+    "column_storage_pF": null,
+    "reset_after_capture": false,
+    "temperature_C": 125.0,
+    "solver": "klu",
+    "pivrel": null,
+    "seed_storage_op": false,
+    "capture_edge_ns": 10,
+    "capture_reference": null,
+    "accuracy_scope": "Output tracking relative to the actual sampled state",
+    "dc_op_us": 200,
+    "dc_timeout_s": 120.0,
+    "capture_time_s": null,
+    "model_sha256": "f0901883e494f546f356204092a075cd5818ea3d9a15c1aca971d133d46cee36",
+    "simulator_sha256": "6aacaca88f656e5e19074ac070fb410bf6cc437df1de88ec28d50a24c6239a1b",
+    "runner_sha256": "76996e633d72cd3f0bc02eb5768a867fda6ef35c0cfd56cb386a35306bed73c3",
+    "completed": false,
+    "samples": [],
+    "execution": {
+      "seconds": 0.21897110500003691,
+      "timed_out": false,
+      "returncode": 0,
+      "errors": [
+        "doAnalyses: TRAN:  Timestep too small; time = 0.00022001, timestep = 2.03066e-19: cause unrecorded.",
+        "run simulation(s) aborted"
+      ],
+      "warnings": [
+        "Warning: m=xx on .subckt line will override multiplier m hierarchy!"
+      ],
+      "transient_op_fallback": false,
+      "deck_sha256": "244fec2b8b8ac20dfa0479f938903624b11e849652870d0509d6d64fbe941d7e",
+      "completed": false
+    }
+  },
+  "evidence_manifest_sha256": "1ef44e4b100485134868ba2db478d9721bd89931a453c829336b4023d46c19a0",
+  "run_directory": "build/compact-reset-v1-20260926"
+}
