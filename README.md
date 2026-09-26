@@ -3,6 +3,10 @@
 **Current goal: 64×64 first silicon on wafer.space GF180, with modest frame rate.**
 [Completion plan](COMPLETION_PLAN.md) · [Next steps](NEXT_STEPS.md) · [Handoff](PICK_UP_HERE.md)
 
+**Latest:** the [compact 64-column row/bank](docs/compact-bank-64.md) fits its
+2700 × 1100 µm budget and passes both main DRC checks and both LVS paths.
+Full-bank electrical accuracy and full-chip qualification remain open.
+
 **New critical constraint:** the existing array and bank do not fit a standard
 full slot. A compact pixel/bank layout is required. The new 40 µm-pitch
 [floorplan budget](docs/64x64-slot-fit.md) fits the published default core as

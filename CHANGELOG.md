@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-09-26 — Build compact 64-column bank and preserve Git checkpoint
+
+Committed and pushed the accumulated source, reports and evidence manifests;
+about 32 GB of generated archives remain local and are now ignored by Git.
+Built the compact 1×64 row/bank at 2627.76 × 978.28 µm. Both main DRC checks
+and both LVS paths pass (642 MOS, 512 MIM, 64 diodes). Expanded the simulation
+runner to 64 columns with nonoverlapping scans; four schedule tests and an
+exact hot two-column sample regression pass. Both 180 s full-bank controls
+remain incomplete: extracted initialization produces zero samples, while the
+schematic reaches 1.785052 ms/76,919 samples. Physical fit is demonstrated;
+full-bank electrical accuracy remains open. [Report](docs/compact-bank-64.md).
+
 ## 2026-09-26 — Verify compact shared two-column bank
 
 Built two joined pixels/capture columns with shared physical reference MOS and

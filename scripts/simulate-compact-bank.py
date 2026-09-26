@@ -14,15 +14,28 @@ import os
 import re
 import subprocess
 import time
-import numpy as np
 
 ROOT=Path(__file__).resolve().parents[1]
 PDK=Path('/foss/pdks/gf180mcuD/libs.tech/ngspice')
-spec=importlib.util.spec_from_file_location('trace',ROOT/'scripts/diagnose-capture-transient.py')
-trace=importlib.util.module_from_spec(spec);spec.loader.exec_module(trace)
+
+
+def readout_schedule(columns):
+    """Keep the two-column timing, delaying the second scan for a full bank."""
+    if not 2 <= columns <= 64:
+        raise ValueError('The compact bank supports 2 through 64 columns')
+    first = .00141
+    period = 20e-6
+    late = max(.00267, first + columns * period)
+    slots = [(name, c, start + c * period)
+             for name, start in [('first', first), ('last', late)]
+             for c in range(columns)]
+    return slots, late + (columns - 1) * period + 30e-6
 
 
 def main():
+    import numpy as np
+    spec=importlib.util.spec_from_file_location('trace',ROOT/'scripts/diagnose-capture-transient.py')
+    trace=importlib.util.module_from_spec(spec);spec.loader.exec_module(trace)
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--layout',type=Path,required=True);p.add_argument('--out',type=Path,required=True)
     p.add_argument('--model',default='rc-port');p.add_argument('--temperature',type=float,default=27)
@@ -38,10 +51,9 @@ def main():
     model=source.read_text().replace('.subckt reference ','.subckt tile ').replace('.ends reference','.ends tile')
     (out/'tile.spice').write_text(model)
     (out/'.spiceinit').write_text('set ngbehavior=hsa\nset wnflag=1\n')
-    ports=meta['ports'];nc=meta['columns'];assert 2<=nc<=4
+    ports=meta['ports'];nc=meta['columns']
     lights=[float(v) for v in a.lights_pa.split(',')];assert len(lights)==nc and all(v>=0 for v in lights)
-    stop=.0027+(nc-1)*20e-6
-    slots=[(name,c,start+c*20e-6) for name,start in [('first',.00141),('last',.00267)] for c in range(nc)]
+    slots,stop=readout_schedule(nc)
     roles=meta['pixel_roles'] if a.model!='reference' else {str(c):dict(sense=f'SENSE{c}',anode='GND',vdd='VDD') for c in range(nc)}
     def node(n):return '0' if n=='GND' else n if n in ports else 'xtile.'+n
     pixels=[(node(roles[str(c)]['sense']),node(roles[str(c)]['anode'])) for c in range(nc)]
@@ -111,6 +123,7 @@ def main():
     report=dict(scope=__doc__,model=a.model,temperature_C=a.temperature,lights_pA=lights,columns=nc,stop_s=stop,
                 step_ns=a.step_ns,model_sha256=hashlib.sha256(model.encode()).hexdigest(),
                 layout_gds_sha256=meta['gds_sha256'],transient=transient,completed=False,
+                readout_slots=[dict(slot=name,column=c,start_s=start) for name,c,start in slots],
                 fixture='One capture; pixel deselected at 1.402 ms and reset at 1.403 ms; first/late output slots.',
                 references_requested=not a.transient_only)
     def publish():

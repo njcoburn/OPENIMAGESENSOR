@@ -1,5 +1,8 @@
 # Compact shared two-column bank — 2026-09-26
 
+**Follow-up:** the [compact 64-column bank](compact-bank-64.md) now passes its
+scoped physical checks. Its electrical qualification remains separate and open.
+
 **The small shared-bank development screen passes.** Both main DRC checks and
 both LVS paths pass, along with 100 transients and 240 independent DC references.
 Worst capture/readout error is 419.033 µV
@@ -116,7 +119,7 @@ python3 scripts/report-compact-bank.py \
 ```
 
 The builder accepts 2–64 columns; only the two-column geometry is qualified by
-this evidence. The simulation driver supports 2–4 columns and the matrix above
+this evidence. The simulation driver supports 2–64 columns and the matrix above
 is explicitly two-column. Do not label a larger generated bank qualified until
 its corresponding physical and electrical checks have completed.
 

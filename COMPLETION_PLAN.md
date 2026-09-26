@@ -8,9 +8,16 @@ is no longer a prerequisite. The earlier demonstrator remains reference evidence
 
 We have verified building blocks, but no assembled, qualified 64×64 chip.
 Compact pixel, isolated column, joined-tile and two-column shared-bank feasibility
-are demonstrated; complete bank
-**slot fit** remains open, followed by coupled readout,
+are demonstrated. The compact 64-column bank now passes scoped physical checks
+and fits its local floorplan budget; complete-chip slot fit remains open,
+along with coupled readout,
 multirow loading, real addressing/drivers and final-chip qualification.
+
+**Latest physical follow-up:** [compact 1×64 bank](docs/compact-bank-64.md),
+2627.76 × 978.28 µm including its pixel row/references, passes both main DRC
+checks and both LVS paths. Its 642 MOS, 512 MIM and 64 diodes match the independent
+reference. Full-bank electrical accuracy is not yet qualified. The expanded
+runner avoids overlapping its two output scans at 64 columns.
 
 **2026-09-26 progress:** Docker works. The first 40 µm-pitch pixel and 2×2
 control pass main DRC and both LVS paths. The 2×2 nominal/hot electrical and
@@ -41,6 +48,7 @@ operation remain open.
 | Compact physical capture column | 40 µm pitch; 60 nominal/hot transients; main DRC, both LVS paths and abutment spacing pass | Isolated imposed-input test; conditional MIM option |
 | Physical compact pixel/column tile | Extracted COL/VDD/GND joins; 54 transients/72 references pass; worst total error 419.404 µV | One capture, two reads; schematic references/drivers, selected shunt approximations |
 | Compact shared two-column bank | Main DRC/both LVS paths, 100 transients/240 references; 419.033 µV worst total error | One capture, two reads per column; external bias resistors/drivers; no 64-column loading |
+| Compact physical 64-column bank | 2627.76 × 978.28 µm; main DRC and both LVS paths pass | Coupled electrical accuracy, supply sizing and placement/refinement checks remain open |
 | Earlier physical 64-column bank | Main DRC and both LVS paths pass; reinforced routing improves DC behavior | Up to 1.320 mV static schematic shift; coupled transient stalls before capture |
 | Full 64×64 | Not implemented | Floorplan, joining wires, multirow operation, drivers, pads and signoff |
 
@@ -64,7 +72,8 @@ area, before controls, pads or spacing. A custom pad ring alone cannot fix this.
 [Reproducible floorplan budget](docs/64x64-slot-fit.md) proposes a **40 × 40 µm
 pixel pitch** and a **2700 × 1100 µm bank budget** inside the default core.
 The compact pixel and isolated capture column now have scoped physical and
-electrical evidence; the bank rectangle remains an implementation target.
+electrical evidence; the new compact 64-column geometry now fits the bank
+rectangle and passes scoped physical checks, with electrical work still open.
 The tested 20 × 20 µm junction and transistor circuits are preserved. Continue
 repacking and requalifying actual routing rather than scaling GDS polygons or
 shrinking transistor dimensions blindly.
@@ -123,11 +132,13 @@ The [wafer.space Run 3 table](https://wafer.space/) currently lists purchase by
 in Q2 2027. These are provider dates, not a project commitment or a booked slot.
 Use the dated table; the page also contains inconsistent expired-countdown text.
 
-There is no defensible “days from tapeout” estimate: full-bank layout fit
-and coupled 64-column simulation remain unresolved. Re-estimate after milestones 1–2
+There is no defensible “days from tapeout” estimate: complete-chip layout fit
+and coupled 64-column simulation remain unresolved. The compact bank now fits
+its local budget, but a 180 s extracted transient still stalls in initialization;
+the schematic reaches partial readout before the same watchdog. Re-estimate after milestones 1–2
 using measured run times and the completed tile. The extracted single tile
 and shared two-column control now pass their scoped development screens; the next
-deliverable is a working compact 1×64 row and bank.
+deliverable is an electrically qualified compact 1×64 row and bank.
 
 Still confirm: full-slot budget/booking, intended run, optical bonding/encapsulation,
 permitted aperture/fill treatment, actual ADC and operating range. The

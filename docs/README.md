@@ -1,5 +1,9 @@
 # Sensor references
 
+[Latest: compact 64-column physical bank](compact-bank-64.md) — fits the local
+bank budget; both main DRC checks and both LVS paths pass. Full-bank electrical
+qualification remains open. Includes the expanded nonoverlapping readout schedule.
+
 [Latest: compact shared two-column bank](compact-bank.md) — physical reference
 MOS and shared supply/reference/capture/output buses; main DRC/both LVS paths,
 100 transients and 240 references pass. 419.033 µV worst capture/readout error;

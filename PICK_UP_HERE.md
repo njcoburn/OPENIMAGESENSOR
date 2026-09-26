@@ -12,7 +12,26 @@ in either orientation. The new [floorplan budget](docs/64x64-slot-fit.md)
 uses a candidate 40 µm pixel pitch and repacked bank. It is not qualified GDS.
 The compact pixel, isolated capture column, physically joined single tile
 and compact shared two-column bank are implemented and screened.
-A compact 1×64 bank is next.
+A compact 1×64 bank now passes scoped physical checks; electrical work is next.
+
+**Follow-up (2026-09-26):** the [compact 1×64 physical bank](docs/compact-bank-64.md)
+is built in `build/compact-bank-c64-v1-20260926`. It fits the bank envelope
+at 2627.76 × 978.28 µm and passes both main DRC checks and direct/RC-collapsed
+LVS (642 MOS, 512 MIM, 64 diodes). The runner supports 64 columns with separate
+first/late scans; four schedule tests and an exactly matching hot two-column
+regression pass. Full-bank electrical qualification remains open. Use this
+compact geometry for further diagnosis; retain the older stalled bank as evidence.
+
+Both new 180 s nominal alternating-pattern attempts remain incomplete:
+`rc-port` times out in initialization with zero samples (gmin/source stepping
+fail; transient OP starts), while the schematic initializes and reaches
+1.785052 ms/76,919 samples before timeout. Localize the new extracted network
+with smaller banks or audited reduction before another full-bank attempt.
+
+Git checkpoint `5d9de32` was pushed. About 32 GB of generated checkpoint
+archives remain local and ignored; reports/manifests/source are tracked.
+See [archive storage](checkpoints/README.md). Docker Desktop was launched
+successfully again; container calls require access to the Docker socket.
 
 ## Resumed work — 2026-09-26
 
@@ -111,8 +130,9 @@ all fail to initialize, so transient equivalence remains untested.
 See [solver preparation](docs/bank-solver-preparation.md).
 
 **Environment:** Docker access restored and EDA tools exercised on 2026-09-26.
-No simulation remains running. No release GDS, carrier, commit, push, purchase
-or external message changed. Existing uncommitted work is preserved.
+No simulation remains running. Source, reports and manifests have been committed
+and pushed; generated archives remain local. No release GDS, carrier, purchase
+or external message changed.
 
 Provider Run 3 dates are recorded in the plan; no run/slot reservation is assumed.
 Optical access, analog pad allocation, MIM option and exact run requirements

@@ -203,6 +203,9 @@ if (root/'docs/compact-bank-section.html').exists():
  html=html.replace('<nav>', '<nav><a href="#compact-bank">Compact two-column results</a>', 1)
 if (root/'docs/64x64-first-silicon-section.html').exists():
  html=html.replace('<main>', '<main>'+(root/'docs/64x64-first-silicon-section.html').read_text(), 1)
+if (root/'docs/compact-bank-64-section.html').exists():
+ html=html.replace('<main>', '<main>'+(root/'docs/compact-bank-64-section.html').read_text(), 1)
+ html=html.replace('<nav>', '<nav><a href="#compact-bank-64">Compact 64-column bank</a>', 1)
 html=html.replace('<nav>', '<nav><a href="#first-silicon-64">Current 64×64 plan</a>', 1)
 (root/'docs/overview.html').write_text(html)
 print('Checks passed. Wrote docs/overview.html and simulations/cycle-samples.json')
