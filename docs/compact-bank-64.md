@@ -1,5 +1,13 @@
 # Compact 64-column bank — 2026-09-26
 
+**Latest:** [KLU solver follow-up and Run 3 budget](overview.html#compact-bank-solver)
+now completes full-bank initialization/reset. Readout accuracy and complete-chip
+qualification remain open; the original SPARSE timeout below is preserved.
+
+**2026-09-27 follow-up:** [smaller-bank and resistor-reduction diagnosis](compact-bank-initialization.md).
+Four/eight-column physical controls pass; four columns complete both scans.
+The reduced compact 64-column model still times out with zero samples.
+
 **The compact 1×64 row and capture bank pass the scoped physical screen.**
 Magic and KLayout main DRC each report zero violations, and both direct and
 resistor-collapsed LVS match the independently assembled reference. Electrical

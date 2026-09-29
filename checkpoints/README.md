@@ -1,4 +1,12 @@
-# GF180 3×3 checkpoint
+# GF180 checkpoints
+
+## Current 64-column bank — 2026-09-29
+
+[Exact GDS and scoped physical evidence](compact-bank-64-matrix/README.md) for the
+completed alternating/inverse temperature matrix. The compressed GDS is tracked
+in Git and can be viewed from a fresh clone. Large raw electrical traces remain
+local; this small package does not replace those evidence archives. It implements
+one pixel row and the 64-column bank, not the complete 64×64 chip.
 
 ## Archive storage — 2026-09-26
 

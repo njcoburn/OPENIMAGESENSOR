@@ -1,0 +1,64 @@
+{
+  "reviewed_at_utc": "2026-09-28T19:10:16.448668+00:00",
+  "scope": "Completion and integrity review of the two selected complete-bank screens; no additional simulations launched.",
+  "both_selected_screens_pass": true,
+  "all_four_transients_completed": true,
+  "reads_per_transient": 128,
+  "total_references": 384,
+  "manifest_entries": [
+    913,
+    909
+  ],
+  "distinct_evidence_files_verified": 1711,
+  "hash_failures": [],
+  "plots_reviewed": true,
+  "simulation_and_watcher_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "notification_dismissed": true,
+  "cases": [
+    {
+      "temperature_C": 27,
+      "pattern": "alternating",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true,
+        "contrast_order": true
+      },
+      "max_total_error_uV": 372.6062354376669,
+      "max_tracking_error_uV": 17.486021664403495,
+      "max_refinement_uV": 0.13303435375533468
+    },
+    {
+      "temperature_C": 125,
+      "pattern": "inverse",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true,
+        "contrast_order": true
+      },
+      "max_total_error_uV": 438.21256454257275,
+      "max_tracking_error_uV": 57.08616917710074,
+      "max_refinement_uV": 0.12889126477233503
+    }
+  ],
+  "next_batch": [
+    "27 C inverse: 100/50 ns, 192 references",
+    "125 C alternating: 100/50 ns, 192 references"
+  ],
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "reviewed_report_hashes": {
+    "simulations/compact-bank-64-full.json": "0731750fcdf5efe81eb947a76686bafd5bf45f6b9d6c0b707c7e38df3fe581ac",
+    "simulations/compact-bank-64-full-hot.json": "ade2a6ae212cb8a625e30857b24cb93433d73f363d84f612782fa033fb5f8cd5",
+    "build/compact-bank-resume-watch-20260928/status.json": "a3b0de1b7ce4b70386880acb3e8fe31d35d4601e1fc2211c3cc97a1e6fe8cb0a"
+  }
+}

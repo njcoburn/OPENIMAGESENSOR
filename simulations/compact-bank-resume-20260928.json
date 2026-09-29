@@ -1,0 +1,270 @@
+{
+  "scope": "Dated continuation observation, not a completed full-bank accuracy audit.",
+  "observed_at_utc": "2026-09-28T08:00:02.606905+00:00",
+  "plan": {
+    "created_at_utc": "2026-09-28T07:51:08.845620+00:00",
+    "snapshot": "simulations/compact-bank-resume-snapshot-20260928.json",
+    "runs": [
+      {
+        "name": "nominal100",
+        "path": "build/compact-bank-c64-resume-nominal100-20260928",
+        "container": "ois-bank-nominal100-20260928",
+        "command": [
+          "python3",
+          "scripts/simulate-compact-bank-v3.py",
+          "--layout",
+          "build/compact-bank-c64-ground-grid-20260927",
+          "--out",
+          "build/compact-bank-c64-resume-nominal100-20260928",
+          "--lights-pa",
+          "0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240",
+          "--temperature",
+          "27",
+          "--step-ns",
+          "100",
+          "--solver",
+          "klu",
+          "--acquisition-us",
+          "12",
+          "--timeout",
+          "14400",
+          "--reference-timeout",
+          "1800",
+          "--reference-workers",
+          "4",
+          "--save-mim-terminals",
+          "--reuse-transient",
+          "build/compact-bank-c64-grid-full100-20260927",
+          "--reuse-manifest",
+          "simulations/compact-bank-resume-snapshot-20260928.json",
+          "--reuse-references"
+        ],
+        "temperature": 27,
+        "step_ns": 100,
+        "container_id": "c62ec9d9a62fd125f9a21d93249ee52e0bf88342b3f36dea7ab0e96059bdec1b"
+      },
+      {
+        "name": "nominal50",
+        "path": "build/compact-bank-c64-resume-nominal50-20260928",
+        "container": "ois-bank-nominal50-20260928",
+        "command": [
+          "python3",
+          "scripts/simulate-compact-bank-v3.py",
+          "--layout",
+          "build/compact-bank-c64-ground-grid-20260927",
+          "--out",
+          "build/compact-bank-c64-resume-nominal50-20260928",
+          "--lights-pa",
+          "0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240",
+          "--temperature",
+          "27",
+          "--step-ns",
+          "50",
+          "--solver",
+          "klu",
+          "--acquisition-us",
+          "12",
+          "--timeout",
+          "14400",
+          "--reference-timeout",
+          "1800",
+          "--reference-workers",
+          "4",
+          "--save-mim-terminals",
+          "--transient-only"
+        ],
+        "temperature": 27,
+        "step_ns": 50,
+        "container_id": "2dcd319a26781221b24d9335ad57908854b2bfdb5c66f5e7e3fe448ca97c09a1"
+      },
+      {
+        "name": "hot-inverse100",
+        "path": "build/compact-bank-c64-resume-hot-inverse100-20260928",
+        "container": "ois-bank-hot-inverse100-20260928",
+        "command": [
+          "python3",
+          "scripts/simulate-compact-bank-v3.py",
+          "--layout",
+          "build/compact-bank-c64-ground-grid-20260927",
+          "--out",
+          "build/compact-bank-c64-resume-hot-inverse100-20260928",
+          "--lights-pa",
+          "240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0",
+          "--temperature",
+          "125",
+          "--step-ns",
+          "100",
+          "--solver",
+          "klu",
+          "--acquisition-us",
+          "12",
+          "--timeout",
+          "14400",
+          "--reference-timeout",
+          "1800",
+          "--reference-workers",
+          "4",
+          "--save-mim-terminals"
+        ],
+        "temperature": 125,
+        "step_ns": 100,
+        "container_id": "610eff5967d1a21865aaeebb9a49b123fe74a859d584c45e70eb5f1b2b07e7c4"
+      },
+      {
+        "name": "hot-inverse50",
+        "path": "build/compact-bank-c64-resume-hot-inverse50-20260928",
+        "container": "ois-bank-hot-inverse50-20260928",
+        "command": [
+          "python3",
+          "scripts/simulate-compact-bank-v3.py",
+          "--layout",
+          "build/compact-bank-c64-ground-grid-20260927",
+          "--out",
+          "build/compact-bank-c64-resume-hot-inverse50-20260928",
+          "--lights-pa",
+          "240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0,240,0",
+          "--temperature",
+          "125",
+          "--step-ns",
+          "50",
+          "--solver",
+          "klu",
+          "--acquisition-us",
+          "12",
+          "--timeout",
+          "14400",
+          "--reference-timeout",
+          "1800",
+          "--reference-workers",
+          "4",
+          "--save-mim-terminals",
+          "--transient-only"
+        ],
+        "temperature": 125,
+        "step_ns": 50,
+        "container_id": "443d4501687148d8ec4ae857b8735eb897ea94c16d0dd07847abaae6fe8bcd03"
+      }
+    ],
+    "cases": [
+      {
+        "name": "nominal",
+        "temperature": 27,
+        "pattern": "alternating",
+        "coarse": "build/compact-bank-c64-resume-nominal100-20260928",
+        "fine": "build/compact-bank-c64-resume-nominal50-20260928",
+        "report": "compact-bank-64-full.json"
+      },
+      {
+        "name": "hot-inverse",
+        "temperature": 125,
+        "pattern": "inverse",
+        "coarse": "build/compact-bank-c64-resume-hot-inverse100-20260928",
+        "fine": "build/compact-bank-c64-resume-hot-inverse50-20260928",
+        "report": "compact-bank-64-full-hot.json"
+      }
+    ],
+    "completed": false,
+    "accuracy_qualified": false,
+    "scope": "Three fresh transients, one audited transient reuse; 64 reusable DC references and 320 new planned references.",
+    "watcher": {
+      "container": "ois-bank-watcher-20260928",
+      "path": "build/compact-bank-resume-watch-20260928",
+      "container_id": "2b6f168de6680a7d7a3d00dfef4bd3df156a2dcd7773f50b283f7c81ba03c944",
+      "prior_status_archive": "build/compact-bank-resume-watch-20260928-before-render-fix",
+      "restart_reason": "Apply tested rendering-failure isolation; simulation containers unchanged."
+    }
+  },
+  "watcher_observation": {
+    "elapsed_seconds": 30.82843901399997,
+    "progress": [
+      {
+        "run": "/foss/designs/build/compact-bank-c64-resume-nominal100-20260928",
+        "elapsed_minutes": 8.344610985120138,
+        "last_saved_ms": 3.98,
+        "observed_sample_instants": 128,
+        "expected_sample_instants": 128,
+        "phase": "transient complete",
+        "accuracy_claimed": false,
+        "references": {
+          "completed": 68,
+          "expected": 192
+        },
+        "runner_completed": false,
+        "trace_megabytes": 6272.590471
+      },
+      {
+        "run": "/foss/designs/build/compact-bank-c64-resume-nominal50-20260928",
+        "elapsed_minutes": 8.475944972038269,
+        "last_saved_ms": 0.5427498486288025,
+        "observed_sample_instants": 0,
+        "expected_sample_instants": 128,
+        "phase": "exposure/capture",
+        "accuracy_claimed": false,
+        "trace_megabytes": 140.927431
+      },
+      {
+        "run": "/foss/designs/build/compact-bank-c64-resume-hot-inverse100-20260928",
+        "elapsed_minutes": 8.468901042143504,
+        "last_saved_ms": 1.3921507234327108,
+        "observed_sample_instants": 0,
+        "expected_sample_instants": 128,
+        "phase": "exposure/capture",
+        "accuracy_claimed": false,
+        "trace_megabytes": 193.130951
+      },
+      {
+        "run": "/foss/designs/build/compact-bank-c64-resume-hot-inverse50-20260928",
+        "elapsed_minutes": 8.46227707862854,
+        "last_saved_ms": 0.7614182059291462,
+        "observed_sample_instants": 0,
+        "expected_sample_instants": 128,
+        "phase": "exposure/capture",
+        "accuracy_claimed": false,
+        "trace_megabytes": 192.582087
+      }
+    ],
+    "audited": {},
+    "failures": {},
+    "render_failures": {},
+    "watcher_expired": false,
+    "all_pairs_audited": false,
+    "all_selected_screens_pass": false
+  },
+  "reuse_control": {
+    "samples": 32,
+    "references": 48,
+    "maximum_difference_V": 0,
+    "independently_audited": true
+  },
+  "tests": {
+    "resume_and_decks": 16,
+    "independent_auditor": 8,
+    "original_timing": 4,
+    "watcher": 2,
+    "passed": true
+  },
+  "prior_evidence_hashes_verified": {
+    "resume_snapshot": 268,
+    "resume_control": 210
+  },
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "evidence_hashes": {
+    "scripts/simulate-compact-bank-v3.py": "698b37bf9e2686abb59e958fdf99fa3e359b96260c2a7d5c7df44b056d7c86b6",
+    "scripts/compact-bank-reuse-v2.py": "739b4e3ae486fb35761db3fe2d2e8970bf8b6d7513ae3fe53c1e2a50a98d1129",
+    "scripts/report-bank-full-v2.py": "3d6f2dc28c8ebd2c0028412c304efd5680c9ccbe3a3dafc82bfd15e3eb7ccd5d",
+    "scripts/snapshot-bank-resume.py": "3e9636dfe3d5e08fdb62b25c3f0d5e10db32969c01aa9004e63866baf36a0081",
+    "scripts/test-bank-resume.py": "55d433a7e9cdfaafe90819754ae3b69959c8d0dd9838325ac5a9c42a9defa02e",
+    "scripts/test-bank-resume-audit.py": "7715189fc203fcebdda2deda4a3165e9b27dccac88c5581b2a2358f6a239acd5",
+    "scripts/verify-bank-resume-control.py": "2dc7ca359d93f5cbbb56ed7b117e024a889fabc9b620686f0ca684d58f0f5627",
+    "scripts/launch-bank-resume.py": "6367df1c8ea2a1158c447ad986e4f184b4b92e0781dd46d0fb965ed39523011d",
+    "scripts/finish-bank-resume.py": "30fdf8972a58dd4c95b50bfc284bda85bf57d7a12c049d6e69d616f35b501ddc",
+    "scripts/test-bank-resume-watcher.py": "a4bd5636a6a226d85c25564417569dccc648f95f329ad9d8f9bede9dd56c8783",
+    "simulations/compact-bank-resume-snapshot-20260928.json": "1985ee3f4e665b48b15189f0641c19d05c64c225cd125fcd0a7f79151dcb4425",
+    "simulations/compact-bank-resume-control.json": "935f1a8781248e643a6e919d86592a236a9db27fe7dac375da67e7990e04a103",
+    "build/compact-bank-resume-plan-20260928.json": "1492d91495ba797f9c0a3fee357000c35fdb035c803fe86bd661549bdd6ce8fd",
+    "build/compact-bank-resume-audit-tests-20260928/result.json": "0ea5f40cbde6f6712c2a7f1237426763f1f877775982ca688633f57be70dd731",
+    "build/compact-bank-v2-deck-regression-20260928/result.json": "c46c9407ceac1c5689d2dcbbc2fbeb91721a0fb484106ca002e871d86830819f",
+    "build/compact-bank-resume-watcher-tests-20260928.log": "b623fbf0a59cd818607a4b0a03a31c2b1977374cbbc8fce638eca7146c4ba9f2"
+  }
+}

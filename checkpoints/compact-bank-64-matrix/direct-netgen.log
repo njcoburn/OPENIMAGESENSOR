@@ -1,0 +1,128 @@
+Netgen 1.5.321 compiled on Mon Jun 22 11:31:27 AM CEST 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /foss/designs/build/compact-bank-c64-ground-grid-20260927/direct.spice for /foss/designs/build/compact-bank-c64-ground-grid-20260927/direct.spice flat
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit cap_mim_2f0_m4m5_noshield
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Reading netlist file /foss/designs/build/compact-bank-c64-ground-grid-20260927/reference.spice for /foss/designs/build/compact-bank-c64-ground-grid-20260927/reference.spice reference
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit cap_mim_2f0_m4m5_noshield
+Creating placeholder cell definition.
+
+Reading setup file /foss/pdks/gf180mcuD/libs.tech/netgen/gf180mcuD_setup.tcl
+
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property NRD found for device nfet_03v3
+No property NRS found for device nfet_03v3
+No property par found for device nfet_03v3
+No property sa found for device nfet_03v3
+No property sb found for device nfet_03v3
+No property sd found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property nf found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property NRD found for device nfet_03v3
+No property NRS found for device nfet_03v3
+No property par found for device nfet_03v3
+No property sa found for device nfet_03v3
+No property sb found for device nfet_03v3
+No property sd found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property nf found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property NRD found for device pfet_03v3
+No property NRS found for device pfet_03v3
+No property par found for device pfet_03v3
+No property sa found for device pfet_03v3
+No property sb found for device pfet_03v3
+No property sd found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property nf found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property NRD found for device pfet_03v3
+No property NRS found for device pfet_03v3
+No property par found for device pfet_03v3
+No property sa found for device pfet_03v3
+No property sb found for device pfet_03v3
+No property sd found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property nf found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+No property par1 found for device diode_nd2ps_03v3
+No property par1 found for device diode_nd2ps_03v3
+No property par1 found for device cap_mim_2f0_m4m5_noshield
+No property par1 found for device cap_mim_2f0_m4m5_noshield
+Comparison output logged to file /foss/designs/build/compact-bank-c64-ground-grid-20260927/direct-lvs.log
+Logging to file "/foss/designs/build/compact-bank-c64-ground-grid-20260927/direct-lvs.log" enabled
+Circuit nfet_03v3 contains no devices.
+Circuit cap_mim_2f0_m4m5_noshield contains no devices.
+Circuit pfet_03v3 contains no devices.
+
+Contents of circuit 1:  Circuit: 'flat'
+Circuit flat contains 1218 device instances.
+  Class: diode_nd2ps_03v3      instances:  64
+  Class: cap_mim_2f0_m4m5_noshield instances: 512
+  Class: nfet_03v3             instances: 385
+  Class: pfet_03v3             instances: 257
+Circuit contains 458 nets.
+Contents of circuit 2:  Circuit: 'reference'
+Circuit reference contains 1218 device instances.
+  Class: diode_nd2ps_03v3      instances:  64
+  Class: cap_mim_2f0_m4m5_noshield instances: 512
+  Class: nfet_03v3             instances: 385
+  Class: pfet_03v3             instances: 257
+Circuit contains 458 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'flat'
+Circuit flat contains 770 device instances.
+  Class: diode_nd2ps_03v3      instances:  64
+  Class: cap_mim_2f0_m4m5_noshield instances:  64
+  Class: nfet_03v3             instances: 385
+  Class: pfet_03v3             instances: 257
+Circuit contains 458 nets.
+Contents of circuit 2:  Circuit: 'reference'
+Circuit reference contains 770 device instances.
+  Class: diode_nd2ps_03v3      instances:  64
+  Class: cap_mim_2f0_m4m5_noshield instances:  64
+  Class: nfet_03v3             instances: 385
+  Class: pfet_03v3             instances: 257
+Circuit contains 458 nets.
+
+Circuit 1 contains 770 devices, Circuit 2 contains 770 devices.
+Circuit 1 contains 458 nets,    Circuit 2 contains 458 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/foss/designs/build/compact-bank-c64-ground-grid-20260927/direct-lvs.log" disabled
+LVS Done.

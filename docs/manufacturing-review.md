@@ -1,6 +1,51 @@
 # Manufacturing and optical-access review
 
-## Current direction — 2026-09-25
+## Run 3 budget and geometry — checked 2026-09-27
+
+The [overview](overview.html#wafer-space-run3) now records current source links,
+all four slot sizes, costs, Los Angeles deadline conversions and a dimensioned
+block budget. [Source facts](../simulations/wafer-space-run3-20260927.json) and
+[computed fit](../simulations/wafer-space-fit-20260927.json) separate provider
+data from our arithmetic.
+
+Run 3 lists early bird through 30 September, purchase by 9 December and clean
+GDS by 16 December 2026, all 23:59 AoE; delivery is Q2 2027. The full-slot batch
+of 1,000 dies costs $7,000 early / $8,000 standard. The optional $1,500 CoB
+add-on brings that to $8,500 / $9,500, before unpriced project expenses and
+subject to optical compatibility. The campaign includes worldwide shipping;
+insurance and tariffs remain the buyer's responsibility. No later run date was
+established. No purchase or reservation was made.
+
+The provider's [19 September update](https://www.crowdsupply.com/wafer-space/gf180mcu-run-3/updates/1x1-slots-running-low)
+reports few full slots remaining. Current inventory and operative order terms
+must be confirmed before purchase. The campaign funding widget's 19 December
+date and expired countdown messages conflict with the explicit milestone table;
+do not use those widgets as the GDS deadline.
+
+The compact 2.560 mm-square array fails even the inside-seal short dimension
+of both half slots and the quarter slot. A full slot remains the viable
+planning envelope. Substituting the current distributed-return bank's
+2667.87 × 1069.80 µm bounds into the nonoverlapping block budget leaves
+**3.126 mm²** unreserved in the default core. The older 3.409 mm² calculation
+uses the original bank and remains a dated baseline.
+This is not final-chip fit: the bank already includes a pixel row, so final
+assembly must add 63 further rows and audit exactly 4096 diodes. Pad allocation,
+optical packaging, process options and provider signoff remain open.
+
+The provider [precheck](https://github.com/wafer-space/gf180mcu-precheck)
+checks the top cell, origin/grid, slot bounds, metal limit, density, antenna,
+Magic and KLayout DRC. CoB additionally checks template identifiers and pad
+openings. Existing block-level main DRC/LVS passes do not replace these checks.
+
+The [source reconciliation](wafer-space-pdk-reconciliation.md) establishes that
+the provider's pinned configuration selects the same five-metal, 1.1 µm
+top-metal, 2 fF/µm² M4/M5 MIM options. Relevant GF180 build/extraction and
+primitive device-model sources are unchanged. The newer verification-library
+main DRC completes on the unchanged grid bank with zero violations. Exact
+provider tool/build equivalence, density/antenna, complete-chip precheck and
+optical access/packaging remain open.
+
+## Earlier direction — 2026-09-25
 
 The user selected **GF180 through wafer.space** for 64×64 first silicon, with
 modest frame rate acceptable. Exact run, slot booking and optical packaging

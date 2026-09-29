@@ -1,0 +1,723 @@
+{
+  "scope": "Independently audit reused 16-column evidence and compare every prior sample/reference.",
+  "passed": true,
+  "samples": 32,
+  "reused_references": 48,
+  "maximum_sample_and_reference_difference_V": 0,
+  "independent_audit": {
+    "run": "build/compact-bank-resume-control-20260928",
+    "columns": 16,
+    "references": 48,
+    "samples": 32,
+    "transient_seconds": 354.1181215880006,
+    "mim_terminals_saved": true,
+    "events": [
+      {
+        "event": "pre_capture",
+        "time_s": 0.001399999,
+        "max_mim_ground_V": 0.008354410748749447,
+        "min_mim_ground_V": 0.002308708542738086,
+        "VDD_V": 3.295723662316834,
+        "BIAS_V": 0.9260392152857967,
+        "PREF_V": 1.5414783182028473,
+        "columns": [
+          {
+            "column": 0,
+            "upper_V": 0.8405929194706934,
+            "ground_V": 0.0023087134190157505,
+            "differential_V": 0.8382842060516776,
+            "store_V": 0.8405928679916252
+          },
+          {
+            "column": 1,
+            "upper_V": 0.1289930146385207,
+            "ground_V": 0.0030056788330230823,
+            "differential_V": 0.12598733580549762,
+            "store_V": 0.12899224103859205
+          },
+          {
+            "column": 2,
+            "upper_V": 0.8420423438338016,
+            "ground_V": 0.003701937542679198,
+            "differential_V": 0.8383404062911224,
+            "store_V": 0.8420422925389371
+          },
+          {
+            "column": 3,
+            "upper_V": 0.13013356325153064,
+            "ground_V": 0.004364413853923505,
+            "differential_V": 0.12576914939760714,
+            "store_V": 0.13013278891069383
+          },
+          {
+            "column": 4,
+            "upper_V": 0.8433415445442033,
+            "ground_V": 0.004975316221527565,
+            "differential_V": 0.8383662283226757,
+            "store_V": 0.8433414934176492
+          },
+          {
+            "column": 5,
+            "upper_V": 0.13112128936292966,
+            "ground_V": 0.005540737813540922,
+            "differential_V": 0.12558055154938874,
+            "store_V": 0.13112051438001524
+          },
+          {
+            "column": 6,
+            "upper_V": 0.8444381875941002,
+            "ground_V": 0.006050903605798083,
+            "differential_V": 0.8383872839883021,
+            "store_V": 0.8444381366103008
+          },
+          {
+            "column": 7,
+            "upper_V": 0.1319391840824921,
+            "ground_V": 0.00651412322144234,
+            "differential_V": 0.12542506086104976,
+            "store_V": 0.13193840856647848
+          },
+          {
+            "column": 8,
+            "upper_V": 0.8453249641754506,
+            "ground_V": 0.006921589387120895,
+            "differential_V": 0.8384033747883297,
+            "store_V": 0.8453249133067247
+          },
+          {
+            "column": 9,
+            "upper_V": 0.13258414981752617,
+            "ground_V": 0.0072819531260842766,
+            "differential_V": 0.12530219669144188,
+            "store_V": 0.13258337388026334
+          },
+          {
+            "column": 10,
+            "upper_V": 0.8460012616211601,
+            "ground_V": 0.007586647861073035,
+            "differential_V": 0.8384146137600871,
+            "store_V": 0.8460012108395705
+          },
+          {
+            "column": 11,
+            "upper_V": 0.13305601883895962,
+            "ground_V": 0.007844352969367677,
+            "differential_V": 0.12521166586959195,
+            "store_V": 0.13305524259348375
+          },
+          {
+            "column": 12,
+            "upper_V": 0.8464678125771038,
+            "ground_V": 0.008046565328812826,
+            "differential_V": 0.8384212472482909,
+            "store_V": 0.8464677618546
+          },
+          {
+            "column": 13,
+            "upper_V": 0.13335520171964188,
+            "ground_V": 0.008201914091458994,
+            "differential_V": 0.1251532876281829,
+            "store_V": 0.13335442527943353
+          },
+          {
+            "column": 14,
+            "upper_V": 0.8467253671480794,
+            "ground_V": 0.008301827481614246,
+            "differential_V": 0.8384235396664652,
+            "store_V": 0.846725316456043
+          },
+          {
+            "column": 15,
+            "upper_V": 0.13347067092136844,
+            "ground_V": 0.00835428824721995,
+            "differential_V": 0.12511638267414849,
+            "store_V": 0.13346989441658016
+          }
+        ]
+      },
+      {
+        "event": "before_row_off",
+        "time_s": 0.0014019990000000001,
+        "max_mim_ground_V": 0.008354808493802128,
+        "min_mim_ground_V": 0.0023087544969300792,
+        "VDD_V": 3.295723671727323,
+        "BIAS_V": 0.9260392301928579,
+        "PREF_V": 1.541478363160367,
+        "columns": [
+          {
+            "column": 0,
+            "upper_V": 0.8405344035832752,
+            "ground_V": 0.0023087544970784367,
+            "differential_V": 0.8382256490861968,
+            "store_V": 0.8405344035814022
+          },
+          {
+            "column": 1,
+            "upper_V": 0.12888296683027575,
+            "ground_V": 0.003006211687976444,
+            "differential_V": 0.12587675514229932,
+            "store_V": 0.12888296679033226
+          },
+          {
+            "column": 2,
+            "upper_V": 0.8419839041273601,
+            "ground_V": 0.0037019754917623523,
+            "differential_V": 0.8382819286355978,
+            "store_V": 0.8419839041261491
+          },
+          {
+            "column": 3,
+            "upper_V": 0.13002352286058028,
+            "ground_V": 0.004364943272168075,
+            "differential_V": 0.1256585795884122,
+            "store_V": 0.1300235228212114
+          },
+          {
+            "column": 4,
+            "upper_V": 0.8432831711223998,
+            "ground_V": 0.004975349880620005,
+            "differential_V": 0.8383078212417798,
+            "store_V": 0.8432831711217961
+          },
+          {
+            "column": 5,
+            "upper_V": 0.13101125505637434,
+            "ground_V": 0.005541264254892595,
+            "differential_V": 0.12546999080148175,
+            "store_V": 0.13101125501750238
+          },
+          {
+            "column": 6,
+            "upper_V": 0.8443798700501814,
+            "ground_V": 0.006050933744276867,
+            "differential_V": 0.8383289363059045,
+            "store_V": 0.8443798700500919
+          },
+          {
+            "column": 7,
+            "upper_V": 0.13182915477968335,
+            "ground_V": 0.006514647254679051,
+            "differential_V": 0.1253145075250043,
+            "store_V": 0.13182915474122586
+          },
+          {
+            "column": 8,
+            "upper_V": 0.8452666917883048,
+            "ground_V": 0.006921616676277026,
+            "differential_V": 0.8383450751120278,
+            "store_V": 0.8452666917886351
+          },
+          {
+            "column": 9,
+            "upper_V": 0.13247412441694914,
+            "ground_V": 0.007282475213312946,
+            "differential_V": 0.1251916492036362,
+            "store_V": 0.13247412437882364
+          },
+          {
+            "column": 10,
+            "upper_V": 0.8459430235883572,
+            "ground_V": 0.007586672882798174,
+            "differential_V": 0.838356350705559,
+            "store_V": 0.8459430235890156
+          },
+          {
+            "column": 11,
+            "upper_V": 0.1329459961856757,
+            "ground_V": 0.007844873490396032,
+            "differential_V": 0.12510112269527968,
+            "store_V": 0.13294599614780078
+          },
+          {
+            "column": 12,
+            "upper_V": 0.8464095980558293,
+            "ground_V": 0.008046588585820044,
+            "differential_V": 0.8383630094700092,
+            "store_V": 0.8464095980567219
+          },
+          {
+            "column": 13,
+            "upper_V": 0.1332451805987869,
+            "ground_V": 0.008202433366405467,
+            "differential_V": 0.12504274723238143,
+            "store_V": 0.13324518056108275
+          },
+          {
+            "column": 14,
+            "upper_V": 0.8466671654912434,
+            "ground_V": 0.008301849643200018,
+            "differential_V": 0.8383653158480434,
+            "store_V": 0.8466671654922853
+          },
+          {
+            "column": 15,
+            "upper_V": 0.13336065254679347,
+            "ground_V": 0.008354808488803142,
+            "differential_V": 0.1250058440579903,
+            "store_V": 0.13336065250920326
+          }
+        ]
+      },
+      {
+        "event": "after_row_off",
+        "time_s": 0.0014025,
+        "max_mim_ground_V": 0.008102519786939962,
+        "min_mim_ground_V": 0.002247223902349833,
+        "VDD_V": 3.295851279473753,
+        "BIAS_V": 0.9260450653050797,
+        "PREF_V": 1.5415734274249357,
+        "columns": [
+          {
+            "column": 0,
+            "upper_V": 0.8404311027828574,
+            "ground_V": 0.002247223902409474,
+            "differential_V": 0.8381838788804479,
+            "store_V": 0.8404311027834062
+          },
+          {
+            "column": 1,
+            "upper_V": 0.1287970548232342,
+            "ground_V": 0.002925899377261918,
+            "differential_V": 0.12587115544597227,
+            "store_V": 0.12879705482699558
+          },
+          {
+            "column": 2,
+            "upper_V": 0.8418360906922493,
+            "ground_V": 0.0035955907813143583,
+            "differential_V": 0.838240499910935,
+            "store_V": 0.8418360906928907
+          },
+          {
+            "column": 3,
+            "upper_V": 0.12989403895819812,
+            "ground_V": 0.004240713482518237,
+            "differential_V": 0.1256533254756799,
+            "store_V": 0.1298940389620842
+          },
+          {
+            "column": 4,
+            "upper_V": 0.8430945560695511,
+            "ground_V": 0.004827850392772225,
+            "differential_V": 0.8382667056767789,
+            "store_V": 0.8430945560702944
+          },
+          {
+            "column": 5,
+            "upper_V": 0.13084405754022252,
+            "ground_V": 0.005379021892624508,
+            "differential_V": 0.125465035647598,
+            "store_V": 0.13084405754421174
+          },
+          {
+            "column": 6,
+            "upper_V": 0.8441568144317044,
+            "ground_V": 0.005868729321059821,
+            "differential_V": 0.8382880851106446,
+            "store_V": 0.8441568144325442
+          },
+          {
+            "column": 7,
+            "upper_V": 0.13163077827357267,
+            "ground_V": 0.006320978759690458,
+            "differential_V": 0.12530979951388221,
+            "store_V": 0.1316307782776311
+          },
+          {
+            "column": 8,
+            "upper_V": 0.8450157902026196,
+            "ground_V": 0.006711352480571765,
+            "differential_V": 0.8383044377220479,
+            "store_V": 0.8450157902034401
+          },
+          {
+            "column": 9,
+            "upper_V": 0.1322511943308791,
+            "ground_V": 0.0070640584856621075,
+            "differential_V": 0.12518713584521698,
+            "store_V": 0.13225119433498822
+          },
+          {
+            "column": 10,
+            "upper_V": 0.8456709030975877,
+            "ground_V": 0.007355026801941812,
+            "differential_V": 0.838315876295646,
+            "store_V": 0.845670903098505
+          },
+          {
+            "column": 11,
+            "upper_V": 0.13270514581388987,
+            "ground_V": 0.007608394362552552,
+            "differential_V": 0.1250967514513373,
+            "store_V": 0.13270514581804027
+          },
+          {
+            "column": 12,
+            "upper_V": 0.8461228871893449,
+            "ground_V": 0.007800240001409883,
+            "differential_V": 0.838322647187935,
+            "store_V": 0.8461228871902261
+          },
+          {
+            "column": 13,
+            "upper_V": 0.13299305297080943,
+            "ground_V": 0.007954587473049522,
+            "differential_V": 0.1250384654977599,
+            "store_V": 0.13299305297498545
+          },
+          {
+            "column": 14,
+            "upper_V": 0.8463725407070872,
+            "ground_V": 0.008047526248322208,
+            "differential_V": 0.8383250144587651,
+            "store_V": 0.846372540708054
+          },
+          {
+            "column": 15,
+            "upper_V": 0.13310411782728498,
+            "ground_V": 0.008102519786579021,
+            "differential_V": 0.12500159804070596,
+            "store_V": 0.13310411783150536
+          }
+        ]
+      },
+      {
+        "event": "after_reset",
+        "time_s": 0.001405,
+        "max_mim_ground_V": 0.00810277905716624,
+        "min_mim_ground_V": 0.0022472964866786346,
+        "VDD_V": 3.2959170098924258,
+        "BIAS_V": 0.9260510328127612,
+        "PREF_V": 1.5416223675326284,
+        "columns": [
+          {
+            "column": 0,
+            "upper_V": 0.840431205042882,
+            "ground_V": 0.0022472964867327897,
+            "differential_V": 0.8381839085561492,
+            "store_V": 0.8404312050426767
+          },
+          {
+            "column": 1,
+            "upper_V": 0.12879718239216922,
+            "ground_V": 0.0029259935451539996,
+            "differential_V": 0.12587118884701523,
+            "store_V": 0.12879718239524027
+          },
+          {
+            "column": 2,
+            "upper_V": 0.8418362356674032,
+            "ground_V": 0.0035957064958130557,
+            "differential_V": 0.8382405291715901,
+            "store_V": 0.8418362356669303
+          },
+          {
+            "column": 3,
+            "upper_V": 0.12989420810173116,
+            "ground_V": 0.004240849661523567,
+            "differential_V": 0.12565335844020759,
+            "store_V": 0.12989420810453192
+          },
+          {
+            "column": 4,
+            "upper_V": 0.8430947399882922,
+            "ground_V": 0.00482800543624835,
+            "differential_V": 0.8382667345520438,
+            "store_V": 0.843094739987597
+          },
+          {
+            "column": 5,
+            "upper_V": 0.13084426261297916,
+            "ground_V": 0.005379194376720923,
+            "differential_V": 0.12546506823625822,
+            "store_V": 0.13084426261557114
+          },
+          {
+            "column": 6,
+            "upper_V": 0.8441570311970982,
+            "ground_V": 0.005868917535576238,
+            "differential_V": 0.8382881136615219,
+            "store_V": 0.8441570311962412
+          },
+          {
+            "column": 7,
+            "upper_V": 0.13163101304121116,
+            "ground_V": 0.006321181249162272,
+            "differential_V": 0.12530983179204888,
+            "store_V": 0.13163101304365185
+          },
+          {
+            "column": 8,
+            "upper_V": 0.8450160335308331,
+            "ground_V": 0.006711567520819929,
+            "differential_V": 0.8383044660100132,
+            "store_V": 0.8450160335298569
+          },
+          {
+            "column": 9,
+            "upper_V": 0.1322514525053917,
+            "ground_V": 0.0070642846268945845,
+            "differential_V": 0.1251871678784971,
+            "store_V": 0.13225145250772277
+          },
+          {
+            "column": 10,
+            "upper_V": 0.8456711667069056,
+            "ground_V": 0.007355262323676699,
+            "differential_V": 0.8383159043832289,
+            "store_V": 0.8456711667058427
+          },
+          {
+            "column": 11,
+            "upper_V": 0.13270542113223147,
+            "ground_V": 0.007608637826800425,
+            "differential_V": 0.12509678330543103,
+            "store_V": 0.13270542113448158
+          },
+          {
+            "column": 12,
+            "upper_V": 0.8461231648322549,
+            "ground_V": 0.007800489695343781,
+            "differential_V": 0.8383226751369112,
+            "store_V": 0.8461231648311236
+          },
+          {
+            "column": 13,
+            "upper_V": 0.13299333920914388,
+            "ground_V": 0.007954841971444172,
+            "differential_V": 0.12503849723769972,
+            "store_V": 0.13299333921132359
+          },
+          {
+            "column": 14,
+            "upper_V": 0.8463728261770408,
+            "ground_V": 0.008047783846947694,
+            "differential_V": 0.8383250423300931,
+            "store_V": 0.8463728261758577
+          },
+          {
+            "column": 15,
+            "upper_V": 0.13310440878844837,
+            "ground_V": 0.008102779056778246,
+            "differential_V": 0.12500162973167012,
+            "store_V": 0.13310440879058638
+          }
+        ]
+      }
+    ]
+  },
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "evidence_hashes": {
+    "build/compact-bank-resume-control-20260928/.spiceinit": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b",
+    "build/compact-bank-resume-control-20260928/capture0-reference/execution.json": "fcac627d534c434236ad923ade567b8def1831b6d3e57f5b6315a6b4ae093fdb",
+    "build/compact-bank-resume-control-20260928/capture0-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture0-reference/op.raw": "8af77794fa4e621fbba1250fa26e1d2e1f45c0aaa65c5bd7f210a3d420bb8f7a",
+    "build/compact-bank-resume-control-20260928/capture0-reference/test.spice": "42da6b8550573fcaa7bd4cf2fe9628bb2db5e756dae6725aeb6cbf69a218c36b",
+    "build/compact-bank-resume-control-20260928/capture1-reference/execution.json": "9a904d6f3e441600e62e5e21fc0f70b7c57e5357513968cb14d1ceffdf607354",
+    "build/compact-bank-resume-control-20260928/capture1-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture1-reference/op.raw": "cebcb9250013ee5daf863fe2944d7dd999c4a98a3a739d4ae09605e04faa3419",
+    "build/compact-bank-resume-control-20260928/capture1-reference/test.spice": "44c3860f2373caf705aca0ee568136d79c392ea101b48e61f457646e9c9113b0",
+    "build/compact-bank-resume-control-20260928/capture10-reference/execution.json": "56401350c0ea28afe765be537b1e65e1e139440f18e605468c6b79bb334bf96d",
+    "build/compact-bank-resume-control-20260928/capture10-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture10-reference/op.raw": "a645bdd8a93ce09ef8aed05720c466a1746cfa2fb3f246d65310f53e2598f56e",
+    "build/compact-bank-resume-control-20260928/capture10-reference/test.spice": "b16fd397b017da66a4dbaf6da88873a72c58cedf469e0555e96621b6ee2bd959",
+    "build/compact-bank-resume-control-20260928/capture11-reference/execution.json": "c87f1b87861b9d053cd02401d290a8540d3bf5a4c1c437dcce14b71b90e143f1",
+    "build/compact-bank-resume-control-20260928/capture11-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture11-reference/op.raw": "00b543a7e9c71e904d9d2e65bb0e09ab57c14b8d16362edb17348456c3924182",
+    "build/compact-bank-resume-control-20260928/capture11-reference/test.spice": "e29765b6a6cbce5fa027e12d73925cca80935bebdf26da61c5b1a2cb24da5e96",
+    "build/compact-bank-resume-control-20260928/capture12-reference/execution.json": "56aadd01894c83b6ddf7edcefe8d914ab70aa2bd890c0c70da2d590352aecb5a",
+    "build/compact-bank-resume-control-20260928/capture12-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture12-reference/op.raw": "d2cbfa0a376cd0b2517efde6831e67263fdd2d7a50d494c29d5b7977d661a4a3",
+    "build/compact-bank-resume-control-20260928/capture12-reference/test.spice": "cee5a7a20b554cdd3869cf6d1881aca84a7c9861e09d273bb2d887a3ec7d50a1",
+    "build/compact-bank-resume-control-20260928/capture13-reference/execution.json": "31705518e42ac162cc288fc0ddf1622d4a3894d206ea6472500a4daf121f1ea4",
+    "build/compact-bank-resume-control-20260928/capture13-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture13-reference/op.raw": "894cb5f27329faaa2a97c1d1a2115d4eb3fb351b06220719cc1c99631afa7d48",
+    "build/compact-bank-resume-control-20260928/capture13-reference/test.spice": "273c6119765ebbd11ab822b43dbd9262bdf8aa30f1bdec3f9337a38a04d7420d",
+    "build/compact-bank-resume-control-20260928/capture14-reference/execution.json": "a0ce836934d19a58ae6314da4cb24a74f65d1e29297efcc34cdd4eeb5dd11837",
+    "build/compact-bank-resume-control-20260928/capture14-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture14-reference/op.raw": "2bbd3c3f043d7ebdc48e8cf33fe3ef99d240fefc2ebce1360d5d294f3368fed8",
+    "build/compact-bank-resume-control-20260928/capture14-reference/test.spice": "856de842264496771282f6d72a25ffbff7d4a7a53711cbbcb43dac61bfb06714",
+    "build/compact-bank-resume-control-20260928/capture15-reference/execution.json": "6db1eb5b63d03aae98d6dc0892dea19915cc64e0f9763bdf8f5d3149e3c12d1a",
+    "build/compact-bank-resume-control-20260928/capture15-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture15-reference/op.raw": "5557c27e07f05c8651dafedde5683980ee621f9344d2ff46c44f34309c0eadd2",
+    "build/compact-bank-resume-control-20260928/capture15-reference/test.spice": "54f44c5ca80eb1c3f1c00aa8caab005699736aa7a8e5b0f1c23199192c17aeb3",
+    "build/compact-bank-resume-control-20260928/capture2-reference/execution.json": "6704bcaeb0661822d46cb60c08a642899a7aa1f201dcfd0805c34459db1611dc",
+    "build/compact-bank-resume-control-20260928/capture2-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture2-reference/op.raw": "9f5282c97a5c255fc56e31a6a97d7db193763ddeec9690d90e19c8822ea5ea8b",
+    "build/compact-bank-resume-control-20260928/capture2-reference/test.spice": "2c59a60f46445e0f03a41050a6b6be57e98b0ff4d00e84920ef43da61837b522",
+    "build/compact-bank-resume-control-20260928/capture3-reference/execution.json": "d0f030726981317dcac3c4c51d3dce6cd07d7e6a7421b7fb26593b4e8e6a3fb1",
+    "build/compact-bank-resume-control-20260928/capture3-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture3-reference/op.raw": "ff9c5619e87e075c204ef6afce29770367418f7f877a80664b2a6ce35ad3af56",
+    "build/compact-bank-resume-control-20260928/capture3-reference/test.spice": "8114dca8dcebc95492abe9230accd9447bbc3f69a459d3aa3bfba52f1a9e3631",
+    "build/compact-bank-resume-control-20260928/capture4-reference/execution.json": "db6692ae66ad8c2f3b9549d174219db27a6f3bf3fd92920854c18822d5cb405d",
+    "build/compact-bank-resume-control-20260928/capture4-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture4-reference/op.raw": "2b9d174131a5c65c993b85724f14893ffa1048577a47683af3e550381be1d191",
+    "build/compact-bank-resume-control-20260928/capture4-reference/test.spice": "d080138a1763bcb1cd4213eed7f4eb5ea3c414ab157351ab61f0a8b224de6829",
+    "build/compact-bank-resume-control-20260928/capture5-reference/execution.json": "abc7cad9a6caa34b4733a5fd0769a9b85009cf8bed19bbaf881bfdcca9946ae5",
+    "build/compact-bank-resume-control-20260928/capture5-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture5-reference/op.raw": "bb833e9e4fb9ecd187073aa23914b8b52137242c3b8f36412867377be4bb930e",
+    "build/compact-bank-resume-control-20260928/capture5-reference/test.spice": "2ecb5a0cf5f884f0d49abdc07926d15bdc145955293d68bc5250e737d42c6bbe",
+    "build/compact-bank-resume-control-20260928/capture6-reference/execution.json": "080a6770c3dfe16beafb860cd08ddf9dc6af9def39a37a981007605e2c49dd5d",
+    "build/compact-bank-resume-control-20260928/capture6-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture6-reference/op.raw": "95e739ab0f111437897618c95158bc2a11bfae8b2fda1faad4e2335c100005f4",
+    "build/compact-bank-resume-control-20260928/capture6-reference/test.spice": "71ea3aba86538b8b12b3d6d177b563bd50af4da1fd0665c9ed660552d193c12f",
+    "build/compact-bank-resume-control-20260928/capture7-reference/execution.json": "24e8da198c2950a66eef4e417ee46b082c946fe6933ed01b07b8944bdd625307",
+    "build/compact-bank-resume-control-20260928/capture7-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture7-reference/op.raw": "fd9c01bea00d967251fcdd93d912f82e9ef020e23787f2864af705141d9bab89",
+    "build/compact-bank-resume-control-20260928/capture7-reference/test.spice": "f449ab1a424829b017248b731f959e31cfba83105196e163fa6f45ddaca8a739",
+    "build/compact-bank-resume-control-20260928/capture8-reference/execution.json": "6de7be6f645ff4e71c02f8b32ffb22519ed92d062e3cd4d3daef9dd19ccf67ed",
+    "build/compact-bank-resume-control-20260928/capture8-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture8-reference/op.raw": "81829c3101c7b44fb213dd223c52dde865d3bcea95261fa87126aa019beb4653",
+    "build/compact-bank-resume-control-20260928/capture8-reference/test.spice": "dc97299427d9d2948527ec561f4edab62469dbf644cbadf40ef5f494ea32ef63",
+    "build/compact-bank-resume-control-20260928/capture9-reference/execution.json": "5df7205fd3d6a570db89f38dbb5993290432f91f908d011084fca3532ac81e01",
+    "build/compact-bank-resume-control-20260928/capture9-reference/ngspice.log": "2f9a4cee56378274109372a7f35fa5bc667bd8985e74bc721530f8eb7bc8289e",
+    "build/compact-bank-resume-control-20260928/capture9-reference/op.raw": "56967e9d1e63ca54cfa4909ecc75c3f26c61c79431e137f8111084eee458bede",
+    "build/compact-bank-resume-control-20260928/capture9-reference/test.spice": "83d7418884994d13e801f015f2fc0cd6f365ae6092789493611c476add5f617b",
+    "build/compact-bank-resume-control-20260928/first0-output-reference/execution.json": "0f10c576345c1bfe6e546e197eb0cf91e80a1529e26b9b3bf94e274cb8e8af03",
+    "build/compact-bank-resume-control-20260928/first0-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first0-output-reference/op.raw": "29e39f876560388c5f186ce6fe27fb1e07627f43d53c972b2436de04cb73d704",
+    "build/compact-bank-resume-control-20260928/first0-output-reference/test.spice": "feaee76e9974d57a8fa1f066177a909fe8f6cea43f7031c81b38f2dfe0e21752",
+    "build/compact-bank-resume-control-20260928/first1-output-reference/execution.json": "ccf1e4ba1e5054de352576d6df2e393faeab43e31d24b31baf1dbb09de51a941",
+    "build/compact-bank-resume-control-20260928/first1-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first1-output-reference/op.raw": "fe1e46fbb5d852c2f22b59ec303129a2a1e464c69fb17a6d1d505df702ec6864",
+    "build/compact-bank-resume-control-20260928/first1-output-reference/test.spice": "baaaed6aa40822f6768b67634964d9e4ebff5d9ccf6b7943049df5647aa95cbc",
+    "build/compact-bank-resume-control-20260928/first10-output-reference/execution.json": "c341235acd3371e2a870f450d33fa30a28e93526bffce6d97caab86b9961afda",
+    "build/compact-bank-resume-control-20260928/first10-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first10-output-reference/op.raw": "38cfe8a4a9a2e5e40ceecab88665f68c019690034506d79dbb17f2852542e1a5",
+    "build/compact-bank-resume-control-20260928/first10-output-reference/test.spice": "11bf296756d9bfcdb56db7b80130076a554c9a7078ec5c30a9af2609d7b0c91a",
+    "build/compact-bank-resume-control-20260928/first11-output-reference/execution.json": "1e9e42df923ac1afc02638102f54fd6d2a0f57648acba21522d98101509a7c07",
+    "build/compact-bank-resume-control-20260928/first11-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first11-output-reference/op.raw": "13ff0b4d3920c98425c8e58f741818c134c8e059374e8953a08ec340dc7e1c25",
+    "build/compact-bank-resume-control-20260928/first11-output-reference/test.spice": "fc4a7ecd78bcbbdfb66fa80f702a74c258b550f08c4e4b967ee7fd86785d6060",
+    "build/compact-bank-resume-control-20260928/first12-output-reference/execution.json": "ce360789eb04ecd032db893388e3232f6b87476fa94b3ca11ed946c2816f11ea",
+    "build/compact-bank-resume-control-20260928/first12-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first12-output-reference/op.raw": "0d517a82d61587e5e8409d00a4bb39ccc45c47254ab8c8a614c255c109cad375",
+    "build/compact-bank-resume-control-20260928/first12-output-reference/test.spice": "e7a039439498f002403bd348f2b4ec66f5ff18495aac6399b32e4c6016aad7e0",
+    "build/compact-bank-resume-control-20260928/first13-output-reference/execution.json": "069380e2c69d4acb6598d2ad915b61d7d3acf325ed470e17f0f2e5d7a860f750",
+    "build/compact-bank-resume-control-20260928/first13-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first13-output-reference/op.raw": "1df7d975819bfb1ff5c8bf3f61d9412a29547e6c9653fb3c2746d52841b0a449",
+    "build/compact-bank-resume-control-20260928/first13-output-reference/test.spice": "0b5fd3c315eaf2e7b7284b57b8024a4a654507609c878f4dfae38d1ce04ed59c",
+    "build/compact-bank-resume-control-20260928/first14-output-reference/execution.json": "573fb2856997bd8f49e51321ae3c6ec456580953e0be1d972fd2716390037a93",
+    "build/compact-bank-resume-control-20260928/first14-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first14-output-reference/op.raw": "166f7614e15deace9f4aa53624ada77bbdea49bef07a2594acf687c7fe202833",
+    "build/compact-bank-resume-control-20260928/first14-output-reference/test.spice": "ce9fd74143908d1a333c4b466cdfe8c8172ab88e564185087e4c4080f0f3b35a",
+    "build/compact-bank-resume-control-20260928/first15-output-reference/execution.json": "4f23d6e9824b5e671c623ad5fae7cf34405516a6c7e8436078ef5f0f74f5c6aa",
+    "build/compact-bank-resume-control-20260928/first15-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first15-output-reference/op.raw": "7f70bdd668933b2e0015cc885a8305dcf4d9087d1f552d1696928c4024e8f107",
+    "build/compact-bank-resume-control-20260928/first15-output-reference/test.spice": "f55bf781ea4294951318b250c20cb4f9946698bc09db4eff9ff905df12edb933",
+    "build/compact-bank-resume-control-20260928/first2-output-reference/execution.json": "6a333ca122666c36028d206bd823247290f6e7f857d1989a5139c88c605f0f60",
+    "build/compact-bank-resume-control-20260928/first2-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first2-output-reference/op.raw": "381337d21c6a0fbda491500e278573c532a25d04475384243c23391fde2c6e65",
+    "build/compact-bank-resume-control-20260928/first2-output-reference/test.spice": "9a103c0232e791d017a025c6623cafc879bbf99d6ec48eb383a5959ef4dc8280",
+    "build/compact-bank-resume-control-20260928/first3-output-reference/execution.json": "50dbb2eca3bf8913720417133eeaff1daf4fd2062d875653ff3634679d98c23c",
+    "build/compact-bank-resume-control-20260928/first3-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first3-output-reference/op.raw": "05172e1ba97898550d8873739a1e0794774f886c92fd444ce89a8970048e1b5d",
+    "build/compact-bank-resume-control-20260928/first3-output-reference/test.spice": "b64fe3ed23841043e58c1a535667b60dcba5816b0303948c78662ae1c3695792",
+    "build/compact-bank-resume-control-20260928/first4-output-reference/execution.json": "4c48c346b51bcf9fae4ae5f7575f3475512bd6d90b8629498ba0de240c0c0c86",
+    "build/compact-bank-resume-control-20260928/first4-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first4-output-reference/op.raw": "603cfae300ff8c7346fe8a0f221d6cfe8b9c6b31ceae71063774a83d553fca65",
+    "build/compact-bank-resume-control-20260928/first4-output-reference/test.spice": "78cdc6ffbd4280016ff97c2cf8af23fd8dd122252dddefa0cff7f3ab02959752",
+    "build/compact-bank-resume-control-20260928/first5-output-reference/execution.json": "d34bcd9e1d7cfd91711bd5354955185188306a86461c9e8f82c4b80c52490463",
+    "build/compact-bank-resume-control-20260928/first5-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first5-output-reference/op.raw": "9f66f204d058658d17b29d9ba51b2e1d0baff837698edfeafdaa46afb4a1d1d2",
+    "build/compact-bank-resume-control-20260928/first5-output-reference/test.spice": "30cf202f05e5647e52ed96811fe671b0235476eb8334a3af54cbc3a9247d4d73",
+    "build/compact-bank-resume-control-20260928/first6-output-reference/execution.json": "672c94d415a805bf046e76f8ccd5696d685431b26e072f91f64775618f3612c8",
+    "build/compact-bank-resume-control-20260928/first6-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first6-output-reference/op.raw": "f24e748c87375accfa2d61c856390c32f34190356a42c4598b9343a184ac8701",
+    "build/compact-bank-resume-control-20260928/first6-output-reference/test.spice": "b2118487ffcdd1369c19995b1fb266161ac37ca7f71b52d9388b1df90f0494bf",
+    "build/compact-bank-resume-control-20260928/first7-output-reference/execution.json": "16d73e406dec614460ace0536242ff91308c92c066aad70acaaf9c0563c91cb5",
+    "build/compact-bank-resume-control-20260928/first7-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first7-output-reference/op.raw": "7eb52cfeacced9f9fb68f8312565229af387717e0a7f2aadab6881a489316ca5",
+    "build/compact-bank-resume-control-20260928/first7-output-reference/test.spice": "b502c68775df9d31eb027fba41f9a85c4e1d12ac1955a2519268867e4773d3ac",
+    "build/compact-bank-resume-control-20260928/first8-output-reference/execution.json": "edd333a7b9349416f5c421c630887b0958e8c0bef31226b2e91727306f377477",
+    "build/compact-bank-resume-control-20260928/first8-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first8-output-reference/op.raw": "1b59bad9bf436aefa80bbfd104f5a25c7a2f2fa00953f4309ef853edf9a4c261",
+    "build/compact-bank-resume-control-20260928/first8-output-reference/test.spice": "54e3291bfab46e2fd7747c837c26dd4ea3597abf73c7a5457b6787f480c70fa2",
+    "build/compact-bank-resume-control-20260928/first9-output-reference/execution.json": "5a107593d8377d7c1f55c7c71c1484655f13ae3e70a6b3d4a69d0b9cb9763685",
+    "build/compact-bank-resume-control-20260928/first9-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/first9-output-reference/op.raw": "85f52aa5c6744cf98bf47a1f75be1e15b9f705a0dd24cc4a8e3155a71cd49672",
+    "build/compact-bank-resume-control-20260928/first9-output-reference/test.spice": "b073d2adb45443f0156094f074964a956d25b5be526b4aaf4aaea1cc26c479c1",
+    "build/compact-bank-resume-control-20260928/last0-output-reference/execution.json": "693a0c21bfdde0a7dc745795dfe7aa55aee70b347f54a313d675bdccda15b24f",
+    "build/compact-bank-resume-control-20260928/last0-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last0-output-reference/op.raw": "58c256263a433af873f22eea31c7f03a69bc8289578419c05cd73473206a3d3b",
+    "build/compact-bank-resume-control-20260928/last0-output-reference/test.spice": "427fbf845c0a4724616398964aa0ff7bf812a2d7e3be64afa0b5907a8a55a395",
+    "build/compact-bank-resume-control-20260928/last1-output-reference/execution.json": "fd0a308f2ef6f8b3529c61bba02e91db080327cf7f2ab2c1f3255a726cb44f59",
+    "build/compact-bank-resume-control-20260928/last1-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last1-output-reference/op.raw": "1a930b3c97cf2d62f3b14a4d38f04ddb88f06cecce80d84855f71192cbd7b913",
+    "build/compact-bank-resume-control-20260928/last1-output-reference/test.spice": "cccbebf6c6d14b20657bc7718e3e9b2b9fd50c1becf6d0f3d70174e363542f3b",
+    "build/compact-bank-resume-control-20260928/last10-output-reference/execution.json": "577875cf51b7333495c566d3b0f2be99987bdc8353194459f0f110a40edd1ea5",
+    "build/compact-bank-resume-control-20260928/last10-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last10-output-reference/op.raw": "d910416b7c1f58650e24293ed68548beffeed598e11716fe2c0585e4437b661c",
+    "build/compact-bank-resume-control-20260928/last10-output-reference/test.spice": "451371f77f33e4e206f1c0960cce0ca89555a43e5530dfc64ec97c64827f494c",
+    "build/compact-bank-resume-control-20260928/last11-output-reference/execution.json": "51c4aefa79a95f7982d7710f3133b8e181bc97394a8ce90aba7f820797e711fc",
+    "build/compact-bank-resume-control-20260928/last11-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last11-output-reference/op.raw": "bd57a337b51cbc089f2a71007c0a41375b34c9d43ab97d262c2245d774b81164",
+    "build/compact-bank-resume-control-20260928/last11-output-reference/test.spice": "cdb6c272326a62db1f6846c9df39f6f703227b10f72e7cbe91d1e86689f0920a",
+    "build/compact-bank-resume-control-20260928/last12-output-reference/execution.json": "800612764dfbfd7687204a998a7cc66d5243f02f20db0974b69e793221e653c3",
+    "build/compact-bank-resume-control-20260928/last12-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last12-output-reference/op.raw": "28464f3e10aee80a98196416b0fe268d8135be5215ba37d62c52a2a25ba4b541",
+    "build/compact-bank-resume-control-20260928/last12-output-reference/test.spice": "67f28fa6e429a37ae5cb647157805299c86dc490a9f740ea579167c8c44580ba",
+    "build/compact-bank-resume-control-20260928/last13-output-reference/execution.json": "7f8cf72f9f92b88a2796d249934efdb44666592d0cc02ae694238ad3d92ee8c0",
+    "build/compact-bank-resume-control-20260928/last13-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last13-output-reference/op.raw": "e3b594f8baf285c3c02e557599e24deb78f3af17e7d0e2a16a0da400c63f0439",
+    "build/compact-bank-resume-control-20260928/last13-output-reference/test.spice": "54864702f89bc4e66dcb7432b8ff655ea21f01d6cf4edf67d739b98c088f92e5",
+    "build/compact-bank-resume-control-20260928/last14-output-reference/execution.json": "430a96c0d6f3e68a0511d7f22a6298a8f40a7cb9444d4ba82901bda0b867e265",
+    "build/compact-bank-resume-control-20260928/last14-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last14-output-reference/op.raw": "5946eb2b4e8f2a03b50253df572d683986c6df5670d1ba98feb9cb9726c40ccb",
+    "build/compact-bank-resume-control-20260928/last14-output-reference/test.spice": "ecf23ea72cd5cbca194f736596bbe7a516d7192dd80a8a7193cf703add7e4b47",
+    "build/compact-bank-resume-control-20260928/last15-output-reference/execution.json": "edb388b33774a0820fa374f4841881d73afc3400d715f84ef2fe93e0bb645d25",
+    "build/compact-bank-resume-control-20260928/last15-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last15-output-reference/op.raw": "a1340f02c8f16f430956a9d89c72c3d327752eea396ffc2da3177394a28db6cc",
+    "build/compact-bank-resume-control-20260928/last15-output-reference/test.spice": "190a94d5a510f41677c0ba9edb731f8a01fb09fbed38003e066e1d53040447a5",
+    "build/compact-bank-resume-control-20260928/last2-output-reference/execution.json": "272329065928708e1d45f5ace2c2a34c7a25c28c655b7cd71fe11bfc1e84297d",
+    "build/compact-bank-resume-control-20260928/last2-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last2-output-reference/op.raw": "562eaa4848917f12d7096f592e61b57a81a3dfe192257cf24d140125d1b450fa",
+    "build/compact-bank-resume-control-20260928/last2-output-reference/test.spice": "2555d4f3d9b2ecf5e427193d0937090156a8b6c5f48ab71852f57531c4d7adda",
+    "build/compact-bank-resume-control-20260928/last3-output-reference/execution.json": "1083f4b3ec74bc955ceae69174719f8d62757ef9f709a9a2b8d78bcba6c881e4",
+    "build/compact-bank-resume-control-20260928/last3-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last3-output-reference/op.raw": "495aafd32bcee424de66f9e1dc1f7b0f907b446fa075952e3aad9b11183d1f56",
+    "build/compact-bank-resume-control-20260928/last3-output-reference/test.spice": "1aac129227ab4d28d6d4202a8ea8f56131d85509f00e463c17d116a9a871c344",
+    "build/compact-bank-resume-control-20260928/last4-output-reference/execution.json": "fafb106511414fc36b396e8c457355e65f42f4f7b2f9023bc601ff610b4d6e44",
+    "build/compact-bank-resume-control-20260928/last4-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last4-output-reference/op.raw": "6da4c63406e4ecdd5455d849d50cdf52ae755b951ecf566bddb4eeaa2ea19302",
+    "build/compact-bank-resume-control-20260928/last4-output-reference/test.spice": "772e516524a103d4c8f54c5acc0f819d8f6948e28643263491aadb1ee4b16063",
+    "build/compact-bank-resume-control-20260928/last5-output-reference/execution.json": "f35fa01d00ccb4d3c7d7a28e5e87a92ec8adf9e1d86fa78519bb15c548094609",
+    "build/compact-bank-resume-control-20260928/last5-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last5-output-reference/op.raw": "596b2525c0c5be15a2879a1a896dcaaf623b84cf4a6c1bc7055db01e2ed36ea8",
+    "build/compact-bank-resume-control-20260928/last5-output-reference/test.spice": "c4bb384a73d8564065fe13beedf14caafd7bc0f9b120f8fe9b9c30833efd802c",
+    "build/compact-bank-resume-control-20260928/last6-output-reference/execution.json": "a90c11cc266ca73382c22eb7cbfd8e91cef640aadecb7d4f5151f5e9477a1307",
+    "build/compact-bank-resume-control-20260928/last6-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last6-output-reference/op.raw": "d7d09166e4a35318a14e2e18c4efde8acb1fa16dbb292549f2ba70be35b1fb9b",
+    "build/compact-bank-resume-control-20260928/last6-output-reference/test.spice": "b3711377382d10d106cc82c0416a7bf0e5b3bc99f949d4695e5f1ddd259b2eea",
+    "build/compact-bank-resume-control-20260928/last7-output-reference/execution.json": "6492369e134cd6e3ce62aaba0ccb6238dd0e2a945e239f9ea57e0a289152ad9c",
+    "build/compact-bank-resume-control-20260928/last7-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last7-output-reference/op.raw": "fb9c38d7fb395dbc5c562fae1c942ff3f2aba473f388a3d0c34d46e6394c4307",
+    "build/compact-bank-resume-control-20260928/last7-output-reference/test.spice": "bf1cf36bc4d22654a599a5b3505a652fc01b22a0677954436c804b6e065c4ddd",
+    "build/compact-bank-resume-control-20260928/last8-output-reference/execution.json": "1948b60a4dc156ec98f62c7d1fab6ffa2f537b28c551beb0d8711757b5dce1fd",
+    "build/compact-bank-resume-control-20260928/last8-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last8-output-reference/op.raw": "31627524654c345162a7412a259502b24fd003cfd7069e19caec729ef8aef3b0",
+    "build/compact-bank-resume-control-20260928/last8-output-reference/test.spice": "51bebed86d180a83bd5425fdaf9a8d1bdeb40f4bc56c6db1270399d701fff281",
+    "build/compact-bank-resume-control-20260928/last9-output-reference/execution.json": "7c3e9ee24feb1a2b189ef90d94c08aab9900759182f5f0e8edb2b803b5a4f3a3",
+    "build/compact-bank-resume-control-20260928/last9-output-reference/ngspice.log": "be0cef8ea62db418b8c8f979b3bcf424ef899d1d2966b34507eec2cabd4c7e2e",
+    "build/compact-bank-resume-control-20260928/last9-output-reference/op.raw": "889d8340ccf9d6ed8459e0e6a6b11507dc7944cacb1f5f9bcedfad63f9ed5c7e",
+    "build/compact-bank-resume-control-20260928/last9-output-reference/test.spice": "240fd4706dc1e5ab0d0acbe16f20807b981d11f722611e0e616a7a9bd5d00ab3",
+    "build/compact-bank-resume-control-20260928/regenerated-transient.spice": "99a6ca7b3c06c905bea56ab44b4ae5cdc5b9204617a439a24e1887a1034707f3",
+    "build/compact-bank-resume-control-20260928/result.json": "73d5cd6ac01ff714cf01b86581622279be38702d74fc5efd43028ad8afd86d15",
+    "build/compact-bank-resume-control-20260928/reuse-audit.json": "c3704a7e5b1f85da059aa136e7ad7d326fb04483b017baee2b4afcd0b42bea5c",
+    "build/compact-bank-resume-control-20260928/reuse-audit.py": "739b4e3ae486fb35761db3fe2d2e8970bf8b6d7513ae3fe53c1e2a50a98d1129",
+    "build/compact-bank-resume-control-20260928/runner.py": "698b37bf9e2686abb59e958fdf99fa3e359b96260c2a7d5c7df44b056d7c86b6",
+    "build/compact-bank-resume-control-20260928/tile.spice": "ea56148d4dc787ff934a82b47bf3bec7dbd1b76b7b8e17941a392a5241fdc1d3",
+    "build/compact-bank-resume-control-20260928/trace-reader.py": "6a7efe1bcee8edd40957e44a65dfb4cda9609d15d81b26dc7a0676001fe519c6",
+    "build/compact-bank-resume-control-20260928/transient/execution.json": "7fe1c52fd0ca9ee3a7b1196f02a1361c590c726f83c6545f2b7dec6175390c55",
+    "build/compact-bank-resume-control-20260928/transient/ngspice.log": "3cab6598a73f84872e6419e30cca80fe7e8955108ead105463565f0860ad2c1a",
+    "build/compact-bank-resume-control-20260928/transient/stream.raw": "92934b7ef8c3dbf768154e5a4e58f86c28ff25030061fcb63504be1ab3c83adb",
+    "build/compact-bank-resume-control-20260928/transient/test.spice": "adb13f50a6911eab3a805a30a3acfb5e3b285ffec0cc964d046384d757165d3c",
+    "scripts/compact-bank-reuse-v2.py": "739b4e3ae486fb35761db3fe2d2e8970bf8b6d7513ae3fe53c1e2a50a98d1129",
+    "scripts/report-bank-full-v2.py": "3d6f2dc28c8ebd2c0028412c304efd5680c9ccbe3a3dafc82bfd15e3eb7ccd5d",
+    "scripts/simulate-compact-bank-v3.py": "698b37bf9e2686abb59e958fdf99fa3e359b96260c2a7d5c7df44b056d7c86b6",
+    "scripts/test-bank-resume-audit.py": "7715189fc203fcebdda2deda4a3165e9b27dccac88c5581b2a2358f6a239acd5",
+    "scripts/test-bank-resume.py": "55d433a7e9cdfaafe90819754ae3b69959c8d0dd9838325ac5a9c42a9defa02e",
+    "scripts/verify-bank-resume-control.py": "2dc7ca359d93f5cbbb56ed7b117e024a889fabc9b620686f0ca684d58f0f5627"
+  }
+}

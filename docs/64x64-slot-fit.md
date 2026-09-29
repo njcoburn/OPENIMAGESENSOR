@@ -1,7 +1,22 @@
 # 64×64 wafer.space slot-fit study — 2026-09-25
 
-**The current pixel and bank layouts cannot fit a standard full slot.** This is
-now the first physical implementation constraint in [the plan](../COMPLETION_PLAN.md).
+**Update, 27 September:** the compact 40 µm-pitch pixel and distributed-return
+64-column bank now exist. The bank measures **2667.87 × 1069.80 µm**, inside
+the 2700 × 1100 µm reservation below, and passes its scoped main DRC/LVS checks.
+It already contains one pixel row; final assembly must add 63 rows rather than
+duplicate that row. This removes the earlier block-size obstacle, but the
+complete chip, joins, drivers and pad ring still need assembly and verification.
+The [updated arithmetic](../simulations/wafer-space-current-bank-fit-20260927.json)
+leaves 32.13/30.20 µm width/height inside the bank allocation and 3.126 mm² of
+unreserved core area after the conservative array and driver reservations.
+That remaining area is fragmented, not an assurance of route or macro fit.
+See the [current plan](../COMPLETION_PLAN.md),
+[full-bank scans](overview.html#compact-bank-64-full) and
+[provider PDK source comparison](wafer-space-pdk-reconciliation.md).
+The measurements and drawing below retain the original 25 September study.
+
+**The original pixel and bank layouts could not fit a standard full slot.** This
+was the first physical implementation constraint in the 25 September plan.
 The user confirmed GF180 through wafer.space, with working first silicon taking
 priority over frame rate. A full slot is a planning assumption, not a purchase.
 

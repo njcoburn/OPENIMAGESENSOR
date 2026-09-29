@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-09-27",
+  "layout": "build/compact-bank-c64-ground-grid-20260927",
+  "bank_size_um": [
+    2667.87,
+    1069.8
+  ],
+  "bank_area_mm2": 2.8540873259999997,
+  "bank_reservation_margin_um": [
+    32.13000000000011,
+    30.200000000000045
+  ],
+  "planning_blocks_um": {
+    "pixel_array": [
+      350,
+      100,
+      2560,
+      2560
+    ],
+    "row_driver_budget": [
+      100,
+      100,
+      150,
+      2560
+    ],
+    "current_joined_bank": [
+      200,
+      2760,
+      2667.87,
+      1069.8
+    ]
+  },
+  "default_core_um": [
+    3048,
+    4238
+  ],
+  "reserved_area_mm2": 9.791687326,
+  "unreserved_area_mm2": 3.1257366740000005,
+  "rectangles_fit": true,
+  "complete_chip_fit_verified": false,
+  "scope": "Bounding-box arithmetic only, without GDS assembly or routing. The full array reserve conservatively duplicates the one row already in the bank; final assembly must add only 63 rows. Unreserved area is fragmented and includes no guarantee that drivers, joins, pads and routes can be placed.",
+  "evidence_hashes": {
+    "scripts/report-current-bank-fit.py": "fc49279765afd99e65144bd55722302a4422a1f1ef8a34016f5dc4c471abe27e",
+    "layout/64x64-floorplan-budget.json": "c1243d04aeb2c223b2b258a676a476d1e224c2ae11c1f56955c9c6140666590b",
+    "build/compact-bank-c64-ground-grid-20260927/bank.gds": "adb3f6afb6f6f5ac202c9097daf2c93adda1d99f515bcba69d35b1a91ecade8d",
+    "build/compact-bank-c64-ground-grid-20260927/verification.json": "365f86d8682519e82a67524488db816544b1257c71b176b2133460ebd20e4456"
+  }
+}

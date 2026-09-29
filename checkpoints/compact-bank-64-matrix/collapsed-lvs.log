@@ -1,0 +1,399 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0_m4m5_noshield are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0_m4m5_noshield       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0_m4m5_noshield are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Class collapsed (0):  Merged 448 parallel devices.
+Class reference (1):  Merged 448 parallel devices.
+Subcircuit summary:
+Circuit 1: collapsed                       |Circuit 2: reference                       
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (385)                            |nfet_03v3 (385)                            
+cap_mim_2f0_m4m5_noshield (512->64)        |cap_mim_2f0_m4m5_noshield (512->64)        
+pfet_03v3 (257)                            |pfet_03v3 (257)                            
+diode_nd2ps_03v3 (64)                      |diode_nd2ps_03v3 (64)                      
+Number of devices: 770                     |Number of devices: 770                     
+Number of nets: 458                        |Number of nets: 458                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: collapsed                       |Circuit 2: reference                       
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+BIAS                                       |BIAS                                       
+PREF                                       |PREF                                       
+VRESET                                     |VRESET                                     
+RST0                                       |RST0                                       
+ROW0                                       |ROW0                                       
+SC                                         |SC                                         
+SCB                                        |SCB                                        
+GND                                        |GND                                        
+COL36                                      |COL36                                      
+COL59                                      |COL59                                      
+COL40                                      |COL40                                      
+COL6                                       |COL6                                       
+COL25                                      |COL25                                      
+COL21                                      |COL21                                      
+COL58                                      |COL58                                      
+COL44                                      |COL44                                      
+COL52                                      |COL52                                      
+COL49                                      |COL49                                      
+COL35                                      |COL35                                      
+COL39                                      |COL39                                      
+COL54                                      |COL54                                      
+COL16                                      |COL16                                      
+COL29                                      |COL29                                      
+COL43                                      |COL43                                      
+COL13                                      |COL13                                      
+COL5                                       |COL5                                       
+COL41                                      |COL41                                      
+COL3                                       |COL3                                       
+COL24                                      |COL24                                      
+COL51                                      |COL51                                      
+COL34                                      |COL34                                      
+COL20                                      |COL20                                      
+COL62                                      |COL62                                      
+COL32                                      |COL32                                      
+COL10                                      |COL10                                      
+COL46                                      |COL46                                      
+COL18                                      |COL18                                      
+COL8                                       |COL8                                       
+COL48                                      |COL48                                      
+COL55                                      |COL55                                      
+COL28                                      |COL28                                      
+COL14                                      |COL14                                      
+COL56                                      |COL56                                      
+COL38                                      |COL38                                      
+COL53                                      |COL53                                      
+COL26                                      |COL26                                      
+COL4                                       |COL4                                       
+COL11                                      |COL11                                      
+COL0                                       |COL0                                       
+COL15                                      |COL15                                      
+COL2                                       |COL2                                       
+COL30                                      |COL30                                      
+COL37                                      |COL37                                      
+COL23                                      |COL23                                      
+COL45                                      |COL45                                      
+COL63                                      |COL63                                      
+COL60                                      |COL60                                      
+COL22                                      |COL22                                      
+COL50                                      |COL50                                      
+COL19                                      |COL19                                      
+COL47                                      |COL47                                      
+COL33                                      |COL33                                      
+COL61                                      |COL61                                      
+COL12                                      |COL12                                      
+COL31                                      |COL31                                      
+COL17                                      |COL17                                      
+COL9                                       |COL9                                       
+COL27                                      |COL27                                      
+COL42                                      |COL42                                      
+COL1                                       |COL1                                       
+COL57                                      |COL57                                      
+COL7                                       |COL7                                       
+STORE18                                    |STORE18                                    
+STORE50                                    |STORE50                                    
+STORE60                                    |STORE60                                    
+STORE15                                    |STORE15                                    
+STORE26                                    |STORE26                                    
+STORE10                                    |STORE10                                    
+STORE34                                    |STORE34                                    
+STORE49                                    |STORE49                                    
+STORE41                                    |STORE41                                    
+STORE5                                     |STORE5                                     
+STORE24                                    |STORE24                                    
+STORE42                                    |STORE42                                    
+STORE56                                    |STORE56                                    
+STORE39                                    |STORE39                                    
+STORE44                                    |STORE44                                    
+STORE0                                     |STORE0                                     
+STORE16                                    |STORE16                                    
+STORE4                                     |STORE4                                     
+STORE31                                    |STORE31                                    
+STORE46                                    |STORE46                                    
+STORE20                                    |STORE20                                    
+STORE7                                     |STORE7                                     
+STORE54                                    |STORE54                                    
+STORE53                                    |STORE53                                    
+STORE30                                    |STORE30                                    
+STORE57                                    |STORE57                                    
+STORE11                                    |STORE11                                    
+STORE23                                    |STORE23                                    
+STORE27                                    |STORE27                                    
+STORE63                                    |STORE63                                    
+STORE2                                     |STORE2                                     
+STORE38                                    |STORE38                                    
+STORE45                                    |STORE45                                    
+STORE52                                    |STORE52                                    
+STORE48                                    |STORE48                                    
+STORE51                                    |STORE51                                    
+STORE25                                    |STORE25                                    
+STORE17                                    |STORE17                                    
+STORE14                                    |STORE14                                    
+STORE1                                     |STORE1                                     
+STORE22                                    |STORE22                                    
+STORE40                                    |STORE40                                    
+STORE19                                    |STORE19                                    
+STORE55                                    |STORE55                                    
+STORE47                                    |STORE47                                    
+STORE33                                    |STORE33                                    
+STORE37                                    |STORE37                                    
+STORE61                                    |STORE61                                    
+STORE12                                    |STORE12                                    
+STORE59                                    |STORE59                                    
+STORE35                                    |STORE35                                    
+STORE13                                    |STORE13                                    
+STORE3                                     |STORE3                                     
+STORE28                                    |STORE28                                    
+STORE21                                    |STORE21                                    
+STORE62                                    |STORE62                                    
+STORE36                                    |STORE36                                    
+STORE9                                     |STORE9                                     
+STORE6                                     |STORE6                                     
+STORE43                                    |STORE43                                    
+STORE29                                    |STORE29                                    
+STORE58                                    |STORE58                                    
+STORE32                                    |STORE32                                    
+STORE8                                     |STORE8                                     
+CBUF12                                     |CBUF12                                     
+CBUF48                                     |CBUF48                                     
+CBUF24                                     |CBUF24                                     
+CBUF57                                     |CBUF57                                     
+CBUF33                                     |CBUF33                                     
+CBUF6                                      |CBUF6                                      
+CBUF42                                     |CBUF42                                     
+CBUF10                                     |CBUF10                                     
+CBUF18                                     |CBUF18                                     
+CBUF51                                     |CBUF51                                     
+CBUF55                                     |CBUF55                                     
+CBUF27                                     |CBUF27                                     
+CBUF4                                      |CBUF4                                      
+CBUF40                                     |CBUF40                                     
+CBUF25                                     |CBUF25                                     
+CBUF62                                     |CBUF62                                     
+CBUF11                                     |CBUF11                                     
+CBUF47                                     |CBUF47                                     
+CBUF23                                     |CBUF23                                     
+CBUF56                                     |CBUF56                                     
+CBUF60                                     |CBUF60                                     
+CBUF32                                     |CBUF32                                     
+CBUF41                                     |CBUF41                                     
+CBUF9                                      |CBUF9                                      
+CBUF45                                     |CBUF45                                     
+CBUF17                                     |CBUF17                                     
+CBUF54                                     |CBUF54                                     
+CBUF26                                     |CBUF26                                     
+CBUF30                                     |CBUF30                                     
+CBUF63                                     |CBUF63                                     
+CBUF3                                      |CBUF3                                      
+CBUF39                                     |CBUF39                                     
+CBUF0                                      |CBUF0                                      
+CBUF15                                     |CBUF15                                     
+CBUF61                                     |CBUF61                                     
+CBUF37                                     |CBUF37                                     
+CBUF46                                     |CBUF46                                     
+CBUF22                                     |CBUF22                                     
+CBUF59                                     |CBUF59                                     
+CBUF31                                     |CBUF31                                     
+CBUF35                                     |CBUF35                                     
+CBUF8                                      |CBUF8                                      
+CBUF44                                     |CBUF44                                     
+CBUF16                                     |CBUF16                                     
+CBUF20                                     |CBUF20                                     
+CBUF36                                     |CBUF36                                     
+CBUF53                                     |CBUF53                                     
+CBUF29                                     |CBUF29                                     
+CBUF19                                     |CBUF19                                     
+CBUF49                                     |CBUF49                                     
+CBUF50                                     |CBUF50                                     
+CBUF2                                      |CBUF2                                      
+CBUF21                                     |CBUF21                                     
+CBUF52                                     |CBUF52                                     
+CBUF38                                     |CBUF38                                     
+CBUF28                                     |CBUF28                                     
+CBUF14                                     |CBUF14                                     
+CBUF1                                      |CBUF1                                      
+CBUF58                                     |CBUF58                                     
+CBUF34                                     |CBUF34                                     
+CBUF5                                      |CBUF5                                      
+CBUF13                                     |CBUF13                                     
+CBUF7                                      |CBUF7                                      
+CBUF43                                     |CBUF43                                     
+SEL19                                      |SEL19                                      
+SEL52                                      |SEL52                                      
+SEL28                                      |SEL28                                      
+SEL5                                       |SEL5                                       
+SEL13                                      |SEL13                                      
+SEL50                                      |SEL50                                      
+SEL12                                      |SEL12                                      
+SEL48                                      |SEL48                                      
+SEL24                                      |SEL24                                      
+SEL57                                      |SEL57                                      
+SEL33                                      |SEL33                                      
+SEL6                                       |SEL6                                       
+SEL42                                      |SEL42                                      
+SEL10                                      |SEL10                                      
+SEL18                                      |SEL18                                      
+SEL51                                      |SEL51                                      
+SEL55                                      |SEL55                                      
+SEL27                                      |SEL27                                      
+SEL4                                       |SEL4                                       
+SEL40                                      |SEL40                                      
+SEL25                                      |SEL25                                      
+SEL62                                      |SEL62                                      
+SEL11                                      |SEL11                                      
+SEL47                                      |SEL47                                      
+SEL23                                      |SEL23                                      
+SEL56                                      |SEL56                                      
+SEL60                                      |SEL60                                      
+SEL32                                      |SEL32                                      
+SEL41                                      |SEL41                                      
+SEL9                                       |SEL9                                       
+SEL45                                      |SEL45                                      
+SEL17                                      |SEL17                                      
+SEL54                                      |SEL54                                      
+SEL26                                      |SEL26                                      
+SEL30                                      |SEL30                                      
+SEL63                                      |SEL63                                      
+SEL3                                       |SEL3                                       
+SEL39                                      |SEL39                                      
+SEL0                                       |SEL0                                       
+SEL15                                      |SEL15                                      
+SEL61                                      |SEL61                                      
+SEL37                                      |SEL37                                      
+SEL46                                      |SEL46                                      
+SEL22                                      |SEL22                                      
+SEL59                                      |SEL59                                      
+SEL31                                      |SEL31                                      
+SEL35                                      |SEL35                                      
+SEL8                                       |SEL8                                       
+SEL44                                      |SEL44                                      
+SEL16                                      |SEL16                                      
+SEL20                                      |SEL20                                      
+SEL53                                      |SEL53                                      
+SEL29                                      |SEL29                                      
+SEL2                                       |SEL2                                       
+SEL38                                      |SEL38                                      
+SEL1                                       |SEL1                                       
+SEL14                                      |SEL14                                      
+SEL36                                      |SEL36                                      
+SEL49                                      |SEL49                                      
+SEL21                                      |SEL21                                      
+SEL58                                      |SEL58                                      
+SEL34                                      |SEL34                                      
+SEL7                                       |SEL7                                       
+SEL43                                      |SEL43                                      
+SELB50                                     |SELB50                                     
+SELB12                                     |SELB12                                     
+SELB48                                     |SELB48                                     
+SELB24                                     |SELB24                                     
+SELB57                                     |SELB57                                     
+SELB33                                     |SELB33                                     
+SELB6                                      |SELB6                                      
+SELB42                                     |SELB42                                     
+SELB10                                     |SELB10                                     
+SELB18                                     |SELB18                                     
+SELB51                                     |SELB51                                     
+SELB55                                     |SELB55                                     
+SELB27                                     |SELB27                                     
+SELB4                                      |SELB4                                      
+SELB40                                     |SELB40                                     
+SELB25                                     |SELB25                                     
+SELB62                                     |SELB62                                     
+SELB11                                     |SELB11                                     
+SELB47                                     |SELB47                                     
+SELB23                                     |SELB23                                     
+SELB56                                     |SELB56                                     
+SELB60                                     |SELB60                                     
+SELB32                                     |SELB32                                     
+SELB41                                     |SELB41                                     
+SELB9                                      |SELB9                                      
+SELB45                                     |SELB45                                     
+SELB17                                     |SELB17                                     
+SELB54                                     |SELB54                                     
+SELB26                                     |SELB26                                     
+SELB30                                     |SELB30                                     
+SELB63                                     |SELB63                                     
+SELB3                                      |SELB3                                      
+SELB39                                     |SELB39                                     
+SELB0                                      |SELB0                                      
+SELB15                                     |SELB15                                     
+SELB61                                     |SELB61                                     
+SELB37                                     |SELB37                                     
+SELB46                                     |SELB46                                     
+SELB22                                     |SELB22                                     
+SELB59                                     |SELB59                                     
+SELB31                                     |SELB31                                     
+SELB35                                     |SELB35                                     
+SELB8                                      |SELB8                                      
+SELB44                                     |SELB44                                     
+SELB16                                     |SELB16                                     
+SELB20                                     |SELB20                                     
+SELB53                                     |SELB53                                     
+SELB29                                     |SELB29                                     
+SELB2                                      |SELB2                                      
+SELB38                                     |SELB38                                     
+SELB14                                     |SELB14                                     
+SELB1                                      |SELB1                                      
+SELB36                                     |SELB36                                     
+SELB49                                     |SELB49                                     
+SELB21                                     |SELB21                                     
+SELB58                                     |SELB58                                     
+SELB34                                     |SELB34                                     
+SELB7                                      |SELB7                                      
+SELB43                                     |SELB43                                     
+SELB19                                     |SELB19                                     
+SELB52                                     |SELB52                                     
+SELB28                                     |SELB28                                     
+SELB5                                      |SELB5                                      
+SELB13                                     |SELB13                                     
+BUF                                        |BUF                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes collapsed and reference are equivalent.
+
+Final result: Circuits match uniquely.
+.

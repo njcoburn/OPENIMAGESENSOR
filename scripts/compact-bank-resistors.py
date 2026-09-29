@@ -24,6 +24,7 @@ def parse(text):
     keep = set()
     edges = []
     headers = ends = 0
+    subcircuit = None
     for line in lines:
         f = line.split()
         if not f or f[0].startswith('*'):
@@ -31,11 +32,12 @@ def parse(text):
         kind = f[0][0]
         if f[0] == '.subckt':
             headers += 1
-            assert f[1] == 'bank'
+            assert f[1] in ('bank', 'tile')
+            subcircuit = f[1]
             keep.update(f[2:])
         elif f[0] == '.ends':
             ends += 1
-            assert f[1:] == ['bank']
+            assert subcircuit is not None and f[1:] == [subcircuit]
         elif kind == 'R':
             assert len(f) == 4
             value = float(f[3])
@@ -43,6 +45,9 @@ def parse(text):
             edges.append((f[1], f[2], 1 / value))
         elif kind == 'C':
             assert len(f) == 4
+            keep.update(f[1:3])
+        elif kind == 'D':
+            assert len(f) >= 4 and f[3] == 'diode_nd2ps_03v3'
             keep.update(f[1:3])
         elif kind == 'X':
             if f[3].startswith('cap_mim_'):
@@ -87,7 +92,7 @@ def compact(text, max_degree=4):
     output = [l for l in lines if not l.startswith('R') and not l.startswith('.ends')]
     reduced = sorted((x, y, g) for x in graph for y, g in graph[x].items() if x < y)
     output += [f'REQ{i} {x} {y} {1/g:.17g}' for i, (x, y, g) in enumerate(reduced)]
-    output += ['.ends bank']
+    output += [l for l in lines if l.startswith('.ends')]
     return '\n'.join(output) + '\n', removed
 
 

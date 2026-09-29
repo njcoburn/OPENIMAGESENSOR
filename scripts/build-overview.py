@@ -207,5 +207,17 @@ if (root/'docs/compact-bank-64-section.html').exists():
  html=html.replace('<main>', '<main>'+(root/'docs/compact-bank-64-section.html').read_text(), 1)
  html=html.replace('<nav>', '<nav><a href="#compact-bank-64">Compact 64-column bank</a>', 1)
 html=html.replace('<nav>', '<nav><a href="#first-silicon-64">Current 64×64 plan</a>', 1)
+for filename,anchor,label in [('wafer-space-run3-section.html','wafer-space-run3','Run 3, cost and die fit'),
+                              ('compact-bank-solver-section.html','compact-bank-solver','Bank solver progress'),
+                              ('compact-bank-16-section.html','compact-bank-16','16-column accuracy'),
+                              ('compact-bank-16-screen-section.html','compact-bank-16-screen','16-column thermal and patterns'),
+                              ('compact-bank-16-extension-section.html','compact-bank-16-extension','16-column refinement and placement'),
+                              ('compact-bank-64-ground8-section.html','compact-bank-64-ground8','64-column ground and capture'),
+                              ('compact-bank-64-read-probes-section.html','compact-bank-64-read-probes','64-column matched readout'),
+                              ('compact-bank-64-full-section.html','compact-bank-64-full','64-column complete scans'),
+                              ('compact-bank-64-cross-section.html','compact-bank-64-cross','64-column temperature/pattern matrix')]:
+ if (root/'docs'/filename).exists():
+  html=html.replace('<main>','<main>'+(root/'docs'/filename).read_text(),1)
+  html=html.replace('<nav>',f'<nav><a href="#{anchor}">{label}</a>',1)
 (root/'docs/overview.html').write_text(html)
 print('Checks passed. Wrote docs/overview.html and simulations/cycle-samples.json')

@@ -1,0 +1,45 @@
+{
+  "scope": "Render the exact checkpoint GDS in KLayout; use klayout -b -r this_file.py.\n\nOnly display settings change. The compressed design is authenticated before use.\n",
+  "source": "checkpoints/compact-bank-64-matrix/bank.gds.gz",
+  "gds_sha256": "adb3f6afb6f6f5ac202c9097daf2c93adda1d99f515bcba69d35b1a91ecade8d",
+  "top_cell": "compact_bank",
+  "bbox_um": [
+    -102.0,
+    -117.8,
+    2565.87,
+    952.0
+  ],
+  "width_um": 2667.87,
+  "height_um": 1069.8,
+  "columns": 64,
+  "pixel_rows_implemented": 1,
+  "full_chip_assembled": false,
+  "views": [
+    {
+      "image": "docs/assets/current-bank-layout.png",
+      "view_box_um": [
+        -150,
+        -150,
+        2620,
+        990
+      ],
+      "pixels": [
+        2200,
+        906
+      ]
+    },
+    {
+      "image": "docs/assets/current-bank-layout-detail.png",
+      "view_box_um": [
+        -108,
+        -125,
+        164,
+        175
+      ],
+      "pixels": [
+        1200,
+        1324
+      ]
+    }
+  ]
+}

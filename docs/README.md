@@ -1,5 +1,62 @@
 # Sensor references
 
+[Current device layout](overview.html#current-device-layout): labeled exact GDS,
+pixel/readout close-up and dimensions of the 64-column bank plus one pixel row.
+[Portable layout checkpoint](../checkpoints/compact-bank-64-matrix/README.md).
+
+Current continuation: [64-column crossed temperature/pattern matrix](compact-bank-64-cross.md), with independent reports and plots in the [overview](overview.html#compact-bank-64-cross).
+
+The [16-column extension](overview.html#compact-bank-16-extension) passes
+its selected checks across **46 transients and 1,152 references**. Worst total
+error is 433.171 µV and tracking is 301.667 µV
+(500 µV limits). All five patterns at 27/125 °C have 100/50 ns comparisons;
+the largest saved-terminal difference is 0.450 µV. All 19 individual
+shunts plus their joint placement pass for the hot inverse pattern, with
+0.105/0.137 µV maximum HOLD/STORE changes (10 µV limit). The separate
+inverse-pattern layout–schematic response reaches 10.062 mV and has
+no assigned acceptance threshold.
+
+The 8 µm bus alone does not solve 64-column scaling: a matched column-62
+readout fails at 1,994.440 µV total error. A new physical distributed ground
+return **fails with 10 µs acquisition** at 547.178 µV total error and
+340.253 µV tracking. Both main DRC checks and both LVS paths pass, and
+a geometry audit restricts the change to ground metal/vias. The new bank is
+2667.87 × 1069.80 µm, within the 2700 × 1100 µm budget. See the
+[selected readout comparison](overview.html#compact-bank-64-read-probes)
+and [capture/ground diagnosis](compact-bank-64-ground8.md).
+
+Extending acquisition from 10 to 12 µs on that same grid **passes the selected
+diagnostic** at 269.281 µV total error and 62.529 µV tracking. Only the
+ACQ falling edges and sample times move; selection/reset and the 20 µs slot
+budget stay unchanged. Three new matched references and an unchanged-prefix
+comparison are audited. The separately versioned full-bank runner now supports
+this timing. The resumed nominal/hot screens and crossed temperature/pattern
+cases now pass: eight transients and 768 independent references. See
+[the current handoff](../PICK_UP_HERE.md) for the completed matrix and next coverage.
+
+These are bounded development screens. Full 16-column corner/placement
+coverage, remaining 64-column illumination patterns/corners, real drivers,
+repeated rows and exact 64×64 manufacturing qualification remain open.
+
+[Earlier: 16-column thermal and pattern screen](compact-bank-16-screen.md) —
+five patterns pass at 27/125 °C, with 432.966 µV worst total error. Fourteen
+transients and 576 references are audited. Alternating-pattern refinement and
+joint far-placement controls pass; individual placements and broader numerical,
+schematic and corner checks remain open.
+
+[Earlier: 16-column trace and routing correction](compact-bank-16.md) — an 8 µm
+physical ground bus reduces nominal total error from 540.185 to 189.413 µV.
+All 48 nominal references and both main DRC/LVS paths pass; the expanded
+thermal/pattern follow-up is above.
+
+[Latest simulations, Run 3 pricing and die fit](overview.html#compact-bank-solver) —
+KLU full-bank reset completion, eight-column nominal/hot accuracy and refinement,
+and a dated full-slot manufacturing budget.
+
+[Earlier initialization follow-up](compact-bank-initialization.md) — four/eight-column
+physical controls, a completed four-column transient and an audited reduction
+that still does not resolve the 64-column initialization timeout.
+
 [Latest: compact 64-column physical bank](compact-bank-64.md) — fits the local
 bank budget; both main DRC checks and both LVS paths pass. Full-bank electrical
 qualification remains open. Includes the expanded nonoverlapping readout schedule.

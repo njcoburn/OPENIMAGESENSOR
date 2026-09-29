@@ -1,17 +1,79 @@
 # 64×64 first-silicon completion plan
 
-Updated 2026-09-26. **User-confirmed target: 64×64, GF180 through wafer.space;
+Updated 2026-09-29. **User-confirmed target: 64×64, GF180 through wafer.space;
 prioritize working first silicon at a modest frame rate.** A separate 3×3 tapeout
 is no longer a prerequisite. The earlier demonstrator remains reference evidence.
 
 ## Assessment
 
+**Reviewed 29 September:** the alternating/inverse matrix passes at both 27 °C
+and 125 °C: eight complete 100/50 ns transients and 768 matched references. The
+new crossed cases have 387.179/430.383 µV worst total error; the matrix maximum
+remains 438.213 µV, below 500 µV. Maximum saved-sample refinement is 0.150 µV.
+All 1,707 new distinct evidence files verify, and all jobs/auditors exited
+successfully. Uniform illumination, other corners/placements and full-chip
+qualification remain open. [Current handoff](PICK_UP_HERE.md).
+
 We have verified building blocks, but no assembled, qualified 64×64 chip.
 Compact pixel, isolated column, joined-tile and two-column shared-bank feasibility
 are demonstrated. The compact 64-column bank now passes scoped physical checks
 and fits its local floorplan budget; complete-chip slot fit remains open,
-along with coupled readout,
-multirow loading, real addressing/drivers and final-chip qualification.
+along with broader bank electrical coverage, multirow loading, real
+addressing/drivers and final-chip qualification.
+
+The [16-column extension](docs/overview.html#compact-bank-16-extension) passes
+its selected checks across **46 transients and 1,152 references**. Worst total
+error is 433.171 µV and tracking is 301.667 µV
+(500 µV limits). All five patterns at 27/125 °C have 100/50 ns comparisons;
+the largest saved-terminal difference is 0.450 µV. All 19 individual
+shunts plus their joint placement pass for the hot inverse pattern, with
+0.105/0.137 µV maximum HOLD/STORE changes (10 µV limit). The separate
+inverse-pattern layout–schematic response reaches 10.062 mV and has
+no assigned acceptance threshold.
+
+The 8 µm bus alone does not solve 64-column scaling: a matched column-62
+readout fails at 1,994.440 µV total error. A new physical distributed ground
+return **fails with 10 µs acquisition** at 547.178 µV total error and
+340.253 µV tracking. Both main DRC checks and both LVS paths pass, and
+a geometry audit restricts the change to ground metal/vias. The new bank is
+2667.87 × 1069.80 µm, within the 2700 × 1100 µm budget. See the
+[selected readout comparison](docs/overview.html#compact-bank-64-read-probes)
+and [capture/ground diagnosis](docs/compact-bank-64-ground8.md).
+
+Extending acquisition from 10 to 12 µs on that same grid **passes the selected
+diagnostic** at 269.281 µV total error and 62.529 µV tracking. Only the
+ACQ falling edges and sample times move; selection/reset and the 20 µs slot
+budget stay unchanged. Three new matched references and an unchanged-prefix
+comparison are audited. The separately versioned full-bank runner now supports
+this timing. The original attempts were stopped on 27 September; the resumed
+nominal/hot inverse pairs now pass their complete selected audits. See
+PICK_UP_HERE.md for results and the next coverage batch.
+
+These are bounded development screens. Full 16-column corner/placement
+coverage, remaining full-bank patterns/corners, real drivers, repeated rows
+and exact 64×64 manufacturing qualification remain open.
+
+**Immediate next step:** add independently audited uniform dark/middle/bright
+coverage at both temperatures, preserving current evidence and the hash-pinned
+auditor. Verify the new uniform reporting path first, then use bounded batches
+with unchanged accuracy/refinement requirements. No new simulations are running
+following the completion review.
+
+**2026-09-27 continuation:** KLU completes 64-column initialization and reset
+without changing the circuit or tolerances. Eight-column alternating nominal/hot
+cases pass 24 independent references each (195.412/430.243 µV worst error), with
+0.170/0.401 µV saved-terminal 200→100 ns differences. The 16-column physical
+control passes main DRC and both LVS paths. Complete full-bank readout/accuracy
+and other patterns/placements remain open. [Latest simulations and run budget](docs/overview.html#compact-bank-solver).
+
+**Earlier 2026-09-27 diagnosis:** Docker/VNC is restored. New four/eight-column controls
+pass both main DRC and LVS paths. Four columns complete capture and two scans;
+eight columns recover through transient operating-point fallback and reach
+readout. Audited reduction of the compact 64-column model removes 1824 internal
+nodes but still times out at 180 s with zero samples. A hot two-column reduction
+control differs by at most 0.058281 µV at saved sample points. These are bounded
+diagnostics, not new electrical accuracy qualifications. Continue localization
+on the smaller models. [Evidence](docs/compact-bank-initialization.md).
 
 **Latest physical follow-up:** [compact 1×64 bank](docs/compact-bank-64.md),
 2627.76 × 978.28 µm including its pixel row/references, passes both main DRC
@@ -101,7 +163,7 @@ shrinking transistor dimensions blindly.
 |---|---|---|
 | 0 — now | Docker restored; freeze full-slot envelope, selected run's PDK/metal/MIM options, pad map and optical packaging requirements | Reproducible tools; dimensioned floorplan; traceable run requirements; viable optical/bond plan |
 | 1 — development screen passed | Compact pixel, capture column and physically joined single tile | Scoped DRC/both LVS paths, geometric aperture audit and nominal/hot electrical screens pass; run-specific MIM/aperture requirements remain |
-| 2 — two-column control passed | Extend the shared control to compact 1×64 row/bank and joins | All 64 matched output samples at 27/125 °C within 500 µV; 200→100 ns differences within 10 µV; shunt placement check; independent settled references |
+| 2 — selected full-bank cases passed; coverage open | Extend the shared control to compact 1×64 row/bank and joins | All 128 first/late output samples and 64 capture references at 27/125 °C within 500 µV; 200→100 ns differences within 10 µV; shunt placement check; independent settled references |
 | 3 | Implement real decoders/drivers; exercise 4×64 with repeated bright/dark row transitions and a target-length loaded column | No double selection, reset/capture interference or stale stored charge; complete repeated output checks; idle-row leakage and full-column loading measured |
 | 4 | Assemble 64×64 with power grid, pad ring, real clocks/references and output interface | Exact connectivity/device census; routed joins; full-chip extraction; boundary/interior/worst-load and repeated-frame checks; actual ADC/load validated |
 | 5 | Final release review and wafer.space precheck on exact submission geometry | Required process/supply/temperature and wire corners, nonlinear startup/protection, numerical refinement, DRC/LVS/ERC, density/antenna, optical keepouts, seal/pads/bond map and reproducible release package |
@@ -112,6 +174,19 @@ large existing bank as a diagnostic reference; avoid repeated routing changes
 to geometry that cannot fit the selected slot.
 
 ## Bound the simulation work
+
+**Latest:** use KLU/current-form drivers/trapezoidal integration. Full-bank
+initialization/reset now completes; readout runtime is the next bottleneck.
+Phase observations distinguish first saved samples, reset release, capture and
+readout. Gear did not improve runtime in the small control; voltage-form drivers
+abort startup and must not replace the tested formulation. Preserve all failed
+controls. The overview records both complete and timed-out runs with hashes.
+
+The earlier compact-bank diagnosis is in
+[the 2026-09-27 report](docs/compact-bank-initialization.md). The compact
+64-column reduction also fails to initialize within 180 s. Use the new
+four/eight-column controls to separate initialization cost from transient
+event cost before another full-bank attempt. The older-bank record follows.
 
 The raw and algebraically reduced bank operating-point and short reset controls
 all timed out during initialization at 180 s on 2026-09-26, with unchanged
@@ -127,16 +202,23 @@ as evidence that startup is qualified.
 
 ## Schedule and decisions still needed
 
+**Rechecked 2026-09-27:** [Run 3 dates, costs and exact slot dimensions](docs/overview.html#wafer-space-run3).
+Full slot: $7,000 early / $8,000 standard per 1,000 dies; optional CoB adds
+$1,500, subject to unresolved optical compatibility. Early bird ends 30 September
+23:59 AoE. The provider reported few full slots remaining on 19 September; no
+reservation is assumed. The actual compact-bank bounds leave 3.409 mm² unreserved
+in the conservative array/bank/row-driver budget. This is not a full-chip fit.
+
 The [wafer.space Run 3 table](https://wafer.space/) currently lists purchase by
 **9 December 2026**, clean GDS by **16 December 2026**, both 23:59 AoE, and parts
 in Q2 2027. These are provider dates, not a project commitment or a booked slot.
 Use the dated table; the page also contains inconsistent expired-countdown text.
 
 There is no defensible “days from tapeout” estimate: complete-chip layout fit
-and coupled 64-column simulation remain unresolved. The compact bank now fits
-its local budget, but a 180 s extracted transient still stalls in initialization;
-the schematic reaches partial readout before the same watchdog. Re-estimate after milestones 1–2
-using measured run times and the completed tile. The extracted single tile
+and full 64-column accuracy remain unresolved. The compact bank now fits
+its local budget; KLU resolves initialization/reset, while full readout remains
+expensive. Re-estimate after milestones 1–2 using measured run times and the
+completed tile. The extracted single tile
 and shared two-column control now pass their scoped development screens; the next
 deliverable is an electrically qualified compact 1×64 row and bank.
 

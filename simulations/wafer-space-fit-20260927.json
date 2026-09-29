@@ -1,0 +1,116 @@
+{
+  "checked_on": "2026-09-27",
+  "source_facts_sha256": "9b3f80bb79af80087579eb5cf29e3dd9364c250839aa77ba26c045985e58eb48",
+  "bank_verification_sha256": "1c5097e945d5f304da75d6a92ba1f395a39c85a4a37f422a48401d11397295dc",
+  "slots": [
+    {
+      "name": "Quarter",
+      "die_um": [
+        1936,
+        2531
+      ],
+      "inside_seal_um": [
+        1884,
+        2479
+      ],
+      "core_um": [
+        1052,
+        1647
+      ],
+      "early_usd": 2000,
+      "standard_usd": 3000,
+      "array_fits_core": false,
+      "array_fits_inside_seal": false
+    },
+    {
+      "name": "Half width",
+      "die_um": [
+        1936,
+        5122
+      ],
+      "inside_seal_um": [
+        1884,
+        5070
+      ],
+      "core_um": [
+        1052,
+        4238
+      ],
+      "early_usd": 4000,
+      "standard_usd": 5000,
+      "array_fits_core": false,
+      "array_fits_inside_seal": false
+    },
+    {
+      "name": "Half height",
+      "die_um": [
+        3932,
+        2531
+      ],
+      "inside_seal_um": [
+        3880,
+        2479
+      ],
+      "core_um": [
+        3048,
+        1647
+      ],
+      "early_usd": 4000,
+      "standard_usd": 5000,
+      "array_fits_core": false,
+      "array_fits_inside_seal": false
+    },
+    {
+      "name": "Full",
+      "die_um": [
+        3932,
+        5122
+      ],
+      "inside_seal_um": [
+        3880,
+        5070
+      ],
+      "core_um": [
+        3048,
+        4238
+      ],
+      "early_usd": 7000,
+      "standard_usd": 8000,
+      "array_fits_core": true,
+      "array_fits_inside_seal": true
+    }
+  ],
+  "array_um": [
+    2560,
+    2560
+  ],
+  "actual_joined_bank_um": [
+    2627.7599999999998,
+    978.28
+  ],
+  "conservative_blocks_um": {
+    "pixel_array": [
+      350,
+      100,
+      2560,
+      2560
+    ],
+    "capture_bank_budget": [
+      200,
+      2760,
+      2627.7599999999998,
+      978.28
+    ],
+    "row_driver_budget": [
+      100,
+      100,
+      150,
+      2560
+    ]
+  },
+  "core_area_mm2": 12.917424,
+  "reserved_area_mm2": 9.5082850528,
+  "remaining_area_mm2": 3.4091389472000007,
+  "scope": "Conservative nonoverlapping block reservation only; bank includes one pixel row. Exact assembly must add 63 rows, not duplicate a 65th row.",
+  "complete_chip_fit_verified": false
+}

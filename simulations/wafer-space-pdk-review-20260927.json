@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-09-27",
+  "installed_node": "gf180mcuD",
+  "installed_options": [
+    "MIM_2P0",
+    "METAL5"
+  ],
+  "installed_open_pdks_commit": "b344c97eacc2aaf8e14ae7e43e2e9dc0871de2c0",
+  "installed_open_pdks_reference": "8eb71b946c72962414cf7f03bac9589599ac1847",
+  "provider_precheck_pdk": "gf180mcuD",
+  "provider_makefile_pdk_commit": "d658698bd8bcf4e05fc7b5991a701247ba0d744c",
+  "provider_technology": "5 metals; MIM and MOS capacitors advertised",
+  "sources": [
+    "https://wafer.space/technology.html",
+    "https://github.com/wafer-space/gf180mcu-precheck/blob/main/Makefile",
+    "https://github.com/wafer-space/gf180mcu-precheck/blob/main/precheck.py"
+  ],
+  "exact_pdk_equivalence_established": false,
+  "exact_mim_and_optical_approval_established": false,
+  "limits": "Provider settings read from current main on the checked date; installed metadata declares different open_pdks hashes. This is a version/options comparison, not proof of incompatibility or provider approval.",
+  "evidence_hashes": {
+    "build/gf180-installed-nodeinfo-20260927.json": "9d99afdc92f97bfe10dd9f6d7f33b5ee941e02ac7defe55d4dd8c00bde2d9b5a"
+  }
+}

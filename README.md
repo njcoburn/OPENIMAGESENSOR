@@ -3,12 +3,67 @@
 **Current goal: 64×64 first silicon on wafer.space GF180, with modest frame rate.**
 [Completion plan](COMPLETION_PLAN.md) · [Next steps](NEXT_STEPS.md) · [Handoff](PICK_UP_HERE.md)
 
-**Latest:** the [compact 64-column row/bank](docs/compact-bank-64.md) fits its
-2700 × 1100 µm budget and passes both main DRC checks and both LVS paths.
-Full-bank electrical accuracy and full-chip qualification remain open.
+[View the current device layout](docs/overview.html#current-device-layout) — labeled
+GDS and close-up of the implemented 64-column bank plus one pixel row, measuring
+2.668 × 1.070 mm. [Exact GDS checkpoint](checkpoints/compact-bank-64-matrix/README.md).
+The full 64×64 chip remains to be assembled.
 
-**New critical constraint:** the existing array and bank do not fit a standard
-full slot. A compact pixel/bank layout is required. The new 40 µm-pitch
+**Latest, reviewed 29 September:** the complete alternating/inverse matrix now
+**passes at both 27 °C and 125 °C**. The new 27 °C inverse / 125 °C alternating
+cases reach 387.179/430.383 µV worst total error, below 500 µV. All eight matrix
+transients and 768 references are audited; maximum saved-sample refinement is
+0.150 µV, below 10 µV. All 1,707 distinct new evidence files verify. The jobs and
+auditor finished successfully; no new batch is running.
+[Temperature/pattern matrix](docs/overview.html#compact-bank-64-cross)
+
+**Completed, 28 September:** both earlier complete 64-column bank screens **pass**.
+All four transients finish 128 reads each, with 384 independently audited references
+across the nominal alternating and hot inverse cases. Worst total error is
+**372.606 µV at 27 °C / 438.213 µV at 125 °C**, below 500 µV; maximum saved-sample
+100/50 ns difference is **0.133 µV**, below 10 µV. All 1,711 distinct evidence
+files verified. The jobs and auditor have finished successfully.
+
+Next are uniform dark/middle/bright illumination at both temperatures, followed
+by corner/placement coverage before real drivers and repeated rows.
+Full-chip qualification remains open.
+[Results and plots](docs/overview.html#compact-bank-64-full) · [Current handoff](PICK_UP_HERE.md)
+
+**Previous electrical results, 27 September:**
+
+The [16-column extension](docs/overview.html#compact-bank-16-extension) passes
+its selected checks across **46 transients and 1,152 references**. Worst total
+error is 433.171 µV and tracking is 301.667 µV
+(500 µV limits). All five patterns at 27/125 °C have 100/50 ns comparisons;
+the largest saved-terminal difference is 0.450 µV. All 19 individual
+shunts plus their joint placement pass for the hot inverse pattern, with
+0.105/0.137 µV maximum HOLD/STORE changes (10 µV limit). The separate
+inverse-pattern layout–schematic response reaches 10.062 mV and has
+no assigned acceptance threshold.
+
+The 8 µm bus alone does not solve 64-column scaling: a matched column-62
+readout fails at 1,994.440 µV total error. A new physical distributed ground
+return **fails with 10 µs acquisition** at 547.178 µV total error and
+340.253 µV tracking. Both main DRC checks and both LVS paths pass, and
+a geometry audit restricts the change to ground metal/vias. The new bank is
+2667.87 × 1069.80 µm, within the 2700 × 1100 µm budget. See the
+[selected readout comparison](docs/overview.html#compact-bank-64-read-probes)
+and [capture/ground diagnosis](docs/compact-bank-64-ground8.md).
+
+Extending acquisition from 10 to 12 µs on that same grid **passes the selected
+diagnostic** at 269.281 µV total error and 62.529 µV tracking. Only the
+ACQ falling edges and sample times move; selection/reset and the 20 µs slot
+budget stay unchanged. Three new matched references and an unchanged-prefix
+comparison are audited. The separately versioned full-bank runner now supports
+this timing. The original attempts were stopped on 27 September; the resumed
+nominal/hot inverse pairs now pass their complete selected audits. See
+PICK_UP_HERE.md for results and the next coverage batch.
+
+These are bounded development screens. Full 16-column corner/placement
+coverage, remaining full-bank patterns/corners, real drivers, repeated rows
+and exact 64×64 manufacturing qualification remain open.
+
+**Original geometry constraint:** the older array and bank do not fit a standard
+full slot. The compact pixel/bank work above addresses that block-size constraint. The new 40 µm-pitch
 [floorplan budget](docs/64x64-slot-fit.md) fits the published default core as
 planning rectangles; it is not qualified GDS. The full 64×64 chip is not yet assembled.
 
@@ -19,15 +74,15 @@ Docker access is restored. The new [40 µm compact pixel](docs/compact-pixel.md)
 and 2×2 control pass main DRC and both LVS paths; the 2×2 nominal/hot electrical
 screens and timestep checks pass. The [reset follow-up](docs/compact-reset.md)
 passes 12 transients and extended references using audited shunt placements;
-the raw isolated extraction remains diagnostic. Raw/reduced full-bank
-initialization still times out in all four bounded
-controls. The new [compact capture column](docs/compact-capture.md) fits 40 µm
+the raw isolated extraction remains diagnostic. The original raw/reduced full-bank
+initialization timed out in four bounded controls before the later KLU
+continuation resolved startup. The new [compact capture column](docs/compact-capture.md) fits 40 µm
 pitch and passes scoped DRC/LVS, adjacent-column spacing, 60 transients and
 36 references. The [physically joined tile](docs/compact-tile.md) now passes
 54 transients and 72 references, with 419.404 µV worst total capture/readout
 error. The [shared two-column bank](docs/compact-bank.md) now passes both main
 DRC/LVS paths, 100 transients and 240 references (419.033 µV worst total error).
-It includes physical reference MOS and shared buses; compact 1×64 is next.
+It includes physical reference MOS and shared buses; the later 1×64 work is above.
 The separate layout–schematic integrated-response difference reaches 5.821 mV.
 A separate
 3×3 tapeout is not a prerequisite.

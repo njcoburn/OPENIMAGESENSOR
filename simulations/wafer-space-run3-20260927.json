@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-09-27",
+  "scope": "Manually transcribed public provider facts checked with web browsing; not a quote, reservation or booked slot.",
+  "run": "GF180MCU Run 3",
+  "currency": "USD",
+  "dies_per_slot": 1000,
+  "schedule_source": "https://wafer.space/",
+  "schedule_corroboration": "https://github.com/wafer-space",
+  "pricing_source": "https://wafer.space/price.html",
+  "campaign_source": "https://www.crowdsupply.com/wafer-space/gf180mcu-run-3/",
+  "dimensions_source": "https://mith.ro/gf180mcu-project-template/slots.json",
+  "dimensions_generated_at": "2026-06-04T14:14:46.405443+00:00",
+  "availability_source": "https://www.crowdsupply.com/wafer-space/gf180mcu-run-3/updates/1x1-slots-running-low",
+  "availability_update_date": "2026-09-19",
+  "availability": "Provider reported only a few full slots remaining; current inventory was not independently confirmed.",
+  "deadlines_aoe": {"early_bird": "2026-09-30T23:59:00-12:00", "purchase": "2026-12-09T23:59:00-12:00", "clean_gds": "2026-12-16T23:59:00-12:00"},
+  "delivery": "Q2 2027",
+  "schedule_conflicts": "Campaign funding widget says 19 December; homepage countdown fallback text says expired. Use the explicit provider milestone table and confirm operative dates before purchase.",
+  "slots": [
+    {"name": "Quarter", "die_um": [1936,2531], "inside_seal_um": [1884,2479], "core_um": [1052,1647], "early_usd": 2000, "standard_usd": 3000},
+    {"name": "Half width", "die_um": [1936,5122], "inside_seal_um": [1884,5070], "core_um": [1052,4238], "early_usd": 4000, "standard_usd": 5000},
+    {"name": "Half height", "die_um": [3932,2531], "inside_seal_um": [3880,2479], "core_um": [3048,1647], "early_usd": 4000, "standard_usd": 5000},
+    {"name": "Full", "die_um": [3932,5122], "inside_seal_um": [3880,5070], "core_um": [3048,4238], "early_usd": 7000, "standard_usd": 8000}
+  ],
+  "chip_on_board_addon_usd": 1500,
+  "chip_on_board_constraint": "Default pad ring required; optical access and encapsulation compatibility unconfirmed.",
+  "shipping": "Campaign lists worldwide shipping included; insurance and tariffs are the buyer's responsibility.",
+  "unpriced_project_costs": ["optically compatible bonding/package", "applicable taxes, insurance and tariffs", "external ADC/controller and test PCB", "optics and characterization fixtures"],
+  "next_after_run3": "No later run date established by the checked sources."
+}

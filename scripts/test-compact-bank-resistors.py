@@ -40,6 +40,21 @@ class ReductionTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             m.audit(source, target, removed)
 
+    def test_compact_tile_preserves_diode_terminals_and_records(self):
+        source = ('.subckt tile A B\nR1 A n 2\nR2 n d 3\nR3 d B 4\n'
+                  'Dpixel B d diode_nd2ps_03v3 area=0.4n pj=80u\n.ends tile\n')
+        target, removed = m.compact(source)
+        self.assertEqual([n for n, _ in removed], ['n'])
+        self.assertIn('Dpixel B d diode_nd2ps_03v3 area=0.4n pj=80u', target)
+        self.assertTrue(target.endswith('.ends tile\n'))
+        m.audit(source, target, removed)
+        with self.assertRaises(AssertionError):
+            m.audit(source, target.replace('area=0.4n', 'area=0.5n'), removed)
+
+    def test_mismatched_subcircuit_rejected(self):
+        with self.assertRaises(AssertionError):
+            m.compact('.subckt tile A B\nR1 A B 2\n.ends bank\n')
+
     def test_changed_capacitor_rejected(self):
         source = '.subckt bank A B\nR1 A B 2\nC1 A B 1p\n.ends bank\n'
         target, removed = m.compact(source)

@@ -1,5 +1,212 @@
 # Changelog
 
+## 2026-09-29 — Checkpoint the completed matrix and show the actual device layout
+
+Added a labeled exact-GDS view and pixel/readout close-up to the HTML overview,
+with the 2,667.87 × 1,069.80 µm dimensions, functional callouts and a clear
+distinction between the implemented 64-column bank/one pixel row and the planned
+64×64 chip. The images are rendered from the authenticated ground-grid GDS.
+
+Preserved the exact compressed GDS, reference/extracted netlists, scoped DRC/LVS
+records and hash manifest in a portable Git-tracked checkpoint. Added rendering
+and integrity-check instructions. Large raw simulation traces remain local.
+
+This checkpoint collects the source, reports and documentation from the ground
+return and acquisition fixes through the completed alternating/inverse matrix:
+eight transients, 768 references, 438.213 µV maximum total error and 0.150 µV
+maximum saved-sample refinement. Full-bank/corner and full-chip qualification
+remain open. No new simulations were launched.
+
+[Device layout](docs/overview.html#current-device-layout) ·
+[Checkpoint and reproduction](checkpoints/compact-bank-64-matrix/README.md).
+
+Checkpoint validation: 35 reuse, auditor, timing and resistor regressions pass;
+all 363 Python scripts compile; the overview's 98 anchors and current layout
+links resolve. All 27 packaged files and the exact decompressed GDS verify.
+The rendered full view, close-up and labeled figure were visually inspected.
+
+## 2026-09-29 — Review the completed alternating/inverse temperature matrix
+
+Both new cases pass all five independent checks. The 27 °C inverse case has
+387.179 µV worst total error and 17.529 µV tracking; 125 °C alternating has
+430.383 µV total error and 81.527 µV tracking, against 500 µV. Saved-sample
+refinement is 0.134/0.150 µV and physical-event refinement is 0.135/0.099 µV,
+against 10 µV. All four new transients complete 128 reads each and both 100 ns
+cases have all 192 matched references (384 total).
+
+The new batch and its independent audits completed in about 4.1 hours. All five
+containers exited with code 0; no audit/render failure occurred. Reviewed the
+plots, verified all 1,707 distinct evidence files (909 entries per report), the
+10 launch source hashes, and unchanged earlier reviewed reports.
+
+Across both batches, all four alternating/inverse temperature combinations pass:
+eight transients and 768 references, with 438.213 µV maximum total error and
+0.150 µV maximum saved-sample refinement. Updated handoffs to uniform-illumination
+coverage next; its auditor must be extended and checked before long runs. No new
+simulations were launched. Full-bank/corner and full-chip qualification remain
+open. [Results](docs/compact-bank-64-cross.md).
+
+## 2026-09-28 — Launch the remaining alternating/inverse temperature cases
+
+Started 27 °C inverse and 125 °C alternating at 100/50 ns in four fresh
+containers, with 384 planned independent references. New launch, completion
+watching and matrix rendering preserve the original runner/auditor and the
+completed nominal/hot reports. Six checks pass; all four generated decks differ
+from matched prior decks only in the 64 reversed illumination-source values.
+No physical devices, parasitics, tolerances, timing or probes change.
+
+The configured auditor will publish each measured pass/failure and update the
+matrix/plots. Re-enabled the user's desktop notification for this batch. Results
+remain pending. [Current handoff](PICK_UP_HERE.md) ·
+[Reproduction](docs/compact-bank-64-cross.md).
+
+## 2026-09-28 — Complete and review both full-bank selected screens
+
+Both complete-bank cases pass their selected checks: 27 °C alternating and
+125 °C inverse illumination, with 100/50 ns comparisons. All four transients
+finish 128 reads each; both 100 ns cases have 192 independently audited references
+(384 total). Worst total errors are 372.606/438.213 µV and output tracking is
+17.486/57.086 µV, against 500 µV. Saved-sample refinement is 0.133/0.129 µV
+and physical-event refinement is 0.135/0.099 µV, against 10 µV.
+
+All simulation/auditor containers exited successfully, with no rendering failure.
+Reviewed both plots and verified all 1,711 distinct files in the two manifests
+(913 nominal and 909 hot entries). The completion notification was delivered.
+Updated current handoffs and the next batch: 27 °C inverse and 125 °C alternating,
+followed by uniform illumination and corner/placement coverage. No new runs were
+launched during this review; full-bank/corner and full-chip qualification remain
+open. [Results](docs/compact-bank-64-full.md).
+
+## 2026-09-28 — Resume complete-bank qualification with audited reuse
+
+Added a separately versioned runner and reuse auditor for 10/12 µs acquisition.
+A completed transient can be reused when its overall source run was stopped
+during references; partial transients remain rejected. Completed references
+require matching frozen-state decks, execution records, binary values and
+recorded hashes. The original runners and evidence remain unchanged.
+
+The 16-column reuse control independently reproduces all 32 samples and 48
+references exactly. Sixteen reuse/deck tests, eight auditor tests and four
+original timing tests plus two watcher regressions pass. Rendering errors cannot
+end the watcher before the remaining pair is audited. The pre-reuse snapshot contains 268 hashes and
+explicitly distinguishes newly recorded hashes from the prior plan baseline.
+
+Restored Docker/VNC and launched nominal/hot inverse 100/50 ns continuation
+cases in fresh directories, with a configured independent completion watcher.
+The nominal case reuses its complete transient and 64 capture references;
+three fresh transients and 320 new references are planned. Full-bank accuracy
+and refinement results remain pending. See [the handoff](PICK_UP_HERE.md).
+
+## 2026-09-27 — Extend 16-column checks and diagnose 64-column ground return
+
+The [16-column extension](docs/overview.html#compact-bank-16-extension) passes
+its selected checks across **46 transients and 1,152 references**. Worst total
+error is 433.171 µV and tracking is 301.667 µV
+(500 µV limits). All five patterns at 27/125 °C have 100/50 ns comparisons;
+the largest saved-terminal difference is 0.450 µV. All 19 individual
+shunts plus their joint placement pass for the hot inverse pattern, with
+0.105/0.137 µV maximum HOLD/STORE changes (10 µV limit). The separate
+inverse-pattern layout–schematic response reaches 10.062 mV and has
+no assigned acceptance threshold.
+
+The 8 µm bus alone does not solve 64-column scaling: a matched column-62
+readout fails at 1,994.440 µV total error. A new physical distributed ground
+return **fails with 10 µs acquisition** at 547.178 µV total error and
+340.253 µV tracking. Both main DRC checks and both LVS paths pass, and
+a geometry audit restricts the change to ground metal/vias. The new bank is
+2667.87 × 1069.80 µm, within the 2700 × 1100 µm budget. See the
+[selected readout comparison](docs/overview.html#compact-bank-64-read-probes)
+and [capture/ground diagnosis](docs/compact-bank-64-ground8.md).
+
+Extending acquisition from 10 to 12 µs on that same grid **passes the selected
+diagnostic** at 269.281 µV total error and 62.529 µV tracking. Only the
+ACQ falling edges and sample times move; selection/reset and the 20 µs slot
+budget stay unchanged. Three new matched references and an unchanged-prefix
+comparison are audited. The separately versioned full-bank runner now supports
+this timing. The nominal and hot inverse-pattern attempts were stopped at user
+request before completing the full audit; see PICK_UP_HERE.md for retained
+progress and the resume plan.
+
+These are bounded development screens. Full 16-column corner/placement
+coverage, the full 64-column schedule and its 192 references, real drivers,
+repeated rows and exact 64×64 manufacturing qualification remain open.
+
+Added bounded orchestration, independent binary/DC audits, seven adversarial
+regressions, 96 exact reference-deck comparisons, ground-network diagnostics,
+physical MIM probes, a verified distributed-return layout and geometry audits.
+The overview includes plots, limits, reproduction and a dated provider PDK
+comparison. Original failing runs and immutable manifests remain intact.
+
+## 2026-09-27 — Expand the revised 16-column thermal/pattern screen
+
+Added 13 transients and 528 independent references to the retained nominal
+control. All selected checks pass across 14 transients/576 references: five
+patterns at 27/125 °C, 432.966 µV worst total error and 301.658 µV output tracking.
+Alternating-pattern 100→50 ns differences are 0.220/0.449 µV. Joint far-shunt
+comparisons stay below 0.122 µV HOLD and 0.156 µV STORE. Contrast/brightness
+ordering passes; the separate mixed-versus-uniform response reaches 88.972 µV.
+
+Added bounded pattern orchestration, exact-regression-tested faster trace
+sampling, independent binary-trace/DC auditing and a report with 2,453 evidence
+hashes. Two sampling and fourteen reuse/schedule/progress tests pass. Updated
+the overview with temperature/pattern plots, detailed tables, limits and handoff.
+The physical layout is unchanged. Individual placements, other-pattern numerical
+checks, schematic comparisons, corners, full-bank and chip qualification remain
+open; no full tapeout pass is implied.
+
+## 2026-09-27 — Qualify the 16-column trace and correct its ground bus
+
+Provenance-checked transient reuse completes all 48 independent references.
+The original nominal screen fails at 540.016 µV against 500 µV; a fresh 100 ns
+run confirms 540.185 µV, with 0.185 µV maximum saved-sample difference.
+Physical MIM probes identify ground motion at row deselection. Three extended
+reference controls agree within 0.000136241 µV. The hot two-column reuse control
+matches exactly; eight reuse and six schedule/progress regressions pass.
+
+Widened only the physical M4 ground bus from 2 to 8 µm. Both main DRC checks
+and both LVS paths pass with unchanged devices/reference netlist. A direct GDS
+XOR audit verifies the sole rectangle change. The revised nominal 100 ns run
+and all 48 references pass: 189.413 µV total error, 55.267 µV output tracking.
+The 16-column bounding box grows 1.8 µm to 709.56 × 978.28 µm. Updated the
+overview with the original failure, corrected result, comparison plot and
+reproducible evidence hashes. Revised-bank hot/pattern/placement/timestep checks
+remain open; no 64-column revision or full-chip tapeout pass is claimed.
+
+
+## 2026-09-27 — Advance KLU bank simulations and refresh the overview
+
+KLU resolves 64-column initialization/reset without changing devices, parasitics
+or tolerances. The hot two-column accuracy control passes with 0.009070 µV
+saved-terminal change. Eight-column alternating nominal/hot cases pass 24
+references each (195.412/430.243 µV worst error); 200→100 ns comparisons are
+0.170/0.401 µV. Gear has no observed runtime benefit; equivalent voltage-form
+drivers abort initialization. Thirteen local tests pass.
+
+Built a physically verified 16-column bank; its longer transient completes both
+scans in 440 s. The 64-column run reaches 1.686001 ms and 14/128 scheduled
+readout instants before a 900 s timeout. Neither bank has a new accuracy pass.
+Added phase/runtime observations, retained all controls and updated the handoff.
+
+Rechecked Run 3 dates, pricing, full-slot availability and exact die/core sizes.
+Added a dated cost table, Los Angeles deadline conversions, conservative fit
+diagram and release gates to the overview; validated anchors and Firefox
+rendering. The full default core remains the viable planning envelope.
+No full 64×64 chip, slot purchase or tapeout submission is implied.
+[Latest overview](docs/overview.html#compact-bank-solver).
+
+## 2026-09-27 — Restore VNC and diagnose compact-bank initialization
+
+Restored Docker Desktop and the existing VNC workstation; opened the compact
+64-column GDS in KLayout. Added compact tile/diode support to the resistor
+reducer and deterministic audited-model input to the compact simulation runner.
+Seven reducer tests and four schedule tests pass. A hot two-column reduction
+control completes with 0.058281 µV maximum saved-sample difference. Four/eight-
+column physical controls pass both main DRC and LVS paths; four columns complete
+both scans, while eight recover through transient OP fallback and reach readout.
+Reducing 1824 internal nodes still leaves the compact 64-column model at zero
+samples after 180 s. Full-bank electrical qualification remains open.
+[Diagnostic evidence](docs/compact-bank-initialization.md).
+
 ## 2026-09-26 — Build compact 64-column bank and preserve Git checkpoint
 
 Committed and pushed the accumulated source, reports and evidence manifests;

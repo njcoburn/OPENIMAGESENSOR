@@ -1,0 +1,119 @@
+{
+  "scope": "Exact implemented 64-column ground-grid bank plus one pixel row; selected physical evidence, not a full electrical archive or fabrication release.",
+  "date": "2026-09-29",
+  "source_directory": "build/compact-bank-c64-ground-grid-20260927",
+  "gds": {
+    "sha256": "adb3f6afb6f6f5ac202c9097daf2c93adda1d99f515bcba69d35b1a91ecade8d",
+    "uncompressed_bytes": 147608140
+  },
+  "files": {
+    "checkpoints/compact-bank-64-matrix/README.md": {
+      "sha256": "52ed842dbd774d9fe900ef51d43c23210062ac72872ecfcc15275d1d6d6d27b9",
+      "bytes": 3318
+    },
+    "checkpoints/compact-bank-64-matrix/bank.gds.gz": {
+      "sha256": "2dfd54d51c02421c6f6f1633ce7c385baf78d9e859125fbec7da81184405737e",
+      "bytes": 26997469
+    },
+    "checkpoints/compact-bank-64-matrix/build.json": {
+      "sha256": "1e8f65d71ced44f37b28463e998e7bcb483b48913ca67790a2481ca7f1899fe7",
+      "bytes": 59617
+    },
+    "checkpoints/compact-bank-64-matrix/collapsed-lvs.log": {
+      "sha256": "d4afd001f8a3f433cee6fe6447cc4bbc031c34066fa4fec49ebee7e05bc15370",
+      "bytes": 33240
+    },
+    "checkpoints/compact-bank-64-matrix/collapsed-netgen.log": {
+      "sha256": "aba80f8dd71f971dc422cb3406338313199aa40448e41f97360eab6c58b4a3e5",
+      "bytes": 5648
+    },
+    "checkpoints/compact-bank-64-matrix/collapsed.spice": {
+      "sha256": "8730df2b028cb3e811ad4e2c665888bf7189abc2074cca032343ca8d302f7faa",
+      "bytes": 95515
+    },
+    "checkpoints/compact-bank-64-matrix/direct-lvs.log": {
+      "sha256": "24e1301eeee34e8c593fcea759e5f9db0a6c9e94c80375525649d96833b0367f",
+      "bytes": 33230
+    },
+    "checkpoints/compact-bank-64-matrix/direct-netgen.log": {
+      "sha256": "54184183e1581e2da4d079ece0276fb9cb3c8a7033ef72133bc8af2bbbd900ef",
+      "bytes": 5608
+    },
+    "checkpoints/compact-bank-64-matrix/direct.spice": {
+      "sha256": "e115eb6e9d7dae6cbb7ba987c713540ac22865308d217866c0c94c6ae3d2f3c7",
+      "bytes": 98853
+    },
+    "checkpoints/compact-bank-64-matrix/drc-details.txt": {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    "checkpoints/compact-bank-64-matrix/extract.log": {
+      "sha256": "5d77f40632ae36b6fe95ad8999bb8557f22ee3e702fea093241f05b563f96403",
+      "bytes": 36880
+    },
+    "checkpoints/compact-bank-64-matrix/extract.tcl": {
+      "sha256": "22a4bbfbfa8b8ebd0bef10960f4f5a248146f2e8913f3f54cdbb51cc3555c484",
+      "bytes": 2873
+    },
+    "checkpoints/compact-bank-64-matrix/klayout.log": {
+      "sha256": "55d4bf0f043e9be39696d495ff375ccb6f8fb640572dab5aa7f21ecc669692bf",
+      "bytes": 95713
+    },
+    "checkpoints/compact-bank-64-matrix/main-drc.lyrdb": {
+      "sha256": "15bf38d38cf001de07299c41eafd3eeaf75883efeec5b81dcfb8ec4a84ef1894",
+      "bytes": 134567
+    },
+    "checkpoints/compact-bank-64-matrix/physical-check-helper.py": {
+      "sha256": "e97a48b875984255c158e6798686154d7696de398d90a3b9aebe75f947d14f18",
+      "bytes": 3501
+    },
+    "checkpoints/compact-bank-64-matrix/raw-rc.spice": {
+      "sha256": "2deda5d4faf217889cf18e296996ab00d0dbfd88a13533dfd9d9f1aee786c176",
+      "bytes": 638069
+    },
+    "checkpoints/compact-bank-64-matrix/rc-port.spice": {
+      "sha256": "09659e14b3e0d9fb9d3ec2b566e81526cfc2518059e949185e1e3e5e50395212",
+      "bytes": 617472
+    },
+    "checkpoints/compact-bank-64-matrix/reference.spice": {
+      "sha256": "74601d4fa5b61e1a04912d6682301be9c0d1781dbd41bcaf1a31f6862a4f3c78",
+      "bytes": 106115
+    },
+    "checkpoints/compact-bank-64-matrix/runner.py": {
+      "sha256": "2b5f0be45dcde50dcb4784f0cc0135df0252d4d5952b6e7e538b823c373ae488",
+      "bytes": 14907
+    },
+    "checkpoints/compact-bank-64-matrix/verification.json": {
+      "sha256": "365f86d8682519e82a67524488db816544b1257c71b176b2133460ebd20e4456",
+      "bytes": 191701
+    },
+    "scripts/render-current-bank-layout.py": {
+      "sha256": "9f0b75760f08ad1fbd9fc7d9a25162ad9f6a667f0a60f01ee8c62f9ce967c61e",
+      "bytes": 2199
+    },
+    "scripts/annotate-current-bank-layout.py": {
+      "sha256": "c18d4bd5c3cba3545c23e0e4ca627ce721689d36c8e15c107308b0ff4717db57",
+      "bytes": 2889
+    },
+    "scripts/verify-current-bank-checkpoint.py": {
+      "sha256": "90ce855f9b5f29fd733f88fd36ae20226c38a77d6a5cfcbce46027a2297a89e9",
+      "bytes": 1580
+    },
+    "simulations/current-bank-layout-view.json": {
+      "sha256": "2f7ce76d8706dfbf4c93df445a8e1452db9a3807366cc0b25427ebfd82dd5c95",
+      "bytes": 982
+    },
+    "docs/assets/current-bank-layout.png": {
+      "sha256": "da7be635a0d5c82d924269d8824d44163120113f817412ab447615e99bfff69a",
+      "bytes": 81216
+    },
+    "docs/assets/current-bank-layout-detail.png": {
+      "sha256": "740d529642832f33074bb7baec73e2e604d2d49cd666c3320819b111239e12b9",
+      "bytes": 77998
+    },
+    "docs/assets/current-bank-layout-labeled.png": {
+      "sha256": "053159b555edc2554ce4ec5d1de53cde170c2d195bfcab71d1ae56472a1d69ef",
+      "bytes": 2207654
+    }
+  }
+}

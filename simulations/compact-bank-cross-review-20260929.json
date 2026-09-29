@@ -1,0 +1,78 @@
+{
+  "reviewed_at_utc": "2026-09-29T07:50:32.451493+00:00",
+  "manifest_entries": {
+    "compact-bank-64-inverse27.json": 909,
+    "compact-bank-64-alternating125.json": 909
+  },
+  "distinct_evidence_files_verified": 1707,
+  "hash_failures": [],
+  "prior_reviewed_reports_unchanged": true,
+  "launch_source_hashes_verified": 10,
+  "cases": [
+    {
+      "temperature_C": 27,
+      "pattern": "inverse",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true,
+        "contrast_order": true
+      },
+      "max_total_error_uV": 387.17925174092113,
+      "max_tracking_error_uV": 17.52879911443017,
+      "max_refinement_uV": 0.13362396911187346,
+      "event_refinement_worst": {
+        "event": "pre_capture",
+        "column": 63,
+        "quantity": "upper_V",
+        "difference_uV": 0.13487484507024305
+      }
+    },
+    {
+      "temperature_C": 125,
+      "pattern": "alternating",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true,
+        "contrast_order": true
+      },
+      "max_total_error_uV": 430.3834042780341,
+      "max_tracking_error_uV": 81.5273484602308,
+      "max_refinement_uV": 0.14997299446761758,
+      "event_refinement_worst": {
+        "event": "pre_capture",
+        "column": 30,
+        "quantity": "upper_V",
+        "difference_uV": 0.09943255119271299
+      }
+    }
+  ],
+  "elapsed_seconds": 60.51098506200651,
+  "scope": "Completion, plot and integrity review of the crossed cases; no new simulations launched.",
+  "completed_transients": 4,
+  "reads_per_transient": 128,
+  "new_references_audited": 384,
+  "matrix_transients": 8,
+  "matrix_references": 768,
+  "matrix_selected_screen_pass": true,
+  "plots_reviewed": true,
+  "simulation_and_watcher_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "reviewed_report_hashes": {
+    "simulations/compact-bank-64-full.json": "0731750fcdf5efe81eb947a76686bafd5bf45f6b9d6c0b707c7e38df3fe581ac",
+    "simulations/compact-bank-64-inverse27.json": "317c4424bcba94df7054f66a942eb342dc690d12aecda9598324b0500c71f611",
+    "simulations/compact-bank-64-alternating125.json": "a5df6a2c36a2d5a638d880c7298b64a67631614e0642e4c7fc47bd40cd68549e",
+    "simulations/compact-bank-64-full-hot.json": "ade2a6ae212cb8a625e30857b24cb93433d73f363d84f612782fa033fb5f8cd5",
+    "build/compact-bank-cross-watch-20260928/status.json": "cfa199be6fab4a220a2dd65678fa2a78bca5c67c664e7412f361519e1b40d200"
+  }
+}
