@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "state": "completed_reviewed_model_only",
+  "parent_layout": "build/compact-bank-c2-v1-20260926",
+  "screen_report": "simulations/compact-bank-capture-cycles-20260930.json",
+  "review_report": "simulations/compact-bank-capture-cycles-review-20260930.json",
+  "selected_candidate": {
+    "series_nmos_devices": 3,
+    "device_width_um": 1,
+    "device_length_um": 0.5,
+    "physical_implementation_pending": false,
+    "physical_qualification_scope": "Selected two-column stage passes; 64-column candidate remains pending"
+  },
+  "timing_candidate": {
+    "acquisition_us": 12.5,
+    "reset_nonoverlap_us": 0.49,
+    "tested_with": "original and three-device model-only switches; extracted three-device small bank"
+  },
+  "temperature_C": 125,
+  "lights_pA": [
+    240,
+    0
+  ],
+  "steps_ns": [
+    100,
+    50
+  ],
+  "transients": 20,
+  "references": 120,
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "rerun_commands": [
+    "bash scripts/run-tools.sh python3 scripts/screen-bank-capture-cycles.py --out build/candidate-cycles-NEW",
+    "bash scripts/run-tools.sh python3 scripts/review-bank-capture-cycles.py --source build/candidate-cycles-NEW --out build/candidate-review-NEW"
+  ],
+  "next_task": "Build separate 64-column three-device bank with the established ground grid, verify physical topology/DRC/LVS, then qualify 12.5 us fixture and run typical/SS/FF full-bank process cases.",
+  "physical_candidate_profile": "verification/compact-bank-physical-stack3.json"
+}

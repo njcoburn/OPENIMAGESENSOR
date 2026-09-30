@@ -1,0 +1,8 @@
+<!-- BEGIN BANK_PLACEMENT -->
+<div id="compact-bank-64-placement"><h3>64-column parasitic placement sensitivity</h3>
+<p>This bounded batch jointly moves the 67 conserved positive shunt-capacitance totals from their ports to the recorded far nodes. An exact netlist comparison checks that only those endpoints change. It uses nominal alternating and hot inverse illumination, four 100/50 ns transients and 384 references.</p>
+<table><thead><tr><th>Case</th><th>Selected result</th><th>Total error, µV</th><th>HOLD placement change, µV</th><th>STORE placement change, µV</th></tr></thead><tbody><tr><td>27 °C / alternating</td><td><a href="../simulations/compact-bank-64-placement-alternating27.json">PASS</a></td><td>372.235</td><td>1.189</td><td>1.527</td></tr><tr><td>125 °C / inverse</td><td><a href="../simulations/compact-bank-64-placement-inverse125.json">PASS</a></td><td>437.952</td><td>1.027</td><td>1.373</td></tr></tbody></table>
+<p>Accuracy remains limited to 500 µV, timestep and physical-event refinement to 10 µV, and HOLD/STORE placement sensitivity to 10 µV. Placement comparisons use the matching retained port-model baseline. Pending results carry no pass claim. A joint check does not qualify individual placements, other patterns or operating corners.</p>
+<figure><img src="assets/compact-bank-64-placement-alternating27.png" alt="Joint far-node placement: 27 degrees C, alternating"></figure><figure><img src="assets/compact-bank-64-placement-inverse125.png" alt="Joint far-node placement: 125 degrees C, inverse"></figure>
+<p>Real drivers, repeated rows and final-chip qualification remain open. See <a href="../PICK_UP_HERE.md">current handoff</a> for the automatic continuation status.</p></div>
+<!-- END BANK_PLACEMENT -->

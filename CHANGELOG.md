@@ -1,5 +1,198 @@
 # Changelog
 
+## 2026-09-30 — Build and verify the physical three-device capture switch
+
+Combined switch/timing controls pass, then a separate physical column and
+small bank pass Magic/KLayout DRC, direct/collapsed LVS and 40 µm abutment.
+Keep the original footprint and upper capacitor geometry. Extracted typical,
+SS and FF total errors stay below 259 µV across port/far placement; placement
+sensitivity stays below 0.044 µV. Complete 18 transients and 108 references,
+independent raw audits and topology rejection tests. Preserve failed attempts.
+Add the candidate GDS view, one-command fixed-candidate electrical rerun,
+versioned profile, overview/journal results and next full-bank handoff.
+The original full-bank checkpoint and process-failure evidence remain unchanged.
+
+## 2026-09-30 — Screen capture-switch candidates through complete cycles
+
+Complete and independently review 20 two-column transients and 120 matched
+references. Three series NMOS capture devices pass selected typical/SS/FF checks;
+FF total error improves from 1240.756 to 410.653 µV. Two devices still fail at
+596.505 µV. A separate original-switch 12.5 µs acquisition screen improves SS
+tracking from 281.789 to 206.737 µV while preserving ADC-reset nonoverlap.
+Add exact parent-fixture regeneration, raw-result review, four rejection tests,
+versioned rerun profile, overview plot/table, journal history and handoff.
+These are model-only results; existing physical GDS and full-bank failures remain.
+
+## 2026-09-30 — Review process failures and investigate storage leakage
+
+Both 125 °C inverse MOS corners finish but fail total error: SS 512.924 µV and
+FF 2000.323 µV vs 500 µV. All other selected checks pass. Four transients and
+384 references are independently audited in 2.92 hours; both plots and 1,740
+unique evidence files are reviewed. Simulator exits are 0; watcher exit 1 reports
+the measured failures.
+
+Retained-data decomposition separates SS tracking from FF storage-drift behavior.
+Five balanced direct-current probes identify the NMOS capture switch as the
+main selected FF storage-discharge path. The first voltage-subtraction clamp
+check failed at pA precision and is retained; direct clamp/MIM probes restore
+current balance within 0.00254 pA without material DC voltage change.
+
+Six model-only switch-length and four series-stack DC cases complete. Three
+series devices reduce tested net leakage by about 70%, but no physical layout
+or capture/readout correction is qualified. Add comparison plots, evidence,
+journal history and a handoff for candidate transients plus SS acquisition timing.
+No new hours-long batch is running; all existing pinned evidence remains intact.
+
+## 2026-09-30 — Embed the journal and launch MOS process variations
+
+Place an expandable full verification journal first in the overview, with its
+own navigation link; refreshing the journal updates both views. Add a separate
+process catalogue and pending-result table.
+
+Version the runner and auditor for explicit typical/SS/FF/FS/SF MOS selection.
+Diode/MIM and supply/wire remain nominal. All installed ngspice model files are
+hashed; transient and independently regenerated reference decks must use the
+same corner. Fourteen regression/adversarial/watcher tests pass; the retained
+full-bank typical hot audit reproduces exactly.
+
+Four two-column process-control transients and 12 references complete. SS passes;
+FF fails late-scan total accuracy at 1240.756 µV against 500 µV, while tracking
+is 3.057 µV and sample/event refinement is 0.096/0.098 µV. Storage drops
+1.348/1.540 mV between scans, consistent with retention sensitivity, not a proven
+root cause. Preserve the initial assertion failure and the subsequent independent
+review; no tolerance or accuracy threshold is relaxed.
+
+Launch the bounded current-layout SS/FF 125 °C inverse batch: four fresh
+100/50 ns transients and 384 references, with independent auditing and durable
+exit/status records. Results remain pending; no next batch auto-starts. Update
+the handoff, profile and journal with this scoped failure and launch evidence.
+
+## 2026-09-30 — Explain verification and establish a running rerun record
+
+Add `docs/verification-journal.html` with physical/electrical/software test
+explanations, acceptance criteria, the 12-case selected bank matrix, milestone
+history, remaining gates and pixel-change dependencies. Add a machine-readable
+baseline catalogue and a standard-library refresh/check command that validates
+retained report hashes, fixture identity, counts and reported limit consistency.
+The command does not launch simulations or re-audit raw evidence.
+
+Document the fixed pitch/pin/device assumptions, dated auditor dependencies,
+output-name collisions and local-only build artifacts that must be addressed for
+a general single-command rerun. Link the journal from the overview and handoff;
+propose a baseline-tested controller before the next corner profile. Preserve
+all pinned simulation/audit sources and existing results. No long runs launched.
+
+## 2026-09-30 — Review completed bright and overnight placement batches
+
+Uniform bright passes at 27/125 °C with 359.158/402.995 µV total error against
+500 µV. All five illumination patterns now pass at both temperatures: 20
+transients and 1,920 independent references, at typical process and nominal
+supply/wire conditions.
+
+The authorized automatic follow-on jointly relocates 67 conserved shunt totals
+and passes at 27 °C alternating / 125 °C inverse. Total error is
+372.235/437.952 µV; maximum HOLD/STORE change is 1.527 µV against 10 µV.
+It adds four transients and 384 references. Bright and placement batches took
+3.97 and 3.87 hours respectively, including independent audits.
+
+All ten simulation/audit containers exited successfully. Visually reviewed all
+four new plots and verified 3,347 distinct evidence files, including the frozen
+42-dependency continuation configuration and prior review records, without hash
+failures. Recorded the final review in
+`simulations/compact-bank-overnight-review-20260930.json`; preserved the original
+automated bright review and frozen simulation/audit sources. Updated the overview,
+handoff and plans; 101 unique overview anchors validate. No new batch was launched.
+
+Next are bounded process/wire/supply-corner preparation, remaining individual
+placements and local supply/reference checks before real drivers and repeated
+rows. Full-bank corner coverage and full-chip qualification remain open.
+
+## 2026-09-29 — Queue an audited overnight continuation
+
+At the user's request, prepare one automatic follow-on batch after bright passes:
+full-bank joint shunt placement at 27 °C alternating and 125 °C inverse, four
+transients and 384 references. A new auditor verifies exact conserved-total
+endpoint changes, the existing accuracy/refinement checks, and HOLD/STORE
+sensitivity to matching retained baselines. Fifteen placement tests and five
+continuation guard tests pass; the full-bank control reproduces exactly.
+
+The detached controller waits for passing bright audits, verifies every new
+evidence hash, checks clean predecessor exits and frozen dependencies, then
+launches one fresh placement batch with its independent watcher. It records
+failures and stops progression, updates the handoff, and supports a desktop alert.
+The automated bright review does not claim visual inspection of plots. No broader
+corner, individual-placement or full-chip qualification is implied.
+
+
+## 2026-09-29 — Review middle illumination and launch bright
+
+Both middle cases pass all four checks: 340.408/391.739 µV total error and
+30.395/72.481 µV tracking at 27/125 °C, against 500 µV. Saved-sample refinement
+is 0.135/0.132 µV and physical-event refinement is 0.123/0.086 µV, against 10 µV.
+Four transients and 384 references are complete; the batch finished in 3.65 hours.
+All five containers exited with code 0. Reviewed both plots and verified 1,709
+distinct evidence files (911 entries per report), 18 launch dependencies and
+unchanged earlier artifacts.
+
+Started the authorized bright batch (240 pA/pixel) at both temperatures, with
+four fresh transients, 384 planned references, the independent watcher and
+desktop alert. Sources, timing, tolerances and layout remain unchanged; existing
+19-test coverage includes these decks. Bright results are pending. Updated the
+overview and handoffs; broader corner/placement and full-chip checks remain open.
+
+
+## 2026-09-29 — Launch uniform middle illumination
+
+Started 80 pA/pixel at 27/125 °C with fresh 100/50 ns runs: four transients and
+384 planned independent references. The independent watcher and desktop alert
+are enabled. Verified prior launch dependencies and reviewed dark artifacts
+unchanged; the existing 19 passing tests cover these middle decks. Runner,
+auditor, physical layout, timing and strict tolerances are unchanged.
+
+Updated the uniform matrix and current handoffs. Middle results remain pending;
+bright illumination will follow after review. Full-bank/corner and full-chip
+qualification remain open.
+
+
+## 2026-09-29 — Review the completed uniform-dark batch
+
+Both 27/125 °C cases pass all four independent accuracy/refinement checks.
+Worst total error is 248.852/411.912 µV against 500 µV, and tracking is
+14.965/81.559 µV. Saved-sample refinement is 0.133/0.149 µV and physical-event
+refinement is 0.134/0.100 µV, against 10 µV. Four transients finish 128 reads
+each and all 384 matched references are audited.
+
+The batch plus audits finished in 4.04 hours; all five containers exited with
+code 0, with no audit/render failure. Reviewed both plots and verified all
+1,709 distinct evidence files (911 manifest entries per case), 18 launch
+dependencies, and unchanged earlier matrix reports. Updated the overview and
+handoffs to middle illumination next, then bright. No new runs were launched
+during this review. Full-bank/corner and full-chip qualification remain open.
+
+[Dark results](docs/compact-bank-64-uniform.md) ·
+[Review evidence](simulations/compact-bank-uniform-dark-review-20260929.json).
+
+## 2026-09-29 — Start the first uniform-illumination batch
+
+Added a separately versioned full-bank auditor accepting explicit uniform dark,
+middle and bright patterns. It rejects mislabeled illumination and marks neighbor
+contrast as not applicable for uniform scenes; accuracy and refinement limits
+remain unchanged. Nineteen regressions pass, and all twelve planned decks change
+only illumination-source values. The new auditor reproduces every sample,
+reference summary, physical event and acceptance result of the completed nominal
+64-column control exactly. The original evidence and source versions are preserved.
+
+Launched uniform dark at 27/125 °C with 100/50 ns comparisons: four fresh
+transients and 384 planned references, an independent completion watcher and
+desktop alert. Middle and bright remain unstarted. Added the uniform coverage
+table and updated handoffs; no new accuracy result is claimed at launch.
+
+Also added a labeled exact-GDS single-pixel close-up to the overview, identifying
+the three transistors, photodiode, clear aperture and wiring, and opened it in
+the browser. The prior bank checkpoint is unchanged.
+
+[Uniform coverage and reproduction](docs/compact-bank-64-uniform.md).
+
 ## 2026-09-29 — Checkpoint the completed matrix and show the actual device layout
 
 Added a labeled exact-GDS view and pixel/readout close-up to the HTML overview,

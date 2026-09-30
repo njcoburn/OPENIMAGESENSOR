@@ -1,0 +1,83 @@
+{
+  "scope": "Detached conditional continuation is running; waiting for bright audits. No placement result claimed.",
+  "controller_status": {
+    "pid": 48281,
+    "phase": "waiting for bright audits",
+    "audited": {},
+    "failures": {},
+    "render_failures": {},
+    "all_pairs_audited": false,
+    "all_selected_screens_pass": false,
+    "watcher_expired": false,
+    "placement_launched": false,
+    "updated_at_utc": "2026-09-29T23:21:06.450551+00:00",
+    "elapsed_seconds": 30.127615461999085,
+    "predecessor_progress": [
+      {
+        "run": "/foss/designs/build/compact-bank-c64-uniform-bright27-100-20260929-bright",
+        "elapsed_minutes": 212.53491065104802,
+        "last_saved_ms": 3.98,
+        "observed_sample_instants": 128,
+        "expected_sample_instants": 128,
+        "phase": "transient complete",
+        "accuracy_claimed": false,
+        "references": {
+          "completed": 143,
+          "expected": 192
+        },
+        "runner_completed": false,
+        "trace_megabytes": 6180.651151
+      },
+      {
+        "run": "/foss/designs/build/compact-bank-c64-uniform-bright27-50-20260929-bright",
+        "elapsed_minutes": 212.5330954750379,
+        "last_saved_ms": 3.98,
+        "observed_sample_instants": 128,
+        "expected_sample_instants": 128,
+        "phase": "runner complete; independent audit pending",
+        "accuracy_claimed": false,
+        "runner_completed": true,
+        "trace_megabytes": 6538.452991
+      },
+      {
+        "run": "/foss/designs/build/compact-bank-c64-uniform-bright125-100-20260929-bright",
+        "elapsed_minutes": 212.52772182623545,
+        "last_saved_ms": 3.98,
+        "observed_sample_instants": 128,
+        "expected_sample_instants": 128,
+        "phase": "independent audit complete",
+        "accuracy_claimed": false,
+        "references": {
+          "completed": 192,
+          "expected": 192
+        },
+        "runner_completed": true,
+        "trace_megabytes": 6103.787551,
+        "selected_screen_pass": true
+      },
+      {
+        "run": "/foss/designs/build/compact-bank-c64-uniform-bright125-50-20260929-bright",
+        "elapsed_minutes": 212.52180966536204,
+        "last_saved_ms": 3.98,
+        "observed_sample_instants": 128,
+        "expected_sample_instants": 128,
+        "phase": "independent audit complete",
+        "accuracy_claimed": false,
+        "runner_completed": true,
+        "trace_megabytes": 6457.989751,
+        "selected_screen_pass": true
+      }
+    ]
+  },
+  "notification": {
+    "phase": "watching",
+    "message": "Waiting for the full-bank audit results.",
+    "pid": 21956,
+    "status_path": "\\\\wsl.localhost\\Ubuntu\\home\\njcoburn\\code\\OPENIMAGESENSOR\\build\\compact-bank-overnight-20260929\\status.json",
+    "updated_at_utc": "2026-09-29T23:21:12.2522657Z"
+  },
+  "frozen_dependencies_verified": 42,
+  "placement_tests": 15,
+  "continuation_guard_tests": 5,
+  "full_bank_control_reproduced": true
+}

@@ -1,12 +1,222 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Open Image Sensor · Engineering notebook</title>
 <style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f2f5f6;color:#182c3b;font:17px/1.65 system-ui,sans-serif}header{background:#102e3b;color:white;padding:64px max(24px,calc((100vw - 1100px)/2))}header p{max-width:760px;color:#d2e4e9}h1{font-size:clamp(32px,5vw,55px);line-height:1.1;margin:12px 0}h2{font-size:29px;line-height:1.2}h3{font-size:20px}main{max-width:1150px;margin:auto;padding:24px}section{background:white;border:1px solid #dce5e9;border-radius:14px;padding:30px;margin:22px 0}nav{display:flex;flex-wrap:wrap;gap:20px}a{color:#146379}header a{color:#b6e8eb}.tag{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#a6dbd0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#edf5f5;padding:20px;border-radius:10px}.card strong{display:block;font-size:24px}img{display:block;width:100%;height:auto;border-radius:8px}figure{margin:24px 0}figcaption,.small{font-size:14px;color:#526574}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:11px;border-bottom:1px solid #dce5e9}code{background:#eef2f3;padding:2px 5px;font-size:14px}pre{overflow:auto;background:#102e3b;color:#e6f1f1;padding:20px;border-radius:8px}pre code{background:none;color:inherit}.note{border-left:4px solid #d88a32;background:#fff6e9;padding:16px}summary{cursor:pointer;font-weight:650}button{padding:10px 18px;border:1px solid #146379;border-radius:6px;background:#fff;color:#146379;cursor:pointer;margin-right:8px}button[aria-pressed=true]{background:#146379;color:white}.hidden{display:none}@media print{body{background:white}section{break-inside:avoid;border:0;padding:10px}header{padding:25px}button,nav{display:none}.hidden{display:block}}</style></head><body>
-<header><div class="tag">Open Image Sensor / living engineering notebook</div><h1>Building a 64 × 64<br>monochrome image sensor.</h1><p>GF180MCU · Xschem · ngspice · Magic · KLayout. This notebook records what we built, what the simulations show, and which assumptions still need physical validation.</p><nav><a href="#compact-bank-64-cross">64-column temperature/pattern matrix</a><a href="#compact-bank-64-full">64-column complete scans</a><a href="#compact-bank-64-read-probes">64-column matched readout</a><a href="#compact-bank-64-ground8">64-column ground and capture</a><a href="#compact-bank-16-extension">16-column refinement and placement</a><a href="#compact-bank-16-screen">16-column thermal and patterns</a><a href="#compact-bank-16">16-column accuracy</a><a href="#compact-bank-solver">Latest simulation progress</a><a href="#wafer-space-run3">Run 3, cost and die fit</a><a href="#compact-bank-64">Compact 64-column bank</a><a href="#first-silicon-64">Current 64×64 plan</a><a href="#compact-bank">Compact two-column results</a><a href="#bank-reinforcement">Bank routing reinforcement</a><a href="#bank-routing">Bank routing diagnosis</a><a href="#capture-bank">Shared capture bank</a><a href="#capture-column-qualification">Physical capture column</a><a href="#grid-readout">Grid readout</a><a href="#row-power">Row power</a><a href="#array-recovery">Array recovery</a><a href="#array-strips">64-pixel strips</a><a href="#readout-followup">Readout follow-up</a><a href="#camera-operating-corners">Load and operating corners</a><a href="#three-frames">Three-frame verification</a><a href="#staged-integration">Full-frame success</a><a href="#shared-circuit">Shared-circuit diagnosis</a><a href="#standalone-row">Standalone rows</a><a href="#streamed-frame">Nine-pixel frame</a><a href="#functional-camera-diagnostic">Row-switching diagnostic</a><a href="#parasitics">Extracted RC</a><a href="#column-bias">Column bias</a><a href="#column-mux">Mux and layout</a><a href="#readout-pex">Readout extraction</a><a href="#output-buffer">Output buffer</a><a href="#buffer-corners">Process / temperature</a><a href="#buffer-hardening">Revised buffer</a><a href="#buffer-pex">Buffer extraction</a><a href="#integrated">Connected layout</a><a href="#integrated-corners">Connected corner matrix</a><a href="#bias-reference">Physical bias and startup</a><a href="#pad-evaluation">Pad evaluation</a><a href="#pad-layout">Physical pad interface</a><a href="#pad-closure">Supply clamps and pad checks</a><a href="#clamp-convergence">Full clamp transient</a><a href="#board-supply">Board supply</a><a href="#power-ring">Physical supply ring</a><a href="#ring-sections">Small ring extraction</a><a href="#filler-stitch">Boundary stitching</a><a href="#terminal-calibration">Terminal calibration</a><a href="#geometry-controls">Matched terminals</a><a href="#rail-isolation">Real rail isolation</a><a href="#rail-faces">Full-width rail faces</a><a href="#extraction-diagnostics">Export and via diagnostics</a><a href="#network-investigation">Reduction and device regressions</a><a href="#pad-references">Pad references</a><a href="#repeatability">Repeatability</a><a href="#array">3×3 target</a><a href="#status">First experiment</a><a href="#circuit">Circuit</a><a href="#timing">Timing</a><a href="#results">Results</a><a href="#history">History</a><a href="#reproduce">Reproduce</a></nav></header><main><section id="compact-bank-64-cross"><h2>64-column bank: crossed temperature and illumination checks</h2>
+<header><div class="tag">Open Image Sensor / living engineering notebook</div><h1>Building a 64 × 64<br>monochrome image sensor.</h1><p>GF180MCU · Xschem · ngspice · Magic · KLayout. This notebook records what we built, what the simulations show, and which assumptions still need physical validation.</p><nav><a href="#verification-journal">Verification journal</a><a href="#compact-bank-64-cross">64-column temperature/pattern matrix</a><a href="#compact-bank-64-full">64-column complete scans</a><a href="#compact-bank-64-read-probes">64-column matched readout</a><a href="#compact-bank-64-ground8">64-column ground and capture</a><a href="#compact-bank-16-extension">16-column refinement and placement</a><a href="#compact-bank-16-screen">16-column thermal and patterns</a><a href="#compact-bank-16">16-column accuracy</a><a href="#compact-bank-solver">Latest simulation progress</a><a href="#wafer-space-run3">Run 3, cost and die fit</a><a href="#compact-bank-64">Compact 64-column bank</a><a href="#first-silicon-64">Current 64×64 plan</a><a href="#compact-bank">Compact two-column results</a><a href="#bank-reinforcement">Bank routing reinforcement</a><a href="#bank-routing">Bank routing diagnosis</a><a href="#capture-bank">Shared capture bank</a><a href="#capture-column-qualification">Physical capture column</a><a href="#grid-readout">Grid readout</a><a href="#row-power">Row power</a><a href="#array-recovery">Array recovery</a><a href="#array-strips">64-pixel strips</a><a href="#readout-followup">Readout follow-up</a><a href="#camera-operating-corners">Load and operating corners</a><a href="#three-frames">Three-frame verification</a><a href="#staged-integration">Full-frame success</a><a href="#shared-circuit">Shared-circuit diagnosis</a><a href="#standalone-row">Standalone rows</a><a href="#streamed-frame">Nine-pixel frame</a><a href="#functional-camera-diagnostic">Row-switching diagnostic</a><a href="#parasitics">Extracted RC</a><a href="#column-bias">Column bias</a><a href="#column-mux">Mux and layout</a><a href="#readout-pex">Readout extraction</a><a href="#output-buffer">Output buffer</a><a href="#buffer-corners">Process / temperature</a><a href="#buffer-hardening">Revised buffer</a><a href="#buffer-pex">Buffer extraction</a><a href="#integrated">Connected layout</a><a href="#integrated-corners">Connected corner matrix</a><a href="#bias-reference">Physical bias and startup</a><a href="#pad-evaluation">Pad evaluation</a><a href="#pad-layout">Physical pad interface</a><a href="#pad-closure">Supply clamps and pad checks</a><a href="#clamp-convergence">Full clamp transient</a><a href="#board-supply">Board supply</a><a href="#power-ring">Physical supply ring</a><a href="#ring-sections">Small ring extraction</a><a href="#filler-stitch">Boundary stitching</a><a href="#terminal-calibration">Terminal calibration</a><a href="#geometry-controls">Matched terminals</a><a href="#rail-isolation">Real rail isolation</a><a href="#rail-faces">Full-width rail faces</a><a href="#extraction-diagnostics">Export and via diagnostics</a><a href="#network-investigation">Reduction and device regressions</a><a href="#pad-references">Pad references</a><a href="#repeatability">Repeatability</a><a href="#array">3×3 target</a><a href="#status">First experiment</a><a href="#circuit">Circuit</a><a href="#timing">Timing</a><a href="#results">Results</a><a href="#history">History</a><a href="#reproduce">Reproduce</a></nav></header><main><!-- BEGIN VERIFICATION_JOURNAL -->
+<section id="verification-journal"><h2>Verification journal — tests, results and reruns</h2><p>The running record explains the physical checks, circuit simulations and audit software, and the workflow for repeating them after a pixel change. <a href="verification-journal.html">Open the complete journal</a> · <a href="#compact-bank-process">Process-variation batch</a></p><p>The retained baseline has 12 selected passing bank cases, 24 transients and 2,304 references. Process-variation results are separate and must be audited before any pass is claimed.</p><details><summary>Read the verification journal here</summary>
+<div id="journal-tests"><h2>What the tests mean</h2>
+<p>There are three layers: physical layout checks, electrical behavior, and checks that the test software reports the right answer. Passing one layer does not replace the others.</p>
+<h3>1. Physical layout and circuit identity</h3>
+<table><thead><tr><th>Check</th><th>Question it answers</th><th>Current boundary</th></tr></thead><tbody>
+<tr><td>DRC: design-rule checking</td><td>Do drawn wires, contacts and devices satisfy the selected geometry rules, such as width and spacing?</td><td>Current bank passes main Magic and KLayout DRC with zero violations. This does not include every final manufacturing check.</td></tr>
+<tr><td>LVS: layout versus schematic</td><td>Does the circuit extracted from the actual geometry contain the intended devices and connections?</td><td>Both direct-device and resistor-collapsed LVS pass. Collapsing wire resistors is a connectivity comparison; the electrical simulations retain resistance.</td></tr>
+<tr><td>Geometry, device census and optical clearance</td><td>Does the block fit, contain the intended repeated devices, and leave the photodiode region clear of metal?</td><td>2,667.87 × 1,069.80 µm; 642 MOS devices, 512 MIM capacitor plates, 64 diodes. The 18 × 18 µm M1–M5 clearance is geometric evidence, not a qualified passivation opening or optical efficiency measurement.</td></tr>
+<tr><td>Extraction and controlled-change audits</td><td>Do the simulation models come from this GDS? Did a routing experiment change only what was intended?</td><td>GDS/model hashes identify the exact revision. The ground-grid experiment has a layer-by-layer geometry comparison. Raw extraction and conserved-total shunt approximations are retained separately.</td></tr>
+</tbody></table>
+<p>Source: <a href="../checkpoints/compact-bank-64-matrix/README.md">exact GDS checkpoint</a>, <a href="compact-bank-64-ground8.md">ground diagnosis</a>, and <a href="../scripts/audit-bank-ground-grid.py">geometry auditor</a>.</p>
+<h3>2. Electrical behavior of the entire bank</h3>
+<p>A <em>transient</em> computes voltage changes over time. Our schedule captures a row and reads all 64 columns twice: 128 output samples over 3.98 ms of simulated time. The later scan checks the same captured data after additional storage time; it is not a second image exposure. Acquisition is 12 µs within each 20 µs readout slot.</p>
+<p>Each case runs twice, with maximum timesteps of 100 ns and 50 ns. The 100 ns run also has 192 separately solved, matched-state references: 64 at capture and 128 at output. A reference freezes the relevant pixel/storage state and solves its settled response. This distinguishes capture/storage/readout errors from the voltage the same circuit would produce after settling. It is not a claim of absolute optical calibration.</p>
+<table><thead><tr><th>Check</th><th>What is compared</th><th>Acceptance</th></tr></thead><tbody>
+<tr><td>Total capture/readout error</td><td>The sampled output HOLD voltage versus the matched capture-state settled output for that column. Includes the combined effect of capture, storage and readout.</td><td>Worst absolute difference &lt; 500 µV (0.5 mV).</td></tr>
+<tr><td>Output tracking</td><td>The sampled HOLD output versus a settled reference with that output sample's pixel/storage state frozen. Tests whether the output has settled sufficiently in the available slot.</td><td>Worst absolute difference &lt; 500 µV.</td></tr>
+<tr><td>Saved-sample refinement</td><td>100 ns versus 50 ns results at the same 128 sample instants, across every saved voltage, including internal nodes. The finer run has no additional DC references.</td><td>Worst difference &lt; 10 µV.</td></tr>
+<tr><td>Physical-event refinement</td><td>Storage-node voltage and physical MIM upper plate, lower plate and differential voltages around capture, row deselection and reset. This checks numerical agreement at those internal events.</td><td>Worst 100/50 ns event difference &lt; 10 µV. The size of a real switching excursion itself is not this acceptance metric.</td></tr>
+<tr><td>Contrast order</td><td>Adjacent dark/bright samples have the expected voltage ordering: in this circuit, dark is higher than bright.</td><td>Ordering must hold in both scans. Explicitly not applicable to uniform images; it is not a dynamic-range or noise test.</td></tr>
+<tr><td>Parasitic-placement sensitivity</td><td>Move the same conserved shunt-capacitance totals from their ports to recorded far nodes, then compare sampled HOLD and all 64 STORE voltages with the matching port-model baseline.</td><td>Worst HOLD/STORE difference &lt; 10 µV, plus the accuracy/refinement checks above. The completed experiment moves all 67 shunts jointly in two selected cases.</td></tr>
+</tbody></table>
+<p><strong>Five illumination patterns:</strong> all dark (0 pA/pixel), all middle (80 pA), all bright (240 pA), alternating dark/bright (0,240,…), and the inverse (240,0,…). Uniform patterns exercise common loading; alternating/inverse exercise neighboring contrast and both column parities. These are injected photocurrents, not specified lux levels. All five run at 27 °C and 125 °C. The present matrix uses typical transistor models, nominal extracted wire RC and a 3.3 V source with the existing supply/bias fixture.</p>
+<p><strong>Why it takes hours:</strong> each detailed extracted circuit requires many numerical solves, followed by independent references and audits. A four-transient/two-temperature batch recently took about 3.65–4.04 hours including audits. Six comparable batches for the current baseline plus selected placement would be roughly 24 hours on the same workstation, excluding rebuilds and troubleshooting. This is an estimate, not a measured full-suite runtime; new geometry and extra corners can take longer.</p>
+<p>Definitions and implementation: <a href="../scripts/simulate-compact-bank-v3.py">transient/reference runner</a>, <a href="../scripts/report-bank-full-v3.py">independent bank auditor</a>, <a href="../scripts/report-bank-placement.py">placement auditor</a>.</p>
+<h3>3. The test software and evidence</h3>
+<p>Regression tests verify sample timing, column selection, reference roles, the exact generated circuit decks, and compatibility with retained controls. Adversarial tests deliberately alter illumination, reuse evidence or placement data to ensure the auditor rejects it. Watcher/controller tests check that incomplete jobs, timeouts, measured failures and rendering failures cannot silently advance the sequence.</p>
+<p>The uniform extension has 19 regression/adversarial tests; placement has 15; overnight continuation has five guard tests. These are software checks, separate from the 24 transistor-level transients in the current bank matrix. Existing full-bank control audits reproduced retained results before the new batches were launched.</p>
+<p>An independent audit reconstructs decks, reads binary traces, checks reference completion, recomputes errors and records SHA-256 hashes. An integrity review checks that saved files still match those hashes. A clean container exit alone is insufficient: a completed audit can legitimately report an electrical failure. Visual plot review is recorded separately.</p>
+</div>
+<div id="journal-results"><h2>Current results and their limits</h2>
+<!-- BEGIN RESULTS -->
+<p><strong>12/12 selected cases pass; 24 transients and 2,304 independent references.</strong> Revision: <code>ground-grid-20260927-acq12</code>. Reviewed through 2026-09-30.</p>
+<div class="scroll"><table><caption>All errors and differences are in µV. Click a result for its audited report.</caption><thead><tr><th>Pattern</th><th>°C</th><th>Model</th><th>Total error</th><th>Tracking</th><th>Sample refinement</th><th>Event refinement</th><th>Placement change</th><th>Result</th></tr></thead><tbody><tr><td>alternating</td><td>27</td><td>rc-port</td><td>372.606</td><td>17.486</td><td>0.133</td><td>0.135</td><td>—</td><td><a href="../simulations/compact-bank-64-full.json">PASS</a></td></tr>
+<tr><td>alternating</td><td>125</td><td>rc-port</td><td>430.383</td><td>81.527</td><td>0.150</td><td>0.099</td><td>—</td><td><a href="../simulations/compact-bank-64-alternating125.json">PASS</a></td></tr>
+<tr><td>inverse</td><td>27</td><td>rc-port</td><td>387.179</td><td>17.529</td><td>0.134</td><td>0.135</td><td>—</td><td><a href="../simulations/compact-bank-64-inverse27.json">PASS</a></td></tr>
+<tr><td>inverse</td><td>125</td><td>rc-port</td><td>438.213</td><td>57.086</td><td>0.129</td><td>0.099</td><td>—</td><td><a href="../simulations/compact-bank-64-full-hot.json">PASS</a></td></tr>
+<tr><td>dark</td><td>27</td><td>rc-port</td><td>248.852</td><td>14.965</td><td>0.133</td><td>0.134</td><td>—</td><td><a href="../simulations/compact-bank-64-uniform-dark27.json">PASS</a></td></tr>
+<tr><td>dark</td><td>125</td><td>rc-port</td><td>411.912</td><td>81.559</td><td>0.149</td><td>0.100</td><td>—</td><td><a href="../simulations/compact-bank-64-uniform-dark125.json">PASS</a></td></tr>
+<tr><td>middle</td><td>27</td><td>rc-port</td><td>340.408</td><td>30.395</td><td>0.135</td><td>0.123</td><td>—</td><td><a href="../simulations/compact-bank-64-uniform-middle27.json">PASS</a></td></tr>
+<tr><td>middle</td><td>125</td><td>rc-port</td><td>391.739</td><td>72.481</td><td>0.132</td><td>0.086</td><td>—</td><td><a href="../simulations/compact-bank-64-uniform-middle125.json">PASS</a></td></tr>
+<tr><td>bright</td><td>27</td><td>rc-port</td><td>359.158</td><td>3.028</td><td>0.065</td><td>0.065</td><td>—</td><td><a href="../simulations/compact-bank-64-uniform-bright27.json">PASS</a></td></tr>
+<tr><td>bright</td><td>125</td><td>rc-port</td><td>402.995</td><td>15.919</td><td>0.061</td><td>0.044</td><td>—</td><td><a href="../simulations/compact-bank-64-uniform-bright125.json">PASS</a></td></tr>
+<tr><td>alternating</td><td>27</td><td>rc-far</td><td>372.235</td><td>17.486</td><td>0.133</td><td>0.134</td><td>1.527</td><td><a href="../simulations/compact-bank-64-placement-alternating27.json">PASS</a></td></tr>
+<tr><td>inverse</td><td>125</td><td>rc-far</td><td>437.952</td><td>57.086</td><td>0.128</td><td>0.099</td><td>1.373</td><td><a href="../simulations/compact-bank-64-placement-inverse125.json">PASS</a></td></tr></tbody></table></div>
+<p>This table checks the identity and consistency of saved reports. Refreshing it does not rerun simulations or independently re-audit raw traces. A PASS applies only to the stated case and limits.</p>
+<!-- END RESULTS -->
+<p><code>rc-port</code> is the nominal conserved-shunt placement; <code>rc-far</code> is the joint relocation experiment on the same GDS. The ten port cases cover five patterns × two temperatures. The two far cases extend only 27 °C alternating and 125 °C inverse. These counts exclude the earlier small-bank tests and failed diagnostic experiments.</p>
+<p>Worst total error in the port matrix is 438.213 µV against 500 µV, leaving about 61.8 µV of margin in that tested case. That remaining margin is one reason operating-corner work matters. The largest selected placement change is 1.527 µV against 10 µV. Neither result establishes fabrication yield, image noise, sensitivity or all-corner performance.</p>
+</div>
+<!-- BEGIN PHYSICAL_STACK3 -->
+<div id="journal-physical-stack3"><h3>Physical three-device capture switch — small-bank verification complete</h3>
+<p><strong>The candidate is now implemented in a separate physical column and two-column bank.</strong> Three W = 1 µm, L = 0.5 µm NMOS capture devices in series, combined with 12.5 µs acquisition, pass the selected extracted-circuit tests at typical, SS and FF. The original 64-column GDS remains the existing checkpoint; its known process failures are not relabeled by these results.</p>
+<p>Both the new column and small bank pass Magic/KLayout main DRC and direct/resistor-collapsed LVS. Two neighboring columns pass the 40 µm abutment check. The column outline is unchanged, and M4, M5, capacitor-marker and via4 geometry is exactly unchanged. The column contains nine MOS devices; the bank contains 26 MOS devices, 16 capacitor plates and two photodiodes. Density, antenna, CUP and full-chip checks remain outside this evidence.</p>
+<table><caption>Extracted two-column candidate: 125 °C inverse illumination, 12.5 µs acquisition. Worst errors across 100/50 ns, in µV; total/tracking limit 500 µV.</caption><thead><tr><th>MOS corner</th><th>Port-placement total</th><th>Far-placement total</th><th>Worst tracking</th><th>Selected checks</th></tr></thead><tbody><tr><td>TYPICAL</td><td>152.197</td><td>152.172</td><td>25.624</td><td>PASS</td></tr><tr><td>SS</td><td>181.039</td><td>181.071</td><td>206.674</td><td>PASS</td></tr><tr><td>FF</td><td>258.749</td><td>258.782</td><td>2.514</td><td>PASS</td></tr></tbody></table>
+<p>Six combined model-only transients and 36 references passed before physical qualification. The extracted candidate adds 12 transients and 72 references across two wiring-capacitance placements. All 18 transients and 108 references are reviewed. Each timestep has fresh capture and output references. Numerical, physical-capacitor-event and contrast checks pass. Moving all four approximated shunt groups together changes sampled HOLD/STORE by at most 0.044 µV, below 10 µV. All extracted resistors and collapsed capacitance totals are retained.</p>
+<p>The first physical attempt extended routes into a capacitor region and failed two Magic rules; it is retained as a failed attempt. The corrected placement puts the two added NMOS devices at y = 144 and 156 µm and preserves the original capacitor routes. The isolated-column extraction includes small negative shunt corrections on one new private net; these are consolidated with its positive total, with raw extraction retained. The assembled-bank extraction does not need that private-net consolidation.</p>
+<details><summary>View the new two-column physical layout detail</summary><figure><a href="assets/compact-bank-physical-stack3-detail-20260930.png"><img src="assets/compact-bank-physical-stack3-detail-20260930.png" width="795" height="1525" style="max-width:100%;height:auto" alt="Physical two-column candidate showing two pixel photodiodes at the bottom, shared buses, analog devices and the two added NMOS devices at the top of each column."></a><figcaption>Exact new GDS detail: two pixels at the bottom; shared references at left; added NMOS pair at the top of each repeated column. Capacitor plates continue above this crop. This is a separate candidate, not the displayed 64-column checkpoint.</figcaption></figure></details>
+<p><strong>Next:</strong> build the candidate as a separate 64-column bank with the established ground grid, verify DRC/LVS and topology, then run matched typical/SS/FF corner tests with 12.5 µs acquisition. Full-bank testing is the next potentially hours-long stage; no such batch has been started here. Other temperatures, illumination patterns, mixed corners, supply/wire and full-chip coverage remain open.</p>
+<p><a href="../simulations/compact-bank-physical-stack3-20260930.json">Physical audit</a> · <a href="../simulations/compact-bank-physical-cycles-review-20260930.json">Port raw-data review</a> · <a href="../simulations/compact-bank-physical-far-review-20260930.json">Far raw-data review</a> · <a href="../simulations/compact-bank-physical-stack3-placement-20260930.json">Placement comparison</a> · <a href="../verification/compact-bank-physical-stack3.json">Reproduction profile</a></p>
+<p>New scripts and evidence are versioned separately from earlier hash-pinned runners. The reproduction profile records the commands and fixed physical source for this candidate; a changed pixel requires rebuilding and requalifying that source before rerunning electrical coverage.</p>
+</div>
+<!-- END PHYSICAL_STACK3 -->
+<!-- BEGIN BANK_CAPTURE_CYCLES -->
+<div id="journal-bank-capture-cycles"><h3>Earlier model-only capture-switch candidate screen</h3>
+<p><strong>The three-device series NMOS candidate passes the selected two-column screen at typical, SS and FF.</strong> At FF, total error falls from 1240.756 µV with the original switch to 596.505 µV with two series devices and 410.653 µV with three. The limit remains 500 µV. This identifies a candidate to implement physically; it does not fix or qualify the existing 64-column GDS.</p>
+<p>Twenty fresh transients and 120 matched-state references cover the complete capture and two readout scans at 125 °C, inverse illumination, 100/50 ns timesteps. Both timesteps have their own capture/output references. All sample, event, error-refinement and contrast checks pass, including the added stack nodes. Worst saved-sample difference is 1.346 µV; worst event difference is 1.590 µV, below 10 µV. Fresh original-switch SS/FF controls reproduce the retained waveforms within 0.001 µV at HOLD.</p>
+<table><caption>Two-column diagnostic results, worst across both timesteps; errors in µV</caption><thead><tr><th>Series devices</th><th>MOS</th><th>Acquisition µs</th><th>Total error</th><th>Tracking</th><th>Screen</th></tr></thead><tbody><tr><td>1</td><td>TYPICAL</td><td>12</td><td>204.428</td><td>37.893</td><td>PASS</td></tr><tr><td>1</td><td>SS</td><td>12</td><td>187.313</td><td>281.789</td><td>PASS</td></tr><tr><td>1</td><td>FF</td><td>12</td><td>1240.756</td><td>3.073</td><td>FAIL</td></tr><tr><td>2</td><td>TYPICAL</td><td>12</td><td>175.705</td><td>38.006</td><td>PASS</td></tr><tr><td>2</td><td>SS</td><td>12</td><td>208.035</td><td>281.730</td><td>PASS</td></tr><tr><td>2</td><td>FF</td><td>12</td><td>596.505</td><td>3.932</td><td>FAIL</td></tr><tr><td>3</td><td>TYPICAL</td><td>12</td><td>154.150</td><td>38.011</td><td>PASS</td></tr><tr><td>3</td><td>SS</td><td>12</td><td>236.198</td><td>281.676</td><td>PASS</td></tr><tr><td>3</td><td>FF</td><td>12</td><td>410.653</td><td>4.055</td><td>PASS</td></tr><tr><td>1</td><td>SS</td><td>12.5</td><td>137.243</td><td>206.737</td><td>PASS</td></tr></tbody></table>
+<p><strong>Timing result:</strong> extending acquisition from 12 to 12.5 µs reduces SS tracking error from 281.789 to 206.737 µV and total error from 187.313 to 137.243 µV on the original small bank. Acquisition finishes falling at 14.51 µs within the 20 µs slot; ADC reset begins rising at 15 µs, leaving 0.49 µs separation. This is a fresh simulation, not a later sample of the old waveform. The full-bank SS failure still requires verification, as does combining the extension with the series-switch candidate.</p>
+<figure><a href="assets/compact-bank-capture-cycles-20260930.png"><img src="assets/compact-bank-capture-cycles-20260930.png" width="1800" height="720" style="max-width:100%;height:auto" alt="Three series NMOS devices reduce fast-corner error below 500 microvolts in the two-column model; a half-microsecond acquisition extension improves slow-corner settling."></a></figure>
+<p><strong>Earlier plan (physical small-bank work now completed above):</strong> implement the three-device capture switch in a separate physical column revision, check DRC/LVS and extracted small-bank behavior, then verify the complete 64-column schedule. First check the combined candidate and timing change. The model-only stack retains each original device's geometry parameters and omits new routing parasitics; physical extraction may change the result. Mixed MOS, diode/MIM, supply/wire and full-chip checks remain open. No new hours-long batch is active.</p>
+<p><a href="../simulations/compact-bank-capture-cycles-20260930.json">Screen evidence</a> · <a href="../simulations/compact-bank-capture-cycles-review-20260930.json">Independent raw/deck review</a> · <a href="../verification/compact-bank-capture-candidates.json">Rerun profile</a></p>
+<p>Reproduce this screen with a fresh output directory, then audit it:</p>
+<pre>bash scripts/run-tools.sh python3 scripts/screen-bank-capture-cycles.py --out build/candidate-cycles-NEW
+bash scripts/run-tools.sh python3 scripts/review-bank-capture-cycles.py --source build/candidate-cycles-NEW --out build/candidate-review-NEW</pre>
+<p>The screen is tied to the retained two-column physical parent. After a pixel/layout change, rebuild and validate the parent, version these scripts for the new source, and rerun the physical baseline and full-bank matrix; this command is not yet a general pixel-rebuild controller.</p></div>
+<!-- END BANK_CAPTURE_CYCLES -->
+<!-- BEGIN BANK_PROCESS_DIAGNOSIS -->
+<div id="journal-bank-process-diagnosis"><h3>Process failures reviewed — next correction work</h3>
+<p><strong>Both process cases finished, but neither passes total accuracy.</strong> SS reaches 512.924 µV and FF 2000.323 µV against 500 µV. Output tracking, numerical/event refinement and contrast pass. All four transients and 384 references are audited; 1,740 evidence files verify. Runtime was 2.92 hours. Watcher exit 1 intentionally reports the measured failures; all four simulator exits are 0.</p>
+<p>SS worst total error separates into −389.105 µV output tracking and −123.819 µV settled-state change. FF worst separates into −3.303 and −1997.019 µV respectively. Settled-state change includes stored voltages and local supply/bias changes. FF STORE drops by as much as 1.522 mV between scans; SS drops by at most 0.016 mV.</p>
+<p><strong>Next step already investigated:</strong> five frozen-state DC probes identify the NMOS capture switch as the dominant fast-corner leakage path. At column 63 it drains 37.747 pA in FF, versus 4.252 pA typical and 0.613 pA SS. In FF, the PMOS injects about 0.234 pA, all eight MIM plates together leak about 0.036 pA, and modeled storage-follower gate current is zero. Direct clamp/probe current balance agrees within 0.00254 pA; saved DC voltages change by less than 0.000003 µV.</p>
+<p>The initial three-terminal probe used subtraction of nearly equal voltages to infer clamp current and failed its pA-level balance check. Its artifacts remain retained. The second version adds all eight capacitor branches and a direct clamp-current probe; all five balance checks pass. Use these direct measurements for current attribution.</p>
+<table><caption>Model-only candidates: net FF storage leakage in two frozen states, pA</caption><thead><tr><th>NMOS capture switch</th><th>Column 0</th><th>Column 63</th></tr></thead><tbody>
+<tr><td>Original: one device, L = 0.5 µm</td><td>42.573</td><td>37.551</td></tr>
+<tr><td>One device, L = 0.75 µm</td><td>35.836</td><td>29.957</td></tr>
+<tr><td>One device, L = 1.0 µm</td><td>30.138</td><td>24.841</td></tr>
+<tr><td>One device, L = 1.5 µm</td><td>23.685</td><td>19.237</td></tr>
+<tr><td>Two series devices, each L = 0.5 µm</td><td>20.689</td><td>17.154</td></tr>
+<tr><td>Three series devices, each L = 0.5 µm</td><td>13.535</td><td>11.030</td></tr>
+</tbody></table>
+<p>Six length cases and four series-stack cases completed with unchanged PDK corners and tolerances. These changes reduce DC leakage, but <strong>none is an accuracy-qualified correction</strong>. They have not been physically laid out or checked for capture resistance, charge injection, transient retention and process coverage. The original GDS is unchanged.</p>
+<figure><a href="assets/compact-bank-process-diagnosis-20260930.png"><img src="assets/compact-bank-process-diagnosis-20260930.png" alt="Process errors, inter-scan storage drop, measured NMOS leakage and model-only length/stack comparisons" style="width:100%;height:auto"></a></figure>
+<p><strong>Earlier plan (completed in the candidate screen above):</strong> compare lower-leakage capture-switch candidates through complete small-bank capture/readout transients, and test a modest acquisition-timing extension for SS with nonoverlapping ADC reset. Only then rebuild a selected physical candidate and rerun the bank matrix. Additional mixed-corner coverage follows correction of these known failures. No new hours-long batch is running.</p>
+<p><a href="../simulations/compact-bank-process-review-20260930.json">Completion review</a> · <a href="../simulations/compact-bank-process-retention-20260930.json">Error decomposition</a> · <a href="../simulations/compact-bank-storage-leakage-20260930.json">Direct current probes</a> · <a href="../simulations/compact-bank-hold-length-screen-20260930.json">Length screen</a> · <a href="../simulations/compact-bank-hold-stack-screen-20260930.json">Series-stack screen</a></p>
+</div>
+<!-- END BANK_PROCESS_DIAGNOSIS -->
+<!-- BEGIN BANK_PROCESS -->
+<div id="journal-process"><h3>Process variation — first MOS-corner batch</h3>
+<p>Slow/slow (SS) and fast/fast (FF) transistor models at 125 °C with inverse illumination: four fresh 100/50 ns transients and 384 matched references. This starts with the smallest-margin typical-process case. Diodes, MIM capacitors, supply and extracted wiring retain their nominal settings; mixed MOS and other operating corners remain open.</p>
+<table><thead><tr><th>Case</th><th>Audited status</th><th>Total error, µV</th><th>Tracking, µV</th><th>Sample refinement, µV</th></tr></thead><tbody><tr><td>SS / 125 °C / inverse</td><td><a href="../simulations/compact-bank-process-ss-inverse125-20260930-ssff.json">FAIL</a></td><td>512.924</td><td>390.140</td><td>0.439</td></tr><tr><td>FF / 125 °C / inverse</td><td><a href="../simulations/compact-bank-process-ff-inverse125-20260930-ssff.json">FAIL</a></td><td>2000.323</td><td>4.533</td><td>0.109</td></tr></tbody></table>
+<p>Limits remain 500 µV total/tracking and 10 µV sample/event refinement; contrast ordering is required. Every matched reference uses the same MOS corner as its transient. Pending is not a pass. No later batch starts automatically.</p>
+<figure><img src="assets/compact-bank-process-ss-inverse125-20260930-ssff.png" alt="SS transistor corner, 125 C inverse, independent accuracy audit"></figure><figure><img src="assets/compact-bank-process-ff-inverse125-20260930-ssff.png" alt="FF transistor corner, 125 C inverse, independent accuracy audit"></figure>
+<p><a href="verification-journal.html#process">Journal: process work</a> · <a href="../build/compact-bank-process-plan-20260930-ssff.json">Launch plan</a> · <a href="../PICK_UP_HERE.md">Current handoff</a></p></div>
+<!-- END BANK_PROCESS -->
+<div id="journal-process-controls"><h3>Process preparation: small-bank findings</h3>
+<p>The new auditor exactly reproduced the retained 64-column typical-process hot-inverse result. Four additional two-column SS/FF transients and 12 matched references exercised the new model-selection path. SS passes the small electrical screen; FF fails total capture/readout accuracy at <strong>1,240.756 µV against 500 µV</strong>, while output tracking is 3.057 µV and saved-sample refinement is 0.096 µV.</p>
+<p>The fast-corner failure is in the later scan. STORE falls by approximately 1.35/1.54 mV between first and late reads, which is consistent with storage-retention sensitivity rather than insufficient output settling; the root cause is not established. These two-column controls have different wiring/loading from the current 64-column bank. The bounded SS/FF full-bank batch will measure that actual layout. No accuracy limit is relaxed and the small FF failure remains recorded.</p>
+<p><a href="../simulations/compact-bank-process-controls-20260930.json">Independent small-control review and evidence</a>. The initial preparation script stopped at its electrical-pass assertion. The follow-up independent review separates valid audit/numerical behavior from a measured electrical failure. These small controls are separate from the 24-transient completed typical/placement baseline.</p>
+</div>
+<div id="journal-remaining"><h2>What remains to be tested</h2>
+<table><thead><tr><th>Work</th><th>Purpose and required evidence</th><th>Status</th></tr></thead><tbody>
+<tr><td>Process, supply and wire corners</td><td>Exercise model variations, supply extremes and approved wire resistance/capacitance variations. Choose the supported models and operating envelope, parameterize both transients and matched references, and keep the same error limits unless an explicit design requirement changes.</td><td>SS and FF at 125 °C inverse completed and both failed total accuracy. The failure diagnosis and candidate DC screens above are complete; correction work precedes further coverage. Mixed MOS, diode/MIM, supply and wire profiles remain open.</td></tr>
+<tr><td>Individual parasitic placements and local rails</td><td>Separate sensitivity to individual shunts from the joint test. Measure local VDD, ground, bias and reference drops under operating loads; define local-rail criteria and relate them to output accuracy.</td><td>64-column joint cases pass; individual/full placement and local-rail qualification remain open. Existing event voltage measurements are diagnostic evidence.</td></tr>
+<tr><td>Real controls and 4×64 repeated rows</td><td>Replace behavioral control sources with actual decoders/drivers; check no double selection, row-to-row interference, stale stored charge, idle-row leakage and full-length column loading.</td><td>After remaining bank coverage. One capture/two scans does not cover repeated frames.</td></tr>
+<tr><td>Exact 64×64 chip</td><td>Add the remaining 63 rows, real supplies/references, pads and interface; extract the assembled geometry and test representative worst loads and repeated operation.</td><td>Not assembled or qualified.</td></tr>
+<tr><td>Manufacturing and optical release</td><td>Final required DRC/LVS/ERC, density/fill/antenna and provider prechecks, pad/bond plan, permitted optical openings and packaging. Archive the exact submission geometry and evidence.</td><td>Open. Noise, mismatch, dark-current behavior and optical characterization need their own scope; current deterministic photocurrent tests do not establish them.</td></tr>
+</tbody></table>
+</div>
+<div id="journal-change"><h2>If we change the pixel layout</h2>
+<p>The required rerun depends on what changes. Results belong to a specific GDS/model revision; an old passing report cannot qualify a new pixel.</p>
+<table><thead><tr><th>Change</th><th>What needs updating and repeating</th></tr></thead><tbody>
+<tr><td>Labels or explanatory images only</td><td>Refresh the illustrations. If fabricated GDS is unchanged, the circuit evidence remains applicable.</td></tr>
+<tr><td>Move/reroute the same devices, retaining pitch and external pins</td><td>New pixel DRC/LVS/extraction and aperture check; rebuild joins and banks; rerun small controls, the 20-transient illumination matrix, selected placement and applicable corner checks using the new models. The independent schematic should stay unchanged if the circuit really is unchanged.</td></tr>
+<tr><td>Change diode area, transistor size/count, or circuit topology</td><td>Update the independent circuit specification as well as geometry, expected device census and extraction checks. Requalify small cells before the bank. Reassess loading, exposure response, settling and noise/optical requirements. Do not change the reference just to make LVS pass.</td></tr>
+<tr><td>Change pixel pitch, pin positions or optical opening</td><td>Also update bank joins, abutment tests, optical-clearance coordinates, repeated-row layout and die-fit budget. Existing builders assume 40 µm pitch and specific pin locations.</td></tr>
+</tbody></table>
+<p>The current builder's <code>--pixel</code> argument is useful, but it does not make arbitrary pixels plug-compatible: pin coordinates, expected three-transistor circuit and diode dimensions are still embedded in the builders. These are concrete inputs to generalize before layout experimentation becomes a reliable single-command operation.</p>
+</div>
+<div id="journal-rerun"><h2>The repeatable workflow we need</h2>
+<div class="flow" aria-label="Verification dependency sequence"><span>Versioned design inputs</span>→<span>Physical build and checks</span>→<span>Small controls</span>→<span>Bank matrix</span>→<span>Placement and corners</span>→<span>Audit, compare, archive</span></div>
+<p><strong>A general layout-to-results command is not implemented yet.</strong> The individual tools exist, and the previous overnight controller can sequence one specific follow-on batch. It is tied to the current baseline. The catalogue now captures the current 12-case regression matrix, limits, tool image, report identities and history in machine-readable form.</p>
+<ol>
+<li><strong>Freeze a revision manifest.</strong> Record the pixel source/parameters, independent schematic, pin/pitch contract, capture-column input, tool and PDK identities, model/corner choices, timing, accuracy requirements, and a unique run ID. Preserve older revisions.</li>
+<li><strong>Build and verify fresh geometry.</strong> Pixel and boundary controls → joined tile → small bank → 64-column ground-grid bank. Run DRC/LVS, extraction/passivity checks, device census, clear-aperture and fit checks at the applicable stages. Retain raw and approximated extraction separately. A changed design needs its own geometry-change contract, not the old “ground additions only” assertion.</li>
+<li><strong>Run quick software and electrical controls.</strong> Validate deck generation, pin/control schedules and small-circuit references before committing to long runs. A failure stops dependent work and produces a report.</li>
+<li><strong>Schedule the bank matrix in bounded batches.</strong> Ten port-model cases, each with 100/50 ns transients and 192 references at 100 ns: 20 transients/1,920 references. Then two selected joint-far cases: four more transients/384 references. Placement baselines must come from the same new layout revision.</li>
+<li><strong>Add the agreed remaining tests.</strong> Individual placements, local rail checks and the chosen corner matrix need explicit cases and exit criteria. They are not implicitly covered by the current catalogue. Avoid multiplying every dimension before selecting a justified staged matrix.</li>
+<li><strong>Audit and publish per revision.</strong> Reconstruct decks, audit waveforms/references, compare with the previous design, hash evidence, render plots, and append a dated review. Record pass, fail, incomplete and not-applicable distinctly. Keep visual review separate from automated completion.</li>
+</ol>
+<p><strong>Controller work needed:</strong> replace fixed dated paths and global result filenames with manifest inputs and revision-specific outputs; remove the old-layout dependency from new auditor versions; parameterize process/supply consistently in the transient and reference builders; enforce resource limits, bounded retries and durable status. Restart must verify identities before reusing a fully completed stage. A partial SPICE transient is not resumable, and an expired watcher is not proof that its simulators stopped.</p>
+<p>The intended user interaction is to select a pixel revision and test profile, start one command, then read one status report. The first implementation should reproduce the present known baseline before it is trusted with a changed pixel. Existing pinned runners/auditors remain intact as controls.</p>
+<h3>What is runnable now</h3>
+<p>From the repository root, this command refreshes the result table and work history after validating all 12 retained report hashes and reported case/limit consistency:</p>
+<pre><code>python3 scripts/update-verification-journal.py
+python3 scripts/update-verification-journal.py --check</code></pre>
+<p>It also places an expandable copy of this journal at the top of the overview. Run it after a full overview rebuild to restore that section. It launches no simulations and does not rehash raw traces. For existing executable physical/simulation examples, see the <a href="compact-pixel.md">pixel build</a>, <a href="compact-bank-64-full.md">bank runner</a> and <a href="compact-bank-64-uniform.md">uniform audit guide</a>. Dated launchers refuse existing outputs; changing only a tag is insufficient where published report names are fixed. Do not delete evidence to bypass that refusal.</p>
+<h3>Inputs and storage we must retain</h3>
+<ul>
+<li><strong>Build inputs:</strong> pixel and capture-column GDS, upstream primitive GDS, circuit references, source scripts and parameter contracts. Current inputs include <code>build/compact-pixel-v1-20260926</code> and <code>build/compact-capture-v4-20260926</code>; the pixel builder also imports upstream device geometry.</li>
+<li><strong>Tools:</strong> the pinned Docker image in the catalogue, plus the actual PDK/model/deck provenance. Docker availability, disk space and machine wakefulness are operational prerequisites.</li>
+<li><strong>Evidence:</strong> revision-specific GDS, extracted netlists, generated decks, raw binary traces, settled references, execution logs, audit JSON, plots, manifests and source snapshots. Measure required disk space before a new full suite rather than assuming unlimited storage.</li>
+<li><strong>Backup boundary:</strong> the Git checkpoint preserves the exact compressed bank GDS and selected physical records. Large waveforms and many upstream inputs remain in local <code>build/</code>, which Git ignores. A clone alone cannot reproduce every saved audit. A reproducible source package and a verified external archive still need to be defined; no new external backup was created here.</li>
+</ul>
+</div>
+<div id="journal-history"><h2>Running work history</h2>
+<p>This records milestones and decisions, including failed controls that explain later changes. Earlier detailed records remain in the <a href="../CHANGELOG.md">changelog</a>, <a href="overview.html">overview</a> and linked checkpoints; they are not silently reclassified as current passes.</p>
+<!-- BEGIN HISTORY -->
+<ol class="history">
+<li><strong>2026-09-26 — Compact pixel, capture column and small joined controls</strong><p>Established scoped geometry/connectivity and small-circuit screens; retained failed attempts and extraction limitations. <a href="../docs/compact-pixel.md">Record</a></p></li>
+<li><strong>2026-09-27 — Ground-return diagnosis and timing correction</strong><p>An 8 µm bus alone failed selected readout at 1994.440 µV. Distributed return with 10 µs acquisition still failed at 547.178 µV; the same layout with 12 µs acquisition passed the selected diagnostic at 269.281 µV. <a href="../docs/compact-bank-64-read-probes.md">Record</a></p></li>
+<li><strong>2026-09-28 — First full-bank pairs</strong><p>27 °C alternating and 125 °C inverse passed; four transients and 384 references. A validated reuse path retained the completed nominal transient and references. <a href="../simulations/compact-bank-completion-review-20260928.json">Record</a></p></li>
+<li><strong>2026-09-29 — Crossed temperature/pattern pairs</strong><p>Added 27 °C inverse and 125 °C alternating; alternating/inverse matrix reached eight transients and 768 references. <a href="../simulations/compact-bank-cross-review-20260929.json">Record</a></p></li>
+<li><strong>2026-09-29 — Uniform dark</strong><p>Both temperatures passed, four transients and 384 references; 4.04 hours including audits. <a href="../simulations/compact-bank-uniform-dark-review-20260929.json">Record</a></p></li>
+<li><strong>2026-09-29 — Uniform middle</strong><p>Both temperatures passed, four transients and 384 references; 3.65 hours including audits. <a href="../simulations/compact-bank-uniform-middle-review-20260929.json">Record</a></p></li>
+<li><strong>2026-09-30 — Bright and automatic joint placement reviewed</strong><p>Bright completed in 3.97 hours; joint far-node placement completed in 3.87 hours. All four plots reviewed and 3347 evidence files verified. Total selected bank coverage: 24 transients and 2304 references. <a href="../simulations/compact-bank-overnight-review-20260930.json">Record</a></p></li>
+<li><strong>2026-09-30 — Living verification record</strong><p>Added this catalogue, report-linked results and rerun dependency guide. This refresh command does not launch simulations; a general layout-to-results controller remains to be implemented. <a href="../docs/verification-journal.html">Record</a></p></li>
+<li><strong>2026-09-30 — Journal embedded; first process-variation batch launched</strong><p>Placed the expandable journal first in the overview. Fourteen process/watcher tests pass and the retained hot audit reproduces exactly. Small SS passes; small FF fails total accuracy at 1240.756 µV with a late-storage-drift indication. Started four current-layout SS/FF hot-inverse transients and 384 references; results pending. No accuracy limits changed. <a href="../verification/compact-bank-process-suite.json">Record</a></p></li>
+<li><strong>2026-09-30 — Process batch completed: both total-error checks fail</strong><p>All four simulations and 384 references completed in 2.92 hours. SS total error 512.924 µV, FF 2000.323 µV against 500 µV; tracking/refinement/contrast pass. Reviewed both plots and verified 1740 evidence files. Next: separate SS settling from FF retention and measure storage-terminal currents with bounded DC probes. <a href="../simulations/compact-bank-process-review-20260930.json">Record</a></p></li>
+<li><strong>2026-09-30 — Storage leakage isolated; short candidate screens completed</strong><p>Five balanced zero-volt current probes identify the NMOS capture switch as the dominant FF storage discharge path. Six length and four series-stack model-only DC cases complete; three devices reduce tested net leakage by about 70%. No layout or accuracy-qualified correction. Next: complete capture/readout transients for candidates and an SS acquisition-timing test. <a href="../simulations/compact-bank-process-diagnosis-review-20260930.json">Record</a></p></li>
+<li><strong>2026-09-30 — Capture-switch candidates complete full small-bank cycles</strong><p>20 fresh transients and 120 matched references reviewed. Three series NMOS devices pass the selected typical/SS/FF screen at 125 °C; FF total error falls from 1240.756 to 410.653 µV. Two devices still fail at 596.505 µV. Original-switch SS acquisition extension 12→12.5 µs reduces tracking from 281.789 to 206.737 µV. Model-only; physical and full-bank fixes remain pending. Four guard tests and all evidence hashes pass. <a href="../simulations/compact-bank-capture-cycles-review-20260930.json">Record</a></p></li>
+<li><strong>2026-09-30 — Physical three-device capture candidate passes small-bank verification</strong><p>Combined timing/model checks pass, followed by a separate physical nine-MOS column and 26-MOS/two-pixel bank. Magic/KLayout DRC, direct/collapsed LVS and 40 um abutment pass. Column outline and upper storage geometry are unchanged. Across port/far extractions, worst total errors are typical 152.197, SS 181.071 and FF 258.782 uV. Placement sensitivity &lt;0.044 uV. This stage adds 18 transients and 108 references; the existing 64-column checkpoint and its process failures remain unchanged. <a href="../simulations/compact-bank-physical-stack3-20260930.json">Record</a></p></li>
+</ol>
+<!-- END HISTORY -->
+</div>
+<div id="journal-maintenance"><h2>Keeping the record current</h2>
+<p>After each reviewed batch or design decision, append an entry to <code>verification/compact-bank-suite.json</code>, link the evidence, and refresh this page. Update the handoff and overview link when priorities change. Missing or altered reports cause the refresh to fail rather than silently publishing a pass.</p>
+<p>For a new pixel revision, retain a separate catalogue and separate reports; extend the refresh tool to select that revision before switching the current pointer. Never replace a recorded report hash solely to suppress an integrity error. This first catalogue is the baseline for comparing future revisions, not a claim that the future multi-revision controller already exists.</p>
+<p><strong>Current next task, 30 September:</strong> test capture-switch candidates through complete small-bank transients and check an SS acquisition-timing extension after the completed SS/FF failure diagnosis. The <a href="../verification/compact-bank-process-suite.json">process catalogue</a> records its settings and planned cases separately from the completed typical baseline. A general pixel-layout-to-results controller remains future work. See the process table and current handoff for launch/completion status.</p>
+</div>
+</details></section>
+<!-- END VERIFICATION_JOURNAL --><section id="compact-bank-64-cross"><h2>64-column bank: crossed temperature and illumination checks</h2>
 <p><strong>Both new cases pass their selected checks.</strong> This batch adds 27 °C inverse and 125 °C alternating to the previously completed 27 °C alternating and 125 °C inverse cases. All four fresh transients and 384 new references are complete and independently audited. Reviewed 29 September: all 1,707 distinct new evidence files verify, all simulation/auditor containers exited successfully, and the desktop alert was delivered. Each pair uses 100/50 ns steps, 12 µs acquisition in 20 µs slots, the same distributed ground-return geometry and strict tolerances.</p>
 <table><thead><tr><th>Temperature</th><th>Pattern</th><th>Selected result</th><th>Worst total error, µV</th><th>Worst tracking, µV</th><th>Sample refinement, µV</th></tr></thead><tbody><tr><td>27 °C</td><td><a href="../simulations/compact-bank-64-full.json">alternating</a></td><td>PASS</td><td>372.606</td><td>17.486</td><td>0.133</td></tr><tr><td>27 °C</td><td><a href="../simulations/compact-bank-64-inverse27.json">inverse</a></td><td>PASS</td><td>387.179</td><td>17.529</td><td>0.134</td></tr><tr><td>125 °C</td><td><a href="../simulations/compact-bank-64-alternating125.json">alternating</a></td><td>PASS</td><td>430.383</td><td>81.527</td><td>0.150</td></tr><tr><td>125 °C</td><td><a href="../simulations/compact-bank-64-full-hot.json">inverse</a></td><td>PASS</td><td>438.213</td><td>57.086</td><td>0.129</td></tr></tbody></table>
 <p>Accuracy limits are 500 µV; saved-sample and physical-event refinement limits are 10 µV. Pending results carry no pass claim. Each completed pair is independently audited from binary samples, frozen-state references and retained evidence. The earlier reports and plots are preserved.</p>
 <figure><img src="assets/compact-bank-64-inverse27.png" alt="27 degrees C inverse complete-bank accuracy and refinement"><figcaption>27 °C, inverse: 128 reads per transient and 192 matched references.</figcaption></figure><figure><img src="assets/compact-bank-64-alternating125.png" alt="125 degrees C alternating complete-bank accuracy and refinement"><figcaption>125 °C, alternating: 128 reads per transient and 192 matched references.</figcaption></figure>
 <p><strong>Remaining scope:</strong> uniform dark/middle/bright illumination, other operating and parasitic-placement conditions, local supply/reference checks, repeated rows with real drivers, and full-chip manufacturing qualification. Passing this matrix does not qualify those conditions.</p>
 <p><a href="compact-bank-64-cross.md">Reproduction and limits</a> · <a href="../PICK_UP_HERE.md">Current handoff</a> · <a href="#compact-bank-64-full">Earlier two cases</a></p></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -29,6 +239,34 @@
 <p>Hot 100/50 ns transients took 166.2/175.0 minutes, excluding references. This is the prior 16-column screen's highest-error condition, now tested at full width; it is not a substitute for the remaining pattern and corner matrix.</p>
 <details><summary>All 128 hot inverse-pattern readouts</summary><table><thead><tr><th>Scan</th><th>Column</th><th>Total error, µV</th><th>Tracking, µV</th><th>HOLD refinement, µV</th></tr></thead><tbody><tr><td>first</td><td>0</td><td>438.213</td><td>-15.924</td><td>0.060146</td></tr><tr><td>first</td><td>1</td><td>180.116</td><td>-51.095</td><td>0.128891</td></tr><tr><td>first</td><td>2</td><td>413.820</td><td>-7.396</td><td>0.048175</td></tr><tr><td>first</td><td>3</td><td>146.140</td><td>-52.248</td><td>0.126646</td></tr><tr><td>first</td><td>4</td><td>382.645</td><td>-7.158</td><td>0.047258</td></tr><tr><td>first</td><td>5</td><td>114.211</td><td>-53.274</td><td>0.126437</td></tr><tr><td>first</td><td>6</td><td>353.264</td><td>-6.949</td><td>0.047001</td></tr><tr><td>first</td><td>7</td><td>84.241</td><td>-54.170</td><td>0.125199</td></tr><tr><td>first</td><td>8</td><td>325.545</td><td>-6.768</td><td>0.046347</td></tr><tr><td>first</td><td>9</td><td>56.087</td><td>-54.934</td><td>0.123277</td></tr><tr><td>first</td><td>10</td><td>299.352</td><td>-6.610</td><td>0.045707</td></tr><tr><td>first</td><td>11</td><td>29.617</td><td>-55.566</td><td>0.120564</td></tr><tr><td>first</td><td>12</td><td>274.561</td><td>-6.473</td><td>0.045181</td></tr><tr><td>first</td><td>13</td><td>4.706</td><td>-56.072</td><td>0.119230</td></tr><tr><td>first</td><td>14</td><td>251.069</td><td>-6.355</td><td>0.044742</td></tr><tr><td>first</td><td>15</td><td>-18.756</td><td>-56.461</td><td>0.117136</td></tr><tr><td>first</td><td>16</td><td>228.784</td><td>-6.253</td><td>0.044087</td></tr><tr><td>first</td><td>17</td><td>-40.870</td><td>-56.743</td><td>0.116719</td></tr><tr><td>first</td><td>18</td><td>207.632</td><td>-6.167</td><td>0.043696</td></tr><tr><td>first</td><td>19</td><td>-61.738</td><td>-56.932</td><td>0.112968</td></tr><tr><td>first</td><td>20</td><td>187.549</td><td>-6.093</td><td>0.043144</td></tr><tr><td>first</td><td>21</td><td>-81.432</td><td>-57.042</td><td>0.111247</td></tr><tr><td>first</td><td>22</td><td>168.479</td><td>-6.032</td><td>0.042739</td></tr><tr><td>first</td><td>23</td><td>-100.031</td><td>-57.085</td><td>0.108834</td></tr><tr><td>first</td><td>24</td><td>150.375</td><td>-5.981</td><td>0.042074</td></tr><tr><td>first</td><td>25</td><td>-117.601</td><td>-57.076</td><td>0.106996</td></tr><tr><td>first</td><td>26</td><td>133.199</td><td>-5.940</td><td>0.041614</td></tr><tr><td>first</td><td>27</td><td>-134.200</td><td>-57.027</td><td>0.105658</td></tr><tr><td>first</td><td>28</td><td>116.915</td><td>-5.908</td><td>0.041060</td></tr><tr><td>first</td><td>29</td><td>-149.879</td><td>-56.949</td><td>0.103869</td></tr><tr><td>first</td><td>30</td><td>101.496</td><td>-5.883</td><td>0.040742</td></tr><tr><td>first</td><td>31</td><td>-164.681</td><td>-56.851</td><td>0.101958</td></tr><tr><td>first</td><td>32</td><td>86.916</td><td>-5.865</td><td>0.040364</td></tr><tr><td>first</td><td>33</td><td>-178.647</td><td>-56.745</td><td>0.100085</td></tr><tr><td>first</td><td>34</td><td>73.153</td><td>-5.853</td><td>0.040063</td></tr><tr><td>first</td><td>35</td><td>-191.808</td><td>-56.635</td><td>0.098298</td></tr><tr><td>first</td><td>36</td><td>60.191</td><td>-5.846</td><td>0.039442</td></tr><tr><td>first</td><td>37</td><td>-204.188</td><td>-56.527</td><td>0.099234</td></tr><tr><td>first</td><td>38</td><td>48.012</td><td>-5.844</td><td>0.038894</td></tr><tr><td>first</td><td>39</td><td>-215.808</td><td>-56.422</td><td>0.107710</td></tr><tr><td>first</td><td>40</td><td>36.603</td><td>-5.846</td><td>0.039076</td></tr><tr><td>first</td><td>41</td><td>-226.692</td><td>-56.330</td><td>0.116300</td></tr><tr><td>first</td><td>42</td><td>25.955</td><td>-5.852</td><td>0.037870</td></tr><tr><td>first</td><td>43</td><td>-236.859</td><td>-56.258</td><td>0.120747</td></tr><tr><td>first</td><td>44</td><td>16.057</td><td>-5.860</td><td>0.038730</td></tr><tr><td>first</td><td>45</td><td>-246.319</td><td>-56.208</td><td>0.122775</td></tr><tr><td>first</td><td>46</td><td>6.904</td><td>-5.871</td><td>0.039354</td></tr><tr><td>first</td><td>47</td><td>-255.077</td><td>-56.178</td><td>0.123033</td></tr><tr><td>first</td><td>48</td><td>-1.512</td><td>-5.884</td><td>0.040120</td></tr><tr><td>first</td><td>49</td><td>-263.136</td><td>-56.171</td><td>0.121891</td></tr><tr><td>first</td><td>50</td><td>-9.192</td><td>-5.900</td><td>0.040429</td></tr><tr><td>first</td><td>51</td><td>-270.495</td><td>-56.186</td><td>0.121332</td></tr><tr><td>first</td><td>52</td><td>-16.135</td><td>-5.918</td><td>0.040187</td></tr><tr><td>first</td><td>53</td><td>-277.146</td><td>-56.226</td><td>0.120527</td></tr><tr><td>first</td><td>54</td><td>-22.335</td><td>-5.937</td><td>0.041245</td></tr><tr><td>first</td><td>55</td><td>-283.074</td><td>-56.290</td><td>0.118290</td></tr><tr><td>first</td><td>56</td><td>-27.788</td><td>-5.957</td><td>0.039666</td></tr><tr><td>first</td><td>57</td><td>-288.244</td><td>-56.377</td><td>0.120929</td></tr><tr><td>first</td><td>58</td><td>-32.472</td><td>-5.979</td><td>0.039475</td></tr><tr><td>first</td><td>59</td><td>-292.633</td><td>-56.489</td><td>0.119656</td></tr><tr><td>first</td><td>60</td><td>-36.358</td><td>-6.002</td><td>0.039685</td></tr><tr><td>first</td><td>61</td><td>-296.141</td><td>-56.626</td><td>0.112001</td></tr><tr><td>first</td><td>62</td><td>-39.305</td><td>-6.026</td><td>0.039672</td></tr><tr><td>first</td><td>63</td><td>-297.893</td><td>-56.794</td><td>0.109726</td></tr><tr><td>last</td><td>0</td><td>337.370</td><td>-8.224</td><td>0.044444</td></tr><tr><td>last</td><td>1</td><td>56.171</td><td>-51.120</td><td>0.059267</td></tr><tr><td>last</td><td>2</td><td>308.611</td><td>-7.393</td><td>0.035388</td></tr><tr><td>last</td><td>3</td><td>25.801</td><td>-52.269</td><td>0.057231</td></tr><tr><td>last</td><td>4</td><td>280.297</td><td>-7.155</td><td>0.034370</td></tr><tr><td>last</td><td>5</td><td>-3.058</td><td>-53.295</td><td>0.056522</td></tr><tr><td>last</td><td>6</td><td>253.336</td><td>-6.947</td><td>0.034071</td></tr><tr><td>last</td><td>7</td><td>-30.407</td><td>-54.188</td><td>0.054854</td></tr><tr><td>last</td><td>8</td><td>227.674</td><td>-6.765</td><td>0.033318</td></tr><tr><td>last</td><td>9</td><td>-56.308</td><td>-54.949</td><td>0.053489</td></tr><tr><td>last</td><td>10</td><td>203.240</td><td>-6.608</td><td>0.032622</td></tr><tr><td>last</td><td>11</td><td>-80.829</td><td>-55.580</td><td>0.050396</td></tr><tr><td>last</td><td>12</td><td>179.962</td><td>-6.471</td><td>0.032150</td></tr><tr><td>last</td><td>13</td><td>-104.041</td><td>-56.083</td><td>0.049468</td></tr><tr><td>last</td><td>14</td><td>157.781</td><td>-6.353</td><td>0.032541</td></tr><tr><td>last</td><td>15</td><td>-126.016</td><td>-56.469</td><td>0.047505</td></tr><tr><td>last</td><td>16</td><td>136.634</td><td>-6.251</td><td>0.030834</td></tr><tr><td>last</td><td>17</td><td>-146.808</td><td>-56.750</td><td>0.052551</td></tr><tr><td>last</td><td>18</td><td>116.479</td><td>-6.165</td><td>0.030417</td></tr><tr><td>last</td><td>19</td><td>-166.526</td><td>-56.937</td><td>0.043094</td></tr><tr><td>last</td><td>20</td><td>97.272</td><td>-6.091</td><td>0.029865</td></tr><tr><td>last</td><td>21</td><td>-185.188</td><td>-57.044</td><td>0.041285</td></tr><tr><td>last</td><td>22</td><td>78.975</td><td>-6.030</td><td>0.029234</td></tr><tr><td>last</td><td>23</td><td>-202.865</td><td>-57.086</td><td>0.038913</td></tr><tr><td>last</td><td>24</td><td>61.558</td><td>-5.980</td><td>0.028674</td></tr><tr><td>last</td><td>25</td><td>-219.609</td><td>-57.075</td><td>0.036514</td></tr><tr><td>last</td><td>26</td><td>44.992</td><td>-5.938</td><td>0.028264</td></tr><tr><td>last</td><td>27</td><td>-235.467</td><td>-57.025</td><td>0.035471</td></tr><tr><td>last</td><td>28</td><td>29.253</td><td>-5.906</td><td>0.027466</td></tr><tr><td>last</td><td>29</td><td>-250.480</td><td>-56.945</td><td>0.034007</td></tr><tr><td>last</td><td>30</td><td>14.321</td><td>-5.881</td><td>0.027239</td></tr><tr><td>last</td><td>31</td><td>-264.684</td><td>-56.848</td><td>0.032147</td></tr><tr><td>last</td><td>32</td><td>0.178</td><td>-5.863</td><td>0.026877</td></tr><tr><td>last</td><td>33</td><td>-278.109</td><td>-56.740</td><td>0.030295</td></tr><tr><td>last</td><td>34</td><td>-13.192</td><td>-5.851</td><td>0.026609</td></tr><tr><td>last</td><td>35</td><td>-290.783</td><td>-56.628</td><td>0.029421</td></tr><tr><td>last</td><td>36</td><td>-25.803</td><td>-5.845</td><td>0.025937</td></tr><tr><td>last</td><td>37</td><td>-302.726</td><td>-56.520</td><td>0.029534</td></tr><tr><td>last</td><td>38</td><td>-37.666</td><td>-5.843</td><td>0.025376</td></tr><tr><td>last</td><td>39</td><td>-313.954</td><td>-56.415</td><td>0.037492</td></tr><tr><td>last</td><td>40</td><td>-48.792</td><td>-5.845</td><td>0.025537</td></tr><tr><td>last</td><td>41</td><td>-324.487</td><td>-56.322</td><td>0.046814</td></tr><tr><td>last</td><td>42</td><td>-59.188</td><td>-5.851</td><td>0.024322</td></tr><tr><td>last</td><td>43</td><td>-334.341</td><td>-56.249</td><td>0.050857</td></tr><tr><td>last</td><td>44</td><td>-68.861</td><td>-5.859</td><td>0.025139</td></tr><tr><td>last</td><td>45</td><td>-343.524</td><td>-56.198</td><td>0.052771</td></tr><tr><td>last</td><td>46</td><td>-77.817</td><td>-5.869</td><td>0.025741</td></tr><tr><td>last</td><td>47</td><td>-352.037</td><td>-56.168</td><td>0.053729</td></tr><tr><td>last</td><td>48</td><td>-86.059</td><td>-5.883</td><td>0.026539</td></tr><tr><td>last</td><td>49</td><td>-359.885</td><td>-56.161</td><td>0.052018</td></tr><tr><td>last</td><td>50</td><td>-93.589</td><td>-5.899</td><td>0.026866</td></tr><tr><td>last</td><td>51</td><td>-367.062</td><td>-56.176</td><td>0.050971</td></tr><tr><td>last</td><td>52</td><td>-100.405</td><td>-5.916</td><td>0.026569</td></tr><tr><td>last</td><td>53</td><td>-373.559</td><td>-56.215</td><td>0.051017</td></tr><tr><td>last</td><td>54</td><td>-106.497</td><td>-5.935</td><td>0.028815</td></tr><tr><td>last</td><td>55</td><td>-379.362</td><td>-56.278</td><td>0.048945</td></tr><tr><td>last</td><td>56</td><td>-111.867</td><td>-5.956</td><td>0.026109</td></tr><tr><td>last</td><td>57</td><td>-384.423</td><td>-56.366</td><td>0.056581</td></tr><tr><td>last</td><td>58</td><td>-116.487</td><td>-5.978</td><td>0.025953</td></tr><tr><td>last</td><td>59</td><td>-388.741</td><td>-56.477</td><td>0.056184</td></tr><tr><td>last</td><td>60</td><td>-120.328</td><td>-6.001</td><td>0.026118</td></tr><tr><td>last</td><td>61</td><td>-392.215</td><td>-56.615</td><td>0.042212</td></tr><tr><td>last</td><td>62</td><td>-123.249</td><td>-6.024</td><td>0.027138</td></tr><tr><td>last</td><td>63</td><td>-393.948</td><td>-56.782</td><td>0.039918</td></tr></tbody></table></details>
 <p><a href="../simulations/compact-bank-64-full-hot.json">Hot inverse audit and evidence hashes</a></p></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,6 +318,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="compact-bank-64-ground8"><h2>64-column ground-bus candidate: physical checks and capture window</h2>
 <p><strong>The 8 µm ground-bus correction has a separately verified 64-column candidate.</strong> Both main DRC checks and both LVS paths pass with 642 MOS devices, 512 MIM plates and 64 photodiodes. A full-layout XOR audit proves that only the intended M4 ground rectangle changes, with unchanged labels and independent reference circuit.</p>
 <p>The candidate measures <strong>2629.56 × 978.28 µm</strong>, leaving 70.44 µm width and 121.72 µm height inside the 2700 × 1100 µm bank budget. The extra 1.8 µm width does not establish complete-chip fit. This bank already contains one pixel row; final assembly adds 63 rows.</p>
@@ -92,6 +358,34 @@
 <p class="note">No complete 64-column readout or accuracy pass is claimed. Nominal/hot patterns, timestep and placement checks, process/wire/supply corners, actual local supply/reference drops, real drivers, repeated rows and assembled-chip manufacturing checks remain ahead. Main DRC excludes density, antenna and cup checks.</p>
 <p>The subsequent <a href="#compact-bank-64-read-probes">matched far-column readout and distributed-return comparison</a> quantify the output error. Preserve this candidate and the original traces as controls; local bias/supply checks and a complete qualified full-bank scan remain necessary.</p>
 <p><a href="../simulations/compact-bank-64-ground8.json">Physical/capture evidence and hashes</a> · <a href="compact-bank-64-ground8.md">Reproduction</a> · <a href="#compact-bank-16-extension">16-column continuation</a> · <a href="#wafer-space-run3">Manufacturing envelope</a></p></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -152,6 +446,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="compact-bank-16-screen"><h2>16-column follow-up: temperature, patterns and selected sensitivities</h2>
 <p><strong>The revised 8 µm ground-bus bank passes this selected development screen.</strong> Fourteen complete transients include the retained nominal control, twelve sets of 48 independent references (576 references total), and two joint far-placement controls. Worst total capture/readout error is <strong>432.966 µV</strong> against 500 µV. The physical layout is unchanged from the verified ground-bus revision.</p>
 <figure><img src="assets/compact-bank-16-screen.png" alt="Worst capture/readout and output tracking errors for five patterns at 27 and 125 degrees Celsius" style="max-width:100%"><figcaption>Bars show the 100 ns cases. The detailed table also includes the additional alternating-pattern 50 ns controls.</figcaption></figure>
@@ -162,6 +484,34 @@
 <p>The sensitivity table covers the alternating pattern only, with a 10 µV comparison limit. Joint far placement moves all 19 audited shunt totals together; it does not replace individual-net placement checks. Sampling acceleration reproduces every archived capture/readout value exactly and leaves the decks and circuit unchanged. Saved transient samples and DC references are independently re-read and their errors recomputed.</p>
 <p><strong>Remaining scope:</strong> individual shunt placements, refinement of the other patterns, physical/schematic response comparisons, process/wire/supply corners and the remaining supply/reference-drop checks. Real decoding/drivers, repeated rows, the revised 64-column bank and assembled 64×64 manufacturing qualification remain ahead. This is not a full-bank or tapeout pass.</p>
 <p><a href="../simulations/compact-bank-16-screen.json">Results, limits and evidence hashes</a> · <a href="compact-bank-16-screen.md">Reproduction and next steps</a> · <a href="#compact-bank-16">Original failure and physical ground-bus correction</a></p></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -236,6 +586,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="compact-bank-solver"><h2>27 September: compact-bank simulation progress</h2>
 <p><strong>Later follow-up:</strong> <a href="#compact-bank-16">the completed 16-column trace now has all 48 references</a>, exposing a nominal capture/readout accuracy failure. A later ground-bus revision passes the nominal screen at 189.413 µV; see that follow-up for scope and remaining checks. The solver experiments below retain their original scope.</p>
 <p><strong>Full-bank initialization and reset now complete with KLU.</strong> The previous SPARSE 64-column runs timed out with zero samples, including an audited resistor reduction. The KLU reset control reaches 250 µs with all physical devices, resistors and capacitors retained. Reset completion is not a capture/readout accuracy pass.</p>
@@ -252,6 +630,34 @@
 <p>The earlier <a href="compact-bank-initialization.md">resistor-only reduction audit</a> removes 1824 internal nodes while retaining every non-resistor record, but does not resolve the SPARSE full-bank timeout. Its hot two-column saved-sample comparison differs by at most 0.058281 µV. Four/eight-column layouts pass both main DRC and both LVS paths; four columns completed the original transient.</p>
 <p><strong>The 64×64 chip is not yet implemented or tapeout-qualified.</strong> Full-bank nominal/hot accuracy, refinement, shunt placements and supply drops remain required, followed by loaded repeated rows, real drivers, full-chip geometry and manufacturing signoff.</p>
 <p><a href="../simulations/compact-bank-solver-20260927.json">Results, phase observations and evidence hashes</a> · <a href="../NEXT_STEPS.md">Next experiments</a>. Generated traces remain local in <code>build/</code>; hashes are not an external backup.</p></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -360,15 +766,48 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="compact-bank-64">
 <h2>Compact 64-column bank: physical screen passes</h2>
 <p>The joined row/bank occupies <strong>2627.76 × 978.28 µm</strong> and fits its local bank budget. Magic/KLayout main DRC and direct/resistor-collapsed LVS pass: 642 MOS, 512 MIM plates and 64 diodes.</p>
 <p>Electrical qualification remains open. In 180-second controls, the extracted model times out during initialization with no samples; the schematic reaches 1.785052 ms before timeout. The expanded readout schedule avoids overlapping scans and preserves the two-column regression exactly.</p>
 <p><a href="compact-bank-64.md">Results, limits and reproduction</a> · <a href="../NEXT_STEPS.md">Next steps</a></p>
 </section>
-<section id="first-silicon-64"><h2>64×64 first silicon: current plan — 29 September 2026</h2>
+<section id="first-silicon-64"><h2>64×64 first silicon: current plan — 30 September 2026</h2>
+<p><a href="verification-journal.html"><strong>Verification journal and rerun guide</strong></a> — what every test checks, current results, work history, and the workflow needed to repeat verification after a pixel-layout change.</p>
 <p><strong>Target: wafer.space GF180, 4096 pixels and modest frame rate.</strong> The compact 40 µm-pitch pixel, capture column, joined tile and shared two-column bank have scoped physical/electrical evidence. The compact 64-column row/bank now exists and passes main DRC and both LVS paths. The full 64×64 chip is not yet assembled or qualified.</p>
+<p><strong>Completed and reviewed 30 September:</strong> all five illumination patterns pass at 27/125 °C, including the completed <a href="#compact-bank-64-uniform">uniform bright cases</a> at 359.158/402.995 µV total error against 500 µV. The port-model matrix contains 20 transients and 1,920 independently audited references. Bright finished in 3.97 hours including audits.</p>
+<p>The authorized <a href="#compact-bank-64-placement">joint parasitic-placement follow-on</a> also passes: four transients and 384 references in 3.87 hours. Moving all 67 conserved shunt totals to their recorded far nodes changes HOLD/STORE by at most 1.527 µV against 10 µV. All ten overnight simulation/audit containers exited successfully; all four new plots and saved evidence were reviewed. <strong>Those baseline batches are complete; the process batch below has completed with total-error failures.</strong></p>
+<p><strong>Next:</strong> build and verify a separate 64-column three-device candidate, then run full-bank corners at 12.5 µs acquisition. Its physical two-column stage now passes the selected checks. Remaining placement, supply/reference, real-driver and repeated-row checks follow. The full chip remains unqualified. <a href="../simulations/compact-bank-overnight-review-20260930.json">Completion review</a> · <a href="../PICK_UP_HERE.md">Current handoff</a>.</p>
 <h3 id="current-device-layout">Current device layout — exact implemented geometry</h3>
+<p><a href="#current-pixel-layout">Jump to one labeled pixel</a> · <a href="assets/current-bank-layout-labeled.png">Enlarge the labeled bank</a></p>
 <p>This is the actual <strong>64-column readout bank joined to one row of 64 pixels</strong>, rendered from the same GDS used for the completed alternating/inverse electrical matrix. Its overall size is <strong>2,667.87 × 1,069.80 µm (2.668 × 1.070 mm)</strong>. The tall repeated rectangles are storage capacitors; the light-sensitive pixels form the small row along the bottom.</p>
 <figure style="margin:1em 0"><a href="assets/current-bank-layout-labeled.png"><img src="assets/current-bank-layout-labeled.png" width="2400" height="1350" style="height:auto" alt="Exact 64-column GDS with numbered labels for the bottom pixel row, analog readout, capacitor plates, top and left ground rails, shared reference transistors and horizontal buses."></a><figcaption>Current ground-grid revision, drawn to scale. Click to enlarge. Layer colors come from the GF180 KLayout display palette; numbers identify functions, not fabrication layers.</figcaption></figure>
 <div class="grid"><div class="card"><h4>Reading the layout</h4><ol>
@@ -380,14 +819,122 @@
 <li><strong>Shared buses:</strong> supply, bias/reference, capture controls and buffered output run above the pixels.</li>
 </ol><p>The extracted census is 642 MOS devices, 512 MIM plates and 64 diodes. Main Magic/KLayout DRC reports zero errors; direct and resistor-collapsed LVS pass. These are scoped development checks.</p></div>
 <div class="card"><h4>Pixel and readout close-up</h4><a href="assets/current-bank-layout-detail.png"><img src="assets/current-bank-layout-detail.png" width="1200" height="1324" style="height:auto;max-height:540px;object-fit:contain" alt="GDS close-up showing the shared reference pair on the left, the first four readout columns above the shared buses and four photodiodes along the bottom."></a><p>Left edge and first four columns. Photodiodes are the bottom squares; storage plates continue above this crop.</p></div></div>
+<h3 id="current-pixel-layout">One pixel — row 0, column 0</h3>
+<p>This enlarged crop comes from the <strong>same implemented bank GDS</strong>. It shows the first pixel at the left end of the bottom row: one photodiode and three transistors. The large storage capacitors in the full-bank image belong to the column readout circuitry, outside this pixel.</p>
+<figure style="margin:1em 0"><a href="assets/current-pixel-layout-labeled.png"><img src="assets/current-pixel-layout-labeled.png" width="2400" height="1350" style="height:auto" alt="Exact GDS crop of pixel row zero, column zero. Labels identify the reset transistor, source follower, row-select transistor, photodiode and shared wiring. A dashed box marks the 18 by 18 micrometre metal-clear area inside the 20 by 20 micrometre junction."></a><figcaption>Three-transistor pixel at 40 µm pitch. Numbers and the dashed aperture box are explanatory overlays; they do not change the layout. Click to enlarge.</figcaption></figure>
+<p><strong>How it works:</strong> the reset transistor initializes the photodiode sense node; collected light changes its voltage during exposure. The source follower buffers that voltage, and the row-select transistor connects it to the column readout. The dashed 18 × 18 µm region is clear of M1–M5 metal; it is not a qualified passivation opening or a measured optical response.</p>
+<p><a href="assets/current-pixel-layout.png">Unannotated pixel crop</a> · <a href="../simulations/current-pixel-layout-view.json">Pixel coordinates and GDS source hash</a> · <a href="#current-device-layout">Back to the labeled bank</a></p>
+<details><summary>Reproduce the pixel figure</summary><pre>bash scripts/run-tools.sh klayout -b -r scripts/render-current-pixel-layout.py
+bash scripts/run-tools.sh python3 scripts/annotate-current-pixel-layout.py
+python3 scripts/update-overview-sections.py</pre><p>The renderer checks the exact checkpoint GDS hash before making the crop. Device roles and positions follow the compact-pixel placement and circuit connections.</p></details>
 <p class="note"><strong>Implementation boundary:</strong> this is one pixel row with its readout bank, not the assembled 4,096-pixel sensor. The remaining rows, real decoding/drivers, pads and power distribution, fill and final-chip manufacturing checks are still required. The planned full-chip placement is shown in the <a href="#wafer-space-run3">die-fit diagram</a>.</p>
 <p><a href="assets/current-bank-layout.png">Unannotated full view</a> · <a href="../checkpoints/compact-bank-64-matrix/bank.gds.gz">Exact compressed GDS</a> · <a href="../checkpoints/compact-bank-64-matrix/README.md">Checkpoint contents and reproduction</a> · <a href="../simulations/current-bank-layout-view.json">View dimensions and source hash</a></p>
 <p>The older 80 × 50 µm-pitch design cannot fit the full-slot envelope. The current 2.668 × 1.070 mm ground-grid bank fits its local budget. See the <a href="#wafer-space-run3">updated die-fit diagram, run dates and costs</a>, and <a href="#compact-bank-64-cross">latest simulation evidence</a>.</p>
-<p><strong>Latest electrical progress:</strong> the <a href="#compact-bank-16-extension">16-column refinement/placement extension</a> passes its selected checks: 46 transients, 1,152 references, 433.171 µV worst total error and 301.667 µV tracking. All five patterns at both temperatures now have 100/50 ns comparisons; all 19 individual shunts and joint placement are checked for the hot inverse pattern.</p>
+<p><strong>Earlier 16-column electrical progress:</strong> the <a href="#compact-bank-16-extension">16-column refinement/placement extension</a> passes its selected checks: 46 transients, 1,152 references, 433.171 µV worst total error and 301.667 µV tracking. All five patterns at both temperatures now have 100/50 ns comparisons; all 19 individual shunts and joint placement are checked for the hot inverse pattern.</p>
 <p>The 8 µm ground bus alone fails the <a href="#compact-bank-64-read-probes">selected 64-column readout diagnostic</a> at 1,994.440 µV. The new distributed ground return fails that same diagnostic at 547.178 µV total error and 340.253 µV tracking. Its 2.668 × 1.070 mm layout passes main DRC/both LVS paths and fits the local bank budget. Extending acquisition to 12 µs passes the selected test at 269.281 µV total error and 62.529 µV tracking, without lengthening the 20 µs slot. Full-bank, full-corner and tapeout qualification remain open.</p>
 <p>Full-bank matched references, nominal/hot operation, refinement and shunt placements precede multirow loading and real decoding/drivers. Exact-chip layout, power/pads, optical packaging and manufacturing prechecks remain release gates. No tapeout-ready claim is made.</p>
-<p><strong>Completed and reviewed 28 September:</strong> both <a href="#compact-bank-64-full">complete 64-column screens</a> pass, at 27 °C alternating and 125 °C inverse illumination. All four 100/50 ns transients finish 128 reads each, with 192 references per 100 ns case. Worst total error is 372.606/438.213 µV against 500 µV; largest saved-sample refinement is 0.133 µV against 10 µV. All 1,711 distinct evidence files verify. Simulation and auditor containers exited successfully. The <a href="#compact-bank-64-cross">crossed 27 °C inverse/125 °C alternating cases</a> also pass, reviewed 29 September: 387.179/430.383 µV worst total error and 0.150 µV maximum saved-sample refinement. The full alternating/inverse temperature matrix now contains eight completed transients and 768 references. All 1,707 new evidence files verify; all batch jobs and the auditor have finished. Uniform illumination and remaining placement/corner coverage are next; no new batch is running. The current bank also passes the provider-pinned main DRC with zero violations; see the <a href="#wafer-space-run3">PDK source reconciliation and updated 3.126 mm² unreserved-core budget</a>.</p>
-<p><a href="../COMPLETION_PLAN.md">Completion plan</a> · <a href="../NEXT_STEPS.md">Next steps</a> · <a href="compact-bank.md">Passing two-column control</a>. Dated sections below preserve earlier development evidence; historical 3×3 targets and earlier “next step” statements are superseded by this plan.</p></section>
+<p><strong>Completed and reviewed 28 September:</strong> both <a href="#compact-bank-64-full">complete 64-column screens</a> pass, at 27 °C alternating and 125 °C inverse illumination. All four 100/50 ns transients finish 128 reads each, with 192 references per 100 ns case. Worst total error is 372.606/438.213 µV against 500 µV; largest saved-sample refinement is 0.133 µV against 10 µV. All 1,711 distinct evidence files verify. Simulation and auditor containers exited successfully. The <a href="#compact-bank-64-cross">crossed 27 °C inverse/125 °C alternating cases</a> also pass, reviewed 29 September: 387.179/430.383 µV worst total error and 0.150 µV maximum saved-sample refinement. The full alternating/inverse temperature matrix now contains eight completed transients and 768 references. All 1,707 new evidence files verify; all batch jobs and the auditor have finished. At that review, no new batch was running; the uniform-dark batch above has since completed and passed. Uniform coverage has since completed; remaining placement/corner coverage is still open. The current bank also passes the provider-pinned main DRC with zero violations; see the <a href="#wafer-space-run3">PDK source reconciliation and updated 3.126 mm² unreserved-core budget</a>.</p>
+<p><a href="../COMPLETION_PLAN.md">Completion plan</a> · <a href="../NEXT_STEPS.md">Next steps</a> · <a href="compact-bank.md">Passing two-column control</a>. Dated sections below preserve earlier development evidence; historical 3×3 targets and earlier “next step” statements are superseded by this plan.</p><!-- BEGIN BANK_UNIFORM -->
+<div id="compact-bank-64-uniform"><h3>Uniform illumination: dark, middle and bright</h3>
+<p><strong>All six uniform cases independently audited and reviewed.</strong> Each bounded batch tested one uniform pattern at 27/125 °C: four fresh 100/50 ns transients and 384 matched references. All three batches finished successfully.</p>
+<table><thead><tr><th>Uniform illumination</th><th>Temperature</th><th>Result</th><th>Total error, µV</th><th>Tracking, µV</th><th>Sample refinement, µV</th></tr></thead><tbody><tr><td>dark: 0 pA/pixel</td><td>27 °C</td><td><a href="../simulations/compact-bank-64-uniform-dark27.json">PASS</a></td><td>248.852</td><td>14.965</td><td>0.133</td></tr><tr><td>dark: 0 pA/pixel</td><td>125 °C</td><td><a href="../simulations/compact-bank-64-uniform-dark125.json">PASS</a></td><td>411.912</td><td>81.559</td><td>0.149</td></tr><tr><td>middle: 80 pA/pixel</td><td>27 °C</td><td><a href="../simulations/compact-bank-64-uniform-middle27.json">PASS</a></td><td>340.408</td><td>30.395</td><td>0.135</td></tr><tr><td>middle: 80 pA/pixel</td><td>125 °C</td><td><a href="../simulations/compact-bank-64-uniform-middle125.json">PASS</a></td><td>391.739</td><td>72.481</td><td>0.132</td></tr><tr><td>bright: 240 pA/pixel</td><td>27 °C</td><td><a href="../simulations/compact-bank-64-uniform-bright27.json">PASS</a></td><td>359.158</td><td>3.028</td><td>0.065</td></tr><tr><td>bright: 240 pA/pixel</td><td>125 °C</td><td><a href="../simulations/compact-bank-64-uniform-bright125.json">PASS</a></td><td>402.995</td><td>15.919</td><td>0.061</td></tr></tbody></table>
+<p>The 500 µV accuracy and 10 µV refinement limits are unchanged. Uniform scenes have no dark/bright neighbor contrast check; it is explicitly not applicable. Physical MIM event refinement remains independently checked. The completed alternating/inverse reports and exact GDS remain unchanged.</p>
+<figure><img src="assets/compact-bank-64-uniform-dark27.png" alt="Uniform dark, 27 degrees C: independently audited accuracy and refinement"></figure><figure><img src="assets/compact-bank-64-uniform-dark125.png" alt="Uniform dark, 125 degrees C: independently audited accuracy and refinement"></figure><figure><img src="assets/compact-bank-64-uniform-middle27.png" alt="Uniform middle, 27 degrees C: independently audited accuracy and refinement"></figure><figure><img src="assets/compact-bank-64-uniform-middle125.png" alt="Uniform middle, 125 degrees C: independently audited accuracy and refinement"></figure><figure><img src="assets/compact-bank-64-uniform-bright27.png" alt="Uniform bright, 27 degrees C: independently audited accuracy and refinement"></figure><figure><img src="assets/compact-bank-64-uniform-bright125.png" alt="Uniform bright, 125 degrees C: independently audited accuracy and refinement"></figure>
+<p>All six uniform cases completed 12 transients and 1,152 references. The selected joint placement batch also passes. Remaining corners, individual placements, real drivers, repeated rows and final-chip checks remain open.</p>
+<p><a href="compact-bank-64-uniform.md">Reproduction and limits</a> · <a href="../PICK_UP_HERE.md">Current handoff</a></p></div>
+<!-- END BANK_UNIFORM -->
+<!-- BEGIN BANK_PLACEMENT -->
+<div id="compact-bank-64-placement"><h3>64-column parasitic placement sensitivity</h3>
+<p>This bounded batch jointly moves the 67 conserved positive shunt-capacitance totals from their ports to the recorded far nodes. An exact netlist comparison checks that only those endpoints change. It uses nominal alternating and hot inverse illumination, four 100/50 ns transients and 384 references.</p>
+<table><thead><tr><th>Case</th><th>Selected result</th><th>Total error, µV</th><th>HOLD placement change, µV</th><th>STORE placement change, µV</th></tr></thead><tbody><tr><td>27 °C / alternating</td><td><a href="../simulations/compact-bank-64-placement-alternating27.json">PASS</a></td><td>372.235</td><td>1.189</td><td>1.527</td></tr><tr><td>125 °C / inverse</td><td><a href="../simulations/compact-bank-64-placement-inverse125.json">PASS</a></td><td>437.952</td><td>1.027</td><td>1.373</td></tr></tbody></table>
+<p>Accuracy remains limited to 500 µV, timestep and physical-event refinement to 10 µV, and HOLD/STORE placement sensitivity to 10 µV. Placement comparisons use the matching retained port-model baseline. Pending results carry no pass claim. A joint check does not qualify individual placements, other patterns or operating corners.</p>
+<figure><img src="assets/compact-bank-64-placement-alternating27.png" alt="Joint far-node placement: 27 degrees C, alternating"></figure><figure><img src="assets/compact-bank-64-placement-inverse125.png" alt="Joint far-node placement: 125 degrees C, inverse"></figure>
+<p>Real drivers, repeated rows and final-chip qualification remain open. See <a href="../PICK_UP_HERE.md">current handoff</a> for the automatic continuation status.</p></div>
+<!-- END BANK_PLACEMENT -->
+<!-- BEGIN PHYSICAL_STACK3 -->
+<div id="physical-stack3"><h3>Physical three-device capture switch — small-bank verification complete</h3>
+<p><strong>The candidate is now implemented in a separate physical column and two-column bank.</strong> Three W = 1 µm, L = 0.5 µm NMOS capture devices in series, combined with 12.5 µs acquisition, pass the selected extracted-circuit tests at typical, SS and FF. The original 64-column GDS remains the existing checkpoint; its known process failures are not relabeled by these results.</p>
+<p>Both the new column and small bank pass Magic/KLayout main DRC and direct/resistor-collapsed LVS. Two neighboring columns pass the 40 µm abutment check. The column outline is unchanged, and M4, M5, capacitor-marker and via4 geometry is exactly unchanged. The column contains nine MOS devices; the bank contains 26 MOS devices, 16 capacitor plates and two photodiodes. Density, antenna, CUP and full-chip checks remain outside this evidence.</p>
+<table><caption>Extracted two-column candidate: 125 °C inverse illumination, 12.5 µs acquisition. Worst errors across 100/50 ns, in µV; total/tracking limit 500 µV.</caption><thead><tr><th>MOS corner</th><th>Port-placement total</th><th>Far-placement total</th><th>Worst tracking</th><th>Selected checks</th></tr></thead><tbody><tr><td>TYPICAL</td><td>152.197</td><td>152.172</td><td>25.624</td><td>PASS</td></tr><tr><td>SS</td><td>181.039</td><td>181.071</td><td>206.674</td><td>PASS</td></tr><tr><td>FF</td><td>258.749</td><td>258.782</td><td>2.514</td><td>PASS</td></tr></tbody></table>
+<p>Six combined model-only transients and 36 references passed before physical qualification. The extracted candidate adds 12 transients and 72 references across two wiring-capacitance placements. All 18 transients and 108 references are reviewed. Each timestep has fresh capture and output references. Numerical, physical-capacitor-event and contrast checks pass. Moving all four approximated shunt groups together changes sampled HOLD/STORE by at most 0.044 µV, below 10 µV. All extracted resistors and collapsed capacitance totals are retained.</p>
+<p>The first physical attempt extended routes into a capacitor region and failed two Magic rules; it is retained as a failed attempt. The corrected placement puts the two added NMOS devices at y = 144 and 156 µm and preserves the original capacitor routes. The isolated-column extraction includes small negative shunt corrections on one new private net; these are consolidated with its positive total, with raw extraction retained. The assembled-bank extraction does not need that private-net consolidation.</p>
+<details><summary>View the new two-column physical layout detail</summary><figure><a href="assets/compact-bank-physical-stack3-detail-20260930.png"><img src="assets/compact-bank-physical-stack3-detail-20260930.png" width="795" height="1525" style="max-width:100%;height:auto" alt="Physical two-column candidate showing two pixel photodiodes at the bottom, shared buses, analog devices and the two added NMOS devices at the top of each column."></a><figcaption>Exact new GDS detail: two pixels at the bottom; shared references at left; added NMOS pair at the top of each repeated column. Capacitor plates continue above this crop. This is a separate candidate, not the displayed 64-column checkpoint.</figcaption></figure></details>
+<p><strong>Next:</strong> build the candidate as a separate 64-column bank with the established ground grid, verify DRC/LVS and topology, then run matched typical/SS/FF corner tests with 12.5 µs acquisition. Full-bank testing is the next potentially hours-long stage; no such batch has been started here. Other temperatures, illumination patterns, mixed corners, supply/wire and full-chip coverage remain open.</p>
+<p><a href="../simulations/compact-bank-physical-stack3-20260930.json">Physical audit</a> · <a href="../simulations/compact-bank-physical-cycles-review-20260930.json">Port raw-data review</a> · <a href="../simulations/compact-bank-physical-far-review-20260930.json">Far raw-data review</a> · <a href="../simulations/compact-bank-physical-stack3-placement-20260930.json">Placement comparison</a> · <a href="../verification/compact-bank-physical-stack3.json">Reproduction profile</a></p>
+<p>New scripts and evidence are versioned separately from earlier hash-pinned runners. The reproduction profile records the commands and fixed physical source for this candidate; a changed pixel requires rebuilding and requalifying that source before rerunning electrical coverage.</p>
+</div>
+<!-- END PHYSICAL_STACK3 -->
+<!-- BEGIN BANK_CAPTURE_CYCLES -->
+<div id="bank-capture-cycles"><h3>Earlier model-only capture-switch candidate screen</h3>
+<p><strong>The three-device series NMOS candidate passes the selected two-column screen at typical, SS and FF.</strong> At FF, total error falls from 1240.756 µV with the original switch to 596.505 µV with two series devices and 410.653 µV with three. The limit remains 500 µV. This identifies a candidate to implement physically; it does not fix or qualify the existing 64-column GDS.</p>
+<p>Twenty fresh transients and 120 matched-state references cover the complete capture and two readout scans at 125 °C, inverse illumination, 100/50 ns timesteps. Both timesteps have their own capture/output references. All sample, event, error-refinement and contrast checks pass, including the added stack nodes. Worst saved-sample difference is 1.346 µV; worst event difference is 1.590 µV, below 10 µV. Fresh original-switch SS/FF controls reproduce the retained waveforms within 0.001 µV at HOLD.</p>
+<table><caption>Two-column diagnostic results, worst across both timesteps; errors in µV</caption><thead><tr><th>Series devices</th><th>MOS</th><th>Acquisition µs</th><th>Total error</th><th>Tracking</th><th>Screen</th></tr></thead><tbody><tr><td>1</td><td>TYPICAL</td><td>12</td><td>204.428</td><td>37.893</td><td>PASS</td></tr><tr><td>1</td><td>SS</td><td>12</td><td>187.313</td><td>281.789</td><td>PASS</td></tr><tr><td>1</td><td>FF</td><td>12</td><td>1240.756</td><td>3.073</td><td>FAIL</td></tr><tr><td>2</td><td>TYPICAL</td><td>12</td><td>175.705</td><td>38.006</td><td>PASS</td></tr><tr><td>2</td><td>SS</td><td>12</td><td>208.035</td><td>281.730</td><td>PASS</td></tr><tr><td>2</td><td>FF</td><td>12</td><td>596.505</td><td>3.932</td><td>FAIL</td></tr><tr><td>3</td><td>TYPICAL</td><td>12</td><td>154.150</td><td>38.011</td><td>PASS</td></tr><tr><td>3</td><td>SS</td><td>12</td><td>236.198</td><td>281.676</td><td>PASS</td></tr><tr><td>3</td><td>FF</td><td>12</td><td>410.653</td><td>4.055</td><td>PASS</td></tr><tr><td>1</td><td>SS</td><td>12.5</td><td>137.243</td><td>206.737</td><td>PASS</td></tr></tbody></table>
+<p><strong>Timing result:</strong> extending acquisition from 12 to 12.5 µs reduces SS tracking error from 281.789 to 206.737 µV and total error from 187.313 to 137.243 µV on the original small bank. Acquisition finishes falling at 14.51 µs within the 20 µs slot; ADC reset begins rising at 15 µs, leaving 0.49 µs separation. This is a fresh simulation, not a later sample of the old waveform. The full-bank SS failure still requires verification, as does combining the extension with the series-switch candidate.</p>
+<figure><a href="assets/compact-bank-capture-cycles-20260930.png"><img src="assets/compact-bank-capture-cycles-20260930.png" width="1800" height="720" style="max-width:100%;height:auto" alt="Three series NMOS devices reduce fast-corner error below 500 microvolts in the two-column model; a half-microsecond acquisition extension improves slow-corner settling."></a></figure>
+<p><strong>Earlier plan (physical small-bank work now completed above):</strong> implement the three-device capture switch in a separate physical column revision, check DRC/LVS and extracted small-bank behavior, then verify the complete 64-column schedule. First check the combined candidate and timing change. The model-only stack retains each original device's geometry parameters and omits new routing parasitics; physical extraction may change the result. Mixed MOS, diode/MIM, supply/wire and full-chip checks remain open. No new hours-long batch is active.</p>
+<p><a href="../simulations/compact-bank-capture-cycles-20260930.json">Screen evidence</a> · <a href="../simulations/compact-bank-capture-cycles-review-20260930.json">Independent raw/deck review</a> · <a href="../verification/compact-bank-capture-candidates.json">Rerun profile</a></p>
+<p>Reproduce this screen with a fresh output directory, then audit it:</p>
+<pre>bash scripts/run-tools.sh python3 scripts/screen-bank-capture-cycles.py --out build/candidate-cycles-NEW
+bash scripts/run-tools.sh python3 scripts/review-bank-capture-cycles.py --source build/candidate-cycles-NEW --out build/candidate-review-NEW</pre>
+<p>The screen is tied to the retained two-column physical parent. After a pixel/layout change, rebuild and validate the parent, version these scripts for the new source, and rerun the physical baseline and full-bank matrix; this command is not yet a general pixel-rebuild controller.</p></div>
+<!-- END BANK_CAPTURE_CYCLES -->
+<!-- BEGIN BANK_PROCESS_DIAGNOSIS -->
+<div id="bank-process-diagnosis"><h3>Process failures reviewed — next correction work</h3>
+<p><strong>Both process cases finished, but neither passes total accuracy.</strong> SS reaches 512.924 µV and FF 2000.323 µV against 500 µV. Output tracking, numerical/event refinement and contrast pass. All four transients and 384 references are audited; 1,740 evidence files verify. Runtime was 2.92 hours. Watcher exit 1 intentionally reports the measured failures; all four simulator exits are 0.</p>
+<p>SS worst total error separates into −389.105 µV output tracking and −123.819 µV settled-state change. FF worst separates into −3.303 and −1997.019 µV respectively. Settled-state change includes stored voltages and local supply/bias changes. FF STORE drops by as much as 1.522 mV between scans; SS drops by at most 0.016 mV.</p>
+<p><strong>Next step already investigated:</strong> five frozen-state DC probes identify the NMOS capture switch as the dominant fast-corner leakage path. At column 63 it drains 37.747 pA in FF, versus 4.252 pA typical and 0.613 pA SS. In FF, the PMOS injects about 0.234 pA, all eight MIM plates together leak about 0.036 pA, and modeled storage-follower gate current is zero. Direct clamp/probe current balance agrees within 0.00254 pA; saved DC voltages change by less than 0.000003 µV.</p>
+<p>The initial three-terminal probe used subtraction of nearly equal voltages to infer clamp current and failed its pA-level balance check. Its artifacts remain retained. The second version adds all eight capacitor branches and a direct clamp-current probe; all five balance checks pass. Use these direct measurements for current attribution.</p>
+<table><caption>Model-only candidates: net FF storage leakage in two frozen states, pA</caption><thead><tr><th>NMOS capture switch</th><th>Column 0</th><th>Column 63</th></tr></thead><tbody>
+<tr><td>Original: one device, L = 0.5 µm</td><td>42.573</td><td>37.551</td></tr>
+<tr><td>One device, L = 0.75 µm</td><td>35.836</td><td>29.957</td></tr>
+<tr><td>One device, L = 1.0 µm</td><td>30.138</td><td>24.841</td></tr>
+<tr><td>One device, L = 1.5 µm</td><td>23.685</td><td>19.237</td></tr>
+<tr><td>Two series devices, each L = 0.5 µm</td><td>20.689</td><td>17.154</td></tr>
+<tr><td>Three series devices, each L = 0.5 µm</td><td>13.535</td><td>11.030</td></tr>
+</tbody></table>
+<p>Six length cases and four series-stack cases completed with unchanged PDK corners and tolerances. These changes reduce DC leakage, but <strong>none is an accuracy-qualified correction</strong>. They have not been physically laid out or checked for capture resistance, charge injection, transient retention and process coverage. The original GDS is unchanged.</p>
+<figure><a href="assets/compact-bank-process-diagnosis-20260930.png"><img src="assets/compact-bank-process-diagnosis-20260930.png" alt="Process errors, inter-scan storage drop, measured NMOS leakage and model-only length/stack comparisons" style="width:100%;height:auto"></a></figure>
+<p><strong>Earlier plan (completed in the candidate screen above):</strong> compare lower-leakage capture-switch candidates through complete small-bank capture/readout transients, and test a modest acquisition-timing extension for SS with nonoverlapping ADC reset. Only then rebuild a selected physical candidate and rerun the bank matrix. Additional mixed-corner coverage follows correction of these known failures. No new hours-long batch is running.</p>
+<p><a href="../simulations/compact-bank-process-review-20260930.json">Completion review</a> · <a href="../simulations/compact-bank-process-retention-20260930.json">Error decomposition</a> · <a href="../simulations/compact-bank-storage-leakage-20260930.json">Direct current probes</a> · <a href="../simulations/compact-bank-hold-length-screen-20260930.json">Length screen</a> · <a href="../simulations/compact-bank-hold-stack-screen-20260930.json">Series-stack screen</a></p>
+</div>
+<!-- END BANK_PROCESS_DIAGNOSIS -->
+<!-- BEGIN BANK_PROCESS -->
+<div id="compact-bank-process"><h3>Process variation — first MOS-corner batch</h3>
+<p>Slow/slow (SS) and fast/fast (FF) transistor models at 125 °C with inverse illumination: four fresh 100/50 ns transients and 384 matched references. This starts with the smallest-margin typical-process case. Diodes, MIM capacitors, supply and extracted wiring retain their nominal settings; mixed MOS and other operating corners remain open.</p>
+<table><thead><tr><th>Case</th><th>Audited status</th><th>Total error, µV</th><th>Tracking, µV</th><th>Sample refinement, µV</th></tr></thead><tbody><tr><td>SS / 125 °C / inverse</td><td><a href="../simulations/compact-bank-process-ss-inverse125-20260930-ssff.json">FAIL</a></td><td>512.924</td><td>390.140</td><td>0.439</td></tr><tr><td>FF / 125 °C / inverse</td><td><a href="../simulations/compact-bank-process-ff-inverse125-20260930-ssff.json">FAIL</a></td><td>2000.323</td><td>4.533</td><td>0.109</td></tr></tbody></table>
+<p>Limits remain 500 µV total/tracking and 10 µV sample/event refinement; contrast ordering is required. Every matched reference uses the same MOS corner as its transient. Pending is not a pass. No later batch starts automatically.</p>
+<figure><img src="assets/compact-bank-process-ss-inverse125-20260930-ssff.png" alt="SS transistor corner, 125 C inverse, independent accuracy audit"></figure><figure><img src="assets/compact-bank-process-ff-inverse125-20260930-ssff.png" alt="FF transistor corner, 125 C inverse, independent accuracy audit"></figure>
+<p><a href="verification-journal.html#process">Journal: process work</a> · <a href="../build/compact-bank-process-plan-20260930-ssff.json">Launch plan</a> · <a href="../PICK_UP_HERE.md">Current handoff</a></p></div>
+<!-- END BANK_PROCESS -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

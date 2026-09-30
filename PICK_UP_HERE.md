@@ -1,8 +1,467 @@
 # Pick up here — 64×64 wafer.space first silicon
 
-Updated 2026-09-29. **User confirmed GF180 with wafer.space and first silicon
+## Latest — physical small-bank candidate complete; no active simulation jobs
+
+Implemented a separate three-NMOS capture switch and tested it at 12.5 µs
+acquisition. The combined model-only screen adds 6 transients/36 references;
+physical port/far extraction adds 12 transients/72 references. All reviewed
+selected cases pass at typical/SS/FF, 125 °C, inverse illumination, 100/50 ns.
+Every timestep has fresh capture/output references. Worst extracted total errors
+across both placements: typical 152.197, SS 181.071, FF 258.782 µV vs 500 µV.
+Joint far-placement HOLD/STORE sensitivity <0.044 µV. Four guard tests pass in
+each of three electrical reviews, plus six topology tests.
+
+Physical column: `build/compact-capture-stack3-v2-20260930`, 9 MOS, 8 MIM plates.
+Physical bank: `build/compact-bank-c2-stack3-v3-20260930`, 26 MOS, 16 MIM, 2 diodes.
+Both Magic/KLayout main DRC and direct/resistor-collapsed LVS pass; column
+40 µm abutment passes. Footprint and M4/M5/MIM/via4 geometry equal the old column.
+New NMOS pair is at y=144/156 µm. The failed first column attempt (v1) remains:
+it extended capacitor routes into a plate region and failed two Magic rules.
+The partial bank v2 remains after a relative-path bookkeeping exception; v3
+completed after normalizing CLI input paths. No geometry was silently replaced.
+Column negative shunts on one private node use conserved positive total; the
+bank private nodes need no consolidation. All resistors and collapsed capacitance
+totals are retained; port/far sensitivity is explicitly verified.
+
+**Next concrete task:** build a separate 64-column bank from the new column using
+`build-compact-bank-stack3.py --columns 64 --ground-bus-width-um 8 --ground-return-grid`
+with a fresh output path. Confirm DRC/LVS, 770 MOS/512 MIM/64 diode count and all
+64 three-device chains. Then version the full-bank runner/auditor for 12.5 µs
+acquisition (sample at slot +14.499 µs, fall ends +14.51, reset starts +15,
+20 µs slots). Small-bank combined/timing evidence is available as a control.
+Do not monkey-patch metadata or apply the model-only transformation to the
+already physical stack. Run matched typical/SS/FF 125 °C inverse corner pairs,
+then expand remaining coverage. This will be the next hours-long stage.
+
+One-command rerun of the fixed small physical candidate:
+`bash scripts/run-tools.sh python3 scripts/rerun-physical-stack3.py --tag new-run`
+It runs 12 transients/72 references, audits and placement comparison; rejects
+existing output paths, pins dependencies and reports measured failures. Its
+plan-only path was checked; constituent stages were executed/audited separately.
+It does not rebuild a changed pixel. Reproduction profile:
+`verification/compact-bank-physical-stack3.json`.
+
+Portable candidate checkpoint: `checkpoints/compact-bank-stack3-small/` (compressed
+column/bank GDS and port/far extraction with verified hashes). Completion review:
+`simulations/compact-bank-physical-stack3-completion-20260930.json`; 951 distinct
+evidence files verify.
+
+Evidence: `simulations/compact-bank-physical-stack3-20260930.json`, combined/physical
+cycle reports and reviews, and physical placement report. Overview/journal have
+results and the actual GDS detail. All successful evidence dependencies are now
+hash-pinned; use versioned scripts for changes. Existing 64-column checkpoint and
+its SS/FF total-error failures remain unchanged. Earlier states follow.
+
+## Latest — model-only candidate cycles complete and reviewed
+
+No jobs remain active. New screen: `build/compact-bank-capture-cycles-20260930`;
+independent review: `build/compact-bank-capture-cycles-review-20260930`.
+Reports are copied under `simulations/` with matching names. Twenty transients
+and 120 fresh references cover original/two/three series NMOS switches at
+125 °C inverse, typical/SS/FF, 100/50 ns, plus original SS acquisition 12.5 µs.
+Each timestep has its own six DC references. Original SS/FF controls reproduce
+retained HOLD samples within 0.001 µV; 20 parent fixtures regenerate exactly.
+Four negative guard tests reject invalid topology, timing and missing/duplicate
+hold devices. New model nodes and physical MIM differential events are checked.
+
+Three-device maximum total errors: typical 154.150 µV, SS 236.198 µV, FF
+410.653 µV; selected checks pass. Two-device FF remains a failure at 596.505 µV.
+Original SS acquisition 12→12.5 µs improves tracking 281.789→206.737 µV and
+total error 187.313→137.243 µV. Falling acquisition ends at slot +14.51 µs;
+ADC reset starts at +15 µs; selection ends at +16 µs, preserving nonoverlap.
+Worst sample/event refinement is 1.346/1.590 µV; MIM differential <0.101 µV.
+
+**Next concrete task:** check the three-device candidate combined with 12.5 µs
+acquisition, then create a separate physical capture-column revision with three
+series W=1 µm/L=0.5 µm NMOS devices. Keep the existing GDS/checkpoint intact.
+Run DRC/LVS, rebuild/extract the small bank, and recheck the corner transients
+before the hours-long 64-column validation. The model-only stack copied each
+original device's area/perimeter parameters and has no new wire parasitics;
+its pass cannot be transferred to physical geometry or 64-column timing.
+The full-bank SS/FF failures remain 512.924/2000.323 µV. Mixed corners and other
+coverage follow correction; none is silently qualified by this small screen.
+
+Reproduction commands and scope: `verification/compact-bank-capture-candidates.json`.
+New scripts: `screen-bank-capture-cycles.py`, `review-bank-capture-cycles.py`,
+`render-bank-capture-cycles.py`. The first two are now hash-pinned by this evidence;
+version them rather than editing retained dependencies. The overview and embedded
+journal contain the table, plot and commands. Older entries below are historical.
+
+## Latest — process diagnosis and candidate DC screens complete
+
+The requested progression advanced through completion review, error decomposition,
+validated current probing and two candidate screens. **No new long-running jobs
+are active.** The SS/FF total-error failures remain 512.924/2000.323 µV vs 500 µV;
+all original geometry, accuracy limits and frozen reports are preserved.
+
+Five reviewed zero-volt DC probe cases establish the NMOS hold/capture switch as
+the dominant measured storage-terminal path in the selected FF states. At late
+column 63, its current is 37.747 pA FF, 4.252 pA typical and 0.613 pA SS. FF PMOS
+injection is 0.234 pA, total MIM leakage about 0.036 pA, and modeled follower-gate
+current zero. Worst probe current-balance residual is 0.00254 pA. The initial
+three-terminal probe failed its voltage-subtraction clamp-current balance; that
+attempt remains retained. The v2 direct clamp probe resolves the discrepancy.
+
+Six model-only channel-length cases and four series-stack cases completed. Net FF
+leakage at columns 0/63 falls from 42.573/37.551 pA to 23.685/19.237 pA for a
+1.5 µm channel, or 13.535/11.030 pA for three 0.5 µm devices in series. These are
+DC screens only: neither is a physical or transient-accuracy-qualified fix.
+
+**Next concrete task:** compare lower-leakage capture-switch candidates through
+complete small-bank capture/readout transients at typical/SS/FF, including charge
+injection and on-resistance effects. Separately test an SS acquisition extension
+with explicit nonoverlap from ADC reset; do not assume a later existing waveform
+sample predicts the changed acquisition load. Select/rebuild physical geometry
+only after those controls, then rerun the complete bank coverage. Mixed corners
+remain open but should not distract from the known failures.
+
+Evidence: `simulations/compact-bank-process-review-20260930.json` and
+`simulations/compact-bank-process-diagnosis-review-20260930.json`; detailed results
+are linked in the overview/journal. The `scripts/diagnose-bank-process-retention.py`
+voltage-subtraction current estimates are superseded for current attribution by
+`scripts/probe-bank-storage-leakage-v2.py`. The recorded settled-state error is
+not pure storage error: it includes rail/bias changes. All entries below describe
+earlier states of this investigation.
+
+## Earlier review — process batch and initial diagnosis
+
+Both SS and FF full-bank 125 °C inverse cases completed, but **both fail total
+capture/readout error**: 512.924 / 2000.323 µV against 500 µV. Output tracking
+is 390.140 / 4.533 µV; sample refinement 0.439 / 0.109 µV and event refinement
+0.098 / 0.101 µV. Contrast ordering passes. Four transients and all 384 references
+are independently audited; all simulator exits are 0. Watcher exit 1 deliberately
+reports the measured failures, not a crash. Batch elapsed 2.92 hours.
+Both plots reviewed and all 1,740 distinct evidence files/hash dependencies verify.
+Review: `simulations/compact-bank-process-review-20260930.json`.
+
+Next work is the failure investigation, before more corner coverage. Read-only
+retained-data decomposition is `build/compact-bank-process-retention-20260930/result.json`.
+SS worst error decomposes into -389.105 µV tracking plus -123.819 µV settled-state
+change. FF worst is -3.303 µV tracking plus -1997.019 µV settled-state change;
+maximum first/late STORE drift is 1522.368 µV. Settled-state change includes
+storage and rail/bias differences, so it is not labeled pure storage error.
+
+Five bounded matched-state DC probes are being run under
+`build/compact-bank-storage-leakage-20260930`, measuring the two capture-switch
+terminals and storage-follower gate using zero-volt series sources. All 64 column
+probe transformations exactly reconstruct the original netlist when reversed.
+This is a diagnostic, not a circuit/layout fix; all previous pinned sources and
+reports remain unchanged. The launch/status entries below are historical.
+
+## Historical launch — SS/FF MOS process batch, 30 September
+
+**Four full-bank simulations plus the independent watcher are running.** Both
+SS (slow/slow) and FF (fast/fast) use 125 °C inverse illumination at 100/50 ns,
+with 384 planned references. Typical diode/MIM, nominal 3.3 V supply and extracted
+wire, current geometry and timing remain fixed. No process pass is claimed.
+
+- Launch plan: `build/compact-bank-process-plan-20260930-ssff.json`.
+- Live status: `build/compact-bank-process-watch-20260930-ssff/status.json`.
+- Containers: `ois-bank-process-{ss,ff}-inverse125-{100,50}-20260930-ssff`.
+- Watcher: `ois-bank-process-watcher-20260930-ssff`.
+- Exit records: `build/compact-bank-process-exits-20260930-ssff/`.
+- Desktop alert: `build/compact-bank-process-notification-20260930-ssff.json`.
+- Persistent profile: `verification/compact-bank-process-suite.json`.
+- Startup snapshot: `simulations/compact-bank-process-start-20260930.json`.
+
+**Important finding:** the separate two-column control passes SS but fails FF
+late-scan total error at 1240.756 µV (500 µV limit); FF tracking is 3.057 µV,
+sample/event refinement 0.096/0.098 µV. STORE drops by 1.348/1.540 mV from first
+to late reads, consistent with retention sensitivity; root cause is unproven.
+The initial prep assertion stopped; independent follow-up auditing retained the
+failure and validated the test machinery. Full-bank measurements use the actual
+64-column geometry and do not relabel this failed control. See
+`simulations/compact-bank-process-controls-20260930.json`.
+
+Fourteen deck/model/reference/watcher tests pass; the new process auditor exactly
+reproduces the retained typical hot full-bank report. Keep all launch-pinned
+sources intact. Expect roughly 4–6 hours subject to convergence; limits remain
+four hours per transient, 30 minutes per reference and seven hours for watching.
+An expired watcher does not stop simulator containers: inspect them directly.
+No further batch is auto-started. On completion, review both process reports,
+plots, hashes and exit records before choosing mixed corners or a retention
+investigation. Reports use fresh names containing the launch tag; do not relaunch
+or overwrite this tag. Earlier “nothing running” statuses below are historical.
+
+## Current preparation — MOS process variation, 30 September
+
+The user requested the verification journal at the top of the overview and then
+process variations. The overview now starts with an expandable copy of the full
+journal. Process work takes priority over the previously proposed general rerun
+controller; the latter remains future work.
+
+The selected first profile is **SS and FF MOS models, 125 °C, inverse light**,
+100/50 ns pairs: four new transients and 384 matched references. Diode/MIM,
+3.3 V source, extracted wiring, geometry, 12 µs acquisition and strict tolerances
+stay fixed. This isolates transistor-corner sensitivity; it is not a complete
+process/passive/supply/wire cross-product. PDK definitions support typical,
+ss, ff, fs and sf; all installed ngspice model files are hashed in
+`simulations/compact-bank-process-pdk-20260930.json`.
+
+Preparation uses new v4 runner/process auditor versions, leaving pinned sources
+unchanged. Fourteen deck/corner/adversarial/watcher tests pass. The new auditor
+exactly reproduces the retained 125 °C inverse typical full-bank result; small
+SS/FF physical-bank controls completed: SS passes, FF fails late-scan total
+error (1240.756 µV vs 500 µV), with tracking 3.057 µV and refinement 0.096 µV.
+The initial control script stopped at that measured electrical failure; a
+separate review preserves it and validates the test machinery. The bounded
+64-column SS/FF batch measures the actual current geometry, which differs from
+the two-column control; it does not promote that FF failure to a pass. Current catalogue:
+`verification/compact-bank-process-suite.json`. This preparation entry alone
+makes no launch or process-accuracy claim; see the launch entry when present.
+
+## Test record and rerun workflow — 30 September
+
+The user requested explanations and a running record before continuing. Read the [verification journal](docs/verification-journal.html) and its machine-readable catalogue, `verification/compact-bank-suite.json`. The journal covers physical checks, electrical metrics, software/auditor tests, all 12 selected bank cases, pixel-change dependencies and remaining work.
+
+Refresh after each reviewed batch/decision with `python3 scripts/update-verification-journal.py`; use `--check` to validate report identity and page freshness without writing. Append history with evidence links; preserve separate catalogues/reports for future layout revisions. The refresh does not simulate or re-audit raw traces. Existing launchers/auditors have fixed baseline dependencies; a general single-command layout-to-results controller is **not yet implemented**. Next proposed task: implement and baseline-test that controller, then add the operating-corner profile. No new long-running work was launched during this explanation.
+
+Updated 2026-09-30. **User confirmed GF180 with wafer.space and first silicon
 over frame rate.** Read [COMPLETION_PLAN.md](COMPLETION_PLAN.md), then
 [NEXT_STEPS.md](NEXT_STEPS.md). Do not resume the old 3×3-first release sequence.
+
+## Current — completed and reviewed 30 September
+
+Bright and the authorized automatic follow-on placement batch both finished.
+All ten simulation/watcher containers exited with code 0; no simulations remain
+active. All four new plots were visually reviewed, and the saved evidence and
+frozen dependencies (3,347 distinct files, no hash failures) were verified in the
+[completion review](simulations/compact-bank-overnight-review-20260930.json).
+The controller's final “review required” status below predates this review.
+
+| Completed batch | Worst total error, 27/125 °C | Additional result | Runtime including audits |
+|---|---|---|---|
+| Uniform bright, 240 pA/pixel | 359.158 / 402.995 µV | All four accuracy/refinement checks pass | 3.97 hours |
+| Joint far-node placement, alternating/inverse | 372.235 / 437.952 µV | Maximum HOLD/STORE change 1.527 µV against 10 µV | 3.87 hours |
+
+All five port-model illumination patterns now pass at 27/125 °C: **20 transients,
+1,920 references**. Including the selected placement cases gives **24 transients,
+2,304 references**, with 128 reads per transient. Total error stays below 500 µV;
+timestep and physical-event refinement stay below 10 µV. This is typical-process,
+nominal-supply/wire coverage of the implemented 64-column bank and one pixel row.
+It does not qualify all operating corners or the full 64×64 chip.
+
+**Next task:** define the bounded process/wire/supply-corner matrix and prepare a
+separately versioned runner/auditor, since the existing runner fixes typical
+process and nominal supply. Verify decks and matched-reference controls before
+launching long runs. Individual placements and local supply/reference-drop checks
+remain open; real drivers and 4×64 repeated rows follow bank coverage. No further
+batch is queued, and this review launches none. Preserve existing hash-pinned
+scripts, plans, reports and raw run directories. The entries below are historical.
+
+## Historical overnight continuation — authorized 29 September
+
+The user asked to proceed after bright finishes and will return tomorrow morning.
+A detached host controller will start **one bounded 64-column joint parasitic
+placement batch** only after both bright audits pass, every new evidence hash
+verifies, all predecessor containers exit cleanly and the frozen dependencies
+remain intact. It stops and records a failure instead of advancing on an error.
+
+<!-- OVERNIGHT_STATUS_BEGIN -->
+**Automatic continuation status:** placement audits complete; review required. Updated 2026-09-30T03:39:33.538054+00:00. Placement launched: True. All placement audits passing: True.
+<!-- OVERNIGHT_STATUS_END -->
+
+- Controller status: `build/compact-bank-overnight-20260929/status.json`.
+- Controller log: `build/compact-bank-overnight-20260929/controller.log`.
+- Frozen configuration: `build/compact-bank-overnight-20260929/config.json`.
+- Reproducible plan: `simulations/compact-bank-overnight-plan-20260929.json`.
+- Desktop alert: `build/compact-bank-overnight-notification-20260929.json`.
+
+**On return:** check the controller status first. If launched, the next plan is
+`build/compact-bank-placement-plan-20260929-overnight.json`, and the independent
+watcher status is `build/compact-bank-placement-watch-20260929-overnight/status.json`.
+Do not relaunch the tag or overwrite any runs. Container prefix:
+`ois-bank-placement-`; watcher: `ois-bank-placement-watcher-20260929-overnight`.
+
+The placement batch uses 27 °C alternating and 125 °C inverse, with 100/50 ns
+pairs and 384 independent references. It moves the 67 conserved positive shunt
+capacitance totals jointly to their recorded far nodes. Exact comparison proves
+only those endpoints change. Physical GDS, devices, resistors, capacitance totals,
+illumination, timing and strict tolerances remain unchanged. Acceptance includes
+500 µV accuracy, 10 µV timestep/event refinement and 10 µV HOLD/STORE change
+against matching completed port-model baselines. Joint placement does not qualify
+individual placements, all patterns or process/wire/supply corners.
+
+Preparation: **15 placement/auditor/watcher tests and 5 continuation guard tests
+pass**. The new auditor reproduces the completed full-bank nominal baseline
+exactly, with zero placement difference. Existing frozen sources are preserved.
+Allow roughly 4–6 hours for the queued batch after the remaining bright audit;
+actual runtime can vary. A failure stops automatic progression and triggers an alert.
+
+The controller writes an automated bright integrity review before launch; it
+explicitly does **not** claim visual review of the final bright plots. On return,
+review those plots and any placement outcomes. The new placement plots/table are
+added to the overview by the placement watcher. No later batch is auto-started.
+Remaining operating corners, individual placements, local references/supplies,
+real drivers, repeated rows and full-chip qualification remain open.
+
+The launch entries below predate this continuation instruction.
+
+## Historical launch 2026-09-29 — uniform bright at 27/125 °C
+
+The user authorized moving on after completion. Middle is independently reviewed
+and passing. **Bright illumination (240 pA per pixel) is now running** at 27 °C
+and 125 °C, each with 100/50 ns transients: four fresh simulations and 384 planned
+matched references. The independent watcher and desktop alert are enabled.
+No bright result is claimed yet.
+
+First action on return: read
+`build/compact-bank-uniform-watch-20260929-bright/status.json`, then inspect
+`docker ps -a --filter name=20260929-bright` and container logs. The exact commands,
+source hashes and container IDs are in `build/compact-bank-uniform-plan-20260929-bright.json`.
+Do not relaunch this tag or overwrite these directories:
+
+| Case | Directory under `build/` |
+|---|---|
+| Bright, 27 °C, 100 ns + references | `compact-bank-c64-uniform-bright27-100-20260929-bright` |
+| Bright, 27 °C, 50 ns | `compact-bank-c64-uniform-bright27-50-20260929-bright` |
+| Bright, 125 °C, 100 ns + references | `compact-bank-c64-uniform-bright125-100-20260929-bright` |
+| Bright, 125 °C, 50 ns | `compact-bank-c64-uniform-bright125-50-20260929-bright` |
+
+Watcher: `ois-bank-uniform-watcher-20260929-bright`. Desktop notification state:
+`build/compact-bank-uniform-notification-20260929-bright.json`.
+Expected independently audited reports:
+`simulations/compact-bank-64-uniform-bright27.json` and
+`simulations/compact-bank-64-uniform-bright125.json`.
+The watcher publishes measured failures as well as passes and refreshes the
+[uniform matrix](docs/overview.html#compact-bank-64-uniform).
+
+The unchanged runner, auditor and existing 19-test coverage include these bright
+decks. All launch dependencies and previously reviewed artifacts remain intact.
+Allow approximately **4–6 hours**, based on the 3.65-hour middle and 4.04-hour
+dark batches. Keep the workstation awake and Docker running.
+
+After bright, review all results and evidence before declaring the uniform
+matrix complete. Then continue remaining process/wire/supply and parasitic-placement
+checks, local reference/supply checks and repeated-row/real-driver work.
+Full-bank/corner and full-chip qualification remain open. No later batch is launched.
+
+## Reviewed 2026-09-29 — uniform middle complete and passing
+
+Both cases pass all four independent checks. Worst total error is
+**340.408 µV at 27 °C / 391.739 µV at 125 °C**, below 500 µV; tracking is
+30.395/72.481 µV. Saved-sample refinement is 0.135/0.132 µV and physical-event
+refinement is 0.123/0.086 µV, below 10 µV. All four transients finish 128 reads
+and all 384 references are audited.
+
+The batch plus audits took **3.65 hours**. All five containers exited with code 0,
+with no audit/render failures. The desktop alert was dismissed and both plots
+reviewed. All **1,709 distinct evidence files** (911 entries per report) and
+18 launch dependencies verify; the dark and earlier matrix artifacts are unchanged.
+[Review evidence](simulations/compact-bank-uniform-middle-review-20260929.json).
+The earlier launch entries below are historical.
+
+## Historical launch 2026-09-29 — uniform middle at 27/125 °C
+
+At the user's request, **uniform 80 pA per pixel is now running** at 27 °C and
+125 °C, each with 100/50 ns transients. Four fresh simulations and the independent
+watcher have started; 384 matched references are planned. Results remain pending.
+The dark batch is reviewed and passing. Bright (240 pA) is not launched; review
+middle before proceeding.
+
+First action on return: inspect
+`build/compact-bank-uniform-watch-20260929-middle/status.json`, then
+`docker ps -a --filter name=ois-bank-uniform`. The exact commands, source hashes
+and container IDs are in `build/compact-bank-uniform-plan-20260929-middle.json`.
+Do not relaunch the tag or overwrite these run directories:
+
+| Case | Directory under `build/` |
+|---|---|
+| Middle, 27 °C, 100 ns + references | `compact-bank-c64-uniform-middle27-100-20260929-middle` |
+| Middle, 27 °C, 50 ns | `compact-bank-c64-uniform-middle27-50-20260929-middle` |
+| Middle, 125 °C, 100 ns + references | `compact-bank-c64-uniform-middle125-100-20260929-middle` |
+| Middle, 125 °C, 50 ns | `compact-bank-c64-uniform-middle125-50-20260929-middle` |
+
+Watcher: `ois-bank-uniform-watcher-20260929-middle`. Desktop notification state:
+`build/compact-bank-uniform-notification-20260929-middle.json` (enabled).
+The watcher publishes `simulations/compact-bank-64-uniform-middle27.json` and
+`simulations/compact-bank-64-uniform-middle125.json`, including measured failures,
+then refreshes the [uniform matrix](docs/overview.html#compact-bank-64-uniform).
+
+All prior launch dependencies and reviewed dark artifacts were verified unchanged
+before launch. The existing 19 passing tests already cover all twelve uniform
+decks, including these middle cases; no runner, auditor, tolerance, timing or
+layout change was required. The unchanged v3 auditor retains all four uniform
+accuracy/refinement checks. No new accuracy result is claimed at launch.
+
+Allow approximately **4–6 hours**, based on the completed 4.04-hour dark batch.
+Keep the workstation awake and Docker running; the desktop alert reports
+completion or a watcher problem. Bright follows only after middle is reviewed.
+The earlier review/launch entries below describe their historical status.
+
+## Reviewed 2026-09-29 — uniform dark complete and passing
+
+Both uniform-dark cases pass all four independent checks. Worst total error is
+**248.852 µV at 27 °C / 411.912 µV at 125 °C**, below 500 µV. Worst tracking is
+14.965/81.559 µV; saved-sample refinement is 0.133/0.149 µV and physical-event
+refinement is 0.134/0.100 µV, below 10 µV. All four transients finish 128 reads
+and all 384 matched references are independently audited.
+
+The batch plus audits took **4.04 hours**. All five containers exited with code 0,
+with no audit or rendering failures; the desktop alert was delivered and dismissed.
+Both plots were reviewed. No new batch was launched during this review.
+
+All **1,709 distinct evidence files** verify (911 manifest entries per case),
+along with 18 launch dependencies and unchanged earlier matrix reports.
+
+**Next:** uniform middle illumination, **80 pA per pixel**, at 27/125 °C with
+100/50 ns comparisons: four fresh transients and 384 references. Use the existing
+verified v3 auditor and uniform launcher with a fresh tag (e.g. `20260929-middle`),
+then verify the watcher and enable a new desktop notification. After reviewing
+middle, repeat for bright (240 pA). Expect roughly 4–6 hours per bounded batch,
+subject to convergence and machine load. Keep current source versions and completed
+runs unchanged. Remaining corners/placements, real drivers, repeated rows and
+full-chip qualification remain open.
+
+See [results and plots](docs/overview.html#compact-bank-64-uniform),
+[reproduction](docs/compact-bank-64-uniform.md) and
+[review evidence](simulations/compact-bank-uniform-dark-review-20260929.json).
+
+## Historical launch 2026-09-29 — uniform dark at 27/125 °C
+
+The user authorized the next task. **Four fresh simulations and the independent
+watcher are running** for uniform 0 pA per pixel at both temperatures, each at
+100/50 ns. The two 100 ns runs require 192 matched references each (384 total).
+No accuracy result is claimed yet. Middle and bright are not launched; review
+this bounded batch before proceeding to them.
+
+First action on return: read
+`build/compact-bank-uniform-watch-20260929-dark/status.json`, then inspect
+`docker ps -a --filter name=ois-bank-uniform` and the logs. The exact commands,
+source hashes and container IDs are in
+`build/compact-bank-uniform-plan-20260929-dark.json`. Do not relaunch its tag or
+overwrite any run directories:
+
+| Case | Directory under `build/` |
+|---|---|
+| Dark, 27 °C, 100 ns + references | `compact-bank-c64-uniform-dark27-100-20260929-dark` |
+| Dark, 27 °C, 50 ns | `compact-bank-c64-uniform-dark27-50-20260929-dark` |
+| Dark, 125 °C, 100 ns + references | `compact-bank-c64-uniform-dark125-100-20260929-dark` |
+| Dark, 125 °C, 50 ns | `compact-bank-c64-uniform-dark125-50-20260929-dark` |
+
+The watcher is `ois-bank-uniform-watcher-20260929-dark`. It uses the new
+`report-bank-full-v3.py` auditor and publishes
+`simulations/compact-bank-64-uniform-dark27.json` and
+`simulations/compact-bank-64-uniform-dark125.json`, including measured failures.
+It updates the [uniform matrix](docs/overview.html#compact-bank-64-uniform).
+Desktop notification state is
+`build/compact-bank-uniform-notification-20260929-dark.json`.
+
+Preparation passed **19 tests**, including all twelve planned uniform decks,
+retained-data/adversarial audits and watcher failure handling. A complete
+64-column re-audit reproduces every nominal sample, reference summary, event
+and acceptance result exactly. Uniform illumination has no neighbor-contrast
+check; the four accuracy/refinement checks remain, with unchanged limits.
+The v2 auditor, v3 runner, completed reports and layout remain unchanged.
+See [scope and reproduction](docs/compact-bank-64-uniform.md).
+
+Allow roughly **4–6 hours for this batch**, based on the previous 4.1-hour batch;
+convergence and machine load may differ. Keep the workstation awake and Docker
+running. Notifications also flag watcher expiry/failure; an alert alone does not
+establish a passing result. Full-bank/corner and full-chip qualification remain open.
+
+The following completed-matrix review and checkpoint notes are historical;
+their “no new batch” statements describe the earlier review time.
 
 The requested 29 September checkpoint includes the [labeled device layout](docs/overview.html#current-device-layout)
 and a [portable exact-GDS package](checkpoints/compact-bank-64-matrix/README.md).

@@ -1,0 +1,358 @@
+{
+  "scope": "Build a compact shared pixel/capture bank and audit its extracted connections.\n\nUnfilled development control with physical reference MOS and shared wiring.\nReference resistors, control drivers and ADC remain external fixtures.\n",
+  "columns": 2,
+  "column_pitch_um": 40,
+  "bus_y_um": {
+    "GND": -10,
+    "VDD": -20,
+    "BIAS": -30,
+    "PREF": -40,
+    "SC": -50,
+    "SCB": -60,
+    "BUF": -70
+  },
+  "ground_bus_width_um": 2,
+  "magic_drc_errors": 0,
+  "bbox_um": "(-67.56,-117.8;80.2,860.48)",
+  "ports": [
+    "VDD",
+    "VRESET",
+    "GND",
+    "RST0",
+    "ROW0",
+    "BUF",
+    "SC",
+    "SCB",
+    "BIAS",
+    "PREF",
+    "COL0",
+    "STORE0",
+    "CBUF0",
+    "SEL0",
+    "SELB0",
+    "COL1",
+    "STORE1",
+    "CBUF1",
+    "SEL1",
+    "SELB1"
+  ],
+  "clear_aperture_um": [
+    18,
+    18
+  ],
+  "source_hashes": {
+    "build/compact-capture-stack3-v2-20260930/column.gds": "7350d766307bfd46f96eaaac89a8f9d4fbe092bc874509b99f22a9f6521f19a0",
+    "build/compact-pixel-v1-20260926/pixel.gds": "f2dcf499f516af41fa0233fcf47dba8e03d465fb03d41df733dae9bbfd6bd04d"
+  },
+  "klayout_main_drc_errors": 0,
+  "direct_and_resistor_collapsed_lvs": true,
+  "mos": 26,
+  "capture_series_devices": 3,
+  "stack_paths": [
+    {
+      "column": 0,
+      "instances": [
+        "X36",
+        "X39",
+        "X7"
+      ],
+      "private_nodes": [
+        {
+          "name": "HN10",
+          "extracted_node": "a_862_6300.t0"
+        },
+        {
+          "name": "HN20",
+          "extracted_node": "a_862_28700.t1"
+        }
+      ]
+    },
+    {
+      "column": 1,
+      "instances": [
+        "X32",
+        "X29",
+        "X40"
+      ],
+      "private_nodes": [
+        {
+          "name": "HN11",
+          "extracted_node": "a_8862_6300.t0"
+        },
+        {
+          "name": "HN21",
+          "extracted_node": "a_8862_28700.t1"
+        }
+      ]
+    }
+  ],
+  "mim": 16,
+  "diodes": 2,
+  "resistors": 327,
+  "capacitors": 273,
+  "pixel_roles": {
+    "1": {
+      "sense": "a_8800_n23400.t1",
+      "anode": "GND.t10",
+      "vdd": "VDD.t2"
+    },
+    "0": {
+      "sense": "a_800_n23400.t1",
+      "anode": "GND.t51",
+      "vdd": "VDD.t13"
+    }
+  },
+  "negative_capacitors": [
+    [
+      "C243",
+      "SCB.t0",
+      "GND",
+      "-0.22744f"
+    ],
+    [
+      "C244",
+      "SCB.t1",
+      "GND",
+      "-0.47408f"
+    ],
+    [
+      "C246",
+      "COL0.t0",
+      "GND",
+      "-1.98728f"
+    ],
+    [
+      "C248",
+      "COL0.n0",
+      "GND",
+      "-16.5381f"
+    ],
+    [
+      "C252",
+      "COL1.t0",
+      "GND",
+      "-1.98717f"
+    ],
+    [
+      "C254",
+      "COL1.n0",
+      "GND",
+      "-16.5371f"
+    ],
+    [
+      "C258",
+      "BIAS.t2",
+      "GND",
+      "-0.74977f"
+    ],
+    [
+      "C259",
+      "BIAS.t3",
+      "GND",
+      "-1.04079f"
+    ],
+    [
+      "C263",
+      "BIAS.n1",
+      "GND",
+      "-2.84992f"
+    ]
+  ],
+  "shunt_approximations": [
+    {
+      "net": "BIAS",
+      "shunts": [
+        [
+          "C111",
+          "BIAS",
+          "GND",
+          "48.969f"
+        ],
+        [
+          "C258",
+          "BIAS.t2",
+          "GND",
+          "-0.74977f"
+        ],
+        [
+          "C259",
+          "BIAS.t3",
+          "GND",
+          "-1.04079f"
+        ],
+        [
+          "C260",
+          "BIAS.n0",
+          "GND",
+          "22.8677f"
+        ],
+        [
+          "C261",
+          "BIAS.t0",
+          "GND",
+          "1.07288f"
+        ],
+        [
+          "C262",
+          "BIAS.t1",
+          "GND",
+          "0.55597f"
+        ],
+        [
+          "C263",
+          "BIAS.n1",
+          "GND",
+          "-2.84992f"
+        ]
+      ],
+      "total_F": 6.882507e-14,
+      "far_node": "BIAS.t2",
+      "far_path_ohm": 43.1095
+    },
+    {
+      "net": "COL0",
+      "shunts": [
+        [
+          "C113",
+          "COL0",
+          "GND",
+          "35.9383f"
+        ],
+        [
+          "C246",
+          "COL0.t0",
+          "GND",
+          "-1.98728f"
+        ],
+        [
+          "C247",
+          "COL0.t3",
+          "GND",
+          "1.67518f"
+        ],
+        [
+          "C248",
+          "COL0.n0",
+          "GND",
+          "-16.5381f"
+        ],
+        [
+          "C249",
+          "COL0.t1",
+          "GND",
+          "1.97736f"
+        ],
+        [
+          "C250",
+          "COL0.n1",
+          "GND",
+          "6.20315f"
+        ],
+        [
+          "C251",
+          "COL0.t2",
+          "GND",
+          "8.43869f"
+        ]
+      ],
+      "total_F": 3.57073e-14,
+      "far_node": "COL0.t2",
+      "far_path_ohm": 60.9147
+    },
+    {
+      "net": "COL1",
+      "shunts": [
+        [
+          "C112",
+          "COL1",
+          "GND",
+          "35.9405f"
+        ],
+        [
+          "C252",
+          "COL1.t0",
+          "GND",
+          "-1.98717f"
+        ],
+        [
+          "C253",
+          "COL1.t3",
+          "GND",
+          "1.67509f"
+        ],
+        [
+          "C254",
+          "COL1.n0",
+          "GND",
+          "-16.5371f"
+        ],
+        [
+          "C255",
+          "COL1.t1",
+          "GND",
+          "1.97725f"
+        ],
+        [
+          "C256",
+          "COL1.n1",
+          "GND",
+          "6.2028f"
+        ],
+        [
+          "C257",
+          "COL1.t2",
+          "GND",
+          "8.43822f"
+        ]
+      ],
+      "total_F": 3.5709590000000004e-14,
+      "far_node": "COL1.t2",
+      "far_path_ohm": 60.9147
+    },
+    {
+      "net": "SCB",
+      "shunts": [
+        [
+          "C114",
+          "SCB",
+          "GND",
+          "35.6361f"
+        ],
+        [
+          "C243",
+          "SCB.t0",
+          "GND",
+          "-0.22744f"
+        ],
+        [
+          "C244",
+          "SCB.t1",
+          "GND",
+          "-0.47408f"
+        ],
+        [
+          "C245",
+          "SCB.n0",
+          "GND",
+          "21.6208f"
+        ]
+      ],
+      "total_F": 5.6555380000000006e-14,
+      "far_node": "SCB.t0",
+      "far_path_ohm": 72.4615
+    }
+  ],
+  "hashes": {
+    "raw-rc.spice": "151c8524f3cf17f326598e80cf745717d2148050f0c9dd8156bef8bef985eefb",
+    "reference.spice": "6dd808615e9fd8fbc2ba97a724f86a94791633c4d0b62ca51375b2662aa96aa8",
+    "direct.spice": "7c563d84b6604b642b6f25b68ed4c029a4064d0a5234c90e1630df605d246eec",
+    "rc-far.spice": "b4697f19938a3101f5ce1aa623910ff5bc997dd3e089d50920c9d023e8801bb8",
+    "rc-scb-far.spice": "44fb05d124cc264cdcd8c325a933fd4d6b600aec4bcc38c67db6f960466973f4",
+    "rc-col0-far.spice": "abd3370b6b681672fdfe8d862e169850c15eeb986446721a9a4d76fe238d5135",
+    "rc-col1-far.spice": "bbf6e4570a718a2e20bae8ece471dbc12c44c43f070a89bd9194dd8d4de6007b",
+    "rc-bias-far.spice": "42a5c45eaa879f79e23af7b235f4622da3fe77743776818085040bbc371a1c7f",
+    "collapsed.spice": "3b5155cb28d0b74df3fb7eaf2ad268246f80abef918751f929aa580a9bd396e4",
+    "rc-port.spice": "1ca74cfd45ac4f8f9f1539e1036fd4fc697f5d49c05dda215eba06c4c3d39ec9"
+  },
+  "gds_sha256": "729394f783f36b1fa298bc65c80309c96dfd1c67c04d5dc3eb26717071a7d3f1"
+}

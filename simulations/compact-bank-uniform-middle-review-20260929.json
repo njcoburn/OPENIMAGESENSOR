@@ -1,0 +1,74 @@
+{
+  "reviewed_at_utc": "2026-09-29T19:47:54.972403+00:00",
+  "scope": "Completed middle-illumination integrity and plot review before the authorized bright batch.",
+  "manifest_entries": {
+    "compact-bank-64-uniform-middle27.json": 911,
+    "compact-bank-64-uniform-middle125.json": 911
+  },
+  "distinct_evidence_files_verified": 1709,
+  "hash_failures": [],
+  "launch_evidence_hashes_verified": 18,
+  "previous_dark_and_alternating_inverse_reports_unchanged": true,
+  "cases": [
+    {
+      "temperature_C": 27,
+      "pattern": "middle",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true
+      },
+      "max_total_error_uV": 340.40816366420756,
+      "max_tracking_error_uV": 30.394503010899854,
+      "max_refinement_uV": 0.13490430328388925,
+      "event_refinement_worst": {
+        "event": "pre_capture",
+        "column": 63,
+        "quantity": "differential_V",
+        "difference_uV": 0.12310289820849363
+      }
+    },
+    {
+      "temperature_C": 125,
+      "pattern": "middle",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true
+      },
+      "max_total_error_uV": 391.7390563530354,
+      "max_tracking_error_uV": 72.48106291468659,
+      "max_refinement_uV": 0.1318889863988204,
+      "event_refinement_worst": {
+        "event": "before_row_off",
+        "column": 6,
+        "quantity": "differential_V",
+        "difference_uV": 0.08601387369022717
+      }
+    }
+  ],
+  "batch_elapsed_seconds": 13127.230431756994,
+  "review_elapsed_seconds": 19.809109362002346,
+  "completed_transients": 4,
+  "reads_per_transient": 128,
+  "new_references_audited": 384,
+  "plots_reviewed": true,
+  "simulation_and_watcher_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "reviewed_hashes": {
+    "simulations/compact-bank-64-uniform-middle27.json": "81e58efe4bd4554cba442db2bc1daee5f4c05dee8c10c50504ccd0f93822024f",
+    "simulations/compact-bank-64-uniform-middle125.json": "6c4bc88010406e9b0b913667f340c71d00ff1c41c7790eff19989a0389351a70",
+    "build/compact-bank-uniform-watch-20260929-middle/status.json": "c80f03896d7cde2cbb3918c440201937f1d9988bd383cde11bedb24dcdc1969f",
+    "docs/assets/compact-bank-64-uniform-middle27.png": "bd68f6a3af00d41c43826921a8fc2460626c61b389a0d282079898e5227f6581",
+    "docs/assets/compact-bank-64-uniform-middle125.png": "03660f689d85d8190b2d9fba30101b2a001c9a323dba4c80cff4308633656e86"
+  }
+}

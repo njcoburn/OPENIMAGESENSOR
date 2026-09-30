@@ -1,0 +1,275 @@
+{
+  "scope": "Unfilled isolated column; 2 fF MIM candidate, nominal wire RC; no optical array or shared peripheral grid.",
+  "magic_drc_errors": 0,
+  "klayout_main_drc_errors": 0,
+  "excluded_drc_decks": [
+    "antenna",
+    "density",
+    "cup"
+  ],
+  "direct_and_resistor_collapsed_lvs": true,
+  "exact_device_parameters_match": true,
+  "mos": 9,
+  "capture_series_devices": 3,
+  "stack_paths": [
+    {
+      "column": null,
+      "instances": [
+        "X14",
+        "X16",
+        "X2"
+      ],
+      "private_nodes": [
+        {
+          "name": "HN1",
+          "extracted_node": "nfet_probe_3.S.t0"
+        },
+        {
+          "name": "HN2",
+          "extracted_node": "nfet_probe_1.S.t0"
+        }
+      ]
+    }
+  ],
+  "mim_devices": 8,
+  "resistors": 104,
+  "parasitic_capacitors": 143,
+  "sum_all_parasitic_capacitances_pF": 0.68752972,
+  "negative_parasitic_capacitors": [
+    [
+      "C79",
+      "COL",
+      "GND",
+      "-2.32147f"
+    ],
+    [
+      "C91",
+      "nfet_probe_1.S.t1",
+      "GND",
+      "-0.0615f"
+    ],
+    [
+      "C92",
+      "nfet_probe_1.S.t0",
+      "GND",
+      "-0.0615f"
+    ],
+    [
+      "C138",
+      "COL.t1",
+      "GND",
+      "-4.71901f"
+    ],
+    [
+      "C140",
+      "COL.t0",
+      "GND",
+      "-5.57025f"
+    ],
+    [
+      "C141",
+      "COL.n1",
+      "GND",
+      "-17.4744f"
+    ],
+    [
+      "C142",
+      "BIAS.t0",
+      "GND",
+      "-0.26254f"
+    ]
+  ],
+  "raw_rc_passivity_qualified": false,
+  "capacitance_approximation": {
+    "net": "COL",
+    "removed_shunts": [
+      [
+        "C79",
+        "COL",
+        "GND",
+        "-2.32147f"
+      ],
+      [
+        "C137",
+        "COL.t2",
+        "GND",
+        "5.59819f"
+      ],
+      [
+        "C138",
+        "COL.t1",
+        "GND",
+        "-4.71901f"
+      ],
+      [
+        "C139",
+        "COL.n0",
+        "GND",
+        "46.588f"
+      ],
+      [
+        "C140",
+        "COL.t0",
+        "GND",
+        "-5.57025f"
+      ],
+      [
+        "C141",
+        "COL.n1",
+        "GND",
+        "-17.4744f"
+      ]
+    ],
+    "total_fF": 22.101060000000007,
+    "placements": [
+      "COL",
+      "COL.t2"
+    ],
+    "far_path_ohm": 24.227800000000002,
+    "all_resistors_retained": true,
+    "scope": "Total shunt capacitance preserved; distributed placement approximated and requires sensitivity test."
+  },
+  "capacitance_approximations": [
+    {
+      "net": "COL",
+      "removed_shunts": [
+        [
+          "C79",
+          "COL",
+          "GND",
+          "-2.32147f"
+        ],
+        [
+          "C137",
+          "COL.t2",
+          "GND",
+          "5.59819f"
+        ],
+        [
+          "C138",
+          "COL.t1",
+          "GND",
+          "-4.71901f"
+        ],
+        [
+          "C139",
+          "COL.n0",
+          "GND",
+          "46.588f"
+        ],
+        [
+          "C140",
+          "COL.t0",
+          "GND",
+          "-5.57025f"
+        ],
+        [
+          "C141",
+          "COL.n1",
+          "GND",
+          "-17.4744f"
+        ]
+      ],
+      "total_fF": 22.101060000000007,
+      "placements": [
+        "COL",
+        "COL.t2"
+      ],
+      "far_path_ohm": 24.227800000000002,
+      "all_resistors_retained": true,
+      "scope": "Total shunt capacitance preserved; distributed placement approximated and requires sensitivity test."
+    },
+    {
+      "net": "BIAS",
+      "removed_shunts": [
+        [
+          "C78",
+          "BIAS",
+          "GND",
+          "18.76112f"
+        ],
+        [
+          "C142",
+          "BIAS.t0",
+          "GND",
+          "-0.26254f"
+        ]
+      ],
+      "total_fF": 18.49858,
+      "placements": [
+        "BIAS",
+        "BIAS.t0"
+      ],
+      "far_path_ohm": 26.4815,
+      "all_resistors_retained": true,
+      "scope": "Total shunt capacitance preserved; distributed placement approximated and requires sensitivity test."
+    },
+    {
+      "net": "nfet_probe_1.S.t0",
+      "removed_shunts": [
+        [
+          "C90",
+          "nfet_probe_1.S",
+          "GND",
+          "21.43417f"
+        ],
+        [
+          "C91",
+          "nfet_probe_1.S.t1",
+          "GND",
+          "-0.0615f"
+        ],
+        [
+          "C92",
+          "nfet_probe_1.S.t0",
+          "GND",
+          "-0.0615f"
+        ]
+      ],
+      "total_fF": 21.311170000000004,
+      "placements": [
+        "nfet_probe_1.S.t0",
+        "nfet_probe_1.S.t1"
+      ],
+      "far_path_ohm": 9.577,
+      "all_resistors_retained": true,
+      "scope": "Total shunt capacitance preserved; distributed placement approximated and requires sensitivity test."
+    }
+  ],
+  "collapsed_capacitance_matrix_max_error_F": 3.1554436208840472e-30,
+  "placement_model_hashes": {
+    "rc-port": "1cf06e2cbec30ac15d711384fc4fcbdc4950e28e6297fa59d4447b5bf6bceb74",
+    "rc-far": "c9753d7639f62702e120f8e2b95116ed5498c0872d9a218ac774b73110a2ca32",
+    "rc-col-far": "abcb31dc2ff7f54aa15afcfe7ef78ca06f93d2a5affcaa58fbc08b076b9ae889",
+    "rc-bias-far": "e8194c776c64565c8397c456bafffd57bb325cb4399c7ab6f596283a0fe4929c"
+  },
+  "mim_plate_areas_um2": [
+    2488.3199999999997,
+    2488.3199999999997,
+    2488.3199999999997,
+    2488.3199999999997,
+    2488.3199999999997,
+    2488.3199999999997,
+    2488.3199999999997,
+    2488.3199999999997
+  ],
+  "separate_bottom_plate_groups": 8,
+  "lower_via_overlap_with_plate_um2": 0,
+  "bbox_um": "(0,-1;36.6,860.48)",
+  "plate_dimensions_um": [
+    32,
+    77.76
+  ],
+  "column_pitch_um": 40,
+  "geometry_storage_model_pF_at_25C": 40.032547328,
+  "hashes": {
+    "column.gds": "7350d766307bfd46f96eaaac89a8f9d4fbe092bc874509b99f22a9f6521f19a0",
+    "direct.spice": "54d169a8a8c9a066986c5a7bca3e7bd157115604eefd8c0cf52b2ce0d44d42f4",
+    "raw-rc.spice": "fd83ea5296adb1b7d77efe12621d8df778988cd2b9d06a8f8018c40656c82552",
+    "rc-port.spice": "1cf06e2cbec30ac15d711384fc4fcbdc4950e28e6297fa59d4447b5bf6bceb74",
+    "rc-far.spice": "c9753d7639f62702e120f8e2b95116ed5498c0872d9a218ac774b73110a2ca32",
+    "reference.spice": "16a811e86901c05d3bdb0c0e44c7c38413012b4dcbfd62857c061a4d1b9d7251",
+    "collapsed.spice": "1b50e3a0789698ed99b2ba2ab1a389fb037d150f46fa7b4daaf42f3b7b1df01a",
+    "main-drc.lyrdb": "002b3561ece64bfafa470a9586dff3aabd2f219b97ba802ffe79083aafc324ee"
+  }
+}

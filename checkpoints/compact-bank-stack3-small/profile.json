@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "state": "physical_small_bank_reviewed_pass",
+  "column": "build/compact-capture-stack3-v2-20260930",
+  "bank": "build/compact-bank-c2-stack3-v3-20260930",
+  "build_commands_provenance_only": [
+    "bash scripts/run-tools.sh python3 scripts/build-capture-column-stack3.py --compact --wide-power --wide-output --output-width-um 0.6 --vdd-width-um 0.8 --out build/compact-capture-stack3-v2-20260930",
+    "bash scripts/run-tools.sh python3 scripts/check-compact-capture-stack3.py --run build/compact-capture-stack3-v2-20260930",
+    "bash scripts/run-tools.sh python3 scripts/build-compact-bank-stack3.py --column build/compact-capture-stack3-v2-20260930 --columns 2 --out build/compact-bank-c2-stack3-v3-20260930"
+  ],
+  "build_commands_note": "Recorded commands created existing retained evidence; builders refuse overwrite. New geometry requires new output paths and versioned runners with the new physical source.",
+  "rerun_command": "bash scripts/run-tools.sh python3 scripts/rerun-physical-stack3.py --tag new-run",
+  "rerun_scope": "12 fresh transients, 72 references, independent audits and joint placement comparison for this fixed physical two-column candidate. No pixel rebuild or full-bank qualification.",
+  "acquisition_us": 12.5,
+  "temperature_C": 125,
+  "lights_pA": [
+    240,
+    0
+  ],
+  "mos_corners": [
+    "typical",
+    "ss",
+    "ff"
+  ],
+  "placements": [
+    "port",
+    "far"
+  ],
+  "steps_ns": [
+    100,
+    50
+  ],
+  "physical_report": "simulations/compact-bank-physical-stack3-20260930.json",
+  "port_review": "simulations/compact-bank-physical-cycles-review-20260930.json",
+  "far_review": "simulations/compact-bank-physical-far-review-20260930.json",
+  "placement_report": "simulations/compact-bank-physical-stack3-placement-20260930.json",
+  "next_task": "Build separate 64-column three-device bank with the established ground grid, verify physical topology/DRC/LVS, then qualify 12.5 us fixture and run typical/SS/FF full-bank process cases.",
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false
+}

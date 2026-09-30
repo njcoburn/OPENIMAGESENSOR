@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "revision": "ground-grid-20260927-acq12",
+  "last_updated": "2026-09-30",
+  "scope": "Selected 64-column bank with one pixel row; typical process and nominal supply/wire. Not full-chip or exhaustive corner qualification.",
+  "layout": {
+    "directory": "build/compact-bank-c64-ground-grid-20260927",
+    "gds_sha256": "adb3f6afb6f6f5ac202c9097daf2c93adda1d99f515bcba69d35b1a91ecade8d",
+    "pixel_directory": "build/compact-pixel-v1-20260926",
+    "column_directory": "build/compact-capture-v4-20260926",
+    "pitch_um": 40,
+    "columns": 64,
+    "pixel_rows": 1
+  },
+  "tool_image": "hpretl/iic-osic-tools@sha256:7371bae55da486f492cc270ea6137c4fcf3b11971de7a4506a74f62be143537a",
+  "settings": {
+    "process": "typical",
+    "supply_V": 3.3,
+    "wire": "nominal extracted RC",
+    "temperatures_C": [
+      27,
+      125
+    ],
+    "steps_ns": [
+      100,
+      50
+    ],
+    "acquisition_us": 12,
+    "slot_us": 20,
+    "solver": "klu",
+    "integration": "trap",
+    "driver_form": "current",
+    "reads_per_transient": 128,
+    "references_per_coarse_run": 192,
+    "refined_run_references": 0
+  },
+  "limits_uV": {
+    "total_error": 500,
+    "output_tracking": 500,
+    "saved_sample_refinement": 10,
+    "physical_event_refinement": 10,
+    "placement_hold_store": 10
+  },
+  "cases": [
+    {
+      "id": "port-alternating-27",
+      "pattern": "alternating",
+      "temperature_C": 27,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-full.json",
+      "report_sha256": "0731750fcdf5efe81eb947a76686bafd5bf45f6b9d6c0b707c7e38df3fe581ac"
+    },
+    {
+      "id": "port-alternating-125",
+      "pattern": "alternating",
+      "temperature_C": 125,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-alternating125.json",
+      "report_sha256": "a5df6a2c36a2d5a638d880c7298b64a67631614e0642e4c7fc47bd40cd68549e"
+    },
+    {
+      "id": "port-inverse-27",
+      "pattern": "inverse",
+      "temperature_C": 27,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-inverse27.json",
+      "report_sha256": "317c4424bcba94df7054f66a942eb342dc690d12aecda9598324b0500c71f611"
+    },
+    {
+      "id": "port-inverse-125",
+      "pattern": "inverse",
+      "temperature_C": 125,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-full-hot.json",
+      "report_sha256": "ade2a6ae212cb8a625e30857b24cb93433d73f363d84f612782fa033fb5f8cd5"
+    },
+    {
+      "id": "port-dark-27",
+      "pattern": "dark",
+      "temperature_C": 27,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-uniform-dark27.json",
+      "report_sha256": "18a5dab65208247f3c8a2d0731cd31aac138cd4bbd41c4a9a6f193f9fe947014"
+    },
+    {
+      "id": "port-dark-125",
+      "pattern": "dark",
+      "temperature_C": 125,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-uniform-dark125.json",
+      "report_sha256": "4d29c430d00109ebcf44b9d5197f4090c9a9c5c13ed8bf8ca3f072f7bcc4ae2d"
+    },
+    {
+      "id": "port-middle-27",
+      "pattern": "middle",
+      "temperature_C": 27,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-uniform-middle27.json",
+      "report_sha256": "81e58efe4bd4554cba442db2bc1daee5f4c05dee8c10c50504ccd0f93822024f"
+    },
+    {
+      "id": "port-middle-125",
+      "pattern": "middle",
+      "temperature_C": 125,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-uniform-middle125.json",
+      "report_sha256": "6c4bc88010406e9b0b913667f340c71d00ff1c41c7790eff19989a0389351a70"
+    },
+    {
+      "id": "port-bright-27",
+      "pattern": "bright",
+      "temperature_C": 27,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-uniform-bright27.json",
+      "report_sha256": "5f3e46a59a4961c45a6791e573a9a2dc2d794e7a1ef1917dac4300d3cdd0ee60"
+    },
+    {
+      "id": "port-bright-125",
+      "pattern": "bright",
+      "temperature_C": 125,
+      "model": "rc-port",
+      "report": "simulations/compact-bank-64-uniform-bright125.json",
+      "report_sha256": "662cd50675b681f9397129964a4a195a118b0548c5c543d53920df41eb8ae1ef"
+    },
+    {
+      "id": "far-alternating-27",
+      "pattern": "alternating",
+      "temperature_C": 27,
+      "model": "rc-far",
+      "report": "simulations/compact-bank-64-placement-alternating27.json",
+      "baseline_case": "port-alternating-27",
+      "report_sha256": "56704c094f60ad4dc087aeb5640e80c10c58a232d6ab4ba53f0fef68c4775768"
+    },
+    {
+      "id": "far-inverse-125",
+      "pattern": "inverse",
+      "temperature_C": 125,
+      "model": "rc-far",
+      "report": "simulations/compact-bank-64-placement-inverse125.json",
+      "baseline_case": "port-inverse-125",
+      "report_sha256": "950c209c51500592f303531c148126096b84542dc41104998caf8b5d3e65f093"
+    }
+  ],
+  "automation": {
+    "end_to_end_rerun_available": false,
+    "available_command": "python3 scripts/update-verification-journal.py",
+    "available_command_scope": "Validate retained report identity and regenerate the journal result tables; does not run DRC, LVS, SPICE, or raw-evidence audits.",
+    "blockers": [
+      "Build and audit contracts contain fixed 40 \u00b5m pitch, pin coordinates and transistor/diode dimensions.",
+      "Full-bank auditors require the original dated plan and ground-only geometry comparison.",
+      "Existing launchers require old baseline hashes and use fixed published report filenames.",
+      "Process/supply settings and matched-reference helpers must be parameterized consistently.",
+      "Raw traces, upstream device GDS and installed PDK are not all contained in the Git checkpoint."
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-09-26",
+      "title": "Compact pixel, capture column and small joined controls",
+      "detail": "Established scoped geometry/connectivity and small-circuit screens; retained failed attempts and extraction limitations.",
+      "evidence": "docs/compact-pixel.md"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "Ground-return diagnosis and timing correction",
+      "detail": "An 8 \u00b5m bus alone failed selected readout at 1994.440 \u00b5V. Distributed return with 10 \u00b5s acquisition still failed at 547.178 \u00b5V; the same layout with 12 \u00b5s acquisition passed the selected diagnostic at 269.281 \u00b5V.",
+      "evidence": "docs/compact-bank-64-read-probes.md"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "First full-bank pairs",
+      "detail": "27 \u00b0C alternating and 125 \u00b0C inverse passed; four transients and 384 references. A validated reuse path retained the completed nominal transient and references.",
+      "evidence": "simulations/compact-bank-completion-review-20260928.json"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Crossed temperature/pattern pairs",
+      "detail": "Added 27 \u00b0C inverse and 125 \u00b0C alternating; alternating/inverse matrix reached eight transients and 768 references.",
+      "evidence": "simulations/compact-bank-cross-review-20260929.json"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Uniform dark",
+      "detail": "Both temperatures passed, four transients and 384 references; 4.04 hours including audits.",
+      "evidence": "simulations/compact-bank-uniform-dark-review-20260929.json"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Uniform middle",
+      "detail": "Both temperatures passed, four transients and 384 references; 3.65 hours including audits.",
+      "evidence": "simulations/compact-bank-uniform-middle-review-20260929.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Bright and automatic joint placement reviewed",
+      "detail": "Bright completed in 3.97 hours; joint far-node placement completed in 3.87 hours. All four plots reviewed and 3347 evidence files verified. Total selected bank coverage: 24 transients and 2304 references.",
+      "evidence": "simulations/compact-bank-overnight-review-20260930.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Living verification record",
+      "detail": "Added this catalogue, report-linked results and rerun dependency guide. This refresh command does not launch simulations; a general layout-to-results controller remains to be implemented.",
+      "evidence": "docs/verification-journal.html"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Journal embedded; first process-variation batch launched",
+      "detail": "Placed the expandable journal first in the overview. Fourteen process/watcher tests pass and the retained hot audit reproduces exactly. Small SS passes; small FF fails total accuracy at 1240.756 \u00b5V with a late-storage-drift indication. Started four current-layout SS/FF hot-inverse transients and 384 references; results pending. No accuracy limits changed.",
+      "evidence": "verification/compact-bank-process-suite.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Process batch completed: both total-error checks fail",
+      "detail": "All four simulations and 384 references completed in 2.92 hours. SS total error 512.924 \u00b5V, FF 2000.323 \u00b5V against 500 \u00b5V; tracking/refinement/contrast pass. Reviewed both plots and verified 1740 evidence files. Next: separate SS settling from FF retention and measure storage-terminal currents with bounded DC probes.",
+      "evidence": "simulations/compact-bank-process-review-20260930.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Storage leakage isolated; short candidate screens completed",
+      "detail": "Five balanced zero-volt current probes identify the NMOS capture switch as the dominant FF storage discharge path. Six length and four series-stack model-only DC cases complete; three devices reduce tested net leakage by about 70%. No layout or accuracy-qualified correction. Next: complete capture/readout transients for candidates and an SS acquisition-timing test.",
+      "evidence": "simulations/compact-bank-process-diagnosis-review-20260930.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Capture-switch candidates complete full small-bank cycles",
+      "detail": "20 fresh transients and 120 matched references reviewed. Three series NMOS devices pass the selected typical/SS/FF screen at 125 \u00b0C; FF total error falls from 1240.756 to 410.653 \u00b5V. Two devices still fail at 596.505 \u00b5V. Original-switch SS acquisition extension 12\u219212.5 \u00b5s reduces tracking from 281.789 to 206.737 \u00b5V. Model-only; physical and full-bank fixes remain pending. Four guard tests and all evidence hashes pass.",
+      "evidence": "simulations/compact-bank-capture-cycles-review-20260930.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Physical three-device capture candidate passes small-bank verification",
+      "detail": "Combined timing/model checks pass, followed by a separate physical nine-MOS column and 26-MOS/two-pixel bank. Magic/KLayout DRC, direct/collapsed LVS and 40 um abutment pass. Column outline and upper storage geometry are unchanged. Across port/far extractions, worst total errors are typical 152.197, SS 181.071 and FF 258.782 uV. Placement sensitivity <0.044 uV. This stage adds 18 transients and 108 references; the existing 64-column checkpoint and its process failures remain unchanged.",
+      "evidence": "simulations/compact-bank-physical-stack3-20260930.json"
+    }
+  ]
+}

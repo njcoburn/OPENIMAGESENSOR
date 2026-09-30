@@ -1,10 +1,21 @@
 # Sensor references
 
+Latest: [physical three-device capture candidate](overview.html#physical-stack3), with extracted-circuit results, DRC/LVS evidence, layout detail and a one-command electrical rerun. Full-bank candidate validation is next.
+
+Latest: [candidate capture-cycle results](overview.html#bank-capture-cycles), including the model-only three-device switch screen, acquisition extension, and exact rerun commands. Physical implementation and full-bank validation remain pending.
+
+[Process diagnosis and candidate comparisons](overview.html#bank-process-diagnosis):
+SS/FF screens completed with total-error failures. Direct probes locate the
+selected FF leakage path; length/series-stack DC candidates are screened but
+not yet transient- or layout-qualified. See the current handoff for correction work.
+
+[Verification journal and rerun guide](verification-journal.html): test explanations, all current bank results, running history and the path to a single-command rerun after pixel changes.
+
 [Current device layout](overview.html#current-device-layout): labeled exact GDS,
 pixel/readout close-up and dimensions of the 64-column bank plus one pixel row.
 [Portable layout checkpoint](../checkpoints/compact-bank-64-matrix/README.md).
 
-Current continuation: [64-column crossed temperature/pattern matrix](compact-bank-64-cross.md), with independent reports and plots in the [overview](overview.html#compact-bank-64-cross).
+Current status, 30 September: all [uniform dark/middle/bright cases](compact-bank-64-uniform.md) and the [alternating/inverse matrix](compact-bank-64-cross.md) pass at 27/125 °C. The selected [joint parasitic placements](overview.html#compact-bank-64-placement) also pass. No simulations remain active. Next are operating corners and remaining placement/local-supply checks; see [the handoff](../PICK_UP_HERE.md).
 
 The [16-column extension](overview.html#compact-bank-16-extension) passes
 its selected checks across **46 transients and 1,152 references**. Worst total
@@ -35,7 +46,7 @@ cases now pass: eight transients and 768 independent references. See
 [the current handoff](../PICK_UP_HERE.md) for the completed matrix and next coverage.
 
 These are bounded development screens. Full 16-column corner/placement
-coverage, remaining 64-column illumination patterns/corners, real drivers,
+coverage, remaining 64-column corners/individual placements, real drivers,
 repeated rows and exact 64×64 manufacturing qualification remain open.
 
 [Earlier: 16-column thermal and pattern screen](compact-bank-16-screen.md) —

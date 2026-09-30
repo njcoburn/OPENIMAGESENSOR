@@ -1,0 +1,73 @@
+{
+  "reviewed_at_utc": "2026-09-30T13:50:03.684134+00:00",
+  "scope": "Completed SS/FF 125 C inverse MOS-only screens; both fail total error, other checks pass.",
+  "distinct_evidence_files_verified": 1740,
+  "manifest_entries": {
+    "simulations/compact-bank-process-ss-inverse125-20260930-ssff.json": 922,
+    "simulations/compact-bank-process-ff-inverse125-20260930-ssff.json": 922,
+    "build/compact-bank-process-plan-20260930-ssff.json": 21
+  },
+  "hash_failures": [],
+  "completed_transients": 4,
+  "references_audited": 384,
+  "plots_reviewed": true,
+  "batch_elapsed_seconds": 10528.654635251994,
+  "simulation_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "watcher_exit_code": 1,
+  "watcher_exit_reason": "Intentional nonzero exit because measured electrical checks failed; audits completed without execution/render errors.",
+  "cases": [
+    {
+      "mos_corner": "ss",
+      "checks": {
+        "capture_readout": false,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true,
+        "contrast_order": true
+      },
+      "max_total_error_uV": 512.9241793602191,
+      "max_tracking_error_uV": 390.13992965264424,
+      "max_refinement_uV": 0.4393706940497566,
+      "event_refinement_worst": {
+        "event": "pre_capture",
+        "column": 59,
+        "quantity": "upper_V",
+        "difference_uV": 0.09764576625048704
+      }
+    },
+    {
+      "mos_corner": "ff",
+      "checks": {
+        "capture_readout": false,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true,
+        "contrast_order": true
+      },
+      "max_total_error_uV": 2000.3229003759948,
+      "max_tracking_error_uV": 4.532695856429569,
+      "max_refinement_uV": 0.10870858868639033,
+      "event_refinement_worst": {
+        "event": "pre_capture",
+        "column": 27,
+        "quantity": "store_V",
+        "difference_uV": 0.10080054912986469
+      }
+    }
+  ],
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "review_elapsed_seconds": 83.3725693320157,
+  "reviewed_hashes": {
+    "simulations/compact-bank-process-ss-inverse125-20260930-ssff.json": "f06ed3e7c91c8ed347d7d734a4812ddaea88d028a4dbc57bfbcfb48c9c400a79",
+    "simulations/compact-bank-process-ff-inverse125-20260930-ssff.json": "9196e5625dd3b0da7e77c06ea567ebda591090ec7491cb11e30b62dc9f81c05c",
+    "docs/assets/compact-bank-process-ss-inverse125-20260930-ssff.png": "815a606184ccb56f7e309ef3fe27de789943dbeb958f1ed77becb05fde1892e0",
+    "docs/assets/compact-bank-process-ff-inverse125-20260930-ssff.png": "4badb0ebc0eca0512354e9a7232414e5ef6c17e5ed2299c541ba07cae7a0b6c1",
+    "build/compact-bank-process-watch-20260930-ssff/status.json": "f6f82774719c2ea947ba4674f1753e3e9c6a73b2a2eb8807d5a9ba467cd87920"
+  }
+}

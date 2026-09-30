@@ -1,7 +1,70 @@
 # Open Image Sensor
 
+**Latest, 30 September — physical candidate verified:** the three-device capture
+switch is implemented in a separate column and two-column bank. DRC/LVS and
+40 µm abutment pass. With 12.5 µs acquisition, extracted typical/SS/FF worst total
+errors are 152.197/181.071/258.782 µV across port/far placement (limit 500 µV).
+Placement sensitivity is below 0.044 µV. This stage completed 18 transients and
+108 references. Next: separate 64-column candidate build and process validation.
+No simulation jobs remain active; the old 64-column checkpoint is unchanged.
+[Physical candidate and rerun guide](docs/overview.html#physical-stack3) · [Handoff](PICK_UP_HERE.md).
+Earlier status entries below are historical.
+
+**Latest, 30 September — candidate cycle tests reviewed:** 20 transients and
+120 references are complete. Three series NMOS capture devices pass the selected
+two-column typical/SS/FF screen; FF error improves from 1240.756 to 410.653 µV
+(limit 500 µV). A separate 12.5 µs acquisition test improves SS settling.
+Next: check the combined changes, implement a separate physical column revision,
+verify extraction/DRC/LVS and small-bank behavior, then repeat full-bank corners.
+The current GDS and its known process failures remain unchanged. No jobs are active.
+[Results and rerun guide](docs/overview.html#bank-capture-cycles) · [Handoff](PICK_UP_HERE.md).
+Earlier status entries below are historical.
+
+**Diagnosis completed, 30 September:** the process failures are reviewed and
+short current/candidate tests are complete. FF retention is dominated by the
+NMOS capture switch in the probed states; series devices reduce DC leakage but
+are not yet a validated correction. Next: candidate capture/readout transients
+and an SS acquisition-timing test. No new long batch is active.
+[Diagnosis and plots](docs/overview.html#bank-process-diagnosis) · [Handoff](PICK_UP_HERE.md).
+
+**Current, 30 September:** the SS/FF process batch finished. Both total-error
+checks fail (512.924 / 2000.323 µV vs 500 µV); other selected checks pass. All
+384 references are audited and 1,740 evidence files verify. Next is diagnosis
+of SS output settling and FF storage retention, before more corner coverage.
+[Review](simulations/compact-bank-process-review-20260930.json) · [Handoff](PICK_UP_HERE.md).
+Earlier active-job descriptions below are historical.
+
+**Active, 30 September:** the first SS/FF MOS-process batch is running at
+125 °C inverse illumination: four 100/50 ns transients and 384 planned references,
+with an independent watcher. The small FF control failed capture/storage accuracy;
+that failure is retained while measuring the actual 64-column layout. Results
+are pending. [Overview journal](docs/overview.html#verification-journal) ·
+[Profile and scope](verification/compact-bank-process-suite.json) · [Handoff](PICK_UP_HERE.md).
+
+[Verification journal and rerun guide](docs/verification-journal.html) explains every test, records results and tracks what is needed for repeatable pixel-layout experiments.
+
+**Completed and reviewed, 30 September:** bright illumination and the authorized
+joint parasitic-placement batch both pass. All five illumination patterns now
+pass at 27/125 °C: 20 transients and 1,920 independent references, plus four
+placement transients and 384 references. Those baseline jobs are complete; the process batch above is active.
+Next: process/wire/supply corners and remaining placement/local-supply checks,
+then real drivers and repeated rows. Full-chip qualification remains open.
+[Completion review](simulations/compact-bank-overnight-review-20260930.json) · [Handoff](PICK_UP_HERE.md).
+
 **Current goal: 64×64 first silicon on wafer.space GF180, with modest frame rate.**
 [Completion plan](COMPLETION_PLAN.md) · [Next steps](NEXT_STEPS.md) · [Handoff](PICK_UP_HERE.md)
+
+**Overnight results:** bright total error is 359.158/402.995 µV at 27/125 °C
+against 500 µV. Joint relocation of 67 conserved shunts passes at 27 °C
+alternating and 125 °C inverse; the largest HOLD/STORE change is 1.527 µV
+against 10 µV. Bright and placement took 3.97 and 3.87 hours respectively,
+including audits. All ten simulation/audit containers exited successfully.
+
+**Completed and reviewed, 29 September:** uniform dark passes at 27/125 °C:
+248.852/411.912 µV worst total error against 500 µV, with four completed transients
+and 384 audited references. The batch finished in 4.04 hours. Nothing from this
+batch is still running; middle and bright have also passed as described above.
+[Uniform results](docs/overview.html#compact-bank-64-uniform).
 
 [View the current device layout](docs/overview.html#current-device-layout) — labeled
 GDS and close-up of the implemented 64-column bank plus one pixel row, measuring
@@ -13,7 +76,7 @@ The full 64×64 chip remains to be assembled.
 cases reach 387.179/430.383 µV worst total error, below 500 µV. All eight matrix
 transients and 768 references are audited; maximum saved-sample refinement is
 0.150 µV, below 10 µV. All 1,707 distinct new evidence files verify. The jobs and
-auditor finished successfully; no new batch is running.
+auditor finished successfully; the completed uniform-dark batch is described above.
 [Temperature/pattern matrix](docs/overview.html#compact-bank-64-cross)
 
 **Completed, 28 September:** both earlier complete 64-column bank screens **pass**.
@@ -23,8 +86,8 @@ across the nominal alternating and hot inverse cases. Worst total error is
 100/50 ns difference is **0.133 µV**, below 10 µV. All 1,711 distinct evidence
 files verified. The jobs and auditor have finished successfully.
 
-Next are uniform dark/middle/bright illumination at both temperatures, followed
-by corner/placement coverage before real drivers and repeated rows.
+All five illumination patterns at both temperatures now pass. Remaining
+corner/placement coverage precedes real drivers and repeated rows.
 Full-chip qualification remains open.
 [Results and plots](docs/overview.html#compact-bank-64-full) · [Current handoff](PICK_UP_HERE.md)
 
@@ -59,7 +122,7 @@ nominal/hot inverse pairs now pass their complete selected audits. See
 PICK_UP_HERE.md for results and the next coverage batch.
 
 These are bounded development screens. Full 16-column corner/placement
-coverage, remaining full-bank patterns/corners, real drivers, repeated rows
+coverage, remaining full-bank corners/individual placements, real drivers, repeated rows
 and exact 64×64 manufacturing qualification remain open.
 
 **Original geometry constraint:** the older array and bank do not fit a standard

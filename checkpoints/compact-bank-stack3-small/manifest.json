@@ -1,0 +1,42 @@
+{
+  "scope": "Verified physical two-column three-NMOS candidate; 125 C inverse, typical/SS/FF and 12.5 us acquisition. Not a full-bank/full-chip checkpoint.",
+  "full_bank_accuracy_qualified": false,
+  "files": {
+    "column.gds.gz": {
+      "source": "build/compact-capture-stack3-v2-20260930/column.gds",
+      "uncompressed_sha256": "7350d766307bfd46f96eaaac89a8f9d4fbe092bc874509b99f22a9f6521f19a0",
+      "archive_sha256": "893f9304f1623b746841ea4c9a4f35551e55bc86884128faca92e3545ca20c3f"
+    },
+    "bank.gds.gz": {
+      "source": "build/compact-bank-c2-stack3-v3-20260930/bank.gds",
+      "uncompressed_sha256": "729394f783f36b1fa298bc65c80309c96dfd1c67c04d5dc3eb26717071a7d3f1",
+      "archive_sha256": "674ae72f65b20418c89866bcd70089c4b50d9751c65e5e5336fd81a7509af22a"
+    },
+    "rc-port.spice.gz": {
+      "source": "build/compact-bank-c2-stack3-v3-20260930/rc-port.spice",
+      "uncompressed_sha256": "1ca74cfd45ac4f8f9f1539e1036fd4fc697f5d49c05dda215eba06c4c3d39ec9",
+      "archive_sha256": "6e2073206adac50b218c18a3f4ca8627f979d283d070e3cdea86d8257d899b5e"
+    },
+    "rc-far.spice.gz": {
+      "source": "build/compact-bank-c2-stack3-v3-20260930/rc-far.spice",
+      "uncompressed_sha256": "b4697f19938a3101f5ce1aa623910ff5bc997dd3e089d50920c9d023e8801bb8",
+      "archive_sha256": "0e45aae5e150fa8a44dc307656098c758ff3ebcce04618db398c9485d6a6a313"
+    },
+    "column-verification.json": {
+      "source": "build/compact-capture-stack3-v2-20260930/verification.json",
+      "sha256": "977d474633579537eb91af5f7dd56fd94e9236dd56ac837b1e53a943281aafc6"
+    },
+    "bank-verification.json": {
+      "source": "build/compact-bank-c2-stack3-v3-20260930/verification.json",
+      "sha256": "786757182ff798e96a23c3d8ad881144e6414160b9437ef41354e2bfdfd34f05"
+    },
+    "capture-column-stack3.spice": {
+      "source": "circuits/capture-column-stack3.spice",
+      "sha256": "5fa62952db1b2950cdcae3ac910f71e5a436a55830509af3896e9f12cdbaec76"
+    },
+    "profile.json": {
+      "source": "verification/compact-bank-physical-stack3.json",
+      "sha256": "ffc1b3718871860b0885feb13e5510e442a446a5722e7199c9c6eedb0c2342a3"
+    }
+  }
+}

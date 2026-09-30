@@ -1,0 +1,32 @@
+{
+  "reviewed_at_utc": "2026-09-30T16:18:21.066799+00:00",
+  "scope": "Combined candidate, physical small-bank port/far cycles and physical geometry; no full-bank claim.",
+  "reviewed_transients": 18,
+  "reviewed_references": 108,
+  "distinct_evidence_files_verified": 951,
+  "hash_failures": [],
+  "plot_visually_reviewed": true,
+  "connectivity_guard_tests": 6,
+  "electrical_guard_tests": 12,
+  "rerun_wrapper_plan_checked": true,
+  "rerun_wrapper_execution_scope": "Constituent stages executed and reviewed separately; wrapper plan checked, no redundant complete rerun.",
+  "prior_pinned_dependencies_preserved": 25,
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "reviewed_hashes": {
+    "simulations/compact-bank-combined-cycles-20260930.json": "8be0814e15f5dcb3fa211ef8d7dfbff447ccb1a54a3dd2dc849e685b99452499",
+    "simulations/compact-bank-combined-review-20260930.json": "db8ce8e47e9cc8b8c6ecdc6312596fbd94db3d17fb2b441cd38cb9b943600130",
+    "simulations/compact-bank-physical-stack3-20260930.json": "4b535d8a883b94a04834db9d1126c0ddd4e9f40652bcde97bd6e885a296b224b",
+    "simulations/compact-bank-physical-cycles-20260930.json": "be71dc57fd92ba6dd74110c9f6aef2b584fead8f82abcd19cd183c63f5139b3d",
+    "simulations/compact-bank-physical-cycles-review-20260930.json": "ff75212749f4e9e2e09d482b3ab0d828ac73bd7aa8345ec12f52d448467f6a0b",
+    "simulations/compact-bank-physical-far-cycles-20260930.json": "b1be16e99cbaba4f4b438afbd58bcba028ef6923e3b55107f715b07f113ac830",
+    "simulations/compact-bank-physical-far-review-20260930.json": "1d25a53c2d3676257b8d5edb652b30c5cb254b5f7a8d0c6308e032125f2d32c1",
+    "simulations/compact-bank-physical-stack3-placement-20260930.json": "a1be7b1fea2250d8bfb39aa624b75876b5bb76506924f218fa8bc26d15ee36ee",
+    "scripts/publish-physical-stack3.py": "65592749ed696ab3fe426a71dcd4f004d62da4436d862fb2b07599c2e8e3d79f",
+    "scripts/render-physical-stack3-layout.py": "405ce6459152b2740b2c95900c978f9d576f7dc04d72caa41a5a660c15948328",
+    "scripts/compare-physical-stack3-placement.py": "a76804836e8f4ed2b36b7d7c4f4d4035476e50545909951decaa0f55ed94a104",
+    "scripts/rerun-physical-stack3.py": "3dd512c09fe974ccec3b9f890be8c606436ee277c873300b1b9a26694e994e95",
+    "docs/assets/compact-bank-physical-stack3-detail-20260930.png": "53947afc65fc18a7efe4c904df3a6f80d4fc3e3fa8b64deb6b3762b0959e7f8c",
+    "checkpoints/compact-bank-stack3-small/manifest.json": "75ff11db211f3705d9cd7fe136ded17118c8239b8fdcbc515318ec5bd8bc2d84"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "corner": "typical",
+      "max_hold_store_placement_difference_uV": 0.04263207631360899,
+      "limit_uV": 10,
+      "selected_pass": true
+    },
+    {
+      "corner": "ss",
+      "max_hold_store_placement_difference_uV": 0.043238652103205766,
+      "limit_uV": 10,
+      "selected_pass": true
+    },
+    {
+      "corner": "ff",
+      "max_hold_store_placement_difference_uV": 0.04322558400104981,
+      "limit_uV": 10,
+      "selected_pass": true
+    }
+  ],
+  "scope": "Same extracted physical two-column candidate; move all four conserved shunt groups jointly from port to far placement; compare HOLD and both STORE nodes at both timesteps.",
+  "full_bank_accuracy_qualified": false,
+  "evidence_hashes": {
+    "build/compact-bank-physical-cycles-20260930/stack3-typical-acq12.5-100/candidate-result.json": "58bfd83e367cc981cd8c6d4a0ae573450a8f6bca918c6ff89a967ba350396bf3",
+    "build/compact-bank-physical-far-cycles-20260930/stack3-typical-acq12.5-100/candidate-result.json": "962558cca6c8f641eac740cb92dcc3dcebd3a08bc5f5427a26812f899f786a12",
+    "build/compact-bank-physical-cycles-20260930/stack3-typical-acq12.5-50/candidate-result.json": "a1ae1a9304a169e611b1fcd456d3156724e8dd905fefd3d0527bf183deae82d1",
+    "build/compact-bank-physical-far-cycles-20260930/stack3-typical-acq12.5-50/candidate-result.json": "1e38c29f9b871e5cbcb8249520c93cd8eb3971f1a7b30117adecb157f3a0c215",
+    "build/compact-bank-physical-cycles-20260930/stack3-ss-acq12.5-100/candidate-result.json": "bcd570cec89e86b6bdd7318fa509631310baa701a8fe77d362d4b250ef06f851",
+    "build/compact-bank-physical-far-cycles-20260930/stack3-ss-acq12.5-100/candidate-result.json": "b8292fd86c0c2ac84f29a0f38e2022762d14805856143d4436cea69ec582eaf9",
+    "build/compact-bank-physical-cycles-20260930/stack3-ss-acq12.5-50/candidate-result.json": "de532d2bd3d0905dea483965bbe14fbed2baa45b559d78bd53976730417558aa",
+    "build/compact-bank-physical-far-cycles-20260930/stack3-ss-acq12.5-50/candidate-result.json": "f77a5c29f00e24ee067266b0e9e0bc0403c48bee58d4741d2193ba87f7d8637c",
+    "build/compact-bank-physical-cycles-20260930/stack3-ff-acq12.5-100/candidate-result.json": "61959eada1d0025f93f8592d7636d73b62e1456118f47588b24a3958ed54d193",
+    "build/compact-bank-physical-far-cycles-20260930/stack3-ff-acq12.5-100/candidate-result.json": "0237a84b73f000374df1386cfca98b7824eb6075abeb61be3bc685b9993a57a8",
+    "build/compact-bank-physical-cycles-20260930/stack3-ff-acq12.5-50/candidate-result.json": "c230d1eb4279f101e13d87d5088e7b35bd0875e333826eb2299a96c2b8f256bb",
+    "build/compact-bank-physical-far-cycles-20260930/stack3-ff-acq12.5-50/candidate-result.json": "06972906a69b94bf96194a1f1efc326e67c29d2e9209017ac2d7b704fa329ab3"
+  }
+}

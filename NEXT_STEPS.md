@@ -1,7 +1,77 @@
 # Next steps — 64×64 on wafer.space GF180
 
+**Latest, 30 September — physical candidate verified:** the three-device capture
+switch is implemented in a separate column and two-column bank. DRC/LVS and
+40 µm abutment pass. With 12.5 µs acquisition, extracted typical/SS/FF worst total
+errors are 152.197/181.071/258.782 µV across port/far placement (limit 500 µV).
+Placement sensitivity is below 0.044 µV. This stage completed 18 transients and
+108 references. Next: separate 64-column candidate build and process validation.
+No simulation jobs remain active; the old 64-column checkpoint is unchanged.
+[Physical candidate and rerun guide](docs/overview.html#physical-stack3) · [Handoff](PICK_UP_HERE.md).
+Earlier status entries below are historical.
+
+**Latest, 30 September — candidate cycle tests reviewed:** 20 transients and
+120 references are complete. Three series NMOS capture devices pass the selected
+two-column typical/SS/FF screen; FF error improves from 1240.756 to 410.653 µV
+(limit 500 µV). A separate 12.5 µs acquisition test improves SS settling.
+Next: check the combined changes, implement a separate physical column revision,
+verify extraction/DRC/LVS and small-bank behavior, then repeat full-bank corners.
+The current GDS and its known process failures remain unchanged. No jobs are active.
+[Results and rerun guide](docs/overview.html#bank-capture-cycles) · [Handoff](PICK_UP_HERE.md).
+Earlier status entries below are historical.
+
+**Diagnosis completed, 30 September:** the process failures are reviewed and
+short current/candidate tests are complete. FF retention is dominated by the
+NMOS capture switch in the probed states; series devices reduce DC leakage but
+are not yet a validated correction. Next: candidate capture/readout transients
+and an SS acquisition-timing test. No new long batch is active.
+[Diagnosis and plots](docs/overview.html#bank-process-diagnosis) · [Handoff](PICK_UP_HERE.md).
+
+**Current, 30 September:** the SS/FF process batch finished. Both total-error
+checks fail (512.924 / 2000.323 µV vs 500 µV); other selected checks pass. All
+384 references are audited and 1,740 evidence files verify. Next is diagnosis
+of SS output settling and FF storage retention, before more corner coverage.
+[Review](simulations/compact-bank-process-review-20260930.json) · [Handoff](PICK_UP_HERE.md).
+Earlier active-job descriptions below are historical.
+
+**Active, 30 September:** the first SS/FF MOS-process batch is running at
+125 °C inverse illumination: four 100/50 ns transients and 384 planned references,
+with an independent watcher. The small FF control failed capture/storage accuracy;
+that failure is retained while measuring the actual 64-column layout. Results
+are pending. [Overview journal](docs/overview.html#verification-journal) ·
+[Profile and scope](verification/compact-bank-process-suite.json) · [Handoff](PICK_UP_HERE.md).
+
+**User-selected next step, 30 September:** proceed with process variation now.
+Start with a bounded SS/FF MOS-only batch at 125 °C inverse, after typical-deck
+regression, a retained full-bank audit control and small physical SS/FF controls.
+The general pixel-rerun controller remains future work. See the
+[process profile](verification/compact-bank-process-suite.json) and
+[handoff](PICK_UP_HERE.md) for launch status; earlier proposed priorities below
+are superseded by this instruction.
+
+**30 September — documentation and repeatability:** the user requested a detailed test explanation and a running record before proceeding. See the [verification journal](docs/verification-journal.html). The next proposed implementation task is a versioned manifest-driven rerun controller, validated against the current baseline, followed by the remaining operating-corner profile. No new simulations were launched for this documentation task.
+
+**Completed and reviewed, 30 September:** bright illumination and the authorized
+joint parasitic-placement batch both pass. All five illumination patterns now
+pass at 27/125 °C: 20 transients and 1,920 independent references, plus four
+placement transients and 384 references. Those baseline jobs are complete; the process batch above is active.
+Next: process/wire/supply corners and remaining placement/local-supply checks,
+then real drivers and repeated rows. Full-chip qualification remains open.
+[Completion review](simulations/compact-bank-overnight-review-20260930.json) · [Handoff](PICK_UP_HERE.md).
+
 The user prioritizes working first silicon at a modest frame rate.
 [The completion plan](COMPLETION_PLAN.md) is the current source of priorities.
+
+**Overnight results:** bright total error is 359.158/402.995 µV at 27/125 °C
+against 500 µV. Joint relocation of 67 conserved shunts passes at 27 °C
+alternating and 125 °C inverse; the largest HOLD/STORE change is 1.527 µV
+against 10 µV. Bright and placement took 3.97 and 3.87 hours respectively,
+including audits. All ten simulation/audit containers exited successfully.
+
+**Reviewed 29 September:** uniform dark passes at both temperatures, with
+248.852/411.912 µV worst total error against 500 µV. Four transients and 384
+references are complete; all five containers exited successfully after 4.04 hours.
+Middle (80 pA) and bright (240 pA) subsequently passed at both temperatures. [Current handoff](PICK_UP_HERE.md) · [Uniform results](docs/compact-bank-64-uniform.md).
 
 **Reviewed 29 September:** all four alternating/inverse temperature combinations
 pass: eight transients and 768 references. The new 27 °C inverse / 125 °C alternating
@@ -39,15 +109,16 @@ nominal/hot inverse pairs now pass their complete selected audits. See
 PICK_UP_HERE.md for results and the next coverage batch.
 
 These are bounded development screens. Full 16-column corner/placement
-coverage, remaining full-bank patterns/corners, real drivers, repeated rows
+coverage, remaining full-bank corners/individual placements, real drivers, repeated rows
 and exact 64×64 manufacturing qualification remain open.
 
-1. Extend the independent auditor for uniform dark/middle/bright patterns
-   (0/80/240 pA per pixel), preserving the current hash-pinned source and verifying
-   the new path before launching long jobs. Test all three at 27/125 °C with
-   100/50 ns comparisons and 192 matched references per 100 ns case. Six cases
-   imply 12 transients and 1,152 references; schedule bounded batches. Do not
-   relabel uniform illumination as alternating/inverse to bypass assertions.
+1. Define the next bounded process/wire/supply-corner matrix and a separately
+   versioned runner/auditor: the current full-bank runner fixes typical process
+   and nominal supply. Verify deck generation and matched references before
+   launching long runs. Preserve all hash-pinned sources and use fresh outputs.
+   Uniform illumination is complete; joint far-node placement passes the two
+   selected cases, while individual placements and local supply/reference drops
+   remain open.
 2. Use `build/compact-bank-c64-ground-grid-20260927` for the revised ground
    routing and retain `build/compact-bank-c64-ground8-20260927` as its failing
    selected-read control. The original `build/compact-bank-c64-v1-20260926`

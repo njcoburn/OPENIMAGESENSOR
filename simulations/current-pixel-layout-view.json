@@ -1,0 +1,49 @@
+{
+  "source": "checkpoints/compact-bank-64-matrix/bank.gds.gz",
+  "gds_sha256": "adb3f6afb6f6f5ac202c9097daf2c93adda1d99f515bcba69d35b1a91ecade8d",
+  "row": 0,
+  "column": 0,
+  "view_box_um": [
+    -2,
+    -122,
+    42,
+    -78
+  ],
+  "pixel_translation_um": [
+    0,
+    -120
+  ],
+  "pitch_um": 40,
+  "transistor_centers_um": {
+    "reset": [
+      6,
+      -92
+    ],
+    "source_follower": [
+      14,
+      -92
+    ],
+    "row_select": [
+      22,
+      -92
+    ]
+  },
+  "diode_junction_um": [
+    4,
+    -117,
+    24,
+    -97
+  ],
+  "clear_aperture_um": [
+    5,
+    -116,
+    23,
+    -98
+  ],
+  "annotation_source": "scripts/build-compact-pixel.py",
+  "scope": "Actual GDS crop with explanatory labels; no geometry or qualification changes.",
+  "images": [
+    "docs/assets/current-pixel-layout.png",
+    "docs/assets/current-pixel-layout-labeled.png"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "reviewed_at_utc": "2026-09-30T15:31:23.255459+00:00",
+  "scope": "Two-column model-only candidate cycle screen; original physical bank remains unchanged.",
+  "reviewed_transients": 20,
+  "reviewed_references": 120,
+  "verified_screen_hashes": 790,
+  "regenerated_parent_fixtures": 20,
+  "guard_tests_passed": 4,
+  "plot_visually_reviewed": true,
+  "original_process_launch_dependencies_preserved": 21,
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "reviewed_hashes": {
+    "simulations/compact-bank-capture-cycles-20260930.json": "9ed17ab6e665f8994142e9797275d606bbadf617f6956002e66185398010dc71",
+    "simulations/compact-bank-capture-cycles-review-20260930.json": "83310f4bfc9d4affd84618027df1ecf47dd472b9eaca1162192e6767303b81a8",
+    "scripts/render-bank-capture-cycles.py": "5f859f0f5785ea28e10f2949508d714c67301f180765a796e716885ca027fd62",
+    "docs/assets/compact-bank-capture-cycles-20260930.png": "65362965d89abb3eb7de34e832eb37130480daa9435c3a4c28e83564803b72b8"
+  }
+}

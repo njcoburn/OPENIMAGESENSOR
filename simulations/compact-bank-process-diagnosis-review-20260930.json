@@ -1,0 +1,24 @@
+{
+  "reviewed_at_utc": "2026-09-30T14:03:39.628344+00:00",
+  "scope": "Completed retained-waveform decomposition, five balanced current probes, six length and four stack DC candidate cases. No new layout or accuracy-qualified correction.",
+  "distinct_evidence_files_verified": 120,
+  "hash_failures": [],
+  "direct_probe_cases": 5,
+  "length_cases": 6,
+  "stack_cases": 4,
+  "plot_reviewed": true,
+  "first_probe_attempt": "build/compact-bank-storage-leakage-20260930: voltage-subtraction clamp estimate failed pA current balance; retained and superseded by direct clamp probe",
+  "max_probe_kcl_residual_pA": 0.0025398249876005252,
+  "max_probe_voltage_difference_uV": 2.4811264154323e-06,
+  "physical_layout_changed": false,
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "reviewed_hashes": {
+    "simulations/compact-bank-process-retention-20260930.json": "665600b2ac18c981bb672830307cec2cd314e5bb10bcab2b55db2c9f4c453114",
+    "simulations/compact-bank-storage-leakage-20260930.json": "7cc1baa18b79e0425b43f827781cbced8dbce90cc1a092b383bad09db8a8c21e",
+    "simulations/compact-bank-hold-length-screen-20260930.json": "c6d103c95e850dcc0538c2814e87581dbcba4380d30bbdeb0be09aaa6241cd59",
+    "simulations/compact-bank-hold-stack-screen-20260930.json": "d3b4722c75a3dbca5bab35f74a09c0b2ae98a989ed53f627713662fc28b0c6ed",
+    "docs/assets/compact-bank-process-diagnosis-20260930.png": "4a836d1ac34bc676de5abc043ecfe71701eee6ba41406f09ea0ec3f2bbb8654a",
+    "scripts/render-bank-process-diagnosis.py": "1e0fae2c23f9b4dfce1e86b389583fb53f28c572d5c5964c20a2eaf808146c95"
+  }
+}

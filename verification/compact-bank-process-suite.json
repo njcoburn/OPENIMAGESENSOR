@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "revision": "ground-grid-20260927-acq12",
+  "profile": "mos-ss-ff-hot-inverse",
+  "state": "completed_reviewed_both_total_error_failed",
+  "layout": "build/compact-bank-c64-ground-grid-20260927",
+  "scope": "SS and FF MOS-only corners, 125 C inverse, nominal 3.3 V source/wire and typical diode/MIM. Four fresh 100/50 ns transients and 384 matched references. No subsequent batch auto-started.",
+  "corners": [
+    "ss",
+    "ff"
+  ],
+  "temperature_C": 125,
+  "pattern": "inverse",
+  "diode_corner": "typical",
+  "mim_corner": "typical",
+  "supply_V": 3.3,
+  "wire": "nominal extracted RC",
+  "cases": [
+    {
+      "name": "ss-inverse125",
+      "mos_corner": "ss",
+      "temperature": 125,
+      "pattern": "inverse",
+      "coarse": "build/compact-bank-process-ss-inverse125-100-20260930-ssff",
+      "fine": "build/compact-bank-process-ss-inverse125-50-20260930-ssff",
+      "report": "compact-bank-process-ss-inverse125-20260930-ssff.json",
+      "baseline_report": "simulations/compact-bank-64-full-hot.json"
+    },
+    {
+      "name": "ff-inverse125",
+      "mos_corner": "ff",
+      "temperature": 125,
+      "pattern": "inverse",
+      "coarse": "build/compact-bank-process-ff-inverse125-100-20260930-ssff",
+      "fine": "build/compact-bank-process-ff-inverse125-50-20260930-ssff",
+      "report": "compact-bank-process-ff-inverse125-20260930-ssff.json",
+      "baseline_report": "simulations/compact-bank-64-full-hot.json"
+    }
+  ],
+  "steps_ns": [
+    100,
+    50
+  ],
+  "planned_transients": 4,
+  "planned_references": 384,
+  "limits_uV": {
+    "total_error": 500,
+    "output_tracking": 500,
+    "saved_sample_refinement": 10,
+    "physical_event_refinement": 10
+  },
+  "baseline_report": "simulations/compact-bank-64-full-hot.json",
+  "pdk_provenance": "simulations/compact-bank-process-pdk-20260930.json",
+  "launch_command": "python3 scripts/launch-bank-process.py --tag 20260930-ssff --tests build/compact-bank-process-tests-20260930-v3/result.json --control build/compact-bank-process-control-review-20260930/result.json --pdk simulations/compact-bank-process-pdk-20260930.json",
+  "remaining": [
+    "Mixed MOS corners fs/sf",
+    "Other temperatures and illumination patterns at non-typical MOS",
+    "Diode and MIM process variations",
+    "Supply and wire corners",
+    "Local rail checks, real drivers, repeated rows and full-chip qualification"
+  ],
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "launch_plan": "build/compact-bank-process-plan-20260930-ssff.json",
+  "watcher_status": "build/compact-bank-process-watch-20260930-ssff/status.json",
+  "notification_state": "build/compact-bank-process-notification-20260930-ssff.json",
+  "preparation_tests": "build/compact-bank-process-tests-20260930-v3/result.json",
+  "control_review": "simulations/compact-bank-process-controls-20260930.json",
+  "small_control_electrical_results": [
+    {
+      "mos_corner": "ss",
+      "selected_screen_pass": true
+    },
+    {
+      "mos_corner": "ff",
+      "selected_screen_pass": false
+    }
+  ],
+  "completion_review": "simulations/compact-bank-process-review-20260930.json",
+  "next_task": "Build separate 64-column three-device bank with the established ground grid, verify physical topology/DRC/LVS, then qualify 12.5 us fixture and run typical/SS/FF full-bank process cases.",
+  "diagnosis_review": "simulations/compact-bank-process-diagnosis-review-20260930.json",
+  "candidate_screen_profile": "verification/compact-bank-capture-candidates.json",
+  "physical_candidate_profile": "verification/compact-bank-physical-stack3.json"
+}

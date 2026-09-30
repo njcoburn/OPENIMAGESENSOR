@@ -1,0 +1,797 @@
+{
+  "scope": "Measure DC storage-terminal currents with auditable zero-volt series probes.\n\nThe source is a retained matched-state output reference. Circuit devices, values,\nmodels, tolerances and frozen states are unchanged; eleven zero-volt device probes, a clamp probe and\ncurrent saves are added. This is a diagnostic, not a corrected layout or pass.\n",
+  "transform_controls_pass": true,
+  "cases": [
+    {
+      "mos_corner": "typical",
+      "column": 63,
+      "scan": "last",
+      "source_report": "simulations/compact-bank-64-full-hot.json",
+      "source_reference": "build/compact-bank-c64-resume-hot-inverse100-20260928/last63-output-reference",
+      "probes": [
+        {
+          "role": "mim_0",
+          "instance": "X63",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t4",
+          "probe": "VDIAG_mim_0",
+          "new_node": "DIAG_mim_0",
+          "original": "X63 STORE63.t4 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X63 DIAG_mim_0 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_1",
+          "instance": "X189",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t5",
+          "probe": "VDIAG_mim_1",
+          "new_node": "DIAG_mim_1",
+          "original": "X189 STORE63.t5 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X189 DIAG_mim_1 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_2",
+          "instance": "X280",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t8",
+          "probe": "VDIAG_mim_2",
+          "new_node": "DIAG_mim_2",
+          "original": "X280 STORE63.t8 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X280 DIAG_mim_2 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "follower_gate",
+          "instance": "X352",
+          "pin_index": 2,
+          "store_terminal": "STORE63.t10",
+          "probe": "VDIAG_follower_gate",
+          "new_node": "DIAG_follower_gate",
+          "original": "X352 GND.t738 STORE63.t10 CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u",
+          "replacement": "X352 GND.t738 DIAG_follower_gate CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u"
+        },
+        {
+          "role": "mim_3",
+          "instance": "X391",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t9",
+          "probe": "VDIAG_mim_3",
+          "new_node": "DIAG_mim_3",
+          "original": "X391 STORE63.t9 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X391 DIAG_mim_3 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_4",
+          "instance": "X420",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t2",
+          "probe": "VDIAG_mim_4",
+          "new_node": "DIAG_mim_4",
+          "original": "X420 STORE63.t2 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X420 DIAG_mim_4 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_5",
+          "instance": "X633",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t6",
+          "probe": "VDIAG_mim_5",
+          "new_node": "DIAG_mim_5",
+          "original": "X633 STORE63.t6 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X633 DIAG_mim_5 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_6",
+          "instance": "X763",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t7",
+          "probe": "VDIAG_mim_6",
+          "new_node": "DIAG_mim_6",
+          "original": "X763 STORE63.t7 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X763 DIAG_mim_6 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "hold_n",
+          "instance": "X900",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t1",
+          "probe": "VDIAG_hold_n",
+          "new_node": "DIAG_hold_n",
+          "original": "X900 COL63.t1 SC.t0 STORE63.t1 GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u",
+          "replacement": "X900 COL63.t1 SC.t0 DIAG_hold_n GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u"
+        },
+        {
+          "role": "hold_p",
+          "instance": "X929",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t0",
+          "probe": "VDIAG_hold_p",
+          "new_node": "DIAG_hold_p",
+          "original": "X929 COL63.t0 SCB.t0 STORE63.t0 VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u",
+          "replacement": "X929 COL63.t0 SCB.t0 DIAG_hold_p VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u"
+        },
+        {
+          "role": "mim_7",
+          "instance": "X1116",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t3",
+          "probe": "VDIAG_mim_7",
+          "new_node": "DIAG_mim_7",
+          "original": "X1116 STORE63.t3 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X1116 DIAG_mim_7 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        }
+      ],
+      "voltage_equivalence_max_uV": 2.0418111645881254e-06,
+      "device_current_leaving_store_pA": {
+        "mim_0": 0.003982366980309051,
+        "mim_1": 0.003983339645110254,
+        "mim_2": 0.0039862576395142775,
+        "follower_gate": -0.0,
+        "mim_3": 0.003987230304315759,
+        "mim_4": 0.003980421650706856,
+        "mim_5": 0.0039843123099115255,
+        "mim_6": 0.003985284974712866,
+        "hold_n": 4.2515999189059235,
+        "hold_p": -0.23517142555196324,
+        "mim_7": 0.003981394315507919
+      },
+      "net_current_leaving_store_pA": 4.048299101174049,
+      "clamp_supply_from_voltage_subtraction_pA": 1.8609558338766874,
+      "clamp_supply_measured_pA": 4.050537683042421,
+      "kcl_residual_pA": 0.0022385818683723357,
+      "current_balance_within_0_25pA": true,
+      "execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "errors": [],
+        "seconds": 1.7358285000082105,
+        "deck_sha256": "a2be4ca698edf371dca20804037a651cf580a5959d3c1d80d47fee526385b8ec"
+      },
+      "diagnostic_only": true,
+      "full_bank_accuracy_qualified": false,
+      "full_chip_qualified": false
+    },
+    {
+      "mos_corner": "ss",
+      "column": 63,
+      "scan": "last",
+      "source_report": "simulations/compact-bank-process-ss-inverse125-20260930-ssff.json",
+      "source_reference": "build/compact-bank-process-ss-inverse125-100-20260930-ssff/last63-output-reference",
+      "probes": [
+        {
+          "role": "mim_0",
+          "instance": "X63",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t4",
+          "probe": "VDIAG_mim_0",
+          "new_node": "DIAG_mim_0",
+          "original": "X63 STORE63.t4 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X63 DIAG_mim_0 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_1",
+          "instance": "X189",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t5",
+          "probe": "VDIAG_mim_1",
+          "new_node": "DIAG_mim_1",
+          "original": "X189 STORE63.t5 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X189 DIAG_mim_1 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_2",
+          "instance": "X280",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t8",
+          "probe": "VDIAG_mim_2",
+          "new_node": "DIAG_mim_2",
+          "original": "X280 STORE63.t8 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X280 DIAG_mim_2 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "follower_gate",
+          "instance": "X352",
+          "pin_index": 2,
+          "store_terminal": "STORE63.t10",
+          "probe": "VDIAG_follower_gate",
+          "new_node": "DIAG_follower_gate",
+          "original": "X352 GND.t738 STORE63.t10 CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u",
+          "replacement": "X352 GND.t738 DIAG_follower_gate CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u"
+        },
+        {
+          "role": "mim_3",
+          "instance": "X391",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t9",
+          "probe": "VDIAG_mim_3",
+          "new_node": "DIAG_mim_3",
+          "original": "X391 STORE63.t9 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X391 DIAG_mim_3 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_4",
+          "instance": "X420",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t2",
+          "probe": "VDIAG_mim_4",
+          "new_node": "DIAG_mim_4",
+          "original": "X420 STORE63.t2 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X420 DIAG_mim_4 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_5",
+          "instance": "X633",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t6",
+          "probe": "VDIAG_mim_5",
+          "new_node": "DIAG_mim_5",
+          "original": "X633 STORE63.t6 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X633 DIAG_mim_5 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_6",
+          "instance": "X763",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t7",
+          "probe": "VDIAG_mim_6",
+          "new_node": "DIAG_mim_6",
+          "original": "X763 STORE63.t7 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X763 DIAG_mim_6 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "hold_n",
+          "instance": "X900",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t1",
+          "probe": "VDIAG_hold_n",
+          "new_node": "DIAG_hold_n",
+          "original": "X900 COL63.t1 SC.t0 STORE63.t1 GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u",
+          "replacement": "X900 COL63.t1 SC.t0 DIAG_hold_n GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u"
+        },
+        {
+          "role": "hold_p",
+          "instance": "X929",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t0",
+          "probe": "VDIAG_hold_p",
+          "new_node": "DIAG_hold_p",
+          "original": "X929 COL63.t0 SCB.t0 STORE63.t0 VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u",
+          "replacement": "X929 COL63.t0 SCB.t0 DIAG_hold_p VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u"
+        },
+        {
+          "role": "mim_7",
+          "instance": "X1116",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t3",
+          "probe": "VDIAG_mim_7",
+          "new_node": "DIAG_mim_7",
+          "original": "X1116 STORE63.t3 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X1116 DIAG_mim_7 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        }
+      ],
+      "voltage_equivalence_max_uV": 1.6521228829446954e-06,
+      "device_current_leaving_store_pA": {
+        "mim_0": 0.0035087909144839668,
+        "mim_1": 0.0035097125026717388,
+        "mim_2": 0.0035124772672354247,
+        "follower_gate": -0.0,
+        "mim_3": 0.0035133988554234418,
+        "mim_4": 0.0035069477381086066,
+        "mim_5": 0.003510634090859573,
+        "mim_6": 0.0035115556790474675,
+        "hold_n": 0.6128053677085754,
+        "hold_p": -0.2360834722356582,
+        "mim_7": 0.0035078693262962563
+      },
+      "net_current_leaving_store_pA": 0.40480328184704367,
+      "clamp_supply_from_voltage_subtraction_pA": -2.9237723353503497,
+      "clamp_supply_measured_pA": 0.4065636716177323,
+      "kcl_residual_pA": 0.0017603897706886529,
+      "current_balance_within_0_25pA": true,
+      "execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "errors": [],
+        "seconds": 1.4846791140153073,
+        "deck_sha256": "b007955945dc99b8e4cc61e6951328f6bf971c290bc8be0020eb684c96dd91ea"
+      },
+      "diagnostic_only": true,
+      "full_bank_accuracy_qualified": false,
+      "full_chip_qualified": false
+    },
+    {
+      "mos_corner": "ff",
+      "column": 63,
+      "scan": "last",
+      "source_report": "simulations/compact-bank-process-ff-inverse125-20260930-ssff.json",
+      "source_reference": "build/compact-bank-process-ff-inverse125-100-20260930-ssff/last63-output-reference",
+      "probes": [
+        {
+          "role": "mim_0",
+          "instance": "X63",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t4",
+          "probe": "VDIAG_mim_0",
+          "new_node": "DIAG_mim_0",
+          "original": "X63 STORE63.t4 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X63 DIAG_mim_0 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_1",
+          "instance": "X189",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t5",
+          "probe": "VDIAG_mim_1",
+          "new_node": "DIAG_mim_1",
+          "original": "X189 STORE63.t5 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X189 DIAG_mim_1 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_2",
+          "instance": "X280",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t8",
+          "probe": "VDIAG_mim_2",
+          "new_node": "DIAG_mim_2",
+          "original": "X280 STORE63.t8 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X280 DIAG_mim_2 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "follower_gate",
+          "instance": "X352",
+          "pin_index": 2,
+          "store_terminal": "STORE63.t10",
+          "probe": "VDIAG_follower_gate",
+          "new_node": "DIAG_follower_gate",
+          "original": "X352 GND.t738 STORE63.t10 CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u",
+          "replacement": "X352 GND.t738 DIAG_follower_gate CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u"
+        },
+        {
+          "role": "mim_3",
+          "instance": "X391",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t9",
+          "probe": "VDIAG_mim_3",
+          "new_node": "DIAG_mim_3",
+          "original": "X391 STORE63.t9 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X391 DIAG_mim_3 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_4",
+          "instance": "X420",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t2",
+          "probe": "VDIAG_mim_4",
+          "new_node": "DIAG_mim_4",
+          "original": "X420 STORE63.t2 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X420 DIAG_mim_4 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_5",
+          "instance": "X633",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t6",
+          "probe": "VDIAG_mim_5",
+          "new_node": "DIAG_mim_5",
+          "original": "X633 STORE63.t6 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X633 DIAG_mim_5 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_6",
+          "instance": "X763",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t7",
+          "probe": "VDIAG_mim_6",
+          "new_node": "DIAG_mim_6",
+          "original": "X763 STORE63.t7 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X763 DIAG_mim_6 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "hold_n",
+          "instance": "X900",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t1",
+          "probe": "VDIAG_hold_n",
+          "new_node": "DIAG_hold_n",
+          "original": "X900 COL63.t1 SC.t0 STORE63.t1 GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u",
+          "replacement": "X900 COL63.t1 SC.t0 DIAG_hold_n GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u"
+        },
+        {
+          "role": "hold_p",
+          "instance": "X929",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t0",
+          "probe": "VDIAG_hold_p",
+          "new_node": "DIAG_hold_p",
+          "original": "X929 COL63.t0 SCB.t0 STORE63.t0 VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u",
+          "replacement": "X929 COL63.t0 SCB.t0 DIAG_hold_p VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u"
+        },
+        {
+          "role": "mim_7",
+          "instance": "X1116",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t3",
+          "probe": "VDIAG_mim_7",
+          "new_node": "DIAG_mim_7",
+          "original": "X1116 STORE63.t3 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X1116 DIAG_mim_7 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        }
+      ],
+      "voltage_equivalence_max_uV": 2.4811264154323e-06,
+      "device_current_leaving_store_pA": {
+        "mim_0": 0.004459983449012904,
+        "mim_1": 0.004461004716432165,
+        "mim_2": 0.00446406851869042,
+        "follower_gate": -0.0,
+        "mim_3": 0.004465089786109994,
+        "mim_4": 0.004457940914174612,
+        "mim_5": 0.004462025983851506,
+        "mim_6": 0.004463047251270924,
+        "hold_n": 37.74668866171765,
+        "hold_p": -0.23429133681956762,
+        "mim_7": 0.004458962181593719
+      },
+      "net_current_leaving_store_pA": 37.54808944769922,
+      "clamp_supply_from_voltage_subtraction_pA": 42.225889451685816,
+      "clamp_supply_measured_pA": 37.55062927268682,
+      "kcl_residual_pA": 0.0025398249876005252,
+      "current_balance_within_0_25pA": true,
+      "execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "errors": [],
+        "seconds": 1.2967194450029638,
+        "deck_sha256": "310a9afd67f4ccb760e4d61f6be397e68ff11564348b5681f80e424f561ef65c"
+      },
+      "diagnostic_only": true,
+      "full_bank_accuracy_qualified": false,
+      "full_chip_qualified": false
+    },
+    {
+      "mos_corner": "ff",
+      "column": 63,
+      "scan": "first",
+      "source_report": "simulations/compact-bank-process-ff-inverse125-20260930-ssff.json",
+      "source_reference": "build/compact-bank-process-ff-inverse125-100-20260930-ssff/first63-output-reference",
+      "probes": [
+        {
+          "role": "mim_0",
+          "instance": "X63",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t4",
+          "probe": "VDIAG_mim_0",
+          "new_node": "DIAG_mim_0",
+          "original": "X63 STORE63.t4 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X63 DIAG_mim_0 GND.t732 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_1",
+          "instance": "X189",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t5",
+          "probe": "VDIAG_mim_1",
+          "new_node": "DIAG_mim_1",
+          "original": "X189 STORE63.t5 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X189 DIAG_mim_1 GND.t730 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_2",
+          "instance": "X280",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t8",
+          "probe": "VDIAG_mim_2",
+          "new_node": "DIAG_mim_2",
+          "original": "X280 STORE63.t8 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X280 DIAG_mim_2 GND.t724 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "follower_gate",
+          "instance": "X352",
+          "pin_index": 2,
+          "store_terminal": "STORE63.t10",
+          "probe": "VDIAG_follower_gate",
+          "new_node": "DIAG_follower_gate",
+          "original": "X352 GND.t738 STORE63.t10 CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u",
+          "replacement": "X352 GND.t738 DIAG_follower_gate CBUF63.t1 VDD.t161 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u"
+        },
+        {
+          "role": "mim_3",
+          "instance": "X391",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t9",
+          "probe": "VDIAG_mim_3",
+          "new_node": "DIAG_mim_3",
+          "original": "X391 STORE63.t9 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X391 DIAG_mim_3 GND.t722 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_4",
+          "instance": "X420",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t2",
+          "probe": "VDIAG_mim_4",
+          "new_node": "DIAG_mim_4",
+          "original": "X420 STORE63.t2 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X420 DIAG_mim_4 GND.t736 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_5",
+          "instance": "X633",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t6",
+          "probe": "VDIAG_mim_5",
+          "new_node": "DIAG_mim_5",
+          "original": "X633 STORE63.t6 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X633 DIAG_mim_5 GND.t728 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_6",
+          "instance": "X763",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t7",
+          "probe": "VDIAG_mim_6",
+          "new_node": "DIAG_mim_6",
+          "original": "X763 STORE63.t7 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X763 DIAG_mim_6 GND.t726 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "hold_n",
+          "instance": "X900",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t1",
+          "probe": "VDIAG_hold_n",
+          "new_node": "DIAG_hold_n",
+          "original": "X900 COL63.t1 SC.t0 STORE63.t1 GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u",
+          "replacement": "X900 COL63.t1 SC.t0 DIAG_hold_n GND.t958 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u"
+        },
+        {
+          "role": "hold_p",
+          "instance": "X929",
+          "pin_index": 3,
+          "store_terminal": "STORE63.t0",
+          "probe": "VDIAG_hold_p",
+          "new_node": "DIAG_hold_p",
+          "original": "X929 COL63.t0 SCB.t0 STORE63.t0 VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u",
+          "replacement": "X929 COL63.t0 SCB.t0 DIAG_hold_p VDD.t137 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u"
+        },
+        {
+          "role": "mim_7",
+          "instance": "X1116",
+          "pin_index": 1,
+          "store_terminal": "STORE63.t3",
+          "probe": "VDIAG_mim_7",
+          "new_node": "DIAG_mim_7",
+          "original": "X1116 STORE63.t3 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X1116 DIAG_mim_7 GND.t734 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        }
+      ],
+      "voltage_equivalence_max_uV": 2.1981305664553474e-06,
+      "device_current_leaving_store_pA": {
+        "mim_0": 0.004465610055653668,
+        "mim_1": 0.004466631310470408,
+        "mim_2": 0.004469695074921088,
+        "follower_gate": -0.0,
+        "mim_3": 0.004470716329738138,
+        "mim_4": 0.004463567546020429,
+        "mim_5": 0.004467652565287222,
+        "mim_6": 0.004468673820104117,
+        "hold_n": 37.75349374355832,
+        "hold_p": -0.23427676390166077,
+        "mim_7": 0.004464588800837011
+      },
+      "net_current_leaving_store_pA": 37.554954115159696,
+      "clamp_supply_from_voltage_subtraction_pA": 37.4914543854743,
+      "clamp_supply_measured_pA": 37.55740163313703,
+      "kcl_residual_pA": 0.0024475179773375544,
+      "current_balance_within_0_25pA": true,
+      "execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "errors": [],
+        "seconds": 1.398092484974768,
+        "deck_sha256": "36ceb4ae290e91d0ca033fb5d1555dac4ee8df84c1084ff63818b377e9871d44"
+      },
+      "diagnostic_only": true,
+      "full_bank_accuracy_qualified": false,
+      "full_chip_qualified": false
+    },
+    {
+      "mos_corner": "ff",
+      "column": 0,
+      "scan": "last",
+      "source_report": "simulations/compact-bank-process-ff-inverse125-20260930-ssff.json",
+      "source_reference": "build/compact-bank-process-ff-inverse125-100-20260930-ssff/last0-output-reference",
+      "probes": [
+        {
+          "role": "mim_0",
+          "instance": "X127",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t8",
+          "probe": "VDIAG_mim_0",
+          "new_node": "DIAG_mim_0",
+          "original": "X127 STORE0.t8 GND.t79 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X127 DIAG_mim_0 GND.t79 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_1",
+          "instance": "X221",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t3",
+          "probe": "VDIAG_mim_1",
+          "new_node": "DIAG_mim_1",
+          "original": "X221 STORE0.t3 GND.t89 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X221 DIAG_mim_1 GND.t89 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_2",
+          "instance": "X245",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t9",
+          "probe": "VDIAG_mim_2",
+          "new_node": "DIAG_mim_2",
+          "original": "X245 STORE0.t9 GND.t77 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X245 DIAG_mim_2 GND.t77 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_3",
+          "instance": "X315",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t4",
+          "probe": "VDIAG_mim_3",
+          "new_node": "DIAG_mim_3",
+          "original": "X315 STORE0.t4 GND.t87 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X315 DIAG_mim_3 GND.t87 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "follower_gate",
+          "instance": "X337",
+          "pin_index": 2,
+          "store_terminal": "STORE0.t10",
+          "probe": "VDIAG_follower_gate",
+          "new_node": "DIAG_follower_gate",
+          "original": "X337 GND.t93 STORE0.t10 CBUF0.t0 VDD.t5 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u",
+          "replacement": "X337 GND.t93 DIAG_follower_gate CBUF0.t0 VDD.t5 pfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=0.5u"
+        },
+        {
+          "role": "mim_4",
+          "instance": "X437",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t5",
+          "probe": "VDIAG_mim_4",
+          "new_node": "DIAG_mim_4",
+          "original": "X437 STORE0.t5 GND.t85 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X437 DIAG_mim_4 GND.t85 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_5",
+          "instance": "X475",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t6",
+          "probe": "VDIAG_mim_5",
+          "new_node": "DIAG_mim_5",
+          "original": "X475 STORE0.t6 GND.t83 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X475 DIAG_mim_5 GND.t83 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_6",
+          "instance": "X591",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t7",
+          "probe": "VDIAG_mim_6",
+          "new_node": "DIAG_mim_6",
+          "original": "X591 STORE0.t7 GND.t81 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X591 DIAG_mim_6 GND.t81 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "mim_7",
+          "instance": "X687",
+          "pin_index": 1,
+          "store_terminal": "STORE0.t2",
+          "probe": "VDIAG_mim_7",
+          "new_node": "DIAG_mim_7",
+          "original": "X687 STORE0.t2 GND.t91 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u",
+          "replacement": "X687 DIAG_mim_7 GND.t91 cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u"
+        },
+        {
+          "role": "hold_n",
+          "instance": "X919",
+          "pin_index": 3,
+          "store_terminal": "STORE0.t1",
+          "probe": "VDIAG_hold_n",
+          "new_node": "DIAG_hold_n",
+          "original": "X919 COL0.t0 SC.t63 STORE0.t1 GND.t895 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u",
+          "replacement": "X919 COL0.t0 SC.t63 DIAG_hold_n GND.t895 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.5u"
+        },
+        {
+          "role": "hold_p",
+          "instance": "X958",
+          "pin_index": 3,
+          "store_terminal": "STORE0.t0",
+          "probe": "VDIAG_hold_p",
+          "new_node": "DIAG_hold_p",
+          "original": "X958 COL0.t3 SCB.t63 STORE0.t0 VDD.t74 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u",
+          "replacement": "X958 COL0.t3 SCB.t63 DIAG_hold_p VDD.t74 pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u"
+        }
+      ],
+      "voltage_equivalence_max_uV": 9.86100090472064e-07,
+      "device_current_leaving_store_pA": {
+        "mim_0": 0.0010066038017143444,
+        "mim_1": 0.0010097211354096727,
+        "mim_2": 0.0010059803349753318,
+        "mim_3": 0.0010090976686705719,
+        "follower_gate": -0.0,
+        "mim_4": 0.0010084742019314885,
+        "mim_5": 0.001007850735192423,
+        "mim_6": 0.0010072272684533748,
+        "mim_7": 0.0010103446021487916,
+        "hold_n": 42.88995178974317,
+        "hold_p": -0.32626572780847407
+      },
+      "net_current_leaving_store_pA": 42.57175136168319,
+      "clamp_supply_from_voltage_subtraction_pA": 40.66499914578969,
+      "clamp_supply_measured_pA": 42.57250107997379,
+      "kcl_residual_pA": 0.0007497182905993327,
+      "current_balance_within_0_25pA": true,
+      "execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "errors": [],
+        "seconds": 1.4737452879780903,
+        "deck_sha256": "4d24142bb60f03747b9a9fda0520a2e98445be68239be1efd094c1f0fad4291d"
+      },
+      "diagnostic_only": true,
+      "full_bank_accuracy_qualified": false,
+      "full_chip_qualified": false
+    }
+  ],
+  "evidence_hashes": {
+    "build/compact-bank-storage-leakage-v2-20260930/runner.py": "aef4dd8a528575d5824a1da7661826c0ada05ce37d02be745788e843ddbd9a9a",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last0/test.spice": "4d24142bb60f03747b9a9fda0520a2e98445be68239be1efd094c1f0fad4291d",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last0/.spiceinit": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last0/execution.json": "1e7061ead7c86cd45565dba570a358a14feb677040340e5e878a53535f85f3ec",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last0/ngspice.log": "cc8746e0e8e950081c5ec3e74c4296f77cc88b387b89d062ed75bfb1a5295ecd",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last0/tile.spice": "1471a02737633740bb3943ae57210144060f60cc052ea71a1410b7e3d4dbce11",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last0/result.json": "60c7c26f88530060966bae714cffd5e8edc8fd8566f048ab65d9438042a306b4",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last0/op.raw": "dd7d489e83c42b8ac08e3b7775283d960e4b66116ffad4619332252b92e8e890",
+    "build/compact-bank-storage-leakage-v2-20260930/ss-last63/test.spice": "b007955945dc99b8e4cc61e6951328f6bf971c290bc8be0020eb684c96dd91ea",
+    "build/compact-bank-storage-leakage-v2-20260930/ss-last63/.spiceinit": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b",
+    "build/compact-bank-storage-leakage-v2-20260930/ss-last63/execution.json": "e0ba5306da9c4e760fb719bf511ee7a5389489c30d4755d8993e1bff594b7540",
+    "build/compact-bank-storage-leakage-v2-20260930/ss-last63/ngspice.log": "cc8746e0e8e950081c5ec3e74c4296f77cc88b387b89d062ed75bfb1a5295ecd",
+    "build/compact-bank-storage-leakage-v2-20260930/ss-last63/tile.spice": "de4c1ee205872fd6e3f8d9b0c86152d96d7f54e52d94b8e60dfa38ef66a4b333",
+    "build/compact-bank-storage-leakage-v2-20260930/ss-last63/result.json": "0cb984106cd352d3359ab0c4521ceb3414d3a2d760e59854118639d0c58fc275",
+    "build/compact-bank-storage-leakage-v2-20260930/ss-last63/op.raw": "452ed512410975f71135c2d5b2d963b24401e11d4debbb6dc9a8e1254d4efa4d",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-first63/test.spice": "36ceb4ae290e91d0ca033fb5d1555dac4ee8df84c1084ff63818b377e9871d44",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-first63/.spiceinit": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-first63/execution.json": "c6f0feb466feb755648670647333ae51505cad45b78d17e9db2f8157b76f18e1",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-first63/ngspice.log": "cc8746e0e8e950081c5ec3e74c4296f77cc88b387b89d062ed75bfb1a5295ecd",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-first63/tile.spice": "de4c1ee205872fd6e3f8d9b0c86152d96d7f54e52d94b8e60dfa38ef66a4b333",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-first63/result.json": "3ee6c0db678175b08752776ffe0e849c3b3fbe39ef50f97dfffee28c267158eb",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-first63/op.raw": "471b567e974831fa8616f76fb0d801fb719f2bb8a04ba99c3a726e306e8e4978",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last63/test.spice": "310a9afd67f4ccb760e4d61f6be397e68ff11564348b5681f80e424f561ef65c",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last63/.spiceinit": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last63/execution.json": "69e77f478bbbe6d67743598065c0f59e44fca6644610cd63c8cbb91479aeff23",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last63/ngspice.log": "cc8746e0e8e950081c5ec3e74c4296f77cc88b387b89d062ed75bfb1a5295ecd",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last63/tile.spice": "de4c1ee205872fd6e3f8d9b0c86152d96d7f54e52d94b8e60dfa38ef66a4b333",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last63/result.json": "2475f4bbeaaa990848c5591f10299c95d3c98bb9c326778e528909560980fc15",
+    "build/compact-bank-storage-leakage-v2-20260930/ff-last63/op.raw": "a6258629b7c46f30eaaec2263123c6529a2a69f23cccd62f0de09f39e359feee",
+    "build/compact-bank-storage-leakage-v2-20260930/typical-last63/test.spice": "a2be4ca698edf371dca20804037a651cf580a5959d3c1d80d47fee526385b8ec",
+    "build/compact-bank-storage-leakage-v2-20260930/typical-last63/.spiceinit": "4562ddb4e3f1adef4b392c0f1bc7a3d68f891a0899dc7404e07ad56e36cf7b1b",
+    "build/compact-bank-storage-leakage-v2-20260930/typical-last63/execution.json": "6aa15c531ddad583e5f10aec04ef257a6b0d2295c75bedfc2d11dfdc8a6b81d6",
+    "build/compact-bank-storage-leakage-v2-20260930/typical-last63/ngspice.log": "cc8746e0e8e950081c5ec3e74c4296f77cc88b387b89d062ed75bfb1a5295ecd",
+    "build/compact-bank-storage-leakage-v2-20260930/typical-last63/tile.spice": "de4c1ee205872fd6e3f8d9b0c86152d96d7f54e52d94b8e60dfa38ef66a4b333",
+    "build/compact-bank-storage-leakage-v2-20260930/typical-last63/result.json": "5b9f6b80c61134b203c8e58ef3ed82726ed4b30777b0d7238b767f648dc7b4f7",
+    "build/compact-bank-storage-leakage-v2-20260930/typical-last63/op.raw": "4574a2da820b76deafc111048232db4272eed345b1546458f30dd8b4127207a8",
+    "simulations/compact-bank-64-full-hot.json": "ade2a6ae212cb8a625e30857b24cb93433d73f363d84f612782fa033fb5f8cd5",
+    "simulations/compact-bank-process-ss-inverse125-20260930-ssff.json": "f06ed3e7c91c8ed347d7d734a4812ddaea88d028a4dbc57bfbcfb48c9c400a79",
+    "simulations/compact-bank-process-ff-inverse125-20260930-ssff.json": "9196e5625dd3b0da7e77c06ea567ebda591090ec7491cb11e30b62dc9f81c05c",
+    "scripts/probe-bank-storage-leakage-v2.py": "aef4dd8a528575d5824a1da7661826c0ada05ce37d02be745788e843ddbd9a9a",
+    "scripts/report-compact-bank-16.py": "b1b6d329fe739b1a96b3462d2c1ef0402300bb1824de13e3504b4a5c86dbfac8"
+  },
+  "current_sign": "Positive means current leaves STORE through the named device terminal; negative means injection.",
+  "limits": [
+    "Frozen-state DC diagnosis at selected columns/states, not integrated transient charge or a layout correction.",
+    "Terminal current includes all modeled mechanisms at that terminal; naming a device does not identify the microscopic leakage mechanism.",
+    "Current-balance residuals are recorded explicitly; instrumented voltage equivalence alone does not establish sub-pA current accuracy."
+  ],
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false
+}

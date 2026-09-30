@@ -1,0 +1,64 @@
+{
+  "reviewed_at_utc": "2026-09-29T23:46:56.047562+00:00",
+  "scope": "Automated overnight integrity/acceptance review; plots exist but have not been visually reviewed by an assistant.",
+  "plots_reviewed": false,
+  "distinct_evidence_files_verified": 1709,
+  "hash_failures": [],
+  "completed_transients": 4,
+  "reads_per_transient": 128,
+  "new_references_audited": 384,
+  "batch_elapsed_seconds": 14308.052413423982,
+  "simulation_and_watcher_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cases": [
+    {
+      "temperature_C": 27,
+      "pattern": "bright",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true
+      },
+      "max_total_error_uV": 359.1582146409422,
+      "max_tracking_error_uV": 3.0279957476953,
+      "max_refinement_uV": 0.06512243475031987,
+      "event_refinement_worst": {
+        "event": "pre_capture",
+        "column": 63,
+        "quantity": "upper_V",
+        "difference_uV": 0.06544689565290973
+      }
+    },
+    {
+      "temperature_C": 125,
+      "pattern": "bright",
+      "checks": {
+        "capture_readout": true,
+        "output_tracking": true,
+        "refinement": true,
+        "event_refinement": true
+      },
+      "max_total_error_uV": 402.99535383470084,
+      "max_tracking_error_uV": 15.919322455815177,
+      "max_refinement_uV": 0.06054248524733907,
+      "event_refinement_worst": {
+        "event": "pre_capture",
+        "column": 60,
+        "quantity": "upper_V",
+        "difference_uV": 0.04383961149656557
+      }
+    }
+  ],
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "reviewed_hashes": {
+    "simulations/compact-bank-64-uniform-bright27.json": "5f3e46a59a4961c45a6791e573a9a2dc2d794e7a1ef1917dac4300d3cdd0ee60",
+    "simulations/compact-bank-64-uniform-bright125.json": "662cd50675b681f9397129964a4a195a118b0548c5c543d53920df41eb8ae1ef"
+  }
+}
