@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "transition_guard_cases": 6,
+  "full_bank_decks_checked": 10,
+  "reference_corner_checks": 20,
+  "planned_cases": 18,
+  "planned_transients": 36,
+  "planned_references": 3456,
+  "source_hashes": {
+    "scripts/test-bank-stack3-continuation.py": "3478d939863c59bf56d4a0ceb410c6f37cc8ab5c80619c5c492afa5b888bdb56",
+    "scripts/continue-bank-stack3.py": "3de8afcbfac235f2e8dbcb50e924de9db31d567d67141e69721907de0857c68c",
+    "scripts/launch-bank-stack3.py": "e975fe89d16cf7a02b51c8342933b3ff8bfd32cdaec8ebe006cffeaa3630d890",
+    "scripts/simulate-compact-bank-v5.py": "b6a02b9d5578a91dbc8f5ea71665c5fcd669c2e0c2d8f44734c3dfe3957b7303",
+    "scripts/report-bank-stack3.py": "ce0d68d546813132949475a961787b6ff4f0bbf3fd18df7f8c3be541cfab0c33",
+    "scripts/render-bank-stack3-progress.py": "5f8adb36e8d2deb897bcf6c316ca3e16cdbeb9d3df7660f14cd4e2c7834fdd51"
+  }
+}

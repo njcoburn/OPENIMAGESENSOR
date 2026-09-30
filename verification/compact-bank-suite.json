@@ -231,6 +231,12 @@
       "title": "Physical three-device capture candidate passes small-bank verification",
       "detail": "Combined timing/model checks pass, followed by a separate physical nine-MOS column and 26-MOS/two-pixel bank. Magic/KLayout DRC, direct/collapsed LVS and 40 um abutment pass. Column outline and upper storage geometry are unchanged. Across port/far extractions, worst total errors are typical 152.197, SS 181.071 and FF 258.782 uV. Placement sensitivity <0.044 uV. This stage adds 18 transients and 108 references; the existing 64-column checkpoint and its process failures remain unchanged.",
       "evidence": "simulations/compact-bank-physical-stack3-20260930.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Launch physical 64-column candidate and gated continuation",
+      "detail": "Prior verified checkpoint committed and pushed as 06889e5. New 770-MOS bank passes physical checks and all 64 capture chains. Six fresh small controls reproduce retained results. Begin typical/SS/FF hot inverse tests, then advance only on independent passes through mixed corners, room temperature and typical illumination. Queue totals 18 cases, 36 transients and 3456 references; results pending. Original baseline qualification stays unchanged.",
+      "evidence": "simulations/stack3-sequence-plan-20260930-away.json"
     }
   ]
 }

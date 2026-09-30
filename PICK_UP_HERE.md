@@ -1,5 +1,26 @@
 # Pick up here — 64×64 wafer.space first silicon
 
+<!-- BEGIN STACK3_LIVE -->
+## Current unattended 64-column sequence — simulating
+
+Started after checkpoint `06889e5` was committed and pushed. Live status:
+`build/stack3-sequence-20260930-away/status.json`. Exact plan: `build/stack3-sequence-plan-20260930-away.json`.
+Stage: **hot-primary**; reviewed cases: **0 / 18**.
+Controller container: `ois-stack3-sequence-20260930-away`. Inspect this status and container
+before launching anything else. Last update: 2026-09-30T16:35:26.305817+00:00.
+
+Physical candidate: `build/compact-bank-c64-stack3-grid-20260930`, 770 MOS/512 MIM/64 diodes. The new v5
+runner uses 12.5 µs acquisition and saves both internal nodes of every capture
+stack. New auditor: `report-bank-stack3.py`. Frozen dependencies are pinned in
+the plan. Do not edit them while the sequence or its evidence is retained.
+Queue: hot-primary → hot-mixed → room-primary → room-mixed → typical-alternating → typical-dark → typical-middle → typical-bright. Each stage must pass all independent audits to advance.
+Failure stops later stages; running members of that batch finish. No full-chip
+qualification is claimed. Six fresh small controls reproduced retained HOLD
+samples and coarse-reference errors before launch. Read the overview section
+`stack3-sequence` and persistent profile for results. Earlier handoff states below
+are historical. Failures: `{}`.
+<!-- END STACK3_LIVE -->
+
 ## Latest — physical small-bank candidate complete; no active simulation jobs
 
 Implemented a separate three-NMOS capture switch and tested it at 12.5 µs

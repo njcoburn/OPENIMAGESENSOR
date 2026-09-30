@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-09-30T16:37:38.909517+00:00",
+  "initial_checkpoint_pushed": "06889e5",
+  "controller": "ois-stack3-sequence-20260930-away",
+  "status": "build/stack3-sequence-20260930-away/status.json",
+  "source_dependencies_verified": 20,
+  "active_runs": [
+    "typical-inverse125-100",
+    "typical-inverse125-50",
+    "ss-inverse125-100",
+    "ss-inverse125-50",
+    "ff-inverse125-100",
+    "ff-inverse125-50"
+  ],
+  "observed_progress": [
+    {
+      "name": "typical-inverse125-100",
+      "last_saved_ms": 0.5259682755162026,
+      "runner_completed": false,
+      "references": null,
+      "exit": null
+    },
+    {
+      "name": "typical-inverse125-50",
+      "last_saved_ms": 0.25515937922139453,
+      "runner_completed": false,
+      "references": null,
+      "exit": null
+    },
+    {
+      "name": "ss-inverse125-100",
+      "last_saved_ms": 0.5249211171832467,
+      "runner_completed": false,
+      "references": null,
+      "exit": null
+    },
+    {
+      "name": "ss-inverse125-50",
+      "last_saved_ms": 0.2527323780501389,
+      "runner_completed": false,
+      "references": null,
+      "exit": null
+    },
+    {
+      "name": "ff-inverse125-100",
+      "last_saved_ms": 0.5179637763853554,
+      "runner_completed": false,
+      "references": null,
+      "exit": null
+    },
+    {
+      "name": "ff-inverse125-50",
+      "last_saved_ms": 0.26267476869414896,
+      "runner_completed": false,
+      "references": null,
+      "exit": null
+    }
+  ],
+  "physical_audit": "build/compact-bank-c64-stack3-grid-20260930/physical-audit.json",
+  "notification": "build/stack3-sequence-notification-20260930-away.json",
+  "accuracy_qualified": false
+}

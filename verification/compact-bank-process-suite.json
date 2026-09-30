@@ -77,8 +77,9 @@
     }
   ],
   "completion_review": "simulations/compact-bank-process-review-20260930.json",
-  "next_task": "Build separate 64-column three-device bank with the established ground grid, verify physical topology/DRC/LVS, then qualify 12.5 us fixture and run typical/SS/FF full-bank process cases.",
+  "next_task": "Monitor the active gated 64-column sequence; do not launch duplicate jobs. Review failures or completed candidate results before further design changes.",
   "diagnosis_review": "simulations/compact-bank-process-diagnosis-review-20260930.json",
   "candidate_screen_profile": "verification/compact-bank-capture-candidates.json",
-  "physical_candidate_profile": "verification/compact-bank-physical-stack3.json"
+  "physical_candidate_profile": "verification/compact-bank-physical-stack3.json",
+  "full_bank_sequence_profile": "verification/compact-bank-stack3-sequence.json"
 }

@@ -1,0 +1,28 @@
+{
+  "scope": "Physically verified 64-column three-NMOS capture candidate; electrical qualification is running, not completed.",
+  "full_bank_accuracy_qualified": false,
+  "files": {
+    "bank.gds.gz": {
+      "source": "build/compact-bank-c64-stack3-grid-20260930/bank.gds",
+      "uncompressed_sha256": "6509c9a3a1f16386baf3a69cfc74b6dd01c9c9123f132bf59e1a7b3a419c8e33",
+      "archive_sha256": "bf12b72e7a28c6368b35f0aaad5617cb97e388e9c77a2e8baef665ce7a4dbbed"
+    },
+    "rc-port.spice.gz": {
+      "source": "build/compact-bank-c64-stack3-grid-20260930/rc-port.spice",
+      "uncompressed_sha256": "b05069f6e5055e0ca149265eafaf8b83cd89ef384575fdb29054bd9aea3edcaf",
+      "archive_sha256": "9d2866085793a79f17a43eacbc9c78a1b563ac04f4bd3599114c2ddd94980b7f"
+    },
+    "verification.json": {
+      "source": "build/compact-bank-c64-stack3-grid-20260930/verification.json",
+      "sha256": "f9d77643492b9cce887604de7f9a636a825ae6d3851bbfaf921fd0a716f44cfa"
+    },
+    "physical-audit.json": {
+      "source": "build/compact-bank-c64-stack3-grid-20260930/physical-audit.json",
+      "sha256": "4b23d2c46e8eebd694be586c0e47cd529eae8824af3e8e070a393ce74de7fd98"
+    },
+    "reference.spice": {
+      "source": "build/compact-bank-c64-stack3-grid-20260930/reference.spice",
+      "sha256": "e4319c2f4a3c70114f132a89ebefba3d6a3cad99f243711f4456b72cb99065e4"
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Sensor references
 
+Running: [64-column candidate sequence](overview.html#stack3-sequence). The controller updates results and stops progression on failures. Portable physical candidate: `checkpoints/compact-bank-stack3-64`; electrical qualification remains pending.
+
 Latest: [physical three-device capture candidate](overview.html#physical-stack3), with extracted-circuit results, DRC/LVS evidence, layout detail and a one-command electrical rerun. Full-bank candidate validation is next.
 
 Latest: [candidate capture-cycle results](overview.html#bank-capture-cycles), including the model-only three-device switch screen, acquisition extension, and exact rerun commands. Physical implementation and full-bank validation remain pending.

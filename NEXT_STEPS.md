@@ -1,5 +1,15 @@
 # Next steps — 64×64 on wafer.space GF180
 
+**Running, 30 September — 64-column candidate sequence:** checkpoint and
+changelog were pushed as `06889e5` before this work. The new physical 64-column
+bank passes DRC/LVS and all capture-chain checks. Six typical/SS/FF 125 °C
+simulations are running, with 576 matched references planned for this batch.
+On audited passes, the controller advances through mixed corners, 27 °C cases,
+and remaining typical-process illumination patterns (18 cases / 36 transients /
+3,456 references in the complete queue). Failure stops subsequent stages.
+[Live overview](docs/overview.html#stack3-sequence) · [Status](build/stack3-sequence-20260930-away/status.json).
+Earlier status entries below are historical.
+
 **Latest, 30 September — physical candidate verified:** the three-device capture
 switch is implemented in a separate column and two-column bank. DRC/LVS and
 40 µm abutment pass. With 12.5 µs acquisition, extracted typical/SS/FF worst total

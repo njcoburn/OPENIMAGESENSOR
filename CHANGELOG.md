@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-09-30 — Launch gated full-bank candidate verification
+
+Push the reviewed checkpoint first as `06889e5`. Build a separate 64-column
+three-NMOS capture candidate: 770 MOS, 512 MIM plates, 64 diodes, with unchanged
+ground-grid geometry. Magic/KLayout DRC and direct/collapsed LVS pass; audit
+all 64 capture chains. Retain a portable physical checkpoint with electrical
+qualification explicitly pending.
+
+Version the runner/auditor for 12.5 µs acquisition and both internal stack nodes.
+Six fresh small-bank controls reproduce the retained sampled HOLD and coarse
+reference errors exactly. Check ten full-bank decks, twenty reference-corner
+selections, transition guards and frozen dependencies. Start six detached
+125 °C typical/SS/FF jobs. Queue mixed corners, room-temperature cases and the
+remaining typical-process patterns behind audited passes: 18 cases, 36 transients,
+3,456 references in total. Preserve failed stages and stop further progression.
+Add live overview/journal status, a durable controller and local desktop alert.
+
 ## 2026-09-30 — Build and verify the physical three-device capture switch
 
 Combined switch/timing controls pass, then a separate physical column and

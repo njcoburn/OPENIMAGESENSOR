@@ -1,0 +1,7 @@
+{
+  "container": "ois-stack3-sequence-20260930-away",
+  "container_id": "d62efa834625e81de1e00135378035a98331895b23b63529c5277a571868461c",
+  "plan": "build/stack3-sequence-plan-20260930-away.json",
+  "status": "build/stack3-sequence-20260930-away/status.json",
+  "started_at_utc": "2026-09-30T16:35:25.784833+00:00"
+}
