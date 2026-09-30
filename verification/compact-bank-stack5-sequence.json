@@ -1,0 +1,13 @@
+{
+  "scope": "Gated candidate sequence: all five MOS corners at 125/27 C inverse, then remaining typical-process patterns. Diode/MIM typical; nominal supply/wire; no full-chip claim.",
+  "plan": "build/stack5-sequence-plan-20260930-overnight.json",
+  "status": "build/stack5-sequence-20260930-overnight/status.json",
+  "layout": "build/compact-bank-c64-stack5-grid-20260930",
+  "phase": "simulating",
+  "stage": "hot-primary",
+  "completed_stages": [],
+  "audited": {},
+  "failures": {},
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false
+}

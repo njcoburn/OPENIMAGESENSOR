@@ -237,6 +237,24 @@
       "title": "Launch physical 64-column candidate and gated continuation",
       "detail": "Prior verified checkpoint committed and pushed as 06889e5. New 770-MOS bank passes physical checks and all 64 capture chains. Six fresh small controls reproduce retained results. Begin typical/SS/FF hot inverse tests, then advance only on independent passes through mixed corners, room temperature and typical illumination. Queue totals 18 cases, 36 transients and 3456 references; results pending. Original baseline qualification stays unchanged.",
       "evidence": "simulations/stack3-sequence-plan-20260930-away.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Review interrupted 64-column candidate: FF error remains",
+      "detail": "Three coarse transients and 576 references independently audited; all fine runs hit the four-hour watchdog with 11 samples missing. Typical/SS coarse totals 391.959/445.375 \u00b5V meet limits, FF 602.413 \u00b5V does not. Available fine data contains 7 FF failures. No complete paired pass or queue continuation; next address FF retention and runtime budget.",
+      "evidence": "simulations/stack3-interrupted-review-20260930.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Five-device candidate passes physical and small-bank preflight",
+      "detail": "Model-only extended-age screen: FF 604.318 \u2192 396.116 uV. Implement separate five-device column and banks; physical DRC/LVS and unchanged storage geometry pass. Twelve extracted port/far transients and 72 references pass. Full-bank electrical coverage remains pending; new gated runner uses 3 workers and an 8-hour transient watchdog.",
+      "evidence": "verification/compact-bank-stack5.json"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Launch five-device overnight process sequence",
+      "detail": "Detached three-worker queue started after passing physical and small-bank preflight. Initial FF/SS/typical hot inverse stage; mixed corners, room-temperature inverse and remaining typical patterns gated on independent passes. 18 cases / 36 transients / 3456 references planned. Eight-hour transient watchdog; desktop completion/review alert enabled. Results pending.",
+      "evidence": "simulations/stack5-sequence-start-20260930-overnight.json"
     }
   ]
 }

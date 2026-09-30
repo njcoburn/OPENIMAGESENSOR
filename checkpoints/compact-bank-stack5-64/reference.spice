@@ -1,0 +1,1476 @@
+.subckt reference VDD VRESET GND RST0 ROW0 BUF SC SCB BIAS PREF COL0 STORE0 CBUF0 SEL0 SELB0 COL1 STORE1 CBUF1 SEL1 SELB1 COL2 STORE2 CBUF2 SEL2 SELB2 COL3 STORE3 CBUF3 SEL3 SELB3 COL4 STORE4 CBUF4 SEL4 SELB4 COL5 STORE5 CBUF5 SEL5 SELB5 COL6 STORE6 CBUF6 SEL6 SELB6 COL7 STORE7 CBUF7 SEL7 SELB7 COL8 STORE8 CBUF8 SEL8 SELB8 COL9 STORE9 CBUF9 SEL9 SELB9 COL10 STORE10 CBUF10 SEL10 SELB10 COL11 STORE11 CBUF11 SEL11 SELB11 COL12 STORE12 CBUF12 SEL12 SELB12 COL13 STORE13 CBUF13 SEL13 SELB13 COL14 STORE14 CBUF14 SEL14 SELB14 COL15 STORE15 CBUF15 SEL15 SELB15 COL16 STORE16 CBUF16 SEL16 SELB16 COL17 STORE17 CBUF17 SEL17 SELB17 COL18 STORE18 CBUF18 SEL18 SELB18 COL19 STORE19 CBUF19 SEL19 SELB19 COL20 STORE20 CBUF20 SEL20 SELB20 COL21 STORE21 CBUF21 SEL21 SELB21 COL22 STORE22 CBUF22 SEL22 SELB22 COL23 STORE23 CBUF23 SEL23 SELB23 COL24 STORE24 CBUF24 SEL24 SELB24 COL25 STORE25 CBUF25 SEL25 SELB25 COL26 STORE26 CBUF26 SEL26 SELB26 COL27 STORE27 CBUF27 SEL27 SELB27 COL28 STORE28 CBUF28 SEL28 SELB28 COL29 STORE29 CBUF29 SEL29 SELB29 COL30 STORE30 CBUF30 SEL30 SELB30 COL31 STORE31 CBUF31 SEL31 SELB31 COL32 STORE32 CBUF32 SEL32 SELB32 COL33 STORE33 CBUF33 SEL33 SELB33 COL34 STORE34 CBUF34 SEL34 SELB34 COL35 STORE35 CBUF35 SEL35 SELB35 COL36 STORE36 CBUF36 SEL36 SELB36 COL37 STORE37 CBUF37 SEL37 SELB37 COL38 STORE38 CBUF38 SEL38 SELB38 COL39 STORE39 CBUF39 SEL39 SELB39 COL40 STORE40 CBUF40 SEL40 SELB40 COL41 STORE41 CBUF41 SEL41 SELB41 COL42 STORE42 CBUF42 SEL42 SELB42 COL43 STORE43 CBUF43 SEL43 SELB43 COL44 STORE44 CBUF44 SEL44 SELB44 COL45 STORE45 CBUF45 SEL45 SELB45 COL46 STORE46 CBUF46 SEL46 SELB46 COL47 STORE47 CBUF47 SEL47 SELB47 COL48 STORE48 CBUF48 SEL48 SELB48 COL49 STORE49 CBUF49 SEL49 SELB49 COL50 STORE50 CBUF50 SEL50 SELB50 COL51 STORE51 CBUF51 SEL51 SELB51 COL52 STORE52 CBUF52 SEL52 SELB52 COL53 STORE53 CBUF53 SEL53 SELB53 COL54 STORE54 CBUF54 SEL54 SELB54 COL55 STORE55 CBUF55 SEL55 SELB55 COL56 STORE56 CBUF56 SEL56 SELB56 COL57 STORE57 CBUF57 SEL57 SELB57 COL58 STORE58 CBUF58 SEL58 SELB58 COL59 STORE59 CBUF59 SEL59 SELB59 COL60 STORE60 CBUF60 SEL60 SELB60 COL61 STORE61 CBUF61 SEL61 SELB61 COL62 STORE62 CBUF62 SEL62 SELB62 COL63 STORE63 CBUF63 SEL63 SELB63
+Xpixel_reset0 VRESET RST0 SENSE0 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow0 VDD SENSE0 SF0 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select0 SF0 ROW0 COL0 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel0 GND SENSE0 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn0_bias COL0 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn0_holdn COL0 SC HN10 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn0_holdn2 HN10 SC HN20 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn0_holdn3 HN20 SC HN30 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn0_holdn4 HN30 SC HN40 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn0_holdn5 HN40 SC STORE0 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn0_holdp COL0 SCB STORE0 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn0_storeload CBUF0 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn0_storefollow GND STORE0 CBUF0 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn0_muxn BUF SEL0 CBUF0 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn0_muxp BUF SELB0 CBUF0 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate0_0 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate0_1 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate0_2 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate0_3 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate0_4 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate0_5 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate0_6 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate0_7 STORE0 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset1 VRESET RST0 SENSE1 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow1 VDD SENSE1 SF1 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select1 SF1 ROW0 COL1 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel1 GND SENSE1 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn1_bias COL1 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn1_holdn COL1 SC HN11 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn1_holdn2 HN11 SC HN21 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn1_holdn3 HN21 SC HN31 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn1_holdn4 HN31 SC HN41 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn1_holdn5 HN41 SC STORE1 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn1_holdp COL1 SCB STORE1 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn1_storeload CBUF1 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn1_storefollow GND STORE1 CBUF1 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn1_muxn BUF SEL1 CBUF1 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn1_muxp BUF SELB1 CBUF1 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate1_0 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate1_1 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate1_2 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate1_3 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate1_4 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate1_5 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate1_6 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate1_7 STORE1 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset2 VRESET RST0 SENSE2 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow2 VDD SENSE2 SF2 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select2 SF2 ROW0 COL2 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel2 GND SENSE2 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn2_bias COL2 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn2_holdn COL2 SC HN12 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn2_holdn2 HN12 SC HN22 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn2_holdn3 HN22 SC HN32 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn2_holdn4 HN32 SC HN42 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn2_holdn5 HN42 SC STORE2 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn2_holdp COL2 SCB STORE2 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn2_storeload CBUF2 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn2_storefollow GND STORE2 CBUF2 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn2_muxn BUF SEL2 CBUF2 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn2_muxp BUF SELB2 CBUF2 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate2_0 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate2_1 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate2_2 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate2_3 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate2_4 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate2_5 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate2_6 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate2_7 STORE2 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset3 VRESET RST0 SENSE3 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow3 VDD SENSE3 SF3 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select3 SF3 ROW0 COL3 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel3 GND SENSE3 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn3_bias COL3 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn3_holdn COL3 SC HN13 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn3_holdn2 HN13 SC HN23 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn3_holdn3 HN23 SC HN33 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn3_holdn4 HN33 SC HN43 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn3_holdn5 HN43 SC STORE3 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn3_holdp COL3 SCB STORE3 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn3_storeload CBUF3 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn3_storefollow GND STORE3 CBUF3 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn3_muxn BUF SEL3 CBUF3 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn3_muxp BUF SELB3 CBUF3 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate3_0 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate3_1 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate3_2 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate3_3 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate3_4 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate3_5 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate3_6 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate3_7 STORE3 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset4 VRESET RST0 SENSE4 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow4 VDD SENSE4 SF4 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select4 SF4 ROW0 COL4 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel4 GND SENSE4 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn4_bias COL4 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn4_holdn COL4 SC HN14 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn4_holdn2 HN14 SC HN24 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn4_holdn3 HN24 SC HN34 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn4_holdn4 HN34 SC HN44 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn4_holdn5 HN44 SC STORE4 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn4_holdp COL4 SCB STORE4 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn4_storeload CBUF4 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn4_storefollow GND STORE4 CBUF4 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn4_muxn BUF SEL4 CBUF4 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn4_muxp BUF SELB4 CBUF4 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate4_0 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate4_1 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate4_2 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate4_3 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate4_4 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate4_5 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate4_6 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate4_7 STORE4 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset5 VRESET RST0 SENSE5 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow5 VDD SENSE5 SF5 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select5 SF5 ROW0 COL5 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel5 GND SENSE5 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn5_bias COL5 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn5_holdn COL5 SC HN15 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn5_holdn2 HN15 SC HN25 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn5_holdn3 HN25 SC HN35 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn5_holdn4 HN35 SC HN45 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn5_holdn5 HN45 SC STORE5 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn5_holdp COL5 SCB STORE5 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn5_storeload CBUF5 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn5_storefollow GND STORE5 CBUF5 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn5_muxn BUF SEL5 CBUF5 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn5_muxp BUF SELB5 CBUF5 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate5_0 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate5_1 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate5_2 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate5_3 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate5_4 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate5_5 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate5_6 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate5_7 STORE5 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset6 VRESET RST0 SENSE6 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow6 VDD SENSE6 SF6 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select6 SF6 ROW0 COL6 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel6 GND SENSE6 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn6_bias COL6 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn6_holdn COL6 SC HN16 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn6_holdn2 HN16 SC HN26 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn6_holdn3 HN26 SC HN36 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn6_holdn4 HN36 SC HN46 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn6_holdn5 HN46 SC STORE6 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn6_holdp COL6 SCB STORE6 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn6_storeload CBUF6 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn6_storefollow GND STORE6 CBUF6 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn6_muxn BUF SEL6 CBUF6 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn6_muxp BUF SELB6 CBUF6 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate6_0 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate6_1 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate6_2 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate6_3 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate6_4 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate6_5 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate6_6 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate6_7 STORE6 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset7 VRESET RST0 SENSE7 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow7 VDD SENSE7 SF7 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select7 SF7 ROW0 COL7 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel7 GND SENSE7 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn7_bias COL7 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn7_holdn COL7 SC HN17 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn7_holdn2 HN17 SC HN27 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn7_holdn3 HN27 SC HN37 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn7_holdn4 HN37 SC HN47 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn7_holdn5 HN47 SC STORE7 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn7_holdp COL7 SCB STORE7 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn7_storeload CBUF7 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn7_storefollow GND STORE7 CBUF7 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn7_muxn BUF SEL7 CBUF7 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn7_muxp BUF SELB7 CBUF7 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate7_0 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate7_1 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate7_2 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate7_3 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate7_4 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate7_5 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate7_6 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate7_7 STORE7 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset8 VRESET RST0 SENSE8 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow8 VDD SENSE8 SF8 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select8 SF8 ROW0 COL8 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel8 GND SENSE8 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn8_bias COL8 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn8_holdn COL8 SC HN18 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn8_holdn2 HN18 SC HN28 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn8_holdn3 HN28 SC HN38 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn8_holdn4 HN38 SC HN48 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn8_holdn5 HN48 SC STORE8 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn8_holdp COL8 SCB STORE8 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn8_storeload CBUF8 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn8_storefollow GND STORE8 CBUF8 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn8_muxn BUF SEL8 CBUF8 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn8_muxp BUF SELB8 CBUF8 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate8_0 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate8_1 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate8_2 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate8_3 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate8_4 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate8_5 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate8_6 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate8_7 STORE8 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset9 VRESET RST0 SENSE9 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow9 VDD SENSE9 SF9 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select9 SF9 ROW0 COL9 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel9 GND SENSE9 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn9_bias COL9 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn9_holdn COL9 SC HN19 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn9_holdn2 HN19 SC HN29 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn9_holdn3 HN29 SC HN39 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn9_holdn4 HN39 SC HN49 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn9_holdn5 HN49 SC STORE9 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn9_holdp COL9 SCB STORE9 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn9_storeload CBUF9 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn9_storefollow GND STORE9 CBUF9 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn9_muxn BUF SEL9 CBUF9 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn9_muxp BUF SELB9 CBUF9 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate9_0 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate9_1 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate9_2 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate9_3 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate9_4 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate9_5 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate9_6 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate9_7 STORE9 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset10 VRESET RST0 SENSE10 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow10 VDD SENSE10 SF10 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select10 SF10 ROW0 COL10 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel10 GND SENSE10 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn10_bias COL10 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn10_holdn COL10 SC HN110 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn10_holdn2 HN110 SC HN210 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn10_holdn3 HN210 SC HN310 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn10_holdn4 HN310 SC HN410 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn10_holdn5 HN410 SC STORE10 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn10_holdp COL10 SCB STORE10 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn10_storeload CBUF10 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn10_storefollow GND STORE10 CBUF10 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn10_muxn BUF SEL10 CBUF10 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn10_muxp BUF SELB10 CBUF10 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate10_0 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate10_1 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate10_2 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate10_3 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate10_4 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate10_5 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate10_6 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate10_7 STORE10 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset11 VRESET RST0 SENSE11 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow11 VDD SENSE11 SF11 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select11 SF11 ROW0 COL11 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel11 GND SENSE11 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn11_bias COL11 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn11_holdn COL11 SC HN111 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn11_holdn2 HN111 SC HN211 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn11_holdn3 HN211 SC HN311 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn11_holdn4 HN311 SC HN411 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn11_holdn5 HN411 SC STORE11 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn11_holdp COL11 SCB STORE11 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn11_storeload CBUF11 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn11_storefollow GND STORE11 CBUF11 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn11_muxn BUF SEL11 CBUF11 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn11_muxp BUF SELB11 CBUF11 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate11_0 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate11_1 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate11_2 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate11_3 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate11_4 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate11_5 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate11_6 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate11_7 STORE11 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset12 VRESET RST0 SENSE12 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow12 VDD SENSE12 SF12 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select12 SF12 ROW0 COL12 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel12 GND SENSE12 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn12_bias COL12 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn12_holdn COL12 SC HN112 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn12_holdn2 HN112 SC HN212 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn12_holdn3 HN212 SC HN312 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn12_holdn4 HN312 SC HN412 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn12_holdn5 HN412 SC STORE12 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn12_holdp COL12 SCB STORE12 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn12_storeload CBUF12 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn12_storefollow GND STORE12 CBUF12 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn12_muxn BUF SEL12 CBUF12 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn12_muxp BUF SELB12 CBUF12 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate12_0 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate12_1 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate12_2 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate12_3 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate12_4 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate12_5 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate12_6 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate12_7 STORE12 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset13 VRESET RST0 SENSE13 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow13 VDD SENSE13 SF13 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select13 SF13 ROW0 COL13 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel13 GND SENSE13 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn13_bias COL13 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn13_holdn COL13 SC HN113 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn13_holdn2 HN113 SC HN213 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn13_holdn3 HN213 SC HN313 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn13_holdn4 HN313 SC HN413 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn13_holdn5 HN413 SC STORE13 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn13_holdp COL13 SCB STORE13 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn13_storeload CBUF13 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn13_storefollow GND STORE13 CBUF13 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn13_muxn BUF SEL13 CBUF13 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn13_muxp BUF SELB13 CBUF13 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate13_0 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate13_1 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate13_2 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate13_3 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate13_4 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate13_5 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate13_6 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate13_7 STORE13 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset14 VRESET RST0 SENSE14 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow14 VDD SENSE14 SF14 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select14 SF14 ROW0 COL14 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel14 GND SENSE14 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn14_bias COL14 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn14_holdn COL14 SC HN114 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn14_holdn2 HN114 SC HN214 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn14_holdn3 HN214 SC HN314 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn14_holdn4 HN314 SC HN414 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn14_holdn5 HN414 SC STORE14 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn14_holdp COL14 SCB STORE14 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn14_storeload CBUF14 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn14_storefollow GND STORE14 CBUF14 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn14_muxn BUF SEL14 CBUF14 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn14_muxp BUF SELB14 CBUF14 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate14_0 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate14_1 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate14_2 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate14_3 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate14_4 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate14_5 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate14_6 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate14_7 STORE14 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset15 VRESET RST0 SENSE15 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow15 VDD SENSE15 SF15 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select15 SF15 ROW0 COL15 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel15 GND SENSE15 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn15_bias COL15 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn15_holdn COL15 SC HN115 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn15_holdn2 HN115 SC HN215 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn15_holdn3 HN215 SC HN315 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn15_holdn4 HN315 SC HN415 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn15_holdn5 HN415 SC STORE15 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn15_holdp COL15 SCB STORE15 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn15_storeload CBUF15 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn15_storefollow GND STORE15 CBUF15 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn15_muxn BUF SEL15 CBUF15 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn15_muxp BUF SELB15 CBUF15 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate15_0 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate15_1 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate15_2 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate15_3 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate15_4 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate15_5 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate15_6 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate15_7 STORE15 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset16 VRESET RST0 SENSE16 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow16 VDD SENSE16 SF16 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select16 SF16 ROW0 COL16 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel16 GND SENSE16 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn16_bias COL16 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn16_holdn COL16 SC HN116 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn16_holdn2 HN116 SC HN216 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn16_holdn3 HN216 SC HN316 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn16_holdn4 HN316 SC HN416 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn16_holdn5 HN416 SC STORE16 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn16_holdp COL16 SCB STORE16 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn16_storeload CBUF16 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn16_storefollow GND STORE16 CBUF16 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn16_muxn BUF SEL16 CBUF16 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn16_muxp BUF SELB16 CBUF16 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate16_0 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate16_1 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate16_2 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate16_3 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate16_4 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate16_5 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate16_6 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate16_7 STORE16 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset17 VRESET RST0 SENSE17 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow17 VDD SENSE17 SF17 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select17 SF17 ROW0 COL17 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel17 GND SENSE17 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn17_bias COL17 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn17_holdn COL17 SC HN117 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn17_holdn2 HN117 SC HN217 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn17_holdn3 HN217 SC HN317 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn17_holdn4 HN317 SC HN417 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn17_holdn5 HN417 SC STORE17 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn17_holdp COL17 SCB STORE17 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn17_storeload CBUF17 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn17_storefollow GND STORE17 CBUF17 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn17_muxn BUF SEL17 CBUF17 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn17_muxp BUF SELB17 CBUF17 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate17_0 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate17_1 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate17_2 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate17_3 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate17_4 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate17_5 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate17_6 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate17_7 STORE17 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset18 VRESET RST0 SENSE18 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow18 VDD SENSE18 SF18 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select18 SF18 ROW0 COL18 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel18 GND SENSE18 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn18_bias COL18 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn18_holdn COL18 SC HN118 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn18_holdn2 HN118 SC HN218 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn18_holdn3 HN218 SC HN318 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn18_holdn4 HN318 SC HN418 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn18_holdn5 HN418 SC STORE18 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn18_holdp COL18 SCB STORE18 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn18_storeload CBUF18 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn18_storefollow GND STORE18 CBUF18 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn18_muxn BUF SEL18 CBUF18 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn18_muxp BUF SELB18 CBUF18 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate18_0 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate18_1 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate18_2 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate18_3 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate18_4 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate18_5 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate18_6 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate18_7 STORE18 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset19 VRESET RST0 SENSE19 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow19 VDD SENSE19 SF19 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select19 SF19 ROW0 COL19 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel19 GND SENSE19 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn19_bias COL19 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn19_holdn COL19 SC HN119 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn19_holdn2 HN119 SC HN219 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn19_holdn3 HN219 SC HN319 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn19_holdn4 HN319 SC HN419 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn19_holdn5 HN419 SC STORE19 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn19_holdp COL19 SCB STORE19 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn19_storeload CBUF19 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn19_storefollow GND STORE19 CBUF19 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn19_muxn BUF SEL19 CBUF19 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn19_muxp BUF SELB19 CBUF19 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate19_0 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate19_1 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate19_2 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate19_3 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate19_4 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate19_5 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate19_6 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate19_7 STORE19 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset20 VRESET RST0 SENSE20 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow20 VDD SENSE20 SF20 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select20 SF20 ROW0 COL20 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel20 GND SENSE20 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn20_bias COL20 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn20_holdn COL20 SC HN120 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn20_holdn2 HN120 SC HN220 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn20_holdn3 HN220 SC HN320 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn20_holdn4 HN320 SC HN420 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn20_holdn5 HN420 SC STORE20 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn20_holdp COL20 SCB STORE20 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn20_storeload CBUF20 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn20_storefollow GND STORE20 CBUF20 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn20_muxn BUF SEL20 CBUF20 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn20_muxp BUF SELB20 CBUF20 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate20_0 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate20_1 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate20_2 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate20_3 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate20_4 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate20_5 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate20_6 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate20_7 STORE20 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset21 VRESET RST0 SENSE21 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow21 VDD SENSE21 SF21 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select21 SF21 ROW0 COL21 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel21 GND SENSE21 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn21_bias COL21 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn21_holdn COL21 SC HN121 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn21_holdn2 HN121 SC HN221 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn21_holdn3 HN221 SC HN321 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn21_holdn4 HN321 SC HN421 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn21_holdn5 HN421 SC STORE21 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn21_holdp COL21 SCB STORE21 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn21_storeload CBUF21 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn21_storefollow GND STORE21 CBUF21 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn21_muxn BUF SEL21 CBUF21 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn21_muxp BUF SELB21 CBUF21 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate21_0 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate21_1 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate21_2 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate21_3 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate21_4 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate21_5 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate21_6 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate21_7 STORE21 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset22 VRESET RST0 SENSE22 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow22 VDD SENSE22 SF22 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select22 SF22 ROW0 COL22 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel22 GND SENSE22 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn22_bias COL22 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn22_holdn COL22 SC HN122 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn22_holdn2 HN122 SC HN222 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn22_holdn3 HN222 SC HN322 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn22_holdn4 HN322 SC HN422 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn22_holdn5 HN422 SC STORE22 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn22_holdp COL22 SCB STORE22 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn22_storeload CBUF22 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn22_storefollow GND STORE22 CBUF22 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn22_muxn BUF SEL22 CBUF22 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn22_muxp BUF SELB22 CBUF22 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate22_0 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate22_1 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate22_2 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate22_3 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate22_4 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate22_5 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate22_6 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate22_7 STORE22 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset23 VRESET RST0 SENSE23 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow23 VDD SENSE23 SF23 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select23 SF23 ROW0 COL23 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel23 GND SENSE23 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn23_bias COL23 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn23_holdn COL23 SC HN123 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn23_holdn2 HN123 SC HN223 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn23_holdn3 HN223 SC HN323 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn23_holdn4 HN323 SC HN423 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn23_holdn5 HN423 SC STORE23 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn23_holdp COL23 SCB STORE23 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn23_storeload CBUF23 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn23_storefollow GND STORE23 CBUF23 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn23_muxn BUF SEL23 CBUF23 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn23_muxp BUF SELB23 CBUF23 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate23_0 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate23_1 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate23_2 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate23_3 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate23_4 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate23_5 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate23_6 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate23_7 STORE23 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset24 VRESET RST0 SENSE24 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow24 VDD SENSE24 SF24 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select24 SF24 ROW0 COL24 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel24 GND SENSE24 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn24_bias COL24 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn24_holdn COL24 SC HN124 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn24_holdn2 HN124 SC HN224 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn24_holdn3 HN224 SC HN324 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn24_holdn4 HN324 SC HN424 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn24_holdn5 HN424 SC STORE24 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn24_holdp COL24 SCB STORE24 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn24_storeload CBUF24 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn24_storefollow GND STORE24 CBUF24 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn24_muxn BUF SEL24 CBUF24 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn24_muxp BUF SELB24 CBUF24 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate24_0 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate24_1 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate24_2 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate24_3 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate24_4 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate24_5 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate24_6 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate24_7 STORE24 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset25 VRESET RST0 SENSE25 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow25 VDD SENSE25 SF25 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select25 SF25 ROW0 COL25 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel25 GND SENSE25 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn25_bias COL25 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn25_holdn COL25 SC HN125 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn25_holdn2 HN125 SC HN225 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn25_holdn3 HN225 SC HN325 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn25_holdn4 HN325 SC HN425 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn25_holdn5 HN425 SC STORE25 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn25_holdp COL25 SCB STORE25 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn25_storeload CBUF25 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn25_storefollow GND STORE25 CBUF25 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn25_muxn BUF SEL25 CBUF25 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn25_muxp BUF SELB25 CBUF25 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate25_0 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate25_1 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate25_2 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate25_3 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate25_4 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate25_5 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate25_6 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate25_7 STORE25 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset26 VRESET RST0 SENSE26 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow26 VDD SENSE26 SF26 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select26 SF26 ROW0 COL26 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel26 GND SENSE26 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn26_bias COL26 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn26_holdn COL26 SC HN126 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn26_holdn2 HN126 SC HN226 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn26_holdn3 HN226 SC HN326 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn26_holdn4 HN326 SC HN426 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn26_holdn5 HN426 SC STORE26 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn26_holdp COL26 SCB STORE26 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn26_storeload CBUF26 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn26_storefollow GND STORE26 CBUF26 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn26_muxn BUF SEL26 CBUF26 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn26_muxp BUF SELB26 CBUF26 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate26_0 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate26_1 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate26_2 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate26_3 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate26_4 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate26_5 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate26_6 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate26_7 STORE26 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset27 VRESET RST0 SENSE27 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow27 VDD SENSE27 SF27 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select27 SF27 ROW0 COL27 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel27 GND SENSE27 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn27_bias COL27 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn27_holdn COL27 SC HN127 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn27_holdn2 HN127 SC HN227 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn27_holdn3 HN227 SC HN327 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn27_holdn4 HN327 SC HN427 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn27_holdn5 HN427 SC STORE27 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn27_holdp COL27 SCB STORE27 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn27_storeload CBUF27 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn27_storefollow GND STORE27 CBUF27 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn27_muxn BUF SEL27 CBUF27 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn27_muxp BUF SELB27 CBUF27 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate27_0 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate27_1 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate27_2 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate27_3 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate27_4 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate27_5 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate27_6 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate27_7 STORE27 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset28 VRESET RST0 SENSE28 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow28 VDD SENSE28 SF28 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select28 SF28 ROW0 COL28 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel28 GND SENSE28 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn28_bias COL28 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn28_holdn COL28 SC HN128 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn28_holdn2 HN128 SC HN228 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn28_holdn3 HN228 SC HN328 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn28_holdn4 HN328 SC HN428 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn28_holdn5 HN428 SC STORE28 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn28_holdp COL28 SCB STORE28 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn28_storeload CBUF28 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn28_storefollow GND STORE28 CBUF28 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn28_muxn BUF SEL28 CBUF28 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn28_muxp BUF SELB28 CBUF28 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate28_0 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate28_1 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate28_2 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate28_3 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate28_4 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate28_5 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate28_6 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate28_7 STORE28 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset29 VRESET RST0 SENSE29 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow29 VDD SENSE29 SF29 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select29 SF29 ROW0 COL29 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel29 GND SENSE29 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn29_bias COL29 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn29_holdn COL29 SC HN129 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn29_holdn2 HN129 SC HN229 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn29_holdn3 HN229 SC HN329 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn29_holdn4 HN329 SC HN429 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn29_holdn5 HN429 SC STORE29 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn29_holdp COL29 SCB STORE29 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn29_storeload CBUF29 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn29_storefollow GND STORE29 CBUF29 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn29_muxn BUF SEL29 CBUF29 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn29_muxp BUF SELB29 CBUF29 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate29_0 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate29_1 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate29_2 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate29_3 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate29_4 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate29_5 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate29_6 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate29_7 STORE29 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset30 VRESET RST0 SENSE30 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow30 VDD SENSE30 SF30 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select30 SF30 ROW0 COL30 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel30 GND SENSE30 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn30_bias COL30 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn30_holdn COL30 SC HN130 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn30_holdn2 HN130 SC HN230 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn30_holdn3 HN230 SC HN330 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn30_holdn4 HN330 SC HN430 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn30_holdn5 HN430 SC STORE30 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn30_holdp COL30 SCB STORE30 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn30_storeload CBUF30 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn30_storefollow GND STORE30 CBUF30 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn30_muxn BUF SEL30 CBUF30 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn30_muxp BUF SELB30 CBUF30 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate30_0 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate30_1 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate30_2 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate30_3 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate30_4 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate30_5 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate30_6 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate30_7 STORE30 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset31 VRESET RST0 SENSE31 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow31 VDD SENSE31 SF31 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select31 SF31 ROW0 COL31 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel31 GND SENSE31 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn31_bias COL31 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn31_holdn COL31 SC HN131 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn31_holdn2 HN131 SC HN231 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn31_holdn3 HN231 SC HN331 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn31_holdn4 HN331 SC HN431 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn31_holdn5 HN431 SC STORE31 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn31_holdp COL31 SCB STORE31 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn31_storeload CBUF31 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn31_storefollow GND STORE31 CBUF31 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn31_muxn BUF SEL31 CBUF31 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn31_muxp BUF SELB31 CBUF31 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate31_0 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate31_1 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate31_2 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate31_3 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate31_4 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate31_5 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate31_6 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate31_7 STORE31 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset32 VRESET RST0 SENSE32 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow32 VDD SENSE32 SF32 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select32 SF32 ROW0 COL32 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel32 GND SENSE32 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn32_bias COL32 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn32_holdn COL32 SC HN132 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn32_holdn2 HN132 SC HN232 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn32_holdn3 HN232 SC HN332 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn32_holdn4 HN332 SC HN432 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn32_holdn5 HN432 SC STORE32 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn32_holdp COL32 SCB STORE32 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn32_storeload CBUF32 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn32_storefollow GND STORE32 CBUF32 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn32_muxn BUF SEL32 CBUF32 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn32_muxp BUF SELB32 CBUF32 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate32_0 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate32_1 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate32_2 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate32_3 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate32_4 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate32_5 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate32_6 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate32_7 STORE32 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset33 VRESET RST0 SENSE33 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow33 VDD SENSE33 SF33 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select33 SF33 ROW0 COL33 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel33 GND SENSE33 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn33_bias COL33 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn33_holdn COL33 SC HN133 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn33_holdn2 HN133 SC HN233 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn33_holdn3 HN233 SC HN333 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn33_holdn4 HN333 SC HN433 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn33_holdn5 HN433 SC STORE33 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn33_holdp COL33 SCB STORE33 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn33_storeload CBUF33 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn33_storefollow GND STORE33 CBUF33 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn33_muxn BUF SEL33 CBUF33 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn33_muxp BUF SELB33 CBUF33 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate33_0 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate33_1 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate33_2 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate33_3 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate33_4 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate33_5 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate33_6 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate33_7 STORE33 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset34 VRESET RST0 SENSE34 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow34 VDD SENSE34 SF34 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select34 SF34 ROW0 COL34 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel34 GND SENSE34 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn34_bias COL34 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn34_holdn COL34 SC HN134 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn34_holdn2 HN134 SC HN234 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn34_holdn3 HN234 SC HN334 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn34_holdn4 HN334 SC HN434 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn34_holdn5 HN434 SC STORE34 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn34_holdp COL34 SCB STORE34 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn34_storeload CBUF34 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn34_storefollow GND STORE34 CBUF34 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn34_muxn BUF SEL34 CBUF34 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn34_muxp BUF SELB34 CBUF34 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate34_0 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate34_1 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate34_2 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate34_3 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate34_4 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate34_5 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate34_6 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate34_7 STORE34 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset35 VRESET RST0 SENSE35 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow35 VDD SENSE35 SF35 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select35 SF35 ROW0 COL35 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel35 GND SENSE35 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn35_bias COL35 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn35_holdn COL35 SC HN135 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn35_holdn2 HN135 SC HN235 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn35_holdn3 HN235 SC HN335 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn35_holdn4 HN335 SC HN435 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn35_holdn5 HN435 SC STORE35 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn35_holdp COL35 SCB STORE35 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn35_storeload CBUF35 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn35_storefollow GND STORE35 CBUF35 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn35_muxn BUF SEL35 CBUF35 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn35_muxp BUF SELB35 CBUF35 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate35_0 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate35_1 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate35_2 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate35_3 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate35_4 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate35_5 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate35_6 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate35_7 STORE35 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset36 VRESET RST0 SENSE36 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow36 VDD SENSE36 SF36 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select36 SF36 ROW0 COL36 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel36 GND SENSE36 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn36_bias COL36 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn36_holdn COL36 SC HN136 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn36_holdn2 HN136 SC HN236 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn36_holdn3 HN236 SC HN336 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn36_holdn4 HN336 SC HN436 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn36_holdn5 HN436 SC STORE36 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn36_holdp COL36 SCB STORE36 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn36_storeload CBUF36 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn36_storefollow GND STORE36 CBUF36 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn36_muxn BUF SEL36 CBUF36 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn36_muxp BUF SELB36 CBUF36 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate36_0 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate36_1 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate36_2 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate36_3 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate36_4 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate36_5 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate36_6 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate36_7 STORE36 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset37 VRESET RST0 SENSE37 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow37 VDD SENSE37 SF37 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select37 SF37 ROW0 COL37 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel37 GND SENSE37 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn37_bias COL37 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn37_holdn COL37 SC HN137 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn37_holdn2 HN137 SC HN237 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn37_holdn3 HN237 SC HN337 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn37_holdn4 HN337 SC HN437 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn37_holdn5 HN437 SC STORE37 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn37_holdp COL37 SCB STORE37 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn37_storeload CBUF37 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn37_storefollow GND STORE37 CBUF37 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn37_muxn BUF SEL37 CBUF37 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn37_muxp BUF SELB37 CBUF37 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate37_0 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate37_1 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate37_2 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate37_3 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate37_4 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate37_5 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate37_6 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate37_7 STORE37 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset38 VRESET RST0 SENSE38 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow38 VDD SENSE38 SF38 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select38 SF38 ROW0 COL38 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel38 GND SENSE38 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn38_bias COL38 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn38_holdn COL38 SC HN138 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn38_holdn2 HN138 SC HN238 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn38_holdn3 HN238 SC HN338 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn38_holdn4 HN338 SC HN438 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn38_holdn5 HN438 SC STORE38 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn38_holdp COL38 SCB STORE38 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn38_storeload CBUF38 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn38_storefollow GND STORE38 CBUF38 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn38_muxn BUF SEL38 CBUF38 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn38_muxp BUF SELB38 CBUF38 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate38_0 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate38_1 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate38_2 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate38_3 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate38_4 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate38_5 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate38_6 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate38_7 STORE38 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset39 VRESET RST0 SENSE39 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow39 VDD SENSE39 SF39 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select39 SF39 ROW0 COL39 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel39 GND SENSE39 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn39_bias COL39 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn39_holdn COL39 SC HN139 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn39_holdn2 HN139 SC HN239 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn39_holdn3 HN239 SC HN339 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn39_holdn4 HN339 SC HN439 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn39_holdn5 HN439 SC STORE39 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn39_holdp COL39 SCB STORE39 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn39_storeload CBUF39 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn39_storefollow GND STORE39 CBUF39 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn39_muxn BUF SEL39 CBUF39 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn39_muxp BUF SELB39 CBUF39 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate39_0 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate39_1 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate39_2 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate39_3 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate39_4 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate39_5 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate39_6 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate39_7 STORE39 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset40 VRESET RST0 SENSE40 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow40 VDD SENSE40 SF40 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select40 SF40 ROW0 COL40 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel40 GND SENSE40 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn40_bias COL40 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn40_holdn COL40 SC HN140 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn40_holdn2 HN140 SC HN240 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn40_holdn3 HN240 SC HN340 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn40_holdn4 HN340 SC HN440 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn40_holdn5 HN440 SC STORE40 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn40_holdp COL40 SCB STORE40 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn40_storeload CBUF40 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn40_storefollow GND STORE40 CBUF40 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn40_muxn BUF SEL40 CBUF40 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn40_muxp BUF SELB40 CBUF40 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate40_0 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate40_1 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate40_2 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate40_3 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate40_4 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate40_5 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate40_6 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate40_7 STORE40 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset41 VRESET RST0 SENSE41 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow41 VDD SENSE41 SF41 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select41 SF41 ROW0 COL41 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel41 GND SENSE41 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn41_bias COL41 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn41_holdn COL41 SC HN141 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn41_holdn2 HN141 SC HN241 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn41_holdn3 HN241 SC HN341 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn41_holdn4 HN341 SC HN441 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn41_holdn5 HN441 SC STORE41 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn41_holdp COL41 SCB STORE41 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn41_storeload CBUF41 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn41_storefollow GND STORE41 CBUF41 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn41_muxn BUF SEL41 CBUF41 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn41_muxp BUF SELB41 CBUF41 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate41_0 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate41_1 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate41_2 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate41_3 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate41_4 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate41_5 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate41_6 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate41_7 STORE41 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset42 VRESET RST0 SENSE42 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow42 VDD SENSE42 SF42 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select42 SF42 ROW0 COL42 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel42 GND SENSE42 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn42_bias COL42 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn42_holdn COL42 SC HN142 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn42_holdn2 HN142 SC HN242 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn42_holdn3 HN242 SC HN342 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn42_holdn4 HN342 SC HN442 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn42_holdn5 HN442 SC STORE42 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn42_holdp COL42 SCB STORE42 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn42_storeload CBUF42 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn42_storefollow GND STORE42 CBUF42 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn42_muxn BUF SEL42 CBUF42 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn42_muxp BUF SELB42 CBUF42 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate42_0 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate42_1 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate42_2 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate42_3 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate42_4 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate42_5 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate42_6 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate42_7 STORE42 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset43 VRESET RST0 SENSE43 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow43 VDD SENSE43 SF43 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select43 SF43 ROW0 COL43 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel43 GND SENSE43 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn43_bias COL43 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn43_holdn COL43 SC HN143 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn43_holdn2 HN143 SC HN243 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn43_holdn3 HN243 SC HN343 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn43_holdn4 HN343 SC HN443 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn43_holdn5 HN443 SC STORE43 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn43_holdp COL43 SCB STORE43 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn43_storeload CBUF43 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn43_storefollow GND STORE43 CBUF43 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn43_muxn BUF SEL43 CBUF43 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn43_muxp BUF SELB43 CBUF43 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate43_0 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate43_1 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate43_2 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate43_3 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate43_4 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate43_5 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate43_6 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate43_7 STORE43 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset44 VRESET RST0 SENSE44 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow44 VDD SENSE44 SF44 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select44 SF44 ROW0 COL44 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel44 GND SENSE44 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn44_bias COL44 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn44_holdn COL44 SC HN144 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn44_holdn2 HN144 SC HN244 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn44_holdn3 HN244 SC HN344 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn44_holdn4 HN344 SC HN444 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn44_holdn5 HN444 SC STORE44 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn44_holdp COL44 SCB STORE44 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn44_storeload CBUF44 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn44_storefollow GND STORE44 CBUF44 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn44_muxn BUF SEL44 CBUF44 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn44_muxp BUF SELB44 CBUF44 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate44_0 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate44_1 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate44_2 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate44_3 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate44_4 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate44_5 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate44_6 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate44_7 STORE44 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset45 VRESET RST0 SENSE45 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow45 VDD SENSE45 SF45 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select45 SF45 ROW0 COL45 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel45 GND SENSE45 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn45_bias COL45 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn45_holdn COL45 SC HN145 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn45_holdn2 HN145 SC HN245 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn45_holdn3 HN245 SC HN345 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn45_holdn4 HN345 SC HN445 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn45_holdn5 HN445 SC STORE45 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn45_holdp COL45 SCB STORE45 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn45_storeload CBUF45 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn45_storefollow GND STORE45 CBUF45 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn45_muxn BUF SEL45 CBUF45 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn45_muxp BUF SELB45 CBUF45 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate45_0 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate45_1 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate45_2 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate45_3 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate45_4 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate45_5 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate45_6 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate45_7 STORE45 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset46 VRESET RST0 SENSE46 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow46 VDD SENSE46 SF46 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select46 SF46 ROW0 COL46 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel46 GND SENSE46 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn46_bias COL46 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn46_holdn COL46 SC HN146 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn46_holdn2 HN146 SC HN246 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn46_holdn3 HN246 SC HN346 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn46_holdn4 HN346 SC HN446 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn46_holdn5 HN446 SC STORE46 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn46_holdp COL46 SCB STORE46 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn46_storeload CBUF46 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn46_storefollow GND STORE46 CBUF46 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn46_muxn BUF SEL46 CBUF46 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn46_muxp BUF SELB46 CBUF46 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate46_0 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate46_1 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate46_2 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate46_3 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate46_4 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate46_5 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate46_6 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate46_7 STORE46 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset47 VRESET RST0 SENSE47 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow47 VDD SENSE47 SF47 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select47 SF47 ROW0 COL47 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel47 GND SENSE47 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn47_bias COL47 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn47_holdn COL47 SC HN147 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn47_holdn2 HN147 SC HN247 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn47_holdn3 HN247 SC HN347 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn47_holdn4 HN347 SC HN447 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn47_holdn5 HN447 SC STORE47 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn47_holdp COL47 SCB STORE47 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn47_storeload CBUF47 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn47_storefollow GND STORE47 CBUF47 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn47_muxn BUF SEL47 CBUF47 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn47_muxp BUF SELB47 CBUF47 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate47_0 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate47_1 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate47_2 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate47_3 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate47_4 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate47_5 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate47_6 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate47_7 STORE47 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset48 VRESET RST0 SENSE48 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow48 VDD SENSE48 SF48 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select48 SF48 ROW0 COL48 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel48 GND SENSE48 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn48_bias COL48 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn48_holdn COL48 SC HN148 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn48_holdn2 HN148 SC HN248 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn48_holdn3 HN248 SC HN348 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn48_holdn4 HN348 SC HN448 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn48_holdn5 HN448 SC STORE48 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn48_holdp COL48 SCB STORE48 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn48_storeload CBUF48 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn48_storefollow GND STORE48 CBUF48 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn48_muxn BUF SEL48 CBUF48 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn48_muxp BUF SELB48 CBUF48 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate48_0 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate48_1 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate48_2 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate48_3 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate48_4 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate48_5 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate48_6 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate48_7 STORE48 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset49 VRESET RST0 SENSE49 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow49 VDD SENSE49 SF49 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select49 SF49 ROW0 COL49 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel49 GND SENSE49 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn49_bias COL49 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn49_holdn COL49 SC HN149 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn49_holdn2 HN149 SC HN249 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn49_holdn3 HN249 SC HN349 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn49_holdn4 HN349 SC HN449 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn49_holdn5 HN449 SC STORE49 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn49_holdp COL49 SCB STORE49 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn49_storeload CBUF49 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn49_storefollow GND STORE49 CBUF49 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn49_muxn BUF SEL49 CBUF49 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn49_muxp BUF SELB49 CBUF49 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate49_0 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate49_1 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate49_2 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate49_3 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate49_4 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate49_5 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate49_6 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate49_7 STORE49 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset50 VRESET RST0 SENSE50 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow50 VDD SENSE50 SF50 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select50 SF50 ROW0 COL50 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel50 GND SENSE50 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn50_bias COL50 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn50_holdn COL50 SC HN150 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn50_holdn2 HN150 SC HN250 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn50_holdn3 HN250 SC HN350 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn50_holdn4 HN350 SC HN450 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn50_holdn5 HN450 SC STORE50 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn50_holdp COL50 SCB STORE50 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn50_storeload CBUF50 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn50_storefollow GND STORE50 CBUF50 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn50_muxn BUF SEL50 CBUF50 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn50_muxp BUF SELB50 CBUF50 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate50_0 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate50_1 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate50_2 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate50_3 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate50_4 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate50_5 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate50_6 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate50_7 STORE50 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset51 VRESET RST0 SENSE51 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow51 VDD SENSE51 SF51 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select51 SF51 ROW0 COL51 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel51 GND SENSE51 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn51_bias COL51 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn51_holdn COL51 SC HN151 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn51_holdn2 HN151 SC HN251 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn51_holdn3 HN251 SC HN351 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn51_holdn4 HN351 SC HN451 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn51_holdn5 HN451 SC STORE51 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn51_holdp COL51 SCB STORE51 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn51_storeload CBUF51 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn51_storefollow GND STORE51 CBUF51 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn51_muxn BUF SEL51 CBUF51 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn51_muxp BUF SELB51 CBUF51 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate51_0 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate51_1 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate51_2 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate51_3 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate51_4 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate51_5 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate51_6 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate51_7 STORE51 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset52 VRESET RST0 SENSE52 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow52 VDD SENSE52 SF52 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select52 SF52 ROW0 COL52 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel52 GND SENSE52 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn52_bias COL52 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn52_holdn COL52 SC HN152 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn52_holdn2 HN152 SC HN252 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn52_holdn3 HN252 SC HN352 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn52_holdn4 HN352 SC HN452 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn52_holdn5 HN452 SC STORE52 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn52_holdp COL52 SCB STORE52 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn52_storeload CBUF52 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn52_storefollow GND STORE52 CBUF52 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn52_muxn BUF SEL52 CBUF52 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn52_muxp BUF SELB52 CBUF52 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate52_0 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate52_1 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate52_2 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate52_3 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate52_4 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate52_5 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate52_6 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate52_7 STORE52 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset53 VRESET RST0 SENSE53 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow53 VDD SENSE53 SF53 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select53 SF53 ROW0 COL53 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel53 GND SENSE53 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn53_bias COL53 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn53_holdn COL53 SC HN153 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn53_holdn2 HN153 SC HN253 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn53_holdn3 HN253 SC HN353 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn53_holdn4 HN353 SC HN453 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn53_holdn5 HN453 SC STORE53 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn53_holdp COL53 SCB STORE53 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn53_storeload CBUF53 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn53_storefollow GND STORE53 CBUF53 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn53_muxn BUF SEL53 CBUF53 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn53_muxp BUF SELB53 CBUF53 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate53_0 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate53_1 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate53_2 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate53_3 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate53_4 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate53_5 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate53_6 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate53_7 STORE53 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset54 VRESET RST0 SENSE54 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow54 VDD SENSE54 SF54 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select54 SF54 ROW0 COL54 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel54 GND SENSE54 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn54_bias COL54 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn54_holdn COL54 SC HN154 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn54_holdn2 HN154 SC HN254 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn54_holdn3 HN254 SC HN354 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn54_holdn4 HN354 SC HN454 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn54_holdn5 HN454 SC STORE54 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn54_holdp COL54 SCB STORE54 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn54_storeload CBUF54 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn54_storefollow GND STORE54 CBUF54 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn54_muxn BUF SEL54 CBUF54 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn54_muxp BUF SELB54 CBUF54 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate54_0 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate54_1 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate54_2 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate54_3 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate54_4 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate54_5 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate54_6 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate54_7 STORE54 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset55 VRESET RST0 SENSE55 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow55 VDD SENSE55 SF55 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select55 SF55 ROW0 COL55 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel55 GND SENSE55 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn55_bias COL55 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn55_holdn COL55 SC HN155 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn55_holdn2 HN155 SC HN255 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn55_holdn3 HN255 SC HN355 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn55_holdn4 HN355 SC HN455 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn55_holdn5 HN455 SC STORE55 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn55_holdp COL55 SCB STORE55 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn55_storeload CBUF55 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn55_storefollow GND STORE55 CBUF55 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn55_muxn BUF SEL55 CBUF55 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn55_muxp BUF SELB55 CBUF55 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate55_0 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate55_1 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate55_2 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate55_3 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate55_4 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate55_5 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate55_6 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate55_7 STORE55 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset56 VRESET RST0 SENSE56 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow56 VDD SENSE56 SF56 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select56 SF56 ROW0 COL56 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel56 GND SENSE56 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn56_bias COL56 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn56_holdn COL56 SC HN156 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn56_holdn2 HN156 SC HN256 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn56_holdn3 HN256 SC HN356 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn56_holdn4 HN356 SC HN456 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn56_holdn5 HN456 SC STORE56 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn56_holdp COL56 SCB STORE56 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn56_storeload CBUF56 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn56_storefollow GND STORE56 CBUF56 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn56_muxn BUF SEL56 CBUF56 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn56_muxp BUF SELB56 CBUF56 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate56_0 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate56_1 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate56_2 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate56_3 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate56_4 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate56_5 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate56_6 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate56_7 STORE56 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset57 VRESET RST0 SENSE57 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow57 VDD SENSE57 SF57 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select57 SF57 ROW0 COL57 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel57 GND SENSE57 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn57_bias COL57 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn57_holdn COL57 SC HN157 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn57_holdn2 HN157 SC HN257 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn57_holdn3 HN257 SC HN357 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn57_holdn4 HN357 SC HN457 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn57_holdn5 HN457 SC STORE57 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn57_holdp COL57 SCB STORE57 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn57_storeload CBUF57 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn57_storefollow GND STORE57 CBUF57 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn57_muxn BUF SEL57 CBUF57 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn57_muxp BUF SELB57 CBUF57 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate57_0 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate57_1 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate57_2 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate57_3 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate57_4 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate57_5 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate57_6 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate57_7 STORE57 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset58 VRESET RST0 SENSE58 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow58 VDD SENSE58 SF58 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select58 SF58 ROW0 COL58 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel58 GND SENSE58 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn58_bias COL58 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn58_holdn COL58 SC HN158 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn58_holdn2 HN158 SC HN258 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn58_holdn3 HN258 SC HN358 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn58_holdn4 HN358 SC HN458 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn58_holdn5 HN458 SC STORE58 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn58_holdp COL58 SCB STORE58 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn58_storeload CBUF58 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn58_storefollow GND STORE58 CBUF58 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn58_muxn BUF SEL58 CBUF58 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn58_muxp BUF SELB58 CBUF58 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate58_0 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate58_1 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate58_2 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate58_3 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate58_4 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate58_5 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate58_6 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate58_7 STORE58 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset59 VRESET RST0 SENSE59 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow59 VDD SENSE59 SF59 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select59 SF59 ROW0 COL59 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel59 GND SENSE59 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn59_bias COL59 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn59_holdn COL59 SC HN159 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn59_holdn2 HN159 SC HN259 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn59_holdn3 HN259 SC HN359 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn59_holdn4 HN359 SC HN459 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn59_holdn5 HN459 SC STORE59 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn59_holdp COL59 SCB STORE59 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn59_storeload CBUF59 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn59_storefollow GND STORE59 CBUF59 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn59_muxn BUF SEL59 CBUF59 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn59_muxp BUF SELB59 CBUF59 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate59_0 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate59_1 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate59_2 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate59_3 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate59_4 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate59_5 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate59_6 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate59_7 STORE59 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset60 VRESET RST0 SENSE60 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow60 VDD SENSE60 SF60 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select60 SF60 ROW0 COL60 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel60 GND SENSE60 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn60_bias COL60 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn60_holdn COL60 SC HN160 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn60_holdn2 HN160 SC HN260 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn60_holdn3 HN260 SC HN360 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn60_holdn4 HN360 SC HN460 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn60_holdn5 HN460 SC STORE60 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn60_holdp COL60 SCB STORE60 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn60_storeload CBUF60 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn60_storefollow GND STORE60 CBUF60 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn60_muxn BUF SEL60 CBUF60 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn60_muxp BUF SELB60 CBUF60 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate60_0 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate60_1 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate60_2 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate60_3 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate60_4 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate60_5 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate60_6 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate60_7 STORE60 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset61 VRESET RST0 SENSE61 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow61 VDD SENSE61 SF61 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select61 SF61 ROW0 COL61 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel61 GND SENSE61 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn61_bias COL61 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn61_holdn COL61 SC HN161 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn61_holdn2 HN161 SC HN261 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn61_holdn3 HN261 SC HN361 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn61_holdn4 HN361 SC HN461 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn61_holdn5 HN461 SC STORE61 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn61_holdp COL61 SCB STORE61 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn61_storeload CBUF61 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn61_storefollow GND STORE61 CBUF61 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn61_muxn BUF SEL61 CBUF61 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn61_muxp BUF SELB61 CBUF61 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate61_0 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate61_1 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate61_2 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate61_3 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate61_4 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate61_5 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate61_6 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate61_7 STORE61 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset62 VRESET RST0 SENSE62 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow62 VDD SENSE62 SF62 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select62 SF62 ROW0 COL62 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel62 GND SENSE62 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn62_bias COL62 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn62_holdn COL62 SC HN162 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn62_holdn2 HN162 SC HN262 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn62_holdn3 HN262 SC HN362 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn62_holdn4 HN362 SC HN462 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn62_holdn5 HN462 SC STORE62 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn62_holdp COL62 SCB STORE62 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn62_storeload CBUF62 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn62_storefollow GND STORE62 CBUF62 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn62_muxn BUF SEL62 CBUF62 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn62_muxp BUF SELB62 CBUF62 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate62_0 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate62_1 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate62_2 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate62_3 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate62_4 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate62_5 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate62_6 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate62_7 STORE62 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xpixel_reset63 VRESET RST0 SENSE63 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_follow63 VDD SENSE63 SF63 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xpixel_select63 SF63 ROW0 COL63 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Dpixel63 GND SENSE63 diode_nd2ps_03v3 area=0.4n pj=80u
+Xcolumn63_bias COL63 BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn63_holdn COL63 SC HN163 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn63_holdn2 HN163 SC HN263 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn63_holdn3 HN263 SC HN363 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn63_holdn4 HN363 SC HN463 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn63_holdn5 HN463 SC STORE63 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn63_holdp COL63 SCB STORE63 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xcolumn63_storeload CBUF63 PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn63_storefollow GND STORE63 CBUF63 VDD pfet_03v3 w=20u l=0.5u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+Xcolumn63_muxn BUF SEL63 CBUF63 GND nfet_03v3 w=1u l=0.5u ad=0.44p as=0.44p pd=2.88u ps=2.88u
+Xcolumn63_muxp BUF SELB63 CBUF63 VDD pfet_03v3 w=2u l=0.5u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xplate63_0 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate63_1 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate63_2 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate63_3 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate63_4 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate63_5 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate63_6 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xplate63_7 STORE63 GND cap_mim_2f0_m4m5_noshield c_width=32u c_length=77.76u
+Xref BIAS BIAS GND GND nfet_03v3 w=2u l=2u ad=0.88p as=0.88p pd=4.88u ps=4.88u
+Xstorage_ref PREF PREF VDD VDD pfet_03v3 w=20u l=2u ad=8.8p as=8.8p pd=40.88u ps=40.88u
+.ends reference

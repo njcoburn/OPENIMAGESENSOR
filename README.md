@@ -1,5 +1,26 @@
 # Open Image Sensor
 
+**Current — five-device candidate overnight queue started (30 September):**
+The corrected physical column and both banks pass DRC/LVS. Twelve extracted
+small-bank controls and 72 references pass; worst total error is 192.269 µV.
+The separate 64-column candidate has 898 MOS devices and uses 13 µs acquisition.
+The new detached queue tests typical/SS/FF at 125 °C first, then advances only
+on audited passes through mixed corners, 27 °C and typical illumination cases.
+Three jobs run concurrently, with an eight-hour transient watchdog; the first
+batch is estimated at 6–10 hours. No full-bank electrical pass is claimed yet.
+[Current overview](docs/overview.html#stack5-sequence) · [Live status](build/stack5-sequence-20260930-overnight/status.json) · [Reproduction profile](verification/compact-bank-stack5.json).
+The previous three-device timeout and FF failure remain historical evidence.
+
+**Latest review, 30 September — stopped; no active simulations:** all three
+100 ns runs and 576 references completed and are independently audited. All three
+50 ns runs hit the four-hour timeout, leaving 11 of 384 output samples unverified.
+Coarse typical/SS totals are 391.959/445.375 µV, but FF is 602.413 µV against
+500 µV. 7 available fine FF samples also exceed the limit (up to 577.376 µV).
+No complete pair is qualified and the later queue did not start. Next: address
+remaining fast-corner capture/storage error and use a longer watchdog for reruns.
+[Reviewed evidence](docs/overview.html#stack3-interrupted-review) · [Handoff](PICK_UP_HERE.md).
+Earlier running/completion statements below are historical.
+
 **Running, 30 September — 64-column candidate sequence:** checkpoint and
 changelog were pushed as `06889e5` before this work. The new physical 64-column
 bank passes DRC/LVS and all capture-chain checks. Six typical/SS/FF 125 °C

@@ -3,11 +3,21 @@
   "plan": "build/stack3-sequence-plan-20260930-away.json",
   "status": "build/stack3-sequence-20260930-away/status.json",
   "layout": "build/compact-bank-c64-stack3-grid-20260930",
-  "phase": "simulating",
+  "phase": "stopped_for_review",
   "stage": "hot-primary",
   "completed_stages": [],
   "audited": {},
-  "failures": {},
+  "failures": {
+    "typical-inverse125-50": "Simulation exited unsuccessfully; inspect exit record",
+    "ss-inverse125-50": "Simulation exited unsuccessfully; inspect exit record",
+    "ff-inverse125-50": "Simulation exited unsuccessfully; inspect exit record",
+    "typical-inverse125": "A simulation failed",
+    "ss-inverse125": "A simulation failed",
+    "ff-inverse125": "A simulation failed",
+    "sequence": "Stage did not pass all required independent audits"
+  },
   "full_bank_accuracy_qualified": false,
-  "full_chip_qualified": false
+  "full_chip_qualified": false,
+  "interrupted_review": "simulations/stack3-interrupted-review-20260930.json",
+  "next_task": "Investigate remaining FF capture/storage error, then run corrected candidate with a longer watchdog. The old queue remains stopped."
 }

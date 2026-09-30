@@ -1,0 +1,19 @@
+{
+  "reviewed_at_utc": "2026-09-30T21:18:27.094528+00:00",
+  "completed_coarse_transients": 3,
+  "references_audited": 576,
+  "available_fine_samples": 373,
+  "missing_fine_samples": 11,
+  "available_fine_ff_failures": 7,
+  "full_pairs_qualified": 0,
+  "plot_visually_reviewed": true,
+  "no_following_stage_started": true,
+  "full_bank_accuracy_qualified": false,
+  "reviewed_hashes": {
+    "simulations/stack3-interrupted-review-20260930.json": "3e66b81a017cf563e6b0d5e2cc3b32cd88710e3d0cf7a49b5899e943d23b616b",
+    "scripts/review-stack3-interrupted.py": "d16b5f279119b3a2fa4725b064050b501099a30d5c66826928c05ec9f9be0424",
+    "scripts/publish-stack3-interrupted-review.py": "74a0d55dda32a30c93d8c897b9d4984059ae19011576ed2d56290fb09f2a46aa",
+    "docs/assets/stack3-interrupted-review-20260930.png": "d277f3cbc32239c497588fde4f86d74b635110fcdabdb75733c1b8a322f1fcba",
+    "build/stack3-sequence-20260930-away/status.json": "b3e7f936f1aac9ef2ac0fc903fa3db519b2feeee735437be5ad46d714934e5c1"
+  }
+}

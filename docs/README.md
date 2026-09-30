@@ -1,5 +1,9 @@
 # Sensor references
 
+Current five-device overnight sequence and preflight are at [overview](overview.html#stack5-sequence); see [replay profile](../verification/compact-bank-stack5.json). The previous three-device batch remains historical evidence.
+
+Latest: [interrupted candidate review](overview.html#stack3-interrupted-review). Three coarse runs and 576 references audited; refined runs timed out and FF electrical error remains. No simulator jobs or subsequent stages are running.
+
 Running: [64-column candidate sequence](overview.html#stack3-sequence). The controller updates results and stops progression on failures. Portable physical candidate: `checkpoints/compact-bank-stack3-64`; electrical qualification remains pending.
 
 Latest: [physical three-device capture candidate](overview.html#physical-stack3), with extracted-circuit results, DRC/LVS evidence, layout detail and a one-command electrical rerun. Full-bank candidate validation is next.

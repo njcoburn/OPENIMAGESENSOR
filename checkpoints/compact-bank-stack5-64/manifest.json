@@ -1,0 +1,38 @@
+{
+  "scope": "Separate physical candidate only; electrical full-bank verification pending. Unfilled development bank, not a full chip.",
+  "artifacts": {
+    "bank.gds.gz": {
+      "sha256": "896854a6d62f4f78e25dd33b328bd91a10e37a898b277be9ad8275a34b6a5c02",
+      "uncompressed_sha256": "b53dbd7412f125f6b401e69f2a58f8f0124c0f0060a52129fcd90139f948f46a",
+      "source": "build/compact-bank-c64-stack5-grid-20260930/bank.gds"
+    },
+    "rc-port.spice.gz": {
+      "sha256": "95ee227c289e39c50037cfa4a6b69666e7b2778f6ad306d8409a4a5ffea23774",
+      "uncompressed_sha256": "5aa958e7e120dfad47511e63381fdd1febf304f9e7056b5a0b54f688afe611a0",
+      "source": "build/compact-bank-c64-stack5-grid-20260930/rc-port.spice"
+    },
+    "rc-far.spice.gz": {
+      "sha256": "c7a2cee5ca11080b9d88f3cdec0e5f55c7413ea8ef87367f6d68afd7feff188e",
+      "uncompressed_sha256": "ce130518e0fe5783ee62f6e29f0c525582b91079891215f3f8a3b34b874ca19b",
+      "source": "build/compact-bank-c64-stack5-grid-20260930/rc-far.spice"
+    },
+    "verification.json": {
+      "sha256": "08fc55efe33409eee14a10ad1f8e37ffe411f899609bfad77f21145fe464423f",
+      "source": "build/compact-bank-c64-stack5-grid-20260930/verification.json"
+    },
+    "physical-audit.json": {
+      "sha256": "f7299f88f2689ace6b9fbbe9ea0244d127bc509eae85a8e06f4a7d6ce3d0edef",
+      "source": "build/compact-bank-c64-stack5-grid-20260930/physical-audit.json"
+    },
+    "reference.spice": {
+      "sha256": "e02a356b9ea74e93cbc67842f13c2715938f7707eecc87b35de2217050757b0e",
+      "source": "build/compact-bank-c64-stack5-grid-20260930/reference.spice"
+    },
+    "capture-column-stack5.spice": {
+      "sha256": "fceb656fc71dbc04133e208f7c397db1a52155ed2386dd17784b8f25dd0b55b1",
+      "source": "circuits/capture-column-stack5.spice"
+    }
+  },
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false
+}

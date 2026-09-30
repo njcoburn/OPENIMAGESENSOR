@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-09-30 — Five-device correction and overnight process queue
+
+Review the extended-age model comparison: fast-corner total error falls from
+604.318 µV with three capture devices to 396.116 µV with five. Build a separate
+five-device physical column and 64-column bank (898 MOS / 512 MIM / 64 diodes).
+Physical DRC/LVS, all capture chains, unchanged storage geometry and 40 µm
+abutment pass. Retain four failed routing attempts and preserve old evidence.
+
+Twelve extracted port/far transients and 72 fresh references pass independent
+raw audits; worst total is 192.269 µV and placement sensitivity is 0.053 µV.
+Version the simulation and audits for 13 µs acquisition and 15.5 µs ADC reset.
+Check ten full-bank decks, twenty reference corner selections, legacy timing
+compatibility and continuation guards. Preserve a portable physical checkpoint.
+
+Start a detached, gated queue of 18 cases / 36 transients / 3,456 references.
+Use three workers, an eight-hour transient watchdog and a twelve-hour job limit;
+new stages stop launching after 48 hours. Preserve failed results and stop later
+stages unless all independent audits pass. Update overview/journal, add a fixed-
+candidate one-command replay, and enable a local completion/review alert.
+Full-bank electrical results are pending. Windows automatic idle sleep is disabled.
+
+## 2026-09-30 — Review interrupted full-bank candidate batch
+
+Audit all three completed coarse runs and 576 references. Preserve all three
+fine traces that hit the four-hour transient timeout near the end. Check only
+available prefix samples; no incomplete pair is qualified. Typical/SS coarse
+total errors are 391.959/445.375 µV; FF remains above limit at 602.413 µV.
+Available fine FF samples also exceed 500 µV. Keep the process queue stopped,
+record the distinction between timeout and electrical failure, and add the
+review, plot, journal entry and handoff. No simulator batch was restarted.
+
 ## 2026-09-30 — Launch gated full-bank candidate verification
 
 Push the reviewed checkpoint first as `06889e5`. Build a separate 64-column

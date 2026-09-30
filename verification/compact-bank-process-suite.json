@@ -77,9 +77,10 @@
     }
   ],
   "completion_review": "simulations/compact-bank-process-review-20260930.json",
-  "next_task": "Monitor the active gated 64-column sequence; do not launch duplicate jobs. Review failures or completed candidate results before further design changes.",
+  "next_task": "Investigate remaining FF capture/storage error, then run corrected candidate with a longer watchdog. The old queue remains stopped.",
   "diagnosis_review": "simulations/compact-bank-process-diagnosis-review-20260930.json",
   "candidate_screen_profile": "verification/compact-bank-capture-candidates.json",
   "physical_candidate_profile": "verification/compact-bank-physical-stack3.json",
-  "full_bank_sequence_profile": "verification/compact-bank-stack3-sequence.json"
+  "full_bank_sequence_profile": "verification/compact-bank-stack3-sequence.json",
+  "interrupted_review": "simulations/stack3-interrupted-review-20260930.json"
 }

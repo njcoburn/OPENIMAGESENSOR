@@ -1,0 +1,7 @@
+{
+  "container": "ois-stack5-sequence-20260930-overnight",
+  "container_id": "563790ae6d93afc8d75c857dd97242905fd70754f473c75b85054561118eada8",
+  "plan": "build/stack5-sequence-plan-20260930-overnight.json",
+  "status": "build/stack5-sequence-20260930-overnight/status.json",
+  "started_at_utc": "2026-09-30T21:49:54.933994+00:00"
+}

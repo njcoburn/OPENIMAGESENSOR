@@ -1,13 +1,69 @@
 # Pick up here — 64×64 wafer.space first silicon
 
-<!-- BEGIN STACK3_LIVE -->
+<!-- BEGIN STACK5_LIVE -->
 ## Current unattended 64-column sequence — simulating
+
+Five-device correction following the reviewed three-device timeout/FF failure. Live status:
+`build/stack5-sequence-20260930-overnight/status.json`. Exact plan: `build/stack5-sequence-plan-20260930-overnight.json`.
+Stage: **hot-primary**; reviewed cases: **0 / 18**.
+Controller container: `ois-stack5-sequence-20260930-overnight`. Inspect this status and container
+before launching anything else. Last update: 2026-09-30T21:49:55.486903+00:00.
+
+Physical candidate: `build/compact-bank-c64-stack5-grid-20260930`, 898 MOS/512 MIM/64 diodes. The new v6
+runner uses 13 µs acquisition and saves all four internal nodes of every capture
+stack. New auditor: `report-bank-stack5.py`. Frozen dependencies are pinned in
+the plan. Do not edit them while the sequence or its evidence is retained.
+Queue: hot-primary → hot-mixed → room-primary → room-mixed → typical-alternating → typical-dark → typical-middle → typical-bright. Each stage must pass all independent audits to advance.
+Failure stops later stages; running members of that batch finish. No full-chip
+qualification is claimed. Twelve fresh small port/far controls and their references were independently
+audited before launch. Read the overview section
+`stack5-sequence` and persistent profile for results. Earlier handoff states below
+are historical. Failures: `{}`.
+<!-- END STACK5_LIVE -->
+
+## Previous three-device review — timeout and remaining FF electrical failure
+
+No simulator jobs remain active. The controller exited 1 after 4.01 hours and
+correctly started no later stages. This is not a completed passing batch.
+All three 100 ns runs and all 576 references are independently audited in
+`build/stack3-interrupted-review-20260930/result.json`, copied to
+`simulations/stack3-interrupted-review-20260930.json`.
+
+Coarse total/tracking errors (µV): typical 391.959/39.582; SS 445.375/289.966;
+FF 602.413/3.476. Typical/SS meet coarse limits only; FF exceeds 500 µV.
+The three 50 ns transients timed out at four hours with no solver-error messages:
+typical reached 3.910009 ms (125/128 samples), SS 3.932006 ms (126/128), and FF
+3.862222 ms (122/128), against the required 3.98 ms. Available numerical agreement
+is checked at 373 instants, with no extrapolation. 7 available FF fine samples
+exceed 500 µV against the same coarse capture references used by a standard pair;
+maximum available fine error is 577.376 µV. The timeout is not the sole issue.
+No full refinement pass is claimed; all full-bank/full-chip flags remain false.
+
+**Next:** investigate the remaining FF settled-state/capture-retention error
+before resuming the process queue. At late column 63 the coarse error is
+-602.413 µV while tracking is only -2.316 µV. First-to-late STORE drop reaches
+400.716 µV at FF, versus 35.217 typical and 1.986 SS. This supports retention
+investigation but does not isolate one terminal mechanism. Evaluate additional
+leakage reduction/capture tradeoffs on bounded controls before changing geometry.
+Increase the per-transient watchdog and review concurrency on the next full-bank
+run; the configured four-hour limit was too tight. Retain completed coarse runs,
+references and failed fine prefixes as immutable evidence. Do not relabel or
+resume the old timed-out files as completed simulations.
+
+The outer job wrapper says timed_out=false because its seven-hour deadline did
+not fire; its exit code is 1. The inner transient execution correctly records
+timed_out=true at 14,400 s. Notification was delivered/dismissed. Original live
+status, launch plan and both pushed commits remain intact. Use new script versions
+for future changes to frozen dependencies. No new long batch started in this review.
+
+<!-- BEGIN STACK3_LIVE -->
+## Current unattended 64-column sequence — stopped_for_review
 
 Started after checkpoint `06889e5` was committed and pushed. Live status:
 `build/stack3-sequence-20260930-away/status.json`. Exact plan: `build/stack3-sequence-plan-20260930-away.json`.
 Stage: **hot-primary**; reviewed cases: **0 / 18**.
 Controller container: `ois-stack3-sequence-20260930-away`. Inspect this status and container
-before launching anything else. Last update: 2026-09-30T16:35:26.305817+00:00.
+before launching anything else. Last update: 2026-09-30T20:35:56.193679+00:00.
 
 Physical candidate: `build/compact-bank-c64-stack3-grid-20260930`, 770 MOS/512 MIM/64 diodes. The new v5
 runner uses 12.5 µs acquisition and saves both internal nodes of every capture
@@ -18,7 +74,7 @@ Failure stops later stages; running members of that batch finish. No full-chip
 qualification is claimed. Six fresh small controls reproduced retained HOLD
 samples and coarse-reference errors before launch. Read the overview section
 `stack3-sequence` and persistent profile for results. Earlier handoff states below
-are historical. Failures: `{}`.
+are historical. Failures: `{"typical-inverse125-50": "Simulation exited unsuccessfully; inspect exit record", "ss-inverse125-50": "Simulation exited unsuccessfully; inspect exit record", "ff-inverse125-50": "Simulation exited unsuccessfully; inspect exit record", "typical-inverse125": "A simulation failed", "ss-inverse125": "A simulation failed", "ff-inverse125": "A simulation failed", "sequence": "Stage did not pass all required independent audits"}`.
 <!-- END STACK3_LIVE -->
 
 ## Latest — physical small-bank candidate complete; no active simulation jobs

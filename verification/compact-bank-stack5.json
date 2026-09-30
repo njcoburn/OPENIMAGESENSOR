@@ -1,0 +1,40 @@
+{
+  "scope": "Fixed five-device candidate; 13 us acquisition, ADC reset at 15.5 us, 20 us slots. Small extracted controls passed; full-bank process queue pending.",
+  "layout": "build/compact-bank-c64-stack5-grid-20260930",
+  "column": "build/compact-capture-stack5-v5-20260930",
+  "small_bank": "build/compact-bank-c2-stack5-v1-20260930",
+  "physical_audit": "simulations/compact-bank-physical-stack5-20260930.json",
+  "full_physical_audit": "build/compact-bank-c64-stack5-grid-20260930/physical-audit.json",
+  "controls": "simulations/stack5-controls-20260930.json",
+  "model_only_diagnostic": "simulations/stack-retention-review-overnight-20260930.json",
+  "checkpoint": "checkpoints/compact-bank-stack5-64",
+  "rerun_command": "python3 scripts/rerun-bank-stack5.py --tag new-tag",
+  "plan_only_command": "python3 scripts/rerun-bank-stack5.py --tag new-tag --plan-only",
+  "changed_layout_policy": "Rebuild column/pixel/bank, DRC/LVS and extraction, update versioned layout profile and guards, then rerun controls and full queue. This fixed-source command does not automatically qualify a changed pixel.",
+  "limits_uV": {
+    "total": 500,
+    "tracking": 500,
+    "refinement": 10,
+    "placement": 10
+  },
+  "full_bank_accuracy_qualified": false,
+  "full_chip_qualified": false,
+  "failed_physical_attempts": [
+    {
+      "path": "build/compact-capture-stack5-v1-20260930",
+      "reason": "Metal2 spacing"
+    },
+    {
+      "path": "build/compact-capture-stack5-v2-20260930",
+      "reason": "Metal2 spacing"
+    },
+    {
+      "path": "build/compact-capture-stack5-v3-20260930",
+      "reason": "HN4 short to STORE, rejected by circuit audit"
+    },
+    {
+      "path": "build/compact-capture-stack5-v4-20260930",
+      "reason": "HN4 short to GND, rejected by circuit audit"
+    }
+  ]
+}
