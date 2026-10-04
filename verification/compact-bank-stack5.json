@@ -1,5 +1,5 @@
 {
-  "scope": "Fixed five-device candidate; 13 us acquisition, ADC reset at 15.5 us, 20 us slots. Small extracted controls passed; full-bank process queue pending.",
+  "scope": "Fixed five-device candidate; 13 us acquisition, ADC reset at 15.5 us, 20 us slots. Small extracted controls and all 18 selected full-bank process/pattern cases passed. Broader operating and full-chip qualification remain open.",
   "layout": "build/compact-bank-c64-stack5-grid-20260930",
   "column": "build/compact-capture-stack5-v5-20260930",
   "small_bank": "build/compact-bank-c2-stack5-v1-20260930",
@@ -36,5 +36,6 @@
       "path": "build/compact-capture-stack5-v4-20260930",
       "reason": "HN4 short to GND, rejected by circuit audit"
     }
-  ]
+  ],
+  "completion_record": "simulations/stack5-completion-checkpoint-20261004.json"
 }

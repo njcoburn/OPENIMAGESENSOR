@@ -1,5 +1,7 @@
 # Sensor references
 
+All 18 selected five-device bank cases are complete and passing. Start with [PICK_UP_HERE.md](../PICK_UP_HERE.md) and the [completion overview](overview.html#stack5-completion). No verification job is queued.
+
 Current five-device overnight sequence and preflight are at [overview](overview.html#stack5-sequence); see [replay profile](../verification/compact-bank-stack5.json). The previous three-device batch remains historical evidence.
 
 Latest: [interrupted candidate review](overview.html#stack3-interrupted-review). Three coarse runs and 576 references audited; refined runs timed out and FF electrical error remains. No simulator jobs or subsequent stages are running.

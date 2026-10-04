@@ -1,13 +1,104 @@
 # Pick up here — 64×64 wafer.space first silicon
 
+## Resume here — 4 October 2026
+
+The five-device 64-column verification sequence is **complete: all 18 selected
+cases passed**. It finished on 2 October at 15:11 Pacific (22:11 UTC), after
+48 hours 21 minutes. All 36 transients and 3,456 reference calculations completed;
+all independent case audits passed, with no failures or timeouts. The controller
+`ois-stack5-sequence-20260930-overnight` exited 0. No verification jobs are running
+or queued; only the layout-viewer container remains active. No new batch was
+started for this checkpoint. The completion notification was delivered/dismissed.
+
+Worst errors across this queue:
+
+| Measurement | Worst | Limit |
+|---|---:|---:|
+| Total capture/readout, including fine samples against coarse capture references | 456.591 µV | 500 µV |
+| Output tracking | 215.322 µV | 500 µV |
+| Saved-sample timestep refinement | 0.465218 µV | 10 µV |
+
+These are selected **one-row, 64-column bank** results, not a qualified 64×64
+chip. All five MOS corners passed inverse illumination at 27/125 °C; typical
+MOS also passed alternating, dark, middle and bright at both temperatures.
+Diode/MIM models and supply/wire conditions remain nominal. Full-bank exhaustive
+accuracy and full-chip qualification flags remain false. The FF worst case has
+about 43.4 µV remaining total-error margin; include it in subsequent corner work.
+
+### Exact checkpoint and evidence
+
+- Physical bank: `build/compact-bank-c64-stack5-grid-20260930`; 898 MOS,
+  512 MIM plates and 64 photodiodes. Five series capture NMOS per column.
+- Column: `build/compact-capture-stack5-v5-20260930`; small bank:
+  `build/compact-bank-c2-stack5-v1-20260930`.
+- Timing: 13 µs acquisition; sample at slot +14.999 µs; acquisition fall ends
+  +15.01 µs; ADC reset starts +15.5 µs; 20 µs slots. KLU/trapezoidal integration.
+- [Completion record](simulations/stack5-completion-checkpoint-20261004.json):
+  all 18 report paths, counts, maxima, source/report consistency and hashes.
+- [Saved final status](simulations/stack5-sequence-final-status-20261002.json) and
+  [exact launch plan](simulations/stack5-sequence-plan-20260930-overnight.json).
+- [Overview and journal](docs/overview.html),
+  [candidate profile](verification/compact-bank-stack5.json), and
+  [completed sequence profile](verification/compact-bank-stack5-sequence.json).
+- [Portable physical checkpoint](checkpoints/compact-bank-stack5-64/manifest.json):
+  compressed GDS/extracted models, verification and contract. Raw waveforms,
+  reference directories and detailed audit workspaces remain in local `build/`,
+  which is Git-ignored. The tracked per-case reports contain their hashes.
+  A fresh clone does not include those large raw files; preserve this workspace
+  or separately back them up before moving machines.
+
+### Next concrete task
+
+Define the next **bounded supply/wiring/placement verification matrix** for this
+five-device bank. Start by reviewing supported PDK operating limits, remaining
+shunt-placement approximations, and local supply/bias drops. Use new versioned
+runners/auditors to vary the selected supply/wire/component conditions while
+keeping each transient and reference model matched. Prove the changes with
+small extracted controls and deck checks before another long full-bank batch.
+Record the proposed cases and acceptance criteria in a new profile; retain the
+500 µV total/tracking and 10 µV refinement criteria unless a separately justified
+specification change is explicitly agreed. Reuse the hot FF case as a priority
+margin check. This follow-up is not configured or queued yet.
+
+After remaining bank coverage: implement/test real addressing and drivers with
+4×64 repeated rows and representative full-column loading, then assemble the
+4096-pixel chip (add 63 rows to this existing row). Close power/pads, optical
+access/packaging, full-chip extraction and manufacturing checks. Preserve the
+modest-frame-rate first-silicon target.
+
+### Reproduction and source preservation
+
+Inspect the fixed-candidate replay without launching anything:
+
+```sh
+python3 scripts/rerun-bank-stack5.py --tag new-tag --plan-only
+python3 scripts/update-verification-journal.py --check
+```
+
+Removing `--plan-only` launches fresh controls and the full multi-day queue;
+choose a unique lowercase tag. This command assumes the existing verified
+physical sources. A changed pixel first needs a new physical build, DRC/LVS,
+extraction and versioned profile before electrical replay.
+
+The plan and audit reports pin their source files. Preserve v6 simulation,
+stack5 audit/build/controller sources and all earlier evidence; create new
+versions for future changes. The three-device timeout/failure is historical
+and must remain recorded separately. `c4a54a6` was the previously pushed launch
+checkpoint; the completion checkpoint follows it in Git history.
+
+## Historical records below
+
+The dated entries below preserve earlier work. Their old “next” instructions
+are superseded by the resume instructions above.
+
 <!-- BEGIN STACK5_LIVE -->
-## Current unattended 64-column sequence — simulating
+## Current unattended 64-column sequence — complete
 
 Five-device correction following the reviewed three-device timeout/FF failure. Live status:
 `build/stack5-sequence-20260930-overnight/status.json`. Exact plan: `build/stack5-sequence-plan-20260930-overnight.json`.
-Stage: **hot-primary**; reviewed cases: **0 / 18**.
+Stage: **typical-bright**; reviewed cases: **18 / 18**.
 Controller container: `ois-stack5-sequence-20260930-overnight`. Inspect this status and container
-before launching anything else. Last update: 2026-09-30T21:49:55.486903+00:00.
+before launching anything else. Last update: 2026-10-02T22:11:08.422859+00:00.
 
 Physical candidate: `build/compact-bank-c64-stack5-grid-20260930`, 898 MOS/512 MIM/64 diodes. The new v6
 runner uses 13 µs acquisition and saves all four internal nodes of every capture

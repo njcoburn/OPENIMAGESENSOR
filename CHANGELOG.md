@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-10-04 — Checkpoint completed five-device bank verification
+
+Preserve all 18 independently passing reports from the sequence completed on
+2 October: 36 transients, 3,456 references, no failures/timeouts, controller exit 0.
+Worst total error is 456.591 µV and tracking is 215.322 µV (500 µV limits);
+maximum sampled timestep difference is 0.465218 µV (10 µV limit).
+Check completed runner/reference counts, report identity and pinned launch
+sources; save a tracked final status and completion record. This checkpoint
+uses the completed independent raw audits rather than rerunning simulations.
+
+Update the overview/journal, current status and PICK_UP_HERE.md with exact
+sources, local/raw versus committed evidence, replay instructions and next
+supply/wiring/placement checks. Full-chip and exhaustive-bank qualification
+remain open. No new verification batch is launched.
+
 ## 2026-09-30 — Five-device correction and overnight process queue
 
 Review the extended-age model comparison: fast-corner total error falls from

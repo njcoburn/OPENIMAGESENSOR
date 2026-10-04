@@ -1,15 +1,16 @@
 # Open Image Sensor
 
-**Current — five-device candidate overnight queue started (30 September):**
-The corrected physical column and both banks pass DRC/LVS. Twelve extracted
-small-bank controls and 72 references pass; worst total error is 192.269 µV.
-The separate 64-column candidate has 898 MOS devices and uses 13 µs acquisition.
-The new detached queue tests typical/SS/FF at 125 °C first, then advances only
-on audited passes through mixed corners, 27 °C and typical illumination cases.
-Three jobs run concurrently, with an eight-hour transient watchdog; the first
-batch is estimated at 6–10 hours. No full-bank electrical pass is claimed yet.
-[Current overview](docs/overview.html#stack5-sequence) · [Live status](build/stack5-sequence-20260930-overnight/status.json) · [Reproduction profile](verification/compact-bank-stack5.json).
-The previous three-device timeout and FF failure remain historical evidence.
+**Current — completed results checkpoint, 4 October:** all 18 selected
+five-device bank cases passed, with 36 transients and 3,456 reference calculations.
+The sequence finished 2 October at 15:11 Pacific after 48 h 21 min; no verification
+jobs remain active. Worst total/tracking errors are 456.591/215.322 µV against
+500 µV; sample refinement is 0.465218 µV against 10 µV. This is selected coverage
+of a one-row, 64-column bank, not full-chip qualification.
+Next: define bounded supply/wiring/placement checks before real drivers and
+multirow integration. [Resume here](PICK_UP_HERE.md) ·
+[Completion record](simulations/stack5-completion-checkpoint-20261004.json) ·
+[Overview](docs/overview.html#stack5-completion).
+Earlier status entries below are historical.
 
 **Latest review, 30 September — stopped; no active simulations:** all three
 100 ns runs and 576 references completed and are independently audited. All three

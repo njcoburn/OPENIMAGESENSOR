@@ -1,0 +1,104 @@
+{
+  "started_at_utc": "2026-09-30T21:49:55.311197+00:00",
+  "phase": "complete",
+  "finished": true,
+  "completed": true,
+  "completed_stages": [
+    "hot-primary",
+    "hot-mixed",
+    "room-primary",
+    "room-mixed",
+    "typical-alternating",
+    "typical-dark",
+    "typical-middle",
+    "typical-bright"
+  ],
+  "audited": {
+    "ff-inverse125": true,
+    "ss-inverse125": true,
+    "typical-inverse125": true,
+    "fs-inverse125": true,
+    "sf-inverse125": true,
+    "typical-inverse27": true,
+    "ss-inverse27": true,
+    "ff-inverse27": true,
+    "fs-inverse27": true,
+    "sf-inverse27": true,
+    "typical-alternating27": true,
+    "typical-alternating125": true,
+    "typical-dark27": true,
+    "typical-dark125": true,
+    "typical-middle27": true,
+    "typical-middle125": true,
+    "typical-bright27": true,
+    "typical-bright125": true
+  },
+  "failures": {},
+  "render_failures": {},
+  "active_runs": [],
+  "planned_stages": 8,
+  "planned_cases": 18,
+  "all_selected_screens_pass": true,
+  "all_pairs_audited": true,
+  "watcher_expired": false,
+  "updated_at_utc": "2026-10-02T22:11:08.422859+00:00",
+  "elapsed_seconds": 174073.25046892802,
+  "stage": "typical-bright",
+  "progress": [
+    {
+      "name": "typical-bright27-100",
+      "last_saved_ms": 3.98,
+      "runner_completed": true,
+      "references": {
+        "completed": 192,
+        "expected": 192
+      },
+      "exit": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 18114.74260777497,
+        "finished_at_utc": "2026-10-02T21:57:26.962396+00:00"
+      }
+    },
+    {
+      "name": "typical-bright27-50",
+      "last_saved_ms": 3.98,
+      "runner_completed": true,
+      "references": null,
+      "exit": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 10426.999146815971,
+        "finished_at_utc": "2026-10-02T19:49:18.872935+00:00"
+      }
+    },
+    {
+      "name": "typical-bright125-100",
+      "last_saved_ms": 3.98,
+      "runner_completed": true,
+      "references": {
+        "completed": 192,
+        "expected": 192
+      },
+      "exit": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 9275.027401243977,
+        "finished_at_utc": "2026-10-02T19:30:06.890723+00:00"
+      }
+    },
+    {
+      "name": "typical-bright125-50",
+      "last_saved_ms": 3.98,
+      "runner_completed": true,
+      "references": null,
+      "exit": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 9622.253413319995,
+        "finished_at_utc": "2026-10-02T22:10:29.637709+00:00"
+      }
+    }
+  ],
+  "queued_runs": []
+}

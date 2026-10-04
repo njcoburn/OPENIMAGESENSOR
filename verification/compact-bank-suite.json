@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "revision": "ground-grid-20260927-acq12",
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-04",
   "scope": "Selected 64-column bank with one pixel row; typical process and nominal supply/wire. Not full-chip or exhaustive corner qualification.",
   "layout": {
     "directory": "build/compact-bank-c64-ground-grid-20260927",
@@ -255,6 +255,12 @@
       "title": "Launch five-device overnight process sequence",
       "detail": "Detached three-worker queue started after passing physical and small-bank preflight. Initial FF/SS/typical hot inverse stage; mixed corners, room-temperature inverse and remaining typical patterns gated on independent passes. 18 cases / 36 transients / 3456 references planned. Eight-hour transient watchdog; desktop completion/review alert enabled. Results pending.",
       "evidence": "simulations/stack5-sequence-start-20260930-overnight.json"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Checkpoint all 18 passing five-device bank cases; handoff ready",
+      "detail": "Sequence completed 2 October at 22:11 UTC in 48 h 21 min: 36 transients, 3456 references, all independent selected audits pass. Worst total 456.591 uV, tracking 215.322 uV, sample refinement 0.465218 uV. No active verification jobs. Next define bounded supply/wire/placement coverage, then real drivers and repeated rows; full-chip qualification remains open.",
+      "evidence": "simulations/stack5-completion-checkpoint-20261004.json"
     }
   ]
 }
